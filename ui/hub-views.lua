@@ -27,13 +27,20 @@ end
 -- Status header
 -- vm.status = { eyebrow = "РАУНД 2 / 4 · ПЕРЕСТРЕЛКА", sides = { {name, colorKey="Red", cp, vp, turn=bool}, {...} } }
 ------------------------------------------------------------------------------------------------------------------------
+-- "Круг Иеротек (Hierotek Circle)" -> "Круг Иеротек" for tight headers.
+function H.shortName(name)
+    if not name then return nil end
+    local cut = name:find(" (", 1, true)
+    return cut and cut > 1 and name:sub(1, cut - 1) or name
+end
+
 local function side(s, w, color, idx)
     local turn = s.turn == true
     local base = H.id(color, "side", idx)
     local iw = w - 4 - 8 - 8
     local flagW = turn and 34 or 0
     local nameRow = KT.hstack({
-        KT.node("Text", { id = base .. "_name", text = s.name or "—", fontSize = "12", fontStyle = "Bold", color = c.fg,
+        KT.node("Text", { id = base .. "_name", text = H.shortName(s.name) or "—", fontSize = "12", fontStyle = "Bold", color = c.fg,
             alignment = "MiddleLeft", preferredWidth = tostring(iw - flagW), horizontalOverflow = "Wrap",
             verticalOverflow = "Truncate", raycastTarget = "false" }),
         (turn and KT.chip("ХОД", "acc", { size = 9, h = 15 }) or nil),
@@ -89,11 +96,12 @@ end
 -- opts = { color, cmd (row click), actionCmd, actionLabel, stripeReady (colour for ready stripe), readOnly }
 local function unitRow(u, w, o)
     local base = H.id(o.color, o.cmd, u.guid)
-    local barW = w - 3 - 24 - 50 - 8 - (o.actionLabel and u.canActivate and 72 or 0)
+    local actionW = (o.actionLabel and u.canActivate) and (12 + 64) or 0
+    local mainW = w - 3 - 12 - 12 - actionW      -- stripe, gap, right padding, optional action column
+    local barW = mainW - 8 - 50
     local stripe = u.state == "active" and c.accent or u.state == "ready" and (o.stripeReady or c.ok)
         or u.state == "down" and c.hurt or c.s3
     local nameColor = (u.state == "used" or u.state == "down") and c.muted or c.fg
-    local mainW = w - 3 - 24 - (o.actionLabel and u.canActivate and 72 or 0)
     local main = KT.vstack({
         KT.text(u.name, { w = mainW, size = fs.m, bold = true, color = nameColor, lines = 1, id = base .. "_n" }),
         KT.hstack({
@@ -136,7 +144,8 @@ local function weaponRow(color, wp, w)
     local base = H.id(color, "weapon", wp.key)
     local statText = "<b>" .. tostring(wp.a) .. "</b> A  ·  <b>" .. tostring(wp.bs) .. "</b>  ·  <b>" .. tostring(wp.d) .. "</b>"
     local statW = math.ceil(KT.textWidth(KT.stripTags(statText), 12, true)) + 8
-    local nameW = w - 20 - 12 - statW - 22 - 36
+    local iconW = math.ceil(13 * (KT.iconRatio[wp.kind == "melee" and "MELEE" or "RANGED"] or 1))
+    local nameW = w - 20 - 3 * 10 - iconW - statW - 22 - 2
     local row = KT.hstack({
         KT.icon(wp.kind == "melee" and "MELEE" or "RANGED", 13),
         KT.vstack({
@@ -144,7 +153,7 @@ local function weaponRow(color, wp, w)
             wp.english and KT.text(wp.english, { w = nameW, size = fs.xs, color = c.muted, lines = 1 }) or nil,
         }, { gap = 2, flex = 1 }),
         KT.node("Text", { text = statText, fontSize = "12", color = c.muted, alignment = "MiddleRight",
-            preferredWidth = tostring(statW), raycastTarget = "false" }),
+            preferredWidth = tostring(statW), minWidth = tostring(statW), raycastTarget = "false" }),
         btn(color, "trait", wp.key, "?", { w = 22, h = 22, size = 11, tooltip = wp.tip }),
     }, { gap = 10, pad = { 10, 10, 8, 8 } })
     local on = wp.selected == true
@@ -721,7 +730,7 @@ local function weaponTable(color, weapons, w)
         }, { h = 26 }),
     }
     for _, wp in ipairs(weapons) do
-        local nameW = w - 4 * 58 - 24
+        local nameW = w - 20 - 3 * 58 - 46 - 5 * 8   -- icon, three stat columns, spare column, gaps
         local traitList = {}
         for _, t in ipairs(wp.traits or {}) do traitList[#traitList + 1] = { t, "neutral" } end
         rows[#rows + 1] = KT.hstack({

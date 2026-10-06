@@ -4,9 +4,11 @@ RuAssistantSerial=0
 RuHub={seats={},marks={},cpByRound={},trees={},vms={},pending={}}
 KT.handler="ruHubClick"
 local phases={"initiative","ready","gambit","firefight","scoring"}
-local phaseLabels={"Инициатива (начало раунда)","Подготовка","Гамбиты","Перестрелка","Подсчёт очков"}
-local phaseNames={initiative="ИНИЦИАТИВА",ready="ПОДГОТОВКА",gambit="ГАМБИТЫ",firefight="ПЕРЕСТРЕЛКА",
-    scoring="ПОДСЧЁТ ОЧКОВ",finished="ПАРТИЯ ЗАВЕРШЕНА"}
+local phaseLabels={"Стратегия · инициатива","Стратегия · готовность","Стратегия · гамбиты","Перестрелка","Конец раунда · подсчёт очков"}
+local phaseNames={initiative="Стратегия · инициатива",ready="Стратегия · готовность",gambit="Стратегия · гамбиты",firefight="Перестрелка",
+    scoring="Конец раунда · подсчёт очков",finished="ПАРТИЯ ЗАВЕРШЕНА"}
+local phaseEyebrows={initiative="СТРАТЕГИЯ · ИНИЦИАТИВА",ready="СТРАТЕГИЯ · ГОТОВНОСТЬ",gambit="СТРАТЕГИЯ · ГАМБИТЫ",
+    firefight="ПЕРЕСТРЕЛКА",scoring="КОНЕЦ РАУНДА · ПОДСЧЁТ ОЧКОВ",finished="ПАРТИЯ ЗАВЕРШЕНА"}
 local function copy(x)
     if type(x)~="table" then return x end
     local out={};for k,v in pairs(x) do out[k]=copy(v) end;return out
@@ -288,9 +290,9 @@ local function actionEvent(v,key)
         exception=v.advanced.exception==true,confirmed=true,costConfirmed=true}
 end
 local function ployEvent(p,key)
-    local v=seat(p.color);local rule=RuAssistantCatalog.ploys[key];local s=state();local target=v.selected
-    if rule.action and s and s.activation and s.activation.owner==owner(p) then target=s.activation.unit end
-    return {type="ploy",ploy=key,target=not rule.generic and target or nil,confirmed=true,costConfirmed=true,
+    local v=seat(p.color);local rule=RuAssistantCatalog.ploys[key];local s=state();local target=v.ployTarget or v.selected
+    if not target and s and s.activation and s.activation.owner==owner(p) then target=s.activation.unit end
+    return {type="ploy",ploy=key,target=rule.target and target or nil,confirmed=true,costConfirmed=true,
         cost=rule.generic and v.openPloy==key and v.ployCost or rule.cost,expiry={kind=v.ployExpiry}}
 end
 local function vp(index)
@@ -323,8 +325,8 @@ local function roster(p)
 end
 local function statusVM()
     local s=state();local st={sides={}}
-    st.eyebrow="РАУНД "..getCurrentRound().." / "..rules.scoring.maxRounds.." · "
-        ..(s and phaseNames[s.phase] or "ПАРТИЯ НЕ ПОДКЛЮЧЕНА")
+    st.eyebrow="РАУНД "..getCurrentRound().." / 4 · "
+        ..(s and phaseEyebrows[s.phase] or "ПАРТИЯ НЕ ПОДКЛЮЧЕНА")
     for i,p in pairs(seats()) do
         st.sides[i]={name=teamLabel(team(p)),colorKey=p.color,cp=scoring[i].command,vp=vp(i),
             turn=s and (s.phase=="gambit" and s.gambitOwner or s.turnOwner)==owner(p) or false}
@@ -440,9 +442,28 @@ local function ploysVM(p,v,enemy)
             local open=(enemy and v.openEnemyPloy or v.openPloy)==id
             local cost=rule.generic and open and v.ployCost or rule.cost
             local usable,reason=false,nil;local used=m.used[id]==true
+            local targets,targetGuid={},nil
+            if rule.target and not enemy and s then
+                for _,u in pairs(s.units) do
+                    if u.owner==owner(p) then
+                        local candidate=unitVM(u,p)
+                        targets[#targets+1]={guid=u.id,name=u.name,state=candidate.state}
+                    end
+                end
+                table.sort(targets,function(a,b) if a.name~=b.name then return a.name<b.name end;return a.guid<b.guid end)
+                local wanted=v.ployTarget or v.selected
+                if not wanted and s.activation and s.activation.owner==owner(p) then wanted=s.activation.unit end
+                for _,target in ipairs(targets) do if target.guid==wanted then targetGuid=wanted;break end end
+                if not targetGuid and s.activation and s.activation.owner==owner(p) then
+                    for _,target in ipairs(targets) do if target.guid==s.activation.unit then targetGuid=target.guid;break end end
+                end
+            end
             if not enemy then
                 if s then
-                    local event=ployEvent(p,id);usable,reason=preview(p,event)
+                    local event=ployEvent(p,id)
+                    if rule.target then event.target=targetGuid end
+                    usable,reason=preview(p,event)
+                    if rule.target and not targetGuid then usable,reason=false,"Выберите цель" end
                     local suffix=rule.limit=="battle" and "battle" or tostring(s.round)
                     if rule.limit=="target_battle" then suffix="battle:"..tostring(event.target or "team") end
                     used=s.used[owner(p)..":"..rule.id..":"..suffix]~=nil
@@ -456,7 +477,8 @@ local function ploysVM(p,v,enemy)
                 open=open,usable=usable,reason=reason,body=open and body or nil,
                 terms=open and refCall("ruRefTermsIn",{text=body}) or nil,costEdit=rule.generic==true,
                 expiry=rule.generic and v.ployExpiry or nil,needsTarget=rule.target~=nil,
-                targetName=s and s.units[v.selected] and s.units[v.selected].name or nil}
+                targetName=targetGuid and s.units[targetGuid] and s.units[targetGuid].name or nil,
+                targetGuid=targetGuid,targets=rule.target and targets or nil}
         end
     end
     table.sort(out.items,function(a,b) if a.name~=b.name then return a.name<b.name end;return a.key<b.key end)
@@ -577,6 +599,9 @@ local function renderNow(color)
     local tree=KT.hub.dock(vm);ids(tree,color,"1")
     local function hide(n)
         if n.attributes.id==KT.hub.id(color,"toast") then n.attributes.active=seat(color).toastHidden and "false" or "true" end
+        if n.attributes.id and n.attributes.id:find("kh:"..color..":counter:",1,true)==1 then
+            n.attributes.tooltip="Контрдействие: один раз за раунд на оперативника"
+        end
         for _,child in ipairs(n.children or {}) do hide(child) end
     end
     hide(tree)
@@ -720,6 +745,12 @@ function ruHubClick(p,value,id)
     elseif cmd=="ploy" then
         local rule=RuAssistantCatalog.ploys[arg];if not rule then return false end
         v.openPloy=v.openPloy~=arg and arg or nil;v.ployCost=rule.cost;v.ployExpiry=rule.generic and "manual" or rule.expiry
+        if rule.target and not v.ployTarget then v.ployTarget=v.selected end
+    elseif cmd=="ploytarget" then
+        local valid=false
+        for _,u in pairs(s and s.units or {}) do if u.owner==owner(p) and u.id==arg then valid=true;break end end
+        if not valid then return false end
+        v.ployTarget=arg
     elseif cmd=="ployexpiry" then if arg=="round" or arg=="action" or arg=="manual" then v.ployExpiry=arg end
     elseif cmd=="ploycost" then v.ployCost=math.min(9,math.max(0,(v.ployCost or 1)+(arg=="+" and 1 or -1)))
     elseif cmd=="pin" then

@@ -17,9 +17,9 @@ local function statCell(icon, label, value)
         KT.node("Image", { image = KT.icons[icon], preserveAspect = "true", preferredHeight = "14",
             preferredWidth = tostring(math.ceil(14 * ratio)), raycastTarget = "false" }),
         KT.node("Text", { text = tostring(value or "—"), fontSize = "18", fontStyle = "Bold", color = c.fg, alignment = "MiddleCenter",
-            preferredHeight = "22", raycastTarget = "false" }),
+            preferredHeight = "22", preferredWidth = "62", raycastTarget = "false" }),
         KT.node("Text", { text = label, fontSize = "9", fontStyle = "Bold", color = c.muted, alignment = "MiddleCenter",
-            preferredHeight = "11", raycastTarget = "false" }),
+            preferredHeight = "11", preferredWidth = "62", raycastTarget = "false" }),
     }, { w = 62, pad = { 0, 0, 9, 7 }, gap = 3, align = "MiddleCenter", stretch = false })
 end
 
@@ -48,7 +48,7 @@ end
 local function weaponRows(vm, w)
     local iw = w - D.geo.pad * 2
     local colW = 40
-    local nameW = iw - 22 - 3 * colW - 10 * 4 - 20
+    local nameW = iw - 20 - 22 - 5 * 10 - 3 * colW - 10   -- padding, icon, gaps, A/BS/D columns (D is 10 wider)
     local rows = {
         KT.hstack({
             KT.node("Panel", { preferredWidth = "22", color = c.clear }),

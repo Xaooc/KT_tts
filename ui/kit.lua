@@ -328,7 +328,8 @@ function KT.button(label, o)
         colors = st.colors, textColor = enabled and st.text or KT.c.dim, interactable = enabled and "true" or "false",
         fontSize = num(o.size or KT.fs.m), fontStyle = o.bold == false and "Normal" or "Bold",
         textAlignment = o.align or "MiddleCenter",
-        preferredHeight = num(o.h or 40), preferredWidth = o.w and num(o.w) or nil, flexibleWidth = o.flex and num(o.flex) or nil,
+        preferredHeight = num(o.h or 40), preferredWidth = o.w and num(o.w) or nil, minWidth = o.w and num(o.w) or nil,
+        flexibleWidth = o.flex and num(o.flex) or nil,
         tooltip = o.tooltip, tooltipPosition = o.tooltip and "Right" or nil,
         tooltipBackgroundColor = o.tooltip and "#0D0F10F2" or nil, tooltipTextColor = o.tooltip and KT.c.fg or nil,
         tooltipBorderColor = o.tooltip and KT.c.line or nil,
@@ -350,7 +351,7 @@ function KT.chip(label, kind, o)
     local w = math.ceil(KT.textWidth(text, size, true) + 14)
     local h = o.h or (size + 10)
     return node("Panel", {
-        id = o.id, color = cs[1], preferredWidth = num(w), preferredHeight = num(h),
+        id = o.id, color = cs[1], preferredWidth = num(w), minWidth = num(w), preferredHeight = num(h),
         outline = kind == "mute" and KT.c.line or nil, outlineSize = kind == "mute" and "1 1" or nil,
         tooltip = o.tooltip, raycastTarget = o.tooltip and "true" or "false",
     }, {
