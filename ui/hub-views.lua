@@ -36,7 +36,7 @@ local function side(s, w, color, idx)
         KT.node("Text", { id = base .. "_name", text = s.name or "—", fontSize = "12", fontStyle = "Bold", color = c.fg,
             alignment = "MiddleLeft", preferredWidth = tostring(iw - flagW), horizontalOverflow = "Wrap",
             verticalOverflow = "Truncate", raycastTarget = "false" }),
-        turn and KT.chip("ХОД", "acc", { size = 9, h = 15 }) or nil,
+        (turn and KT.chip("ХОД", "acc", { size = 9, h = 15 }) or nil),
     }, { h = 16, gap = 4 })
     local nums = KT.node("Text", { id = base .. "_score",
         text = tostring(s.cp or 0) .. " <size=10><color=" .. c.muted .. ">CP</color></size>   " .. tostring(s.vp or 0)
@@ -360,6 +360,9 @@ function H.viewTurn(vm, w)
     if t.mode == "setup" then return turnSetup(vm.color, t, w) end
     if t.mode == "activation" then return turnActivation(vm.color, t, w) end
     if t.mode == "idle" then return turnIdle(vm.color, t, w) end
+    if t.mode == "enemy" then
+        return turnIdle(vm.color, { myTurn = false, turnOwnerName = t.who, enemyUnit = t.unitName, enemyAction = t.action }, w)
+    end
     if t.mode == "phase" then return turnPhase(vm.color, t, w) end
     if t.mode == "spectator" then
         return KT.empty("Вы наблюдатель", "Справочник доступен всем. Ход и уловки доступны игрокам за табло.", w)
@@ -865,7 +868,7 @@ local function rail(vm)
     kids[#kids + 1] = KT.node("Panel", { flexibleHeight = "1", color = c.clear })
     kids[#kids + 1] = KT.node("Panel", { preferredHeight = "48", color = c.clear }, {
         KT.node("Image", { rectAlignment = "UpperCenter", height = "1", width = "100%", color = c.line, raycastTarget = "false" }),
-        btn(vm.color, vm.state == "open" and "collapse" or "expand", nil, vm.state == "open" and "‹" or "›",
+        btn(vm.color, vm.state == "open" and "collapse" or "expand", "rail", vm.state == "open" and "‹" or "›",
             { kind = "tab", h = 48, size = 18 }),
     })
     return KT.node("VerticalLayout", { preferredWidth = tostring(G.rail), width = tostring(G.rail), color = c.rail,

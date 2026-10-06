@@ -44,7 +44,8 @@ function onOperativeRandomize(params)
     local ctx = RuReferenceCache[color]
     WeaponCache[color] = {
         operative = extractOperativeName(operative.getName()),
-        stats = {apl = ctx.vm.apl, move = ctx.vm.move, save = ctx.vm.save, wounds = ctx.vm.wounds},
+        stats = {apl = ctx.vm.apl, move = ctx.vm.move, save = ctx.vm.save,
+            wounds = (ctx.state.stats or {}).Wounds or (ctx.state.stats or {}).W or ""},
         weapons = ctx.weapons,
     }
     AbilityActionCache[color] = ctx.abilityData

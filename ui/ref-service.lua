@@ -9,7 +9,8 @@ function ruReplace(s, needle, replacement)
     while true do
         local first, last = s:find(needle, pos, true)
         if not first then parts[#parts + 1] = s:sub(pos); break end
-        parts[#parts + 1], parts[#parts + 2] = s:sub(pos, first - 1), replacement
+        parts[#parts + 1] = s:sub(pos, first - 1)
+        parts[#parts + 1] = replacement
         pos = last + 1
     end
     return table.concat(parts)
@@ -140,7 +141,10 @@ end
 for _, e in ipairs(ruReferenceCommon or {}) do
     local id = "common:" .. e.id
     local a = aliases(e.title, e.english)
-    if e.english == "Devastating" then a[#a + 1], a[#a + 2] = "Разрушительное", "Разрушительный" end
+    if e.english == "Devastating" then
+        a[#a + 1] = "Разрушительное"
+        a[#a + 1] = "Разрушительный"
+    end
     register(id, display(e.title), e.english, e.text, a)
     commonKeys[key(e.english)] = id
 end
@@ -174,8 +178,10 @@ local function word(c)
     return c ~= "" and (c:match("^[a-z0-9_]$") ~= nil or ("абвгдеёжзийклмнопрстуфхцчшщъыьэюя"):find(c, 1, true))
 end
 
+local termCache, termCacheSize = {}, 0
 local function termsIn(text)
     text = tostring(text or "")
+    if termCache[text] then return copy(termCache[text]) end
     local out, seen = {}, {}
     local function scan(chunk)
         local folded, matches = fold(plain(chunk)), {}
@@ -205,7 +211,8 @@ local function termsIn(text)
                 local e = match.entry
                 if not seen[e.key] and #out < 8 then
                     seen[e.key] = true
-                    out[#out + 1] = {key = e.key, label = e.title}
+                    -- The hub view uses tuple access; API callers also get descriptive field names.
+                    out[#out + 1] = {e.key, e.title, key = e.key, label = e.title}
                 end
             end
         end
@@ -218,6 +225,9 @@ local function termsIn(text)
         scan(text:sub(a + 3, b - 1)); pos = b + 4
     end
     scan(text)
+    -- Repeated hub renders reuse immutable definitions; bound arbitrary input caching.
+    if termCacheSize >= 2048 then termCache, termCacheSize = {}, 0 end
+    termCache[text], termCacheSize = copy(out), termCacheSize + 1
     return out
 end
 
@@ -229,12 +239,23 @@ local function ruleName(raw)
     return ruTrim(s:gsub("%s+[xX]$", ""))
 end
 
+local function profileParts(raw)
+    local s = ruReplace(ruReplace(raw, "″", '"'), "”", '"')
+    local pos = 1
+    while pos <= #s and ("0123456789"):find(s:sub(pos, pos), 1, true) do pos = pos + 1 end
+    local nextChar = s:sub(pos + 1, pos + 1)
+    if pos > 1 and s:sub(pos, pos) == '"' and (nextChar == " " or nextChar == "\t") then
+        return ruTrim(s:sub(pos + 1)), s:sub(1, pos - 1)
+    end
+    return s, nil
+end
+
 local function matchTrait(wr, name)
     name = ruleName(name):lower()
     if name == "" then return false end
     for part in ruDelimited(wr, ",") do
         part = ruReplace(ruReplace(ruleName(part), "″", '"'), "”", '"'):lower()
-        local candidate = part:gsub('^%d+"%s+', "")
+        local candidate = profileParts(part)
         if candidate == name or (candidate:sub(1, #name) == name and candidate:sub(#name + 1, #name + 1):match("[^a-z]")) then
             if not (name == "seek" and part:find("seek light", 1, true))
                 and not (name == "piercing" and part:find("piercing crits", 1, true)) then return part end
@@ -291,12 +312,12 @@ local function rulesForProfile(ctx, w)
         if matched then
             local e = copy(entry)
             e.key = commonKeys[key(e.english)]
-            local parameter = matched:gsub('^%d+"%s+', ""):sub(#entry.english + 1):match('^%s*(%d+%+?"?)')
+            local token, radius = profileParts(matched)
+            local parameter = token:sub(#entry.english + 1):match('^%s*(%d+%+?"?)')
             if parameter and e.title:find("x", 1, true) then
-                e.title = e.title:gsub("x%+", parameter):gsub("x", parameter)
+                e.title = ruReplace(ruReplace(e.title, "x+", parameter), "x", parameter)
                 e.text = "<b>Значение x для этого профиля: " .. parameter .. ".</b>\n\n" .. e.text
             end
-            local radius = matched:match('^(%d+)"%s+')
             if radius then e.text = "<b>Радиус для этого профиля: " .. radius .. "″.</b>\n\n" .. e.text end
             if entry.english == "Heavy" then
                 local restriction = matched:match("%((.-)%)")
@@ -396,7 +417,7 @@ local function buildContext(color, state, operative)
         local target = kind == "actions" and abilityData.actions or abilityData.abilities
         target[#target + 1] = {name = name, apCost = ap, description = body, abilityActionDescriptionPresent = body ~= ""}
     end
-    for _, kind in ipairs({"abilities", "actions"}) do for _, e in ipairs(info[kind] or {}) do add(e, kind) end end
+    for _, e in ipairs(info.abilities or {}) do add(e, "abilities") end
     local extra = {}
     local function collect(v)
         if type(v) ~= "table" then return end
@@ -406,6 +427,7 @@ local function buildContext(color, state, operative)
     collect(info.special); collect(info.psychic)
     table.sort(extra, function(a, b) return (a.name or "") < (b.name or "") end)
     for _, e in ipairs(extra) do add(e, "extra") end
+    for _, e in ipairs(info.actions or {}) do add(e, "actions") end
     abilityData.abilityCount, abilityData.actionCount = #abilityData.abilities, #abilityData.actions
     ctx.vm, ctx.abilityData = vm, abilityData
     return ctx
@@ -435,6 +457,10 @@ local function article(entry, team)
     out.label, out.team = out.label or "Справка", team and display(team.label) or out.team
     out.body = entry.body or entry.text or ""
     out.terms = termsIn(out.body)
+    for _, weapon in ipairs(out.weapons or {}) do
+        weapon.index = nil
+        for i, trait in ipairs(weapon.traits or {}) do weapon.traits[i] = trait.label end
+    end
     return out
 end
 
@@ -556,7 +582,7 @@ function ruAssistantRead(p) R.hub("ruHubOpen", {color = p and p.color, tab = "re
 local function emptyPanel() return {tag = "Panel", attributes = {active = "false"}} end
 function ruBuildReferenceLauncher(...) return emptyPanel() end
 function ruBuildWeaponReferenceButton(...) return emptyPanel() end
-function ruBuildCompactRuleGrid(...) return emptyPanel(), 0 end
+function ruBuildCompactRuleGrid(...) return emptyPanel() end
 function ruSetCompactRuleTitle(...) end
 
 function ruOpenReference(player, value, id)

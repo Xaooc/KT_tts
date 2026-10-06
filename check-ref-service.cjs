@@ -68,7 +68,7 @@ const legacy = {ruPloysVersion: 1, seats: {
 const saved = JSON.stringify(legacy);
 const driver = `
 local mounts, hubCalls, objects, waits, menus = {}, {}, {}, {}, {}
-local loading, broadcasts, rolls = false, {}, {}
+local uiLoading, broadcasts, rolls = false, {}, {}
 local checks, teams, ploys, profiles, bodyCount = 0, 0, 0, 0, 0
 local function check(value, message) checks = checks + 1; assert(value, message) end
 local function clone(x)
@@ -86,7 +86,7 @@ UI = setmetatable({}, {__index = function(_, k) error("Direct legacy UI access: 
 self = {getGUID = function() return "efa3fe" end,
     addContextMenuItem = function(label, fn) menus[#menus + 1] = {label, fn} end}
 Global = {call = function(method, p)
-    if method == "ruUiLoading" then return loading end
+    if method == "ruUiLoading" then return uiLoading end
     if method == "ruUiMount" then mounts[p.owner] = clone(p.nodes); return true end
     if method == "ruUiUnmount" then mounts[p.owner] = nil; return true end
     error("Unexpected Global call: " .. method)
@@ -99,7 +99,7 @@ function getAllObjects() return {roller} end
 Wait = {time = function(f) f() end, frames = function(f) f() end,
     condition = function(f, p) if p() then f() else waits[#waits + 1] = {f, p} end end}
 local function ready()
-    loading = false
+    uiLoading = false
     local current = waits; waits = {}
     for _, task in ipairs(current) do assert(task[2]()); task[1]() end
 end
@@ -143,16 +143,22 @@ end
 `;
 const cases = `
 local real, catalog = ${lit(real)}, ${lit(catalog)}
-local function resolve(terms)
+local quoteProbe = ruReplace('1″ Devastating 1', "″", '"')
+check(quoteProbe == '1" Devastating 1', "Literal quote replacement: " .. quoteProbe)
+local tokenProbe, radiusProbe = profileParts(quoteProbe)
+check(tokenProbe == "Devastating 1" and radiusProbe == "1", "Radius token: " .. tokenProbe .. " / " .. tostring(radiusProbe))
+check(select("#", ruBuildCompactRuleGrid()) == 1, "Legacy grid hook must return one node")
+local function resolve(terms, tuples)
     for _, term in ipairs(terms or {}) do
         local e = ruRefTerm({key = term.key})
         check(type(e.body) == "string" and e.body ~= "", "Unresolved term: " .. tostring(term.key))
+        if tuples then check(term[1] == term.key and term[2] == term.label, "Hub term tuple compatibility") end
     end
 end
 local function articleKeys(a)
-    resolve(a.terms)
+    resolve(a.terms, true)
     for _, w in ipairs(a.weapons or {}) do
-        for _, trait in ipairs(w.traits) do if trait.key then resolve({trait}) end end
+        for _, trait in ipairs(w.traits) do check(type(trait) == "string" and trait ~= "", "Article trait must be a label") end
     end
 end
 for teamKey, team in pairs(ruReferenceTeams) do
@@ -175,7 +181,7 @@ for teamKey, team in pairs(ruReferenceTeams) do
     end
     local rules = ruRefTeamRules({team = teamKey})
     check(#rules == ruRefQuery({team = teamKey, scope = "team"}).count, "Team rule API differs")
-    for _, rule in ipairs(rules) do resolve(rule.terms); resolve({rule}) end
+    for _, rule in ipairs(rules) do resolve(rule.terms, true); resolve({rule}) end
 end
 check(teams == 41, "Expected 41 teams")
 check(ploys == 328, "Expected 328 readable ploys")
@@ -186,8 +192,8 @@ check(ruRefQuery({team = "hierotekcircle", scope = "team"}).count >= ru.count, "
 check(ruRefQuery({scope = "weapon"}).count == 25, "Common rule catalog without operative")
 local boldTerms = ruRefTermsIn({text = "AP APL <b>Дистанция контроля</b> Cover"})
 check(#boldTerms > 0 and #boldTerms <= 8, "Term cap")
-check(boldTerms[1].key == "glossary:core-control-range", "Bold terms must come first")
-resolve(boldTerms)
+check(boldTerms[1].key == "glossary:core-control", "Bold terms must come first")
+resolve(boldTerms, true)
 check(#ruRefTermsIn({text = "backblast superAPLary"}) == 0, "Substring glossary contamination")
 check(next(ruRefTerm({key = "missing"})) == nil, "Unknown term")
 check(ruRefQuery({guid = "missing"}).count == 0, "Missing model")
@@ -260,7 +266,9 @@ for _, model in ipairs(catalog) do
         if wr ~= "" and wr ~= "-" and wr ~= "—" then
             for token in ruDelimited(wr, ",") do if ruTrim(token) ~= "" then expected = expected + 1 end end
             local selected = ruRulesForProfile("Yellow", {name = weapon.name, wr = wr})
-            check(#selected == expected, model.state.info.name .. " / " .. wr .. ": unresolved weapon rules")
+            local names = {}; for _, entry in ipairs(selected) do names[#names + 1] = entry.english end
+            check(#selected == expected, model.state.info.name .. " / " .. wr .. ": expected " .. expected
+                .. ", found " .. #selected .. " (" .. table.concat(names, ", ") .. ")")
             for _, entry in ipairs(selected) do resolve({entry}) end
         end
         profiles = profiles + 1
@@ -305,13 +313,13 @@ onOperativeRandomize({operative(legacyModel), "Red"})
 check(ruWeaponTooltip("Red", {name = "Old weapon", wr = "Blast 2"}):find("Старая редакция", 1, true), "Legacy edition lost")
 check(not ruWeaponTooltip("Red", {name = "Old weapon", wr = "Backblast"}):find("Старая редакция", 1, true), "Substring trait")
 resolve({RuReferenceCache.Red.vm.weapons[1].traits[1]})
-loading = true
+uiLoading = true
 onOperativeRandomize({operative(real[1]), "Red"})
 onOperativeRandomize({operative(real[2]), "Red"})
 check(RuReferenceCache.Red.currentEdition == false, "Operative processed while composer loading")
 ready()
 check(RuReferenceCache.Red.vm.english == "Chronomancer", "Deferred selection was stale")
-loading = true
+uiLoading = true
 onOperativeRandomize({operative(real[1]), "Red"})
 deleteDatasheetHUD("Red"); ready()
 check(not mounts["datasheet:Red"], "Close resurrected deferred HUD")
@@ -325,6 +333,8 @@ check(#seek == 1 and seek[1].english == "Seek Light", "Seek Light contamination"
 check(ruWeaponTooltip("Yellow", {wr = "Heavy (Reposition only)"}):find("только Перемещение", 1, true), "Heavy restriction")
 local lethal = ruRulesForProfile("Yellow", {wr = "Lethal 5+"})
 check(#lethal == 1 and not lethal[1].title:find("5++", 1, true), "Lethal doubled plus")
+local radius = ruRulesForProfile("Yellow", {wr = "1″ Devastating 1"})
+check(#radius == 1 and radius[1].text:find("1″", 1, true), "Weapon rule radius lost")
 for _, call in ipairs({{ruOpenPloys, "ruHubOpen", {color = "Red", tab = "ploys"}},
     {ruPloysRoundEnd, "ruHubRoundEnd", {}}, {ruAssistantRead, "ruHubOpen", {color = "Red", tab = "ref"}}}) do
     call[1]({color = "Red"})

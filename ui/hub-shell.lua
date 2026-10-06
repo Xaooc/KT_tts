@@ -19,11 +19,12 @@ local function actor(p)
 end
 local function owner(p) return tostring(p.steam_id) end
 local function state() return RuAssistantEngine and RuAssistantEngine.state end
+local function hubRound() return math.max(1,getCurrentRound()) end
 local function seat(color)
     if not RuHub.seats[color] then
         RuHub.seats[color]={state="rail",tab="turn",ploySeg="strat",ployQuery="",ployExpiry="manual",
-            squadSeg="all",enemySeg="ops",logSeg="events",refScope="all",refQuery="",
-            advanced={open=false,cost="rule",exception=false},setup={round=1,phaseIndex=1,turnIndex=1}}
+            squadSeg="all",enemySeg="ops",logSeg="events",refScope="model",refQuery="",
+            advanced={open=false,cost="rule",exception=false},setup={round=hubRound(),phaseIndex=1,turnIndex=1}}
     end
     return RuHub.seats[color]
 end
@@ -77,9 +78,12 @@ local function objectUnit(obj,playersMap)
     local weapons={}
     for _,w in ipairs(info.weapons or {}) do
         local stats=w.stats or {};local key=tostring(w.name):lower():find("tesla",1,true) and "tesla" or tostring(w.name)
+        local melee=w.type=="melee" or w.type=="M" or tostring(w.name):find("(M)",1,true)~=nil
+        local hit=stats.HIT or stats.BS or stats.WS or stats.Hit or "—"
+        if type(hit)=="number" then hit=tostring(hit).."+" end
         weapons[#weapons+1]={name=RuAssistantNames[w.name] or w.name or "Оружие",english=w.name,key=key,
-            rules=stats.WR or "",kind=w.type=="melee" and "melee" or "ranged",a=stats.A or "—",
-            bs=stats.BS or stats.WS or stats.Hit or "—",d=stats.D or stats.Damage or "—"}
+            rules=stats.WR or "",kind=melee and "melee" or "ranged",a=stats.ATK or stats.A or "—",
+            bs=hit,d=stats.DMG or stats.D or stats.Damage or "—"}
     end
     local order=st.order or marker.order;local team=tostring(info.ktRuTeam or ""):lower():gsub("[^a-z0-9]","")
     if not RuAssistantTeams[team] then
@@ -87,8 +91,11 @@ local function objectUnit(obj,playersMap)
             local key=tostring(category):lower():gsub("[^a-z0-9]","");if RuAssistantTeams[key] then team=key end
         end
     end
+    local move=st.stats.Move or st.stats.M or "—";local save=st.stats.Save or st.stats.SV or "—"
+    if type(move)=="number" then move=tostring(move)..'"' end
+    if type(save)=="number" then save=tostring(save).."+" end
     return {id=obj.getGUID(),owner=tostring(st.owner),name=RuAssistantNames[name] or name,english=name,
-        apl=apl,move=st.stats.Move or st.stats.M or "—",save=st.stats.Save or st.stats.SV or "—",
+        apl=apl,move=move,save=save,
         wounds=wounds,maxWounds=wnd,keywords=keywords,weapons=weapons,team=team,
         order=(order=="Conceal" or order=="GuardConceal") and "Conceal" or "Engage",
         guard=order=="Guard" or order=="GuardConceal",
@@ -103,8 +110,8 @@ local function scan(p)
 end
 local function marks(p)
     local m=RuHub.marks[p.color]
-    if not m then m={team="",used={},pinned={},round=getCurrentRound()};RuHub.marks[p.color]=m end
-    if m.round~=getCurrentRound() then m.used={};m.round=getCurrentRound() end
+    if not m then m={team="",used={},pinned={},round=hubRound()};RuHub.marks[p.color]=m end
+    if m.round~=hubRound() then m.used={};m.round=hubRound() end
     return m
 end
 local function team(p)
@@ -205,7 +212,8 @@ function ruAssistantCommit(p,event)
         if not result.ok then toast(p,result.error,"",false);ruHubRender(p.color);return false,result.error end
     end
     local before=e.state;RuAssistantEngine=proposal.candidate;local s=state()
-    if before.phase~=s.phase or before.round~=s.round then captureCP(before.round);captureCP(s.round) end
+    if before.round~=s.round then captureCP(before.round) end
+    captureCP(s.round)
     if event.type=="initiative" or event.type=="undo" then
         for id,own in pairs(s.players) do
             for r=1,rules.scoring.maxRounds do
@@ -294,7 +302,6 @@ end
 local function unitVM(u,p)
     local s=state();local active=s and s.activation and s.activation.unit==u.id
     local out=copy(u);out.guid=u.id
-    out.state=u.wounds<=0 or u.unavailable and "down" or nil
     if u.wounds<=0 or u.unavailable then out.state="down"
     else out.state=active and "active" or u.ready and "ready" or "used" end
     out.injured=u.wounds>0 and u.wounds<math.ceil(u.maxWounds/2)
@@ -512,7 +519,8 @@ local function logVM(v)
     out.note="Убийства и основная операция учтены только в итогах.";return out
 end
 local function refVM(p,v)
-    local result=refCall("ruRefQuery",{color=p.color,team=v.refTeam or team(p),scope=v.refScope,
+    local ownTeam=nil;if not spectator(p) then ownTeam=team(p) end
+    local result=refCall("ruRefQuery",{color=p.color,team=v.refTeam or ownTeam,scope=v.refScope,
         query=v.refQuery,key=v.refKey,guid=v.refGuid}) or {scopes={},results={},count=0}
     result.scope=v.refScope;result.query=v.refQuery
     if v.termKey then result.term=refCall("ruRefTerm",{key=v.termKey}) end
@@ -522,7 +530,8 @@ function ruHubBuildVM(color)
     local p=Player[color];if not p then return nil end
     local v=seat(color);local vm={color=color,state=v.state,tab=v.tab,status=statusVM(),toast=v.toast}
     if spectator(p) then
-        vm.tab="ref";vm.tabs={KT.hub.TABS[#KT.hub.TABS]};vm.turn={mode="spectator"}
+        vm.tab="ref";vm.tabs={};vm.turn={mode="spectator"}
+        for _,tab in ipairs(KT.hub.TABS) do if tab.key=="ref" then vm.tabs[1]=tab end end
     end
     if vm.tab=="turn" then vm.turn=turnVM(p,v,roster(p));vm.foot=vm.turn.foot
     elseif vm.tab=="squad" then
@@ -545,12 +554,13 @@ function ruHubBuildVM(color)
     return vm
 end
 local function ids(node,color,path)
+    assert(type(node)=="table","Invalid dock child "..color..":"..path.." ("..tostring(node)..")")
     node.attributes=node.attributes or {};node.attributes.id=node.attributes.id or "khp_"..color.."_"..path
     for i,child in ipairs(node.children or {}) do ids(child,color,path.."_"..i) end
 end
 local function shape(a,b)
     if not a or a.tag~=b.tag or a.attributes.id~=b.attributes.id then return false end
-    if #(a.children or {})~=#(b.children or {}) or a.value~=b.value then return false end
+    if #(a.children or {})~=#(b.children or {}) then return false end
     for i,child in ipairs(b.children or {}) do if not shape(a.children[i],child) then return false end end
     return true
 end
@@ -562,6 +572,7 @@ local function diff(a,b,patches)
     for i,child in ipairs(b.children or {}) do diff(a.children[i],child,patches) end
 end
 local function renderNow(color)
+    if RuHub.destroyed then return end
     local vm=ruHubBuildVM(color);if not vm then return end
     local tree=KT.hub.dock(vm);ids(tree,color,"1")
     local function hide(n)
@@ -572,15 +583,20 @@ local function renderNow(color)
     local old=RuHub.trees[color]
     if shape(old,tree) then
         local patches={};diff(old,tree,patches);Global.call("ruUiPatchMany",patches)
-    else Global.call("ruUiMount",{owner="hub:"..color,nodes={tree}}) end
+    else
+        -- The composer overlays saved patches on mounts. Drop this owner's obsolete patches before changing shape.
+        if old then Global.call("ruUiUnmount",{owner="hub:"..color}) end
+        Global.call("ruUiMount",{owner="hub:"..color,nodes={tree}})
+    end
     RuHub.trees[color]=tree;RuHub.vms[color]=vm
 end
 function ruHubRender(color)
-    if RuHub.pending[color] then return end
+    if RuHub.destroyed or RuHub.pending[color] then return end
     RuHub.pending[color]=true
     Wait.frames(function() RuHub.pending[color]=nil;renderNow(color) end,1)
 end
 function ruHubRenderAll()
+    if RuHub.destroyed then return end
     if not RuHub.defaults then Global.call("ruUiMount",{owner="hub:defaults",nodes={KT.defaults()}});RuHub.defaults=true end
     local present={}
     for _,color in ipairs(colors()) do present[color]=true;ruHubRender(color) end
@@ -603,22 +619,28 @@ function ruAssistantFocus(params)
     seat(params.color).selected=params.guid;return ruHubOpen({color=params.color,tab="turn"})
 end
 function ruHubRoundEnd()
-    for _,m in pairs(RuHub.marks) do m.used={};m.round=getCurrentRound() end
+    for _,m in pairs(RuHub.marks) do m.used={};m.round=hubRound() end
     ruHubRenderAll()
 end
 function ruHubLegacyPloys(data)
     for color,old in pairs(type(data)=="table" and data.seats or {}) do
         if not RuHub.marks[color] then
-            local m={team=old.team or "",used={},pinned={},round=old.round or getCurrentRound()}
+            local m={team=old.team or "",used={},pinned={},round=old.round or hubRound()}
+            local references=nil
             for _,field in ipairs({"used","pinned"}) do
                 for id,on in pairs(old[field] or {}) do
                     local key=id=="command-reroll" and "reroll" or id
                     if not RuAssistantCatalog.ploys[key] then
                         local prefix=tostring(old.team)..":"
                         local entry=id:sub(1,#prefix)==prefix and id:sub(#prefix+1) or id
-                        local libraryRule=RuAssistantCatalog.ploys[prefix..entry]
+                        -- Structured engine rules replace library entries, whose legacy ids are different.
+                        references=references or refCall("ruRefQuery",{color=color,team=old.team,scope="ploy",query=""}) or {}
+                        local english=nil
+                        for _,item in ipairs(references.results or {}) do
+                            if item.key==id or item.key:sub(-#id)==id then english=item.english;break end
+                        end
                         for candidate,rule in pairs(RuAssistantCatalog.ploys) do
-                            if rule.team==old.team and (rule.id==key or libraryRule and rule.english==libraryRule.english) then
+                            if rule.team==old.team and (rule.id==key or english and rule.english==english) then
                                 key=candidate;break
                             end
                         end
@@ -661,7 +683,7 @@ function ruHubClick(p,value,id)
         event={type="begin",unit=v.selected,mode=cmd=="counter" and "counteract" or "activation"}
     elseif cmd=="weapon" then v.weapon=arg
     elseif cmd=="trait" then
-        v.tab="ref";v.refScope="weapon";v.refKey=nil;v.refGuid=nil;v.refQuery=arg or ""
+        v.tab="ref";v.refScope="weapon";v.refKey=nil;v.refGuid=v.selected;v.refQuery=arg or ""
         local u=s and s.units[v.selected]
         for _,w in ipairs(u and u.weapons or {}) do
             if w.key==arg then
@@ -707,7 +729,8 @@ function ruHubClick(p,value,id)
         local rule=RuAssistantCatalog.ploys[arg];if not rule then return false end
         if s then event=ployEvent(p,arg)
         else
-            local m=marks(p);local index=playerNumber[color];local cost=rule.generic and v.ployCost or rule.cost
+            local m=marks(p);local index=playerNumber[color]
+            local cost=rule.generic and v.openPloy==arg and v.ployCost or rule.cost
             if rule.team~=team(p) and rule.team~="any" then ok,msg=false,"Уловка другого отряда"
             elseif not integer(cost,0,9) then ok,msg=false,"Некорректная стоимость CP"
             elseif m.used[arg] then ok,msg=false,"Уже применена в раунде"
@@ -755,6 +778,7 @@ function loadGM()
 end
 local oldLoad=onLoad
 function onLoad(saved)
+    RuHub.destroyed=false
     local ok,base=pcall(JSON.decode,saved or "");if not ok or type(base)~="table" then base={} end
     if type(base.sscoring)=="table" and base.sscoring[1] and base.sscoring[2] and type(base.srules)=="table" then
         RuHub.boardRestore=base
@@ -808,7 +832,8 @@ end
 local oldSetCP=setCommandPoints
 function setCommandPoints(index,value)
     if not scoring[index] or not integer(value,0,999) then return end
-    oldSetCP(index,value);RuAssistantCPRevision=RuAssistantCPRevision+1;syncCounters();ruHubRenderAll()
+    oldSetCP(index,value);RuAssistantCPRevision=RuAssistantCPRevision+1;syncCounters()
+    captureCP(hubRound());ruHubRenderAll()
 end
 function onCommandPointUpPressed(p,value,id)
     p=actor(p);local index=tonumber(tostring(id):match("player(%d+)"))
@@ -836,6 +861,7 @@ local oldRound=getCurrentRound
 function getCurrentRound() return state() and state().round or oldRound() end
 local oldDestroy=onDestroy
 function onDestroy()
+    RuHub.destroyed=true
     if RuHub.watch then Wait.stop(RuHub.watch) end
     for color,v in pairs(RuHub.seats) do
         if v.toastTimer then Wait.stop(v.toastTimer) end
