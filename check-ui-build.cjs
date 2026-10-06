@@ -197,6 +197,22 @@ test('hub mode requires manifest entries and both targets',()=>{
   const source=save();source.ObjectStates.pop();assert.throws(()=>buildSave(source,{...sources,mode:'hub',modules}),/339b7f/);
 });
 
+test('Global seating writes use the proxy while composer captures the real UI, in both modes',()=>{
+  for(const mode of ['platform','hub']){
+    const source=save();source.LuaScript='function seats() Global.UI.setAttribute("RedBtn","active","true") end';
+    const composer='local RealUI = UI\nfunction flush() RealUI.setXmlTable({}) end\n'
+      +'local host = Global.UI\nfunction hostWrite() Global.UI.show("inside") end';
+    const options={...sources,composer,mode,modules};const result=buildSave(source,options);
+    const parts=markerParts(result.candidate.LuaScript);
+    assert(parts.filter(part=>!part.name).map(part=>part.text).join('').includes('UI.setAttribute("RedBtn"'));
+    assert.equal(parts.find(part=>part.name==='composer').content,composer+'\n');
+    assert.equal(result.changedObjects.find(entry=>entry.guid==='Global').rewrites,1);
+    const again=buildSave(result.candidate,options);
+    assert.equal(again.changedObjects.length,0);assert.equal(again.counts.rewrites,0);
+    assert.deepEqual(again.candidate,result.candidate);
+  }
+});
+
 test('syntax checking rejects an invalid changed script',()=>{
   assert.throws(()=>buildSave(save(),{...sources,composer:'function broken('}),/Lua syntax failed.*Global/);
 });

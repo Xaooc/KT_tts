@@ -1,3 +1,4 @@
+do -- module scope: keeps this module's locals out of the object's main chunk (Lua allows 200 locals per function)
 -- KT hub UI kit: design tokens, text measurement and layout-group components.
 -- Every builder returns an XmlUI node whose size is known up front (attributes.preferredHeight / preferredWidth),
 -- so containers sum their children instead of guessing, and positions come from Vertical/HorizontalLayout.
@@ -57,6 +58,21 @@ local function chars(s)
 end
 KT.chars = chars
 
+-- Plain split. MoonSharp matches pattern character classes by the low byte of UTF-16 chars, so "[^ ]+" also
+-- splits on "Р" (U+0420) and "[^,]+" on "Ь" (U+042C). Never use classes on Cyrillic text.
+function KT.split(s, sep, keepEmpty)
+    local out, pos = {}, 1
+    s = tostring(s or "")
+    while true do
+        local at = s:find(sep, pos, true)
+        local piece = s:sub(pos, at and at - 1 or #s)
+        if keepEmpty or piece ~= "" then out[#out + 1] = piece end
+        if not at then break end
+        pos = at + #sep
+    end
+    return out
+end
+
 local function stripTags(s)
     local parts, pos = {}, 1
     while pos <= #s do
@@ -115,7 +131,7 @@ function KT.lineCount(s, width, size, bold)
     local count = 0
     for _, para in ipairs(splitLines(s)) do
         local words, lineW, lines = {}, 0, 1
-        for w in para:gmatch("[^ ]+") do words[#words + 1] = w end
+        for _, w in ipairs(KT.split(para, " ")) do words[#words + 1] = w end
         local space = glyph(" ", plainBold) * (size or KT.fs.m)
         for i, w in ipairs(words) do
             local ww = KT.textWidth(w, size, plainBold)
@@ -135,9 +151,11 @@ function KT.lineCount(s, width, size, bold)
     return math.max(1, count)
 end
 
+-- Wrap against 96% of the width: Unity breaks lines slightly earlier than this word-wrap estimate, and an extra
+-- few pixels of air is better than one block overlapping the next.
 function KT.textHeight(s, width, size, bold)
     size = size or KT.fs.m
-    return math.ceil(KT.lineCount(s, width, size, bold) * size * LINE + SLACK)
+    return math.ceil(KT.lineCount(s, width * 0.96, size, bold) * size * LINE + SLACK)
 end
 
 ------------------------------------------------------------------------------------------------------------------------
@@ -210,7 +228,7 @@ end
 
 -- Uppercase section label with a hairline to the right: "ОРУЖИЕ ───────"
 function KT.section(label, w, count)
-    local text = string.upper(str(label))
+    local text = (KT.upper or string.upper)(str(label))
     local tw = KT.textWidth(text, KT.fs.xs, true) + 10
     local kids = {
         node("Text", { text = text, fontSize = num(KT.fs.xs), fontStyle = "Bold", color = KT.c.muted,
@@ -333,7 +351,8 @@ function KT.button(label, o)
         textAlignment = o.align or "MiddleCenter",
         preferredHeight = num(o.h or 40), preferredWidth = o.w and num(o.w) or nil, minWidth = o.w and num(o.w) or nil,
         flexibleWidth = o.flex and num(o.flex) or nil,
-        tooltip = o.tooltip, tooltipPosition = o.tooltip and "Right" or nil,
+        tooltip = o.tooltip, tooltipPosition = o.tooltip and (o.tooltipPosition or "Right") or nil,
+        tooltipOffset = o.tooltip and "12" or nil,
         tooltipBackgroundColor = o.tooltip and "#0D0F10F2" or nil, tooltipTextColor = o.tooltip and KT.c.fg or nil,
         tooltipBorderColor = o.tooltip and KT.c.line or nil,
         outline = o.kind ~= "primary" and o.kind ~= "ghost" and o.kind ~= "tab" and o.kind ~= "tabOn" and KT.c.line or nil,
@@ -513,4 +532,11 @@ function KT.esc(s)
         pos = lt + 1
     end
     return table.concat(parts)
+end
+
+-- Formatted rule text when ui/rich.lua is loaded; plain measured text otherwise.
+function KT.ruleText(body, o)
+    if KT.rich then return KT.rich(body, o) end
+    return KT.text(body or "", { w = o.w, size = o.size, color = o.color or "#D5DADD" })
+end
 end

@@ -81,7 +81,8 @@ function nodeHtml(n, assets, index, parentBox = { x: 0, y: 0 }) {
       `white-space:${overflow};overflow:${a.verticalOverflow === 'Truncate' ? 'hidden' : 'visible'}`,
       'line-height:normal'
     ].join(';');
-    return `<div ${common} class="text-node" style="${style}">${rich(n.text)}</div>`;
+    // One inner span keeps rich-text runs inline (the outer box may be a flex container for vertical alignment).
+    return `<div ${common} class="text-node" style="${style}"><span style="display:block;width:100%">${rich(n.text)}</span></div>`;
   }
   if (tag === 'Image') {
     let src = a.image && assets[a.image];

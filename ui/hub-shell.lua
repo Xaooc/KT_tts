@@ -1,3 +1,4 @@
+do -- module scope: keeps this module's locals out of the object's main chunk (Lua allows 200 locals per function)
 -- Scoreboard hub: seat-local UI and engine identities, synchronous board/engine commits.
 RuAssistantEngine=nil
 RuAssistantSerial=0
@@ -14,9 +15,22 @@ local function copy(x)
     local out={};for k,v in pairs(x) do out[k]=copy(v) end;return out
 end
 local function integer(x,min,max) return type(x)=="number" and x==math.floor(x) and x>=min and x<=max end
+local playerColors={White=true,Brown=true,Red=true,Orange=true,Yellow=true,Green=true,Teal=true,
+    Blue=true,Purple=true,Pink=true,Black=true}
+local function playerFor(color)
+    if type(color)~="string" or not playerColors[color] then return nil end
+    local ok,p=pcall(function() return Player[color] end)
+    return ok and p or nil
+end
+local function viewerFor(color,steamId)
+    if color~="Grey" then return playerFor(color) end
+    for _,p in ipairs(Player.getPlayers()) do
+        if p.color==color and (steamId==nil or tostring(p.steam_id)==tostring(steamId)) then return p end
+    end
+end
 local function actor(p)
     if not p or not p.color then return nil end
-    local real=Player[p.color]
+    local real=viewerFor(p.color,p.steam_id)
     return real and tostring(real.steam_id)==tostring(p.steam_id) and real or nil
 end
 local function steam(p) return tostring(p.steam_id) end
@@ -51,7 +65,7 @@ end
 local function seats()
     local out={}
     for color,index in pairs(playerNumber or {}) do
-        local p=Player[color]
+        local p=playerFor(color)
         if (index==1 or index==2) and p and p.seated~=false and tostring(p.steam_id or "")~="" then out[index]=p end
     end
     return out
@@ -59,7 +73,9 @@ end
 local function seatPlayer(index)
     local p=seats()[index];if p then return p end
     if RuHub.seatSteam[1]~=nil and RuHub.seatSteam[1]==RuHub.seatSteam[2] then
-        for color,seatIndex in pairs(playerNumber or {}) do if seatIndex==index and Player[color] then return Player[color] end end
+        for color,seatIndex in pairs(playerNumber or {}) do
+            local candidate=playerFor(color);if seatIndex==index and candidate then return candidate end
+        end
     end
 end
 local function hotSeat()
@@ -562,7 +578,7 @@ end
 local function enemyPlayer(p)
     local s=state();local own=s and s.players[owner(p)]
     if hotSeat() and own then
-        local other=s.players[s.opponents[own.id]];return other and Player[other.color] or nil
+        local other=s.players[s.opponents[own.id]];return other and playerFor(other.color) or nil
     end
     local index=playerNumber[p.color];return index and seats()[index==1 and 2 or 1] or nil
 end
@@ -634,7 +650,7 @@ local function refVM(p,v)
     return result
 end
 function ruHubBuildVM(color)
-    local p=Player[color];if not p then return nil end
+    local p=viewerFor(color);if not p then return nil end
     local current=seat(color).toast
     if current then
         local last=RuAssistantEngine and RuAssistantEngine.history[#RuAssistantEngine.history]
@@ -807,7 +823,7 @@ local function openTab(v,key)
     v.tab=key;v.state="open"
 end
 function ruHubOpen(params)
-    local p=Player[params.color];if not p then return false end
+    local p=viewerFor(params.color);if not p then return false end
     if RuHub.migrationPending then retryLegacyMigration() end
     local v=seat(params.color);openTab(v,params.tab or "turn")
     for _,key in ipairs({"refScope","refKey","termKey"}) do if params[key]~=nil then v[key]=params[key] end end
@@ -815,7 +831,7 @@ function ruHubOpen(params)
     ruHubRender(params.color);return true
 end
 function ruAssistantFocus(params)
-    if not Player[params.color] then return false end
+    if not playerFor(params.color) then return false end
     seat(params.color).selected=params.guid;return ruHubOpen({color=params.color,tab="turn"})
 end
 function ruHubRoundEnd()
@@ -1048,7 +1064,7 @@ function onLoad(saved)
     if RuHub.migrationPending then retryLegacyMigration() end
     self.addContextMenuItem("Центр Kill Team",function(color) ruHubOpen({color=color,tab="turn"}) end)
     addHotkey("Центр KT: открыть / свернуть",function(color)
-        if not Player[color] then return end
+        if not viewerFor(color) then return end
         local v=seat(color)
         if v.state=="open" then v.state="rail" else openTab(v,v.tab) end
         ruHubRender(color)
@@ -1057,9 +1073,9 @@ function onLoad(saved)
         if hovered then ruHubOpen({color=color,tab="ref",refScope="model",guid=hovered.getGUID()}) end
     end)
     addHotkey("Центр KT: завершить действие или активацию",function(color)
-        local s=state();if not Player[color] then return end
+        local s=state();local p=playerFor(color);if not p then return end
         local cmd=s and s.activation and s.activation.pending and "finishaction" or "finish"
-        ruHubClick(Player[color],nil,KT.hub.id(color,cmd))
+        ruHubClick(p,nil,KT.hub.id(color,cmd))
     end)
     if RuHub.watch then Wait.stop(RuHub.watch) end
     RuHub.watch=Wait.time(function() syncCounters();syncWounds();ruHubRenderAll() end,2,-1)
@@ -1106,4 +1122,5 @@ function onDestroy()
     end
     Global.call("ruUiUnmount",{owner="hub:defaults"})
     if oldDestroy then pcall(oldDestroy) end
+end
 end

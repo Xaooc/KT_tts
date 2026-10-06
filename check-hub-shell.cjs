@@ -36,7 +36,7 @@ const board = read('inventory/3375-LuaScript.lua').replace(/return __bundle_requ
   '__bundle_require("Scoreboard.339b7f.lua")');
 const settings = JSON.parse(board.match(/defaultSettings\s*=\s*\[\[([\s\S]*?)\]\]/)[1]);
 const sources = ['assistant-core.lua', 'assistant-scoreboard-adapter.lua', 'ui/font-metrics.lua',
-  'ui/kit.lua', 'ui/hub-views.lua', 'ui/hub-shell.lua'];
+  'ui/kit.lua', 'ui/rich.lua', 'ui/hub-views.lua', 'ui/hub-shell.lua'];
 const metadata = 'RuAssistantCatalog=' + lit(catalog) + '\nRuAssistantTeams=' + lit(teams) + '\nRuAssistantNames=' + lit(names);
 const generic = Object.keys(catalog.ploys).find(key => catalog.ploys[key].team === 'hierotekcircle'
   && catalog.ploys[key].generic && catalog.ploys[key].phase === 'firefight');
@@ -108,13 +108,29 @@ function broadcastToAll() end
 local tint={lerp=function(s) return s end,toHex=function() return 'ffffff' end}
 Color=setmetatable({fromString=function() return tint end},{__call=function() return tint end})
 local hotkeys={};function addHotkey(label,fn) hotkeys[label]=fn end
-Player={}
-for _,data in ipairs({{'Red','red-id',true},{'Blue','blue-id',false},{'Grey','grey-id',false}}) do
-    Player[data[1]]={color=data[1],steam_id=data[2],steam_name=data[1],host=data[3],seated=data[1]~='Grey',
+local validColors={'White','Brown','Red','Orange','Yellow','Green','Teal','Blue','Purple','Pink','Black'}
+local validPlayers={}
+local function emptyPlayer(color)
+    return {color=color,steam_id='',steam_name='',host=false,seated=false,
         broadcast=function() end,promote=function() end,getHandObjects=function() return {} end}
 end
-function Player.getPlayers() return {Player.Red,Player.Blue,Player.Grey} end
-function Player.getColors() return {'Red','Blue','Grey'} end
+Player=setmetatable({},{__index=function(t,key)
+    local canon=type(key)=='string' and key:sub(1,1):upper()..key:sub(2):lower() or key
+    if canon~=key and validPlayers[canon] then return t[canon] end
+    if validPlayers[key] then local p=emptyPlayer(key);rawset(t,key,p);return p end
+    error('cannot access field '..tostring(key)..' of userdata<LuaGlobalPlayer>')
+end})
+for _,color in ipairs(validColors) do validPlayers[color]=true;Player[color]=emptyPlayer(color) end
+for _,data in ipairs({{'Red','red-id',true},{'Blue','blue-id',false}}) do
+    local p=Player[data[1]];p.steam_id=data[2];p.steam_name=data[1];p.host=data[3];p.seated=true
+end
+local grey=emptyPlayer('Grey');grey.steam_id='grey-id';grey.steam_name='Grey'
+function Player.getPlayers()
+    local out={};for _,color in ipairs(validColors) do if Player[color].seated then out[#out+1]=Player[color] end end
+    out[#out+1]=grey;return out
+end
+function Player.getSpectators() return {grey} end
+function Player.getColors() return validColors end
 local models={};local highlights={}
 local function model(id,own,name,team)
     local st={owner=own,info={name=name,ktRuTeam=team,categories={'IMMORTAL'},weapons={
@@ -196,6 +212,12 @@ local function liveMatches(expected,actual)
     for i,child in ipairs(expected.children or {}) do liveMatches(child,actual.children[i]) end
 end
 PreviewHubShellScenes={}
+check(Player['red']==Player.Red,'lower-case Player colour resolves like TTS')
+for _,key in ipairs({'Grey','NotAPlayer',17}) do
+    local ok,err=pcall(function() return Player[key] end)
+    check(not ok and tostring(err):find('userdata<LuaGlobalPlayer>',1,true),'Player mock accepted '..tostring(key))
+end
+check(Player.White and Player.White.seated==false,'Empty valid colour must return a player')
 onLoad('');flush()
 check(not RuAssistantEngine,'Unexpected engine on load')
 for _,color in ipairs({'Red','Blue'}) do
@@ -205,6 +227,21 @@ for _,color in ipairs({'Red','Blue'}) do
 end
 check(mounts['hub:defaults']==1,'Defaults mounted repeatedly')
 check(vm('Grey').turn.mode=='spectator' and #vm('Grey').tabs==1 and vm('Grey').tabs[1].key=='ref')
+success(grey,'tab','ref');check(not click(grey,'tab','turn'),'Grey spectator entered turn tab')
+do
+    Player.Blue.seated=false;onLoad('');flush()
+    check(mounted('Red') and mounted('Grey') and not mounted('Blue'),'One-seat render included an empty seat')
+    check(vm().turn.mode=='setup' and not vm().turn.canStart,'One-seat setup allowed starting')
+    success(grey,'tab','ref');check(vm('Grey').turn.mode=='spectator','One-seat spectator render failed')
+    for _,color in ipairs({false,17,'NotAPlayer','red'}) do
+        check(ruHubBuildVM(color)==nil,'Invalid viewer accepted')
+        check(not ruHubOpen({color=color}),'Invalid hub open accepted')
+        check(not ruAssistantFocus({color=color}),'Invalid focus accepted')
+    end
+    check(ruHubBuildVM(nil)==nil,'Nil viewer accepted')
+    check(not ruHubClick({color='NotAPlayer',steam_id='fake'},nil,'kh:NotAPlayer:tab:ref'),'Invalid actor accepted')
+    Player.Blue.seated=true;onLoad('');flush()
+end
 success(Player.Red,'tab','turn');check(vm().turn.mode=='setup' and vm().turn.isHost)
 check(vm().turn.phaseLabels[1]=='Стратегия · инициатива' and vm().turn.phaseLabels[5]=='Конец раунда · подсчёт очков','Setup phase labels')
 PreviewHubShellScenes.setup={copy(mounted('Red'))}
@@ -392,7 +429,7 @@ hotkeys['Центр KT: открыть / свернуть']('Red');flush();check
 hotkeys['Центр KT: открыть / свернуть']('Red');flush();check(vm().state=='open')
 hotkeys['Центр KT: справка по модели под курсором']('Red',models.immort);flush()
 check(vm().tab=='ref' and vm().ref.article.title=='Модель immort','Hovered model hotkey')
-success(Player.Grey,'tab','ref');check(not click(Player.Grey,'tab','turn'),'Spectator turn tab')
+success(grey,'tab','ref');check(not click(grey,'tab','turn'),'Spectator turn tab')
 success(Player.Red,'term','devastating');check(vm().ref.term.title=='Убойное')
 success(Player.Red,'termclose');check(not vm().ref.term)
 refAvailable=false;ruHubRender('Red');flush();check(vm().ref.count==0 and #vm().ref.results==0,'Missing reference HUD')

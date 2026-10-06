@@ -185,7 +185,10 @@ function buildSave(source,{composer,shim,mode='platform',modules={}}){
     const old=object.LuaScript??'';assert(typeof old==='string','LuaScript must be a string at '+displayPath(segments));
     let script=old,rewrites=0;const blocks=[];
     let writer=!global&&(isGlobalUIWriter(old)||markerParts(old).some(part=>part.name==='shim'));
-    if(global){script=replaceBlock(script,'composer',composer,'bottom');blocks.push('composer');}
+    if(global){
+      script=replaceBlock(script,'composer',composer,'bottom');blocks.push('composer');
+      const result=rewriteGlobalUI(script);script=result.text;rewrites=result.rewrites;totalRewrites+=rewrites;
+    }
     if(!global&&mode==='hub'&&Object.hasOwn(hubCounts,object.GUID)){
       hubCounts[object.GUID]++;
       if(object.GUID==='efa3fe'){

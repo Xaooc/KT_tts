@@ -1,3 +1,4 @@
+do -- module scope: keeps this module's locals out of the object's main chunk (Lua allows 200 locals per function)
 -- Operative datasheet shown on R (per seat). Pure builder: view-model -> XmlUI root node.
 -- Weapon rows keep the original ids "weaponButton_<i>_<color>" and the efa3fe/onWeaponAttack handler
 -- (left click = normal roll, right click = auto roll).
@@ -72,7 +73,7 @@ local function weaponRows(vm, w)
                 traitButtons, rowW = {}, 0
             end
             traitButtons[#traitButtons + 1] = KT.button(label, { id = D.id(vm.color, "trait", wp.index .. ":" .. j), w = bw, h = 22,
-                size = 11, kind = "secondary", enabled = t.key ~= nil, tooltip = t.tip })
+                size = 11, kind = "secondary", enabled = t.key ~= nil, tooltip = t.tip, tooltipPosition = "Left" })
             rowW = rowW + (rowW > 0 and 4 or 0) + bw
         end
         if #traitButtons > 0 then traitRows[#traitRows + 1] = KT.hstack(traitButtons, { h = 22, gap = 4 }) end
@@ -125,7 +126,7 @@ local function abilityCard(a, w)
     end
     return KT.vstack({
         titleRow,
-        KT.text(a.body or "", { w = iw, size = 13, color = "#D0D6DA" }),
+        KT.ruleText(a.body, { w = iw, size = 13, title = a.title }),
     }, { w = w, pad = { 12, 12, 10, 10 }, gap = 6, bg = c.s1, outline = c.line })
 end
 
@@ -185,4 +186,5 @@ function D.view(vm)
         KT.node("Image", { preferredHeight = "1", color = c.line, raycastTarget = "false" }),
         footer,
     })
+end
 end

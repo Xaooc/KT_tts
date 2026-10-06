@@ -195,7 +195,7 @@ local function xmlText(nodes)
     end
     return table.concat(out)
 end
-local function newHarness(order,saved,physical)
+local function newHarness(order,saved,physical,seatCount)
     currentRun=order;currentStep="load"
     local globalFirst=order:find('global-first',1,true)==1
     local h={objects={},envs={},frame=0,queue={},nextId=0,context="Global",writes=0,patches=0,
@@ -260,7 +260,10 @@ local function newHarness(order,saved,physical)
             local node=find(nodes,id)
             if node then for key,v in pairs(attrs) do node.attributes[key]=tostring(v) end end
         end
-        function ui.setAttribute(id,key,v) ui.setAttributes(id,{[key]=v}) end
+        function ui.setAttribute(id,key,v)
+            if key=='active' and v==nil then v='' end
+            ui.setAttributes(id,{[key]=v})
+        end
         function ui.getAttribute(id,key) local node=find(nodes,id);return node and node.attributes[key] end
         function ui.getAttributes(id) local node=find(nodes,id);return node and copy(node.attributes) end
         function ui.setValue(id,v)
@@ -286,8 +289,20 @@ local function newHarness(order,saved,physical)
         local t={r=r or 1,g=g or 1,b=b or 1};t.toHex=function() return 'ffffff' end;t.lerp=function() return t end;return t
     end
     api.Color=setmetatable({fromString=function() return tint() end},{__call=function(_,...) return tint(...) end})
-    api.Player={};local connected={}
-    for _,color in ipairs({'Red','Blue','Grey','Black','White','Yellow','Teal','Green','Orange','Purple','Pink','Brown'}) do
+    local validColors={'White','Brown','Red','Orange','Yellow','Green','Teal','Blue','Purple','Pink','Black'}
+    local validPlayers={};for _,color in ipairs(validColors) do validPlayers[color]=true end
+    local function emptyPlayer(color)
+        return {__ttsPlayer=true,color=color,steam_id='',steam_name='',seated=false,host=false,team='None',promote=noop,
+            getHandObjects=function() return {} end}
+    end
+    api.Player=setmetatable({},{__index=function(t,key)
+        local canon=type(key)=='string' and key:sub(1,1):upper()..key:sub(2):lower() or key
+        if canon~=key and validPlayers[canon] then return t[canon] end
+        if validPlayers[key] then local p=emptyPlayer(key);rawset(t,key,p);return p end
+        error('cannot access field '..tostring(key)..' of userdata<LuaGlobalPlayer>')
+    end})
+    local connected={}
+    for _,color in ipairs({'Red','Blue','Grey'}) do
         local p={__ttsPlayer=true,color=color,steam_id=color=='Red' and 'red-id' or color=='Blue' and 'blue-id' or color..'-id',
             steam_name=color,host=color=='Red',seated=color=='Red' or color=='Blue',team='None',lift_height=0.5}
         for _,key in ipairs({'broadcast','promote','clearSelectedObjects','setPointerPosition','showMemoDialog','showConfirmDialog'}) do
@@ -295,23 +310,32 @@ local function newHarness(order,saved,physical)
         end
         p.getHandObjects=function() return {} end
         p.getSelectedObjects=function() return {h.objects[color=='Red' and 'red001' or 'blu001']} end
-        if color=='Red' or color=='Blue' then connected[#connected+1]=p end
+        connected[#connected+1]=p
         p.changeColor=function(target)
             local previous=p.color
-            if api.Player[previous]==p then
-                local empty={color=previous,steam_id='',steam_name='',seated=false,host=false,promote=noop,
-                    getHandObjects=function() return {} end}
-                api.Player[previous]=empty;api.Player[previous:lower()]=empty
-            end
-            p.color=target;p.seated=target~='Grey';api.Player[target]=p;api.Player[target:lower()]=p
+            assert(target=='Grey' or validPlayers[target],'Invalid target colour '..tostring(target))
+            if validPlayers[previous] and api.Player[previous]==p then api.Player[previous]=emptyPlayer(previous) end
+            p.color=target;p.seated=target~='Grey';if validPlayers[target] then api.Player[target]=p end
         end
-        api.Player[color]=p;api.Player[color:lower()]=p
+        if validPlayers[color] then api.Player[color]=p end
     end
+    for _,color in ipairs(validColors) do if not rawget(api.Player,color) then api.Player[color]=emptyPlayer(color) end end
     function api.Player.getPlayers() return connected end
+    function api.Player.getSpectators()
+        local out={};for _,p in ipairs(connected) do if p.color=='Grey' then out[#out+1]=p end end;return out
+    end
     function api.Player.getColors()
         return {'Red','Blue','Grey','Black','White','Yellow','Teal','Green','Orange','Purple','Pink','Brown'}
     end
     function api.Player.getAvailableColors() return {'Grey','Yellow','Teal'} end
+    -- TTS resolves colours case-insensitively (the original round-end script uses Player['blue']).
+    check(api.Player['red']==api.Player.Red,'lower-case Player colour resolves',true,api.Player['red']==api.Player.Red)
+    for _,key in ipairs({'Grey','NotAPlayer',17}) do
+        local ok,err=pcall(function() return api.Player[key] end)
+        check(not ok and tostring(err):find('userdata<LuaGlobalPlayer>',1,true),'strict Player lookup '..tostring(key),
+            'TTS invalid-field error',err)
+    end
+    check(api.Player.White.seated==false,'empty valid Player colour',false,api.Player.White.seated)
     api.Wait={frames=function(fn,n) return schedule(fn,n) end,
         time=function(fn,seconds,reps) return schedule(fn,math.ceil((seconds or 0)*60),reps) end,
         condition=function(fn,predicate,timeout,onTimeout)
@@ -442,7 +466,7 @@ local function newHarness(order,saved,physical)
         if d.guid=='Global' then
             -- Empty seating save sends users to Grey; take real seats before subsequent object load callbacks.
             for i,color in ipairs({'Red','Blue'}) do
-                if connected[i].color~=color then
+                if i<=(seatCount or 2) and connected[i].color~=color then
                     attempt('Global seating '..color,function()
                         h.invoke('Global','assignColor',connected[i],'-1',color..'Btn')
                         h.invoke('Global','onPlayerChangeColor',color)
@@ -460,15 +484,21 @@ local function newHarness(order,saved,physical)
     function h.click(color,id,value)
         local node=assert(h.node(id),'Missing real UI click target '..id)
         local a=node.attributes or {};assert(a.interactable~='false','Disabled real UI target '..id)
+        assert(a.active~='false' and a.active~='','Inactive real UI target '..id)
         local handler=assert(a.onClick,'No real onClick on '..id)
         local guid,fn=handler:match('^([^/]+)/(.+)$');if not guid then guid='Global';fn=handler end
-        local ok,msg=h.invoke(guid,fn,api.Player[color],value or '-1',id);h.pump(4)
+        local player
+        if color=='Grey' then
+            for _,p in ipairs(connected) do if p.color=='Grey' then player=p;break end end
+        else player=api.Player[color] end
+        local ok,msg=h.invoke(guid,fn,player,value or '-1',id);h.pump(4)
         check(ok~=false,'click '..id,'accepted',msg or ok,handler);return ok,msg
     end
     function h.hub(color,cmd,arg,value)
         return h.click(color,'kh:'..color..':'..cmd..(arg and ':'..arg or ''),value)
     end
     function h.state() local e=h.envs['339b7f'].RuAssistantEngine;return e and e.state end
+    h.connected=connected
     return h
 end
 local function panels(h,rail)
@@ -482,11 +512,65 @@ local function panels(h,rail)
             seats and seats[color] and seats[color].state)
     end end
 end
+local function seatButtons(h,label)
+    for _,color in ipairs({'Red','Blue'}) do
+        local expected=h.api.Player[color].seated and 'false' or 'true'
+        local node=h.node(color..'Btn');local actual=node and node.attributes.active
+        check(actual==expected,label..' live '..color..'Btn active',expected,actual)
+    end
+end
+local function activeAttributes(h)
+    local function visit(nodes)
+        for _,node in ipairs(nodes or {}) do
+            for key,value in pairs(node.attributes or {}) do
+                if key=='active' then
+                    check(value~=nil and value~='','nonempty live active '..tostring(node.attributes.id),'nonempty',value)
+                end
+            end
+            visit(node.children)
+        end
+    end
+    visit(h.ui.getXmlTable())
+end
 local function step(name,fn) currentStep=name;attempt(name,fn) end
 PreviewCandidateUI={}
 for _,order in ipairs({'global-last','global-first'}) do
+    do
+        local h=newHarness(order..'-unseated',nil,nil,0)
+        step('unseated buttons after load and spectator click',function()
+            seatButtons(h,'after load')
+            local before=h.writes;h.hub('Grey','expand','rail');h.hub('Grey','tab','ref')
+            h.invoke('339b7f','ruHubRenderAll');h.pump(8)
+            check(h.writes>before,'spectator mount flushed real UI','more setXmlTable calls',h.writes-before)
+            local vm=h.envs['339b7f'].RuHub.vms.Grey
+            check(vm and vm.turn.mode=='spectator' and #vm.tabs==1 and vm.tabs[1].key=='ref',
+                'Grey receives only reference tab','spectator/ref',vm and JSON.encode(vm.tabs))
+            local reference=h.invoke('339b7f','ruHubClick',h.connected[3],'-1','kh:Grey:tab:ref');h.pump(4)
+            check(reference~=false,'additional Grey spectator can open reference',true,reference)
+            local accepted=h.invoke('339b7f','ruHubClick',h.connected[3],'-1','kh:Grey:tab:turn')
+            check(accepted==false,'spectator turn click rejected',false,accepted)
+            seatButtons(h,'after hub mount/render')
+            h.invoke('bafa93','toggleGameLog');h.invoke('f4ee71','DisplayClock',1,65);h.pump(8)
+            seatButtons(h,'after legacy game-log/stopwatch writes');activeAttributes(h)
+        end)
+        step('one seat and seating button clicks',function()
+            h.click('Grey','RedBtn');h.invoke('Global','onPlayerChangeColor','Red');h.pump(8)
+            check(h.api.Player.Red.seated and not h.api.Player.Blue.seated,'only Red occupied','true/false',
+                tostring(h.api.Player.Red.seated)..'/'..tostring(h.api.Player.Blue.seated))
+            h.invoke('339b7f','ruHubRenderAll');h.pump(8);seatButtons(h,'one-seat hub render')
+            check(h.node('khDock_Red') and h.node('khDock_Grey') and not h.node('khDock_Blue'),
+                'one-seat docks','Red/Grey only',h.node('khDock_Blue') and 'Blue present')
+            h.invoke('bafa93','toggleGameLog');h.invoke('f4ee71','DisplayClock',1,66);h.pump(8)
+            seatButtons(h,'one-seat legacy writes')
+            h.click('Grey','BlueBtn');h.invoke('Global','onPlayerChangeColor','Blue');h.pump(8)
+            seatButtons(h,'both seats occupied');activeAttributes(h)
+        end)
+        PreviewCandidateUI[order..'-seating']=h.ui.getXmlTable()
+        Report.runs[#Report.runs+1]={order=order..'-seating',loadedScripts=h.loads,setXmlTable=h.writes,
+            attributePatches=h.patches,finalElements=count(h.ui.getXmlTable()),frames=h.frame,crossObjectCalls=#h.calls}
+    end
     local h=newHarness(order)
-    step('initial UI coexistence',function() panels(h,true) end)
+    step('initial UI coexistence',function() panels(h,true);seatButtons(h,'after seated load') end)
     local initialCP
     step('expand/setup/start/enroll/activation',function()
         local board=h.envs['339b7f'];initialCP={board.scoring[1].command,board.scoring[2].command}
@@ -571,6 +655,7 @@ for _,order in ipairs({'global-last','global-first'}) do
         for i=1,10 do h.invoke('339b7f','ruHubRenderAll') end;h.pump(8)
         check(h.writes-before<=1,'ten hub renders batched','<=1 setXmlTable',h.writes-before)
         check(h.node('gamelogGlobalUI')~=nil,'hub render retains game log','present',h.node('gamelogGlobalUI')~=nil)
+        seatButtons(h,'after legacy writes and hub batching');activeAttributes(h)
         check(h.writes<=60,'scenario XML write budget','<=60',h.writes)
     end)
     local result={order=order,loadedScripts=h.loads,setXmlTable=h.writes,attributePatches=h.patches,
@@ -604,7 +689,8 @@ for _,order in ipairs({'global-last','global-first'}) do
         local hub=restored.envs['339b7f'].RuHub
         check(hub and hub.seats.Red.state==expected.redMode and hub.seats.Blue.state==expected.blueMode,
             'restored dock states',expected.redMode..'/'..expected.blueMode,hub and JSON.encode(hub.seats))
-        panels(restored,false);PreviewCandidateUI[order..'-reload']=restored.ui.getXmlTable()
+        panels(restored,false);seatButtons(restored,'after reload');activeAttributes(restored)
+        PreviewCandidateUI[order..'-reload']=restored.ui.getXmlTable()
         Report.runs[#Report.runs+1]={order=currentRun,loadedScripts=restored.loads,setXmlTable=restored.writes,
             finalElements=count(restored.ui.getXmlTable()),frames=restored.frame,crossObjectCalls=#restored.calls}
     end)

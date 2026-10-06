@@ -1,3 +1,4 @@
+do -- module scope: keeps this module's locals out of the object's main chunk (Lua allows 200 locals per function)
 -- KT hub views: pure functions view-model -> XmlUI nodes. No game state is read here.
 -- The shell (ui/hub-shell.lua) builds the view-model (contract documented above each view) and mounts the result.
 -- Click ids: "kh:<color>:<cmd>[:<arg>]"; every interactive element routes to KT.handler (ruHubClick).
@@ -433,8 +434,8 @@ end
 -- Rule text with glossary chips (used by ploys, enemy rules and reference)
 -- body: rich text (supports <b>); terms = {{key,label}} -> clickable chips below the text.
 ------------------------------------------------------------------------------------------------------------------------
-function H.ruleBlock(color, body, terms, w, size)
-    local list = { KT.text(body or "", { w = w, size = size or fs.m, color = "#D5DADD" }) }
+function H.ruleBlock(color, body, terms, w, size, title)
+    local list = { KT.ruleText(body, { w = w, size = size or fs.m, title = title }) }
     if terms and #terms > 0 then
         local row, rows, rowW = {}, {}, 0
         for _, t in ipairs(terms) do
@@ -480,7 +481,7 @@ local function ployRow(color, p, w)
         })
     end
     local iw = w - 24
-    local list = { headRow, H.ruleBlock(color, p.body, p.terms, iw) }
+    local list = { headRow, H.ruleBlock(color, p.body, p.terms, iw, nil, p.name) }
     if p.expiry then
         list[#list + 1] = KT.text("Эффект действует", { w = iw, size = fs.xs, bold = true, color = c.muted })
         list[#list + 1] = KT.seg({ { "round", "До конца раунда" }, { "action", "До конца действия" }, { "manual", "Сниму сам" } },
@@ -579,7 +580,7 @@ function H.viewEnemy(vm, w)
                         }, { gap = 2, flex = 1 }),
                         KT.vstack({ (KT.chip(tostring(p.cost or 1) .. " CP", "cost", { size = 12, h = 24 })) }, { w = 50, stretch = false }),
                     }, { gap = 10, stretch = false, align = "UpperLeft" }),
-                    H.ruleBlock(color, p.body, p.terms, w - 24),
+                    H.ruleBlock(color, p.body, p.terms, w - 24, nil, p.name),
                     btn(color, "enemyploy", p.key, "Свернуть", { kind = "ghost", h = 26, size = 12 }),
                 }, { w = w, pad = 12, gap = 10, bg = c.s2, outline = c.accent })
             else
@@ -605,7 +606,7 @@ function H.viewEnemy(vm, w)
             list[#list + 1] = KT.card({
                 KT.text(r.title, { w = w - 24, size = 15, bold = true }),
                 r.english and KT.text(r.english, { w = w - 24, size = fs.s, color = c.muted }) or nil,
-                H.ruleBlock(color, r.body, r.terms, w - 24, 13),
+                H.ruleBlock(color, r.body, r.terms, w - 24, 13, r.title),
             }, { w = w })
         end
     end
@@ -705,7 +706,10 @@ local function refList(color, r, h)
         row[#row + 1] = btn(color, "refscope", s[1], s[2], { kind = on and "rowOn" or "row", h = 30, size = 12, flex = 1 })
         if #row == 3 then scopes[#scopes + 1] = KT.hstack(row, { h = 30, gap = 4 }); row = {} end
     end
-    if #row > 0 then scopes[#scopes + 1] = KT.hstack(row, { h = 30, gap = 4 }) end
+    if #row > 0 then
+        while #row < 3 do row[#row + 1] = KT.node("Panel", { flexibleWidth = "1", preferredHeight = "30", color = c.clear }) end
+        scopes[#scopes + 1] = KT.hstack(row, { h = 30, gap = 4 })
+    end
     local items = {}
     for _, it in ipairs(r.results or {}) do
         local inside = KT.vstack({
@@ -777,7 +781,7 @@ local function refArticle(color, r, w, h)
             }, { gap = 4, flex = 1 }),
             a.cost and KT.vstack({ (KT.chip(a.cost, "cost", { size = 14, h = 30 })) }, { w = costW, align = "UpperRight", stretch = false }) or nil,
         }, { gap = 12, stretch = false, align = "UpperLeft" })
-        if a.body and a.body ~= "" then list[#list + 1] = H.ruleBlock(color, a.body, a.terms, math.min(iw, 620), fs.l) end
+        if a.body and a.body ~= "" then list[#list + 1] = H.ruleBlock(color, a.body, a.terms, math.min(iw, 620), 15, a.title) end
         if a.weapons and #a.weapons > 0 then
             list[#list + 1] = KT.section("Оружие", iw)
             list[#list + 1] = weaponTable(color, a.weapons, iw)
@@ -789,7 +793,7 @@ local function refArticle(color, r, w, h)
                     ab.cost and KT.vstack({ (KT.chip(ab.cost, "cost", { size = 12, h = 24 })) }, { w = 54, stretch = false }) or nil,
                 }, { stretch = false, align = "UpperLeft" }),
                 ab.english and KT.text(ab.english, { w = iw - 24, size = fs.s, color = c.muted }) or nil,
-                KT.text(ab.body or "", { w = iw - 24, size = fs.m, color = "#D5DADD" }),
+                KT.ruleText(ab.body, { w = iw - 24, size = fs.m, title = ab.title }),
             }, { w = iw })
         end
     end
@@ -808,7 +812,7 @@ local function termPopover(color, t)
         }, { h = 26, gap = 8 }),
         KT.text(t.title, { w = iw, size = 17, bold = true }),
         t.english and KT.text(t.english, { w = iw, size = fs.s, color = c.muted }) or nil,
-        KT.text(t.body or "", { w = iw, size = fs.m, color = "#D5DADD" }),
+        KT.ruleText(t.body, { w = iw, size = fs.m, title = t.title }),
         KT.text("Закрытие вернёт к тому же месту статьи.", { w = iw, size = fs.xs, color = c.dim }),
     }, { w = w, pad = 14, gap = 8, bg = c.rail, outline = c.accent })
     box.attributes.ignoreLayout = "true"
@@ -975,4 +979,5 @@ function H.dock(vm)
         shadow = "#000000B0", shadowDistance = "0 -12", childForceExpandWidth = "false", childForceExpandHeight = "true",
         spacing = "0", allowDragging = "false", raycastTarget = "true",
     }, kids)
+end
 end

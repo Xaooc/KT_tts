@@ -5,7 +5,7 @@ const { lua, lauxlib, lualib, to_luastring, to_jsstring } = require('./tools/nod
 const tts = 'C:/Users/PC/Documents/My Games/Tabletop Simulator';
 const installed = JSON.parse(fs.readFileSync(tts + '/Mods/Workshop/3573927734_RU.json', 'utf8'));
 const hud = installed.ObjectStates.find(o => o.GUID === 'efa3fe').LuaScript;
-const anchor = '-- Russian references, per-seat state, no changes to attacks/CP/activation state.';
+const anchor = '--[[RU-UI:ref-service:BEGIN]]';
 assert(hud.includes(anchor), 'Installed legacy HUD anchor missing');
 const original = hud.slice(0, hud.indexOf(anchor));
 const names = ['ruReferenceTeams', 'ruReferenceCommon', 'ruReferenceEquipment', 'ruReferenceShared',
@@ -103,10 +103,20 @@ local function ready()
     local current = waits; waits = {}
     for _, task in ipairs(current) do assert(task[2]()); task[1]() end
 end
-Player = {getColors = function() return {"Red", "Blue"} end}
-for _, color in ipairs({"Red", "Blue", "Yellow"}) do
-    Player[color] = {broadcast = function(msg) broadcasts[#broadcasts + 1] = msg end}
-end
+local validColors = {White = true, Brown = true, Red = true, Orange = true, Yellow = true, Green = true,
+    Teal = true, Blue = true, Purple = true, Pink = true, Black = true}
+local playerObjects = {}
+Player = setmetatable({getColors = function() return {"Red", "Blue"} end}, {__index = function(_, color)
+    if type(color) == "string" and not validColors[color] then
+        local canon = color:sub(1, 1):upper() .. color:sub(2):lower()
+        if validColors[canon] then color = canon end
+    end
+    if not validColors[color] then error("cannot access field " .. tostring(color) .. " of userdata<LuaGlobalPlayer>") end
+    if not playerObjects[color] then
+        playerObjects[color] = {broadcast = function(msg) broadcasts[#broadcasts + 1] = msg end}
+    end
+    return playerObjects[color]
+end})
 local red, blue = {color = "Red", clearSelectedObjects = function() end}, {color = "Blue"}
 local function operative(x)
     local o = {hasTag = function(tag) return tag == "Operative" end, getName = function() return x.name end,
@@ -145,7 +155,7 @@ const cases = `
 local real, catalog = ${lit(real)}, ${lit(catalog)}
 local quoteProbe = ruReplace('1″ Devastating 1', "″", '"')
 check(quoteProbe == '1" Devastating 1', "Literal quote replacement: " .. quoteProbe)
-local tokenProbe, radiusProbe = profileParts(quoteProbe)
+local tokenProbe, radiusProbe = RuRefInternal.profileParts(quoteProbe)
 check(tokenProbe == "Devastating 1" and radiusProbe == "1", "Radius token: " .. tokenProbe .. " / " .. tostring(radiusProbe))
 check(select("#", ruBuildCompactRuleGrid()) == 1, "Legacy grid hook must return one node")
 local function resolve(terms, tuples)
@@ -190,6 +200,25 @@ local en = ruRefQuery({team = "Hierotek Circle", scope = "team", query = "reanim
 check(ru.count > 0 and en.count > 0, "Cyrillic/English search")
 check(ruRefQuery({team = "hierotekcircle", scope = "team"}).count >= ru.count, "Empty query")
 check(ruRefQuery({scope = "weapon"}).count == 25, "Common rule catalog without operative")
+local terms = ruRefQuery({scope = "terms"})
+check(terms.count == 119 and terms.scopes[1][1] == "terms", "Complete terms catalog/scope ordering")
+check(ruRefQuery({}).count == 119, "Terms scope must be the no-context default")
+local previousTitle
+for _, result in ipairs(terms.results) do
+    if previousTitle then check(KT.ref.fold(previousTitle) <= KT.ref.fold(result.title), "Terms must be alphabetically sorted") end
+    previousTitle = result.title
+    local article = ruRefQuery({scope = "terms", key = result.key}).article
+    check(article and article.title ~= "" and article.english ~= "" and article.body ~= "" and type(article.terms) == "table",
+        "Term article incomplete: " .. result.key)
+end
+local covered = ruRefQuery({scope = "terms", query = "укрыт"})
+local lethalSearch = ruRefQuery({scope = "terms", query = "Lethal"})
+check(covered.count > 0, "Cyrillic cover search")
+local lethalTitle
+for _, result in ipairs(lethalSearch.results) do
+    if result.title:find("Смертоносное", 1, true) then lethalTitle = result.title end
+end
+check(lethalTitle ~= nil, "English Lethal search: " .. (lethalSearch.results[1] and lethalSearch.results[1].title or "none"))
 local boldTerms = ruRefTermsIn({text = "AP APL <b>Дистанция контроля</b> Cover"})
 check(#boldTerms > 0 and #boldTerms <= 8, "Term cap")
 check(boldTerms[1].key == "glossary:core-control", "Bold terms must come first")
@@ -247,6 +276,11 @@ for n, model in ipairs(real) do
     end end
     PreviewDatasheetScenes["ds" .. n] = clone(tree)
 end
+local greyObject = operative(real[1])
+onOperativeRandomize({greyObject, "Grey"})
+local greyMount = mounts["datasheet:Grey"]
+ruDsClick({color = "Grey"}, nil, "kd:Grey:close")
+check(greyMount == nil and mounts["datasheet:Grey"] == nil, "Grey spectator must not affect datasheets")
 
 for _, model in ipairs(catalog) do
     local object = operative(model)
@@ -269,12 +303,33 @@ for _, model in ipairs(catalog) do
             local names = {}; for _, entry in ipairs(selected) do names[#names + 1] = entry.english end
             check(#selected == expected, model.state.info.name .. " / " .. wr .. ": expected " .. expected
                 .. ", found " .. #selected .. " (" .. table.concat(names, ", ") .. ")")
-            for _, entry in ipairs(selected) do resolve({entry}) end
+            for _, entry in ipairs(selected) do
+                resolve({entry})
+                for token in entry.title:gmatch("%S+") do
+                    token = token:gsub("^[%p]+", ""):gsub("[%p]+$", "")
+                    check(token ~= "x" and token ~= "X" and token ~= "x+" and token ~= "X+",
+                        "Weapon label placeholder: " .. entry.title .. " / " .. wr)
+                end
+            end
         end
         profiles = profiles + 1
     end
     for _, weapon in ipairs(ctx.vm.weapons) do
-        for _, trait in ipairs(weapon.traits) do if trait.key then resolve({trait}) end end
+        local source = ctx.weapons[weapon.index]
+        local sourceCount, labelCount = 0, #weapon.traits
+        for token in ruDelimited(source.wr, ",") do
+            local clean = ruTrim(token)
+            if clean ~= "" and clean ~= "-" and clean ~= "—" then sourceCount = sourceCount + 1 end
+        end
+        check(labelCount == sourceCount, "Weapon chip coverage: " .. model.state.info.name .. " / " .. source.wr)
+        for _, trait in ipairs(weapon.traits) do
+            for token in trait.label:gmatch("%S+") do
+                token = token:gsub("^[%p]+", ""):gsub("[%p]+$", "")
+                check(token ~= "x" and token ~= "X" and token ~= "x+" and token ~= "X+",
+                    "Datasheet chip placeholder: " .. trait.label)
+            end
+            if trait.key then resolve({trait}) end
+        end
     end
 end
 check(profiles == 1612, "Expected 1612 catalog profiles")
@@ -333,7 +388,17 @@ local seek = ruRulesForProfile("Yellow", {wr = "Seek Light"})
 check(#seek == 1 and seek[1].english == "Seek Light", "Seek Light contamination")
 check(ruWeaponTooltip("Yellow", {wr = "Heavy (Reposition only)"}):find("только Перемещение", 1, true), "Heavy restriction")
 local lethal = ruRulesForProfile("Yellow", {wr = "Lethal 5+"})
-check(#lethal == 1 and not lethal[1].title:find("5++", 1, true), "Lethal doubled plus")
+check(#lethal == 1 and lethal[1].title:find("Смертоносное 5+", 1, true) and not lethal[1].title:find("5++", 1, true),
+    "Lethal parameterized label")
+local range = ruRulesForProfile("Yellow", {wr = "Rng 6\\\""})
+check(#range == 1 and range[1].key == "common:Range" and range[1].title:find("Дистанция 6\\\"", 1, true),
+    "Rng must link to the Range rule")
+local accurate = ruRulesForProfile("Yellow", {wr = "Accurate 1"})
+check(#accurate == 1 and accurate[1].title:find("Точность 1", 1, true), "Accurate parameterized translation")
+local piercing = ruRulesForProfile("Yellow", {wr = "Piercing 1"})
+check(#piercing == 1 and piercing[1].title:find("Пробивание 1", 1, true), "Piercing parameterized translation")
+local psychic = ruRulesForProfile("Yellow", {wr = "PSYCHIC"})
+check(#psychic == 1 and psychic[1].title:find("Психическое", 1, true), "Psychic title case")
 local radius = ruRulesForProfile("Yellow", {wr = "1″ Devastating 1"})
 check(#radius == 1 and radius[1].text:find("1″", 1, true), "Weapon rule radius lost")
 for _, call in ipairs({{ruOpenPloys, "ruHubOpen", {color = "Red", tab = "ploys"}},
@@ -352,7 +417,7 @@ ruLoadPloys(saved)
 return checks .. " assertions; " .. teams .. " teams; " .. ploys .. " ploys; " .. profiles .. " profiles; "
     .. bodyCount .. " full bodies; 3 datasheet scenes"
 `;
-const modules = ['ui/kit.lua', 'ui/datasheet-view.lua', 'ui/ref-service.lua', 'ui/datasheet.lua'];
+const modules = ['ui/kit.lua', 'ui/rich.lua', 'ui/datasheet-view.lua', 'ui/ref-service.lua', 'ui/datasheet.lua'];
 const script = [driver, original, data, ...modules.map(file => fs.readFileSync(file, 'utf8')), cases].join('\n');
 fs.mkdirSync('tmp', {recursive: true});
 fs.mkdirSync('output', {recursive: true});

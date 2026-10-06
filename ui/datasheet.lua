@@ -1,3 +1,4 @@
+do -- module scope: keeps this module's locals out of the object's main chunk (Lua allows 200 locals per function)
 KT.handler = "ruDsClick"
 -- R HUD lifecycle. Composer ownership isolates every seat from the hub and other HUDs.
 local scenes, pending, awaiting, revisions = {}, {}, {}, {}
@@ -38,7 +39,7 @@ end
 
 function onOperativeRandomize(params)
     local operative, color = params[1], params[2]
-    if not operative or not color or not operative.hasTag("Operative") then return end
+    if not operative or not KT.ref.player(color) or not operative.hasTag("Operative") then return end
     if ruDeferOperative(params) then return end
     ruRememberOperative(color, operative.getTable("state") or {}, operative)
     local ctx = RuReferenceCache[color]
@@ -92,7 +93,7 @@ function ensureDatasheetHUD(color) mount(color) end
 
 function ruDsClick(player, value, id)
     local color, command, arg = tostring(id or ""):match("^kd:([A-Za-z]+):([a-z]+):?(.*)$")
-    if not player or player.color ~= color or not scenes[color] then return end
+    if not player or not KT.ref.player(color) or player.color ~= color or not scenes[color] then return end
     if command == "close" then deleteDatasheetHUD(color)
     elseif command == "openref" then KT.ref.hub("ruHubOpen", {color = color, tab = "ref", refScope = "model"})
     elseif command == "trait" then
@@ -101,4 +102,5 @@ function ruDsClick(player, value, id)
         local trait = weapon and weapon.traits[tonumber(j)]
         if trait and trait.key then KT.ref.hub("ruHubOpen", {color = color, tab = "ref", termKey = trait.key}) end
     end
+end
 end

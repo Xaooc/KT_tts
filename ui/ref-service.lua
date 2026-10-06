@@ -1,7 +1,16 @@
+do -- module scope: keeps this module's locals out of the object's main chunk (Lua allows 200 locals per function)
 -- Read-only reference API for the scoreboard hub. Data tables remain in the HUD's lexical scope.
 KT.ref = KT.ref or {}
 local R = KT.ref
 RuReferenceCache = RuReferenceCache or {}
+
+local playerColors = {White = true, Brown = true, Red = true, Orange = true, Yellow = true, Green = true,
+    Teal = true, Blue = true, Purple = true, Pink = true, Black = true}
+function R.player(color)
+    if not playerColors[color] then return nil end
+    local ok, player = pcall(function() return Player[color] end)
+    return ok and player or nil
+end
 
 function ruReplace(s, needle, replacement)
     s = tostring(s or "")
@@ -112,7 +121,15 @@ local function splitTitle(title)
 end
 
 local function display(raw) return splitTitle(ruDisplayName(raw or "")) end
-local documents, candidates, commonKeys, foldedAliases = {}, {}, {}, {}
+local documents, candidates, commonKeys, foldedAliases, termEntries = {}, {}, {}, {}, {}
+local function addTerm(entry)
+    if entry and not termEntries[entry.key] then termEntries[entry.key] = entry end
+end
+local weaponTitles = {
+    Accurate = "Точность x (Accurate x)", Brutal = "Убойное (Brutal)",
+    Piercing = "Пробивание x (Piercing x)", Rending = "Разрывающее (Rending)",
+    Range = "Дистанция x (Range x)", PSYCHIC = "Психическое (PSYCHIC)",
+}
 
 local function aliases(title, english)
     local out = {}
@@ -136,29 +153,40 @@ local function register(id, title, english, body, termAliases)
 end
 
 for _, e in ipairs(ruCoreGlossary or {}) do
-    register("glossary:" .. e.id, e.title, e.english, e.text, e.aliases or aliases(e.title, e.english))
+    addTerm(register("glossary:" .. e.id, e.title, e.english or (e.aliases and e.aliases[1]), e.text,
+        e.aliases or aliases(e.title, e.english)))
 end
 for _, e in ipairs(ruReferenceCommon or {}) do
     local id = "common:" .. e.id
     local a = aliases(e.title, e.english)
+    local title = weaponTitles[e.english] or e.title
     if e.english == "Devastating" then
         a[#a + 1] = "Разрушительное"
         a[#a + 1] = "Разрушительный"
     end
-    register(id, display(e.title), e.english, e.text, a)
+    addTerm(register(id, display(title), e.english, e.text, a))
     commonKeys[key(e.english)] = id
 end
 local sharedNames = {}
 for name in pairs(ruReferenceShared or {}) do sharedNames[#sharedNames + 1] = name end
 table.sort(sharedNames)
 for _, name in ipairs(sharedNames) do
-    register("shared:" .. name, display(name), name, ruReferenceShared[name], aliases(ruDisplayName(name), name))
+    addTerm(register("shared:" .. name, display(name), name, ruReferenceShared[name], aliases(ruDisplayName(name), name)))
 end
 for teamKey, team in pairs(ruReferenceTeams or {}) do
     for _, e in ipairs(team.entries or {}) do register("team:" .. teamKey .. ":" .. e.id, e.title, e.english, e.text) end
     for name, text in pairs(team.rules or {}) do register("named:" .. teamKey .. ":" .. name, display(name), name, text) end
 end
-for _, e in ipairs(ruReferenceEquipment or {}) do register("equipment:" .. e.id, e.title, e.english, e.text) end
+for _, e in ipairs(ruReferenceEquipment or {}) do
+    addTerm(register("equipment:" .. e.id, e.title, e.english, e.text, aliases(e.title, e.english)))
+end
+local glossaryTerms = {}
+for _, e in pairs(termEntries) do glossaryTerms[#glossaryTerms + 1] = e end
+table.sort(glossaryTerms, function(a, b)
+    local left, right = fold(a.title), fold(b.title)
+    if left ~= right then return left < right end
+    return a.key < b.key
+end)
 
 local function charAt(s, pos)
     if #"Я" == 1 then return s:sub(pos, pos) end
@@ -250,11 +278,18 @@ local function profileParts(raw)
     return s, nil
 end
 
+RuRefInternal = RuRefInternal or {}
+RuRefInternal.profileParts = profileParts   -- exposed for check-ref-service.cjs
+
 local function matchTrait(wr, name)
     name = ruleName(name):lower()
     if name == "" then return false end
     for part in ruDelimited(wr, ",") do
-        part = ruReplace(ruReplace(ruleName(part), "″", '"'), "”", '"'):lower()
+        part = ruTrim(ruReplace(ruReplace(part, "″", '"'), "”", '"'))
+        while part:sub(1, 1) == "*" or part:sub(1, 1) == "'" do part = part:sub(2) end
+        while part:sub(-1) == "*" or part:sub(-1) == "'" do part = part:sub(1, -2) end
+        if part:sub(1, 1) == '"' and part:sub(-1) == '"' then part = part:sub(2, -2) end
+        part = part:lower()
         local candidate = profileParts(part)
         if candidate == name or (candidate:sub(1, #name) == name and candidate:sub(#name + 1, #name + 1):match("[^a-z]")) then
             if not (name == "seek" and part:find("seek light", 1, true))
@@ -309,14 +344,19 @@ local function rulesForProfile(ctx, w)
     local out, wr = {}, tostring(w.wr or "")
     for _, entry in ipairs(ruReferenceCommon) do
         local matched = ctx.currentEdition and matchTrait(wr, entry.english)
+        if ctx.currentEdition and not matched and key(entry.english) == "range" then matched = matchTrait(wr, "Rng") end
         if matched then
             local e = copy(entry)
             e.key = commonKeys[key(e.english)]
+            e.title = weaponTitles[e.english] or e.title
             local token, radius = profileParts(matched)
-            local parameter = token:sub(#entry.english + 1):match('^%s*(%d+%+?"?)')
-            if parameter and e.title:find("x", 1, true) then
-                e.title = ruReplace(ruReplace(e.title, "x+", parameter), "x", parameter)
-                e.text = "<b>Значение x для этого профиля: " .. parameter .. ".</b>\n\n" .. e.text
+            local prefix = token:sub(1, #entry.english):lower() == entry.english:lower() and entry.english
+                or key(entry.english) == "range" and "Rng" or entry.english
+            local parameter = token:sub(#prefix + 1):match('^%s*(%d+%+?"?)')
+            if parameter then
+                e.title = ruReplace(ruReplace(e.title, "x+", parameter), "X+", parameter)
+                e.title = ruReplace(ruReplace(e.title, "x", parameter), "X", parameter)
+                e.text = "<b>" .. e.title .. ".</b>\n\n" .. e.text
             end
             if radius then e.text = "<b>Радиус для этого профиля: " .. radius .. "″.</b>\n\n" .. e.text end
             if entry.english == "Heavy" then
@@ -350,16 +390,51 @@ local function traits(ctx, w)
     local out, selected = {}, rulesForProfile(ctx, w)
     for token in ruDelimited(w.wr, ",") do
         token = ruTrim(token)
+        -- Shorthand used by some datacards: "P1" = Piercing 1, "PC1" = Piercing Crits 1.
+        local short = token:match("^[Pp][Cc]?(%d+)$")
+        if short then token = (token:sub(2, 2):lower() == "c" and "Piercing Crits " or "Piercing ") .. short end
         if token ~= "" and token ~= "-" and token ~= "—" then
             local chosen
-            for _, e in ipairs(selected) do if matchTrait(token, e.english) then chosen = e; break end end
+            for _, e in ipairs(selected) do
+                local matched = matchTrait(token, e.english)
+                if not matched and key(e.english) == "range" then matched = matchTrait(token, "Rng") end
+                if matched then chosen = e; break end
+            end
             if not chosen then
                 local found = termsIn(token)
                 if found[1] then chosen = documents[found[1].key] end
             end
+            -- Range written as "Rng 6"" / "Rng (6")" / "Range 6"" is a common rule in every edition.
+            local lowered = token:lower()
+            local isRange = lowered:sub(1, 3) == "rng" or lowered:sub(1, 5) == "range"
+            if isRange and not chosen then
+                for _, entry in ipairs(ruReferenceCommon) do
+                    if key(entry.english) == "range" then
+                        chosen = copy(entry); chosen.key = commonKeys[key(entry.english)]; break
+                    end
+                end
+            end
+            local label = chosen and display(chosen.title) or display(token)
+            -- Legacy saved rules are named like "Lethal x+" / "Devastating x": put the profile's value in.
+            local digits = token:match("(%d+)")
+            if digits then
+                local plus = token:find(digits .. "+", 1, true) and "+" or ""
+                local inch = (token:find(digits .. '"', 1, true) or token:find(digits .. "″", 1, true) or isRange) and '"' or ""
+                local value = digits .. plus .. inch
+                if isRange then
+                    label = "Дистанция " .. digits .. '"'
+                else
+                    for _, placeholder in ipairs({ " x+", " X+", " x", " X" }) do
+                        if label:sub(-#placeholder) == placeholder then
+                            label = label:sub(1, -#placeholder - 1) .. " " .. value
+                            break
+                        end
+                    end
+                end
+            end
             out[#out + 1] = {
-                label = chosen and display(chosen.title) or display(token), key = chosen and chosen.key or nil,
-                tip = chosen and shortTip(chosen.text or chosen.body) or nil,
+                label = label, key = chosen and chosen.key or nil,
+                tip = chosen and shortTip(label .. ". " .. plain(chosen.text or chosen.body or "")) or nil,
             }
         end
     end
@@ -448,7 +523,7 @@ function ruWeaponTooltip(color, w)
     return #parts > 0 and table.concat(parts, "\n\n") or "У этого профиля нет сохранённых определений правил."
 end
 
-local scopes = {{"model", "Модель"}, {"weapon", "Оружие"}, {"team", "Отряд"},
+local scopes = {{"terms", "Термины"}, {"model", "Модель"}, {"weapon", "Оружие"}, {"team", "Отряд"},
     {"ploy", "Уловки"}, {"eq", "Снаряжение"}, {"faq", "FAQ"}}
 
 local function article(entry, team)
@@ -472,9 +547,11 @@ local function query(p)
         ctx = buildContext(p.color, object.getTable("state") or {}, object)
     end
     local teamKey = p.team and key(p.team) or ctx and ctx.team
-    local team, scope, items = ruReferenceTeams[teamKey], p.scope or "model", {}
+    local team, scope, items = ruReferenceTeams[teamKey], p.scope or (ctx and "model" or "terms"), {}
     local function push(e) items[#items + 1] = e end
-    if scope == "model" and ctx then
+    if scope == "terms" then
+        for _, e in ipairs(glossaryTerms) do push(e) end
+    elseif scope == "model" and ctx then
         local vm, bodies = ctx.vm, {}
         for _, e in ipairs(vm.abilities) do bodies[#bodies + 1] = "<b>" .. e.title .. "</b>\n" .. e.body end
         push({key = "operative:" .. ctx.identity, label = "Модель", title = vm.name, english = vm.english,
@@ -514,11 +591,17 @@ local function query(p)
         end
     end
     table.sort(matched, function(a, b)
+        if scope == "terms" then
+            local left, right = fold(a.entry.title), fold(b.entry.title)
+            if left ~= right then return left < right end
+            return a.entry.key < b.entry.key
+        end
         if a.titleMatch ~= b.titleMatch then return a.titleMatch end
         return a.index < b.index
     end)
     local result = {scopes = copy(scopes), results = {}, count = #matched}
-    for i = 1, math.min(60, #matched) do
+    local limit = scope == "terms" and #matched or math.min(60, #matched)
+    for i = 1, limit do
         local e = matched[i].entry
         result.results[#result.results + 1] = {key = e.key, title = e.title, english = e.english}
     end
@@ -600,3 +683,4 @@ function ruOpenWeaponReference(player, value, id)
 end
 
 R.buildContext, R.plain, R.fold, R.display = buildContext, plain, fold, display
+end
