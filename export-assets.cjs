@@ -1,10 +1,13 @@
 const fs = require('fs');
 const path = require('path');
 const crypto = require('crypto');
+const {resolveTtsDir}=require('./tts-paths.cjs');
 
-const DEFAULT_SAVE = 'C:/Users/PC/Documents/My Games/Tabletop Simulator/Saves/KT24-The-Killzone-RU.json';
-const DEFAULT_PACK = 'C:/Users/PC/Documents/My Games/Tabletop Simulator/Saves/Saved Objects/KT41-RU.json';
-const DEFAULT_ROOT = 'C:/Users/PC/Documents/My Games/Tabletop Simulator/Mods/KT-RU';
+let DEFAULT_TTS_DIR;
+try { DEFAULT_TTS_DIR = resolveTtsDir(); } catch { /* Resolve after CLI options are known. */ }
+const DEFAULT_SAVE = DEFAULT_TTS_DIR&&path.join(DEFAULT_TTS_DIR,'Saves','KT24-The-Killzone-RU.json');
+const DEFAULT_PACK = DEFAULT_TTS_DIR&&path.join(DEFAULT_TTS_DIR,'Saves','Saved Objects','KT41-RU.json');
+const DEFAULT_ROOT = DEFAULT_TTS_DIR&&path.join(DEFAULT_TTS_DIR,'Mods','KT-RU');
 const ASSET_KEYS = /(?:url|path|image|pdf|asset)/i;
 
 function sha256(file) {
@@ -100,7 +103,19 @@ function parseArgs(argv) {
     else if (argv[i] === '--pack') result.pack = argv[++i];
     else if (argv[i] === '--asset-root') result.root = argv[++i];
     else if (argv[i] === '--out-dir') result.out = argv[++i];
+    else if (argv[i] === '--tts-dir') {
+      const dir = resolveTtsDir({dir: argv[++i]});
+      result.save = path.join(dir, 'Saves', 'KT24-The-Killzone-RU.json');
+      result.pack = path.join(dir, 'Saves', 'Saved Objects', 'KT41-RU.json');
+      result.root = path.join(dir, 'Mods', 'KT-RU');
+    }
     else throw new Error(`Unknown argument: ${argv[i]}`);
+  }
+  if(!result.save||!result.pack||!result.root){
+    const dir=resolveTtsDir();
+    result.save||=path.join(dir,'Saves','KT24-The-Killzone-RU.json');
+    result.pack||=path.join(dir,'Saves','Saved Objects','KT41-RU.json');
+    result.root||=path.join(dir,'Mods','KT-RU');
   }
   return result;
 }
@@ -149,6 +164,8 @@ function exportAssets(options) {
     'GitHub: создайте публичный репозиторий, загрузите содержимое этой папки (включая подпапки),',
     'затем используйте базовый адрес:',
     'https://raw.githubusercontent.com/<user>/<repo>/main/',
+    'Проверка URL: node relink-assets.cjs --base <URL> --check-urls <количество>. Ошибки HEAD записываются в relink-report.json.',
+    'Установка: добавьте --install, чтобы скопировать связанные файлы в Saves. При совпадении имён сохраняются обе версии.',
     'Передавайте этот адрес скрипту relink-assets.cjs через --base.',
     '',
     'Steam Cloud: загрузка через TTS Modding → Cloud Manager выполняется по одному файлу.',

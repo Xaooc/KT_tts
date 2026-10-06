@@ -563,7 +563,9 @@ function ruLoadPloys(saved)
     if ok and type(value) == "table" and value.ruPloysVersion == 1 and type(value.seats) == "table" then
         legacyPloys = copy(value)
     end
+    ruRefLoaded = true
 end
+function ruRefIsLoaded() return ruRefLoaded == true end
 function ruRefLegacyPloys() return safe(function() return copy(legacyPloys) end) end
 function onSave() return JSON.encode(next(legacyPloys) and legacyPloys or {ruPloysVersion = 1, seats = {}}) end
 

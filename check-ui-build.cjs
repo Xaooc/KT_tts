@@ -1,6 +1,28 @@
 const {test}=require('node:test'),assert=require('node:assert/strict');
 const {replaceBlock,markerParts,isGlobalUIWriter,rewriteGlobalUI,cutHudLegacy,cutScoreboardLegacy,
   buildSave,assertOnlyScriptsChanged,detectFormatting,serializeSave,anchors,runtimeAnchor}=require('./build-ui.cjs');
+const {resolveTtsDir,ttsCandidates,ttsTargets}=require('./tts-paths.cjs');
+const {targets:installTargets,hash}=require('./build-ui.cjs');
+const {selectTargets}=require('./install-ui.cjs');
+
+test('TTS path resolution honors CLI, environment, and existing Documents fallbacks',()=>{
+  const home='C:/Users/example',paths=ttsCandidates(home);
+  assert.equal(resolveTtsDir({dir:'C:/custom/tts',home,exists:()=>false}),'C:\\custom\\tts');
+  assert.equal(resolveTtsDir({env:{KT_TTS_DIR:'C:/env/tts'},home,exists:()=>false}),'C:\\env\\tts');
+  assert.equal(resolveTtsDir({home,exists:file=>file===paths[1]}),paths[1]);
+  assert.equal(resolveTtsDir({home,exists:file=>file===paths[2]}),paths[2]);
+  assert.throws(()=>resolveTtsDir({home,exists:()=>false}),error=>paths.every(file=>error.message.includes(file)));
+  assert.equal(ttsTargets(paths[0])[0],require('path').join(paths[0],'Mods','Workshop','3573927734_RU.json'));
+});
+
+test('installer selects only targets unchanged from their recorded source baseline',()=>{
+  const entries=installTargets.map(target=>({target,sha256:hash(require('node:fs').readFileSync(target))}));
+  const source=entries[0].sha256;
+  const selected=selectTargets({sourceSHA256:source,targetHashes:entries},'both');
+  assert(selected.eligible.some(entry=>entry.target===entries[0].target));
+  for(const entry of selected.eligible)assert.equal(entry.expected,source);
+  for(const entry of selected.skipped)assert.match(entry.reason,/changed since build|differs from the build source/);
+});
 
 const sources={composer:'function ruCompose() end',shim:'local UI = Global.UI'};
 const data=[

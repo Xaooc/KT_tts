@@ -1,4 +1,4 @@
--- Scoreboard hub: seat-local UI, stable Steam identities, synchronous board/engine commits.
+-- Scoreboard hub: seat-local UI and engine identities, synchronous board/engine commits.
 RuAssistantEngine=nil
 RuAssistantSerial=0
 RuHub={seats={},marks={},cpByRound={},trees={},vms={},pending={}}
@@ -19,8 +19,26 @@ local function actor(p)
     local real=Player[p.color]
     return real and tostring(real.steam_id)==tostring(p.steam_id) and real or nil
 end
-local function owner(p) return tostring(p.steam_id) end
+local function steam(p) return tostring(p.steam_id) end
 local function state() return RuAssistantEngine and RuAssistantEngine.state end
+local function seatMode()
+    local s=state();if not s then return true end
+    for id in pairs(s.players) do if id:sub(1,5)~="seat:" then return false end end
+    return true
+end
+local function owner(p) return seatMode() and "seat:"..tostring(playerNumber[p.color]) or steam(p) end
+local function virtualActor(p)
+    return {steam_id=owner(p),color=p.color,host=p.host,steam_name=p.steam_name}
+end
+local function boardCommit(p,params)
+    if not seatMode() then return ruAssistantBoardCommit(p,params) end
+    -- The unchanged adapter also checks Player[color] identity. Scope its lookup to this synchronous call.
+    local realPlayers=Player;local virtual=virtualActor(p)
+    Player=setmetatable({[p.color]=virtual},{__index=function(_,key) return realPlayers[key] end})
+    local ok,result=pcall(ruAssistantBoardCommit,virtual,params);Player=realPlayers
+    if not ok then return {ok=false,error=tostring(result)} end
+    return result
+end
 local function hubRound() return math.max(1,getCurrentRound()) end
 local function seat(color)
     if not RuHub.seats[color] then
@@ -37,6 +55,9 @@ local function seats()
         if (index==1 or index==2) and p and p.seated~=false and tostring(p.steam_id or "")~="" then out[index]=p end
     end
     return out
+end
+local function hotSeat()
+    local seated=seats();return seated[1] and seated[2] and steam(seated[1])==steam(seated[2]) or false
 end
 local function colors()
     local found={}
@@ -106,7 +127,7 @@ local function objectUnit(obj,playersMap)
         counteracted=marker.counteracted==true}
 end
 local function scan(p)
-    local out={};local map={[owner(p)]=true}
+    local out={};local map={[steam(p)]=true}
     for _,obj in ipairs(getAllObjects()) do local u=objectUnit(obj,map);if u then out[#out+1]=u end end
     return out
 end
@@ -120,7 +141,7 @@ local function team(p)
     local s=state();local own=s and s.players[owner(p)]
     if own and RuAssistantTeams[own.team] then return own.team end
     local m=marks(p)
-    if not RuAssistantTeams[m.team] then
+    if not RuAssistantTeams[m.team] and not hotSeat() then
         for _,u in ipairs(scan(p)) do if RuAssistantTeams[u.team] then m.team=u.team;break end end
     end
     return m.team or ""
@@ -140,8 +161,9 @@ end
 local function syncWounds()
     local s=state();if not s then return end;local changed=false
     for id,u in pairs(s.units) do
-        local obj=getObjectFromGUID(id);local fresh=obj and objectUnit(obj,s.players)
-        if fresh and fresh.owner==u.owner then
+        local obj=getObjectFromGUID(id);local physicalOwner=u.modelOwner or u.owner
+        local fresh=obj and objectUnit(obj,{[physicalOwner]=true})
+        if fresh and fresh.owner==physicalOwner then
             for _,field in ipairs({"wounds","ready","order","guard","guardOrder"}) do
                 if u[field]~=fresh[field] then u[field]=fresh[field];changed=true end
             end
@@ -155,7 +177,8 @@ function ruAssistantSyncModels()
     for id,u in pairs(s.units) do
         local obj=getObjectFromGUID(id)
         if obj then pcall(function()
-            local st=obj.getTable("state");if type(st)~="table" or tostring(st.owner)~=u.owner then return end
+            local st=obj.getTable("state")
+            if type(st)~="table" or tostring(st.owner)~=(u.modelOwner or u.owner) then return end
             st.ktRuAssistant={order=u.order,ready=u.ready,counteracted=u.counteracted};st.ready=u.ready
             st.order=u.guard and (u.guardOrder=="GuardConceal" and "GuardConceal" or "Guard") or u.order
             obj.setTable("state",st);obj.call("saveState");pcall(function() obj.call("refreshWounds") end)
@@ -183,7 +206,9 @@ end
 local function toast(p,title,body,undo)
     local v=seat(p.color)
     if v.toastTimer then Wait.stop(v.toastTimer) end
-    local t={title=title or "",body=body or "",undo=undo==true};v.toast=t;v.toastHidden=false
+    local last=RuAssistantEngine and RuAssistantEngine.history[#RuAssistantEngine.history]
+    local t={title=title or "",body=body or "",undo=undo==true,
+        undoRequest=undo and last and last.request};v.toast=t;v.toastHidden=false
     v.toastTimer=Wait.time(function()
         if v.toast~=t then return end
         v.toastHidden=true;v.toastTimer=nil
@@ -200,7 +225,14 @@ function ruAssistantCommit(p,event)
     p=actor(p);if not p or not authority(p) then return false,"Игрок или место не совпадают с участником партии" end
     syncCounters();syncWounds()
     local e=RuAssistantEngine;event.revision=event.revision or e.state.revision;event.request=event.request or request(p)
-    local proposal=ruAssistantTrustedDispatch(e,p,event,RuAssistantCatalog)
+    if event.type=="undo" then
+        local last=e.history[#e.history]
+        if last and last.owner~=owner(p) then
+            local message="Сначала отмените последнее действие соперника"
+            toast(p,message,"",false);ruHubRender(p.color);return false,message
+        end
+    end
+    local proposal=ruAssistantTrustedDispatch(e,virtualActor(p),event,RuAssistantCatalog)
     if not proposal.ok then toast(p,proposal.error,"",false);ruHubRender(p.color);return false,proposal.error end
     if proposal.message=="already-applied" then return true,proposal.message end
     local expected={scoring[1].command,scoring[2].command};local changes={}
@@ -209,7 +241,7 @@ function ruAssistantCommit(p,event)
     end
     if e.state.revision~=proposal.expectedRevision then return false,"Партия изменилась. Повторите действие" end
     if next(changes) then
-        local result=ruAssistantBoardCommit(p,{request=event.request,revision=RuAssistantCPRevision,
+        local result=boardCommit(p,{request=event.request,revision=RuAssistantCPRevision,
             expected=expected,changes=changes,deferLog=true})
         if not result.ok then toast(p,result.error,"",false);ruHubRender(p.color);return false,result.error end
     end
@@ -242,7 +274,7 @@ end
 local function start(p)
     if p.host~=true then return false,"Партии помощника запускает ведущий" end
     local seated=seats()
-    if not seated[1] or not seated[2] or owner(seated[1])==owner(seated[2]) then return false,"Нужны два игрока на местах табло" end
+    if not seated[1] or not seated[2] then return false,"Нужны два места табло" end
     if owner(p)~=owner(seated[1]) and owner(p)~=owner(seated[2]) then return false,"Ведущий должен занять место табло" end
     if state() then return false,"Партия уже запущена" end
     local setup=seat(p.color).setup;local r=setup.round
@@ -266,10 +298,19 @@ end
 local function enroll(p,all)
     if not authority(p) then return false,"Сначала подключите партию" end
     local s=state();if s.activation then return false,"Завершите активацию перед изменением состава" end
+    local own=owner(p);local chosen=team(p)
+    if all and hotSeat() then
+        local other=s.players[s.opponents[own]]
+        if not RuAssistantTeams[chosen] or chosen==other.team then
+            return false,'Выделите модели рамкой и нажмите «+ Добавить выделенные»: выберите разные отряды для мест'
+        end
+    end
     local objects=all and getAllObjects() or p.getSelectedObjects();local n=0
     for _,obj in ipairs(objects) do
-        local u=objectUnit(obj,s.players)
-        if u and u.owner==owner(p) and (not s.units[u.id] or s.units[u.id].unavailable) then
+        local u=objectUnit(obj,{[steam(p)]=true});local enrolled=u and s.units[u.id]
+        if u and (not enrolled or enrolled.owner==own and enrolled.unavailable)
+            and (not all or not hotSeat() or u.team==chosen) then
+            u.modelOwner=u.owner;u.owner=own
             local keep={};for _,effect in ipairs(s.effects) do if effect.target~=u.id then keep[#keep+1]=effect end end
             s.effects=keep;s.units[u.id]=u;n=n+1
             if RuAssistantTeams[u.team] then s.players[u.owner].team=u.team;marks(p).team=u.team end
@@ -282,7 +323,7 @@ end
 local function preview(p,event)
     if not authority(p) then return false,"Партия не подключена к вашему месту" end
     event.revision=state().revision;event.request="hub:preview"
-    local result=ruAssistantTrustedDispatch(RuAssistantEngine,p,event,RuAssistantCatalog)
+    local result=ruAssistantTrustedDispatch(RuAssistantEngine,virtualActor(p),event,RuAssistantCatalog)
     return result.ok,result.error
 end
 local function actionEvent(v,key)
@@ -307,6 +348,14 @@ local function unitVM(u,p)
     if u.wounds<=0 or u.unavailable then out.state="down"
     else out.state=active and "active" or u.ready and "ready" or "used" end
     out.injured=u.wounds>0 and u.wounds<math.ceil(u.maxWounds/2)
+    if out.injured then
+        local move=tonumber(tostring(u.move):match("[%d.]+"))
+        if move then out.move=tostring(math.max(0,move-2))..'"' end
+        for _,w in ipairs(out.weapons or {}) do
+            local hit=tonumber(tostring(w.bs):match("%d+"))
+            if hit then w.bs=tostring(math.min(6,hit+1)).."+" end
+        end
+    end
     out.canActivate=s and s.phase=="firefight" and not s.activation and s.turnOwner==owner(p)
         and u.owner==owner(p) and u.ready and u.wounds>0 and not u.unavailable or false
     return out
@@ -340,6 +389,7 @@ local function turnVM(p,v,units)
         local labels={};for i,player in pairs(seats()) do labels[i]=player.steam_name or player.color end
         t={mode="setup",isHost=p.host==true,round=v.setup.round,phaseIndex=v.setup.phaseIndex,
             phaseLabels=phaseLabels,turnLabels=labels,turnIndex=v.setup.turnIndex,canStart=seats()[1] and seats()[2]~=nil}
+        if hotSeat() then t.hint="Игра за одним компьютером: переключайте цвет места, центр следует за местом" end
         t.foot={{cmd="start",label="Начать партию",kind="primary",flex=true,enabled=p.host==true and t.canStart}}
         return t
     end
@@ -354,7 +404,7 @@ local function turnVM(p,v,units)
         t.orderLocked=a.mode=="counteract" or next(a.performed)~=nil or a.pending~=nil
         t.counteract=a.mode=="counteract";t.unavailable=u.wounds<=0 or u.unavailable
         t.advanced=copy(v.advanced);t.advanced.apLimit=a.ap;t.weapons={};t.actions={};t.effects={}
-        for i,w in ipairs(u.weapons or {}) do
+        for i,w in ipairs(t.unit.weapons or {}) do
             v.weapon=v.weapon or w.key;local wp=copy(w);wp.selected=w.key==v.weapon;wp.tip=w.rules;t.weapons[i]=wp
         end
         if a.pending then t.pending={label=a.pending.name,weapon=a.pending.weapon} end
@@ -491,7 +541,13 @@ local function enemyVM(p,v)
     local enemy=enemyPlayer(p);if not enemy then return {} end
     local index=playerNumber[enemy.color];local key=team(enemy);local units={}
     -- Only invoked while this seat's enemy tab is open; reserves in bags never enter this scan.
-    for _,u in ipairs(scan(enemy)) do units[#units+1]=unitVM(u,enemy) end
+    if hotSeat() then
+        for _,u in pairs(state() and state().units or {}) do
+            if u.owner==owner(enemy) then units[#units+1]=unitVM(u,enemy) end
+        end
+    else
+        for _,u in ipairs(scan(enemy)) do units[#units+1]=unitVM(u,enemy) end
+    end
     table.sort(units,function(a,b) return a.name<b.name end)
     local ev=copy(v);ev.ployQuery="";ev.ploySeg="pinned";ev.ployCost=nil
     local ploys=ploysVM(enemy,ev,true).items
@@ -550,6 +606,11 @@ local function refVM(p,v)
 end
 function ruHubBuildVM(color)
     local p=Player[color];if not p then return nil end
+    local current=seat(color).toast
+    if current then
+        local last=RuAssistantEngine and RuAssistantEngine.history[#RuAssistantEngine.history]
+        current.undo=last~=nil and last.owner==owner(p) and last.request==current.undoRequest
+    end
     local v=seat(color);local vm={color=color,state=v.state,tab=v.tab,status=statusVM(),toast=v.toast}
     if spectator(p) then
         vm.tab="ref";vm.tabs={};vm.turn={mode="spectator"}
@@ -575,6 +636,56 @@ function ruHubBuildVM(color)
     elseif vm.tab=="ref" then vm.ref=refVM(p,v) end
     return vm
 end
+local displayFields={name=true,english=true,title=true,body=true,text=true,label=true,sub=true,who=true,unitName=true,
+    action=true,turnOwnerName=true,targetName=true,tip=true,reason=true,expiryLabel=true,hint=true,note=true,
+    footNote=true,summary=true,move=true,save=true,bs=true,a=true,d=true,team=true,expiry=true,weapon=true,
+    cost=true,traits=true,emptyHint=true,emptyTitle=true,waiting=true,delta=true}
+local function escapeDisplay(value,field)
+    if type(value)=="string" then return displayFields[field] and KT.esc(value) or value end
+    if type(value)~="table" then return value end
+    local out={}
+    for key,item in pairs(value) do
+        local childField=key
+        if field=="turnLabels" or field=="phaseLabels" or field=="names" or field=="traits" then childField="label"
+        elseif (field=="terms" or field=="teamOptions" or field=="scopes") and type(key)=="number" then
+            out[key]={item[1],KT.esc(item[2])}
+        end
+        if out[key]==nil then out[key]=escapeDisplay(item,childField) end
+    end
+    return out
+end
+local function injuryRows(tree,vm)
+    local rows={};local group=vm.squad or vm.enemy
+    for _,u in ipairs(group and group.units or {}) do
+        if u.injured then
+            local base=KT.hub.id(vm.color,vm.squad and "select" or "enemyunit",u.guid)
+            local hits={};for _,w in ipairs(u.weapons or {}) do hits[#hits+1]=tostring(w.bs) end
+            rows[base.."_n"]={id=base.."_injury",text='MOVE '..tostring(u.move)..' · BS/WS '..table.concat(hits," / ")}
+        end
+    end
+    local function grow(n)
+        local attrs=n.attributes or {};local added=0;local beforeMax,afterMax=0,0
+        for _,child in ipairs(n.children or {}) do
+            beforeMax=math.max(beforeMax,KT.prefH(child));added=added+grow(child)
+            afterMax=math.max(afterMax,KT.prefH(child))
+        end
+        local first=n.children and n.children[1];local row=first and rows[(first.attributes or {}).id]
+        if n.tag=="VerticalLayout" and row then
+            local caption=KT.text(row.text,{id=row.id,w=tonumber(first.attributes.preferredWidth),size=KT.fs.xs,color=KT.c.hurt})
+            n.children[#n.children+1]=caption;added=added+KT.prefH(caption)+(tonumber(attrs.spacing) or 0)
+        end
+        if n.tag=="VerticalScrollView" then
+            if first then first.attributes.height=tostring(KT.prefH(first)) end
+            return 0 -- The viewport stays fixed while its content grows.
+        end
+        if n.tag~="VerticalLayout" then added=afterMax-beforeMax end
+        if attrs.preferredHeight and not attrs.height then
+            attrs.preferredHeight=tostring(KT.prefH(n)+added);return added
+        end
+        return 0
+    end
+    grow(tree)
+end
 local function ids(node,color,path)
     assert(type(node)=="table","Invalid dock child "..color..":"..path.." ("..tostring(node)..")")
     node.attributes=node.attributes or {};node.attributes.id=node.attributes.id or "khp_"..color.."_"..path
@@ -596,9 +707,21 @@ end
 local function renderNow(color)
     if RuHub.destroyed then return end
     local vm=ruHubBuildVM(color);if not vm then return end
-    local tree=KT.hub.dock(vm);ids(tree,color,"1")
+    local display=escapeDisplay(vm)
+    -- Footer/phase shortcuts share a destination with rail tabs, but must have distinct XmlUI ids.
+    for _,buttons in ipairs({display.foot or {},display.turn and display.turn.buttons or {}}) do
+        for _,button in ipairs(buttons) do if button.cmd=="tab" then button.cmd="opentab" end end
+    end
+    -- Keep the toast's button in the tree so another seat's commit can disable it with an attribute patch.
+    if display.toast then display.toast.undo=true end
+    local tree=KT.hub.dock(display);injuryRows(tree,display);ids(tree,color,"1")
     local function hide(n)
         if n.attributes.id==KT.hub.id(color,"toast") then n.attributes.active=seat(color).toastHidden and "false" or "true" end
+        if n.attributes.id==KT.hub.id(color,"undo") then
+            local enabled=vm.toast and vm.toast.undo==true
+            n.attributes.active=enabled and "true" or "false";n.attributes.interactable=enabled and "true" or "false"
+            if not enabled then n.attributes.onClick="" end
+        end
         if n.attributes.id and n.attributes.id:find("kh:"..color..":counter:",1,true)==1 then
             n.attributes.tooltip="Контрдействие: один раз за раунд на оперативника"
         end
@@ -606,7 +729,12 @@ local function renderNow(color)
     end
     hide(tree)
     local old=RuHub.trees[color]
-    if shape(old,tree) then
+    -- Attribute reads fall back to stale real UI during an unmount; inspect the composer's shadow roots instead.
+    local present=false
+    for _,root in ipairs(Global.call("ruUiLegacy",{owner="hub",op="getXmlTable"}) or {}) do
+        if (root.attributes or {}).id==tree.attributes.id then present=true;break end
+    end
+    if present and shape(old,tree) then
         local patches={};diff(old,tree,patches);Global.call("ruUiPatchMany",patches)
     else
         -- The composer overlays saved patches on mounts. Drop this owner's obsolete patches before changing shape.
@@ -632,9 +760,16 @@ function ruHubRenderAll()
     end
 end
 function ruAssistantRender() ruHubRenderAll() end
+local function openTab(v,key)
+    if key=="ploys" and (v.tab~="ploys" or v.state~="open") then
+        local s=state()
+        v.ploySeg=s and (s.phase=="firefight" or s.activation~=nil) and "fire" or "strat"
+    end
+    v.tab=key;v.state="open"
+end
 function ruHubOpen(params)
     local p=Player[params.color];if not p then return false end
-    local v=seat(params.color);v.state="open";v.tab=params.tab or "turn"
+    local v=seat(params.color);openTab(v,params.tab or "turn")
     for _,key in ipairs({"refScope","refKey","termKey"}) do if params[key]~=nil then v[key]=params[key] end end
     if params.guid then v.refGuid=params.guid;v.refScope="model" end
     ruHubRender(params.color);return true
@@ -649,8 +784,10 @@ function ruHubRoundEnd()
 end
 function ruHubLegacyPloys(data)
     for color,old in pairs(type(data)=="table" and data.seats or {}) do
-        if not RuHub.marks[color] then
-            local m={team=old.team or "",used={},pinned={},round=old.round or hubRound()}
+        do
+            -- Rendering can create empty marks while efa3fe is still loading; merge into those marks.
+            local m=RuHub.marks[color] or {team=old.team or "",used={},pinned={},round=old.round or hubRound()}
+            if m.team=="" then m.team=old.team or "" end
             local references=nil
             for _,field in ipairs({"used","pinned"}) do
                 for id,on in pairs(old[field] or {}) do
@@ -670,7 +807,9 @@ function ruHubLegacyPloys(data)
                             end
                         end
                     end
-                    if on and RuAssistantCatalog.ploys[key] then m[field][key]=true end
+                    if on and RuAssistantCatalog.ploys[key] and (field~="used" or m.round==(old.round or hubRound())) then
+                        m[field][key]=true
+                    end
                 end
             end
             RuHub.marks[color]=m
@@ -687,11 +826,12 @@ function ruHubClick(p,value,id)
     if color~=p.color or not cmd then return false end
     if arg=="" then arg=nil end
     local v=seat(color);local s=state();local event=nil;local ok,msg=nil,nil
-    if spectator(p) and cmd~="tab" and cmd~="collapse" and cmd~="expand" and cmd~="term" and cmd~="termclose"
+    if spectator(p) and cmd~="tab" and cmd~="opentab" and cmd~="collapse" and cmd~="expand" and cmd~="term" and cmd~="termclose"
         and cmd~="refscope" and cmd~="refsearch" and cmd~="refopen" then return false end
-    if cmd=="tab" then if not validTab(arg) or spectator(p) and arg~="ref" then return false end;v.tab=arg;v.state="open"
+    if cmd=="tab" or cmd=="opentab" then
+        if not validTab(arg) or spectator(p) and arg~="ref" then return false end;openTab(v,arg)
     elseif cmd=="collapse" then v.state="rail"
-    elseif cmd=="expand" then v.state="open"
+    elseif cmd=="expand" then openTab(v,v.tab)
     elseif cmd=="term" then v.tab="ref";v.termKey=arg;v.state="open"
     elseif cmd=="termclose" then v.termKey=nil
     elseif cmd=="setupround" then if integer(tonumber(arg),1,rules.scoring.maxRounds) then v.setup.round=tonumber(arg) end
@@ -700,7 +840,7 @@ function ruHubClick(p,value,id)
     elseif cmd=="start" then ok,msg=start(p)
     elseif cmd=="select" then
         local u=s and s.units[arg];local obj=arg and getObjectFromGUID(arg)
-        local fresh=obj and objectUnit(obj,{[owner(p)]=true})
+        local fresh=not u and obj and objectUnit(obj,{[steam(p)]=true})
         if not (u and u.owner==owner(p) or fresh) then return false end
         v.selected=arg;if obj then pcall(function() obj.highlightOn(color,3) end) end
     elseif cmd=="begin" or cmd=="counter" then
@@ -842,11 +982,26 @@ function onLoad(saved)
             if mode=="open" or mode=="rail" or mode=="hidden" then seat(color).state=mode end
         end
     end
-    if next(RuHub.marks)==nil then ruHubLegacyPloys(refCall("ruRefLegacyPloys",{}) or {}) end
+    if RuHub.migration then Wait.stop(RuHub.migration);RuHub.migration=nil end
+    if next(RuHub.marks)==nil then
+        local token={};RuHub.migrationToken=token
+        RuHub.migration=Wait.condition(function()
+            if RuHub.destroyed or RuHub.migrationToken~=token then return end
+            RuHub.migration=nil
+            ruHubLegacyPloys(refCall("ruRefLegacyPloys",{}) or {})
+        end,function()
+            local ready,value=pcall(function()
+                local hud=getObjectFromGUID("efa3fe");return hud and hud.getVar("ruRefLoaded")==true
+            end)
+            return ready and value==true
+        end,10,function() if RuHub.migrationToken==token then RuHub.migration=nil end end)
+    end
     self.addContextMenuItem("Центр Kill Team",function(color) ruHubOpen({color=color,tab="turn"}) end)
     addHotkey("Центр KT: открыть / свернуть",function(color)
         if not Player[color] then return end
-        local v=seat(color);v.state=v.state=="open" and "rail" or "open";ruHubRender(color)
+        local v=seat(color)
+        if v.state=="open" then v.state="rail" else openTab(v,v.tab) end
+        ruHubRender(color)
     end)
     addHotkey("Центр KT: справка по модели под курсором",function(color,hovered)
         if hovered then ruHubOpen({color=color,tab="ref",refScope="model",guid=hovered.getGUID()}) end
@@ -894,6 +1049,7 @@ local oldDestroy=onDestroy
 function onDestroy()
     RuHub.destroyed=true
     if RuHub.watch then Wait.stop(RuHub.watch) end
+    if RuHub.migration then Wait.stop(RuHub.migration) end;RuHub.migrationToken=nil
     for color,v in pairs(RuHub.seats) do
         if v.toastTimer then Wait.stop(v.toastTimer) end
         Global.call("ruUiUnmount",{owner="hub:"..color})

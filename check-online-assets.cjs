@@ -2,6 +2,10 @@ const test = require('node:test');
 const assert = require('node:assert/strict');
 const {collectReferences, decodeFileRef, extractRefs, missingAssets} = require('./export-assets.cjs');
 const {encodeRelative, replaceStrings} = require('./relink-assets.cjs');
+const {checkURLs, installCopy} = require('./relink-assets.cjs');
+const fs = require('fs');
+const os = require('os');
+const path = require('path');
 
 test('collects references in nested objects, states, decks, UI assets, and Lua strings', () => {
   const data = {
@@ -47,4 +51,30 @@ test('reports missing referenced files for a nonzero export decision', () => {
   assert.equal(missing.length, 1);
   assert.match(missing[0].ref, /missing\.png$/);
   assert.equal(missing[0].usedIn[0].source, 'save');
+});
+
+test('HEAD URL checks mark HTTP failures and request errors as failed', async () => {
+  const originalFetch=global.fetch;
+  global.fetch=async url=>{
+    if(url.endsWith('/missing'))return {status:404};
+    if(url.endsWith('/redirect'))return {status:302};
+    throw new Error('network unavailable');
+  };
+  try{
+    const result=await checkURLs(['https://example.test/missing','https://example.test/redirect',
+      'https://example.test/error'],3);
+    assert.equal(result.filter(item=>!item.ok).length,2);
+    assert(result.some(item=>item.status===302&&item.ok));
+  }finally{global.fetch=originalFetch;}
+});
+
+test('online install copies preserve conflicting files and use a hash suffix', t => {
+  const dir=fs.mkdtempSync(path.join(os.tmpdir(),'kt-online-'));
+  t.after(()=>fs.rmSync(dir,{recursive:true,force:true}));
+  const source=path.join(dir,'source.json'),destination=path.join(dir,'Saves','entry.json');
+  fs.mkdirSync(path.dirname(destination));fs.writeFileSync(source,'new content');fs.writeFileSync(destination,'user content');
+  const installed=installCopy(source,destination);
+  assert.match(installed.path,/entry-[a-f0-9]{8}\.json$/);
+  assert.equal(fs.readFileSync(destination,'utf8'),'user content');
+  assert.equal(fs.readFileSync(installed.path,'utf8'),'new content');
 });

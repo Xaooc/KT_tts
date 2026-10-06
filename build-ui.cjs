@@ -1,8 +1,9 @@
 const fs=require('fs'),path=require('path'),assert=require('node:assert/strict'),crypto=require('crypto');
 const {parseSource}=require('./lua-display.cjs');
 const root=__dirname;
-const tts='C:/Users/PC/Documents/My Games/Tabletop Simulator';
-const targets=[tts+'/Mods/Workshop/3573927734_RU.json',tts+'/Saves/KT24-The-Killzone-RU.json'];
+const {resolveTtsDir,ttsTargets}=require('./tts-paths.cjs');
+const targets=[];
+try{targets.push(...ttsTargets(resolveTtsDir()));}catch{}
 const hash=bytes=>crypto.createHash('sha256').update(bytes).digest('hex');
 const anchors=[
   '-- Russian references, per-seat state, no changes to attacks/CP/activation state.',
@@ -263,20 +264,26 @@ function loadSources(options){
 }
 
 function cli(argv){
-  const options={source:targets[0],out:path.join(root,'output','KT24-The-Killzone-RU-ui-candidate.json'),
+  const options={source:undefined,out:path.join(root,'output','KT24-The-Killzone-RU-ui-candidate.json'),
     mode:'platform',composer:path.join(root,'ui','composer.lua'),shim:path.join(root,'ui','shim.lua'),verifyIdempotent:false};
+  let sourceExplicit=false;
   for(let i=0;i<argv.length;i++){
     const arg=argv[i];
     if(arg==='--verify-idempotent'){options.verifyIdempotent=true;continue;}
-    const key={'--source':'source','--out':'out','--mode':'mode','--composer':'composer','--shim':'shim'}[arg];
+    const key={'--source':'source','--out':'out','--mode':'mode','--composer':'composer','--shim':'shim','--tts-dir':'ttsDir'}[arg];
     assert(key,'Unknown option: '+arg);assert(argv[i+1]&&!argv[i+1].startsWith('--'),'Missing value for '+arg);
     options[key]=argv[++i];
+    if(key==='source')sourceExplicit=true;
   }
   assert(['platform','hub'].includes(options.mode),'Mode must be platform or hub');
+  if(options.ttsDir){const resolved=ttsTargets(resolveTtsDir({dir:options.ttsDir}));targets.splice(0,targets.length,...resolved);
+  }else if(!targets.length)targets.push(...ttsTargets(resolveTtsDir()));
+  if(!sourceExplicit)options.source=targets[0];
   options.source=path.resolve(options.source);options.out=path.resolve(options.out);
   assert(options.out.toLowerCase()!==options.source.toLowerCase(),'Candidate must not overwrite its source');
   const installedOut=targets.some(target=>path.resolve(target).toLowerCase()===options.out.toLowerCase());
   assert(!installedOut,'Candidate cannot overwrite installed files');
+  const targetHashes=targets.map(target=>({target,sha256:hash(fs.readFileSync(target))}));
   const {sources,missingModules}=loadSources(options),bytes=fs.readFileSync(options.source),text=bytes.toString('utf8');
   const source=JSON.parse(text.replace(/^\uFEFF/,'')),format=detectFormatting(text,source),result=buildSave(source,sources);
   const candidateBytes=Buffer.from(serializeSave(result.candidate,format));
@@ -285,7 +292,7 @@ function cli(argv){
     assert(candidateBytes.equals(again),'UI build is not byte-idempotent');
   }
   const report={status:'candidate',builtAt:new Date().toISOString(),source:options.source,candidate:options.out,
-    sourceSHA256:hash(bytes),candidateSHA256:hash(candidateBytes),mode:options.mode,format,
+    sourceSHA256:hash(bytes),candidateSHA256:hash(candidateBytes),targetHashes,mode:options.mode,format,
     changedObjects:result.changedObjects,counts:result.counts,missingModules,verifiedIdempotent:options.verifyIdempotent};
   fs.mkdirSync(path.dirname(options.out),{recursive:true});fs.writeFileSync(options.out,candidateBytes);
   fs.mkdirSync(path.join(root,'output'),{recursive:true});

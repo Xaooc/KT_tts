@@ -2,9 +2,13 @@ const fs = require('fs');
 const path = require('path');
 const assert = require('assert');
 const {collectReferences} = require('./export-assets.cjs');
+const {resolveTtsDir}=require('./tts-paths.cjs');
 
-const DEFAULT_SAVE = 'C:/Users/PC/Documents/My Games/Tabletop Simulator/Saves/KT24-The-Killzone-RU.json';
-const DEFAULT_PACK = 'C:/Users/PC/Documents/My Games/Tabletop Simulator/Saves/Saved Objects/KT41-RU.json';
+let DEFAULT_TTS_DIR;
+try{DEFAULT_TTS_DIR=resolveTtsDir();}catch{}
+const DEFAULT_SAVE=DEFAULT_TTS_DIR&&path.join(DEFAULT_TTS_DIR,'Saves','KT24-The-Killzone-RU.json');
+const DEFAULT_PACK=DEFAULT_TTS_DIR&&path.join(DEFAULT_TTS_DIR,'Saves','Saved Objects','KT41-RU.json');
+const crypto=require('crypto');
 
 function parseArgs(argv) {
   const options = {save: DEFAULT_SAVE, pack: DEFAULT_PACK, outDir: 'output/online'};
@@ -14,9 +18,21 @@ function parseArgs(argv) {
     else if (argv[i] === '--pack') options.pack = argv[++i];
     else if (argv[i] === '--out-dir') options.outDir = argv[++i];
     else if (argv[i] === '--check-urls') options.checkUrls = Number(argv[++i]);
+    else if (argv[i] === '--install') options.install = true;
+    else if (argv[i] === '--tts-dir') {
+      const dir=resolveTtsDir({dir:argv[++i]});
+      options.ttsDir=dir;
+      options.save=path.join(dir,'Saves','KT24-The-Killzone-RU.json');
+      options.pack=path.join(dir,'Saves','Saved Objects','KT41-RU.json');
+    }
     else throw new Error(`Unknown argument: ${argv[i]}`);
   }
   if (!options.base) throw new Error('Usage: node relink-assets.cjs --base <URL> [--source <save.json>] [--pack <pack.json>] [--out-dir <dir>]');
+  if((!options.save||!options.pack)&&!options.ttsDir){
+    const dir=resolveTtsDir();
+    options.save||=path.join(dir,'Saves','KT24-The-Killzone-RU.json');
+    options.pack||=path.join(dir,'Saves','Saved Objects','KT41-RU.json');
+  }
   if (!Number.isFinite(options.checkUrls ?? 0) || (options.checkUrls ?? 0) < 0) throw new Error('--check-urls must be a non-negative number');
   const parsed = new URL(options.base);
   if (!['http:', 'https:'].includes(parsed.protocol)) throw new Error('--base must use http or https');
@@ -54,12 +70,25 @@ async function checkURLs(urls, count) {
   for (const url of selected) {
     try {
       const response = await fetch(url, {method: 'HEAD', signal: AbortSignal.timeout(8000)});
-      results.push({url, status: response.status});
+      results.push({url, status: response.status, ok: response.status >= 200 && response.status < 400});
     } catch (error) {
-      results.push({url, error: error.message});
+      results.push({url, error: error.message, ok: false});
     }
   }
   return results;
+}
+
+function installCopy(source,destination){
+  const bytes=fs.readFileSync(source),digest=crypto.createHash('sha256').update(bytes).digest('hex');
+  let target=destination;
+  if(fs.existsSync(target)&&crypto.createHash('sha256').update(fs.readFileSync(target)).digest('hex')!==digest){
+    const extension=path.extname(destination),base=destination.slice(0,-extension.length);
+    target=base+'-'+digest.slice(0,8)+extension;
+    if(fs.existsSync(target))assert.equal(crypto.createHash('sha256').update(fs.readFileSync(target)).digest('hex'),digest,
+      'Online install destination exists with different content: '+target);
+  }
+  if(!fs.existsSync(target))fs.copyFileSync(source,target,fs.constants.COPYFILE_EXCL);
+  return {path:target,sha256:digest};
 }
 
 async function relink(options) {
@@ -96,8 +125,19 @@ async function relink(options) {
     files.push({source: input.key, output: input.output, localRefsRemain: local.length});
   }
   const urlChecks = options.checkUrls ? await checkURLs([...urls], options.checkUrls) : [];
+  const urlFailures=urlChecks.filter(result=>!result.ok);
+  const installed=[];
+  if(options.install){
+    const dir=resolveTtsDir({dir:options.ttsDir});
+    const saves=path.join(dir,'Saves');
+    installed.push({source:'save',...installCopy(path.join(outDir,'KT24-The-Killzone-RU-online.json'),
+      path.join(saves,'KT24-The-Killzone-RU-online.json'))});
+    installed.push({source:'pack',...installCopy(path.join(outDir,'KT41-RU-online.json'),
+      path.join(saves,'Saved Objects','KT41-RU-online.json'))});
+  }
   const report = {base: options.base, assetsInManifest: manifest.length, replacementOccurrences: replacementsCount,
-    localRefsRemain: files.reduce((sum, file) => sum + file.localRefsRemain, 0), files, urlChecks};
+    localRefsRemain: files.reduce((sum, file) => sum + file.localRefsRemain, 0), files, urlChecks, urlFailures,
+    installed, installNote:installed.length?'TTS saves are discovered by filename; no SaveFileInfos entry was edited.':''};
   fs.writeFileSync(path.join(outDir, 'relink-report.json'), JSON.stringify(report, null, 2) + '\n', 'utf8');
   return report;
 }
@@ -116,6 +156,8 @@ if (require.main === module) {
       console.log(`Relinked ${report.replacementOccurrences} occurrences across ${report.files.length} files.`);
       console.log(`Local references remaining: ${report.localRefsRemain}.`);
       if (report.urlChecks.length) console.log(`HEAD checks: ${JSON.stringify(report.urlChecks)}`);
+      if(report.urlFailures.length){console.error('Failed URLs:\n'+report.urlFailures.map(item=>item.url).join('\n'));process.exitCode=1;}
+      if(report.installed.length)console.log(`Installed online copies: ${JSON.stringify(report.installed)}`);
       console.log(`Report: output/online/relink-report.json`);
     } catch (error) {
       console.error(error.stack || error.message);
@@ -124,4 +166,4 @@ if (require.main === module) {
   })();
 }
 
-module.exports = {encodeRelative, parseArgs, relink, replaceStrings};
+module.exports = {encodeRelative, parseArgs, relink, replaceStrings, checkURLs, installCopy};

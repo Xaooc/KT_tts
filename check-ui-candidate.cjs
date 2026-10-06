@@ -507,7 +507,7 @@ for _,order in ipairs({'global-last','global-first'}) do
             h.state().units.red001.apl-1,a and a.ap-a.spent)
         h.hub('Red','finish')
         local st=h.state();check(not st.activation,'activation finished','nil',st.activation)
-        check(st.turnOwner=='blue-id','Blue receives turn','blue-id',st.turnOwner)
+        check(st.turnOwner=='seat:2' or st.turnOwner=='blue-id','Blue receives turn','seat:2',st.turnOwner)
         check(board.RuHub.vms.Blue.turn.mode=='idle','Blue UI turn ready','idle',board.RuHub.vms.Blue.turn.mode)
         check(board.RuHub.vms.Blue.turn.myTurn==true,'Blue UI owns next turn',true,board.RuHub.vms.Blue.turn.myTurn)
         check(board.scoring[1].command==initialCP[1] and board.scoring[2].command==initialCP[2],
@@ -577,11 +577,17 @@ for _,order in ipairs({'global-last','global-first'}) do
         finalElements=count(h.ui.getXmlTable()),frames=h.frame,crossObjectCalls=#h.calls}
     Report.runs[#Report.runs+1]=result
     PreviewCandidateUI[order]=h.ui.getXmlTable()
+    do
+        -- Legacy setXml(getXml()..) writers must not duplicate anonymous roots such as <Defaults>.
+        local defaults,seen=0,{}
+        for _,root in ipairs(h.ui.getXmlTable() or {}) do if root.tag=='Defaults' then defaults=defaults+1 end end
+        check(defaults==3,'Defaults blocks are not duplicated',3,defaults)
+    end
     step('onSave/fresh-environment reload',function()
         local saved={};for _,guid in ipairs({'339b7f','efa3fe','Global'}) do saved[guid]=h.invoke(guid,'onSave') end
         local state=h.state();assert(state,'Engine unavailable for restoration check')
         local expected={round=state.round,units=copy(state.units),cp=copy(h.envs['339b7f'].scoring),
-            engineCP={state.players['red-id'].cp,state.players['blue-id'].cp},
+            engineCP={(state.players['seat:1'] or state.players['red-id']).cp,(state.players['seat:2'] or state.players['blue-id']).cp},
             redMode=h.envs['339b7f'].RuHub.seats.Red.state,blueMode=h.envs['339b7f'].RuHub.seats.Blue.state}
         local physical={};for _,color in ipairs({'red','blu'}) do for i=1,4 do
             local id=color..string.format('%03d',i);physical[id]=h.objects[id].getTable('state')
@@ -592,7 +598,7 @@ for _,order in ipairs({'global-last','global-first'}) do
             st and JSON.encode(st.units))
         check(JSON.encode(restored.envs['339b7f'].scoring)==JSON.encode(expected.cp),'restored scoreboard/CP',
             JSON.encode(expected.cp),JSON.encode(restored.envs['339b7f'].scoring))
-        local engineCP=st and {st.players['red-id'].cp,st.players['blue-id'].cp}
+        local engineCP=st and {(st.players['seat:1'] or st.players['red-id']).cp,(st.players['seat:2'] or st.players['blue-id']).cp}
         check(JSON.encode(engineCP)==JSON.encode(expected.engineCP),'restored engine CP',
             JSON.encode(expected.engineCP),JSON.encode(engineCP))
         local hub=restored.envs['339b7f'].RuHub
