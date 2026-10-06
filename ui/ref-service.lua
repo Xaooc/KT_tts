@@ -639,6 +639,89 @@ function ruRefTeamRules(p)
     end, p)
 end
 
+local teamBookCache = {}
+local teamBookSections = {
+    {key = "rules", title = "Правила отряда"},
+    {key = "strat", title = "Стратегические уловки"},
+    {key = "fire", title = "Уловки перестрелки"},
+    {key = "eq", title = "Снаряжение"},
+}
+local function bookItem(entry, universal, cost)
+    local title = splitTitle(ruDisplayName(entry.title or ""))
+    local body = ruCleanRuleText(entry.body or entry.text or "")
+    return {key = entry.key, title = title, english = entry.english or "", cost = cost,
+        body = body, terms = termsIn(body), universal = universal or nil}
+end
+local function teamBook(p)
+    local teamKey = key(p.team)
+    local cached = teamBookCache[teamKey]
+    if cached then return copy(cached) end
+    local team = ruReferenceTeams[teamKey]
+    if not team then return {team = p.team, sections = {}} end
+
+    local title, english = display(team.label)
+    local byKey = {}
+    for _, section in ipairs(teamBookSections) do
+        local out = copy(section)
+        out.items = {}
+        byKey[section.key] = out
+    end
+    local seen = {}
+    local function add(sectionKey, entry, isUniversal, cost)
+        local identity = tostring(entry.english or "") .. "\n" .. tostring(entry.body or entry.text or "")
+        if seen[identity] then return end
+        seen[identity] = true
+        local item = bookItem(entry, isUniversal, cost)
+        if item.title == "" then return end
+        byKey[sectionKey].items[#byKey[sectionKey].items + 1] = item
+    end
+    for _, source in ipairs(team.entries or {}) do
+        local id = "team:" .. teamKey .. ":" .. source.id
+        local entry = documents[id]
+        if entry then
+            local category = source.category
+            if category == "team" then
+                local srcTitle, srcEnglish = display(source.title)
+                local teamTitle, teamEnglish = display(team.label)
+                local teamNameOnly = fold(plain(srcTitle)) == fold(plain(teamTitle))
+                    or fold(plain(source.english)) == fold(plain(teamEnglish))
+                    or fold(plain(srcTitle)) == fold("Название отряда")
+                if not teamNameOnly and entry.body ~= "" then add("rules", entry, false) end
+            elseif category == "ploy" then
+                local sectionKey = source.ployType == "strategy" and "strat"
+                    or source.ployType == "firefight" and "fire"
+                if sectionKey then
+                    local cost = tostring(source.cost or "1")
+                    if not cost:match("%s*CP$") then cost = cost .. " CP" end
+                    add(sectionKey, entry, false, cost)
+                end
+            elseif category == "equipment" then
+                add("eq", entry, false)
+            elseif category == "faq" then
+                byKey.faq = byKey.faq or {key = "faq", title = "FAQ и уточнения", items = {}}
+                add("faq", entry, false)
+            end
+        end
+    end
+    for _, source in ipairs(ruReferenceEquipment or {}) do
+        local entry = documents["equipment:" .. source.id]
+        if entry then add("eq", entry, true) end
+    end
+    for _, sectionKey in ipairs({"strat", "fire"}) do
+        table.sort(byKey[sectionKey].items, function(a, b)
+            local left, right = fold(a.title), fold(b.title)
+            return left == right and a.key < b.key or left < right
+        end)
+    end
+    local sections = {}
+    for _, section in ipairs(teamBookSections) do sections[#sections + 1] = byKey[section.key] end
+    if byKey.faq then sections[#sections + 1] = byKey.faq end
+    local result = {team = teamKey, title = title, english = english, sections = sections}
+    teamBookCache[teamKey] = copy(result)
+    return result
+end
+function ruRefTeamBook(p) return safe(teamBook, p, {sections = {}}) end
+
 local legacyPloys = {}
 function ruLoadPloys(saved)
     legacyPloys = {}

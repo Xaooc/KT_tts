@@ -948,8 +948,9 @@ end
 local function rail(vm)
     local kids = {
         KT.node("Panel", { preferredHeight = "56", color = c.rail }, {
-            KT.node("Text", { text = "KT", fontSize = "15", fontStyle = "Bold", color = c.accent, alignment = "MiddleCenter",
-                raycastTarget = "false" }),
+            KT.node("Button", { id = H.id(vm.color, "dockreset"), onClick = KT.clickTarget(), text = "KT", fontSize = "15",
+                fontStyle = "Bold", textColor = c.accent, colors = c.rail .. "|#171A1D|" .. c.s1 .. "|" .. c.rail,
+                tooltip = "Перетащите панель за свободное место. Клик здесь вернёт её на место.", tooltipPosition = "Right" }),
             KT.node("Image", { rectAlignment = "LowerCenter", height = "1", width = "100%", color = c.line, raycastTarget = "false" }),
         }),
     }

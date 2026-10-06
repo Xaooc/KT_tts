@@ -163,6 +163,12 @@ end,call=function(fn,params)
     if fn=='ruRefTermsIn' then return {{'devastating','Убойное'}} end
     if fn=='ruRefTerm' then return {title='Убойное',english='Devastating',body='Полное определение'} end
     if fn=='ruRefTeamRules' then return {{key='rule',title='Правило отряда',body='Текст',terms={}}} end
+    if fn=='ruRefTeamBook' and params.team=='hierotekcircle' then
+        return {team='hierotekcircle',title='Круг Иеротек',english='Hierotek Circle',sections={
+            {key='rules',title='Правила отряда',items={{key='r1',title='Протоколы',body='<b>Эффект</b> Текст правила',terms={}}}},
+            {key='strat',title='Стратегические уловки',items={{key='s1',title='Наступление',cost='1 CP',body='Текст',terms={}}}},
+            {key='eq',title='Снаряжение',items={{key='e1',title='Граната',body='Текст',terms={},universal=true}}}}}
+    end
     if fn=='ruRefQuery' then
         if params.scope=='ploy' then
             return {scopes={{'ploy','Уловки'}},count=1,
@@ -433,6 +439,22 @@ success(Player.Red,'logseg','score')
 check(vm().log.score.rows[1].rvp==1 and vm().log.score.rows[2].rvp==1,'Per-round VP')
 check(vm().log.score.total.rvp==5 and vm().status.sides[1].vp==5,'Grand total excludes a source')
 PreviewHubShellScenes.log={copy(mounted('Red'))}
+-- Team book: squad view switch, rules open by default, toggles, per-team cache.
+do
+    success(Player.Red,'tab','squad');check(vm().squad.view=='models','Squad view must default to models')
+    local before=#refCalls
+    success(Player.Red,'squadview','book')
+    local book=vm().squad.book
+    check(vm().squad.view=='book' and book and #book.sections==3,'Team book missing')
+    check(book.sections[1].items[1].open==true and book.sections[2].items[1].open==false,'Default open state')
+    check(vm().foot[1].note~=nil,'Book foot note')
+    success(Player.Red,'bookitem','s1');check(vm().squad.book.sections[2].items[1].open==true,'Book item did not open')
+    success(Player.Red,'bookitem','r1');check(vm().squad.book.sections[1].items[1].open==false,'Rules item did not close')
+    local calls=0;for i=before+1,#refCalls do if refCalls[i].fn=='ruRefTeamBook' then calls=calls+1 end end
+    check(calls==1,'Team book must be cached per team, calls='..calls)
+    check(findNode(mounted('Red'),'kh:Red:bookitem:r1')~=nil,'Closed book item button missing')
+    success(Player.Red,'squadview','models');check(vm().squad.view=='models' and vm().squad.book==nil)
+end
 success(Player.Red,'tab','turn')
 local timeout=RuHub.seats.Red.toastTimer;local writes=realWrites
 timers[timeout].fn();flush()
@@ -654,7 +676,7 @@ allIds(mounted('Red'));allIds(mounted('Blue'));allIds(mounted('Grey'))
 local immutable=mounts['hub:defaults'];ruHubRenderAll();flush();check(mounts['hub:defaults']==immutable)
 ruHubRender('Red') -- Pending callbacks must not resurrect the dock after destruction.
 onDestroy();flush();check(not mounted('Red') and not mounted('Blue'),'Destroy did not unmount')
-return checked..' hub shell checks passed; 20 required scenarios; '..patchCalls..' composer patch batches'
+return checked..' hub shell checks passed; 21 required scenarios; '..patchCalls..' composer patch batches'
 `;
 
 const composer = read('ui/composer.lua');

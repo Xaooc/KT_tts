@@ -183,7 +183,7 @@ async function relink(options) {
       path.join(saves,'Saved Objects','KT41-RU-online.json'))});
   }
   const report = {base: options.base, assetsInManifest: manifest.length, replacementOccurrences: replacementsCount,
-    localRefsRemain: files.reduce((sum, file) => sum + file.localRefsRemain, 0), files, urlChecks, urlFailures,
+    localRefsRemain: files.reduce((sum, file) => sum + (file.localRefsRemain || 0), 0), files, urlChecks, urlFailures,
     installed, installNote:installed.length?'TTS saves are discovered by filename; no SaveFileInfos entry was edited.':''};
   fs.writeFileSync(path.join(outDir, 'relink-report.json'), JSON.stringify(report, null, 2) + '\n', 'utf8');
   return report;

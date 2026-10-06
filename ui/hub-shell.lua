@@ -512,6 +512,32 @@ local function turnVM(p,v,units)
     else t.foot={{note="Сейчас ход соперника"}} end
     return t
 end
+-- Team book from efa3fe, cached per team for the session. Rules are open by default, the rest closed;
+-- explicit toggles (true/false) in openSet win.
+local bookCache={}
+local function teamBook(key)
+    if not key or not RuAssistantTeams[key] then return nil end
+    if bookCache[key]==nil then bookCache[key]=refCall("ruRefTeamBook",{team=key}) or false end
+    return bookCache[key] or nil
+end
+local function bookWithOpen(book,openSet)
+    if not book then return nil end
+    local out=copy(book)
+    for _,section in ipairs(out.sections or {}) do
+        for _,item in ipairs(section.items or {}) do
+            local explicit=openSet and openSet[item.key]
+            if explicit==true or explicit==false then item.open=explicit else item.open=section.key=="rules" end
+        end
+    end
+    return out
+end
+local function toggleBook(openSet,book,key)
+    local current
+    for _,section in ipairs(book and book.sections or {}) do
+        for _,item in ipairs(section.items or {}) do if item.key==key then current=item.open end end
+    end
+    openSet[key]=not current
+end
 local function squadVM(p,v,units)
     local alive,ready=0,0;local filtered={}
     for _,u in ipairs(units) do
@@ -523,6 +549,8 @@ local function squadVM(p,v,units)
     local key=team(p);local t={team=teamLabel(key),summary=#units>0 and (alive.." из "..#units.." в строю · "..ready.." готовы") or nil,
         units=filtered,seg=v.squadSeg,canEnroll=authority(p) and not state().activation or false}
     t.teamQuery=v.teamQuery
+    t.view=v.squadView=="book" and "book" or "models"
+    if t.view=="book" then t.book=bookWithOpen(teamBook(key),v.bookOpen) end
     if not RuAssistantTeams[key] then
         t.teamOptions={};for id,data in pairs(RuAssistantTeams) do t.teamOptions[#t.teamOptions+1]={id,data.label} end
         table.sort(t.teamOptions,function(a,b) return a[2]<b[2] end)
@@ -608,7 +636,9 @@ local function enemyVM(p,v)
     local ploys=ploysVM(enemy,ev,true).items
     return {name=teamLabel(key),colorKey=enemy.color,team=key,cp=scoring[index].command,vp=vp(index),
         sub=(enemy.steam_name or enemy.color).." · "..scoring[index].command.." CP · "..vp(index).." VP",
-        seg=v.enemySeg,units=units,ploys=ploys,rules=refCall("ruRefTeamRules",{team=key}) or {}}
+        seg=v.enemySeg,units=units,ploys=ploys,
+        book=v.enemySeg=="rules" and bookWithOpen(teamBook(key),v.enemyBookOpen) or nil,
+        rules=v.enemySeg=="rules" and not teamBook(key) and (refCall("ruRefTeamRules",{team=key}) or {}) or nil}
 end
 local function roundVP(index,round)
     local total=0
@@ -674,7 +704,9 @@ function ruHubBuildVM(color)
     if vm.tab=="turn" then vm.turn=turnVM(p,v,roster(p));vm.foot=vm.turn.foot
     elseif vm.tab=="squad" then
         local units=roster(p);vm.squad=squadVM(p,v,units)
-        if #units==0 then
+        if vm.squad.view=="book" then
+            vm.foot={{note="Всё по отряду: правила, уловки, снаряжение"}}
+        elseif #units==0 then
             vm.foot={{cmd="enrollall",label="+ Добавить все мои со стола",flex=true,enabled=authority(p)}}
         else
             for _,u in ipairs(units) do
@@ -984,12 +1016,21 @@ function ruHubClick(p,value,id)
         local target=seatPlayer(tonumber(arg));event={type="initiative",winner=target and owner(target),confirmed=true}
     elseif cmd=="next" then event={type="next_phase",confirmed=true}
     elseif cmd=="squadseg" then if arg=="all" or arg=="ready" or arg=="hurt" then v.squadSeg=arg end
+    elseif cmd=="squadview" then if arg=="models" or arg=="book" then v.squadView=arg end
+    elseif cmd=="bookitem" then
+        v.bookOpen=v.bookOpen or {};toggleBook(v.bookOpen,bookWithOpen(teamBook(team(p)),v.bookOpen),arg)
+    elseif cmd=="enemybookitem" then
+        local enemy=enemyPlayer(p);v.enemyBookOpen=v.enemyBookOpen or {}
+        toggleBook(v.enemyBookOpen,bookWithOpen(enemy and teamBook(team(enemy)),v.enemyBookOpen),arg)
     elseif cmd=="teamsearch" then
-        local query=tostring(value or ""):gsub("^%s+",""):gsub("%s+$","")
+        local query=tostring(value or "")
+        while query:sub(1,1)==" " do query=query:sub(2) end
+        while query:sub(-1)==" " do query=query:sub(1,-2) end
         v.teamQuery=query:sub(1,60)
     elseif cmd=="enroll" or cmd=="enrollall" then ok,msg=enroll(p,cmd=="enrollall")
     elseif cmd=="team" then
         if not RuAssistantTeams[arg] then return false end
+        v.bookOpen={}
         if s and (not authority(p) or s.activation) then ok,msg=false,"Завершите активацию перед сменой отряда"
         else
             local m=marks(p);if m.team~=arg then m.used={} end;m.team=arg

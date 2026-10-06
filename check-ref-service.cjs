@@ -192,9 +192,34 @@ for teamKey, team in pairs(ruReferenceTeams) do
     local rules = ruRefTeamRules({team = teamKey})
     check(#rules == ruRefQuery({team = teamKey, scope = "team"}).count, "Team rule API differs")
     for _, rule in ipairs(rules) do resolve(rule.terms, true); resolve({rule}) end
+    local book, sectionByKey, bookKeys = ruRefTeamBook({team = teamKey}), {}, {}
+    for _, section in ipairs(book.sections) do
+        sectionByKey[section.key] = section
+        local sectionKeys = {}
+        for _, item in ipairs(section.items) do
+            check(item.title ~= "" and item.body ~= "", "Incomplete team book item: " .. teamKey .. "/" .. item.key)
+            check(not sectionKeys[item.key] and not bookKeys[item.key], "Duplicate team book key: " .. teamKey .. "/" .. item.key)
+            sectionKeys[item.key], bookKeys[item.key] = true, true
+            resolve(item.terms)
+        end
+    end
+    local libraryPloys = ruRefQuery({team = teamKey, scope = "ploy"}).count
+    check(#(sectionByKey.strat and sectionByKey.strat.items or {})
+        + #(sectionByKey.fire and sectionByKey.fire.items or {}) == libraryPloys, "Team book ploy coverage: " .. teamKey)
+    check(sectionByKey.rules and sectionByKey.eq and sectionByKey.strat and sectionByKey.fire,
+        "Missing team book section: " .. teamKey)
 end
 check(teams == 41, "Expected 41 teams")
 check(ploys == 328, "Expected 328 readable ploys")
+local unknownBook = ruRefTeamBook({team = "missing-team"})
+check(type(unknownBook.sections) == "table" and #unknownBook.sections == 0, "Unknown team book")
+local examples = {}
+for _, teamKey in ipairs({"hierotekcircle", "broodbrothers", "legionary"}) do
+    local book, counts = ruRefTeamBook({team = teamKey}), {}
+    for _, section in ipairs(book.sections) do counts[section.key] = #section.items end
+    examples[#examples + 1] = teamKey .. "=" .. table.concat({counts.rules or 0, counts.strat or 0,
+        counts.fire or 0, counts.eq or 0, counts.faq or 0}, "/")
+end
 local ru = ruRefQuery({team = "hierotekcircle", scope = "team", query = "РЕАНИМ"})
 local en = ruRefQuery({team = "Hierotek Circle", scope = "team", query = "reanim"})
 check(ru.count > 0 and en.count > 0, "Cyrillic/English search")
@@ -415,7 +440,7 @@ check(same(JSON.decode(onSave()), ${lit(legacy)}), "Legacy save roundtrip")
 ruLoadPloys("invalid"); check(next(ruRefLegacyPloys()) == nil, "Invalid saved state")
 ruLoadPloys(saved)
 return checks .. " assertions; " .. teams .. " teams; " .. ploys .. " ploys; " .. profiles .. " profiles; "
-    .. bodyCount .. " full bodies; 3 datasheet scenes"
+    .. bodyCount .. " full bodies; 3 datasheet scenes; books " .. table.concat(examples, ", ")
 `;
 const modules = ['ui/kit.lua', 'ui/rich.lua', 'ui/datasheet-view.lua', 'ui/ref-service.lua', 'ui/datasheet.lua'];
 const script = [driver, original, data, ...modules.map(file => fs.readFileSync(file, 'utf8')), cases].join('\n');
