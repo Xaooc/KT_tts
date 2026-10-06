@@ -636,7 +636,9 @@ function ruHubBuildVM(color)
     elseif vm.tab=="ref" then vm.ref=refVM(p,v) end
     return vm
 end
-local displayFields={name=true,english=true,title=true,body=true,text=true,label=true,sub=true,who=true,unitName=true,
+-- Rule bodies (body) come from the bundled rules library and keep their rich text; everything a player can edit
+-- in TTS (model names, effect notes, Steam names) is escaped.
+local displayFields={name=true,english=true,title=true,text=true,label=true,sub=true,who=true,unitName=true,
     action=true,turnOwnerName=true,targetName=true,tip=true,reason=true,expiryLabel=true,hint=true,note=true,
     footNote=true,summary=true,move=true,save=true,bs=true,a=true,d=true,team=true,expiry=true,weapon=true,
     cost=true,traits=true,emptyHint=true,emptyTitle=true,waiting=true,delta=true}
