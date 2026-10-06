@@ -1,0 +1,5 @@
+<Project>
+  <PropertyGroup>
+    <BaseIntermediateOutputPath>../../tmp/moonsharp-runner/obj/</BaseIntermediateOutputPath>
+  </PropertyGroup>
+</Project>

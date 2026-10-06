@@ -1,0 +1,496 @@
+<title>Центр Kill Team</title>
+<style>
+/* Layout: a 1920×1080 TTS screen, scaled to the page width; inside it a left dock (rail + content) built only from
+   XmlUI-expressible primitives: flat rects, 1–2px outlines, text, ProgressBar-like bars, the original orange sprites. */
+:root{
+  color-scheme:dark;
+  --page:#0b0c0d; --page-fg:#d9dee2; --page-muted:#8a949c;
+  /* Hub tokens (these become ui/kit.lua) */
+  --bg:#111315; --s1:#1a1e22; --s2:#23292f; --s3:#2c333a; --line:#30373e;
+  --fg:#eceff1; --muted:#98a3ac; --dim:#6b757d;
+  --accent:#f26522; --accent-hi:#ff8443; --accent-lo:#3a2116; --on-accent:#140b06;
+  --ok:#5fd08a; --ok-lo:#16301f; --hurt:#ff5a4e; --hurt-lo:#3a1714; --warn:#f2b53a;
+  --red:#e5484d; --blue:#3e8ef7;
+  --ui:Arial,"Liberation Sans",Helvetica,sans-serif;
+  --page-font:"IBM Plex Sans",Arial,sans-serif;
+}
+body{background:var(--page);color:var(--page-fg);font-family:var(--page-font);padding:24px 16px 48px;}
+.wrap{max-width:1500px;margin:0 auto;display:flex;flex-direction:column;gap:20px}
+header.pg h1{font-size:26px;margin:0 0 4px;letter-spacing:.01em;text-wrap:balance}
+header.pg p{margin:0;color:var(--page-muted);max-width:70ch;line-height:1.5}
+.controls{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+.controls .lbl{color:var(--page-muted);font-size:12px;text-transform:uppercase;letter-spacing:.08em;margin-right:4px}
+.controls button{font:600 13px var(--page-font);background:#1b1f23;color:var(--page-fg);border:1px solid #333a41;padding:7px 12px;cursor:pointer}
+.controls button[aria-pressed="true"]{background:var(--accent);color:var(--on-accent);border-color:var(--accent)}
+.controls .sep{width:1px;height:24px;background:#333a41;margin:0 6px}
+.stage{width:100%;overflow:hidden;border:1px solid #23282d;background:#000}
+.screen{width:1920px;height:1080px;position:relative;transform-origin:0 0;font-family:var(--ui);color:var(--fg);overflow:hidden;
+  background:
+   radial-gradient(ellipse at 62% 48%,#3a3b3c 0,#26282a 45%,#1a1b1c 100%);}
+/* table hint */
+.board{position:absolute;left:640px;top:150px;width:980px;height:700px;background:#191a1b;outline:3px solid var(--accent);
+  box-shadow:0 30px 80px #000a}
+.board:before{content:"";position:absolute;inset:0;background:repeating-linear-gradient(135deg,#202224 0 22px,#1b1c1e 22px 44px);opacity:.6}
+.board .zone{position:absolute;bottom:0;left:0;right:0;height:46px;background:repeating-linear-gradient(135deg,var(--accent) 0 18px,#111 18px 36px);opacity:.85}
+.mini{position:absolute;width:30px;height:30px;border-radius:50%;background:#56626b;border:3px solid #222}
+.mini.r{background:#8f3a3c}.mini.b{background:#2f5b94}
+.mini.hl{box-shadow:0 0 0 4px var(--accent),0 0 24px 6px #f2652299}
+.ttsbar{position:absolute;left:0;right:0;top:0;height:40px;background:#000000d9;display:flex;align-items:center;gap:22px;padding:0 18px;font:13px var(--ui);color:#cfd4d8}
+.ttsbar b{color:#fff}
+.ttschat{position:absolute;left:12px;bottom:12px;width:430px;height:220px;background:#00000080;border:1px solid #ffffff14;font:12px var(--ui);color:#9aa;padding:10px;display:flex;align-items:flex-end}
+.score{position:absolute;left:50%;transform:translateX(-50%);bottom:14px;width:650px;height:90px;background:#1b1b1b;border-top:3px solid #e74f0a;display:flex;align-items:center;justify-content:space-between;padding:0 20px;font:bold 15px var(--ui);color:#ddd;opacity:.92}
+.score .mid{font-size:13px;color:#999;text-align:center}
+
+/* ── Hub ─────────────────────────────────────── */
+.dock{position:absolute;left:12px;top:52px;height:760px;display:flex;background:var(--bg);outline:1px solid var(--line);box-shadow:0 18px 50px #000c}
+.rail{width:64px;background:#0d0f10;display:flex;flex-direction:column;border-right:1px solid var(--line)}
+.rail .brand{height:56px;display:flex;align-items:center;justify-content:center;border-bottom:1px solid var(--line)}
+.rail .brand span{font:bold 15px var(--ui);color:var(--accent);letter-spacing:.06em}
+.tab{height:64px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:6px;cursor:pointer;position:relative;color:var(--muted);font:bold 11px var(--ui)}
+.tab .gl{width:22px;height:22px;display:flex;align-items:center;justify-content:center}
+.tab .gl img{max-width:22px;max-height:20px;filter:grayscale(1) brightness(1.6);opacity:.75}
+.tab:hover{background:#171a1d;color:var(--fg)}
+.tab.on{background:var(--s1);color:var(--fg)}
+.tab.on:before{content:"";position:absolute;left:0;top:0;bottom:0;width:3px;background:var(--accent)}
+.tab.on .gl img{filter:none;opacity:1}
+.tab .dot{position:absolute;right:12px;top:12px;min-width:16px;height:16px;padding:0 3px;background:var(--accent);color:var(--on-accent);font:bold 10px/16px var(--ui);text-align:center}
+.rail .grow{flex:1}
+.rail .collapse{height:48px;border-top:1px solid var(--line);display:flex;align-items:center;justify-content:center;color:var(--muted);font:bold 18px var(--ui);cursor:pointer}
+.glyph{font:bold 17px var(--ui);color:inherit}
+
+.panel{width:388px;display:flex;flex-direction:column;background:var(--s1)}
+.dock.wide .panel{width:900px}
+.head{padding:14px 16px 12px;border-bottom:1px solid var(--line);display:flex;flex-direction:column;gap:10px;background:var(--bg)}
+.head .r1{display:flex;align-items:center;gap:10px}
+.eyebrow{font:bold 12px var(--ui);color:var(--accent);letter-spacing:.08em;text-transform:uppercase}
+.head .r1 .sp{flex:1}
+.iconbtn{width:28px;height:28px;background:var(--s2);color:var(--muted);display:flex;align-items:center;justify-content:center;font:bold 14px var(--ui);cursor:pointer}
+.iconbtn:hover{background:var(--s3);color:var(--fg)}
+.sides{display:flex;gap:6px}
+.side{flex:1;min-width:0;display:flex;align-items:center;gap:8px;background:var(--s1);padding:7px 9px;position:relative;outline:1px solid var(--line)}
+.side .sw{width:4px;align-self:stretch;background:var(--red)}
+.side.b .sw{background:var(--blue)}
+.side .nm{font:bold 13px var(--ui);flex:1;min-width:0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.side .num{font:bold 13px var(--ui);color:var(--fg);font-variant-numeric:tabular-nums}
+.side .num small{font:bold 10px var(--ui);color:var(--muted);margin-left:2px}
+.side.turn{outline:1px solid var(--accent);background:var(--accent-lo)}
+.side.turn:after{content:"ХОД";position:absolute;right:6px;top:-8px;background:var(--accent);color:var(--on-accent);font:bold 9px var(--ui);padding:1px 4px;letter-spacing:.06em}
+
+.body{flex:1;overflow:auto;padding:14px 16px 16px;display:flex;flex-direction:column;gap:12px;scrollbar-width:thin;scrollbar-color:var(--s3) transparent}
+.foot{padding:12px 16px;border-top:1px solid var(--line);background:var(--bg);display:flex;gap:8px}
+.btn{font:bold 14px var(--ui);height:40px;padding:0 14px;display:flex;align-items:center;justify-content:center;gap:8px;background:var(--s2);color:var(--fg);cursor:pointer;border:0;outline:1px solid var(--line)}
+.btn:hover{background:var(--s3)}
+.btn.primary{background:var(--accent);color:var(--on-accent);outline:0}
+.btn.primary:hover{background:var(--accent-hi)}
+.btn.ghost{background:transparent;outline:0;color:var(--muted)}
+.btn.ghost:hover{color:var(--fg);background:var(--s2)}
+.btn.dis{opacity:.38;cursor:default}
+.btn.grow{flex:1}
+.btn .pill{font:bold 11px var(--ui);padding:2px 6px;background:#00000040}
+.btn.primary .pill{background:#00000026}
+
+.seg{display:flex;background:var(--bg);outline:1px solid var(--line)}
+.seg div{flex:1;text-align:center;font:bold 12px/32px var(--ui);color:var(--muted);cursor:pointer}
+.seg div.on{background:var(--s3);color:var(--fg);box-shadow:inset 0 -2px 0 var(--accent)}
+.search{height:36px;background:var(--bg);outline:1px solid var(--line);display:flex;align-items:center;padding:0 12px;color:var(--dim);font:14px var(--ui)}
+.search b{color:var(--fg);font-weight:normal}
+.sec{font:bold 11px var(--ui);color:var(--muted);letter-spacing:.1em;text-transform:uppercase;display:flex;align-items:center;gap:8px;margin-top:4px}
+.sec:after{content:"";flex:1;height:1px;background:var(--line)}
+.sec .ct{color:var(--dim)}
+
+.card{background:var(--s2);outline:1px solid var(--line);padding:12px;display:flex;flex-direction:column;gap:10px}
+.title{font:bold 20px var(--ui);line-height:1.15}
+.en{font:12px var(--ui);color:var(--muted)}
+.chips{display:flex;flex-wrap:wrap;gap:6px}
+.chip{font:bold 11px var(--ui);padding:3px 7px;background:var(--s3);color:var(--fg);letter-spacing:.03em}
+.chip.acc{background:var(--accent-lo);color:var(--accent-hi);outline:1px solid #f2652255}
+.chip.ok{background:var(--ok-lo);color:var(--ok)}
+.chip.hurt{background:var(--hurt-lo);color:var(--hurt)}
+.chip.mute{background:transparent;outline:1px solid var(--line);color:var(--muted)}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line);outline:1px solid var(--line)}
+.stat{background:var(--s1);padding:7px 4px 6px;display:flex;flex-direction:column;align-items:center;gap:3px}
+.stat .k{display:flex;align-items:center;gap:4px;font:bold 10px var(--ui);color:var(--muted);letter-spacing:.06em}
+.stat .k img{height:11px}
+.stat .v{font:bold 18px var(--ui);font-variant-numeric:tabular-nums}
+.bar{height:6px;background:var(--bg);outline:1px solid var(--line);position:relative}
+.bar i{position:absolute;left:0;top:0;bottom:0;background:var(--ok)}
+.bar.mid i{background:var(--warn)}.bar.low i{background:var(--hurt)}
+.ap{display:flex;align-items:center;gap:10px}
+.ap .lbl{font:bold 12px var(--ui);color:var(--muted);letter-spacing:.06em}
+.pips{display:flex;gap:4px}
+.pips i{width:22px;height:10px;background:var(--accent)}
+.pips i.used{background:var(--s3);outline:1px solid var(--line)}
+.ap .t{margin-left:auto;font:bold 13px var(--ui)}
+.actions{display:grid;grid-template-columns:1fr 1fr;gap:6px}
+.act{height:44px;background:var(--s1);outline:1px solid var(--line);display:flex;align-items:center;padding:0 10px;gap:8px;font:bold 13px var(--ui);cursor:pointer}
+.act:hover{background:var(--s3)}
+.act .c{margin-left:auto;font:bold 11px var(--ui);color:var(--accent-hi)}
+.act.done{color:var(--muted)}
+.act.done .c{color:var(--ok)}
+.act.dis{opacity:.35;cursor:default}
+.act.wide{grid-column:span 2}
+.wrow{display:flex;align-items:center;gap:10px;padding:8px 10px;background:var(--s1);outline:1px solid var(--line);cursor:pointer;position:relative}
+.wrow.on{background:var(--s3);outline-color:var(--accent)}
+.wrow img{width:20px;height:14px;object-fit:contain}
+.wrow .n{font:bold 13px var(--ui);flex:1;min-width:0}
+.wrow .n small{display:block;font:11px var(--ui);color:var(--muted);margin-top:2px}
+.wrow .p{font:bold 12px var(--ui);color:var(--muted);font-variant-numeric:tabular-nums;white-space:nowrap}
+.wrow .p b{color:var(--fg)}
+.q{width:20px;height:20px;background:var(--s2);color:var(--muted);font:bold 11px/20px var(--ui);text-align:center;outline:1px solid var(--line)}
+.note{font:12px/1.45 var(--ui);color:var(--muted)}
+.row{display:flex;align-items:center;gap:10px;padding:10px 12px;background:var(--s2);outline:1px solid var(--line);cursor:pointer;position:relative}
+.row:hover{background:var(--s3)}
+.row .st{width:3px;align-self:stretch;margin:-10px 0 -10px -12px;background:var(--accent)}
+.row.used .st{background:var(--s3)}
+.row.down .st{background:var(--hurt)}
+.row .main{flex:1;min-width:0;display:flex;flex-direction:column;gap:5px}
+.row .nm{font:bold 14px var(--ui);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.row .meta{display:flex;align-items:center;gap:8px}
+.row .meta .bar{flex:1}
+.row .w{font:bold 12px var(--ui);font-variant-numeric:tabular-nums;color:var(--fg);width:44px;text-align:right}
+.row.used .nm{color:var(--muted)}
+.row.down{opacity:.55}
+.row .side-btn{width:30px;height:30px;background:var(--s1);outline:1px solid var(--line);display:flex;align-items:center;justify-content:center}
+.row .side-btn img{height:14px}
+.cost{font:bold 12px var(--ui);padding:4px 7px;background:var(--accent-lo);color:var(--accent-hi);white-space:nowrap}
+.ploy .star{font:bold 15px var(--ui);color:var(--dim)}
+.ploy .star.on{color:var(--warn)}
+.ploy.usedr .nm{color:var(--muted)}
+.ploy.open{flex-direction:column;align-items:stretch;background:var(--s2);outline:1px solid var(--accent);cursor:default}
+.ploy .top{display:flex;align-items:center;gap:10px}
+.rule{font:14px/1.5 var(--ui);color:#d5dadd}
+.rule b{color:#fff}
+.rule .t{color:var(--fg);font-weight:bold;box-shadow:inset 0 -1px 0 var(--accent);cursor:pointer}
+.rule h4{font:bold 12px var(--ui);color:var(--accent-hi);letter-spacing:.06em;text-transform:uppercase;margin:4px 0 4px}
+.rule p{margin:0 0 8px}
+.toast{position:absolute;left:89px;top:676px;width:362px;background:#0d0f10;outline:1px solid var(--accent);display:flex;align-items:center;gap:10px;padding:10px 12px;font:13px var(--ui);box-shadow:0 10px 30px #000c}
+.toast .msg{flex:1;line-height:1.35}
+.toast .msg b{display:block}
+.toast .u{font:bold 13px var(--ui);color:var(--accent-hi);cursor:pointer;padding:6px 8px;outline:1px solid #f2652266}
+.empty{padding:22px 16px;text-align:center;background:var(--s1);outline:1px dashed var(--line);display:flex;flex-direction:column;gap:6px;align-items:center}
+.empty b{font:bold 14px var(--ui)}
+table.score-t{width:100%;border-collapse:collapse;font:13px var(--ui);font-variant-numeric:tabular-nums}
+.score-t th{font:bold 10px var(--ui);color:var(--muted);letter-spacing:.08em;text-align:right;padding:6px 6px;border-bottom:1px solid var(--line)}
+.score-t th:first-child,.score-t td:first-child{text-align:left}
+.score-t td{padding:8px 6px;border-bottom:1px solid var(--line);text-align:right}
+.score-t tr.tot td{font-weight:bold;border-bottom:0;background:var(--s2)}
+.score-t .rc{color:var(--red)}.score-t .bc{color:var(--blue)}
+.log{display:flex;flex-direction:column}
+.log .e{display:flex;gap:10px;padding:8px 0;border-bottom:1px solid var(--line);font:13px/1.4 var(--ui)}
+.log .e .who{width:4px;align-self:stretch;background:var(--red)}
+.log .e.b .who{background:var(--blue)}
+.log .e .tx{flex:1}
+.log .e .tx small{display:block;color:var(--muted);font-size:11px;margin-top:2px}
+.log .e .d{font:bold 12px var(--ui);color:var(--accent-hi);white-space:nowrap}
+.log .e .d.neg{color:var(--hurt)}
+
+/* reference two-pane */
+.refwrap{display:flex;flex:1;min-height:0}
+.refcol{width:320px;border-right:1px solid var(--line);display:flex;flex-direction:column;gap:10px;padding:14px 14px;overflow:auto}
+.refart{flex:1;overflow:auto;padding:20px 26px;display:flex;flex-direction:column;gap:14px;position:relative}
+.scope{display:grid;grid-template-columns:repeat(3,1fr);gap:4px}
+.scope div{font:bold 12px/30px var(--ui);text-align:center;background:var(--s2);color:var(--muted);cursor:pointer;outline:1px solid var(--line)}
+.scope div.on{background:var(--accent-lo);color:var(--accent-hi);outline-color:#f2652266}
+.res{padding:9px 10px;cursor:pointer;display:flex;flex-direction:column;gap:3px;position:relative}
+.res:hover{background:var(--s2)}
+.res.on{background:var(--s3)}
+.res.on:before{content:"";position:absolute;left:0;top:0;bottom:0;width:3px;background:var(--accent)}
+.res b{font:bold 13px var(--ui)}
+.res span{font:11px var(--ui);color:var(--muted)}
+.art-h{display:flex;align-items:flex-start;gap:16px}
+.art-h .tt{flex:1}
+.art-h .title{font-size:26px}
+.crumb{display:flex;gap:6px;align-items:center}
+.wtable{width:100%;border-collapse:collapse;font:13px var(--ui);font-variant-numeric:tabular-nums}
+.wtable th{font:bold 10px var(--ui);color:var(--muted);letter-spacing:.08em;text-align:center;padding:6px;border-bottom:1px solid var(--line)}
+.wtable th:first-child,.wtable td:first-child{text-align:left}
+.wtable td{padding:9px 6px;border-bottom:1px solid var(--line);text-align:center}
+.wtable td .wr{display:flex;flex-wrap:wrap;gap:4px}
+.wtable td img{height:12px;margin-right:6px;vertical-align:-1px}
+.pop{position:absolute;right:26px;top:150px;width:360px;background:#0d0f10;outline:1px solid var(--accent);padding:14px;display:flex;flex-direction:column;gap:8px;box-shadow:0 18px 40px #000d}
+.pop .x{position:absolute;right:8px;top:8px}
+
+/* datasheet R card */
+.ds{width:640px;background:var(--bg);outline:1px solid var(--line);box-shadow:0 18px 50px #000c;font-family:var(--ui);color:var(--fg)}
+.ds .hd{display:flex;align-items:stretch;background:#0d0f10;border-bottom:2px solid var(--accent)}
+.ds .hd .nm{flex:1;padding:12px 14px}
+.ds .hd .nm .title{font-size:20px}
+.ds .hd .st{display:flex}
+.ds .hd .st div{width:62px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:4px;border-left:1px solid var(--line)}
+.ds .hd .st img{height:14px}
+.ds .hd .st b{font:bold 18px var(--ui)}.ds .hd .st small{font:bold 9px var(--ui);color:var(--muted);letter-spacing:.06em}
+.ds .hd .x{width:36px;display:flex;align-items:flex-start;justify-content:center;padding-top:10px;color:var(--muted);font:bold 14px var(--ui);border-left:1px solid var(--line)}
+.ds .sect{padding:10px 14px;display:flex;flex-direction:column;gap:8px}
+.ds .grid2{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.ab{background:var(--s1);outline:1px solid var(--line);padding:10px 12px;display:flex;flex-direction:column;gap:5px}
+.ab .h{display:flex;align-items:baseline;gap:8px}
+.ab .h b{font:bold 14px var(--ui);flex:1}
+.ab p{margin:0;font:13px/1.45 var(--ui);color:#d0d6da}
+.ab.one{grid-column:span 2}
+.ds .wl{display:flex;flex-direction:column;gap:1px;background:var(--line);outline:1px solid var(--line)}
+.ds .wl .w{display:grid;grid-template-columns:22px 1fr 34px 34px 46px;align-items:center;gap:8px;background:var(--s1);padding:8px 10px;font:13px var(--ui);cursor:pointer}
+.ds .wl .w:hover{background:var(--s3)}
+.ds .wl .w.hd2{background:var(--bg);font:bold 10px var(--ui);color:var(--muted);letter-spacing:.08em;cursor:default}
+.ds .wl .w img{height:12px}
+.ds .wl .w .n b{display:block}
+.ds .wl .w .n .wr{display:flex;gap:4px;flex-wrap:wrap;margin-top:4px}
+.ds .wl .w .c{text-align:center;font-weight:bold;font-variant-numeric:tabular-nums}
+.ds .foot2{padding:8px 14px 10px;font:11px var(--ui);color:var(--dim);border-top:1px solid var(--line);display:flex;gap:16px}
+
+.legend{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:12px}
+.legend div{background:#121416;border:1px solid #23282d;padding:12px 14px;font-size:13.5px;line-height:1.5;color:var(--page-muted)}
+.legend b{color:var(--page-fg);display:block;margin-bottom:2px}
+.dsstage{display:flex;gap:20px;flex-wrap:wrap;align-items:flex-start}
+.dsstage .ds{max-width:100%}
+.dsnote{flex:1;min-width:240px;color:var(--page-muted);font-size:13.5px;line-height:1.55}
+.dsnote b{color:var(--page-fg)}
+h2.pg{font-size:18px;margin:12px 0 0}
+@media (prefers-reduced-motion:no-preference){.toast{animation:in .25s ease-out}@keyframes in{from{transform:translateY(8px);opacity:0}}}
+</style>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;600;700&display=swap">
+
+<div class="wrap">
+  <header class="pg">
+    <h1>Центр Kill Team: макет</h1>
+    <p>Одно окно вместо помощника, справочника и панели уловок. Док слева, стол остаётся видимым. Переключайте вкладки
+      прямо на экране или кнопками ниже. В макете только то, что умеет XmlUI в Tabletop Simulator: плоские
+      прямоугольники, обводка, текст, полосы и оригинальные оранжевые иконки стола.</p>
+  </header>
+  <div class="controls" role="toolbar" aria-label="Состояние макета">
+    <span class="lbl">Вкладка</span>
+    <button data-tab="turn" aria-pressed="true">Ход</button>
+    <button data-tab="squad">Отряд</button>
+    <button data-tab="ploys">Уловки</button>
+    <button data-tab="enemy">Враг</button>
+    <button data-tab="ref">Справка</button>
+    <button data-tab="log">Журнал</button>
+    <span class="sep"></span>
+    <span class="lbl">Вид</span>
+    <button id="tCollapse" aria-pressed="false">Свернуть в рельс</button>
+    <button id="tToast" aria-pressed="true">Тост «Отменить»</button>
+  </div>
+  <div class="stage" id="stage"><div class="screen" id="screen"></div></div>
+  <div class="legend">
+    <div><b>Чей ход и счёт всегда сверху</b>Раунд, фаза, CP и VP обеих сторон. Оранжевая рамка и метка «ХОД» показывают, кто действует.</div>
+    <div><b>Без галочек «проверено»</b>Действия и уловки применяются одним нажатием. Внизу появляется тост «Отменить», откат идёт через историю движка.</div>
+    <div><b>Высоту текста считает TTS</b>Вёрстка идёт вертикальными и горизонтальными группами. Длинные правила не обрезаются и не оставляют дыр.</div>
+    <div><b>Обновление без мерцания</b>Цифры, полосы WND и кнопки меняются точечно. Прокрутка и выбранная вкладка не сбрасываются.</div>
+  </div>
+  <h2 class="pg">Карточка оперативника по R</h2>
+  <div class="dsstage">
+    <div class="ds" id="ds"></div>
+    <div class="dsnote"><b>Что изменилось.</b> Характеристики вынесены в шапку с иконками стола. Строка оружия по-прежнему бросает
+      кубики по клику, трейты стали чипами, а «?» открывает определение. Способности идут карточками в две колонки, их высота
+      подстраивается под текст. Вместо окна на 108 px с прокруткой текст виден целиком, длинная карточка занимает обе колонки.
+      Бейдж AP стоит справа от названия действия.</div>
+  </div>
+</div>
+
+<script>
+const I={
+ APL:"data:image/png;base64,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",MOVE:"data:image/png;base64,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",SAVE:"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMAAAAD8AQMAAAAbqjmSAAAAAXNSR0IB2cksfwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAAZQTFRF8V0iAAAAsREfvAAAAAJ0Uk5T/wDltzBKAAAB60lEQVR4nO3Yy23EIBAGYCwfOLoESqE0u5O04k5CCT6yiuUJj3mBueUYfNrVB/6BQSPtGiOPi2b8TJgw4Q3wev4NnO2RrBMmTJgwYcKECRMmTJjwRwgtWIbYwsZwt+AZoIVd4NCwqB8/QcPK4OHSsFGmcfgJwdMq07ofDTvtK7/0EEjZp+H0U0Cy8+RLYMMX1/Qo4DibB1XA6XpLFVQ2LaQALZHSA4FV2bTZAo4PpKbfBF5l5/lAAHwgmH5UWJpsHJfB8oEcmH5VoGIsJuCh3BWoGNZcmP5UoGJs5pb0BFwMbx5KPzNwMXYDkp6AirEA3ehchQRUjHSvQdITUDHS9QW5ZQmAX2BA0l3kYqTry8uAy0Urw9Tk6CIVYy2AW4XHRc9LycDpLvK9L8CH8v0B3m4GTk8PZxc4aZSaXYDS08PZBSJ/U2NMM1+yCwAnqnWYZpyaa+TNTu0Vgdei1mdk9aucJ4GctZxB/bMEq0MXQQBfobIRul4iEDU4BV0vEQANoOEUWBsIAraBppdouAV8A00vaeAgWDoIBLaDi2DrQPWSFh6CvQPVSzo4K6wv4F7SQ6zgXsC9pAeoAG+gXvKCkMEOAHvJG0ov8QPAXjKA1EuWIYTcS0aQesk2hDv3khGkXrKP4esDY4Af9fkXUxSKWxQC8eQAAAAASUVORK5CYII=",
+ WOUNDS:"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFAAAAD5AQMAAACKzCDIAAAAAXNSR0IB2cksfwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAAZQTFRFAAAA8V0iyxTC1QAAAAJ0Uk5TAP9bkSK1AAABuklEQVR4nJ3WQW4DIQwAQKM9cCs/KD8p3+qhCjyNp/AEjhzQutiEjdMqUswe2pGy6zgL2AYYl0mwLg2PvEVbtujqFr1ge59BsG8xnltE3KFBTBs8EPMGLWLZoEOsG/SIbYMBsW8wIp4bxCfimzR/mNQ8iFlNSyxqOmJV0xObmoHY1Yx4LYaGiNdiKGgmk5LHZFbSThYl3T9WJf1kUzJMdiXj5Kkk3i8daVVOipKYPVxs/mJ1F4tl0qpk/sNM5iIHZ56cHrPzD8y0Ko1fUSFWfsnMYmaptBQ2HXcmmw1x3AWuAD3hRtjR1CKzU6MKzAaxj8DECuMe+udH2PGkHR96znYEJib6FsOcCRBPSmsEbtTFAuUZOHyk7P1gnZXLDZZZguxgnmXl6BDTLBVmcB3/E27rSN/gZx3TL/heR+8T6jpOH1DWEbGQ17Y/IK2tbF7tyTDZX+0Hs5jWabqvxT3wCov8znAFFhQ3iMdEMPEVcp+JdESSInXxg8SJFWdeVA1ZguIK+1T7/Ar7VH9FBRc9QHQR2Z3io5OFR1v0j8YqWrNo7mI8EAOGnFbEkCPGJDFzianNloticpyz5y8ZuJpHS/llHAAAAABJRU5ErkJggg==",RANGED:"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAWgAAADeAQMAAAAqzwhKAAAAAXNSR0IB2cksfwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAAZQTFRF8V0iAAAAsREfvAAAAAJ0Uk5T/wDltzBKAAACMUlEQVR4nO2VPW7rMBCER1ChUkfQUXw0850gVyKQg4RdWr5ODzDsUPzb3QFSvCZIsWwMer6d4U5h41XPx8ueT7r/ax9oH2+kvtP9r6E3Uv/QPWn6uZIKuse7+vqxWPGJu/0i3BR9ktcDN8o6FJ3J6+yqZO2KTuR1dlWyNkVH8sqwJZ1YFR3IK8GWlLEoGuQViU6A0E+QGmArjWg1oC1BKmArDWg1oC1h1ZJlKy33Y9KZ1JJlKr2m90knUs/hpaa3SUdS8/BS9DrpQGqCrfTKWiYNoiNspVcWBn0tYbwCbKVXVq0B/VnGC8NLZdUa0J+lvWqWrvTKqjVgPEt51SxdKcZiGM9SXjVLVdqytk5H8srTS2ethhavNL101tLpQF5xeuksdBrkFaaXzup0W0J5Yao666oBYwnx6tNSUsu6asBYQrz6tJTU70elM3mdopqsvdKJvLKoJmurdCSvJKrJWisdyCuJarKWSoO8oqhm+kLnEtMrED2mSw2YS0wV4mWmSw2YSwx1Zo1K5/0odCZ1ZvVKZXovdCJVsg6a3godSZWsnabXQgdSJWuj6aXQIFWyVqILK0t0VbIWysIdD6blDsrCDbJE81JZrVLJwgH1rPGvIl6UtUM9q3qprFqpztqgnlW9dNZOWSvUs6qXztooa4E+u62glpTx3dlsBbWk9A3rtNNOO+2000477bTTTjvttNNOO+20007/Rvr1P8dpp53+Efr3/EI47bTTTjvt9A/SX4ixGQhuAYYYAAAAAElFTkSuQmCC",MELEE:"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAeIAAAEMAQMAAAAiaScSAAAAAXNSR0IB2cksfwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAAZQTFRFAAAA8V0iyxTC1QAAAAJ0Uk5TAP9bkSK1AAABMklEQVR4nO3ZMQ7CQAxEURAFJUfYo+zRcm0KpCBCi5NhP5EA/elfNShrm8PBGGPM++nzTa1Wq9VqtVqtVqvV6n/Qbd7Mip6Q3sYr+oj0Cekz0hekG9IT0gGudVJYrZPCap0UVuuksFo3pDvSCS51VFipo8JKHRVW6qiwUjekO9IRfpFrXlils8IqnRVW6aywSjekO9IT0cOFLXq4sEUPF7bo4cIW3ZDuSE9Ejxf20OOFPX9rUbparVb/imZfRfZFHp63PvESNaTZC8xefzZ5sKlnvDI+r8FJk025bMJm0z3bLNhWE1a2zzbHNkm2xbINmm3v7HKQVbbTzYNda9iliF2p2IWMXefgZbAj3ZBm11h2CWZXaHYBh9f3jvRmvvYfD7VarVar1Wq1Wq1Wq40xxvxY7j/C5oG5uPs6AAAAAElFTkSuQmCC"};
+const img=(k,c='')=>`<img src="${I[k]}" alt="${k}"${c?` class="${c}"`:''}>`;
+let tab='turn',collapsed=false,toast=true,ploySeg='strat',refScope='team',enemySeg='ops',logSeg='events',squadSeg='all';
+const squad=[
+ {n:'Бессмертный деспотек',w:12,m:13,o:'Engage',s:'used'},
+ {n:'Хрономант',w:9,m:9,o:'Conceal',s:'ready'},
+ {n:'Страж-бессмертный',w:7,m:10,o:'Engage',s:'active'},
+ {n:'Страж-бессмертный',w:10,m:10,o:'Engage',s:'ready'},
+ {n:'Метчик смерти',w:3,m:10,o:'Conceal',s:'ready'},
+ {n:'Плазмацит-реаниматор',w:0,m:5,o:'Conceal',s:'down'},
+ {n:'Подмастерье',w:8,m:8,o:'Engage',s:'used'}];
+const enemy=[
+ {n:'Капитан',w:15,m:15,o:'Engage',s:'used'},
+ {n:'Сержант-ветеран',w:8,m:14,o:'Engage',s:'ready'},
+ {n:'Штурмовой интерцессор',w:14,m:14,o:'Conceal',s:'ready'},
+ {n:'Элиминатор',w:0,m:13,o:'Conceal',s:'down'},
+ {n:'Интерцессор-гренадер',w:6,m:14,o:'Engage',s:'used'}];
+const bar=(w,m)=>{const p=Math.round(w/m*100);return `<div class="bar ${p<=34?'low':p<=67?'mid':''}"><i style="width:${p}%"></i></div>`};
+const stateChip=s=>s==='ready'?'<span class="chip ok">ГОТОВ</span>':s==='active'?'<span class="chip acc">АКТИВЕН</span>':s==='down'?'<span class="chip hurt">ВЫВЕДЕН</span>':'<span class="chip mute">ИСПОЛЬЗОВАН</span>';
+const orderChip=o=>`<span class="chip ${o==='Engage'?'':'mute'}">${o==='Engage'?'БОЙ':'СКРЫТНОСТЬ'}</span>`;
+
+function head(){return `<div class="head">
+  <div class="r1"><span class="eyebrow">Раунд 2 / 4 · Перестрелка</span><span class="sp"></span>
+   <span class="iconbtn" title="Свернуть">‹</span></div>
+  <div class="sides">
+   <div class="side r turn"><span class="sw"></span><span class="nm">Круг Иеротек</span><span class="num">2<small>CP</small></span><span class="num">7<small>VP</small></span></div>
+   <div class="side b"><span class="sw"></span><span class="nm">Ангелы смерти</span><span class="num">3<small>CP</small></span><span class="num">5<small>VP</small></span></div>
+  </div></div>`}
+
+function vTurn(){return {body:`
+ <div class="card">
+  <div style="display:flex;gap:10px;align-items:flex-start">
+   <div style="flex:1;min-width:0"><div class="title">Страж-бессмертный</div><div class="en">Immortal Guardian</div></div>
+   <div class="chips">${orderChip('Engage')}${stateChip('active')}</div></div>
+  <div class="stats">
+   <div class="stat"><span class="k">${img('APL')}APL</span><span class="v">2</span></div>
+   <div class="stat"><span class="k">${img('MOVE')}MOVE</span><span class="v">5″</span></div>
+   <div class="stat"><span class="k">${img('SAVE')}SAVE</span><span class="v">3+</span></div>
+   <div class="stat"><span class="k">${img('WOUNDS')}WND</span><span class="v">7<span style="color:var(--muted);font-size:13px">/10</span></span></div></div>
+  ${bar(7,10)}
+  <div class="ap"><span class="lbl">AP</span><span class="pips"><i></i><i class="used"></i></span><span class="t">осталось 1 из 2</span></div>
+ </div>
+ <div class="seg"><div class="on">Бой · Engage</div><div>Скрытность · Conceal</div></div>
+ <div class="sec">Оружие</div>
+ <div class="wrow on">${img('RANGED')}<span class="n">Карабин Теслы<small>Tesla carbine</small></span><span class="p"><b>4</b> A · <b>3+</b> · <b>5/2</b></span><span class="q">?</span></div>
+ <div class="wrow">${img('MELEE')}<span class="n">Штык<small>Bayonet</small></span><span class="p"><b>3</b> A · <b>3+</b> · <b>3/4</b></span><span class="q">?</span></div>
+ <div class="sec">Действия</div>
+ <div class="actions">
+  <div class="act done">Перемещение<span class="c">✓ 1 AP</span></div>
+  <div class="act dis">Рывок<span class="c">1 AP</span></div>
+  <div class="act">Стрельба<span class="c">1 AP</span></div>
+  <div class="act">Ближний бой<span class="c">1 AP</span></div>
+  <div class="act dis">Натиск<span class="c">1 AP</span></div>
+  <div class="act dis">Отступление<span class="c">2 AP</span></div>
+  <div class="act wide">Миссия / уникальное действие<span class="c">1 AP</span></div>
+ </div>
+ <div class="sec">Эффекты на модели</div>
+ <div class="chips"><span class="chip acc">Неумолимое наступление · до конца раунда</span><span class="chip mute">+ эффект</span></div>
+ <button class="btn ghost" style="justify-content:flex-start;padding:0">Особая стоимость AP или повтор действия…</button>`,
+ foot:`<button class="btn">Уловки</button><button class="btn primary grow">Завершить активацию</button>`}}
+
+function vSquad(){const list=squad.filter(u=>squadSeg==='all'||(squadSeg==='ready'?u.s==='ready':u.w<u.m));
+ return {body:`
+ <div style="display:flex;align-items:center;gap:8px"><div style="flex:1"><div class="title" style="font-size:18px">Круг Иеротек</div><div class="en">6 из 7 в строю · 3 готовы</div></div>
+  <button class="btn" style="height:34px;font-size:12px">+ Добавить выделенные</button></div>
+ <div class="seg" data-g="squad"><div data-v="all" class="${squadSeg==='all'?'on':''}">Все</div><div data-v="ready" class="${squadSeg==='ready'?'on':''}">Готовы</div><div data-v="hurt" class="${squadSeg==='hurt'?'on':''}">Ранены</div></div>
+ ${list.map((u,i)=>`<div class="row ${u.s==='used'?'used':u.s==='down'?'down':''}"><span class="st" style="${u.s==='active'?'background:var(--accent)':u.s==='ready'?'background:var(--ok)':''}"></span>
+   <div class="main"><span class="nm">${u.n}</span><div class="meta">${bar(u.w,u.m)}<span class="w">${u.w}/${u.m}</span></div>
+   <div class="chips">${orderChip(u.o)}${stateChip(u.s)}</div></div>
+   ${u.s==='ready'?'<button class="btn" style="height:30px;font-size:12px;padding:0 10px">Ход ›</button>':''}</div>`).join('')}
+ <p class="note">Клик по карточке подсвечивает модель на столе и выбирает её для хода. «Ход ›» сразу начинает активацию.</p>`,
+ foot:`<button class="btn primary grow">Начать активацию: Хрономант</button>`}}
+
+const ploys={strat:[
+ {n:'Неумолимое наступление',e:'Relentless Onslaught',c:1,used:true,star:true},
+ {n:'Командование подчинёнными',e:'Command Underlings',c:1},
+ {n:'Методичное уничтожение',e:'Methodical Elimination',c:1},
+ {n:'Неумирающие автоматы',e:'Undying Androids',c:1}],
+ fire:[{n:'Живая молния',e:'Living Lightning',c:1,open:true},{n:'Контроль корой',e:'Cortical Control',c:1},{n:'Повторно активированная функция',e:'Reanimated Function',c:1},{n:'Межпространственная засада',e:'Dimensional Ambush',c:1},{n:'Командный переброс',e:'Command Re-roll',c:1,star:true}],
+ star:[{n:'Неумолимое наступление',e:'Relentless Onslaught',c:1,used:true,star:true},{n:'Командный переброс',e:'Command Re-roll',c:1,star:true}]};
+function ployRow(p){
+ if(p.open)return `<div class="row ploy open"><div class="top"><div class="main"><span class="nm">${p.n}</span><span class="en">${p.e}</span></div><span class="cost">${p.c} CP</span><span class="star">★</span></div>
+  <div class="rule"><h4>Эффект</h4><p>Примените, когда дружественный <span class="t">Бессмертный</span> из Круга Иеротек выполняет действие «Стрелять» и выбирает карабин Теслы. До конца действия оружие теряет дистанционное условие 2″ у правила <span class="t">Взрыв</span> и получает <span class="t">Беспощадное</span>.</p></div>
+  <div style="display:flex;gap:6px"><button class="btn primary grow">Применить <span class="pill">−1 CP</span></button><button class="btn">Закрепить ★</button></div></div>`;
+ return `<div class="row ploy ${p.used?'usedr':''}"><div class="main"><span class="nm">${p.n}</span><span class="en">${p.e}</span>${p.used?'<span class="chips"><span class="chip ok">✓ ПРИМЕНЕНА В РАУНДЕ</span></span>':''}</div>
+  <span class="cost">${p.c} CP</span><span class="star ${p.star?'on':''}">★</span></div>`}
+function vPloys(){return {body:`
+ <div class="seg" data-g="ploy"><div data-v="strat" class="${ploySeg==='strat'?'on':''}">Стратегия</div><div data-v="fire" class="${ploySeg==='fire'?'on':''}">Перестрелка</div><div data-v="star" class="${ploySeg==='star'?'on':''}">★ Закреплённые</div></div>
+ <div class="search">Найти уловку…</div>
+ ${ploySeg==='fire'?'<p class="note">Сейчас ход противника: ответные уловки доступны.</p>':''}
+ ${ploys[ploySeg].map(ployRow).join('')}
+ ${ploySeg==='star'?'<p class="note">★ остаются между раундами, ✓ сбрасываются в начале раунда.</p>':''}`,
+ foot:`<div class="note" style="flex:1;align-self:center">Доступно <b style="color:var(--fg)">2 CP</b> · Командный переброс: 0 из 1 в раунде</div>`}}
+
+function vEnemy(){return {body:`
+ <div style="display:flex;align-items:center;gap:10px"><span style="width:4px;height:38px;background:var(--blue)"></span><div style="flex:1"><div class="title" style="font-size:18px">Ангелы смерти</div><div class="en">Синий · 3 CP · 5 VP · тактика «Агрессивный»</div></div></div>
+ <div class="seg" data-g="enemy"><div data-v="ops" class="${enemySeg==='ops'?'on':''}">Оперативники</div><div data-v="ploys" class="${enemySeg==='ploys'?'on':''}">Уловки</div><div data-v="rules" class="${enemySeg==='rules'?'on':''}">Правила</div></div>
+ ${enemySeg==='ops'?enemy.map(u=>`<div class="row ${u.s==='used'?'used':u.s==='down'?'down':''}"><span class="st" style="${u.s==='ready'?'background:var(--blue)':''}"></span>
+   <div class="main"><span class="nm">${u.n}</span><div class="meta">${bar(u.w,u.m)}<span class="w">${u.w}/${u.m}</span></div><div class="chips">${orderChip(u.o)}${stateChip(u.s)}</div></div>
+   <span class="q" style="width:26px;height:26px;line-height:26px">i</span></div>`).join('')+'<p class="note">Только просмотр. «i» открывает карточку модели в справочнике.</p>'
+ :enemySeg==='ploys'?['Сменить доктрину|Adjust Doctrine|1','Сверхчеловеческая физиология|Transhuman Physiology|1','Штурм с шоком|Shock Assault|1','Гнев возмездия|Wrath of Vengeance|1','Боевая доктрина|Combat Doctrine|1'].map(s=>{const[a,b,c]=s.split('|');return `<div class="row"><div class="main"><span class="nm">${a}</span><span class="en">${b}</span></div><span class="cost">${c} CP</span></div>`}).join('')
+ :`<div class="card"><b style="font:bold 15px var(--ui)">Тактика ордена</b><div class="rule"><p><b>1. Агрессивный.</b> Оружие ближнего боя этого оперативника получает правило «Разрывающее» (Rending).</p><p><b>2. Дуэлянт.</b> Когда этот оперативник сражается…</p></div></div>`}`,
+ foot:`<button class="btn grow">Открыть отряд в справочнике</button>`}}
+
+function vRef(){return {wide:true,raw:`
+ <div class="refwrap">
+  <div class="refcol">
+   <div class="scope">${[['model','Модель'],['weapon','Оружие'],['team','Отряд'],['ploy','Уловки'],['eq','Снаряжение'],['faq','FAQ']].map(([k,v])=>`<div data-s="${k}" class="${refScope===k?'on':''}">${v}</div>`).join('')}</div>
+   <div class="search"><b>реаним</b></div>
+   <div class="sec">Найдено <span class="ct">4</span></div>
+   <div class="res on"><b>Плазмацит-реаниматор — Реанимация</b><span>Plasmacyte Reanimator — Reanimate</span></div>
+   <div class="res"><b>Протоколы реанимации</b><span>Reanimation Protocols</span></div>
+   <div class="res"><b>Повторно активированная функция</b><span>Reanimated Function · уловка</span></div>
+   <div class="res"><b>Живой металл</b><span>Living Metal</span></div>
+  </div>
+  <div class="refart">
+   <div class="crumb"><span class="chip acc">ОТРЯД</span><span class="en">Круг Иеротек</span></div>
+   <div class="art-h"><div class="tt"><div class="title">Плазмацит-реаниматор — Реанимация</div><div class="en" style="font-size:14px;margin-top:4px">Plasmacyte Reanimator — Reanimate</div></div><span class="cost" style="font-size:14px;padding:6px 10px">1/2 AP</span></div>
+   <div class="rule" style="font-size:16px;max-width:62ch">
+    <p>Выберите свой маркер Реанимации, <span class="t">видимый</span> этому оперативнику и находящийся <span class="t">в пределах</span> 6″. Бросьте D6: при результате 3+ дружественный оперативник РЕАНИМИРУЕТСЯ. Если потратить ещё 1 AP, он реанимируется без броска.</p>
+    <p>Если этот боец уже был использован в текущем раунде, после реанимации выставьте его использованным. Нельзя выполнять в <span class="t">зоне контроля</span> врага.</p>
+   </div>
+   <div class="sec">Профиль модели</div>
+   <table class="wtable"><tr><th>Оружие</th><th>A</th><th>BS/WS</th><th>D</th><th>Трейты</th></tr>
+    <tr><td>${img('RANGED')}Пистолет-гаусс</td><td>4</td><td>3+</td><td>3/4</td><td><div class="wr" style="justify-content:center"><span class="chip">Дистанция 6″</span><span class="chip">Убойное</span></div></td></tr>
+    <tr><td>${img('MELEE')}Клинки</td><td>3</td><td>4+</td><td>3/5</td><td>—</td></tr></table>
+   <div class="pop"><span class="iconbtn x">×</span><span class="chip acc" style="align-self:flex-start">ТЕРМИН</span><b style="font:bold 17px var(--ui)">Зона контроля</b><span class="en">Control range</span><div class="rule">Расстояние 1″ от оперативника, при этом он должен его видеть. Пока враг в зоне контроля, нельзя выполнять ряд действий.</div><span class="note">Закрытие вернёт к тому же месту статьи.</span></div>
+  </div>
+ </div>`}}
+
+function vLog(){return {body:`
+ <div class="seg" data-g="log"><div data-v="events" class="${logSeg==='events'?'on':''}">События</div><div data-v="score" class="${logSeg==='score'?'on':''}">Счёт по раундам</div></div>
+ ${logSeg==='events'?`
+ <div class="sec">Раунд 2 · Перестрелка</div>
+ <div class="log">
+  <div class="e"><span class="who"></span><span class="tx"><b>Страж-бессмертный</b>: Перемещение<small>Красный · активация 4</small></span><span class="d">1 AP</span></div>
+  <div class="e b"><span class="who"></span><span class="tx"><b>Сержант-ветеран</b>: Стрельба по Метчику смерти<small>Синий · урон 7, WND 10→3</small></span><span class="d neg">−7 WND</span></div>
+  <div class="e"><span class="who"></span><span class="tx">Уловка <b>Неумолимое наступление</b><small>Красный · гамбит</small></span><span class="d neg">−1 CP</span></div>
+  <div class="e b"><span class="who"></span><span class="tx">Инициатива: <b>Синий</b><small>+1 CP Синему, +2 CP Красному</small></span><span class="d">+CP</span></div>
+ </div>
+ <div class="sec">Раунд 1</div>
+ <div class="log">
+  <div class="e"><span class="who"></span><span class="tx">Очки за критическую операцию<small>Красный · подсчёт</small></span><span class="d">+2 VP</span></div>
+  <div class="e b"><span class="who"></span><span class="tx"><b>Элиминатор</b> выведен из строя<small>Синий</small></span><span class="d neg">выведен</span></div>
+ </div>`:`
+ <table class="score-t"><tr><th>Раунд</th><th class="rc">CP</th><th class="rc">VP</th><th class="bc">CP</th><th class="bc">VP</th></tr>
+  <tr><td>1</td><td>3 → 1</td><td>4</td><td>3 → 2</td><td>3</td></tr>
+  <tr><td>2</td><td>3 → 2</td><td>3</td><td>3 → 3</td><td>2</td></tr>
+  <tr><td>3</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+  <tr><td>4</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+  <tr class="tot"><td>Итого</td><td></td><td class="rc">7</td><td></td><td class="bc">5</td></tr></table>
+ <div class="sec">Источники VP</div>
+ <table class="score-t"><tr><th></th><th class="rc">Красный</th><th class="bc">Синий</th></tr>
+  <tr><td>Крит. операция</td><td>4</td><td>3</td></tr><tr><td>Так. операция</td><td>2</td><td>1</td></tr><tr><td>Операция на убийство</td><td>1</td><td>1</td></tr></table>`}`,
+ foot:`<div class="note" style="flex:1;align-self:center">VP берутся из табло стола, CP — из учёта помощника.</div>`}}
+
+const views={turn:vTurn,squad:vSquad,ploys:vPloys,enemy:vEnemy,ref:vRef,log:vLog};
+const tabs=[['turn','Ход','APL'],['squad','Отряд','WOUNDS'],['ploys','Уловки','*'],['enemy','Враг','RANGED'],['ref','Справка','?'],['log','Журнал','≡']];
+
+function render(){
+ const v=views[tab]();
+ const s=document.getElementById('screen');
+ const rail=`<div class="rail"><div class="brand"><span>KT</span></div>
+   ${tabs.map(([k,l,g])=>`<div class="tab ${tab===k?'on':''}" data-tab="${k}"><span class="gl">${I[g]?img(g):`<span class="glyph">${g==='*'?'★':g}</span>`}</span>${l}</div>`).join('')}
+   <div class="grow"></div><div class="collapse" id="rc">${collapsed?'›':'‹'}</div></div>`;
+ const panel=collapsed?'':`<div class="panel">${head()}${v.raw?v.raw:`<div class="body">${v.body}</div>${v.foot?`<div class="foot">${v.foot}</div>`:''}`}</div>`;
+ s.innerHTML=`<div class="ttsbar"><b>Tabletop Simulator</b><span>Menu</span><span>Host</span><span>Games</span><span>Objects</span><span>Tools</span><span>Flip</span></div>
+  <div class="board"><div class="zone"></div>
+   <span class="mini r" style="left:180px;top:420px"></span><span class="mini r hl" style="left:250px;top:470px"></span><span class="mini r" style="left:120px;top:520px"></span>
+   <span class="mini b" style="left:700px;top:180px"></span><span class="mini b" style="left:780px;top:230px"></span><span class="mini b" style="left:640px;top:280px"></span></div>
+  <div class="ttschat">[Синий] Сержант стреляет по метчику…</div>
+  <div class="score"><span>Красный · 7 VP · 2 CP</span><span class="mid">РАУНД 2<br>табло стола</span><span>Синий · 5 VP · 3 CP</span></div>
+  <div class="dock ${v.wide&&!collapsed?'wide':''}">${rail}${panel}</div>
+  ${toast&&!collapsed&&tab==='turn'?`<div class="toast"><span class="msg"><b>Перемещение выполнено</b>Страж-бессмертный · −1 AP</span><span class="u">Отменить</span></div>`:''}`;
+ document.querySelectorAll('.controls [data-tab]').forEach(b=>b.setAttribute('aria-pressed',b.dataset.tab===tab));
+ document.getElementById('tCollapse').setAttribute('aria-pressed',collapsed);
+ document.getElementById('tToast').setAttribute('aria-pressed',toast);
+ fit();
+}
+function ds(){document.getElementById('ds').innerHTML=`
+ <div class="hd"><div class="nm"><div class="title">Страж-бессмертный</div><div class="en">Immortal Guardian · Круг Иеротек</div></div>
+  <div class="st"><div>${img('APL')}<b>2</b><small>APL</small></div><div>${img('MOVE')}<b>5″</b><small>MOVE</small></div><div>${img('SAVE')}<b>3+</b><small>SAVE</small></div><div>${img('WOUNDS')}<b>10</b><small>WND</small></div></div><div class="x">×</div></div>
+ <div class="sect"><div class="wl">
+  <div class="w hd2"><span></span><span>ОРУЖИЕ · клик — бросок</span><span class="c">A</span><span class="c">BS</span><span class="c">D</span></div>
+  <div class="w">${img('RANGED')}<span class="n"><b>Карабин Теслы</b><span class="wr"><span class="chip">Взрыв 2″ ?</span><span class="chip">Беспощадное ?</span></span></span><span class="c">4</span><span class="c">3+</span><span class="c">5/2</span></div>
+  <div class="w">${img('MELEE')}<span class="n"><b>Штык</b></span><span class="c">3</span><span class="c">3+</span><span class="c">3/4</span></div></div></div>
+ <div class="sect" style="padding-top:0"><div class="grid2">
+  <div class="ab"><div class="h"><b>Живой металл</b><span class="en">Living Metal</span></div><p>В шаге «Готовность» каждого раунда этот оперативник восстанавливает 2 потерянных WND.</p></div>
+  <div class="ab"><div class="h"><b>Неумирающие</b><span class="en">Undying</span></div><p>Когда оперативник выведен из строя, поставьте маркер Реанимации на его месте.</p></div>
+  <div class="ab one"><div class="h"><b>Межпространственное командование</b><span class="en">Interstitial Command</span><span class="cost">1 AP</span></div><p>ПОДДЕРЖКА. Выберите другого дружественного оперативника Круга Иеротек, видимого этому оперативнику. До конца раунда при активации он может выполнить одно дополнительное действие «Перемещение» без затрат AP.</p></div>
+ </div></div>
+ <div class="foot2"><span>Клик по оружию — бросок кубиков</span><span>«?» — определение трейта</span><span>Полная статья — Центр › Справка</span></div>`}
+function fit(){const st=document.getElementById('stage'),sc=document.getElementById('screen');const k=st.clientWidth/1920;sc.style.transform=`scale(${k})`;st.style.height=(1080*k)+'px'}
+document.addEventListener('click',e=>{
+ const t=e.target.closest('[data-tab]');if(t){tab=t.dataset.tab;collapsed=false;render();return}
+ if(e.target.closest('#rc')||e.target.closest('.head .iconbtn')){collapsed=!collapsed;render();return}
+ if(e.target.closest('#tCollapse')){collapsed=!collapsed;render();return}
+ if(e.target.closest('#tToast')){toast=!toast;render();return}
+ if(e.target.closest('.toast .u')){toast=false;render();return}
+ const sg=e.target.closest('.seg [data-v]');if(sg){const g=sg.parentElement.dataset.g,v=sg.dataset.v;if(g==='ploy')ploySeg=v;if(g==='enemy')enemySeg=v;if(g==='log')logSeg=v;if(g==='squad')squadSeg=v;render();return}
+ const sc=e.target.closest('.scope [data-s]');if(sc){refScope=sc.dataset.s;render()}
+});
+window.addEventListener('resize',fit);
+render();ds();
+</script>
