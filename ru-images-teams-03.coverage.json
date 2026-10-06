@@ -1,0 +1,2285 @@
+{
+  "batch": "03",
+  "teams": [
+    "Mandrakes",
+    "Wyrmblade",
+    "Hand of the Archon",
+    "Hunter Clade"
+  ],
+  "sourceFiles": [
+    "inventory/card-assets.json",
+    "inventory/image-sources.json",
+    "inventory/image-ocr-en.json",
+    "inventory/original-images/*.img"
+  ],
+  "included": [
+    {
+      "sourceSHA256": "02ef3aa59d81062bf70d495597c5ea3785a83b5cc229d008e0ff5ffd3336ac7f",
+      "imageIDs": [
+        "afbcb9bd3a094b4e"
+      ],
+      "appearances": [
+        {
+          "team": "Hunter Clade",
+          "assetName": "Extremis Mind-Link",
+          "side": "face",
+          "imageID": "afbcb9bd3a094b4e"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "03aacb5c5fbe177daf3e4d07d0a7153217471eb693719eb7575bb825973bfe1d",
+      "imageIDs": [
+        "4ea45182ec448ab6"
+      ],
+      "appearances": [
+        {
+          "team": "Hunter Clade",
+          "assetName": "Scrapcode Overload",
+          "side": "face",
+          "imageID": "4ea45182ec448ab6"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "04bff086514740a514f86ebd65dcd6ebda10516de60adbf53735f04e32d20b85",
+      "imageIDs": [
+        "0e82581fae608043"
+      ],
+      "appearances": [
+        {
+          "team": "Hunter Clade",
+          "assetName": "Skitarii Vanguard Diktat",
+          "side": "face",
+          "imageID": "0e82581fae608043"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "04fc56e07c1fe1ed0c6aaa8b838ba6cef6371e81f62404a948ebb922d38e800d",
+      "imageIDs": [
+        "e778c4d6744d18e3"
+      ],
+      "appearances": [
+        {
+          "team": "Mandrakes",
+          "assetName": "Soul Gem",
+          "side": "face",
+          "imageID": "e778c4d6744d18e3"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "0611305ad655b1db65637122074da574eb84b02273f1e85f0652fe654227109d",
+      "imageIDs": [
+        "dbc4eae2602698e3"
+      ],
+      "appearances": [
+        {
+          "team": "Wyrmblade",
+          "assetName": "Sanctus Sniper",
+          "side": "back",
+          "imageID": "dbc4eae2602698e3"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "0d9e681a14cf01854b2536431e40fc06af25bb3c3d9c12e1f77c68631be0fa2c",
+      "imageIDs": [
+        "3f6902bbc5750483"
+      ],
+      "appearances": [
+        {
+          "team": "Wyrmblade",
+          "assetName": "Coiled Serpent",
+          "side": "face",
+          "imageID": "3f6902bbc5750483"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "0e38c1e646196ef6c38af6d4b7667885d76404ddc7953bc7d1cfecd377c43876",
+      "imageIDs": [
+        "b013b8aa28f51876"
+      ],
+      "appearances": [
+        {
+          "team": "Hunter Clade",
+          "assetName": "Debilitating Irradiation",
+          "side": "face",
+          "imageID": "b013b8aa28f51876"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "0ec83e37f05432a6909d2c23bcea13455c64030bdb726a1de910af4176312d06",
+      "imageIDs": [
+        "6fdcd9903728fa82"
+      ],
+      "appearances": [
+        {
+          "team": "Hand of the Archon",
+          "assetName": "Wicked Blades",
+          "side": "face",
+          "imageID": "6fdcd9903728fa82"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "0ed35e6576d15c742bc6745b233c0c8a9a482e1d3ae8b05e1f0af2dd5c77e9f4",
+      "imageIDs": [
+        "20c635bd1ec406a7"
+      ],
+      "appearances": [
+        {
+          "team": "Wyrmblade",
+          "assetName": "Sanctus Sniper",
+          "side": "face",
+          "imageID": "20c635bd1ec406a7"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "11a8ffddf973684b92b4273be145f5d4dc9b1c2137bafff1840d56701d9d4faf",
+      "imageIDs": [
+        "2cbe4dc69d958480"
+      ],
+      "appearances": [
+        {
+          "team": "Hunter Clade",
+          "assetName": "Skitarii Ranger Diktat",
+          "side": "face",
+          "imageID": "2cbe4dc69d958480"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "11bf2fb1fb0ac7d5531a405274856b924d2d10740e957cc8b028aeb4837b0cd8",
+      "imageIDs": [
+        "28a6111d1ec006e1"
+      ],
+      "appearances": [
+        {
+          "team": "Mandrakes",
+          "assetName": "Within Shadow",
+          "side": "face",
+          "imageID": "28a6111d1ec006e1"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "1479c2ec4628e467de6ec05e2023e18facf073a500e48eb92bbd72596e92991e",
+      "imageIDs": [
+        "44873c5f87ae2021"
+      ],
+      "appearances": [
+        {
+          "team": "Wyrmblade",
+          "assetName": "Neophyte Leader",
+          "side": "face",
+          "imageID": "44873c5f87ae2021"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "151d8045cff311a2f68dccd7faf86679f13bc6d766c1199a87f9a0b2b74a54cc",
+      "imageIDs": [
+        "baecb039e2caad74"
+      ],
+      "appearances": [
+        {
+          "team": "Mandrakes",
+          "assetName": "Shadow Passage",
+          "side": "back",
+          "imageID": "baecb039e2caad74"
+        },
+        {
+          "team": "Mandrakes",
+          "assetName": "Slither Out of Sight",
+          "side": "back",
+          "imageID": "baecb039e2caad74"
+        },
+        {
+          "team": "Mandrakes",
+          "assetName": "Nowhere to Hide",
+          "side": "back",
+          "imageID": "baecb039e2caad74"
+        },
+        {
+          "team": "Mandrakes",
+          "assetName": "Shadow’s Bite",
+          "side": "back",
+          "imageID": "baecb039e2caad74"
+        },
+        {
+          "team": "Mandrakes",
+          "assetName": "Soul Feast",
+          "side": "back",
+          "imageID": "baecb039e2caad74"
+        },
+        {
+          "team": "Mandrakes",
+          "assetName": "Mandrakes Kill Team",
+          "side": "back",
+          "imageID": "baecb039e2caad74"
+        },
+        {
+          "team": "Mandrakes",
+          "assetName": "Creeping Horror",
+          "side": "back",
+          "imageID": "baecb039e2caad74"
+        },
+        {
+          "team": "Mandrakes",
+          "assetName": "Gloaming Shroud",
+          "side": "back",
+          "imageID": "baecb039e2caad74"
+        },
+        {
+          "team": "Mandrakes",
+          "assetName": "Blade in the Dark",
+          "side": "back",
+          "imageID": "baecb039e2caad74"
+        },
+        {
+          "team": "Mandrakes",
+          "assetName": "Inescapable Nightmare",
+          "side": "back",
+          "imageID": "baecb039e2caad74"
+        },
+        {
+          "team": "Mandrakes",
+          "assetName": "Within Shadow",
+          "side": "back",
+          "imageID": "baecb039e2caad74"
+        },
+        {
+          "team": "Mandrakes",
+          "assetName": "Umbral Entities",
+          "side": "back",
+          "imageID": "baecb039e2caad74"
+        },
+        {
+          "team": "Mandrakes",
+          "assetName": "Soulstrike",
+          "side": "back",
+          "imageID": "baecb039e2caad74"
+        },
+        {
+          "team": "Mandrakes",
+          "assetName": "Chain Snare",
+          "side": "back",
+          "imageID": "baecb039e2caad74"
+        },
+        {
+          "team": "Mandrakes",
+          "assetName": "Shadow Glyph",
+          "side": "back",
+          "imageID": "baecb039e2caad74"
+        },
+        {
+          "team": "Mandrakes",
+          "assetName": "Bone Darts",
+          "side": "back",
+          "imageID": "baecb039e2caad74"
+        },
+        {
+          "team": "Mandrakes",
+          "assetName": "Soul Gem",
+          "side": "back",
+          "imageID": "baecb039e2caad74"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "1592064a1f29e4a21df5ffe902149911fd03de34480517ba33312d2f1daad295",
+      "imageIDs": [
+        "b375deff78340e15"
+      ],
+      "appearances": [
+        {
+          "team": "Hunter Clade",
+          "assetName": "Skitarii Ranger Alpha",
+          "side": "face",
+          "imageID": "b375deff78340e15"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "15f1fb30ac5333b663fce577358a062fcd98741385cf6235fda194e65539252b",
+      "imageIDs": [
+        "2a280584f2564871"
+      ],
+      "appearances": [
+        {
+          "team": "Wyrmblade",
+          "assetName": "Familiar Territory",
+          "side": "face",
+          "imageID": "2a280584f2564871"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "24862ab42aac6a1b0adf4622a0797f1fc991a9b7ed6909d0a74cab4f524ca35b",
+      "imageIDs": [
+        "00080c27039bb502"
+      ],
+      "appearances": [
+        {
+          "team": "Hunter Clade",
+          "assetName": "Hunter Clade roster restrictions",
+          "side": "face",
+          "imageID": "00080c27039bb502"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "26425ecc534d1c52db3480b5242cb08bb060941f1c5c2f02abcd576381bd6d74",
+      "imageIDs": [
+        "62187b561036904a"
+      ],
+      "appearances": [
+        {
+          "team": "Hand of the Archon",
+          "assetName": "Denizens of Night",
+          "side": "face",
+          "imageID": "62187b561036904a"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "26d33e99f7c7669e180bbad40cd1c31593851f236d6ffd6938e9651021c2f15a",
+      "imageIDs": [
+        "13eb7a7275cbd39c"
+      ],
+      "appearances": [
+        {
+          "team": "Wyrmblade",
+          "assetName": "Slink Into Darkness",
+          "side": "face",
+          "imageID": "13eb7a7275cbd39c"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "272a1d1d811ca47050b2c9f80f8cd5bb911a9c571598acef771974e606279452",
+      "imageIDs": [
+        "8d56ccc96166eb3c"
+      ],
+      "appearances": [
+        {
+          "team": "Hunter Clade",
+          "assetName": "Sicarian Infiltrator Warrior",
+          "side": "face",
+          "imageID": "8d56ccc96166eb3c"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "2ad9734e3f3ba2c170de37eef10743f85fc5a4f4e0d7961210d5697ba708d7b4",
+      "imageIDs": [
+        "65b1af6c0171ce3d"
+      ],
+      "appearances": [
+        {
+          "team": "Hand of the Archon",
+          "assetName": "Kabalite Gunner",
+          "side": "face",
+          "imageID": "65b1af6c0171ce3d"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "2b5adea09cf513f689cf3b3c6b005abdbda11b0ee8cd91887d7cb922727f6f9f",
+      "imageIDs": [
+        "2c831bbbefbe140a"
+      ],
+      "appearances": [
+        {
+          "team": "Wyrmblade",
+          "assetName": "Blasting Charges",
+          "side": "face",
+          "imageID": "2c831bbbefbe140a"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "2ee621ec8a8970ae10b169fef17ee1f2c379d75abb28402401a2bfe8d10413b4",
+      "imageIDs": [
+        "0f01b694c5a0a493"
+      ],
+      "appearances": [
+        {
+          "team": "Hunter Clade",
+          "assetName": "Skitarii Vanguard Alpha",
+          "side": "face",
+          "imageID": "0f01b694c5a0a493"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "2fdfd25b533e1e9be4680afc343ce9955728147d108f9ca8bb9c0a5da697febb",
+      "imageIDs": [
+        "78ab5784a44cbdd3"
+      ],
+      "appearances": [
+        {
+          "team": "Hunter Clade",
+          "assetName": "Skitarii Ranger Warrior",
+          "side": "face",
+          "imageID": "78ab5784a44cbdd3"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "323f685c57f22883ccc8fb004873c68afa63e257f76c76df8bae0a6fe019587e",
+      "imageIDs": [
+        "ccc34a353ad4f70f"
+      ],
+      "appearances": [
+        {
+          "team": "Hand of the Archon",
+          "assetName": "Kabalite Heavy Gunner",
+          "side": "face",
+          "imageID": "ccc34a353ad4f70f"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "33dca6bbe558ee6e0767ebec79be094ca0d3f15b4d1f5f2781e9ac33c3b167cd",
+      "imageIDs": [
+        "666a6d22fcec1a0b"
+      ],
+      "appearances": [
+        {
+          "team": "Wyrmblade",
+          "assetName": "Familiar Territory",
+          "side": "back",
+          "imageID": "666a6d22fcec1a0b"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "362840c313deb6c3f3109fe095a2a6b88ba8aa0df7aac07136063e7389fa2a80",
+      "imageIDs": [
+        "79f52ccc747d091d"
+      ],
+      "appearances": [
+        {
+          "team": "Hunter Clade",
+          "assetName": "Skitarii Vanguard Gunner",
+          "side": "face",
+          "imageID": "79f52ccc747d091d"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "3907c8ace12677cd3a0ba645cbbefef80c82f09efdb768945fbb6e7c64bacd94",
+      "imageIDs": [
+        "b96b8921224551e7"
+      ],
+      "appearances": [
+        {
+          "team": "Wyrmblade",
+          "assetName": "Sanctus Talon",
+          "side": "back",
+          "imageID": "b96b8921224551e7"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "3b266884542ec5d3e09be66545cc61ba1c2d94088bfb1ee3b451806a2b364ae2",
+      "imageIDs": [
+        "be98346e6fc6ebc1"
+      ],
+      "appearances": [
+        {
+          "team": "Wyrmblade",
+          "assetName": "Wyrmblade Kill Team",
+          "side": "back",
+          "imageID": "be98346e6fc6ebc1"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "3ebdd6feabdb986a8b10a80d08f4904153f14e67703cc85ca3b0b2d92c5900c9",
+      "imageIDs": [
+        "16ebdfa334383edc"
+      ],
+      "appearances": [
+        {
+          "team": "Wyrmblade",
+          "assetName": "Neophyte Heavy Gunner",
+          "side": "back",
+          "imageID": "16ebdfa334383edc"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "4031084ae5f2c1a70544381b47b99419f225eb98d0da15893908f0e68acf2439",
+      "imageIDs": [
+        "ffd278509b3c7369"
+      ],
+      "appearances": [
+        {
+          "team": "Hunter Clade",
+          "assetName": "Skitarii Vanguard Warrior",
+          "side": "face",
+          "imageID": "ffd278509b3c7369"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "411b3c4fabe7f86920784dc8638d66569f9e39e5988818909b8c6f145cbac845",
+      "imageIDs": [
+        "67dd95de0da1126e"
+      ],
+      "appearances": [
+        {
+          "team": "Hunter Clade",
+          "assetName": "Doctrina Imperatives",
+          "side": "face",
+          "imageID": "67dd95de0da1126e"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "420faa80889e302116f56fdfb7d8723bda63b8684fbc71c57465e9433aaaf774",
+      "imageIDs": [
+        "31cbced9ebec4534"
+      ],
+      "appearances": [
+        {
+          "team": "Mandrakes",
+          "assetName": "Chain Snare",
+          "side": "face",
+          "imageID": "31cbced9ebec4534"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "45534894b641c3552641eec4ebfacbec4c0281e896dc138a47f4abcd2a6efd11",
+      "imageIDs": [
+        "da594f66d6057f82"
+      ],
+      "appearances": [
+        {
+          "team": "Mandrakes",
+          "assetName": "Mandrake Dirgemaw",
+          "side": "face",
+          "imageID": "da594f66d6057f82"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "48cda54e1649617afcd519888bf6134e0e979fb82bd7519116b93167e4b49ebe",
+      "imageIDs": [
+        "c14ca67a982cdc7a"
+      ],
+      "appearances": [
+        {
+          "team": "Mandrakes",
+          "assetName": "Mandrake Abyssal",
+          "side": "back",
+          "imageID": "c14ca67a982cdc7a"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "4a655b43352051c1a134427c621167a1bb558e45406ab8407918b9d0ca6b07c4",
+      "imageIDs": [
+        "27b3208fa5bfa17f"
+      ],
+      "appearances": [
+        {
+          "team": "Mandrakes",
+          "assetName": "Umbral Entities",
+          "side": "face",
+          "imageID": "27b3208fa5bfa17f"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "4c1f0467d4c487831d02b647220c06b9501dc1993ee9666ba8f1f187df1b7c17",
+      "imageIDs": [
+        "7a4634112bc95219"
+      ],
+      "appearances": [
+        {
+          "team": "Hand of the Archon",
+          "assetName": "Devious Scheme",
+          "side": "face",
+          "imageID": "7a4634112bc95219"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "51edb6f09744e41afabef826ef813b9b9b146d156df1eeb1bd5afc557a1de8e0",
+      "imageIDs": [
+        "554526ba030c7bd5"
+      ],
+      "appearances": [
+        {
+          "team": "Hand of the Archon",
+          "assetName": "Merciless Sadists",
+          "side": "face",
+          "imageID": "554526ba030c7bd5"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "52714f9b4cb9ddbb9a1068d8f6c6e226a89350e7315fbdf71320cc7baf0f3968",
+      "imageIDs": [
+        "5d03a9715d9edcf5"
+      ],
+      "appearances": [
+        {
+          "team": "Hand of the Archon",
+          "assetName": "Kabalite Skysplinter Assassin",
+          "side": "back",
+          "imageID": "5d03a9715d9edcf5"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "52dd4d900bb1fb092207a07336f25ddc25bd7e3ee4db574b3362206b3b9b31c8",
+      "imageIDs": [
+        "efa3509d647cea8b"
+      ],
+      "appearances": [
+        {
+          "team": "Mandrakes",
+          "assetName": "Gloaming Shroud",
+          "side": "face",
+          "imageID": "efa3509d647cea8b"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "531e07e2c40084fbe54bf1cd03815fcbf6ef48340bbc23376e00b314804bdfea",
+      "imageIDs": [
+        "e7dd817a04b10dd0"
+      ],
+      "appearances": [
+        {
+          "team": "Mandrakes",
+          "assetName": "Blade in the Dark",
+          "side": "face",
+          "imageID": "e7dd817a04b10dd0"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "5b7cfb071ff640d3e64a347b8667b85b7e6060c9a7051fc8a4d230ab836ecf22",
+      "imageIDs": [
+        "57dc80d26bd7f945"
+      ],
+      "appearances": [
+        {
+          "team": "Hand of the Archon",
+          "assetName": "Kabalite Disciple of Yaelindra",
+          "side": "face",
+          "imageID": "57dc80d26bd7f945"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "5c0d57160e2f46bc9e34c75e32c76f2b25f6a669f368e8ea28d2e3d31cf9fdc2",
+      "imageIDs": [
+        "209e0874574d7b36"
+      ],
+      "appearances": [
+        {
+          "team": "Hunter Clade",
+          "assetName": "Rad Bombardment",
+          "side": "face",
+          "imageID": "209e0874574d7b36"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "5ff5461d6b6c0f93102d402b78ced597c0c6d7cdef0b4faf0875b7b260af415d",
+      "imageIDs": [
+        "4a42d4948b0d52cd"
+      ],
+      "appearances": [
+        {
+          "team": "Hunter Clade",
+          "assetName": "Refractor Field",
+          "side": "face",
+          "imageID": "4a42d4948b0d52cd"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "663d8024e313f0d68f2a057f7626e7c33639a836e7dcb9ad691df8aad1f150e6",
+      "imageIDs": [
+        "b8ba63e7acbdf84f"
+      ],
+      "appearances": [
+        {
+          "team": "Hand of the Archon",
+          "assetName": "From Darkness, Death",
+          "side": "face",
+          "imageID": "b8ba63e7acbdf84f"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "6892a9ef5ac2500eeb5818baca6b6020501710745d3518755fefc8b9a568168e",
+      "imageIDs": [
+        "e9e591dfabd261bd"
+      ],
+      "appearances": [
+        {
+          "team": "Hand of the Archon",
+          "assetName": "Rifles",
+          "side": "face",
+          "imageID": "e9e591dfabd261bd"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "6f429890c84b17b886f76b42ac0f16e06906da8d10e0675d1b96700440990bd1",
+      "imageIDs": [
+        "042802d29dee3478"
+      ],
+      "appearances": [
+        {
+          "team": "Hand of the Archon",
+          "assetName": "Chain Snare",
+          "side": "face",
+          "imageID": "042802d29dee3478"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "6faa74bedf63b04a9e17091cfe432f37aa71e4c550e637ec251c7c8e4f447b0f",
+      "imageIDs": [
+        "657152d699f6602c"
+      ],
+      "appearances": [
+        {
+          "team": "Hand of the Archon",
+          "assetName": "Kabalite Flayer",
+          "side": "face",
+          "imageID": "657152d699f6602c"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "70492a85513e83328476af7b7ef4849f7d9610ffdd9bf450ac5f944751adedfb",
+      "imageIDs": [
+        "f1c689792f576f1b"
+      ],
+      "appearances": [
+        {
+          "team": "Mandrakes",
+          "assetName": "Mandrake Shadeweaver",
+          "side": "back",
+          "imageID": "f1c689792f576f1b"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "7524d7864aeac665715a4a46fd931061a24571ba11646bed0c0457da43dd35d4",
+      "imageIDs": [
+        "0bff9c76b433fae0"
+      ],
+      "appearances": [
+        {
+          "team": "Wyrmblade",
+          "assetName": "Sanctus Talon",
+          "side": "face",
+          "imageID": "0bff9c76b433fae0"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "76af0db8921e43a257c81a23c5969ad9ed49582e3f7df79326423a86928e940a",
+      "imageIDs": [
+        "a4e3212971bf903f"
+      ],
+      "appearances": [
+        {
+          "team": "Hand of the Archon",
+          "assetName": "Blade Artists",
+          "side": "face",
+          "imageID": "a4e3212971bf903f"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "76fc235285929aaa0b38cbf19f0262e574098184f1e934e6ef0ffc7fdf7a030d",
+      "imageIDs": [
+        "144186e6e18aaa90"
+      ],
+      "appearances": [
+        {
+          "team": "Hand of the Archon",
+          "assetName": "Hand of the Archon Kill Team",
+          "side": "face",
+          "imageID": "144186e6e18aaa90"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "799ffcd6cd4cff694c14f619867729c68afc8dc4db09de7018892fb1891f342f",
+      "imageIDs": [
+        "54491094be6c3ab2"
+      ],
+      "appearances": [
+        {
+          "team": "Hand of the Archon",
+          "assetName": "Kabalite Agent",
+          "side": "face",
+          "imageID": "54491094be6c3ab2"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "7c19ef8c09ef2a9ced778f2e4ffffffe6dd3114e96a5ad316ca4bb9cbf7f11ab",
+      "imageIDs": [
+        "6ff3d14da5094f64"
+      ],
+      "appearances": [
+        {
+          "team": "Mandrakes",
+          "assetName": "Mandrake Nightfiend",
+          "side": "face",
+          "imageID": "6ff3d14da5094f64"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "7e680e99494b420bb540c863f739ad4f279734ba32cb37bbe9e15164fd9503cd",
+      "imageIDs": [
+        "f842b2118d620a80"
+      ],
+      "appearances": [
+        {
+          "team": "Hunter Clade",
+          "assetName": "Neurostatic Interference",
+          "side": "face",
+          "imageID": "f842b2118d620a80"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "81f92332ca263f311f0f68ed621e2eb63bbe25a19d0e989fe008c26f67e4c4f6",
+      "imageIDs": [
+        "c49b7b88af9c84bc"
+      ],
+      "appearances": [
+        {
+          "team": "Hunter Clade",
+          "assetName": "Hunter Clade Kill Team",
+          "side": "back",
+          "imageID": "c49b7b88af9c84bc"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "8478dbd5ad28d45d967bd764ee48b0a2c0e36e29b94e1b5cd10c8a2367acece4",
+      "imageIDs": [
+        "1f1d52b19ea424bb"
+      ],
+      "appearances": [
+        {
+          "team": "Mandrakes",
+          "assetName": "Mandrake Abyssal",
+          "side": "face",
+          "imageID": "1f1d52b19ea424bb"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "85fe582a63779649fde59950416a8bafdd27852a7d8d66dbed0e0fa7d2845d32",
+      "imageIDs": [
+        "34c224e8e07b399e"
+      ],
+      "appearances": [
+        {
+          "team": "Hand of the Archon",
+          "assetName": "Kabalite Skysplinter Assassin",
+          "side": "face",
+          "imageID": "34c224e8e07b399e"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "87227b3c32948e6480e9982353841a09c1e68d32b5b6359dfdbe1057393191c0",
+      "imageIDs": [
+        "8e1de86dd5239b83"
+      ],
+      "appearances": [
+        {
+          "team": "Hunter Clade",
+          "assetName": "Doctrina Imperatives",
+          "side": "face",
+          "imageID": "8e1de86dd5239b83"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "873f3907c8b832413e8e9137a6707d3e9c1a4a638bcd6babfc422fa8db69cf04",
+      "imageIDs": [
+        "c2aa4f1b079d1cb0"
+      ],
+      "appearances": [
+        {
+          "team": "Hunter Clade",
+          "assetName": "Command Override",
+          "side": "face",
+          "imageID": "c2aa4f1b079d1cb0"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "8834b5043c685dd9919eb3f76ec92c14739413b92d6c04488630cd3858beeb2d",
+      "imageIDs": [
+        "3f1e2305100acaae"
+      ],
+      "appearances": [
+        {
+          "team": "Mandrakes",
+          "assetName": "Slither Out of Sight",
+          "side": "face",
+          "imageID": "3f1e2305100acaae"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "8c97298d4245befd97498c68250185f583a9546e8a6831948ffb282f8e4b385c",
+      "imageIDs": [
+        "f6d40b2faee8c27c"
+      ],
+      "appearances": [
+        {
+          "team": "Wyrmblade",
+          "assetName": "Cult Agent",
+          "side": "back",
+          "imageID": "f6d40b2faee8c27c"
+        },
+        {
+          "team": "Wyrmblade",
+          "assetName": "A Plan Generations in the Making",
+          "side": "back",
+          "imageID": "f6d40b2faee8c27c"
+        },
+        {
+          "team": "Wyrmblade",
+          "assetName": "Slink Into Darkness",
+          "side": "back",
+          "imageID": "f6d40b2faee8c27c"
+        },
+        {
+          "team": "Wyrmblade",
+          "assetName": "Coiled Serpent",
+          "side": "back",
+          "imageID": "f6d40b2faee8c27c"
+        },
+        {
+          "team": "Wyrmblade",
+          "assetName": "Unquestioning Loyalty",
+          "side": "back",
+          "imageID": "f6d40b2faee8c27c"
+        },
+        {
+          "team": "Wyrmblade",
+          "assetName": "Crossfire",
+          "side": "back",
+          "imageID": "f6d40b2faee8c27c"
+        },
+        {
+          "team": "Wyrmblade",
+          "assetName": "The Day Is at Hand",
+          "side": "back",
+          "imageID": "f6d40b2faee8c27c"
+        },
+        {
+          "team": "Wyrmblade",
+          "assetName": "One with the Shadows",
+          "side": "back",
+          "imageID": "f6d40b2faee8c27c"
+        },
+        {
+          "team": "Wyrmblade",
+          "assetName": "Divert and Disappear",
+          "side": "back",
+          "imageID": "f6d40b2faee8c27c"
+        },
+        {
+          "team": "Wyrmblade",
+          "assetName": "Cult Ambush",
+          "side": "back",
+          "imageID": "f6d40b2faee8c27c"
+        },
+        {
+          "team": "Wyrmblade",
+          "assetName": "Explosive Traps",
+          "side": "back",
+          "imageID": "f6d40b2faee8c27c"
+        },
+        {
+          "team": "Wyrmblade",
+          "assetName": "Spotlights",
+          "side": "back",
+          "imageID": "f6d40b2faee8c27c"
+        },
+        {
+          "team": "Wyrmblade",
+          "assetName": "Blasting Charges",
+          "side": "back",
+          "imageID": "f6d40b2faee8c27c"
+        },
+        {
+          "team": "Wyrmblade",
+          "assetName": "Cult Knives",
+          "side": "back",
+          "imageID": "f6d40b2faee8c27c"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "8d0e8421d0d59f6ab01fc1f58a71970b0bd89199defaa3d1226921d330cd55cc",
+      "imageIDs": [
+        "832d1fbfec4d222f"
+      ],
+      "appearances": [
+        {
+          "team": "Hunter Clade",
+          "assetName": "Redundancy Systems",
+          "side": "face",
+          "imageID": "832d1fbfec4d222f"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "8e9e0b90349bd44aac2dfe5c5734ba7c0bbef830071b7f00fa9453aa7922ac43",
+      "imageIDs": [
+        "27a2fd6a17ce2ba6"
+      ],
+      "appearances": [
+        {
+          "team": "Hunter Clade",
+          "assetName": "Omnissiah’s Imperative",
+          "side": "face",
+          "imageID": "27a2fd6a17ce2ba6"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "8f0c6d2741dc3ee043a7108bd91b87f66d3c25f34ce0bcdc7a21a2b76ce5f663",
+      "imageIDs": [
+        "2f81b5479f0822ac"
+      ],
+      "appearances": [
+        {
+          "team": "Hunter Clade",
+          "assetName": "Sicarian Ruststalker Warrior",
+          "side": "face",
+          "imageID": "2f81b5479f0822ac"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "937584518f03b4e04fa10a83e5f87b574f1316bf5e99c457a737b278592941c1",
+      "imageIDs": [
+        "a58d911e344e35c9"
+      ],
+      "appearances": [
+        {
+          "team": "Hand of the Archon",
+          "assetName": "Refined Poison",
+          "side": "back",
+          "imageID": "a58d911e344e35c9"
+        },
+        {
+          "team": "Hand of the Archon",
+          "assetName": "Toxin Coating",
+          "side": "back",
+          "imageID": "a58d911e344e35c9"
+        },
+        {
+          "team": "Hand of the Archon",
+          "assetName": "Chain Snare",
+          "side": "back",
+          "imageID": "a58d911e344e35c9"
+        },
+        {
+          "team": "Hand of the Archon",
+          "assetName": "Wicked Blades",
+          "side": "back",
+          "imageID": "a58d911e344e35c9"
+        },
+        {
+          "team": "Hand of the Archon",
+          "assetName": "Rifles",
+          "side": "back",
+          "imageID": "a58d911e344e35c9"
+        },
+        {
+          "team": "Hand of the Archon",
+          "assetName": "Prey on the Wounded",
+          "side": "back",
+          "imageID": "a58d911e344e35c9"
+        },
+        {
+          "team": "Hand of the Archon",
+          "assetName": "Heinous Arrogance",
+          "side": "back",
+          "imageID": "a58d911e344e35c9"
+        },
+        {
+          "team": "Hand of the Archon",
+          "assetName": "Devious Scheme",
+          "side": "back",
+          "imageID": "a58d911e344e35c9"
+        },
+        {
+          "team": "Hand of the Archon",
+          "assetName": "Cruel Deception",
+          "side": "back",
+          "imageID": "a58d911e344e35c9"
+        },
+        {
+          "team": "Hand of the Archon",
+          "assetName": "From Darkness, Death",
+          "side": "back",
+          "imageID": "a58d911e344e35c9"
+        },
+        {
+          "team": "Hand of the Archon",
+          "assetName": "Denizens of Night",
+          "side": "back",
+          "imageID": "a58d911e344e35c9"
+        },
+        {
+          "team": "Hand of the Archon",
+          "assetName": "Merciless Sadists",
+          "side": "back",
+          "imageID": "a58d911e344e35c9"
+        },
+        {
+          "team": "Hand of the Archon",
+          "assetName": "Blade Artists",
+          "side": "back",
+          "imageID": "a58d911e344e35c9"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "93e8590e49c91943d873aa8b07c5ea36f3aff9ab15c41d456c85aa6f93180bf0",
+      "imageIDs": [
+        "63ecfb17d118b455"
+      ],
+      "appearances": [
+        {
+          "team": "Hunter Clade",
+          "assetName": "Skitarii Ranger Surveyor",
+          "side": "face",
+          "imageID": "63ecfb17d118b455"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "96838eace10fd633778dbe8839e0b45f8e8f567ff382ddad5856b41eaed70854",
+      "imageIDs": [
+        "d26b2c7699cd3e40"
+      ],
+      "appearances": [
+        {
+          "team": "Hand of the Archon",
+          "assetName": "Refined Poison",
+          "side": "face",
+          "imageID": "d26b2c7699cd3e40"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "98fc80321a8fc5fa5ad1be5a34f9bc10aeaf2461ad98a85ee9aeb4755e6b6c27",
+      "imageIDs": [
+        "481522d693149f1c"
+      ],
+      "appearances": [
+        {
+          "team": "Wyrmblade",
+          "assetName": "Neophyte Gunner",
+          "side": "face",
+          "imageID": "481522d693149f1c"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "9b67cbc8858ab5284b5f3dd26ab915a1bef186e08f4620351b5e95f797303f3b",
+      "imageIDs": [
+        "ae99d7e3870e008a"
+      ],
+      "appearances": [
+        {
+          "team": "Mandrakes",
+          "assetName": "Shadow Passage",
+          "side": "face",
+          "imageID": "ae99d7e3870e008a"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "9c9d448df58875123b0c1fc5687f7d4dd38430e5288c3fec9db00e0b4f40e3a9",
+      "imageIDs": [
+        "54a0f3ae9f11005b"
+      ],
+      "appearances": [
+        {
+          "team": "Wyrmblade",
+          "assetName": "Locus",
+          "side": "face",
+          "imageID": "54a0f3ae9f11005b"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "9ff64a2effa9d0aab0872f6b31262c29313f22d2b78fd60085dc80c2ce79b0fe",
+      "imageIDs": [
+        "9e73a97331405127"
+      ],
+      "appearances": [
+        {
+          "team": "Mandrakes",
+          "assetName": "Soulstrike",
+          "side": "face",
+          "imageID": "9e73a97331405127"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "9ffaff5fb5c715058977cbd17a77571335d7db47c6368ab90e54ede223ac5e0f",
+      "imageIDs": [
+        "94f7493b0f45d4b0"
+      ],
+      "appearances": [
+        {
+          "team": "Mandrakes",
+          "assetName": "Mandrake Chooser of the Flesh",
+          "side": "face",
+          "imageID": "94f7493b0f45d4b0"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "a10a4a02b08a8b4c38f7d570ca6412c81c89b9911caf3d176a1b228628eb3866",
+      "imageIDs": [
+        "e7c938f1242671b2"
+      ],
+      "appearances": [
+        {
+          "team": "Hand of the Archon",
+          "assetName": "Kabalite Elixicant",
+          "side": "back",
+          "imageID": "e7c938f1242671b2"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "a1e5c9837a30d5bb4e3df548b969ae1a7ef45023f7b4654d0679c32d9106ace8",
+      "imageIDs": [
+        "7c166e06d7fdb2c1"
+      ],
+      "appearances": [
+        {
+          "team": "Mandrakes",
+          "assetName": "Mandrake Dirgemaw",
+          "side": "back",
+          "imageID": "7c166e06d7fdb2c1"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "a1e9ed6ec960bc65b4964d54f14915408a1f6d171f32cb31789eda58763bbd64",
+      "imageIDs": [
+        "d6d6542b40671e16"
+      ],
+      "appearances": [
+        {
+          "team": "Hand of the Archon",
+          "assetName": "Kabalite Archsybarite",
+          "side": "face",
+          "imageID": "d6d6542b40671e16"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "a4644f18b83b13433d7ce5c687520c25b52fef528ba969daf3514955784a4391",
+      "imageIDs": [
+        "4b12c62bf5cb043e"
+      ],
+      "appearances": [
+        {
+          "team": "Hand of the Archon",
+          "assetName": "Prey on the Wounded",
+          "side": "face",
+          "imageID": "4b12c62bf5cb043e"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "a4aa12d38f27d7b0fc5567bcbbce2e241f34de446108c1a3eab5349e901c984f",
+      "imageIDs": [
+        "9a48802410326723"
+      ],
+      "appearances": [
+        {
+          "team": "Hand of the Archon",
+          "assetName": "Hand of the Archon Kill Team",
+          "side": "back",
+          "imageID": "9a48802410326723"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "a590b009232a9250724d25191b3bfe5a8422a12f9288bac74ef11abae34869ea",
+      "imageIDs": [
+        "f85b0e624090cffb"
+      ],
+      "appearances": [
+        {
+          "team": "Hunter Clade",
+          "assetName": "Skitarii Ranger Alpha",
+          "side": "back",
+          "imageID": "f85b0e624090cffb"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "ab7e01e03e6e1cd1e71d1f5f2d2c55e56711b25f808979c45b083f9b7df9bc30",
+      "imageIDs": [
+        "af9d348ea3e69b06"
+      ],
+      "appearances": [
+        {
+          "team": "Wyrmblade",
+          "assetName": "Cult Knives",
+          "side": "face",
+          "imageID": "af9d348ea3e69b06"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "acadc6376548993f21a464d6bed6cce086aee226bce76abadd2b46296de4a457",
+      "imageIDs": [
+        "d088373d73aa2e25"
+      ],
+      "appearances": [
+        {
+          "team": "Wyrmblade",
+          "assetName": "Unquestioning Loyalty",
+          "side": "face",
+          "imageID": "d088373d73aa2e25"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "ad2437c38b6d460813b0023ae37b93571c70473f9afbe19934edfa99bb80fc0c",
+      "imageIDs": [
+        "6c0a3bd915be8783"
+      ],
+      "appearances": [
+        {
+          "team": "Wyrmblade",
+          "assetName": "A Plan Generations in the Making",
+          "side": "face",
+          "imageID": "6c0a3bd915be8783"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "ad31fbc04c39dd1fbbdd8d85d22425ede0d9cd4cedd9651be530f5d069b4f10c",
+      "imageIDs": [
+        "f617113c8a4efde2"
+      ],
+      "appearances": [
+        {
+          "team": "Mandrakes",
+          "assetName": "Shadow Glyph",
+          "side": "face",
+          "imageID": "f617113c8a4efde2"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "ad4ca5652d07e592717a5f406dbf6bb34b657c4c80d3471401400301652272c4",
+      "imageIDs": [
+        "35faa50064a352fe"
+      ],
+      "appearances": [
+        {
+          "team": "Wyrmblade",
+          "assetName": "Spotlights",
+          "side": "face",
+          "imageID": "35faa50064a352fe"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "b02afdd939c4821ce876a18f11ef9d155ae3467cb2b59891d8e6fd597c9ec25c",
+      "imageIDs": [
+        "a9c48ec51474b99e"
+      ],
+      "appearances": [
+        {
+          "team": "Hand of the Archon",
+          "assetName": "Kabalite Crimson Duellist",
+          "side": "face",
+          "imageID": "a9c48ec51474b99e"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "b1198b12eb6a8ef2ef66baef33d2a0535a3667c6140b636ecfd01ac39c85ff5b",
+      "imageIDs": [
+        "e4310b8baf915bb1"
+      ],
+      "appearances": [
+        {
+          "team": "Mandrakes",
+          "assetName": "Inescapable Nightmare",
+          "side": "face",
+          "imageID": "e4310b8baf915bb1"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "b1ece1eb346af0295b444f4411c5c9ec1acf5de5b4dce7c1b87bd13c1259fbdf",
+      "imageIDs": [
+        "19a932f7785e5c4e"
+      ],
+      "appearances": [
+        {
+          "team": "Hunter Clade",
+          "assetName": "Sicarian Ruststalker Princeps",
+          "side": "face",
+          "imageID": "19a932f7785e5c4e"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "b4cb2301ee4008c50217d3b5d7e013f721a78a65ff67cdf5685fe67f7db5fe26",
+      "imageIDs": [
+        "2e6a7530390d09e7"
+      ],
+      "appearances": [
+        {
+          "team": "Hunter Clade",
+          "assetName": "Accelerant Agents",
+          "side": "face",
+          "imageID": "2e6a7530390d09e7"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "b65ddc85f3050edb11ac891a84cd247965c495bef174703c5d90c03c1d712ab0",
+      "imageIDs": [
+        "bac6425af5e66e43"
+      ],
+      "appearances": [
+        {
+          "team": "Hunter Clade",
+          "assetName": "Skitarii Vanguard Alpha",
+          "side": "back",
+          "imageID": "bac6425af5e66e43"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "b6d5efa2d7cd3726838ebc18b42cd84c7f0b97ee88073ca290cf0e6730c968de",
+      "imageIDs": [
+        "ad15242a5ac9d6f2"
+      ],
+      "appearances": [
+        {
+          "team": "Mandrakes",
+          "assetName": "Mandrakes Kill Team",
+          "side": "face",
+          "imageID": "ad15242a5ac9d6f2"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "b7604fdb68489665f688119960e784d2ee9869706d8906ccfbf65ef7f2fb4256",
+      "imageIDs": [
+        "f06c5362546db87f"
+      ],
+      "appearances": [
+        {
+          "team": "Hunter Clade",
+          "assetName": "Skitarii Ranger Gunner",
+          "side": "face",
+          "imageID": "f06c5362546db87f"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "bd9e4592e7f74f0c277606f272fa27c80179a20a83ca29b498a17969ff80e423",
+      "imageIDs": [
+        "68f4a132100d213f"
+      ],
+      "appearances": [
+        {
+          "team": "Hand of the Archon",
+          "assetName": "Cruel Deception",
+          "side": "face",
+          "imageID": "68f4a132100d213f"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "bf6b2597ccdda577275cd54b296d956aaa565e3725b9b9d77df281711ca59c4e",
+      "imageIDs": [
+        "51c0d23863afd1a0"
+      ],
+      "appearances": [
+        {
+          "team": "Wyrmblade",
+          "assetName": "One with the Shadows",
+          "side": "face",
+          "imageID": "51c0d23863afd1a0"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "c3c38e00edf5080e23700d9f3344e01650e2c645c849aa349f5adc9c0e37aa05",
+      "imageIDs": [
+        "2c9027f9fdf514dd"
+      ],
+      "appearances": [
+        {
+          "team": "Wyrmblade",
+          "assetName": "Divert and Disappear",
+          "side": "face",
+          "imageID": "2c9027f9fdf514dd"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "c422953c6f2155671a7d24bfb30c7536e45df5676ff22c843245dc17fd4f2722",
+      "imageIDs": [
+        "3eea55f73e188fa7"
+      ],
+      "appearances": [
+        {
+          "team": "Mandrakes",
+          "assetName": "Creeping Horror",
+          "side": "face",
+          "imageID": "3eea55f73e188fa7"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "c473f71f5dc0595094026c9dc80c45137c9047fadd12268c203569dd0bbe3bd6",
+      "imageIDs": [
+        "14226b46552d6e13"
+      ],
+      "appearances": [
+        {
+          "team": "Wyrmblade",
+          "assetName": "Neophyte Icon Bearer",
+          "side": "face",
+          "imageID": "14226b46552d6e13"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "c7ef95e464f4c910f2fc3e7c9e9d35380c8f32e86b338568a14a79afe8e1fdd0",
+      "imageIDs": [
+        "bc574bc75c55d95e"
+      ],
+      "appearances": [
+        {
+          "team": "Wyrmblade",
+          "assetName": "Locus",
+          "side": "back",
+          "imageID": "bc574bc75c55d95e"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "c9271690a18527fb7505d443e9a6f90ee861e959a63f8aefe94a506fb22a32a6",
+      "imageIDs": [
+        "d66f1a70fd456436"
+      ],
+      "appearances": [
+        {
+          "team": "Wyrmblade",
+          "assetName": "Cult Ambush",
+          "side": "face",
+          "imageID": "d66f1a70fd456436"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "cd8c67f2c7e485838e7a546805c436097a125afe58b9bedaf5b6c279e8946b75",
+      "imageIDs": [
+        "3d41bf3ae1691b13"
+      ],
+      "appearances": [
+        {
+          "team": "Wyrmblade",
+          "assetName": "Crossfire",
+          "side": "face",
+          "imageID": "3d41bf3ae1691b13"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "cf69a3dd6aea7cc2a9f6a181582907bb4c1bdffae280c355c8c684d55d09dbd8",
+      "imageIDs": [
+        "e371e230e1762bc2"
+      ],
+      "appearances": [
+        {
+          "team": "Hunter Clade",
+          "assetName": "Skitarii Vanguard Surveyor",
+          "side": "face",
+          "imageID": "e371e230e1762bc2"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "d0233e6c2aa370ab9c35dd737581bfeb72e76acf971882713d254f0970dd7826",
+      "imageIDs": [
+        "e9d4e108c2df18cd"
+      ],
+      "appearances": [
+        {
+          "team": "Hunter Clade",
+          "assetName": "Control Edict",
+          "side": "face",
+          "imageID": "e9d4e108c2df18cd"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "d06ce8119731a2893b756f59a698783781780846e9db65fd6aaf2bec58fa83c7",
+      "imageIDs": [
+        "de0d53b64c029508"
+      ],
+      "appearances": [
+        {
+          "team": "Mandrakes",
+          "assetName": "Bone Darts",
+          "side": "face",
+          "imageID": "de0d53b64c029508"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "d1c53b575a4401561cb5061739bfeea24dcbb615e41dacf7844127b1a1269452",
+      "imageIDs": [
+        "aa7f07b4d682dfa3"
+      ],
+      "appearances": [
+        {
+          "team": "Hand of the Archon",
+          "assetName": "Heinous Arrogance",
+          "side": "face",
+          "imageID": "aa7f07b4d682dfa3"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "d324a95e8579b8a58a74c673d8fc4edd6a35bf5799078b3e4d13be09c49aa2eb",
+      "imageIDs": [
+        "5454d0f24401a215"
+      ],
+      "appearances": [
+        {
+          "team": "Hand of the Archon",
+          "assetName": "Power from Pain",
+          "side": "face",
+          "imageID": "5454d0f24401a215"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "d9e453cdafd3e9470350fc33a742b032ecd716e967537cea63a0659a81c2799f",
+      "imageIDs": [
+        "8cc3a6ea828c0d7a"
+      ],
+      "appearances": [
+        {
+          "team": "Mandrakes",
+          "assetName": "Mandrake Shadeweaver",
+          "side": "face",
+          "imageID": "8cc3a6ea828c0d7a"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "db14adadfa9d67607580ac116066f618dc3a628033e970c1391d7994d6c70798",
+      "imageIDs": [
+        "7885899943d199ec"
+      ],
+      "appearances": [
+        {
+          "team": "Hand of the Archon",
+          "assetName": "Kabalite Elixicant",
+          "side": "face",
+          "imageID": "7885899943d199ec"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "dc755afaedef3745a79c26e6e8f44c032b82fae2382552481a48f3ebb9e58451",
+      "imageIDs": [
+        "43072c55a40ee861"
+      ],
+      "appearances": [
+        {
+          "team": "Wyrmblade",
+          "assetName": "Neophyte Leader",
+          "side": "back",
+          "imageID": "43072c55a40ee861"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "ded82440c7d6d5d66dbe12110c30e8d4adf5820304472b45cb59e665da79d0f6",
+      "imageIDs": [
+        "7308a6a5baf71416"
+      ],
+      "appearances": [
+        {
+          "team": "Mandrakes",
+          "assetName": "Mandrake Warrior",
+          "side": "face",
+          "imageID": "7308a6a5baf71416"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "e0035245dd3ea361b1ef3ead94487c7d3e27f28befb92c938d41335868425041",
+      "imageIDs": [
+        "6845a07ea98ae999"
+      ],
+      "appearances": [
+        {
+          "team": "Mandrakes",
+          "assetName": "Shadow’s Bite",
+          "side": "face",
+          "imageID": "6845a07ea98ae999"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "e3f3ecc1e4e1a49ffb60ee4108f4313e91a58088e49b636c04fbf2e12d1b2b3a",
+      "imageIDs": [
+        "212f8243a05e6939"
+      ],
+      "appearances": [
+        {
+          "team": "Hunter Clade",
+          "assetName": "Sicarian Infiltrator Princeps",
+          "side": "face",
+          "imageID": "212f8243a05e6939"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "e6708b94fb2baddfafc3e5f110f58c777a8be134f9a098e04d2d35ecc1309007",
+      "imageIDs": [
+        "0a1f2e769b45ca2f"
+      ],
+      "appearances": [
+        {
+          "team": "Wyrmblade",
+          "assetName": "Cult Agent",
+          "side": "face",
+          "imageID": "0a1f2e769b45ca2f"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "e73418e501368fa47bd3260aeec17b2e0cd993e53f621c5fb6c696498ed2551e",
+      "imageIDs": [
+        "430fd435ccda87c8"
+      ],
+      "appearances": [
+        {
+          "team": "Wyrmblade",
+          "assetName": "The Day Is at Hand",
+          "side": "face",
+          "imageID": "430fd435ccda87c8"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "e7ce069bf667c70ec4fa191fb45ab9e0faa6714459929eb02609c8abe9be8e7b",
+      "imageIDs": [
+        "30335a871129d677"
+      ],
+      "appearances": [
+        {
+          "team": "Wyrmblade",
+          "assetName": "Neophyte Warrior",
+          "side": "face",
+          "imageID": "30335a871129d677"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "ebe2618aa676cb9c7884cfd328a2750aaedfde986cdae480463463eb765a7e14",
+      "imageIDs": [
+        "29a6f58596e10e41"
+      ],
+      "appearances": [
+        {
+          "team": "Hunter Clade",
+          "assetName": "Hunter Clade Kill Team",
+          "side": "face",
+          "imageID": "29a6f58596e10e41"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "ec82dd3bf3252e8ce8c5f28f6ca55544900b7e1bc7683282d39f7a770f5c8d8c",
+      "imageIDs": [
+        "ceb2ff96bbbdb3ea"
+      ],
+      "appearances": [
+        {
+          "team": "Wyrmblade",
+          "assetName": "Kelermorph",
+          "side": "face",
+          "imageID": "ceb2ff96bbbdb3ea"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "ed429c148b41c62d688ccf246b392d10e059636d366c1a7fd0452679f0b1a17e",
+      "imageIDs": [
+        "6f04463515d7b8b4"
+      ],
+      "appearances": [
+        {
+          "team": "Hunter Clade",
+          "assetName": "Doctrina Imperatives",
+          "side": "back",
+          "imageID": "6f04463515d7b8b4"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "ed7e1d2611e2a001b3388d2b60c20ff1480bad6ffbab47bf14a2ff09f551907f",
+      "imageIDs": [
+        "90b6c4f96c677060"
+      ],
+      "appearances": [
+        {
+          "team": "Hand of the Archon",
+          "assetName": "Power from Pain",
+          "side": "back",
+          "imageID": "90b6c4f96c677060"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "eeb2600be0977c1858368cad51cdc0f292ed0be0a1b490c64f9745be30b02c55",
+      "imageIDs": [
+        "4de99ca41611aeab"
+      ],
+      "appearances": [
+        {
+          "team": "Hunter Clade",
+          "assetName": "Scouting Protocol",
+          "side": "face",
+          "imageID": "4de99ca41611aeab"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "efa1a632212d732f5f46261e4ed2503b643cab273363b242bec58942271c32ad",
+      "imageIDs": [
+        "32ff5339a2298d81"
+      ],
+      "appearances": [
+        {
+          "team": "Wyrmblade",
+          "assetName": "Explosive Traps",
+          "side": "face",
+          "imageID": "32ff5339a2298d81"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "f0bbbfc528108385354206fecebabca01947f1aa683b42fe11864b5b12291bdf",
+      "imageIDs": [
+        "e9acf17da00e7bb8"
+      ],
+      "appearances": [
+        {
+          "team": "Hunter Clade",
+          "assetName": "Omnissiah’s Imperative",
+          "side": "back",
+          "imageID": "e9acf17da00e7bb8"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "f3fa9e527ba58655f20bc5bed4dfa40a514ae9233493329f7a366d7737f72668",
+      "imageIDs": [
+        "88ca4998d8648302"
+      ],
+      "appearances": [
+        {
+          "team": "Wyrmblade",
+          "assetName": "Neophyte Heavy Gunner",
+          "side": "face",
+          "imageID": "88ca4998d8648302"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "f6856186e2c8ff5827717a546fe0df1f7633ba68502771fa80fadc36adb36809",
+      "imageIDs": [
+        "c8d3cc29eb68a74b"
+      ],
+      "appearances": [
+        {
+          "team": "Hunter Clade",
+          "assetName": "Neurostatic Interference",
+          "side": "back",
+          "imageID": "c8d3cc29eb68a74b"
+        },
+        {
+          "team": "Hunter Clade",
+          "assetName": "Debilitating Irradiation",
+          "side": "back",
+          "imageID": "c8d3cc29eb68a74b"
+        },
+        {
+          "team": "Hunter Clade",
+          "assetName": "Accelerant Agents",
+          "side": "back",
+          "imageID": "c8d3cc29eb68a74b"
+        },
+        {
+          "team": "Hunter Clade",
+          "assetName": "Scouting Protocol",
+          "side": "back",
+          "imageID": "c8d3cc29eb68a74b"
+        },
+        {
+          "team": "Hunter Clade",
+          "assetName": "Hunter Clade roster restrictions",
+          "side": "back",
+          "imageID": "c8d3cc29eb68a74b"
+        },
+        {
+          "team": "Hunter Clade",
+          "assetName": "Doctrina Imperatives",
+          "side": "back",
+          "imageID": "c8d3cc29eb68a74b"
+        },
+        {
+          "team": "Hunter Clade",
+          "assetName": "Extremis Mind-Link",
+          "side": "back",
+          "imageID": "c8d3cc29eb68a74b"
+        },
+        {
+          "team": "Hunter Clade",
+          "assetName": "Rad Bombardment",
+          "side": "back",
+          "imageID": "c8d3cc29eb68a74b"
+        },
+        {
+          "team": "Hunter Clade",
+          "assetName": "Redundancy Systems",
+          "side": "back",
+          "imageID": "c8d3cc29eb68a74b"
+        },
+        {
+          "team": "Hunter Clade",
+          "assetName": "Refractor Field",
+          "side": "back",
+          "imageID": "c8d3cc29eb68a74b"
+        },
+        {
+          "team": "Hunter Clade",
+          "assetName": "Control Edict",
+          "side": "back",
+          "imageID": "c8d3cc29eb68a74b"
+        },
+        {
+          "team": "Hunter Clade",
+          "assetName": "Scrapcode Overload",
+          "side": "back",
+          "imageID": "c8d3cc29eb68a74b"
+        },
+        {
+          "team": "Hunter Clade",
+          "assetName": "Command Override",
+          "side": "back",
+          "imageID": "c8d3cc29eb68a74b"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "f7c88b8f0e23eb073e5b87d207cbe855376ff63cfa3883d9eeacc3e2b616ecef",
+      "imageIDs": [
+        "39d7dbff22e23c62"
+      ],
+      "appearances": [
+        {
+          "team": "Wyrmblade",
+          "assetName": "Wyrmblade Kill Team",
+          "side": "face",
+          "imageID": "39d7dbff22e23c62"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "fa1721c90d259a5cc342786b340b24f3d57ecb770aa13cd254a9f53925075bf6",
+      "imageIDs": [
+        "1eb793c11a69292e"
+      ],
+      "appearances": [
+        {
+          "team": "Mandrakes",
+          "assetName": "Nowhere to Hide",
+          "side": "face",
+          "imageID": "1eb793c11a69292e"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "ff0d9d28ae2e2e70cbe323f926d94d7f1cf48eb390470c055a68c25a9b357e64",
+      "imageIDs": [
+        "aeaca9010f969072"
+      ],
+      "appearances": [
+        {
+          "team": "Hand of the Archon",
+          "assetName": "Toxin Coating",
+          "side": "face",
+          "imageID": "aeaca9010f969072"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "ff6a63fca939b1ac48f9539b9274dbc26f95969875ad63479e0d92885f73765e",
+      "imageIDs": [
+        "2a7a56d3828fb468"
+      ],
+      "appearances": [
+        {
+          "team": "Mandrakes",
+          "assetName": "Soul Feast",
+          "side": "face",
+          "imageID": "2a7a56d3828fb468"
+        }
+      ]
+    }
+  ],
+  "excluded": [
+    {
+      "sourceSHA256": "1de17b8ab25886ce9475693bc3445c95f2e43177aa7f08b2632a7c16e5800fcb",
+      "imageIDs": [
+        "b6be72f77cf79a09"
+      ],
+      "appearances": [
+        {
+          "team": "Hand of the Archon",
+          "assetName": "Kabalite Heavy Gunner",
+          "side": "back",
+          "imageID": "b6be72f77cf79a09"
+        },
+        {
+          "team": "Hand of the Archon",
+          "assetName": "Kabalite Disciple of Yaelindra",
+          "side": "back",
+          "imageID": "b6be72f77cf79a09"
+        },
+        {
+          "team": "Hand of the Archon",
+          "assetName": "Kabalite Crimson Duellist",
+          "side": "back",
+          "imageID": "b6be72f77cf79a09"
+        },
+        {
+          "team": "Hand of the Archon",
+          "assetName": "Kabalite Flayer",
+          "side": "back",
+          "imageID": "b6be72f77cf79a09"
+        },
+        {
+          "team": "Hand of the Archon",
+          "assetName": "Kabalite Gunner",
+          "side": "back",
+          "imageID": "b6be72f77cf79a09"
+        },
+        {
+          "team": "Hand of the Archon",
+          "assetName": "Kabalite Agent",
+          "side": "back",
+          "imageID": "b6be72f77cf79a09"
+        },
+        {
+          "team": "Hand of the Archon",
+          "assetName": "Kabalite Archsybarite",
+          "side": "back",
+          "imageID": "b6be72f77cf79a09"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "39868faffc5599ceacc37863c4f1aaa8eaa4a4d3a7991f5c9c65e1edeafeedae",
+      "imageIDs": [
+        "ada1518742832b34"
+      ],
+      "appearances": [
+        {
+          "team": "Wyrmblade",
+          "assetName": "Neophyte Warrior",
+          "side": "back",
+          "imageID": "ada1518742832b34"
+        },
+        {
+          "team": "Wyrmblade",
+          "assetName": "Neophyte Gunner",
+          "side": "back",
+          "imageID": "ada1518742832b34"
+        },
+        {
+          "team": "Wyrmblade",
+          "assetName": "Neophyte Icon Bearer",
+          "side": "back",
+          "imageID": "ada1518742832b34"
+        },
+        {
+          "team": "Wyrmblade",
+          "assetName": "Kelermorph",
+          "side": "back",
+          "imageID": "ada1518742832b34"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "9d3c07319ea3ed371f5a8e91b8b5b9a5bf05f2fbdcec21c2aee8e5af1745e590",
+      "imageIDs": [
+        "720b3d651ce7100b"
+      ],
+      "appearances": [
+        {
+          "team": "Mandrakes",
+          "assetName": "Mandrake Nightfiend",
+          "side": "back",
+          "imageID": "720b3d651ce7100b"
+        },
+        {
+          "team": "Mandrakes",
+          "assetName": "Mandrake Chooser of the Flesh",
+          "side": "back",
+          "imageID": "720b3d651ce7100b"
+        },
+        {
+          "team": "Mandrakes",
+          "assetName": "Mandrake Warrior",
+          "side": "back",
+          "imageID": "720b3d651ce7100b"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "a7ac2f5029a9f63c98da335867fec69493da30845e58b67a31a19a552d3e5615",
+      "imageIDs": [
+        "09e7bece228ee278"
+      ],
+      "appearances": [
+        {
+          "team": "Hunter Clade",
+          "assetName": "Skitarii Ranger Warrior",
+          "side": "back",
+          "imageID": "09e7bece228ee278"
+        },
+        {
+          "team": "Hunter Clade",
+          "assetName": "Skitarii Ranger Diktat",
+          "side": "back",
+          "imageID": "09e7bece228ee278"
+        },
+        {
+          "team": "Hunter Clade",
+          "assetName": "Skitarii Ranger Surveyor",
+          "side": "back",
+          "imageID": "09e7bece228ee278"
+        },
+        {
+          "team": "Hunter Clade",
+          "assetName": "Skitarii Ranger Gunner",
+          "side": "back",
+          "imageID": "09e7bece228ee278"
+        },
+        {
+          "team": "Hunter Clade",
+          "assetName": "Skitarii Vanguard Warrior",
+          "side": "back",
+          "imageID": "09e7bece228ee278"
+        },
+        {
+          "team": "Hunter Clade",
+          "assetName": "Skitarii Vanguard Diktat",
+          "side": "back",
+          "imageID": "09e7bece228ee278"
+        },
+        {
+          "team": "Hunter Clade",
+          "assetName": "Skitarii Vanguard Surveyor",
+          "side": "back",
+          "imageID": "09e7bece228ee278"
+        },
+        {
+          "team": "Hunter Clade",
+          "assetName": "Skitarii Vanguard Gunner",
+          "side": "back",
+          "imageID": "09e7bece228ee278"
+        },
+        {
+          "team": "Hunter Clade",
+          "assetName": "Sicarian Ruststalker Warrior",
+          "side": "back",
+          "imageID": "09e7bece228ee278"
+        },
+        {
+          "team": "Hunter Clade",
+          "assetName": "Sicarian Infiltrator Warrior",
+          "side": "back",
+          "imageID": "09e7bece228ee278"
+        },
+        {
+          "team": "Hunter Clade",
+          "assetName": "Sicarian Infiltrator Princeps",
+          "side": "back",
+          "imageID": "09e7bece228ee278"
+        },
+        {
+          "team": "Hunter Clade",
+          "assetName": "Sicarian Ruststalker Princeps",
+          "side": "back",
+          "imageID": "09e7bece228ee278"
+        }
+      ]
+    }
+  ],
+  "counts": {
+    "includedSourceSHA": 125,
+    "excludedSourceSHA": 4,
+    "referencedSourceSHA": 129,
+    "includedImageIDs": 125,
+    "excludedImageIDs": 4,
+    "translatedAppearances": 178,
+    "excludedAppearances": 26,
+    "requiredAppearances": 204
+  }
+}

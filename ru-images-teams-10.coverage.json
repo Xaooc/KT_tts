@@ -1,0 +1,604 @@
+{
+  "batch": "10",
+  "teams": [
+    "Ratlings"
+  ],
+  "sourceFiles": [
+    "inventory/card-assets.json",
+    "inventory/image-ocr-en.json",
+    "inventory/image-sources.json"
+  ],
+  "included": [
+    {
+      "sourceSHA256": "096babcefaffb784397cb3bb226f7314972a5445ee94d17b8da13c0346f312c6",
+      "imageIDs": [
+        "d18826f479cb53f3"
+      ],
+      "appearances": [
+        {
+          "team": "Ratlings",
+          "assetName": "Raider",
+          "side": "face",
+          "imageID": "d18826f479cb53f3"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "15c14247d6abec1bccda4f2a216eee77bfe72153ca5888440819a94e4d66ed94",
+      "imageIDs": [
+        "119a0d81c7da2a05"
+      ],
+      "appearances": [
+        {
+          "team": "Ratlings",
+          "assetName": "Bullgryn",
+          "side": "face",
+          "imageID": "119a0d81c7da2a05"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "188077aa2c1649dfe664dd27630b12dc38cd4d5c12a640233a6d029d02cd3dd3",
+      "imageIDs": [
+        "4d091f44f0de7d76"
+      ],
+      "appearances": [
+        {
+          "team": "Ratlings",
+          "assetName": "Bomber",
+          "side": "face",
+          "imageID": "4d091f44f0de7d76"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "1cfe4adbe0813f2882f5703b230dc544d47913a3eb3152b35d4e1dbb98f15dc1",
+      "imageIDs": [
+        "bf437f2f7e0b2743"
+      ],
+      "appearances": [
+        {
+          "team": "Ratlings",
+          "assetName": "Improvised Armour",
+          "side": "face",
+          "imageID": "bf437f2f7e0b2743"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "1ed90d46c0a82eb9762ebd0be981c027e66a79160afa2f88b498336315660a79",
+      "imageIDs": [
+        "b5a6ba262087c396"
+      ],
+      "appearances": [
+        {
+          "team": "Ratlings",
+          "assetName": "Ogryn",
+          "side": "face",
+          "imageID": "b5a6ba262087c396"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "22d74c0d7df3ccd5546fb697cdc84ca5e2e922c89c70fc42f83218b8d59cb070",
+      "imageIDs": [
+        "4ac77b39cc344891"
+      ],
+      "appearances": [
+        {
+          "team": "Ratlings",
+          "assetName": "Purloined Rations",
+          "side": "face",
+          "imageID": "4ac77b39cc344891"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "2efe9f93acabb2af55e785c72bffe8ab92a1443903a1feca4590f011d6399c3a",
+      "imageIDs": [
+        "255d1649fecfcc1a"
+      ],
+      "appearances": [
+        {
+          "team": "Ratlings",
+          "assetName": "Big Shot",
+          "side": "face",
+          "imageID": "255d1649fecfcc1a"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "2f6d6f8162a41e995643fd172f33c94fb296a6d74c67fd2de16966221791425e",
+      "imageIDs": [
+        "fd5cbd1d9a354a43"
+      ],
+      "appearances": [
+        {
+          "team": "Ratlings",
+          "assetName": "Battlemutt",
+          "side": "face",
+          "imageID": "fd5cbd1d9a354a43"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "460e5e8ac25740c6ac9a2d93c2483ed847275e66be8155c188f526575f632f1c",
+      "imageIDs": [
+        "6545722b8b502917"
+      ],
+      "appearances": [
+        {
+          "team": "Ratlings",
+          "assetName": "Raider",
+          "side": "back",
+          "imageID": "6545722b8b502917"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "4839787e9691ddad7a7f79eb47325b5d1419f56b24a1f2ff1ad77d17d7635926",
+      "imageIDs": [
+        "39c1572b30eb75ed"
+      ],
+      "appearances": [
+        {
+          "team": "Ratlings",
+          "assetName": "Stolen Goods",
+          "side": "face",
+          "imageID": "39c1572b30eb75ed"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "4a4e9831b48497e0d22d248f9dccc757556936d2ffdc6d6599185b2505ee08ab",
+      "imageIDs": [
+        "c29439d2a679cf68"
+      ],
+      "appearances": [
+        {
+          "team": "Ratlings",
+          "assetName": "Scarper",
+          "side": "back",
+          "imageID": "c29439d2a679cf68"
+        },
+        {
+          "team": "Ratlings",
+          "assetName": "Stolen Goods",
+          "side": "back",
+          "imageID": "c29439d2a679cf68"
+        },
+        {
+          "team": "Ratlings",
+          "assetName": "Purloined Rations",
+          "side": "back",
+          "imageID": "c29439d2a679cf68"
+        },
+        {
+          "team": "Ratlings",
+          "assetName": "Lucky Round",
+          "side": "back",
+          "imageID": "c29439d2a679cf68"
+        },
+        {
+          "team": "Ratlings",
+          "assetName": "Improvised Armour",
+          "side": "back",
+          "imageID": "c29439d2a679cf68"
+        },
+        {
+          "team": "Ratlings",
+          "assetName": "Survival Instincts",
+          "side": "back",
+          "imageID": "c29439d2a679cf68"
+        },
+        {
+          "team": "Ratlings",
+          "assetName": "Sharpshot",
+          "side": "back",
+          "imageID": "c29439d2a679cf68"
+        },
+        {
+          "team": "Ratlings",
+          "assetName": "Larcenous",
+          "side": "back",
+          "imageID": "c29439d2a679cf68"
+        },
+        {
+          "team": "Ratlings",
+          "assetName": "Shoot and Hide",
+          "side": "back",
+          "imageID": "c29439d2a679cf68"
+        },
+        {
+          "team": "Ratlings",
+          "assetName": "Sniper Positions",
+          "side": "back",
+          "imageID": "c29439d2a679cf68"
+        },
+        {
+          "team": "Ratlings",
+          "assetName": "Crack Shots",
+          "side": "back",
+          "imageID": "c29439d2a679cf68"
+        },
+        {
+          "team": "Ratlings",
+          "assetName": "Frontline Assault",
+          "side": "back",
+          "imageID": "c29439d2a679cf68"
+        },
+        {
+          "team": "Ratlings",
+          "assetName": "Shifty",
+          "side": "back",
+          "imageID": "c29439d2a679cf68"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "64e58c0b15324d41e1f8b0b1462d05de801e6f61c517238258a38fb569152afb",
+      "imageIDs": [
+        "ffbac131f8dce06f"
+      ],
+      "appearances": [
+        {
+          "team": "Ratlings",
+          "assetName": "Spotter",
+          "side": "face",
+          "imageID": "ffbac131f8dce06f"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "798581731b02f6def6eb88832dd4a34da12a489fa8c9f11956b03dbdf328c8fd",
+      "imageIDs": [
+        "d7cd5bf51744f5ad"
+      ],
+      "appearances": [
+        {
+          "team": "Ratlings",
+          "assetName": "Sniper Positions",
+          "side": "face",
+          "imageID": "d7cd5bf51744f5ad"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "7e602e3a3bf88fbf839c146aa86ce9ff15fb2e32a78327ccc90d4041167de285",
+      "imageIDs": [
+        "2aabfb607c181364"
+      ],
+      "appearances": [
+        {
+          "team": "Ratlings",
+          "assetName": "Survival Instincts",
+          "side": "face",
+          "imageID": "2aabfb607c181364"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "87d1ed9b5ec37f32c2218cd74987fce8eff70db01e69cd1644e02863c8595227",
+      "imageIDs": [
+        "4989c5178d906731"
+      ],
+      "appearances": [
+        {
+          "team": "Ratlings",
+          "assetName": "Frontline Assault",
+          "side": "face",
+          "imageID": "4989c5178d906731"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "8d213ff991574f52bc7221e3170ad05b2f4331bd7a5026a005f524a543c859a2",
+      "imageIDs": [
+        "af3660a65b407615"
+      ],
+      "appearances": [
+        {
+          "team": "Ratlings",
+          "assetName": "Sneak",
+          "side": "face",
+          "imageID": "af3660a65b407615"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "94806b9b8a61b4a5f8f99cc4514e1bebbab22a1046056013bb03672810d4e029",
+      "imageIDs": [
+        "5193729b968f8b8a"
+      ],
+      "appearances": [
+        {
+          "team": "Ratlings",
+          "assetName": "Hardbit",
+          "side": "face",
+          "imageID": "5193729b968f8b8a"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "97b9526709e1a03724cf2a214fc1d44fa9acb6306f37dba8a38c5613af54a848",
+      "imageIDs": [
+        "53a5d09dd57b1a70"
+      ],
+      "appearances": [
+        {
+          "team": "Ratlings",
+          "assetName": "Shifty",
+          "side": "face",
+          "imageID": "53a5d09dd57b1a70"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "9cd03076109a7f6e4bf605af5cff3364fa4b71e361456c9b05802eefdf6ab164",
+      "imageIDs": [
+        "9ace67a24586b09f"
+      ],
+      "appearances": [
+        {
+          "team": "Ratlings",
+          "assetName": "Stashmaster",
+          "side": "face",
+          "imageID": "9ace67a24586b09f"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "ae02518cc3cae92970283c6f409e46a69cd876ffbc37d7e88396500dcade4f13",
+      "imageIDs": [
+        "aad284b83598bb7b"
+      ],
+      "appearances": [
+        {
+          "team": "Ratlings",
+          "assetName": "",
+          "side": "back",
+          "imageID": "aad284b83598bb7b"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "c000c3193be546f3205c95d2688cc5fce3df7e6913083e187c3afcdfeeb35d55",
+      "imageIDs": [
+        "9a54c607de22d818"
+      ],
+      "appearances": [
+        {
+          "team": "Ratlings",
+          "assetName": "Sniper",
+          "side": "face",
+          "imageID": "9a54c607de22d818"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "cb14927eed5c6f5193202dc2db9f2fd27c808fd22e91b6f78e1263b098f778ef",
+      "imageIDs": [
+        "66f3b04849b20eaf"
+      ],
+      "appearances": [
+        {
+          "team": "Ratlings",
+          "assetName": "Shoot and Hide",
+          "side": "face",
+          "imageID": "66f3b04849b20eaf"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "d2a5ff7c5b54c70c4ea9102bb0ba86ad09b4678f9605d192e1b865e2dbe3855c",
+      "imageIDs": [
+        "03ea42ee04c7d9d7"
+      ],
+      "appearances": [
+        {
+          "team": "Ratlings",
+          "assetName": "Scarper",
+          "side": "face",
+          "imageID": "03ea42ee04c7d9d7"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "d5d4a2d57d8e3002986a5fcda369aff7346fe877cf5cf0f67bf6adad60508ffc",
+      "imageIDs": [
+        "84927e211c28fe89"
+      ],
+      "appearances": [
+        {
+          "team": "Ratlings",
+          "assetName": "Fixer",
+          "side": "face",
+          "imageID": "84927e211c28fe89"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "d76e6dccb29800886f3e2b7de9f5b7f6086b4c984640e73c0b805cdb57e5ef64",
+      "imageIDs": [
+        "68f0f5deaee9ab9c"
+      ],
+      "appearances": [
+        {
+          "team": "Ratlings",
+          "assetName": "Crack Shots",
+          "side": "face",
+          "imageID": "68f0f5deaee9ab9c"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "daedcb854178ac1131a3fdee931d949dd7b657343487ef9cfda10eec5dae1f05",
+      "imageIDs": [
+        "bcf1b9c2b7d1c23a"
+      ],
+      "appearances": [
+        {
+          "team": "Ratlings",
+          "assetName": "Sharpshot",
+          "side": "face",
+          "imageID": "bcf1b9c2b7d1c23a"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "dd02b9fb53cba6c21a743913cddad815c329bdbc30fc04a45035c388c817cb15",
+      "imageIDs": [
+        "a91c2b445d77e3da"
+      ],
+      "appearances": [
+        {
+          "team": "Ratlings",
+          "assetName": "Bomber",
+          "side": "back",
+          "imageID": "a91c2b445d77e3da"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "e964004d34b7e222942ed7310b3f23dbc37bf854797d1a63e747c84ec8c71cda",
+      "imageIDs": [
+        "2c2a62284c763fb4"
+      ],
+      "appearances": [
+        {
+          "team": "Ratlings",
+          "assetName": "",
+          "side": "face",
+          "imageID": "2c2a62284c763fb4"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "f17b038ca7185e68a1eb21ec3e51eb65b5ca19dc5a920e677206a31796f9af16",
+      "imageIDs": [
+        "4f338429f89c8fb8"
+      ],
+      "appearances": [
+        {
+          "team": "Ratlings",
+          "assetName": "Larcenous",
+          "side": "face",
+          "imageID": "4f338429f89c8fb8"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "f6da0c6c223339edd5877e4dd51054d33b8b020d8303918e5e5c0d36b4e209f6",
+      "imageIDs": [
+        "310293891c8454f5"
+      ],
+      "appearances": [
+        {
+          "team": "Ratlings",
+          "assetName": "Vox-thief",
+          "side": "face",
+          "imageID": "310293891c8454f5"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "f7eb9b9846e41cd631fd71646691243c451cbbafa22e935f1cc4d4dadf228444",
+      "imageIDs": [
+        "18245d0d3df71830"
+      ],
+      "appearances": [
+        {
+          "team": "Ratlings",
+          "assetName": "Lucky Round",
+          "side": "face",
+          "imageID": "18245d0d3df71830"
+        }
+      ]
+    }
+  ],
+  "excluded": [
+    {
+      "sourceSHA256": "28d17ef43b1d037b0a5cb4cb9e577818cae1063f68fb8eb3143462651e6aea94",
+      "imageIDs": [
+        "fd746c9079028fed"
+      ],
+      "appearances": [
+        {
+          "team": "Ratlings",
+          "assetName": "Ogryn",
+          "side": "back",
+          "imageID": "fd746c9079028fed"
+        },
+        {
+          "team": "Ratlings",
+          "assetName": "Big Shot",
+          "side": "back",
+          "imageID": "fd746c9079028fed"
+        },
+        {
+          "team": "Ratlings",
+          "assetName": "Hardbit",
+          "side": "back",
+          "imageID": "fd746c9079028fed"
+        },
+        {
+          "team": "Ratlings",
+          "assetName": "Fixer",
+          "side": "back",
+          "imageID": "fd746c9079028fed"
+        },
+        {
+          "team": "Ratlings",
+          "assetName": "Stashmaster",
+          "side": "back",
+          "imageID": "fd746c9079028fed"
+        },
+        {
+          "team": "Ratlings",
+          "assetName": "Vox-thief",
+          "side": "back",
+          "imageID": "fd746c9079028fed"
+        },
+        {
+          "team": "Ratlings",
+          "assetName": "Battlemutt",
+          "side": "back",
+          "imageID": "fd746c9079028fed"
+        },
+        {
+          "team": "Ratlings",
+          "assetName": "Sniper",
+          "side": "back",
+          "imageID": "fd746c9079028fed"
+        },
+        {
+          "team": "Ratlings",
+          "assetName": "Spotter",
+          "side": "back",
+          "imageID": "fd746c9079028fed"
+        },
+        {
+          "team": "Ratlings",
+          "assetName": "Bullgryn",
+          "side": "back",
+          "imageID": "fd746c9079028fed"
+        },
+        {
+          "team": "Ratlings",
+          "assetName": "Sneak",
+          "side": "back",
+          "imageID": "fd746c9079028fed"
+        }
+      ],
+      "reason": "Pure artwork with no translatable text; visually inspected"
+    }
+  ],
+  "counts": {
+    "includedSourceSHA": 31,
+    "excludedSourceSHA": 1,
+    "referencedSourceSHA": 32,
+    "translatedImageIDs": 31,
+    "excludedImageIDs": 1,
+    "appearances": 54
+  }
+}

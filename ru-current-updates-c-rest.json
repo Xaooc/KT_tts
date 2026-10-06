@@ -1,0 +1,974 @@
+[
+  {
+    "id": "e1baa9a338e31e80",
+    "expectedTitle": "Tempestus Aquilons Kill Team",
+    "team": "Tempestus Aquilons",
+    "source": {
+      "officialPdf": "https://assets.warhammer-community.com/eng_tempestus_aquilons_online_rules-ulwuv6xiox-urjoo7nn95.pdf",
+      "date": "2026-08-26",
+      "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/tempestus-aquilons/",
+      "checkedOn": "2026-10-05",
+      "sourceTeam": "Tempestus Aquilons",
+      "pdfPages": [
+        4,
+        10
+      ],
+      "wahapediaSnapshotLineNumbers": [
+        60,
+        61
+      ]
+    },
+    "blocks": [
+      {
+        "heading": "Operatives",
+        "russian": "1 Темпестор (TEMPESTUS AQUILON TEMPESTOR): лазпистоль повышенной мощности и силовое оружие; реликтовый болт-пистолет и цепной меч; либо лазкарабин повышенной мощности и кулаки.\n1 Серво-часовой (SERVO-SENTRY) с огнемётом, гранатомётом либо залповым лазганом повышенной мощности.\nЕщё 9 Аквилонов Темпестус (TEMPESTUS AQUILON): Гренадёр (GRENADIER), Пистолетчик (GUNFIGHTER), Стрелок (GUNNER) с мелта-карабином и кулаками, Стрелок с плазмакарабином и кулаками, Снайпер (MARKSMAN), Предтеча (PRECURSOR), Рядовой (TROOPER).",
+        "english": "1 TEMPESTUS AQUILON TEMPESTOR with hot-shot laspistol and power weapon, relic bolt pistol and chainsword, or hot-shot lascarbine and fists. 1 TEMPESTUS AQUILON SERVO-SENTRY with flamer, grenade launcher or hot-shot volley gun. 9 TEMPESTUS AQUILON operatives: GRENADIER, GUNFIGHTER, GUNNER with melta carbine and fists, GUNNER with plasma carbine and fists, MARKSMAN, PRECURSOR, TROOPER.",
+        "proseTitles": [
+          "Operatives"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "cc2efeeacfb1a9f5",
+    "expectedTitle": "Tempestus Aquilons Kill Team · Continuation",
+    "team": "Tempestus Aquilons",
+    "source": {
+      "officialPdf": "https://assets.warhammer-community.com/eng_tempestus_aquilons_online_rules-ulwuv6xiox-urjoo7nn95.pdf",
+      "date": "2026-08-26",
+      "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/tempestus-aquilons/",
+      "checkedOn": "2026-10-05",
+      "sourceTeam": "Tempestus Aquilons",
+      "pdfPages": [
+        4,
+        10
+      ],
+      "wahapediaSnapshotLineNumbers": [
+        60,
+        61
+      ]
+    },
+    "blocks": [
+      {
+        "heading": "Selection restrictions",
+        "russian": "Кроме Рядовых (TROOPER), в отряд можно включить каждый вариант оперативника из этого списка только один раз.",
+        "english": "Other than TROOPER operatives, your kill team can only include each operative on this list once.",
+        "proseTitles": [
+          "Selection restrictions"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "cc2efeeacfb1a9f5",
+    "expectedTitle": "Tempestus Aquilons Kill Team · Continuation",
+    "team": "Tempestus Aquilons",
+    "source": {
+      "officialPdf": "https://assets.warhammer-community.com/eng_tempestus_aquilons_online_rules-ulwuv6xiox-urjoo7nn95.pdf",
+      "date": "2026-08-26",
+      "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/tempestus-aquilons/",
+      "checkedOn": "2026-10-05",
+      "sourceTeam": "Tempestus Aquilons",
+      "pdfPages": [
+        4,
+        10
+      ],
+      "wahapediaSnapshotLineNumbers": [
+        60,
+        61
+      ]
+    },
+    "blocks": [
+      {
+        "heading": "Operatives · continuation",
+        "russian": "Серво-часовой (SERVO-SENTRY) выбирается отдельно: он входит в отряд дополнительно к Темпестору и девяти остальным Аквилонам.",
+        "english": "The SERVO-SENTRY is selected separately in addition to the TEMPESTOR and nine other operatives.",
+        "proseTitles": [
+          "Operatives"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "d07cb513507f922c",
+    "expectedTitle": "Aquilon Precursor",
+    "team": "Tempestus Aquilons",
+    "source": {
+      "officialPdf": "https://assets.warhammer-community.com/eng_tempestus_aquilons_online_rules-ulwuv6xiox-urjoo7nn95.pdf",
+      "date": "2026-08-26",
+      "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/tempestus-aquilons/",
+      "checkedOn": "2026-10-05",
+      "sourceTeam": "Tempestus Aquilons",
+      "pdfPages": [
+        2,
+        9
+      ],
+      "wahapediaSnapshotLineNumbers": [
+        321
+      ]
+    },
+    "blocks": [
+      {
+        "heading": "Dynamic",
+        "russian": "После выполнения действия «Ближний бой» (Fight) или «Стрельба» (Shoot) этот оперативник может немедленно бесплатно выполнить действие «Рывок» (Dash). Он может сделать это, даже если в эту активацию выполнял действие «Атака» (Charge).",
+        "english": "Whenever this operative performs the Fight or Shoot action, it can immediately perform a free Dash action afterwards. It can do so even if it performed the Charge action during this activation.",
+        "proseTitles": [
+          "Dynamic"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "5bcd71471486e751",
+    "expectedTitle": "Hot Drop",
+    "team": "Tempestus Aquilons",
+    "source": {
+      "officialPdf": "https://assets.warhammer-community.com/eng_tempestus_aquilons_online_rules-ulwuv6xiox-urjoo7nn95.pdf",
+      "date": "2026-08-26",
+      "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/tempestus-aquilons/",
+      "checkedOn": "2026-10-05",
+      "sourceTeam": "Tempestus Aquilons",
+      "pdfPages": [
+        10
+      ],
+      "wahapediaSnapshotLineNumbers": [
+        151
+      ]
+    },
+    "blocks": [
+      {
+        "heading": "Hot Drop",
+        "russian": "Примените эту уловку перестрелки (FIREFIGHT PLOY) после броска кубиков атаки дружественного Аквилона Темпестус (TEMPESTUS AQUILON), если он целиком находится на территории противника либо в эту активацию десантировался или спрыгнул с высоты (Vantage), расположенной хотя бы на 2 дюйма выше пола зоны боя. Если цель находится в пределах 6 дюймов от него, можно перебросить любые свои кубики атаки.",
+        "english": "Use this firefight ploy after rolling attack dice for a friendly TEMPESTUS AQUILON operative wholly within your opponent’s territory or that landed or dropped from Vantage terrain at least 2\" above the killzone floor during this activation. If the target is within 6\" of it, you can re-roll any of your attack dice.",
+        "proseTitles": [
+          "Hot Drop"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "31a6961ba1bf3f62",
+    "expectedTitle": "Aquilon Gunfighter",
+    "team": "Tempestus Aquilons",
+    "source": {
+      "officialPdf": "https://assets.warhammer-community.com/eng_tempestus_aquilons_online_rules-ulwuv6xiox-urjoo7nn95.pdf",
+      "date": "2026-08-26",
+      "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/tempestus-aquilons/",
+      "checkedOn": "2026-10-05",
+      "sourceTeam": "Tempestus Aquilons",
+      "pdfPages": [
+        10
+      ],
+      "wahapediaSnapshotLineNumbers": [
+        262
+      ]
+    },
+    "blocks": [
+      {
+        "heading": "Salvo",
+        "russian": "Выберите до двух разных допустимых целей вне дистанции контроля дружественных оперативников. Стреляйте из этого оружия по обеим целям в выбранном вами порядке; для каждой цели отдельно выполните последовательность стрельбы.",
+        "english": "Select up to two different valid targets that aren’t within control range of friendly operatives. Shoot with this weapon against both of them in an order of your choice (roll each sequence separately).",
+        "proseTitles": [
+          "Salvo"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "31a6961ba1bf3f62",
+    "expectedTitle": "Aquilon Gunfighter",
+    "team": "Tempestus Aquilons",
+    "source": {
+      "officialPdf": "https://assets.warhammer-community.com/eng_tempestus_aquilons_online_rules-ulwuv6xiox-urjoo7nn95.pdf",
+      "date": "2026-08-26",
+      "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/tempestus-aquilons/",
+      "checkedOn": "2026-10-05",
+      "sourceTeam": "Tempestus Aquilons",
+      "pdfPages": [
+        10
+      ],
+      "wahapediaSnapshotLineNumbers": [
+        0
+      ]
+    },
+    "blocks": [
+      {
+        "heading": "Gunfight",
+        "russian": "Когда вражеский оперативник в пределах 8 дюймов от этого оперативника стреляет по нему, отмечайте каждый кубик атаки, сброшенный как провал. После действия, до удаления выведенных из строя оперативников (в том числе этого оперативника, если он выведен из строя), он может бесплатно выполнить действие «Стрельба» (Shoot), изменив приказ на «Бой» (Engage). Он может выбрать целью только того врага и должен использовать профиль прицельного огня своих лазпистолей повышенной мощности. Бросьте число кубиков атаки, равное числу кубиков противника, сброшенных как провал, плюс один, но не более четырёх.\nЕсли противник не сбросил ни одного кубика как провал, ответная «Стрельба» (Shoot) всё равно разрешена: бросьте один кубик атаки.",
+        "english": "Whenever an enemy operative within 8 inches of this operative shoots this operative, keep track of each attack dice that’s discarded as a fail. After the action, before incapacitated operatives are removed (including this one, if relevant), this operative can perform a free Shoot action (change its order to Engage to do so), but it can only target that enemy operative with its hot-shot laspistols (focused), and you only roll a number of attack dice equal to the opponent’s discarded attack dice plus one (to a maximum of four). This operative can shoot back with one attack die even if no enemy attack dice were discarded as failures.",
+        "proseTitles": [
+          "Gunfight"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "c6ff9f9b4ba3d363",
+    "expectedTitle": "Fate Itself is my Weapon",
+    "team": "Warpcoven",
+    "source": {
+      "officialPdf": "https://assets.warhammer-community.com/eng_29-04_kt_teamrules_warpcoven-dlvflmyfdc-tqfq81iy7v.pdf",
+      "date": "2026-04-29",
+      "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/warpcoven/",
+      "checkedOn": "2026-10-05",
+      "sourceTeam": "Warpcoven",
+      "pdfPages": [
+        11
+      ],
+      "wahapediaSnapshotLineNumbers": [
+        0
+      ],
+      "note": "Wahapedia Books shows January 2026; the official 2026-04-29 PDF is current and controls."
+    },
+    "blocks": [
+      {
+        "heading": "Fate Itself is my Weapon",
+        "russian": "Бросьте 2D6 и отложите их. В следующую фазу перестрелки, когда оперативник стреляет, сражается в ближнем бою или отвечает ударом, дождитесь, пока вы или противник бросите кубики атаки, но примените это правило до перебросков. Замените один из D6, брошенных для этой последовательности (ваш или противника), одним отложенным кубиком; заменённый кубик нельзя изменить, перебросить или сохранить как обычный либо критический успех, если он им не является; его сбрасывают в конце последовательности. Затем, если сумма результатов двух отложенных кубиков меньше 9, сбросьте второй кубик. В одной последовательности можно использовать не более одного отложенного кубика. Все оставшиеся отложенные кубики сбросьте в конце раунда.",
+        "english": "Roll two D6 and reserve them (put them to one side). In the following Firefight phase, whenever an operative is shooting, fighting or retaliating, after you or your opponent roll their attack dice, but before re-rolls, you can use one of your reserved dice to replace one of the D6 rolled for that sequence (yours or your opponent's); that replacement dice cannot be changed, re-rolled or retained as a normal or critical success if it is not one and is discarded at the end of that sequence. Then, if the combined result of both reserved dice was less than 9, discard the other dice. You cannot use more than one reserved dice per sequence. Discard any remaining reserved dice at the end of the turning point.",
+        "proseTitles": [
+          "Fate Itself is my Weapon"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "1a92d171b3cbda4e",
+    "expectedTitle": "Sorcerous Scrolls",
+    "team": "Warpcoven",
+    "source": {
+      "officialPdf": "https://assets.warhammer-community.com/eng_29-04_kt_teamrules_warpcoven-dlvflmyfdc-tqfq81iy7v.pdf",
+      "date": "2026-04-29",
+      "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/warpcoven/",
+      "checkedOn": "2026-10-05",
+      "sourceTeam": "Warpcoven",
+      "pdfPages": [
+        12
+      ],
+      "wahapediaSnapshotLineNumbers": [
+        200
+      ],
+      "note": "Wahapedia Books shows January 2026; the official 2026-04-29 PDF is current and controls."
+    },
+    "blocks": [
+      {
+        "heading": "Sorcerous Scrolls",
+        "russian": "Один раз за бой, когда дружественный колдун Ковена варпа (WARPCOVEN SORCERER) активируется или выполняет контрдействие, выберите для него другое благословение Тзинча (BOON OF TZEENTCH), действующее до конца боя; прежнее благословение утрачивается. Нельзя выбрать благословение, уже имеющееся у другого дружественного оперативника. Если применить это правило при контрдействии дружественного оперативника и выбрать «Эхо из варпа» (Echoes from the Warp), его можно немедленно использовать, чтобы сменить приказ оперативника и выполнить бесплатное действие во время этого контрдействия.",
+        "english": "Once per battle, when a friendly WARPCOVEN SORCERER operative is activated or counteracts, you can select a different BOON OF TZEENTCH for it to have until the end of the battle (it loses any it previously had). It cannot be the same BOON OF TZEENTCH any other friendly operative has. Note that if you use this rule when a friendly operative counteracts and you select Echoes from the Warp, it can be used immediately to change the operative’s order and perform a free action during that counteraction.",
+        "proseTitles": [
+          "Sorcerous Scrolls"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "5f1deb603c6f1466",
+    "expectedTitle": "Arcane Robes",
+    "team": "Warpcoven",
+    "source": {
+      "officialPdf": "https://assets.warhammer-community.com/eng_29-04_kt_teamrules_warpcoven-dlvflmyfdc-tqfq81iy7v.pdf",
+      "date": "2026-04-29",
+      "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/warpcoven/",
+      "checkedOn": "2026-10-05",
+      "sourceTeam": "Warpcoven",
+      "pdfPages": [
+        11
+      ],
+      "wahapediaSnapshotLineNumbers": [
+        195
+      ],
+      "note": "Wahapedia Books shows January 2026; the official 2026-04-29 PDF is current and controls."
+    },
+    "blocks": [
+      {
+        "heading": "Arcane Robes",
+        "russian": "Один раз за раунд, когда кубик атаки должен нанести критический урон (Critical Dmg) дружественному колдуну Ковена варпа (WARPCOVEN SORCERER), вы можете применить это правило. В таком случае этот кубик наносит обычный урон (Normal Dmg) вместо критического.",
+        "english": "Once per turning point, whenever an attack dice would inflict Critical Dmg on a friendly WARPCOVEN SORCERER operative, you can use this rule. If you do, that attack dice inflicts Normal Dmg instead.",
+        "proseTitles": [
+          "Arcane Robes"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ffbac131f8dce06f",
+    "expectedTitle": "Ratling Spotter",
+    "team": "Ratlings",
+    "source": {
+      "officialPdf": "https://assets.warhammer-community.com/eng_29-04_kt_teamrules_ratlings-ulbqsnxhjb-jmv6tjlrsi.pdf",
+      "date": "2026-04-29",
+      "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/ratlings/",
+      "checkedOn": "2026-10-05",
+      "sourceTeam": "Ratlings",
+      "pdfPages": [
+        9
+      ],
+      "wahapediaSnapshotLineNumbers": [
+        429
+      ]
+    },
+    "blocks": [
+      {
+        "heading": "Spot · 1AP",
+        "russian": "ПОДДЕРЖКА (SUPPORT). Выберите вражеского оперативника, видимого этому наблюдателю. До конца раунда каждый раз, когда дружественный оперативник-ратлинг (RATLING) в пределах 3 дюймов от наблюдателя стреляет по выбранному врагу, можно применить этот эффект: оружие дальнего боя дружественного оперативника получает свойство «Обнаружение в свете» (Seek Light), а враг не может считаться заслонённым (Obscured). Наблюдатель не может выполнять это действие в дистанции контроля врага.",
+        "english": "SUPPORT. Select one enemy operative visible to this operative. Until the end of the turning point, whenever a friendly RATLING operative within 3\" of this operative is shooting that enemy operative, you can use this effect. If you do: that friendly operative’s ranged weapons have the Seek Light weapon rule; that enemy operative cannot be obscured. This operative cannot perform this action while within control range of an enemy operative.",
+        "proseTitles": [
+          "Spot"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "fd5cbd1d9a354a43",
+    "expectedTitle": "Ratling Battlemutt",
+    "team": "Ratlings",
+    "source": {
+      "officialPdf": "https://assets.warhammer-community.com/eng_29-04_kt_teamrules_ratlings-ulbqsnxhjb-jmv6tjlrsi.pdf",
+      "date": "2026-04-29",
+      "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/ratlings/",
+      "checkedOn": "2026-10-05",
+      "sourceTeam": "Ratlings",
+      "pdfPages": [
+        10
+      ],
+      "wahapediaSnapshotLineNumbers": [
+        242,
+        243
+      ]
+    },
+    "blocks": [
+      {
+        "heading": "Early Warning",
+        "russian": "Один раз за раунд после того, как враг выполнит действие с перемещением или выставлением заново, можно прервать ход игры и применить это правило. Каждый дружественный Ратлинг (RATLING), кроме Огрина (OGRYN) и Булгрина (BULLGRYN), находящийся в пределах 6 дюймов от этого Боевого пса и в пределах 2 дюймов от переместившегося врага, может немедленно бесплатно выполнить «Рывок» (Dash) или «Отступление» (Fall Back). Выбирайте действие отдельно для каждого и порядок их действий. За это действие нельзя переместиться дальше 3 дюймов. В обоих случаях нельзя закончить перемещение в пределах 2 дюймов от врага, если только в конце перемещения оперативник не виден ни одному врагу. Если последнее условие невозможно выполнить, оперативник не перемещается.",
+        "english": "Once per turning point, after an enemy operative performs an action in which it moves or is set up, you can interrupt and use this rule. Each friendly RATLING operative excluding OGRYN and BULLGRYN within 6\" of this operative and within 2\" of that enemy can immediately perform a free Dash or Fall Back in your chosen order (choose separately for each), but cannot move more than 3\". They cannot end within 2\" of an enemy operative unless not visible to every enemy operative when they end; if this is not possible, they do not move.",
+        "proseTitles": [
+          "Early Warning"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "4d091f44f0de7d76",
+    "expectedTitle": "Ratling Bomber",
+    "team": "Ratlings",
+    "source": {
+      "officialPdf": "https://assets.warhammer-community.com/eng_29-04_kt_teamrules_ratlings-ulbqsnxhjb-jmv6tjlrsi.pdf",
+      "date": "2026-04-29",
+      "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/ratlings/",
+      "checkedOn": "2026-10-05",
+      "sourceTeam": "Ratlings",
+      "pdfPages": [
+        10
+      ],
+      "wahapediaSnapshotLineNumbers": [
+        324
+      ]
+    },
+    "blocks": [
+      {
+        "heading": "Tripwire",
+        "russian": "При размещении снаряжения перед боем вы можете установить до двух своих маркеров «Растяжка» (Tripwire) целиком на своей территории и дальше 2 дюймов от других маркеров, точек доступа (Access Points) и доступного террейна (Accessible). Когда маркер впервые оказывается в дистанции контроля вражеского оперативника, уберите его, уменьшите лимит очков действий (APL) этого врага на 1 до конца его следующей активации и завершите его действие, если оно выполнялось, даже если эффекты действия ещё не были выполнены. Если маркер нельзя разместить, сдвиньте его на минимальное расстояние, необходимое для размещения.",
+        "english": "When setting up equipment before the battle, you can set up to two of your Tripwire markers up wholly within your territory and more than 2\" from other markers, access points and Accessible terrain. The first time that marker is within an enemy operative’s control range, remove that marker, subtract 1 from that operative’s APL stat until the end of its next activation and end its action (if any), even if that action’s effects aren’t fulfilled. If it cannot be placed, move it the minimum amount to do so.",
+        "proseTitles": [
+          "Tripwire"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "6545722b8b502917",
+    "expectedTitle": "Ratling Raider · Actions",
+    "team": "Ratlings",
+    "source": {
+      "officialPdf": "https://assets.warhammer-community.com/eng_29-04_kt_teamrules_ratlings-ulbqsnxhjb-jmv6tjlrsi.pdf",
+      "date": "2026-04-29",
+      "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/ratlings/",
+      "checkedOn": "2026-10-05",
+      "sourceTeam": "Ratlings",
+      "pdfPages": [
+        10
+      ],
+      "wahapediaSnapshotLineNumbers": [
+        369
+      ]
+    },
+    "blocks": [
+      {
+        "heading": "Grappling Hook",
+        "russian": "Когда этот оперативник карабкается вверх, считайте вертикальное расстояние равным 2 дюймам независимо от того, насколько далеко по вертикали он фактически переместился.",
+        "english": "Whenever this operative is climbing up, treat the vertical distance as 2\" (regardless of how far the operative actually moves vertically).",
+        "proseTitles": [
+          "Grappling Hook"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "6545722b8b502917",
+    "expectedTitle": "Ratling Raider · Actions",
+    "team": "Ratlings",
+    "source": {
+      "officialPdf": "https://assets.warhammer-community.com/eng_29-04_kt_teamrules_ratlings-ulbqsnxhjb-jmv6tjlrsi.pdf",
+      "date": "2026-04-29",
+      "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/ratlings/",
+      "checkedOn": "2026-10-05",
+      "sourceTeam": "Ratlings",
+      "pdfPages": [
+        10
+      ],
+      "wahapediaSnapshotLineNumbers": [
+        364,
+        365
+      ]
+    },
+    "blocks": [
+      {
+        "heading": "Slingshot · 1AP",
+        "russian": "Выберите точку на террейне, видимую этому оперативнику и в пределах 6 дюймов от него. Уберите его из зоны боя и выставьте заново целиком в пределах 6 дюймов по горизонтали от выбранной точки, вне дистанции контроля врагов и так, чтобы точка была ему видна. Это действие считается «Перемещением» (Reposition). Его нельзя выполнять в дистанции контроля врага или в активацию, в которой оперативник выполнял «Атаку» (Charge), «Отступление» (Fall Back) или «Стрельбу» (Shoot), и наоборот.",
+        "english": "Select a point on terrain visible to and within 6\" of this operative. Remove this operative from the killzone and set it up wholly within 6\" horizontally of that point, outside enemy control range and with that point visible. Treat this as Reposition. This operative cannot perform this action while within enemy control range, or during an activation in which it performs Charge, Fall Back or Shoot (or vice versa).",
+        "proseTitles": [
+          "Slingshot"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "6545722b8b502917",
+    "expectedTitle": "Ratling Raider · Actions",
+    "team": "Ratlings",
+    "source": {
+      "officialPdf": "https://assets.warhammer-community.com/eng_29-04_kt_teamrules_ratlings-ulbqsnxhjb-jmv6tjlrsi.pdf",
+      "date": "2026-04-29",
+      "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/ratlings/",
+      "checkedOn": "2026-10-05",
+      "sourceTeam": "Ratlings",
+      "pdfPages": [
+        10
+      ],
+      "wahapediaSnapshotLineNumbers": [
+        364,
+        365
+      ]
+    },
+    "blocks": [
+      {
+        "heading": "Slingshot diagram",
+        "russian": "Выберите видимую точку в пределах 6 дюймов. Повторное выставление: целиком в пределах 6 дюймов по горизонтали от неё.",
+        "english": "Choose a visible point within 6\"; set up wholly within 6\" horizontally of it.",
+        "proseTitles": [
+          "Slingshot diagram"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "af3660a65b407615",
+    "expectedTitle": "Ratling Sneak",
+    "team": "Ratlings",
+    "source": {
+      "officialPdf": "https://assets.warhammer-community.com/eng_29-04_kt_teamrules_ratlings-ulbqsnxhjb-jmv6tjlrsi.pdf",
+      "date": "2026-04-29",
+      "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/ratlings/",
+      "checkedOn": "2026-10-05",
+      "sourceTeam": "Ratlings",
+      "pdfPages": [
+        10
+      ],
+      "wahapediaSnapshotLineNumbers": [
+        389
+      ]
+    },
+    "blocks": [
+      {
+        "heading": "Optics · 1AP",
+        "russian": "До начала следующей активации этого оперативника, когда он стреляет, вражеские оперативники не могут считаться заслонёнными (Obscured). Оперативник не может выполнять это действие в дистанции контроля врага.\nНа тот же срок неподвижный профиль снайперской винтовки с глушителем (Suppressed sniper rifle, stationary) получает «Смертоносное 5+» (Lethal 5+).",
+        "english": "Until the start of this operative’s next activation, whenever it’s shooting, enemy operatives cannot be obscured. This operative cannot perform this action while within control range of an enemy operative. Until the same time, its suppressed sniper rifle (stationary) has Lethal 5+.",
+        "proseTitles": [
+          "Optics"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "af3660a65b407615",
+    "expectedTitle": "Ratling Sneak",
+    "team": "Ratlings",
+    "source": {
+      "officialPdf": "https://assets.warhammer-community.com/eng_29-04_kt_teamrules_ratlings-ulbqsnxhjb-jmv6tjlrsi.pdf",
+      "date": "2026-04-29",
+      "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/ratlings/",
+      "checkedOn": "2026-10-05",
+      "sourceTeam": "Ratlings",
+      "pdfPages": [
+        10
+      ],
+      "wahapediaSnapshotLineNumbers": [
+        389
+      ]
+    },
+    "blocks": [
+      {
+        "heading": "Evade",
+        "russian": "Один раз за раунд, после того как вражеский оперативник выполнит действие, вы можете прервать ход игры и применить это правило. Этот оперативник может немедленно бесплатно выполнить действие «Рывок» (Dash). Он не может пользоваться правилом фракции «Шмыг» (Scarper): вместо него у него есть это правило.",
+        "english": "Once per turning point, after an enemy operative performs an action, you can interrupt to use this rule. If you do, this operative can immediately perform a free Dash action. Note this operative cannot use the Scarper faction rule (it has this rule instead).",
+        "proseTitles": [
+          "Evade"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "d7cd5bf51744f5ad",
+    "expectedTitle": "Sniper Positions",
+    "team": "Ratlings",
+    "source": {
+      "officialPdf": "https://assets.warhammer-community.com/eng_29-04_kt_teamrules_ratlings-ulbqsnxhjb-jmv6tjlrsi.pdf",
+      "date": "2026-04-29",
+      "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/ratlings/",
+      "checkedOn": "2026-10-05",
+      "sourceTeam": "Ratlings",
+      "pdfPages": [
+        10
+      ],
+      "wahapediaSnapshotLineNumbers": [
+        144
+      ]
+    },
+    "blocks": [
+      {
+        "heading": "Sniper Positions",
+        "russian": "Когда дружественный оперативник-ратлинг (RATLING) находится дальше 6 дюймов от вражеских оперативников и он находится в пределах 1 дюйма от тяжёлого террейна (Heavy terrain), неподвижный профиль его винтовки (если она у него есть) получает свойство «Бесшумное» (Silent).",
+        "english": "Whenever a friendly RATLING operative is more than 6\" from enemy operatives and is within 1\" of Heavy terrain, the stationary profile of its rifle (if any) has the Silent weapon rule.",
+        "proseTitles": [
+          "Sniper Positions"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "03ea42ee04c7d9d7",
+    "expectedTitle": "Scarper",
+    "team": "Ratlings",
+    "source": {
+      "officialPdf": "https://assets.warhammer-community.com/eng_29-04_kt_teamrules_ratlings-ulbqsnxhjb-jmv6tjlrsi.pdf",
+      "date": "2026-04-29",
+      "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/ratlings/",
+      "checkedOn": "2026-10-05",
+      "sourceTeam": "Ratlings",
+      "pdfPages": [
+        10
+      ],
+      "wahapediaSnapshotLineNumbers": [
+        134
+      ]
+    },
+    "blocks": [
+      {
+        "heading": "Scarper",
+        "russian": "Несмотря на малый рост, ратлинги быстро бегают и благодаря скорости и ловкости опережают врагов и уходят от них. После каждой активации вражеского оперативника, но до активации следующего оперативника, вы можете бесплатно выполнить действие «Рывок» (Dash) одним дружественным оперативником-ратлингом (RATLING), кроме булгрина (BULLGRYN), огрина (OGRYN) и скрытника (SNEAK). Он не может закончить это перемещение в пределах 3 дюймов от врага, если только в конце перемещения не будет видим ни одному вражескому оперативнику. Каждый дружественный оперативник может воспользоваться этим правилом лишь один раз за раунд; после последней активации раунда правило использовать нельзя.",
+        "english": "Despite their small stature, Ratlings are fleet of foot, using their speed and agility to outpace and evade their foes. After each enemy operative’s activation, before the next operative is activated, you can perform a free Dash action with one friendly RATLING operative (excluding BULLGRYN, OGRYN and SNEAK), but it cannot end that move within 3\" of an enemy operative unless it’s not visible to every enemy operative when it ends that move. Each friendly operative can only do this once per turning point, and cannot do so after the final activation of the turning point.",
+        "proseTitles": [
+          "Scarper"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "18245d0d3df71830",
+    "expectedTitle": "Lucky Round",
+    "team": "Ratlings",
+    "source": {
+      "officialPdf": "https://assets.warhammer-community.com/eng_29-04_kt_teamrules_ratlings-ulbqsnxhjb-jmv6tjlrsi.pdf",
+      "date": "2026-04-29",
+      "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/ratlings/",
+      "checkedOn": "2026-10-05",
+      "sourceTeam": "Ratlings",
+      "pdfPages": [
+        10
+      ],
+      "wahapediaSnapshotLineNumbers": [
+        200
+      ]
+    },
+    "blocks": [
+      {
+        "heading": "Lucky Round",
+        "russian": "Один раз за раунд, когда дружественный оперативник-ратлинг (RATLING) стреляет из винтовки и вы уже бросили кубики атаки, можно применить это правило. До конца этой последовательности выбранное оружие получает свойство «Сокрушительное» (Severe).",
+        "english": "Once per turning point, when a friendly RATLING operative is shooting with a rifle and you’ve rolled your attack dice, you can use this rule. If you do, that weapon has the Severe weapon rule until the end of that sequence.",
+        "proseTitles": [
+          "Lucky Round"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "4ac77b39cc344891",
+    "expectedTitle": "Purloined Rations",
+    "team": "Ratlings",
+    "source": {
+      "officialPdf": "https://assets.warhammer-community.com/eng_29-04_kt_teamrules_ratlings-ulbqsnxhjb-jmv6tjlrsi.pdf",
+      "date": "2026-04-29",
+      "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/ratlings/",
+      "checkedOn": "2026-10-05",
+      "sourceTeam": "Ratlings",
+      "pdfPages": [
+        10
+      ],
+      "wahapediaSnapshotLineNumbers": [
+        186
+      ]
+    },
+    "blocks": [
+      {
+        "heading": "Purloined Rations",
+        "russian": "Один раз за раунд после броска кубиков атаки дружественного Ратлинга (RATLING), стреляющего из винтовки, можно применить это правило. До конца этой последовательности улучшите HIT этого оружия на 1. Это правило имеет приоритет над обычным запретом изменять характеристики оружия во время действия.",
+        "english": "Once per turning point, after rolling attack dice for a friendly RATLING operative shooting with a rifle, you can use this rule. Improve that weapon’s Hit by 1 until the end of that sequence. This takes precedence over the normal rule that weapon stats cannot be changed during an action.",
+        "proseTitles": [
+          "Purloined Rations"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "5e8338a1773628c6",
+    "expectedTitle": "Kasrkin Recon-Trooper",
+    "team": "Kasrkin",
+    "source": {
+      "officialPdf": "https://assets.warhammer-community.com/eng_29-04_kt_teamrules_kasrkin-9s2gsy4iq7-hexyjwjqrx.pdf",
+      "date": "2026-04-29",
+      "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/kasrkin/",
+      "checkedOn": "2026-10-05",
+      "sourceTeam": "Kasrkin",
+      "pdfPages": [
+        11
+      ],
+      "wahapediaSnapshotLineNumbers": [
+        320
+      ]
+    },
+    "blocks": [
+      {
+        "heading": "Auspex Scan",
+        "russian": "1 AP. До начала следующей активации этого оперативника либо его выведения из строя, что наступит раньше, все враги в пределах 8 дюймов от него считаются Просканированными (Scanned). Когда дружественный Касркин (KASRKIN) стреляет по Просканированному врагу, тот не может считаться заслонённым (Obscured). Нельзя выполнять это действие в дистанции контроля врага.",
+        "english": "1AP. Until the start of this operative’s next activation or until it is incapacitated (whichever comes first), enemy operatives within 8\" of this operative are Scanned. Whenever a friendly KASRKIN operative shoots a Scanned enemy, that enemy cannot be obscured. This operative cannot perform this action within enemy control range.",
+        "proseTitles": [
+          "Auspex Scan"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "c6b0f537006c5a56",
+    "expectedTitle": "Kasrkin Sergeant",
+    "team": "Kasrkin",
+    "source": {
+      "officialPdf": "https://assets.warhammer-community.com/eng_29-04_kt_teamrules_kasrkin-9s2gsy4iq7-hexyjwjqrx.pdf",
+      "date": "2026-04-29",
+      "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/kasrkin/",
+      "checkedOn": "2026-10-05",
+      "sourceTeam": "Kasrkin",
+      "pdfPages": [
+        10
+      ],
+      "wahapediaSnapshotLineNumbers": [
+        232
+      ]
+    },
+    "blocks": [
+      {
+        "heading": "Veteran Leadership",
+        "russian": "Когда применяется стратегический гамбит «Оружейное мастерство» (Skill at Arms), если этот оперативник находится в зоне боя, можно выбрать один дополнительный навык. Нельзя выбрать тот же навык дважды.",
+        "english": "Whenever you use the Skill at Arms STRATEGIC GAMBIT, if this operative is in the killzone, you can select one additional Skill at Arms, but it cannot be one you have already selected.",
+        "proseTitles": [
+          "Veteran Leadership"
+        ],
+        "append": true,
+        "headingRussian": "Опытный командир (Veteran Leadership)"
+      }
+    ]
+  },
+  {
+    "id": "c533e2072fea8e38",
+    "expectedTitle": "Kasrkin Combat Medic",
+    "team": "Kasrkin",
+    "source": {
+      "officialPdf": "https://assets.warhammer-community.com/eng_29-04_kt_teamrules_kasrkin-9s2gsy4iq7-hexyjwjqrx.pdf",
+      "date": "2026-04-29",
+      "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/kasrkin/",
+      "checkedOn": "2026-10-05",
+      "sourceTeam": "Kasrkin",
+      "pdfPages": [
+        11
+      ],
+      "wahapediaSnapshotLineNumbers": [
+        248,
+        249
+      ]
+    },
+    "blocks": [
+      {
+        "heading": "Medic!",
+        "russian": "Первый раз за раунд, когда другой дружественный оперативник Касркинов (KASRKIN) должен быть выведен из строя, находясь на виду у медика и в пределах 3 дюймов от него, вы можете применить это правило, если ни один из этих оперативников не находится в дистанции контроля врага. Тогда союзник остаётся в игре с 1 раной и не может быть выведен из строя до конца текущего действия. После действия он может немедленно бесплатно выполнить «Рывок» (Dash), но должен закончить перемещение в дистанции контроля медика. Уменьшите APL обоих оперативников на 1 до конца их следующих активаций соответственно; если правило применено во время активации спасённого оперативника, его активация завершается. Нельзя применять это правило, если медик выведен из строя или во время действия «Стрельба» (Shoot), когда медик был бы основной или вторичной целью.",
+        "english": "The first time during each turning point that another friendly KASRKIN operative would be incapacitated while visible to and within 3\" of this operative, you can use this rule, providing neither this nor that operative is within control range of an enemy operative. If you do, that friendly operative isn't incapacitated, has 1 wound remaining and cannot be incapacitated for the remainder of the action. After that action, that friendly operative can immediately perform a free Dash action, but must end that move within this operative's control range. Subtract 1 from this and that operative's APL stats until the end of their next activations respectively, and if this rule was used during that friendly operative's activation, that activation ends. You cannot use this rule if this operative is incapacitated, or if it's a Shoot action and this operative would be a primary or secondary target.",
+        "proseTitles": [
+          "Medic!"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "5cf8ecc11e91e6ea",
+    "expectedTitle": "Skill at Arms",
+    "team": "Kasrkin",
+    "source": {
+      "officialPdf": "https://assets.warhammer-community.com/eng_29-04_kt_teamrules_kasrkin-9s2gsy4iq7-hexyjwjqrx.pdf",
+      "date": "2026-04-29",
+      "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/kasrkin/",
+      "checkedOn": "2026-10-05",
+      "sourceTeam": "Kasrkin",
+      "pdfPages": [
+        5,
+        11
+      ],
+      "wahapediaSnapshotLineNumbers": [
+        127
+      ]
+    },
+    "blocks": [
+      {
+        "heading": "Rapid Fire",
+        "russian": "Если дружественный Касркин (KASRKIN) не перемещается в свою активацию, он может выполнить в ней два действия «Стрельба» (Shoot), кроме «Дозора» (Guard). Для обоих нужно использовать болт-пистолет, лазган повышенной мощности или лазпистоль повышенной мощности.",
+        "english": "Whenever a friendly KASRKIN operative does not move during its activation, it can perform two Shoot actions during that activation (excluding Guard), but both must use a bolt pistol, hot-shot lasgun or hot-shot laspistol.",
+        "proseTitles": [
+          "Rapid Fire"
+        ],
+        "append": true,
+        "headingRussian": "Быстрый огонь (Rapid Fire)"
+      }
+    ]
+  },
+  {
+    "id": "e9f03b89c5f2a919",
+    "expectedTitle": "Ice in Your Veins",
+    "team": "Kasrkin",
+    "source": {
+      "officialPdf": "https://assets.warhammer-community.com/eng_29-04_kt_teamrules_kasrkin-9s2gsy4iq7-hexyjwjqrx.pdf",
+      "date": "2026-04-29",
+      "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/kasrkin/",
+      "checkedOn": "2026-10-05",
+      "sourceTeam": "Kasrkin",
+      "pdfPages": [
+        11
+      ],
+      "wahapediaSnapshotLineNumbers": [
+        119
+      ]
+    },
+    "blocks": [
+      {
+        "heading": "Ice in Your Veins",
+        "russian": "Когда дружественный оперативник касркинов участвует в ближнем бою или отвечает на удар, либо по нему стреляют, первый кубик атаки за эту последовательность, наносящий ему обычный урон 3 или более, наносит на 1 урон меньше.",
+        "english": "Whenever a friendly KASRKIN operative is fighting or retaliating, or an operative is shooting it, the first time an attack die inflicts Normal Dmg 3 or more on this operative during that sequence, that die inflicts 1 less damage.",
+        "proseTitles": [
+          "Ice in Your Veins"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "960fda8c107ff70a",
+    "expectedTitle": "For Cadia!",
+    "team": "Kasrkin",
+    "source": {
+      "officialPdf": "https://assets.warhammer-community.com/eng_29-04_kt_teamrules_kasrkin-9s2gsy4iq7-hexyjwjqrx.pdf",
+      "date": "2026-04-29",
+      "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/kasrkin/",
+      "checkedOn": "2026-10-05",
+      "sourceTeam": "Kasrkin",
+      "pdfPages": [
+        11
+      ],
+      "wahapediaSnapshotLineNumbers": [
+        122
+      ]
+    },
+    "blocks": [
+      {
+        "heading": "For Cadia!",
+        "russian": "Увеличьте число атак (Atk) оружия ближнего боя дружественных оперативников касркинов на 1, максимум до 4.\nВ каждой последовательности ближнего боя первый удар дружественного Касркина наносит на 1 урон больше.",
+        "english": "Add 1 to the Atk stat of friendly KASRKIN operatives’ melee weapons (to a maximum of 4). In each Fight sequence, the first strike by a friendly KASRKIN operative inflicts 1 additional damage.",
+        "proseTitles": [
+          "For Cadia!"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "1bf262812045d933",
+    "expectedTitle": "Light ’Em Up",
+    "team": "Kasrkin",
+    "source": {
+      "officialPdf": "https://assets.warhammer-community.com/eng_29-04_kt_teamrules_kasrkin-9s2gsy4iq7-hexyjwjqrx.pdf",
+      "date": "2026-04-29",
+      "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/kasrkin/",
+      "checkedOn": "2026-10-05",
+      "sourceTeam": "Kasrkin",
+      "pdfPages": [
+        11
+      ],
+      "wahapediaSnapshotLineNumbers": [
+        112
+      ]
+    },
+    "blocks": [
+      {
+        "heading": "Light ’Em Up",
+        "russian": "Стрелковое оружие дружественных Касркинов (KASRKIN) получает «Сокрушительное» (Severe).",
+        "english": "Friendly KASRKIN operatives’ ranged weapons have Severe.",
+        "proseTitles": [
+          "Light ’Em Up"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "f9d6a721f71267e0",
+    "expectedTitle": "Clearance Sweep",
+    "team": "Kasrkin",
+    "source": {
+      "officialPdf": "https://assets.warhammer-community.com/eng_29-04_kt_teamrules_kasrkin-9s2gsy4iq7-hexyjwjqrx.pdf",
+      "date": "2026-04-29",
+      "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/kasrkin/",
+      "checkedOn": "2026-10-05",
+      "sourceTeam": "Kasrkin",
+      "pdfPages": [
+        11
+      ],
+      "wahapediaSnapshotLineNumbers": [
+        144
+      ]
+    },
+    "blocks": [
+      {
+        "heading": "Clearance Sweep",
+        "russian": "Разместите в зоне боя свой маркер «Зачистка сектора». Когда дружественный оперативник касркинов в пределах 5 дюймов по горизонтали от маркера стреляет по оперативнику, также находящемуся в пределах 5 дюймов по горизонтали от него, его оружие получает свойство «Непрерывное» (Ceaseless). Удалите маркер на шаге подготовки (Ready step) следующей фазы стратегии.",
+        "english": "Place your Clearance Sweep marker in the killzone. Whenever a friendly KASRKIN operative within 5\" horizontally of that marker shoots an operative also within 5\" horizontally of it, its weapons have Ceaseless. Remove the marker in the Ready step of the next Strategy phase.",
+        "proseTitles": [
+          "Clearance Sweep"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "c0c1c2da756f94bd",
+    "expectedTitle": "Elimination Pattern",
+    "team": "Kasrkin",
+    "source": {
+      "officialPdf": "https://assets.warhammer-community.com/eng_29-04_kt_teamrules_kasrkin-9s2gsy4iq7-hexyjwjqrx.pdf",
+      "date": "2026-04-29",
+      "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/kasrkin/",
+      "checkedOn": "2026-10-05",
+      "sourceTeam": "Kasrkin",
+      "pdfPages": [
+        11
+      ],
+      "wahapediaSnapshotLineNumbers": [
+        134
+      ]
+    },
+    "blocks": [
+      {
+        "heading": "Elimination Pattern",
+        "russian": "Когда дружественный оперативник касркинов стреляет оружием с усиленным выстрелом (hot-shot) по Просканированной (Scanned) цели либо цели, которая не может сохранять защиты от укрытия (Cover saves), оружие получает свойство «Бронебойное при крит. успехах 1» (Piercing Crits 1), а если это усиленный залповый лазган — «Бронебойное 1» (Piercing 1).",
+        "english": "Whenever a friendly KASRKIN operative shoots with a hot-shot weapon against a Scanned target or a target that cannot retain cover saves, that weapon has Piercing Crits 1, or Piercing 1 if it is a hot-shot volley gun.",
+        "proseTitles": [
+          "Elimination Pattern"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "d597e9952867c8bc",
+    "expectedTitle": "Neutralise Target",
+    "team": "Kasrkin",
+    "source": {
+      "officialPdf": "https://assets.warhammer-community.com/eng_29-04_kt_teamrules_kasrkin-9s2gsy4iq7-hexyjwjqrx.pdf",
+      "date": "2026-04-29",
+      "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/kasrkin/",
+      "checkedOn": "2026-10-05",
+      "sourceTeam": "Kasrkin",
+      "pdfPages": [
+        11
+      ],
+      "wahapediaSnapshotLineNumbers": [
+        161
+      ]
+    },
+    "blocks": [
+      {
+        "heading": "Neutralise Target",
+        "russian": "Примените, когда дружественный оперативник касркинов стреляет, после броска кубиков атаки. Если цель Просканирована (Scanned) либо не может сохранять защиты от укрытия (Cover saves), вы можете перебросить любые кубики атаки.",
+        "english": "Use when a friendly KASRKIN operative is shooting, after rolling attack dice. If the target is Scanned or cannot retain cover saves, you can re-roll any of your attack dice.",
+        "proseTitles": [
+          "Neutralise Target"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "3deea12717c30e97",
+    "expectedTitle": "Cover Retreat",
+    "team": "Kasrkin",
+    "source": {
+      "officialPdf": "https://assets.warhammer-community.com/eng_29-04_kt_teamrules_kasrkin-9s2gsy4iq7-hexyjwjqrx.pdf",
+      "date": "2026-04-29",
+      "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/kasrkin/",
+      "checkedOn": "2026-10-05",
+      "sourceTeam": "Kasrkin",
+      "pdfPages": [
+        11
+      ],
+      "wahapediaSnapshotLineNumbers": [
+        165
+      ]
+    },
+    "blocks": [
+      {
+        "heading": "Cover Retreat",
+        "russian": "Примените, когда дружественный оперативник касркинов отступает (Fall Back), будучи видимым другому готовому дружественному оперативнику касркинов в пределах 6 дюймов и вне зоны контроля врага. После завершения перемещения, но до окончания Отступления, этот другой оперативник немедленно может бесплатно выполнить действие «Стрелять» (Shoot).\nДля этой бесплатной «Стрельбы» он может изменить свой приказ на «Бой» (Engage).",
+        "english": "Use when a friendly KASRKIN operative performs Fall Back while visible to and within 6\" of another ready friendly KASRKIN operative that is not within enemy control range. After it finishes moving but before Fall Back ends, that other operative can immediately perform a free Shoot action. It can change its order to Engage to perform that free Shoot action.",
+        "proseTitles": [
+          "Cover Retreat"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "d85d6ab829b14707",
+    "expectedTitle": "Kasrkin Sergeant — Tactical Command",
+    "team": "Kasrkin",
+    "source": {
+      "officialPdf": "https://assets.warhammer-community.com/eng_29-04_kt_teamrules_kasrkin-9s2gsy4iq7-hexyjwjqrx.pdf",
+      "date": "2026-04-29",
+      "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/kasrkin/",
+      "checkedOn": "2026-10-05",
+      "sourceTeam": "Kasrkin",
+      "pdfPages": [
+        11
+      ],
+      "wahapediaSnapshotLineNumbers": [
+        225,
+        226
+      ]
+    },
+    "blocks": [
+      {
+        "heading": "Tactical Command",
+        "russian": "0 AP. Выберите дружественного оперативника касркинов и навык «Вооружённая до зубов» (Skill at Arms), который дополнительно действует для него вместе с имеющимися навыками; нельзя выбрать навык, который у него уже есть до шага подготовки (Ready step) следующей фазы стратегии. Либо, если в зоне боя находится ваш маркер «Зачистка сектора» (Clearance Sweep), вместо этого удалите и разместите его заново. Нельзя выполнять действие в зоне контроля врага.",
+        "english": "0AP. Select one friendly KASRKIN operative and one Skill at Arms for it to have in addition to any it currently has; it cannot be a Skill it already has until the Ready step of the next Strategy phase. Alternatively, if your Clearance Sweep marker is in the killzone, remove and replace it instead. This operative cannot perform this action while within enemy control range.",
+        "proseTitles": [
+          "Tactical Command"
+        ]
+      }
+    ]
+  }
+]

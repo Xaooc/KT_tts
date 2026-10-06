@@ -1,0 +1,2300 @@
+{
+  "batch": "08",
+  "teams": [
+    "DEATHWATCH",
+    "Scout Squad",
+    "Void-dancer Troupe",
+    "Legionary"
+  ],
+  "sourceFiles": [
+    "inventory/card-assets.json",
+    "inventory/image-sources.json",
+    "inventory/image-ocr-en.json",
+    "inventory/original-images/*.img"
+  ],
+  "pixelReviewedContactSheets": [
+    "tmp/pixel-review/b08-01.png",
+    "tmp/pixel-review/b08-02.png",
+    "tmp/pixel-review/b08-03.png",
+    "tmp/pixel-review/b08-04.png",
+    "tmp/pixel-review/b08-05.png",
+    "tmp/pixel-review/b08-06.png",
+    "tmp/pixel-review/b08-07.png",
+    "tmp/pixel-review/b08-08.png",
+    "tmp/pixel-review/b08-09.png",
+    "tmp/pixel-review/b08-10.png",
+    "tmp/pixel-review/b08-11.png",
+    "tmp/pixel-review/b08-12.png",
+    "tmp/pixel-review/b08-13.png",
+    "tmp/pixel-review/b08-14.png",
+    "tmp/pixel-review/b08-15.png",
+    "tmp/pixel-review/b08-16.png",
+    "tmp/pixel-review/b08-17.png",
+    "tmp/pixel-review/b08-18.png",
+    "tmp/pixel-review/b08-19.png",
+    "tmp/pixel-review/b08-20.png",
+    "tmp/pixel-review/b08-21.png",
+    "tmp/pixel-review/b08-22.png",
+    "tmp/pixel-review/b08-23.png",
+    "tmp/pixel-review/b08-24.png",
+    "tmp/pixel-review/b08-25.png",
+    "tmp/pixel-review/b08-26.png",
+    "tmp/pixel-review/b08-27.png",
+    "tmp/pixel-review/b08-28.png",
+    "tmp/pixel-review/b08-29.png",
+    "tmp/pixel-review/b08-30.png",
+    "tmp/pixel-review/b08-31.png",
+    "tmp/pixel-review/b08-32.png",
+    "tmp/pixel-review/b08-33.png",
+    "tmp/pixel-review/b08-34.png",
+    "tmp/pixel-review/b08-35.png",
+    "tmp/pixel-review/b08-36.png",
+    "tmp/pixel-review/b08-37.png",
+    "tmp/pixel-review/b08-38.png",
+    "tmp/pixel-review/b08-39.png",
+    "tmp/pixel-review/b08-40.png",
+    "tmp/pixel-review/b08-41.png",
+    "tmp/pixel-review/b08-42.png",
+    "tmp/pixel-review/b08-43.png",
+    "tmp/pixel-review/b08-44.png",
+    "tmp/pixel-review/b08-45.png",
+    "tmp/pixel-review/b08-46.png",
+    "tmp/pixel-review/b08-47.png",
+    "tmp/pixel-review/b08-48.png",
+    "tmp/pixel-review/b08-49.png",
+    "tmp/pixel-review/b08-50.png",
+    "tmp/pixel-review/b08-51.png",
+    "tmp/pixel-review/b08-52.png",
+    "tmp/pixel-review/b08-53.png",
+    "tmp/pixel-review/b08-54.png",
+    "tmp/pixel-review/b08-55.png",
+    "tmp/pixel-review/b08-56.png",
+    "tmp/pixel-review/b08-57.png"
+  ],
+  "included": [
+    {
+      "sourceSHA256": "012a9a4c9ec5838f56e7317a337a4eacac3410674c6805e642be4f6c36180621",
+      "imageIDs": [
+        "320833540441e057"
+      ],
+      "appearances": [
+        {
+          "team": "Legionary",
+          "assetName": "Legionary Shrivetalon",
+          "side": "back",
+          "imageID": "320833540441e057"
+        }
+      ],
+      "translationImageID": "320833540441e057"
+    },
+    {
+      "sourceSHA256": "01d5fd9c7b8c1762b04d0058be0bc23857d2e7cd281d0c992a682155f5849d00",
+      "imageIDs": [
+        "87c2c305fb10807d"
+      ],
+      "appearances": [
+        {
+          "team": "Void-dancer Troupe",
+          "assetName": "Rising Crescendo",
+          "side": "face",
+          "imageID": "87c2c305fb10807d"
+        }
+      ],
+      "translationImageID": "87c2c305fb10807d"
+    },
+    {
+      "sourceSHA256": "09679fece804b30c37fd8bf8f57e912388c1d42e7a5d9b085ad2e8d6b78d792f",
+      "imageIDs": [
+        "01635d2ad5c0032f"
+      ],
+      "appearances": [
+        {
+          "team": "Legionary",
+          "assetName": "Legionary Aspiring Champion",
+          "side": "face",
+          "imageID": "01635d2ad5c0032f"
+        }
+      ],
+      "translationImageID": "01635d2ad5c0032f"
+    },
+    {
+      "sourceSHA256": "0a317770486daeab5512e3582d111087d5b1f25f043b8f35d5e030ef0b04d888",
+      "imageIDs": [
+        "07002707c84aaaef"
+      ],
+      "appearances": [
+        {
+          "team": "DEATHWATCH",
+          "assetName": "And They Know No Fear",
+          "side": "face",
+          "imageID": "07002707c84aaaef"
+        }
+      ],
+      "translationImageID": "07002707c84aaaef"
+    },
+    {
+      "sourceSHA256": "0d136d23622a78197c4a5a3a2db7877423d9bd0fe5f2bd10ab36ee3043ff3b0f",
+      "imageIDs": [
+        "11427bb56b055102"
+      ],
+      "appearances": [
+        {
+          "team": "Legionary",
+          "assetName": "Legionary Gunner",
+          "side": "face",
+          "imageID": "11427bb56b055102"
+        }
+      ],
+      "translationImageID": "11427bb56b055102"
+    },
+    {
+      "sourceSHA256": "0e2d6248b45fdd1c03532dc6403d985b0ea7ecda7bed9856d9fef4f6fdfca4e5",
+      "imageIDs": [
+        "b2d8bb9ab5509f3b"
+      ],
+      "appearances": [
+        {
+          "team": "Scout Squad",
+          "assetName": "Forward Scouting",
+          "side": "face",
+          "imageID": "b2d8bb9ab5509f3b"
+        }
+      ],
+      "translationImageID": "b2d8bb9ab5509f3b"
+    },
+    {
+      "sourceSHA256": "145a65f586ac72e8535953fa0cdfa024344cf84152118cde6ddaaf9ed37bf036",
+      "imageIDs": [
+        "f779931cb4bdf952"
+      ],
+      "appearances": [
+        {
+          "team": "Scout Squad",
+          "assetName": "Covert Position",
+          "side": "face",
+          "imageID": "f779931cb4bdf952"
+        }
+      ],
+      "translationImageID": "f779931cb4bdf952"
+    },
+    {
+      "sourceSHA256": "16d50fed33adb045021a14b89cf2824f85b747386df47622411ee9e5ff124071",
+      "imageIDs": [
+        "b8af37b197b7b442"
+      ],
+      "appearances": [
+        {
+          "team": "DEATHWATCH",
+          "assetName": "The Shield THhat Slays",
+          "side": "face",
+          "imageID": "b8af37b197b7b442"
+        }
+      ],
+      "translationImageID": "b8af37b197b7b442"
+    },
+    {
+      "sourceSHA256": "1c5562c7dcdbf618fc1071ceaad64d2e9f8291037f2f8461d12b73e223b7640e",
+      "imageIDs": [
+        "e0670ca7c373f365"
+      ],
+      "appearances": [
+        {
+          "team": "DEATHWATCH",
+          "assetName": "HORDE-SLAYER VETERAN",
+          "side": "face",
+          "imageID": "e0670ca7c373f365"
+        }
+      ],
+      "translationImageID": "e0670ca7c373f365"
+    },
+    {
+      "sourceSHA256": "1e47c864107241c7ca5761c03d7b89de674cf7defb5facfb5539b6b91010982f",
+      "imageIDs": [
+        "d5e33a0d668f76e6"
+      ],
+      "appearances": [
+        {
+          "team": "Scout Squad",
+          "assetName": "Scout Warrior",
+          "side": "face",
+          "imageID": "d5e33a0d668f76e6"
+        }
+      ],
+      "translationImageID": "d5e33a0d668f76e6"
+    },
+    {
+      "sourceSHA256": "1e57c198b67275dbdcc64acc96bae6f4fc3b73b0f25e348639d4942990ca7656",
+      "imageIDs": [
+        "fc4a679e044ddd55"
+      ],
+      "appearances": [
+        {
+          "team": "DEATHWATCH",
+          "assetName": "Ammunition Reserve",
+          "side": "face",
+          "imageID": "fc4a679e044ddd55"
+        }
+      ],
+      "translationImageID": "fc4a679e044ddd55"
+    },
+    {
+      "sourceSHA256": "1fb5704ff8312ec26a887052862cae8fd50ce304ff79765ff4890e79d4214b14",
+      "imageIDs": [
+        "ee625d41437fbc2b"
+      ],
+      "appearances": [
+        {
+          "team": "Void-dancer Troupe",
+          "assetName": "Murderous Entrance",
+          "side": "face",
+          "imageID": "ee625d41437fbc2b"
+        }
+      ],
+      "translationImageID": "ee625d41437fbc2b"
+    },
+    {
+      "sourceSHA256": "2023a1c490dd115c1b4de2434c3af7e4a11fcd4b7516099f3ab2a56bff890e76",
+      "imageIDs": [
+        "6908e0cd7acf1fc5"
+      ],
+      "appearances": [
+        {
+          "team": "Legionary",
+          "assetName": "Sickening Captivation",
+          "side": "face",
+          "imageID": "6908e0cd7acf1fc5"
+        }
+      ],
+      "translationImageID": "6908e0cd7acf1fc5"
+    },
+    {
+      "sourceSHA256": "2027b5cf8ce9eb8426fa7a9874445666c3da9219d23a46a1a52b6c10c3370fd3",
+      "imageIDs": [
+        "3bacfe4649af8829"
+      ],
+      "appearances": [
+        {
+          "team": "DEATHWATCH",
+          "assetName": "Advanced Auspex Scan",
+          "side": "face",
+          "imageID": "3bacfe4649af8829"
+        }
+      ],
+      "translationImageID": "3bacfe4649af8829"
+    },
+    {
+      "sourceSHA256": "20999374e588306d6d2ce1c1d9f242bd3e83c0c07d8b53b7194b42b1922d1b5d",
+      "imageIDs": [
+        "952af39a19beb859"
+      ],
+      "appearances": [
+        {
+          "team": "Legionary",
+          "assetName": "Unending Bloodshed",
+          "side": "face",
+          "imageID": "952af39a19beb859"
+        }
+      ],
+      "translationImageID": "952af39a19beb859"
+    },
+    {
+      "sourceSHA256": "2398e02058daa5d602c3bb460e6a05c648612e37c05aca8de2b2d3e84e88d387",
+      "imageIDs": [
+        "3a6036bac3d59a10"
+      ],
+      "appearances": [
+        {
+          "team": "Scout Squad",
+          "assetName": "",
+          "side": "face",
+          "imageID": "3a6036bac3d59a10"
+        }
+      ],
+      "translationImageID": "3a6036bac3d59a10"
+    },
+    {
+      "sourceSHA256": "25023ce17c77c4981c459796e19b0eb703c9a12b94f47132f33b8d8bb1c447b0",
+      "imageIDs": [
+        "29b1dd16c265cec5"
+      ],
+      "appearances": [
+        {
+          "team": "Scout Squad",
+          "assetName": "Stealth Relocation",
+          "side": "face",
+          "imageID": "29b1dd16c265cec5"
+        }
+      ],
+      "translationImageID": "29b1dd16c265cec5"
+    },
+    {
+      "sourceSHA256": "26114338c81e33b332bcdb9d33e0354f57af2d40522bd170c3c34c6fd462d403",
+      "imageIDs": [
+        "a9eeb4bf295d7497"
+      ],
+      "appearances": [
+        {
+          "team": "Void-dancer Troupe",
+          "assetName": "The Curtain Falls",
+          "side": "face",
+          "imageID": "a9eeb4bf295d7497"
+        }
+      ],
+      "translationImageID": "a9eeb4bf295d7497"
+    },
+    {
+      "sourceSHA256": "27ad863a3554622d3baaeb9247b010282b1b8f6fb469ffbf34df1e650e3ba679",
+      "imageIDs": [
+        "0b2718175249e637"
+      ],
+      "appearances": [
+        {
+          "team": "Void-dancer Troupe",
+          "assetName": "Understudy's Mask",
+          "side": "face",
+          "imageID": "0b2718175249e637"
+        }
+      ],
+      "translationImageID": "0b2718175249e637"
+    },
+    {
+      "sourceSHA256": "2d4a4cd613eeb6f85a253bc0f51b485aaf7f6b98fe34c8d78c957b6bd2c834fd",
+      "imageIDs": [
+        "604c5a32aeef544b"
+      ],
+      "appearances": [
+        {
+          "team": "Void-dancer Troupe",
+          "assetName": "Player",
+          "side": "face",
+          "imageID": "604c5a32aeef544b"
+        }
+      ],
+      "translationImageID": "604c5a32aeef544b"
+    },
+    {
+      "sourceSHA256": "2d76428fc53be9a4aa87f71a1bb922bb95b956aa0adcab6a17c84a4509b7e441",
+      "imageIDs": [
+        "2d3492c654d69bb6"
+      ],
+      "appearances": [
+        {
+          "team": "Void-dancer Troupe",
+          "assetName": "Saedath",
+          "side": "face",
+          "imageID": "2d3492c654d69bb6"
+        }
+      ],
+      "translationImageID": "2d3492c654d69bb6"
+    },
+    {
+      "sourceSHA256": "2d956f4d3850f1ea923d562224b96a42f2ae41ce909cf0e693ab62f957c10dc8",
+      "imageIDs": [
+        "f0269620366413ac"
+      ],
+      "appearances": [
+        {
+          "team": "DEATHWATCH",
+          "assetName": "DEMOLISHER VETERAN",
+          "side": "face",
+          "imageID": "f0269620366413ac"
+        }
+      ],
+      "translationImageID": "f0269620366413ac"
+    },
+    {
+      "sourceSHA256": "2e4a481ef60e75aa91da9a0409299245d4ea92856f8981fa2e9f79ebd835fcda",
+      "imageIDs": [
+        "c46d329d659988ab"
+      ],
+      "appearances": [
+        {
+          "team": "DEATHWATCH",
+          "assetName": "The Long Vigil",
+          "side": "face",
+          "imageID": "c46d329d659988ab"
+        }
+      ],
+      "translationImageID": "c46d329d659988ab"
+    },
+    {
+      "sourceSHA256": "31849417dc4934a194a8e0d341d0614d4aa2e4ad96f9e59de7995c7a8e73f4ba",
+      "imageIDs": [
+        "10a3f529c7bccfd6"
+      ],
+      "appearances": [
+        {
+          "team": "Legionary",
+          "assetName": "Legionary Anointed",
+          "side": "face",
+          "imageID": "10a3f529c7bccfd6"
+        }
+      ],
+      "translationImageID": "10a3f529c7bccfd6"
+    },
+    {
+      "sourceSHA256": "321aa1722d9fc66b75dec9d09e9f31a6b6a113c5d26ac4bcec5b0a7e13f61f92",
+      "imageIDs": [
+        "b8fb12d20ee0223c"
+      ],
+      "appearances": [
+        {
+          "team": "Void-dancer Troupe",
+          "assetName": "Shadowseer",
+          "side": "back",
+          "imageID": "b8fb12d20ee0223c"
+        }
+      ],
+      "translationImageID": "b8fb12d20ee0223c"
+    },
+    {
+      "sourceSHA256": "348f7783a1f47d9ca4c70d8af98ae341d6886cea5f17556c07f90dd030c4185c",
+      "imageIDs": [
+        "672585c3302e58cb"
+      ],
+      "appearances": [
+        {
+          "team": "Legionary",
+          "assetName": "Legionary Heavy Gunner",
+          "side": "face",
+          "imageID": "672585c3302e58cb"
+        }
+      ],
+      "translationImageID": "672585c3302e58cb"
+    },
+    {
+      "sourceSHA256": "3533959c47c7339d8ab3852755b9052cb92b1dd1ad087c63f3815fa7ef13f54a",
+      "imageIDs": [
+        "408d31440cd70aa0"
+      ],
+      "appearances": [
+        {
+          "team": "Scout Squad",
+          "assetName": "Gunfire Ambush",
+          "side": "face",
+          "imageID": "408d31440cd70aa0"
+        }
+      ],
+      "translationImageID": "408d31440cd70aa0"
+    },
+    {
+      "sourceSHA256": "36d00fc2162522ed15aefec61112b6266d8d4e01dcd26468df3c8d4b0def5abb",
+      "imageIDs": [
+        "6977a1dcd46e890c"
+      ],
+      "appearances": [
+        {
+          "team": "Legionary",
+          "assetName": "Slaanesh",
+          "side": "face",
+          "imageID": "6977a1dcd46e890c"
+        }
+      ],
+      "translationImageID": "6977a1dcd46e890c"
+    },
+    {
+      "sourceSHA256": "3a2c0022c83001b665ce2e059ed401a456eeb2f22628c88d0075118efb888f2d",
+      "imageIDs": [
+        "7748225ca39963e8"
+      ],
+      "appearances": [
+        {
+          "team": "Legionary",
+          "assetName": "Legionary Balefire Acolyte",
+          "side": "face",
+          "imageID": "7748225ca39963e8"
+        }
+      ],
+      "translationImageID": "7748225ca39963e8"
+    },
+    {
+      "sourceSHA256": "3adbefb4c97e4c00b050e738478b2fdd71b79b3164e133352c20dc7fe74b71b2",
+      "imageIDs": [
+        "7ec4a4144318d975"
+      ],
+      "appearances": [
+        {
+          "team": "Void-dancer Troupe",
+          "assetName": "Lead Player",
+          "side": "back",
+          "imageID": "7ec4a4144318d975"
+        }
+      ],
+      "translationImageID": "7ec4a4144318d975"
+    },
+    {
+      "sourceSHA256": "3bb74998473f3936f8a0b6a24d6e74081299d69dffc77688b2ee24906c17a908",
+      "imageIDs": [
+        "1f11d450b986f28b"
+      ],
+      "appearances": [
+        {
+          "team": "Scout Squad",
+          "assetName": "Emboldened Aspirant",
+          "side": "face",
+          "imageID": "1f11d450b986f28b"
+        }
+      ],
+      "translationImageID": "1f11d450b986f28b"
+    },
+    {
+      "sourceSHA256": "3e908b4c5ee2b7ad05b1f41e17febcef5c4366d728d20a645fb22e2056c55993",
+      "imageIDs": [
+        "41a1cdca220619ca"
+      ],
+      "appearances": [
+        {
+          "team": "Scout Squad",
+          "assetName": "Forward Scouting",
+          "side": "face",
+          "imageID": "41a1cdca220619ca"
+        }
+      ],
+      "translationImageID": "41a1cdca220619ca"
+    },
+    {
+      "sourceSHA256": "449bdedffbbf3e873bbc188d5547c81798cd55446f4b3f4f6676b939eb80b56e",
+      "imageIDs": [
+        "0ec166036b0e6b0b"
+      ],
+      "appearances": [
+        {
+          "team": "Legionary",
+          "assetName": "Legionary Icon Bearer",
+          "side": "face",
+          "imageID": "0ec166036b0e6b0b"
+        }
+      ],
+      "translationImageID": "0ec166036b0e6b0b"
+    },
+    {
+      "sourceSHA256": "45367da465dda4f2a4352381f8695564a5444f8c77c2efb532e6ef140480c1bb",
+      "imageIDs": [
+        "d1cc45e795bb731f"
+      ],
+      "appearances": [
+        {
+          "team": "Scout Squad",
+          "assetName": "Scout Tracker",
+          "side": "face",
+          "imageID": "d1cc45e795bb731f"
+        }
+      ],
+      "translationImageID": "d1cc45e795bb731f"
+    },
+    {
+      "sourceSHA256": "4a63f3b124aa24540337e9c16b22e29a570115eee60f71cd855d747561d56741",
+      "imageIDs": [
+        "ca1563ab330707cf"
+      ],
+      "appearances": [
+        {
+          "team": "Scout Squad",
+          "assetName": "Scout Tracker",
+          "side": "back",
+          "imageID": "ca1563ab330707cf"
+        }
+      ],
+      "translationImageID": "ca1563ab330707cf"
+    },
+    {
+      "sourceSHA256": "4ead67eeb6b789f7e9e7c83adfe3a600401dcce63423e5917857ba146bd8cad2",
+      "imageIDs": [
+        "ee3ebd1e1f4135cd"
+      ],
+      "appearances": [
+        {
+          "team": "DEATHWATCH",
+          "assetName": "Scrutavore Servo-Thrall",
+          "side": "face",
+          "imageID": "ee3ebd1e1f4135cd"
+        }
+      ],
+      "translationImageID": "ee3ebd1e1f4135cd"
+    },
+    {
+      "sourceSHA256": "4fc70a60fc4d958cee022f80fbf46626102c0b96691c5c12892cf69dd1f16d96",
+      "imageIDs": [
+        "ebf75eacd08bfbf7"
+      ],
+      "appearances": [
+        {
+          "team": "Void-dancer Troupe",
+          "assetName": "Death Jester",
+          "side": "face",
+          "imageID": "ebf75eacd08bfbf7"
+        }
+      ],
+      "translationImageID": "ebf75eacd08bfbf7"
+    },
+    {
+      "sourceSHA256": "5561ba601bf9d76556ed074cb63c15e06eda815d607c4ceb839f30c2bff8ba2f",
+      "imageIDs": [
+        "36a1063180c86a21"
+      ],
+      "appearances": [
+        {
+          "team": "Legionary",
+          "assetName": "Legionary Warrior",
+          "side": "face",
+          "imageID": "36a1063180c86a21"
+        }
+      ],
+      "translationImageID": "36a1063180c86a21"
+    },
+    {
+      "sourceSHA256": "57f9336778c095f680e50f2da6f5d129f354e6b1b6e958e071c43f72163a6718",
+      "imageIDs": [
+        "6ddbbebcac34eacf"
+      ],
+      "appearances": [
+        {
+          "team": "DEATHWATCH",
+          "assetName": "Mission Tactics",
+          "side": "face",
+          "imageID": "6ddbbebcac34eacf"
+        }
+      ],
+      "translationImageID": "6ddbbebcac34eacf"
+    },
+    {
+      "sourceSHA256": "5bf1f8d8c41d574259e05a360bbaa65991cfc3437f4fbcb511ed4c7d15d0427b",
+      "imageIDs": [
+        "86d6c5425b3b8daa"
+      ],
+      "appearances": [
+        {
+          "team": "Legionary",
+          "assetName": "Legionary Shrivetalon",
+          "side": "face",
+          "imageID": "86d6c5425b3b8daa"
+        }
+      ],
+      "translationImageID": "86d6c5425b3b8daa"
+    },
+    {
+      "sourceSHA256": "5f1fa2b921c8c42cd63afb44f92a77e3821bc3ebf73e7c273b754fcbec894a86",
+      "imageIDs": [
+        "882db8ef1433e354"
+      ],
+      "appearances": [
+        {
+          "team": "Legionary",
+          "assetName": "Khorne",
+          "side": "face",
+          "imageID": "882db8ef1433e354"
+        }
+      ],
+      "translationImageID": "882db8ef1433e354"
+    },
+    {
+      "sourceSHA256": "62112ecbabe69ab173cd3b302668e1af7784bedb3076fa2f367387c13ed2c1bb",
+      "imageIDs": [
+        "95502bdca4b5e6c5"
+      ],
+      "appearances": [
+        {
+          "team": "DEATHWATCH",
+          "assetName": "Digital Weapons",
+          "side": "face",
+          "imageID": "95502bdca4b5e6c5"
+        }
+      ],
+      "translationImageID": "95502bdca4b5e6c5"
+    },
+    {
+      "sourceSHA256": "654641d0b32002a73a9f3bf4edab8ccbc1a174de6b96b05c65ad226bc21a990d",
+      "imageIDs": [
+        "92e962ada2174bc3"
+      ],
+      "appearances": [
+        {
+          "team": "Void-dancer Troupe",
+          "assetName": "",
+          "side": "face",
+          "imageID": "92e962ada2174bc3"
+        }
+      ],
+      "translationImageID": "92e962ada2174bc3"
+    },
+    {
+      "sourceSHA256": "65e52a3ddb35af71575d3f416332fd11764521e600723b166ee78d70a5fcd686",
+      "imageIDs": [
+        "99f26153e18a9801"
+      ],
+      "appearances": [
+        {
+          "team": "Legionary",
+          "assetName": "Warded Armour",
+          "side": "face",
+          "imageID": "99f26153e18a9801"
+        }
+      ],
+      "translationImageID": "99f26153e18a9801"
+    },
+    {
+      "sourceSHA256": "682b0034877899f98e268554215788ff0243270e720379ddf0165d70e0a1b7d3",
+      "imageIDs": [
+        "1a3c7f9744053401"
+      ],
+      "appearances": [
+        {
+          "team": "Legionary",
+          "assetName": "Quicksilver Speed",
+          "side": "face",
+          "imageID": "1a3c7f9744053401"
+        }
+      ],
+      "translationImageID": "1a3c7f9744053401"
+    },
+    {
+      "sourceSHA256": "6a205fab48e541d6b7fed10afa5cf8bddbe42ca854db1c3366a4702e9525c6ee",
+      "imageIDs": [
+        "53fbc071d34ee6f7"
+      ],
+      "appearances": [
+        {
+          "team": "Legionary",
+          "assetName": "Tainted Rounds",
+          "side": "face",
+          "imageID": "53fbc071d34ee6f7"
+        }
+      ],
+      "translationImageID": "53fbc071d34ee6f7"
+    },
+    {
+      "sourceSHA256": "6de12084f18d6b1f28328b5f0dabcbc5f0fc1a62cf79dc323cecc95d1566f8a6",
+      "imageIDs": [
+        "df42f7a16aaaaa46"
+      ],
+      "appearances": [
+        {
+          "team": "Void-dancer Troupe",
+          "assetName": "Wraithbone Talisman",
+          "side": "face",
+          "imageID": "df42f7a16aaaaa46"
+        }
+      ],
+      "translationImageID": "df42f7a16aaaaa46"
+    },
+    {
+      "sourceSHA256": "6f056c886dd7b546da911c69ffbc61b49c2343b230c4d793fe4bbc599f6f447f",
+      "imageIDs": [
+        "d1541f3030090bf0"
+      ],
+      "appearances": [
+        {
+          "team": "Legionary",
+          "assetName": "Marks of Chaos",
+          "side": "face",
+          "imageID": "d1541f3030090bf0"
+        }
+      ],
+      "translationImageID": "d1541f3030090bf0"
+    },
+    {
+      "sourceSHA256": "70af2ef8d6dbc064652ed743c08622ec1a0d8ffda89b8f35028eed47105a9bae",
+      "imageIDs": [
+        "6fbfb441f45af3c1"
+      ],
+      "appearances": [
+        {
+          "team": "Scout Squad",
+          "assetName": "Combat Blades and Knives",
+          "side": "face",
+          "imageID": "6fbfb441f45af3c1"
+        }
+      ],
+      "translationImageID": "6fbfb441f45af3c1"
+    },
+    {
+      "sourceSHA256": "715e72c664e29fc4a67678dad8e313b790dd0a09c80a34cd6e9b4cb9ee800d24",
+      "imageIDs": [
+        "9d92f8c7852d3275"
+      ],
+      "appearances": [
+        {
+          "team": "Legionary",
+          "assetName": "Undivided",
+          "side": "face",
+          "imageID": "9d92f8c7852d3275"
+        }
+      ],
+      "translationImageID": "9d92f8c7852d3275"
+    },
+    {
+      "sourceSHA256": "75cc326b3bcae8181c67a8b665107317e619a4bd7e3964e87be1ee9f889c3feb",
+      "imageIDs": [
+        "2bdf25789fda0d16"
+      ],
+      "appearances": [
+        {
+          "team": "Scout Squad",
+          "assetName": "Scout Hunter",
+          "side": "face",
+          "imageID": "2bdf25789fda0d16"
+        }
+      ],
+      "translationImageID": "2bdf25789fda0d16"
+    },
+    {
+      "sourceSHA256": "7dc737928a0bbd3b4cba7d0d5c0f52fa65ec2e802a05b63b1feb01f81ef7e9dd",
+      "imageIDs": [
+        "fec10c1193ae133b"
+      ],
+      "appearances": [
+        {
+          "team": "Legionary",
+          "assetName": "Chaos Talismans",
+          "side": "face",
+          "imageID": "fec10c1193ae133b"
+        }
+      ],
+      "translationImageID": "fec10c1193ae133b"
+    },
+    {
+      "sourceSHA256": "803af5d532d0c8e6b490b3530fceb9b12f8f134247ef8565a74dfc5f5ec88854",
+      "imageIDs": [
+        "aff7771c160f54ce"
+      ],
+      "appearances": [
+        {
+          "team": "Scout Squad",
+          "assetName": "Raw Physiology",
+          "side": "face",
+          "imageID": "aff7771c160f54ce"
+        }
+      ],
+      "translationImageID": "aff7771c160f54ce"
+    },
+    {
+      "sourceSHA256": "81286b5d00158aa772b5d2b796d92287d28614acc3bd3846bc39b6ba0397fa64",
+      "imageIDs": [
+        "6a85c539b2afa50a"
+      ],
+      "appearances": [
+        {
+          "team": "DEATHWATCH",
+          "assetName": "",
+          "side": "face",
+          "imageID": "6a85c539b2afa50a"
+        }
+      ],
+      "translationImageID": "6a85c539b2afa50a"
+    },
+    {
+      "sourceSHA256": "8562c06adf0f9cbe308f57aaec62d81ea00da8b1a52cb54815211852246d8546",
+      "imageIDs": [
+        "9de8d1006b5511a4"
+      ],
+      "appearances": [
+        {
+          "team": "Scout Squad",
+          "assetName": "Scout Sergeant",
+          "side": "face",
+          "imageID": "9de8d1006b5511a4"
+        }
+      ],
+      "translationImageID": "9de8d1006b5511a4"
+    },
+    {
+      "sourceSHA256": "8c4b405f10de69aff2ca85c9d4687779ad2ae6fff14efe749436496880741945",
+      "imageIDs": [
+        "a896ab0c1ab41227"
+      ],
+      "appearances": [
+        {
+          "team": "Void-dancer Troupe",
+          "assetName": "Shadowseer",
+          "side": "face",
+          "imageID": "a896ab0c1ab41227"
+        }
+      ],
+      "translationImageID": "a896ab0c1ab41227"
+    },
+    {
+      "sourceSHA256": "94625509e948bce58d30dd30a9ecf6269e58df5881306ad24c848003b8a8582e",
+      "imageIDs": [
+        "ed4a7ca42f730a6e"
+      ],
+      "appearances": [
+        {
+          "team": "DEATHWATCH",
+          "assetName": "AEGIS VETERAN",
+          "side": "face",
+          "imageID": "ed4a7ca42f730a6e"
+        }
+      ],
+      "translationImageID": "ed4a7ca42f730a6e"
+    },
+    {
+      "sourceSHA256": "958a00c6bb931e1ac0ad81db15971af8de82677314f298f50ef4d2609d85200e",
+      "imageIDs": [
+        "3c85d7b38b4bc8ee"
+      ],
+      "appearances": [
+        {
+          "team": "DEATHWATCH",
+          "assetName": "",
+          "side": "face",
+          "imageID": "3c85d7b38b4bc8ee"
+        }
+      ],
+      "translationImageID": "3c85d7b38b4bc8ee"
+    },
+    {
+      "sourceSHA256": "99bbbed9f5caee8cfaf085265fddb86134b7819fc12fdce04e3f04e66eec255d",
+      "imageIDs": [
+        "0247c9e69a0614bb"
+      ],
+      "appearances": [
+        {
+          "team": "Scout Squad",
+          "assetName": "Guerilla Engagement",
+          "side": "face",
+          "imageID": "0247c9e69a0614bb"
+        }
+      ],
+      "translationImageID": "0247c9e69a0614bb"
+    },
+    {
+      "sourceSHA256": "99e7139ae2adab34147d63ffdbf2495b4a105ced359994d8fd3279492fe557bc",
+      "imageIDs": [
+        "ab48058cc0f5ce4e"
+      ],
+      "appearances": [
+        {
+          "team": "DEATHWATCH",
+          "assetName": "",
+          "side": "face",
+          "imageID": "ab48058cc0f5ce4e"
+        }
+      ],
+      "translationImageID": "ab48058cc0f5ce4e"
+    },
+    {
+      "sourceSHA256": "9a5856df344b8e2f6a5ea8e33d468c8f809b12565242445d9a4df8a986ef7e8b",
+      "imageIDs": [
+        "12232f0d18a85fb4"
+      ],
+      "appearances": [
+        {
+          "team": "Void-dancer Troupe",
+          "assetName": "Shrieker Toxin Rounds",
+          "side": "face",
+          "imageID": "12232f0d18a85fb4"
+        }
+      ],
+      "translationImageID": "12232f0d18a85fb4"
+    },
+    {
+      "sourceSHA256": "a1ab1904db7102a2cd7cae2b5d81a0ba167076d1246d4f9052f169e111f5315d",
+      "imageIDs": [
+        "56c7f8b596dff6fb"
+      ],
+      "appearances": [
+        {
+          "team": "Legionary",
+          "assetName": "Mutability and Change",
+          "side": "face",
+          "imageID": "56c7f8b596dff6fb"
+        }
+      ],
+      "translationImageID": "56c7f8b596dff6fb"
+    },
+    {
+      "sourceSHA256": "a28c5bffefebff5c5d3da2851ceaaa174fc3fa76382d19a24a2b2973826f6986",
+      "imageIDs": [
+        "f9e5fd4d003572a7"
+      ],
+      "appearances": [
+        {
+          "team": "Void-dancer Troupe",
+          "assetName": "Darting Salvo",
+          "side": "face",
+          "imageID": "f9e5fd4d003572a7"
+        }
+      ],
+      "translationImageID": "f9e5fd4d003572a7"
+    },
+    {
+      "sourceSHA256": "a312972247bc4bf4e9f3faba2f15a3a4af658bb43e37c512740809d3640f4005",
+      "imageIDs": [
+        "2ce990ef2c41544e"
+      ],
+      "appearances": [
+        {
+          "team": "Scout Squad",
+          "assetName": "Astartes Training",
+          "side": "face",
+          "imageID": "2ce990ef2c41544e"
+        }
+      ],
+      "translationImageID": "2ce990ef2c41544e"
+    },
+    {
+      "sourceSHA256": "a39ee8a1260d661fdd9406aeacc7ce70a89f0fdb6be04c74bba837d52d338262",
+      "imageIDs": [
+        "5d45e4e239e9255d"
+      ],
+      "appearances": [
+        {
+          "team": "Scout Squad",
+          "assetName": "Blade Ambush",
+          "side": "face",
+          "imageID": "5d45e4e239e9255d"
+        }
+      ],
+      "translationImageID": "5d45e4e239e9255d"
+    },
+    {
+      "sourceSHA256": "a65452df1915ffe6a75b4ab72907850506ed3339dc9cd71a40ab9e46efdbc3cb",
+      "imageIDs": [
+        "f0d73e89056fc2eb"
+      ],
+      "appearances": [
+        {
+          "team": "Void-dancer Troupe",
+          "assetName": "Prismatic Blur",
+          "side": "face",
+          "imageID": "f0d73e89056fc2eb"
+        }
+      ],
+      "translationImageID": "f0d73e89056fc2eb"
+    },
+    {
+      "sourceSHA256": "a8fad5f6feeab2b3d65a1fd6a6f95c2f8bfd3b9a2e3909f8aadcd6b6883afa90",
+      "imageIDs": [
+        "d5bc3fe7f7af823b"
+      ],
+      "appearances": [
+        {
+          "team": "Void-dancer Troupe",
+          "assetName": "Lead Player",
+          "side": "face",
+          "imageID": "d5bc3fe7f7af823b"
+        }
+      ],
+      "translationImageID": "d5bc3fe7f7af823b"
+    },
+    {
+      "sourceSHA256": "aa872929133d3fb3e5d7d7588ac184d206ab5f4a08789cbb3c21566cc63bb0dd",
+      "imageIDs": [
+        "dd199b28eee55502"
+      ],
+      "appearances": [
+        {
+          "team": "DEATHWATCH",
+          "assetName": "Sanctus-V Bioscryer Cuffs",
+          "side": "face",
+          "imageID": "dd199b28eee55502"
+        }
+      ],
+      "translationImageID": "dd199b28eee55502"
+    },
+    {
+      "sourceSHA256": "ad4e94ee99e3060d19819f3dea00add886071429a7cc9ddb6708de9d97f2da91",
+      "imageIDs": [
+        "1a182ec60c35feb1"
+      ],
+      "appearances": [
+        {
+          "team": "Legionary",
+          "assetName": "Astartes",
+          "side": "back",
+          "imageID": "1a182ec60c35feb1"
+        },
+        {
+          "team": "Legionary",
+          "assetName": "Blood for the Blood God",
+          "side": "back",
+          "imageID": "1a182ec60c35feb1"
+        },
+        {
+          "team": "Legionary",
+          "assetName": "Chaos Talismans",
+          "side": "back",
+          "imageID": "1a182ec60c35feb1"
+        },
+        {
+          "team": "Legionary",
+          "assetName": "Fickle Fates",
+          "side": "back",
+          "imageID": "1a182ec60c35feb1"
+        },
+        {
+          "team": "Legionary",
+          "assetName": "Implacable",
+          "side": "back",
+          "imageID": "1a182ec60c35feb1"
+        },
+        {
+          "team": "Legionary",
+          "assetName": "Khorne",
+          "side": "back",
+          "imageID": "1a182ec60c35feb1"
+        },
+        {
+          "team": "Legionary",
+          "assetName": "Malefic Blades",
+          "side": "back",
+          "imageID": "1a182ec60c35feb1"
+        },
+        {
+          "team": "Legionary",
+          "assetName": "Malignant Aura",
+          "side": "back",
+          "imageID": "1a182ec60c35feb1"
+        },
+        {
+          "team": "Legionary",
+          "assetName": "Marks of Chaos",
+          "side": "back",
+          "imageID": "1a182ec60c35feb1"
+        },
+        {
+          "team": "Legionary",
+          "assetName": "Mutability and Change",
+          "side": "back",
+          "imageID": "1a182ec60c35feb1"
+        },
+        {
+          "team": "Legionary",
+          "assetName": "Nurgle",
+          "side": "back",
+          "imageID": "1a182ec60c35feb1"
+        },
+        {
+          "team": "Legionary",
+          "assetName": "Quicksilver Speed",
+          "side": "back",
+          "imageID": "1a182ec60c35feb1"
+        },
+        {
+          "team": "Legionary",
+          "assetName": "Sickening Captivation",
+          "side": "back",
+          "imageID": "1a182ec60c35feb1"
+        },
+        {
+          "team": "Legionary",
+          "assetName": "Slaanesh",
+          "side": "back",
+          "imageID": "1a182ec60c35feb1"
+        },
+        {
+          "team": "Legionary",
+          "assetName": "Tainted Rounds",
+          "side": "back",
+          "imageID": "1a182ec60c35feb1"
+        },
+        {
+          "team": "Legionary",
+          "assetName": "Tzeench",
+          "side": "back",
+          "imageID": "1a182ec60c35feb1"
+        },
+        {
+          "team": "Legionary",
+          "assetName": "Undivided",
+          "side": "back",
+          "imageID": "1a182ec60c35feb1"
+        },
+        {
+          "team": "Legionary",
+          "assetName": "Unending Bloodshed",
+          "side": "back",
+          "imageID": "1a182ec60c35feb1"
+        },
+        {
+          "team": "Legionary",
+          "assetName": "Warded Armour",
+          "side": "back",
+          "imageID": "1a182ec60c35feb1"
+        }
+      ],
+      "translationImageID": "1a182ec60c35feb1"
+    },
+    {
+      "sourceSHA256": "aeaec1ec651efdcbd38cab544e4be776e91b72f2978a5067893e3a4d31b7a89f",
+      "imageIDs": [
+        "57e739229a009f9f"
+      ],
+      "appearances": [
+        {
+          "team": "Scout Squad",
+          "assetName": "",
+          "side": "back",
+          "imageID": "57e739229a009f9f"
+        },
+        {
+          "team": "Scout Squad",
+          "assetName": "Astartes Training",
+          "side": "back",
+          "imageID": "57e739229a009f9f"
+        },
+        {
+          "team": "Scout Squad",
+          "assetName": "Blade Ambush",
+          "side": "back",
+          "imageID": "57e739229a009f9f"
+        },
+        {
+          "team": "Scout Squad",
+          "assetName": "Camo Cloak",
+          "side": "back",
+          "imageID": "57e739229a009f9f"
+        },
+        {
+          "team": "Scout Squad",
+          "assetName": "Combat Blades and Knives",
+          "side": "back",
+          "imageID": "57e739229a009f9f"
+        },
+        {
+          "team": "Scout Squad",
+          "assetName": "Covert Position",
+          "side": "back",
+          "imageID": "57e739229a009f9f"
+        },
+        {
+          "team": "Scout Squad",
+          "assetName": "Emboldened Aspirant",
+          "side": "back",
+          "imageID": "57e739229a009f9f"
+        },
+        {
+          "team": "Scout Squad",
+          "assetName": "Forward Scouting",
+          "side": "back",
+          "imageID": "57e739229a009f9f"
+        },
+        {
+          "team": "Scout Squad",
+          "assetName": "Forward Scouting",
+          "side": "back",
+          "imageID": "57e739229a009f9f"
+        },
+        {
+          "team": "Scout Squad",
+          "assetName": "Forward Scouting",
+          "side": "back",
+          "imageID": "57e739229a009f9f"
+        },
+        {
+          "team": "Scout Squad",
+          "assetName": "Forward Scouting",
+          "side": "back",
+          "imageID": "57e739229a009f9f"
+        },
+        {
+          "team": "Scout Squad",
+          "assetName": "Guerilla Engagement",
+          "side": "back",
+          "imageID": "57e739229a009f9f"
+        },
+        {
+          "team": "Scout Squad",
+          "assetName": "Gunfire Ambush",
+          "side": "back",
+          "imageID": "57e739229a009f9f"
+        },
+        {
+          "team": "Scout Squad",
+          "assetName": "Heavy Weapon Bipod",
+          "side": "back",
+          "imageID": "57e739229a009f9f"
+        },
+        {
+          "team": "Scout Squad",
+          "assetName": "Raw Physiology",
+          "side": "back",
+          "imageID": "57e739229a009f9f"
+        },
+        {
+          "team": "Scout Squad",
+          "assetName": "Stealth Relocation",
+          "side": "back",
+          "imageID": "57e739229a009f9f"
+        },
+        {
+          "team": "Scout Squad",
+          "assetName": "Targeting Oculars",
+          "side": "back",
+          "imageID": "57e739229a009f9f"
+        }
+      ],
+      "translationImageID": "57e739229a009f9f"
+    },
+    {
+      "sourceSHA256": "b1544983efc352d17ee2b0adcdc582c8acb3b154b3188438b12d3005f02105d7",
+      "imageIDs": [
+        "daa135bca2501bf9"
+      ],
+      "appearances": [
+        {
+          "team": "Scout Squad",
+          "assetName": "Targeting Oculars",
+          "side": "face",
+          "imageID": "daa135bca2501bf9"
+        }
+      ],
+      "translationImageID": "daa135bca2501bf9"
+    },
+    {
+      "sourceSHA256": "b41d508715134d7ce6552f42da47422dab56c887d248c0ba225a3bb7cd988346",
+      "imageIDs": [
+        "b19d9753c7fcba88"
+      ],
+      "appearances": [
+        {
+          "team": "Scout Squad",
+          "assetName": "Forward Scouting",
+          "side": "face",
+          "imageID": "b19d9753c7fcba88"
+        }
+      ],
+      "translationImageID": "b19d9753c7fcba88"
+    },
+    {
+      "sourceSHA256": "b430fed37b221c7c46e6f148317a11b3d30fae2c57db8cbd3ab21bc55e6e795d",
+      "imageIDs": [
+        "3d4f7fbb4dbd9b1a"
+      ],
+      "appearances": [
+        {
+          "team": "Scout Squad",
+          "assetName": "Camo Cloak",
+          "side": "face",
+          "imageID": "3d4f7fbb4dbd9b1a"
+        }
+      ],
+      "translationImageID": "3d4f7fbb4dbd9b1a"
+    },
+    {
+      "sourceSHA256": "b639d8b5a9c9171361474a0de96b149fa5fe0fc7950c9c347bef840fa8985505",
+      "imageIDs": [
+        "ec0308f6f5d444f2"
+      ],
+      "appearances": [
+        {
+          "team": "Legionary",
+          "assetName": "Astartes",
+          "side": "face",
+          "imageID": "ec0308f6f5d444f2"
+        }
+      ],
+      "translationImageID": "ec0308f6f5d444f2"
+    },
+    {
+      "sourceSHA256": "b9ce4832b3484b30054a057329b438834628d31cd7e63b722179f42d5139eace",
+      "imageIDs": [
+        "be43bb3db3b28068"
+      ],
+      "appearances": [
+        {
+          "team": "DEATHWATCH",
+          "assetName": "DISRUPTOR VETERAN",
+          "side": "face",
+          "imageID": "be43bb3db3b28068"
+        }
+      ],
+      "translationImageID": "be43bb3db3b28068"
+    },
+    {
+      "sourceSHA256": "ba8a91e9f16ec4ebcc671296232bcbe0bde6377f9f7237bdb7400e6c73975df9",
+      "imageIDs": [
+        "ef4c82b230efc1ef"
+      ],
+      "appearances": [
+        {
+          "team": "DEATHWATCH",
+          "assetName": "Auspicator Tracking",
+          "side": "face",
+          "imageID": "ef4c82b230efc1ef"
+        }
+      ],
+      "translationImageID": "ef4c82b230efc1ef"
+    },
+    {
+      "sourceSHA256": "baffe4e74aaa8c900e94df7bafba7c9ed7592f2a58b31ba77630ca22a9a37cf1",
+      "imageIDs": [
+        "0fd4233162520906"
+      ],
+      "appearances": [
+        {
+          "team": "DEATHWATCH",
+          "assetName": "Transhuman Physiology",
+          "side": "face",
+          "imageID": "0fd4233162520906"
+        }
+      ],
+      "translationImageID": "0fd4233162520906"
+    },
+    {
+      "sourceSHA256": "bd399bdd631a9f560bab1ed172bfe89bb30c705ffe3f63659bffd254db9f02b1",
+      "imageIDs": [
+        "74289603ee8d136d"
+      ],
+      "appearances": [
+        {
+          "team": "Legionary",
+          "assetName": "Legionary Chosen",
+          "side": "face",
+          "imageID": "74289603ee8d136d"
+        }
+      ],
+      "translationImageID": "74289603ee8d136d"
+    },
+    {
+      "sourceSHA256": "bf802c80194a790e8668ed5fc73eb1aad24a2c34615476da234620de89ffd0c9",
+      "imageIDs": [
+        "2547518058769d09"
+      ],
+      "appearances": [
+        {
+          "team": "Scout Squad",
+          "assetName": "Heavy Weapon Bipod",
+          "side": "face",
+          "imageID": "2547518058769d09"
+        }
+      ],
+      "translationImageID": "2547518058769d09"
+    },
+    {
+      "sourceSHA256": "c1fc8e2ca081c5541446b81814840273baf63d78b2f09ac7e55f8954acef73e4",
+      "imageIDs": [
+        "dbd02f3805fbc5f9"
+      ],
+      "appearances": [
+        {
+          "team": "Void-dancer Troupe",
+          "assetName": "Harlequin's Panoply",
+          "side": "face",
+          "imageID": "dbd02f3805fbc5f9"
+        }
+      ],
+      "translationImageID": "dbd02f3805fbc5f9"
+    },
+    {
+      "sourceSHA256": "c789f5d7ede5bb1acaa0b7af3e7120ffc1337708d7c9a19e409d681a8a4dbffd",
+      "imageIDs": [
+        "7f453e017744c500"
+      ],
+      "appearances": [
+        {
+          "team": "Scout Squad",
+          "assetName": "Scout Sniper",
+          "side": "face",
+          "imageID": "7f453e017744c500"
+        }
+      ],
+      "translationImageID": "7f453e017744c500"
+    },
+    {
+      "sourceSHA256": "c8c78a9ff70c5c3a3f14701d873a92632f09c479f872329921796541a5a0c25e",
+      "imageIDs": [
+        "f814787023d2dde7"
+      ],
+      "appearances": [
+        {
+          "team": "DEATHWATCH",
+          "assetName": "Suffer Not The Alien",
+          "side": "face",
+          "imageID": "f814787023d2dde7"
+        }
+      ],
+      "translationImageID": "f814787023d2dde7"
+    },
+    {
+      "sourceSHA256": "c96eae513ca4c2f06a26c148cfafaecb5f50b973205e77816a1f7cef0b70046f",
+      "imageIDs": [
+        "7a41dce40c987896"
+      ],
+      "appearances": [
+        {
+          "team": "DEATHWATCH",
+          "assetName": "MARKSMAN VETERAN",
+          "side": "face",
+          "imageID": "7a41dce40c987896"
+        }
+      ],
+      "translationImageID": "7a41dce40c987896"
+    },
+    {
+      "sourceSHA256": "cae81312775046373149ef395111a36518e0c241a0973064b88f532b72ccfdcd",
+      "imageIDs": [
+        "4cbbc3ff20018965"
+      ],
+      "appearances": [
+        {
+          "team": "DEATHWATCH",
+          "assetName": "HEADTAKER VETERAN",
+          "side": "face",
+          "imageID": "4cbbc3ff20018965"
+        }
+      ],
+      "translationImageID": "4cbbc3ff20018965"
+    },
+    {
+      "sourceSHA256": "d1a33afd453b3303218eb180da2010b5aa6c2b7fd85f4c454a85feb827140f95",
+      "imageIDs": [
+        "65cbe1bacc80ee17"
+      ],
+      "appearances": [
+        {
+          "team": "Void-dancer Troupe",
+          "assetName": "Death Mask",
+          "side": "face",
+          "imageID": "65cbe1bacc80ee17"
+        }
+      ],
+      "translationImageID": "65cbe1bacc80ee17"
+    },
+    {
+      "sourceSHA256": "d1ae1727ae606ea3ca1a3e9d7b48d58533ff20d307081f1d7dfb2de20a6c054c",
+      "imageIDs": [
+        "0f3cd2a4f5e7dfb5"
+      ],
+      "appearances": [
+        {
+          "team": "DEATHWATCH",
+          "assetName": "BOMBARD VETERAN",
+          "side": "face",
+          "imageID": "0f3cd2a4f5e7dfb5"
+        }
+      ],
+      "translationImageID": "0f3cd2a4f5e7dfb5"
+    },
+    {
+      "sourceSHA256": "d2a365394a0647cd7fc0ec33b9bcd615deaaa305bf6370635b9a6cc894122b9e",
+      "imageIDs": [
+        "9e9232c01eb8f335"
+      ],
+      "appearances": [
+        {
+          "team": "DEATHWATCH",
+          "assetName": "",
+          "side": "face",
+          "imageID": "9e9232c01eb8f335"
+        }
+      ],
+      "translationImageID": "9e9232c01eb8f335"
+    },
+    {
+      "sourceSHA256": "d2c8ec4edea0e173a5b6562fe557e3c7bbc0e78c4c4845ba5ca6d0f9cc51f803",
+      "imageIDs": [
+        "13578400059ab435"
+      ],
+      "appearances": [
+        {
+          "team": "Legionary",
+          "assetName": "Implacable",
+          "side": "face",
+          "imageID": "13578400059ab435"
+        }
+      ],
+      "translationImageID": "13578400059ab435"
+    },
+    {
+      "sourceSHA256": "d32cc2e25d951c98b39e386516a73dd4784a7e1bf1c3133b4ff3a0cda45a708a",
+      "imageIDs": [
+        "4d2dfdb91bdf7e4b"
+      ],
+      "appearances": [
+        {
+          "team": "Legionary",
+          "assetName": "Malignant Aura",
+          "side": "face",
+          "imageID": "4d2dfdb91bdf7e4b"
+        }
+      ],
+      "translationImageID": "4d2dfdb91bdf7e4b"
+    },
+    {
+      "sourceSHA256": "d7425548ad0748940122a19a73f0624e790b118c588bfcaa553d119d8c5b796c",
+      "imageIDs": [
+        "03854886218c3617"
+      ],
+      "appearances": [
+        {
+          "team": "Legionary",
+          "assetName": "Nurgle",
+          "side": "face",
+          "imageID": "03854886218c3617"
+        }
+      ],
+      "translationImageID": "03854886218c3617"
+    },
+    {
+      "sourceSHA256": "d83bf23884bdc088125b01e9b02a6327e26de5964884b1f4b3b25ac9c6002471",
+      "imageIDs": [
+        "9bad1a5013efe6cf"
+      ],
+      "appearances": [
+        {
+          "team": "Void-dancer Troupe",
+          "assetName": "Cegorach's Jest",
+          "side": "back",
+          "imageID": "9bad1a5013efe6cf"
+        },
+        {
+          "team": "Void-dancer Troupe",
+          "assetName": "Darting Salvo",
+          "side": "back",
+          "imageID": "9bad1a5013efe6cf"
+        },
+        {
+          "team": "Void-dancer Troupe",
+          "assetName": "Death Mask",
+          "side": "back",
+          "imageID": "9bad1a5013efe6cf"
+        },
+        {
+          "team": "Void-dancer Troupe",
+          "assetName": "Domino Field",
+          "side": "back",
+          "imageID": "9bad1a5013efe6cf"
+        },
+        {
+          "team": "Void-dancer Troupe",
+          "assetName": "Elusive Target",
+          "side": "back",
+          "imageID": "9bad1a5013efe6cf"
+        },
+        {
+          "team": "Void-dancer Troupe",
+          "assetName": "Harlequin's Panoply",
+          "side": "back",
+          "imageID": "9bad1a5013efe6cf"
+        },
+        {
+          "team": "Void-dancer Troupe",
+          "assetName": "Murderous Entrance",
+          "side": "back",
+          "imageID": "9bad1a5013efe6cf"
+        },
+        {
+          "team": "Void-dancer Troupe",
+          "assetName": "Prismatic Blur",
+          "side": "back",
+          "imageID": "9bad1a5013efe6cf"
+        },
+        {
+          "team": "Void-dancer Troupe",
+          "assetName": "Rising Crescendo",
+          "side": "back",
+          "imageID": "9bad1a5013efe6cf"
+        },
+        {
+          "team": "Void-dancer Troupe",
+          "assetName": "Shrieker Toxin Rounds",
+          "side": "back",
+          "imageID": "9bad1a5013efe6cf"
+        },
+        {
+          "team": "Void-dancer Troupe",
+          "assetName": "The Curtain Falls",
+          "side": "back",
+          "imageID": "9bad1a5013efe6cf"
+        },
+        {
+          "team": "Void-dancer Troupe",
+          "assetName": "Understudy's Mask",
+          "side": "back",
+          "imageID": "9bad1a5013efe6cf"
+        },
+        {
+          "team": "Void-dancer Troupe",
+          "assetName": "Wraithbone Talisman",
+          "side": "back",
+          "imageID": "9bad1a5013efe6cf"
+        }
+      ],
+      "translationImageID": "9bad1a5013efe6cf"
+    },
+    {
+      "sourceSHA256": "db175dd4b0791dd1922e460b6ce0f325a5303652e688a2bdfd63f283e246947d",
+      "imageIDs": [
+        "538c05e94a39f68f"
+      ],
+      "appearances": [
+        {
+          "team": "Void-dancer Troupe",
+          "assetName": "Domino Field",
+          "side": "face",
+          "imageID": "538c05e94a39f68f"
+        }
+      ],
+      "translationImageID": "538c05e94a39f68f"
+    },
+    {
+      "sourceSHA256": "dd20a719b981b808d7085ec98337e7942728f1c193285600a713db0d4ff44118",
+      "imageIDs": [
+        "fd875d1b7c6410aa"
+      ],
+      "appearances": [
+        {
+          "team": "Void-dancer Troupe",
+          "assetName": "Saedath",
+          "side": "back",
+          "imageID": "fd875d1b7c6410aa"
+        }
+      ],
+      "translationImageID": "fd875d1b7c6410aa"
+    },
+    {
+      "sourceSHA256": "de0214e39b3ec4e253ebe64c2aa8745c834b5f29247a047d64e902ede511596e",
+      "imageIDs": [
+        "3c1646fe5e3e040f"
+      ],
+      "appearances": [
+        {
+          "team": "DEATHWATCH",
+          "assetName": "BLADEMASTER VETERAN",
+          "side": "face",
+          "imageID": "3c1646fe5e3e040f"
+        }
+      ],
+      "translationImageID": "3c1646fe5e3e040f"
+    },
+    {
+      "sourceSHA256": "de2179c92167e0b2470847c3a2c164bbb251c5b022f3796daa294a9e8d6d9759",
+      "imageIDs": [
+        "605f87a38d5a48b8"
+      ],
+      "appearances": [
+        {
+          "team": "Legionary",
+          "assetName": "Fickle Fates",
+          "side": "face",
+          "imageID": "605f87a38d5a48b8"
+        }
+      ],
+      "translationImageID": "605f87a38d5a48b8"
+    },
+    {
+      "sourceSHA256": "e1b8bd01ec88331294d6cd31530a0728da045939c98f1d64f8e930c779af3691",
+      "imageIDs": [
+        "b1181d11f59eb749"
+      ],
+      "appearances": [
+        {
+          "team": "Void-dancer Troupe",
+          "assetName": "",
+          "side": "back",
+          "imageID": "b1181d11f59eb749"
+        }
+      ],
+      "translationImageID": "b1181d11f59eb749"
+    },
+    {
+      "sourceSHA256": "e55110b739b76f60892d86f9bb8c08529177e6af5402a038a1eb23415f0505f7",
+      "imageIDs": [
+        "8f17131500b01351"
+      ],
+      "appearances": [
+        {
+          "team": "Legionary",
+          "assetName": "",
+          "side": "face",
+          "imageID": "8f17131500b01351"
+        }
+      ],
+      "translationImageID": "8f17131500b01351"
+    },
+    {
+      "sourceSHA256": "e57fa00a53bdc91f49381b0d609d6d60e1314898bd14ab4d26d3b62850e5fbb2",
+      "imageIDs": [
+        "1f33029a956531b3"
+      ],
+      "appearances": [
+        {
+          "team": "DEATHWATCH",
+          "assetName": "WATCH SERGEANT",
+          "side": "face",
+          "imageID": "1f33029a956531b3"
+        }
+      ],
+      "translationImageID": "1f33029a956531b3"
+    },
+    {
+      "sourceSHA256": "e69eade00a3af6394fd57f183ef15abef4599687076718a66acac546c6f541aa",
+      "imageIDs": [
+        "3a3f8b9ec5fa8255"
+      ],
+      "appearances": [
+        {
+          "team": "Legionary",
+          "assetName": "Malefic Blades",
+          "side": "face",
+          "imageID": "3a3f8b9ec5fa8255"
+        }
+      ],
+      "translationImageID": "3a3f8b9ec5fa8255"
+    },
+    {
+      "sourceSHA256": "e86a7e1151a16e9510f25052c15800edf226df10c60685514bacfe8b93541523",
+      "imageIDs": [
+        "edc27d3705a428de"
+      ],
+      "appearances": [
+        {
+          "team": "Scout Squad",
+          "assetName": "Scout Heavy Gunner",
+          "side": "face",
+          "imageID": "edc27d3705a428de"
+        }
+      ],
+      "translationImageID": "edc27d3705a428de"
+    },
+    {
+      "sourceSHA256": "ebe103c2a8a4cd680be58e4dab164ae2d5845d7e0be8c2ff234d1fbc8b0c8c12",
+      "imageIDs": [
+        "5e7489a3744da910"
+      ],
+      "appearances": [
+        {
+          "team": "Legionary",
+          "assetName": "Tzeench",
+          "side": "face",
+          "imageID": "5e7489a3744da910"
+        }
+      ],
+      "translationImageID": "5e7489a3744da910"
+    },
+    {
+      "sourceSHA256": "ec3fdd0db9352c679819736dd012b12b404c3771702c1b95603d0e652d642c3f",
+      "imageIDs": [
+        "0c492b6818ed22f1"
+      ],
+      "appearances": [
+        {
+          "team": "Scout Squad",
+          "assetName": "Forward Scouting",
+          "side": "face",
+          "imageID": "0c492b6818ed22f1"
+        }
+      ],
+      "translationImageID": "0c492b6818ed22f1"
+    },
+    {
+      "sourceSHA256": "ee81aedbc492eb4c62fb0799f804e2d94b04bdf04e83ff62cf00d907f1f59379",
+      "imageIDs": [
+        "048fa5ce9b406c3b"
+      ],
+      "appearances": [
+        {
+          "team": "Legionary",
+          "assetName": "Legionary Butcher",
+          "side": "face",
+          "imageID": "048fa5ce9b406c3b"
+        }
+      ],
+      "translationImageID": "048fa5ce9b406c3b"
+    },
+    {
+      "sourceSHA256": "f39953b8fde87a9082892eddabc0da56d7005d07a31de878fd334ac074bfa90e",
+      "imageIDs": [
+        "52fa629303eaf6ed"
+      ],
+      "appearances": [
+        {
+          "team": "DEATHWATCH",
+          "assetName": "BREACHER VETERAN",
+          "side": "face",
+          "imageID": "52fa629303eaf6ed"
+        }
+      ],
+      "translationImageID": "52fa629303eaf6ed"
+    },
+    {
+      "sourceSHA256": "f4e449110d08a98c078990ecf40cad31d957c3d850e9901235f15f3f59b34f8c",
+      "imageIDs": [
+        "c8f2986ced06a44e"
+      ],
+      "appearances": [
+        {
+          "team": "Legionary",
+          "assetName": "",
+          "side": "back",
+          "imageID": "c8f2986ced06a44e"
+        }
+      ],
+      "translationImageID": "c8f2986ced06a44e"
+    },
+    {
+      "sourceSHA256": "f541f6d97586923a03eeaf286bfed80a55eeefb10e5b045af1346a42abce9988",
+      "imageIDs": [
+        "24098b8e65006999"
+      ],
+      "appearances": [
+        {
+          "team": "DEATHWATCH",
+          "assetName": "GUNNER VETERAN",
+          "side": "face",
+          "imageID": "24098b8e65006999"
+        }
+      ],
+      "translationImageID": "24098b8e65006999"
+    },
+    {
+      "sourceSHA256": "f545982f4272cef8f155778bd8bf8a66c33a690505ea6e1b3a39370aa2993377",
+      "imageIDs": [
+        "203d6b012e03f0f5"
+      ],
+      "appearances": [
+        {
+          "team": "Void-dancer Troupe",
+          "assetName": "Cegorach's Jest",
+          "side": "face",
+          "imageID": "203d6b012e03f0f5"
+        }
+      ],
+      "translationImageID": "203d6b012e03f0f5"
+    },
+    {
+      "sourceSHA256": "f70c80dc604e61077be3125562722b8bc703ca3fbb99aa8075a24d0d29a4faf4",
+      "imageIDs": [
+        "3caada85022c997c"
+      ],
+      "appearances": [
+        {
+          "team": "Void-dancer Troupe",
+          "assetName": "Elusive Target",
+          "side": "face",
+          "imageID": "3caada85022c997c"
+        }
+      ],
+      "translationImageID": "3caada85022c997c"
+    },
+    {
+      "sourceSHA256": "f74ae237549b1743921861199e7976682f4b769583ab56f21080134e147dbbfc",
+      "imageIDs": [
+        "3a0285d9ecc1dcf6"
+      ],
+      "appearances": [
+        {
+          "team": "Legionary",
+          "assetName": "Blood for the Blood God",
+          "side": "face",
+          "imageID": "3a0285d9ecc1dcf6"
+        }
+      ],
+      "translationImageID": "3a0285d9ecc1dcf6"
+    }
+  ],
+  "excluded": [
+    {
+      "sourceSHA256": "0334038db18bb4469397b0446a1a4749744077466acc22bf7fee81fff94cd2ef",
+      "imageIDs": [
+        "b313d23060c86c78"
+      ],
+      "appearances": [
+        {
+          "team": "Legionary",
+          "assetName": "Legionary Anointed",
+          "side": "back",
+          "imageID": "b313d23060c86c78"
+        },
+        {
+          "team": "Legionary",
+          "assetName": "Legionary Aspiring Champion",
+          "side": "back",
+          "imageID": "b313d23060c86c78"
+        },
+        {
+          "team": "Legionary",
+          "assetName": "Legionary Balefire Acolyte",
+          "side": "back",
+          "imageID": "b313d23060c86c78"
+        },
+        {
+          "team": "Legionary",
+          "assetName": "Legionary Butcher",
+          "side": "back",
+          "imageID": "b313d23060c86c78"
+        },
+        {
+          "team": "Legionary",
+          "assetName": "Legionary Chosen",
+          "side": "back",
+          "imageID": "b313d23060c86c78"
+        },
+        {
+          "team": "Legionary",
+          "assetName": "Legionary Gunner",
+          "side": "back",
+          "imageID": "b313d23060c86c78"
+        },
+        {
+          "team": "Legionary",
+          "assetName": "Legionary Heavy Gunner",
+          "side": "back",
+          "imageID": "b313d23060c86c78"
+        },
+        {
+          "team": "Legionary",
+          "assetName": "Legionary Icon Bearer",
+          "side": "back",
+          "imageID": "b313d23060c86c78"
+        },
+        {
+          "team": "Legionary",
+          "assetName": "Legionary Warrior",
+          "side": "back",
+          "imageID": "b313d23060c86c78"
+        }
+      ],
+      "reason": "Shared Legionary operative portrait artwork only; no translatable source text."
+    },
+    {
+      "sourceSHA256": "2e488f2f42eb4ebaf528a3571428c853fce2658e3484533ac62a6c45c89f74b1",
+      "imageIDs": [
+        "62df162b6b4ca3b8"
+      ],
+      "appearances": [
+        {
+          "team": "DEATHWATCH",
+          "assetName": "",
+          "side": "back",
+          "imageID": "62df162b6b4ca3b8"
+        },
+        {
+          "team": "DEATHWATCH",
+          "assetName": "",
+          "side": "back",
+          "imageID": "62df162b6b4ca3b8"
+        },
+        {
+          "team": "DEATHWATCH",
+          "assetName": "",
+          "side": "back",
+          "imageID": "62df162b6b4ca3b8"
+        },
+        {
+          "team": "DEATHWATCH",
+          "assetName": "",
+          "side": "back",
+          "imageID": "62df162b6b4ca3b8"
+        },
+        {
+          "team": "DEATHWATCH",
+          "assetName": "Advanced Auspex Scan",
+          "side": "back",
+          "imageID": "62df162b6b4ca3b8"
+        },
+        {
+          "team": "DEATHWATCH",
+          "assetName": "Ammunition Reserve",
+          "side": "back",
+          "imageID": "62df162b6b4ca3b8"
+        },
+        {
+          "team": "DEATHWATCH",
+          "assetName": "And They Know No Fear",
+          "side": "back",
+          "imageID": "62df162b6b4ca3b8"
+        },
+        {
+          "team": "DEATHWATCH",
+          "assetName": "Auspicator Tracking",
+          "side": "back",
+          "imageID": "62df162b6b4ca3b8"
+        },
+        {
+          "team": "DEATHWATCH",
+          "assetName": "Digital Weapons",
+          "side": "back",
+          "imageID": "62df162b6b4ca3b8"
+        },
+        {
+          "team": "DEATHWATCH",
+          "assetName": "Mission Tactics",
+          "side": "back",
+          "imageID": "62df162b6b4ca3b8"
+        },
+        {
+          "team": "DEATHWATCH",
+          "assetName": "Sanctus-V Bioscryer Cuffs",
+          "side": "back",
+          "imageID": "62df162b6b4ca3b8"
+        },
+        {
+          "team": "DEATHWATCH",
+          "assetName": "Scrutavore Servo-Thrall",
+          "side": "back",
+          "imageID": "62df162b6b4ca3b8"
+        },
+        {
+          "team": "DEATHWATCH",
+          "assetName": "Suffer Not The Alien",
+          "side": "back",
+          "imageID": "62df162b6b4ca3b8"
+        },
+        {
+          "team": "DEATHWATCH",
+          "assetName": "The Long Vigil",
+          "side": "back",
+          "imageID": "62df162b6b4ca3b8"
+        },
+        {
+          "team": "DEATHWATCH",
+          "assetName": "The Shield THhat Slays",
+          "side": "back",
+          "imageID": "62df162b6b4ca3b8"
+        },
+        {
+          "team": "DEATHWATCH",
+          "assetName": "Transhuman Physiology",
+          "side": "back",
+          "imageID": "62df162b6b4ca3b8"
+        }
+      ],
+      "reason": "Deathwatch emblem artwork only; no translatable source text."
+    },
+    {
+      "sourceSHA256": "bf8840418bc7a3f06d6f2b1b302fe9170fe8dc6dfecc34eebc408bf6ffc8e0cb",
+      "imageIDs": [
+        "c5097427caca1cc5"
+      ],
+      "appearances": [
+        {
+          "team": "Scout Squad",
+          "assetName": "Scout Heavy Gunner",
+          "side": "back",
+          "imageID": "c5097427caca1cc5"
+        },
+        {
+          "team": "Scout Squad",
+          "assetName": "Scout Hunter",
+          "side": "back",
+          "imageID": "c5097427caca1cc5"
+        },
+        {
+          "team": "Scout Squad",
+          "assetName": "Scout Sergeant",
+          "side": "back",
+          "imageID": "c5097427caca1cc5"
+        },
+        {
+          "team": "Scout Squad",
+          "assetName": "Scout Sniper",
+          "side": "back",
+          "imageID": "c5097427caca1cc5"
+        },
+        {
+          "team": "Scout Squad",
+          "assetName": "Scout Warrior",
+          "side": "back",
+          "imageID": "c5097427caca1cc5"
+        }
+      ],
+      "reason": "Scout Hunter portrait artwork only; no translatable source text."
+    },
+    {
+      "sourceSHA256": "d12424a4f4ab2e42cb81a7a71f1eb5ea0ae02e3c1146c195b24d11bc4f7ab015",
+      "imageIDs": [
+        "37799af114424bfc"
+      ],
+      "appearances": [
+        {
+          "team": "DEATHWATCH",
+          "assetName": "AEGIS VETERAN",
+          "side": "back",
+          "imageID": "37799af114424bfc"
+        },
+        {
+          "team": "DEATHWATCH",
+          "assetName": "BLADEMASTER VETERAN",
+          "side": "back",
+          "imageID": "37799af114424bfc"
+        },
+        {
+          "team": "DEATHWATCH",
+          "assetName": "BOMBARD VETERAN",
+          "side": "back",
+          "imageID": "37799af114424bfc"
+        },
+        {
+          "team": "DEATHWATCH",
+          "assetName": "BREACHER VETERAN",
+          "side": "back",
+          "imageID": "37799af114424bfc"
+        },
+        {
+          "team": "DEATHWATCH",
+          "assetName": "DEMOLISHER VETERAN",
+          "side": "back",
+          "imageID": "37799af114424bfc"
+        },
+        {
+          "team": "DEATHWATCH",
+          "assetName": "DISRUPTOR VETERAN",
+          "side": "back",
+          "imageID": "37799af114424bfc"
+        },
+        {
+          "team": "DEATHWATCH",
+          "assetName": "GUNNER VETERAN",
+          "side": "back",
+          "imageID": "37799af114424bfc"
+        },
+        {
+          "team": "DEATHWATCH",
+          "assetName": "HEADTAKER VETERAN",
+          "side": "back",
+          "imageID": "37799af114424bfc"
+        },
+        {
+          "team": "DEATHWATCH",
+          "assetName": "HORDE-SLAYER VETERAN",
+          "side": "back",
+          "imageID": "37799af114424bfc"
+        },
+        {
+          "team": "DEATHWATCH",
+          "assetName": "MARKSMAN VETERAN",
+          "side": "back",
+          "imageID": "37799af114424bfc"
+        },
+        {
+          "team": "DEATHWATCH",
+          "assetName": "WATCH SERGEANT",
+          "side": "back",
+          "imageID": "37799af114424bfc"
+        }
+      ],
+      "reason": "Horde-Slayer Veteran illustration only; no translatable source text."
+    },
+    {
+      "sourceSHA256": "da9ae22f043d46c80a09f55d52dc8b10aa06b1d006bafa5f7e1a03c87ce96043",
+      "imageIDs": [
+        "8ae01aa307eb7419"
+      ],
+      "appearances": [
+        {
+          "team": "Void-dancer Troupe",
+          "assetName": "Death Jester",
+          "side": "back",
+          "imageID": "8ae01aa307eb7419"
+        },
+        {
+          "team": "Void-dancer Troupe",
+          "assetName": "Player",
+          "side": "back",
+          "imageID": "8ae01aa307eb7419"
+        }
+      ],
+      "reason": "Void-dancer Player portrait artwork only; no translatable source text."
+    }
+  ],
+  "statistics": {
+    "uniqueSourceSHAs": 114,
+    "translatedSourceSHAs": 109,
+    "artOnlySourceSHAs": 5,
+    "translatedImageIDs": 109,
+    "artOnlyImageIDs": 5,
+    "appearances": 198
+  }
+}

@@ -1,0 +1,1022 @@
+[
+  {
+    "id": "4a4fb32c97bc1bc6",
+    "expectedTitle": "Blaze",
+    "team": "Sanctifiers",
+    "source": {
+      "officialPdf": "https://assets.warhammer-community.com/eng_25-02_kt_teamrules_sanctifiers-3vpsecfbfe-vclbyfaed7.pdf",
+      "date": "2026-02-25",
+      "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/sanctifiers/",
+      "checkedOn": "2026-10-05",
+      "sourceTeam": "Sanctifiers",
+      "pdfPages": [
+        11
+      ],
+      "wahapediaSnapshotLineNumbers": [
+        144
+      ]
+    },
+    "blocks": [
+      {
+        "heading": "Weapon rule",
+        "russian": "Некоторые виды оружия из правил этого отряда имеют правило «Пламя» (Blaze). Если вы нанесли урон хотя бы одним критическим успехом, оперативник, против которого применили это оружие, получает один ваш жетон Blaze, если у него ещё нет такого жетона. При активации оперативника с вашим жетоном Blaze нанесите ему D3 урона. Затем управляющий им игрок выбирает один вариант: бросить D6 и на результате 3+ снять жетон; либо уменьшить APL оперативника на 1 до конца этой активации и снять жетон.",
+        "english": "Some weapons in this team's rules have the Blaze weapon rule below. If you inflict damage with any critical successes, the operative this weapon is being used against gains one of your Blaze tokens (if it doesn't already have one). Whenever an operative that has one of your Blaze tokens is activated, inflict D3 damage on it. Then that operative's controlling player selects one of the following: roll one D6; on a 3+, remove that token; or subtract 1 from the operative's APL stat until the end of that activation to remove that token.",
+        "proseTitles": [
+          "Weapon rule"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "e97e2d0b02549136",
+    "expectedTitle": "Ministorum Sermon · Continued Effects",
+    "team": "Sanctifiers",
+    "source": {
+      "officialPdf": "https://assets.warhammer-community.com/eng_25-02_kt_teamrules_sanctifiers-3vpsecfbfe-vclbyfaed7.pdf",
+      "date": "2026-02-25",
+      "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/sanctifiers/",
+      "checkedOn": "2026-10-05",
+      "sourceTeam": "Sanctifiers",
+      "pdfPages": [
+        11
+      ],
+      "wahapediaSnapshotLineNumbers": [
+        153
+      ]
+    },
+    "blocks": [
+      {
+        "heading": "Sermon effect",
+        "russian": "Когда дружественный оперативник SANCTIFIER активируется в пределах 3 дюймов от дружественного оперативника ORATOR (или 6 дюймов, если это ИСПОВЕДНИК (CONFESSOR)), он получает эффект «Проповеди» (SERMON) до конца активации, даже если затем отойдёт дальше указанной дистанции. Когда дружественный SANCTIFIER получает эффект SERMON, обычный или критический урон со значением 4 или выше наносит ему на 1 урон меньше.",
+        "english": "Whenever a friendly SANCTIFIER operative is activated within 3\" of a friendly ORATOR operative (or 6\" if the ORATOR is a CONFESSOR), that friendly SANCTIFIER operative is benefitting from the SERMON until the end of that activation (even if it then moves more than the distance requirement from the ORATOR operative). Whenever a friendly SANCTIFIER operative is benefitting from the SERMON, Normal and Critical Dmg of 4 or more inflicts 1 less damage on it.",
+        "proseTitles": [
+          "Sermon effect"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "04709faea430a55e",
+    "expectedTitle": "Rally the Flock",
+    "team": "Sanctifiers",
+    "source": {
+      "officialPdf": "https://assets.warhammer-community.com/eng_25-02_kt_teamrules_sanctifiers-3vpsecfbfe-vclbyfaed7.pdf",
+      "date": "2026-02-25",
+      "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/sanctifiers/",
+      "checkedOn": "2026-10-05",
+      "sourceTeam": "Sanctifiers",
+      "pdfPages": [
+        11
+      ],
+      "wahapediaSnapshotLineNumbers": [
+        175
+      ]
+    },
+    "blocks": [
+      {
+        "heading": "Rule",
+        "russian": "Каждый дружественный оперативник SANCTIFIER, кроме оперативника с ключевым словом «Проповедник» (ORATOR), который получает эффект «Проповеди» (SERMON), может немедленно бесплатно выполнить «Рывок» (Dash) или «Отступление» (Fall Back) в выбранном вами порядке (порядок выбирайте отдельно для каждого; при Отступлении он не может переместиться более чем на 3 дюйма). Каждый из них должен закончить перемещение ближе к дружественному Проповеднику (ORATOR), при этом хотя бы один из них должен видеть другого. В первом раунде этот приём использовать нельзя.",
+        "english": "Each friendly SANCTIFIER operative (excluding ORATOR) that's benefitting from the SERMON can immediately perform a free Dash or Fall Back action in an order of your choice (choose separately for each and, for the latter, it cannot move more than 3\"). Each that does so must end that move closer to a friendly ORATOR operative and visible to it (or vice versa). You cannot use this ploy during the first turning point.",
+        "proseTitles": [
+          "Rule"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "827002d9eb9f10d1",
+    "expectedTitle": "Ecclesiarchy Texts",
+    "team": "Sanctifiers",
+    "source": {
+      "officialPdf": "https://assets.warhammer-community.com/eng_25-02_kt_teamrules_sanctifiers-3vpsecfbfe-vclbyfaed7.pdf",
+      "date": "2026-02-25",
+      "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/sanctifiers/",
+      "checkedOn": "2026-10-05",
+      "sourceTeam": "Sanctifiers",
+      "pdfPages": [
+        11
+      ],
+      "wahapediaSnapshotLineNumbers": [
+        224
+      ]
+    },
+    "blocks": [
+      {
+        "heading": "Rule",
+        "russian": "На шаге подготовки (Ready step) каждой стратегической фазы бросьте 3D6. Если результат меньше числа оставшихся ран дружественного оперативника с ключевым словом «Проповедник» (ORATOR), вы получаете 1 командное очко (CP). Это происходит до шага манёвра (Gambit); поэтому, если допустимого оперативника ORATOR нет, в этом раунде правило применить нельзя (например, в первом раунде).",
+        "english": "In the Ready step of each Strategy phase, roll 3D6: if the result is less than the remaining wounds of a friendly ORATOR operative, you gain 1CP. This is done before the Gambit step, so if there isn't a valid ORATOR operative, you cannot use this rule during that turning point (e.g. during the first turning point).",
+        "proseTitles": [
+          "Rule"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "9abb7f47058dca2e",
+    "expectedTitle": "Sanctifier Conflagrator",
+    "team": "Sanctifiers",
+    "source": {
+      "officialPdf": "https://assets.warhammer-community.com/eng_25-02_kt_teamrules_sanctifiers-3vpsecfbfe-vclbyfaed7.pdf",
+      "date": "2026-02-25",
+      "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/sanctifiers/",
+      "checkedOn": "2026-10-05",
+      "sourceTeam": "Sanctifiers",
+      "pdfPages": [
+        11
+      ],
+      "wahapediaSnapshotLineNumbers": [
+        292
+      ]
+    },
+    "blocks": [
+      {
+        "heading": "Twin Torrent",
+        "russian": "Выберите до двух разных допустимых целей вне дистанции контроля дружественных оперативников. Стреляйте из этого оружия по обеим целям в выбранном вами порядке (для каждой проведите отдельную последовательность). Поток 0 дюймов означает, что нельзя выбирать вторичные цели, но для всех остальных правил у оружия по-прежнему есть правило «Поток» (Torrent), например для правила «Укреплённая теснина» (Condensed Stronghold; см. Killzone: Volkus в основной книге Kill Team).",
+        "english": "Select up to two different valid targets that aren’t within control range of friendly operatives. Shoot with this weapon against both of them in an order of your choice (roll each sequence separately). Torrent 0\" means you cannot select secondary targets, but this weapon still has the Torrent weapon rule for all other rules purposes, e.g. the Condensed Stronghold rule (see Killzone: Volkus, Kill Team Core Book).",
+        "proseTitles": [
+          "Twin Torrent"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "3a22b11e600db05f",
+    "expectedTitle": "Sanctifier Drill Abbot",
+    "team": "Sanctifiers",
+    "source": {
+      "officialPdf": "https://assets.warhammer-community.com/eng_25-02_kt_teamrules_sanctifiers-3vpsecfbfe-vclbyfaed7.pdf",
+      "date": "2026-02-25",
+      "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/sanctifiers/",
+      "checkedOn": "2026-10-05",
+      "sourceTeam": "Sanctifiers",
+      "pdfPages": [
+        11
+      ],
+      "wahapediaSnapshotLineNumbers": [
+        331
+      ]
+    },
+    "blocks": [
+      {
+        "heading": "Null Skull",
+        "russian": "Пока вражеский оперативник находится в пределах 4 дюймов от этого оперативника, его APL нельзя увеличить; снимите с него все положительные изменения APL. Если враг дальше 4 дюймов имеет положительное изменение APL и противник тратит его последнее AP, чтобы переместить его в пределы 4 дюймов, из-за этого противник может потратить больше AP, чем APL врага. В этой ситуации это разрешено.",
+        "english": "Whenever an enemy operative is within 4\" of this operative, that enemy operative's APL stat cannot be added to (remove all positive APL stat changes it has). If an enemy operative that's more than 4\" from this operative has a positive APL stat change and your opponent spends its final AP to move that operative within 4\" of this operative, this can cause your opponent to have spent more AP than its APL stat; this is permitted in this situation.",
+        "proseTitles": [
+          "Null Skull"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "cc4cc32fb66c4461",
+    "expectedTitle": "Sanctifier Preacher",
+    "team": "Sanctifiers",
+    "source": {
+      "officialPdf": "https://assets.warhammer-community.com/eng_25-02_kt_teamrules_sanctifiers-3vpsecfbfe-vclbyfaed7.pdf",
+      "date": "2026-02-25",
+      "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/sanctifiers/",
+      "checkedOn": "2026-10-05",
+      "sourceTeam": "Sanctifiers",
+      "pdfPages": [
+        11
+      ],
+      "wahapediaSnapshotLineNumbers": [
+        414
+      ]
+    },
+    "blocks": [
+      {
+        "heading": "Defend the Faith",
+        "russian": "Когда этот оперативник контролирует маркер цели, он получает эффект «Проповеди» (SERMON).",
+        "english": "Whenever this operative controls an objective marker, it's benefitting from the SERMON.",
+        "proseTitles": [
+          "Defend the Faith"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "89aa210ea4c2d731",
+    "expectedTitle": "Sanctifier Confessor",
+    "team": "Sanctifiers",
+    "source": {
+      "officialPdf": "https://assets.warhammer-community.com/eng_25-02_kt_teamrules_sanctifiers-3vpsecfbfe-vclbyfaed7.pdf",
+      "date": "2026-02-25",
+      "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/sanctifiers/",
+      "checkedOn": "2026-10-05",
+      "sourceTeam": "Sanctifiers",
+      "pdfPages": [
+        11
+      ],
+      "wahapediaSnapshotLineNumbers": [
+        244,
+        245
+      ]
+    },
+    "blocks": [
+      {
+        "heading": "Lead the Procession",
+        "russian": "В каждом раунде после первого, когда этот оперативник является Проповедником (ORATOR) и выполняет «Атаку» (Charge), «Отступление» (Fall Back) или «Перемещение» (Reposition) в свою активацию, можно применить это правило до его перемещения. Определите остальных дружественных Освятителей (SANCTIFIER), получающих эффект Проповеди (SERMON), если хотя бы один из них и этого оперативника видит другого.\nПосле окончания действия этого оперативника каждый из выбранных союзников может немедленно бесплатно выполнить Charge, Fall Back или Reposition. Выбирайте действие отдельно для каждого и порядок их действий. Каждый из них может переместиться либо быть убран и заново выставлен не дальше чем на 3 дюйма и должен закончить перемещение там, где по-прежнему получает Проповедь. Если этот оперативник выведен из строя до полного разрешения правила, например прерыванием по правилу «Дозор» (Guard), не убирайте его из зоны боя до полного разрешения правила.",
+        "english": "In each turning point after the first, whenever this operative is an ORATOR and performs Charge, Fall Back or Reposition during its activation, you can use this rule before it moves. Determine each other friendly SANCTIFIER benefitting from the SERMON and visible to this operative (or vice versa). After this operative ends that action, each selected friendly can immediately perform a free Charge, Fall Back or Reposition in your chosen order (choose separately for each), but cannot move more than or be removed and set up more than 3\" and must end still benefitting from the SERMON. If this operative is incapacitated before full resolution, e.g. Guard interruption, do not remove it until this rule is resolved.",
+        "proseTitles": [
+          "Lead the Procession"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "b56a0a0de4ba2791",
+    "expectedTitle": "Sanctifier Cherub",
+    "team": "Sanctifiers",
+    "source": {
+      "officialPdf": "https://assets.warhammer-community.com/eng_25-02_kt_teamrules_sanctifiers-3vpsecfbfe-vclbyfaed7.pdf",
+      "date": "2026-02-25",
+      "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/sanctifiers/",
+      "checkedOn": "2026-10-05",
+      "sourceTeam": "Sanctifiers",
+      "pdfPages": [
+        11
+      ],
+      "wahapediaSnapshotLineNumbers": [
+        267
+      ]
+    },
+    "blocks": [
+      {
+        "heading": "Cherub",
+        "russian": "При определении контроля над маркером цели считайте APL этого оперативника на 1 ниже. Это не меняет саму характеристику APL, поэтому другие изменения к ней складываются с этим эффектом. Если у оперативника приказ «Скрытность» (Conceal) и он находится в укрытии, его нельзя выбрать допустимой целью; это правило имеет приоритет над всеми остальными (например, над «Обнаружением» (Seek) и высотой (Vantage)), кроме выбора цели в пределах 2 дюймов. Этот оперативник не может использовать оружие, которого нет на его карточке, или выполнять уникальные действия, кроме «Побуждения» (Incentivise).",
+        "english": "Whenever determining control of an objective marker, treat this operative's APL stat as 1 lower. This isn't a change to its APL stat, so any changes are cumulative with this. Whenever this operative has a Conceal order and is in cover, it cannot be selected as a valid target, taking precedence over all other rules (e.g. Seek, Vantage terrain) except being within 2\". This operative cannot use any weapons that aren't on its datacard, or perform unique actions other than Incentivise.",
+        "proseTitles": [
+          "Cherub"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "04e9f1b2e0c6055a",
+    "expectedTitle": "Sanctifier Reliquant",
+    "team": "Sanctifiers",
+    "source": {
+      "officialPdf": "https://assets.warhammer-community.com/eng_25-02_kt_teamrules_sanctifiers-3vpsecfbfe-vclbyfaed7.pdf",
+      "date": "2026-02-25",
+      "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/sanctifiers/",
+      "checkedOn": "2026-10-05",
+      "sourceTeam": "Sanctifiers",
+      "pdfPages": [
+        11
+      ],
+      "wahapediaSnapshotLineNumbers": [
+        431
+      ]
+    },
+    "blocks": [
+      {
+        "heading": "Imperial Cult Devotion",
+        "russian": "Один раз за раунд, когда готовый дружественный оперативник SANCTIFIER выведен из строя, будучи видимым этому оперативнику и в пределах 6 дюймов от этого оперативника, вы можете применить это правило. Перед тем как убрать его из зоны боя, он может бесплатно выполнить одно действие, кроме «Ближнего боя» (Fight); для этого действия вы можете изменить его приказ. Затем уберите его из зоны боя обычным образом.",
+        "english": "Once per turning point, when a ready friendly SANCTIFIER operative is incapacitated while visible to and within 6\" of this operative, you can use this rule. If you do, before that operative is removed from the killzone, it can perform one free action (excluding Fight), and you can change its order to do so. It's then removed from the killzone as normal.",
+        "proseTitles": [
+          "Imperial Cult Devotion"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "04e9f1b2e0c6055a",
+    "expectedTitle": "Sanctifier Reliquant",
+    "team": "Sanctifiers",
+    "source": {
+      "officialPdf": "https://assets.warhammer-community.com/eng_25-02_kt_teamrules_sanctifiers-3vpsecfbfe-vclbyfaed7.pdf",
+      "date": "2026-02-25",
+      "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/sanctifiers/",
+      "checkedOn": "2026-10-05",
+      "sourceTeam": "Sanctifiers",
+      "pdfPages": [
+        11
+      ],
+      "wahapediaSnapshotLineNumbers": [
+        430
+      ]
+    },
+    "blocks": [
+      {
+        "heading": "Cult Icon",
+        "russian": "При определении контроля над маркером в пределах 4 дюймов от этого оперативника считайте суммарный APL дружественных оперативников SANCTIFIER, оспаривающих его, на 1 выше, если хотя бы один из них оспаривает маркер. Это не меняет саму характеристику APL, поэтому другие изменения к ней складываются с этим эффектом.",
+        "english": "Whenever determining control of a marker within 4\" of this operative, treat the total APL stat of friendly SANCTIFIER operatives that contest it as 1 higher if at least one friendly SANCTIFIER operative contests that marker. This isn't a change to the APL stat, so any changes are cumulative with this.",
+        "proseTitles": [
+          "Cult Icon"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "44615c91d47776bd",
+    "expectedTitle": "Sanctifier Salvationist",
+    "team": "Sanctifiers",
+    "source": {
+      "officialPdf": "https://assets.warhammer-community.com/eng_25-02_kt_teamrules_sanctifiers-3vpsecfbfe-vclbyfaed7.pdf",
+      "date": "2026-02-25",
+      "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/sanctifiers/",
+      "checkedOn": "2026-10-05",
+      "sourceTeam": "Sanctifiers",
+      "pdfPages": [
+        11
+      ],
+      "wahapediaSnapshotLineNumbers": [
+        446
+      ]
+    },
+    "blocks": [
+      {
+        "heading": "Conversion Field",
+        "russian": "Когда оперативник дальше 6 дюймов от этого оперативника стреляет по дружественному Освятителю (SANCTIFIER) в пределах 6 дюймов от этого оперативника, улучшите SAVE дружественного Освятителя на 1.",
+        "english": "Whenever an operative more than 6\" from this operative is shooting a friendly SANCTIFIER operative within 6\" of this operative, improve that friendly operative’s Save stat by 1.",
+        "proseTitles": [
+          "Conversion Field"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "de89c1ddc943f02b",
+    "expectedTitle": "Death Korps Bruiser",
+    "team": "Death Korps",
+    "source": {
+      "officialPdf": "https://assets.warhammer-community.com/eng_29-04_kill_team_team_rules_death_korps-t7f9rdqq5a-uzoyjhayvf.pdf",
+      "date": "2026-04-29",
+      "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/death-korps/",
+      "checkedOn": "2026-10-05",
+      "sourceTeam": "Death Korps",
+      "pdfPages": [
+        11
+      ],
+      "wahapediaSnapshotLineNumbers": [
+        264
+      ]
+    },
+    "blocks": [
+      {
+        "heading": "Bruiser",
+        "russian": "Один раз за раунд, когда этот оперативник участвует в ближнем бою или наносит ответный удар, на шаге разрешения кубиков атаки (Resolve Attack Dice) вы можете проигнорировать урон, нанесённый ему одним обычным успехом.\nЕсли этот оперативник выведен из строя во время действия «Сражаться» (Fight), до его удаления из зоны боя можно нанести врагу в этой последовательности удар одним из ваших неразыгранных успехов.",
+        "english": "Once per turning point, when this operative is fighting or retaliating, in the Resolve Attack Dice step, you can ignore the damage inflicted on it from one normal success. If this operative is incapacitated during the Fight action, you can strike the enemy operative in that sequence with one of your unresolved successes before it is removed from the killzone.",
+        "proseTitles": [
+          "Bruiser"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "4c321c989cc406b3",
+    "expectedTitle": "Death Korps Spotter",
+    "team": "Death Korps",
+    "source": {
+      "officialPdf": "https://assets.warhammer-community.com/eng_29-04_kill_team_team_rules_death_korps-t7f9rdqq5a-uzoyjhayvf.pdf",
+      "date": "2026-04-29",
+      "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/death-korps/",
+      "checkedOn": "2026-10-05",
+      "sourceTeam": "Death Korps",
+      "pdfPages": [
+        10
+      ],
+      "wahapediaSnapshotLineNumbers": [
+        176
+      ]
+    },
+    "blocks": [
+      {
+        "heading": "Spot · 1AP · SUPPORT",
+        "russian": "Выберите вражеского оперативника, видимого этому оперативнику. До конца раунда каждый раз, когда дружественный оперативник DEATH KORPS в пределах 3 дюймов от наблюдателя стреляет по выбранному врагу, вы можете применить эффект: дальнобойное оружие союзника получает правило «Игнорирует лёгкое укрытие» (Seek Light), а враг не может считаться заслонённым (obscured). Наблюдатель не может выполнять действие в дистанции контроля врага.",
+        "english": "Select one enemy operative visible to this operative. Until the end of the turning point, whenever a friendly DEATH KORPS operative within 3\" of this operative is shooting that enemy operative, you can use this effect. If you do, that friendly operative's ranged weapons have the Seek Light weapon rule and that enemy operative cannot be obscured. This operative cannot perform this action while within control range of an enemy operative.",
+        "proseTitles": [
+          "Spot"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "cf28c3ad159b7f6b",
+    "expectedTitle": "Death Korps Sapper",
+    "team": "Death Korps",
+    "source": {
+      "officialPdf": "https://assets.warhammer-community.com/eng_29-04_kill_team_team_rules_death_korps-t7f9rdqq5a-uzoyjhayvf.pdf",
+      "date": "2026-04-29",
+      "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/death-korps/",
+      "checkedOn": "2026-10-05",
+      "sourceTeam": "Death Korps",
+      "pdfPages": [
+        11
+      ],
+      "wahapediaSnapshotLineNumbers": [
+        356
+      ]
+    },
+    "blocks": [
+      {
+        "heading": "Detonate",
+        "russian": "Не выбирайте допустимую цель. Вместо этого стреляйте по каждому оперативнику в пределах 2 дюймов от вашего маркера мины, кроме тех, между которыми и маркером полностью находится тяжёлый террейн. Ни один из этих оперативников не может находиться в укрытии или считаться заслонённым. Для каждого проведите отдельную последовательность в выбранном вами порядке. Нельзя выбрать это оружие, если маркера мины нет в зоне боя. В конце действия уберите маркер мины из зоны боя.\nВ зонах боя с правилами тесного боя (Close Quarters) дистанционный детонатор (Remote Detonator) получает правило «Смертоносное 5+» (Lethal 5+).",
+        "english": "Don't select a valid target. Instead, shoot against each operative within 2\" of your Mine marker, unless Heavy terrain is wholly intervening between that operative and that marker. Each of those operatives cannot be in cover or obscured. Roll each sequence separately in an order of your choice. This weapon cannot be selected if your Mine marker isn't in the killzone. At the end of the action, remove your Mine marker from the killzone. In close quarters killzones, the Remote Detonator has Lethal 5+.",
+        "proseTitles": [
+          "Detonate"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "5f4b1734e4e5701d",
+    "expectedTitle": "Death Korps Watchmaster",
+    "team": "Death Korps",
+    "source": {
+      "officialPdf": "https://assets.warhammer-community.com/eng_29-04_kill_team_team_rules_death_korps-t7f9rdqq5a-uzoyjhayvf.pdf",
+      "date": "2026-04-29",
+      "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/death-korps/",
+      "checkedOn": "2026-10-05",
+      "sourceTeam": "Death Korps",
+      "pdfPages": [
+        11
+      ],
+      "wahapediaSnapshotLineNumbers": [
+        247
+      ]
+    },
+    "blocks": [
+      {
+        "heading": "Bring it Down!",
+        "russian": "Стратегический гамбит (STRATEGIC GAMBIT), если этот оперативник находится в зоне боя. Выберите одного врага: до шага готовности (Ready) следующей фазы стратегии он получает ваш жетон «Уничтожить цель!» (Bring it Down!). Когда дружественный оперативник Корпуса Смерти (DEATH KORPS) стреляет по этому врагу, сражается с ним или отвечает ему в ближнем бою, оружие союзника получает правило «Карающее» (Punishing).",
+        "english": "STRATEGIC GAMBIT if this operative is in the killzone. Select one enemy operative. Until the Ready step of the next Strategy phase it gains your Bring it Down! token. Whenever a friendly DEATH KORPS operative is shooting against, fighting against or retaliating against that enemy operative, its weapons have Punishing.",
+        "proseTitles": [
+          "Bring it Down!"
+        ],
+        "append": true,
+        "headingRussian": "Уничтожить цель!"
+      }
+    ]
+  },
+  {
+    "id": "441db3ee20051edb",
+    "expectedTitle": "In Death, Atonement",
+    "team": "Death Korps",
+    "source": {
+      "officialPdf": "https://assets.warhammer-community.com/eng_29-04_kill_team_team_rules_death_korps-t7f9rdqq5a-uzoyjhayvf.pdf",
+      "date": "2026-04-29",
+      "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/death-korps/",
+      "checkedOn": "2026-10-05",
+      "sourceTeam": "Death Korps",
+      "pdfPages": [
+        11
+      ],
+      "wahapediaSnapshotLineNumbers": [
+        191
+      ]
+    },
+    "blocks": [
+      {
+        "heading": "Rule",
+        "russian": "Примените этот приём перестрелки, когда готовый дружественный оперативник DEATH KORPS выведен из строя, если он не находится в дистанции контроля врагов. До удаления из зоны боя он может немедленно бесплатно выполнить одно действие; для этого можно изменить его приказ. В течение этого действия оперативник считается раненым.",
+        "english": "Use this firefight ploy when a ready friendly DEATH KORPS operative is incapacitated, if it isn't within control range of enemy operatives. Before it's removed from the killzone, it can immediately perform one free action (you can change its order to do so). That friendly operative is injured for the duration of that action.",
+        "proseTitles": [
+          "Rule"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "62075d25e05dea37",
+    "expectedTitle": "Death Korps Medic",
+    "team": "Death Korps",
+    "source": {
+      "officialPdf": "https://assets.warhammer-community.com/eng_29-04_kill_team_team_rules_death_korps-t7f9rdqq5a-uzoyjhayvf.pdf",
+      "date": "2026-04-29",
+      "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/death-korps/",
+      "checkedOn": "2026-10-05",
+      "sourceTeam": "Death Korps",
+      "pdfPages": [
+        11
+      ],
+      "wahapediaSnapshotLineNumbers": [
+        330,
+        331
+      ]
+    },
+    "blocks": [
+      {
+        "heading": "Medic!",
+        "russian": "Первый раз за раунд, когда другой дружественный оперативник Корпуса Смерти (DEATH KORPS) должен быть выведен из строя, находясь на виду у медика и в пределах 3 дюймов от него, вы можете применить это правило, если ни один из этих оперативников не находится в дистанции контроля врага. Тогда союзник остаётся в игре с 1 раной и не может быть выведен из строя до конца текущего действия. После действия он может немедленно бесплатно выполнить «Рывок» (Dash), но должен закончить перемещение в дистанции контроля медика. Уменьшите APL обоих оперативников на 1 до конца их следующих активаций соответственно; если правило применено во время активации спасённого оперативника, его активация завершается. Нельзя применять это правило, если медик выведен из строя или во время действия «Стрельба» (Shoot), когда медик был бы основной или вторичной целью.",
+        "english": "The first time during each turning point that another friendly DEATH KORPS operative would be incapacitated while visible to and within 3\" of this operative, you can use this rule, providing neither this nor that operative is within control range of an enemy operative. If you do, that friendly operative isn't incapacitated, has 1 wound remaining and cannot be incapacitated for the remainder of the action. After that action, that friendly operative can immediately perform a free Dash action, but must end that move within this operative's control range. Subtract 1 from this and that operative's APL stats until the end of their next activations respectively, and if this rule was used during that friendly operative's activation, that activation ends. You cannot use this rule if this operative is incapacitated, or if it's a Shoot action and this operative would be a primary or secondary target.",
+        "proseTitles": [
+          "Medic!"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "1eb451d73f195c35",
+    "expectedTitle": "ARBITES CHIRURGANT",
+    "team": "Exaction Squad",
+    "source": {
+      "officialPdf": "https://assets.warhammer-community.com/eng_17-06_kill_team_team_rules_exaction_squad_online_rules-w6tqairoed-qhpndqu8fq.pdf",
+      "date": "2026-06-17",
+      "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/exaction-squad/",
+      "checkedOn": "2026-10-05",
+      "sourceTeam": "Exaction Squad",
+      "pdfPages": [
+        11
+      ],
+      "wahapediaSnapshotLineNumbers": [
+        295,
+        296
+      ]
+    },
+    "blocks": [
+      {
+        "heading": "Medic!",
+        "russian": "Первый раз за раунд, когда другой дружественный оперативник Карательного отряда (EXACTION SQUAD) должен быть выведен из строя, находясь на виду у медика и в пределах 3 дюймов от него, вы можете применить это правило, если ни один из этих оперативников не находится в дистанции контроля врага. Тогда союзник остаётся в игре с 1 раной и не может быть выведен из строя до конца текущего действия. После действия он может немедленно бесплатно выполнить «Рывок» (Dash), но должен закончить перемещение в дистанции контроля медика. Уменьшите APL обоих оперативников на 1 до конца их следующих активаций соответственно; если правило применено во время активации спасённого оперативника, его активация завершается. Нельзя применять это правило, если медик выведен из строя или во время действия «Стрельба» (Shoot), когда медик был бы основной или вторичной целью.",
+        "english": "The first time during each turning point that another friendly EXACTION SQUAD operative would be incapacitated while visible to and within 3\" of this operative, you can use this rule, providing neither this nor that operative is within control range of an enemy operative. If you do, that friendly operative isn't incapacitated, has 1 wound remaining and cannot be incapacitated for the remainder of the action. After that action, that friendly operative can immediately perform a free Dash action, but must end that move within this operative's control range. Subtract 1 from this and that operative's APL stats until the end of their next activations respectively, and if this rule was used during that friendly operative's activation, that activation ends. You cannot use this rule if this operative is incapacitated, or if it's a Shoot action and this operative would be a primary or secondary target.",
+        "proseTitles": [
+          "Medic!"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "815febbfcea2148c",
+    "expectedTitle": "Medical Technician Pathfinder",
+    "team": "Pathfinders",
+    "source": {
+      "officialPdf": "https://assets.warhammer-community.com/eng_pathfinders_online_rules-dj9snutji1-zk16jiuxxe.pdf",
+      "date": "2026-08-26",
+      "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/pathfinders/",
+      "checkedOn": "2026-10-05",
+      "sourceTeam": "Pathfinders",
+      "pdfPages": [
+        12
+      ],
+      "wahapediaSnapshotLineNumbers": [
+        413
+      ]
+    },
+    "blocks": [
+      {
+        "heading": "Medic!",
+        "russian": "Первый раз за раунд, когда другой дружественный оперативник Следопытов (PATHFINDER), кроме Дрона (DRONE), должен быть выведен из строя, находясь на виду у медика и в пределах 3 дюймов от него, вы можете применить это правило, если ни один из этих оперативников не находится в дистанции контроля врага. Тогда союзник остаётся в игре с 1 раной и не может быть выведен из строя до конца текущего действия. После действия он может немедленно бесплатно выполнить «Рывок» (Dash), но должен закончить перемещение в дистанции контроля медика. Уменьшите APL обоих оперативников на 1 до конца их следующих активаций соответственно; если правило применено во время активации спасённого оперативника, его активация завершается. Нельзя применять это правило, если медик выведен из строя или во время действия «Стрельба» (Shoot), когда медик был бы основной или вторичной целью.",
+        "english": "The first time during each turning point that another friendly PATHFINDER operative (excluding DRONE) would be incapacitated while visible to and within 3\" of this operative, you can use this rule, providing neither this nor that operative is within control range of an enemy operative. If you do, that friendly operative isn't incapacitated, has 1 wound remaining and cannot be incapacitated for the remainder of the action. After that action, that friendly operative can immediately perform a free Dash action, but must end that move within this operative's control range. Subtract 1 from this and that operative's APL stats until the end of their next activations respectively, and if this rule was used during that friendly operative's activation, that activation ends. You cannot use this rule if this operative is incapacitated, or if it's a Shoot action and this operative would be a primary or secondary target.",
+        "proseTitles": [
+          "Medic!"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "b3b14444f3b1810e",
+    "expectedTitle": "Death Korps Medic · Medikit",
+    "team": "Death Korps",
+    "source": {
+      "officialPdf": "https://assets.warhammer-community.com/eng_29-04_kill_team_team_rules_death_korps-t7f9rdqq5a-uzoyjhayvf.pdf",
+      "date": "2026-04-29",
+      "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/death-korps/",
+      "checkedOn": "2026-10-05",
+      "sourceTeam": "Death Korps",
+      "pdfPages": [
+        2
+      ],
+      "wahapediaSnapshotLineNumbers": [
+        334
+      ]
+    },
+    "blocks": [
+      {
+        "heading": "Medikit · 1AP",
+        "russian": "Выберите дружественного оперативника DEATH KORPS в дистанции контроля этого медика: он восстанавливает до 2D3 потерянных ран. Нельзя выбрать оперативника, на которого в этом раунде уже применяли правило «Медик!» (Medic!). Медик не может выполнять действие в дистанции контроля врага.",
+        "english": "Select one friendly DEATH KORPS operative within this operative's control range to regain up to 2D3 lost wounds. It cannot be an operative that the Medic! rule was used on during this turning point. This operative cannot perform this action while within control range of an enemy operative.",
+        "proseTitles": [
+          "Medikit"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "5cfd07669b1c0709",
+    "expectedTitle": "ARBITES LEASHMASTER",
+    "team": "Exaction Squad",
+    "source": {
+      "officialPdf": "https://assets.warhammer-community.com/eng_17-06_kill_team_team_rules_exaction_squad_online_rules-w6tqairoed-qhpndqu8fq.pdf",
+      "date": "2026-06-17",
+      "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/exaction-squad/",
+      "checkedOn": "2026-10-05",
+      "sourceTeam": "Exaction Squad",
+      "pdfPages": [
+        11
+      ],
+      "wahapediaSnapshotLineNumbers": [
+        343
+      ]
+    },
+    "blocks": [
+      {
+        "heading": "Attack Pattern: Strategic Gambit",
+        "russian": "В первом раунде выберите для дружественного кибермастифа R-VR Карательного отряда два разных боевых режима на весь бой: «Агрессивный» (Aggressive): его оружие ближнего боя получает правило «Неумолимое» (Relentless). «Стремительный» (Swift): увеличьте его показатель перемещения (Move) на 2 дюйма. «Оборонительный» (Defensive): улучшите его показатель спас-броска (Save) на 1.",
+        "english": "In the first turning point, select two of the following attack patterns for a friendly EXACTION SQUAD R-VR CYBER-MASTIFF operative to have for the battle: Aggressive: Its melee weapons have the Relentless weapon rule. Swift: Add 2″ to its Move stat. Defensive: Improve its Save stat by 1.",
+        "proseTitles": [
+          "Attack Pattern"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "e66e9094e783e53a",
+    "expectedTitle": "ARBITES LEASHMASTER",
+    "team": "Exaction Squad",
+    "source": {
+      "officialPdf": "https://assets.warhammer-community.com/eng_17-06_kill_team_team_rules_exaction_squad_online_rules-w6tqairoed-qhpndqu8fq.pdf",
+      "date": "2026-06-17",
+      "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/exaction-squad/",
+      "checkedOn": "2026-10-05",
+      "sourceTeam": "Exaction Squad",
+      "pdfPages": [
+        11
+      ],
+      "wahapediaSnapshotLineNumbers": [
+        345
+      ]
+    },
+    "blocks": [
+      {
+        "heading": "R-VR Command (0AP)",
+        "russian": "Выберите одного дружественного кибермастифа R-VR Карательного отряда и измените один из его боевых режимов.",
+        "english": "Select one friendly EXACTION SQUAD R-VR CYBER-MASTIFF operative and change one of its attack patterns.",
+        "proseTitles": [
+          "R-VR Command"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "d8adfd099d9ce7c9",
+    "expectedTitle": "ARBITES REVELATUM",
+    "team": "Exaction Squad",
+    "source": {
+      "officialPdf": "https://assets.warhammer-community.com/eng_17-06_kill_team_team_rules_exaction_squad_online_rules-w6tqairoed-qhpndqu8fq.pdf",
+      "date": "2026-06-17",
+      "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/exaction-squad/",
+      "checkedOn": "2026-10-05",
+      "sourceTeam": "Exaction Squad",
+      "pdfPages": [
+        11
+      ],
+      "wahapediaSnapshotLineNumbers": [
+        442
+      ]
+    },
+    "blocks": [
+      {
+        "heading": "Spot (1AP)",
+        "russian": "ПОДДЕРЖКА. Выберите одного вражеского оперативника, видимого этому оперативнику и в пределах 8 дюймов от него. До конца раунда, когда дружественный оперативник Карательного отряда в пределах 3 дюймов от этого оперативника стреляет по выбранному противнику, вы можете применить этот эффект. Если применили: дальнобойное оружие дружественного оперативника получает правило «Подсветка» (Seek Light); выбранный противник не может быть заслонённым (Obscured). Этот оперативник не может выполнять это действие в пределах зоны контроля вражеского оперативника.",
+        "english": "SUPPORT. Select one enemy operative visible to and within 8\" of this operative. Until the end of the turning point, whenever a friendly EXACTION SQUAD operative within 3″ of this operative is shooting that enemy operative, you can use this effect. If you do: that friendly operative’s ranged weapons have the Seek Light weapon rule; that enemy operative cannot be obscured. This operative cannot perform this action while within control range of an enemy operative.",
+        "proseTitles": [
+          "Spot"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "49d94710ae79ea39",
+    "expectedTitle": "Arbites Revelatum",
+    "team": "Exaction Squad",
+    "source": {
+      "officialPdf": "https://assets.warhammer-community.com/eng_17-06_kill_team_team_rules_exaction_squad_online_rules-w6tqairoed-qhpndqu8fq.pdf",
+      "date": "2026-06-17",
+      "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/exaction-squad/",
+      "checkedOn": "2026-10-05",
+      "sourceTeam": "Exaction Squad",
+      "pdfPages": [
+        11
+      ],
+      "wahapediaSnapshotLineNumbers": [
+        442
+      ]
+    },
+    "blocks": [
+      {
+        "heading": "Spot · 1 AP",
+        "russian": "Поддержка (Support). Выберите вражеского оперативника, видимого этому оперативнику и в пределах 8 дюймов от него. До конца раунда, когда дружественный оперативник-экзакшн-сквад (EXACTION SQUAD) в пределах 3 дюймов от этого оперативника стреляет по выбранному врагу, примените эффект: оружие дальнего боя дружественного оперативника получает правило «Обнаружение в свете» (Seek Light), а враг не может считаться заслонённым (Obscured). Этот оперативник не может выполнять действие в дистанции контроля врага.",
+        "english": "Support. Select one enemy operative visible to and within 8\" of this operative. Until the end of the turning point, whenever a friendly EXACTION SQUAD operative within 3 inches of this operative is shooting that enemy operative, you can use this effect: that friendly operative’s ranged weapons have the Seek Light weapon rule, and that enemy operative cannot be obscured. This operative cannot perform this action while within control range of an enemy operative.",
+        "proseTitles": [
+          "Spot"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "476e963e7c82df41",
+    "expectedTitle": "Special-Issue Shells",
+    "team": "Exaction Squad",
+    "source": {
+      "officialPdf": "https://assets.warhammer-community.com/eng_17-06_kill_team_team_rules_exaction_squad_online_rules-w6tqairoed-qhpndqu8fq.pdf",
+      "date": "2026-06-17",
+      "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/exaction-squad/",
+      "checkedOn": "2026-10-05",
+      "sourceTeam": "Exaction Squad",
+      "pdfPages": [
+        11
+      ],
+      "wahapediaSnapshotLineNumbers": [
+        221
+      ]
+    },
+    "blocks": [
+      {
+        "heading": "Special-Issue Shells",
+        "russian": "До двух раз за раунд, когда дружественный оперативник-экзакшн-сквад (EXACTION SQUAD) выполняет действие «Стрельба» (Shoot) и выбирает боевой дробовик, дробовик палача, прицельный шотпистоль или шотпистоль, вы можете применить это правило. До конца действия выбранное оружие получает одно из правил: «Насыщение огнём» (Saturate); «Бронебойность 1» (Piercing 1), но только если характеристика спасброска (Save) цели — 3+ или лучше; «Поток 1 дюйм» (Torrent 1\"), но нельзя выбирать более одной вторичной цели.",
+        "english": "Up to twice per turning point, when a friendly EXACTION SQUAD operative is performing the Shoot action and you select a combat shotgun, executioner shotgun, scoped shotpistol or shotpistol, you can use this rule. If you do, you can select one of the following weapon rules for that weapon to have until the end of that action: Saturate; Piercing 1, but only if the target has a Save stat of 3+ or better; Torrent 1 inch, but you cannot select more than one secondary target.",
+        "proseTitles": [
+          "Special-Issue Shells"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "6065eef7a86daf8f",
+    "expectedTitle": "Manacles",
+    "team": "Exaction Squad",
+    "source": {
+      "officialPdf": "https://assets.warhammer-community.com/eng_17-06_kill_team_team_rules_exaction_squad_online_rules-w6tqairoed-qhpndqu8fq.pdf",
+      "date": "2026-06-17",
+      "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/exaction-squad/",
+      "checkedOn": "2026-10-05",
+      "sourceTeam": "Exaction Squad",
+      "pdfPages": [
+        11
+      ],
+      "wahapediaSnapshotLineNumbers": [
+        211
+      ]
+    },
+    "blocks": [
+      {
+        "heading": "Manacles",
+        "russian": "Когда вражеский оперативник собирается выполнить действие «Отступление» (Fall Back), находясь в дистанции контроля дружественного оперативника-экзакшн-сквад (EXACTION SQUAD), и в дистанции контроля этого дружественного оперативника нет других вражеских оперативников, вы можете применить это правило. Бросьте 2D6 или 1D6, если у вражеского оперативника характеристика ран (Wounds) выше, чем у дружественного. Если выпал результат 4+, этот враг не может выполнить действие в текущую активацию или контрдействие; AP за него не тратятся.\nЕсли выпал хотя бы один результат 4+, в этом раунде «Наручники» (Manacles) больше применять нельзя.",
+        "english": "Whenever an enemy operative would perform the Fall Back action while within control range of a friendly EXACTION SQUAD operative, if no other enemy operatives are within that friendly operative’s control range, you can use this rule. If you do, roll two D6, or one D6 if that enemy operative has a higher Wounds stat than that friendly operative. If any result is a 4+, that enemy operative cannot perform that action during that activation or counteraction (no AP are spent on it). If any result is a 4+, you cannot use this rule again during this turning point.",
+        "proseTitles": [
+          "Manacles"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "66984dcee5674e36",
+    "expectedTitle": "Markerlights · Continuation",
+    "team": "Pathfinders",
+    "source": {
+      "officialPdf": "https://assets.warhammer-community.com/eng_pathfinders_online_rules-dj9snutji1-zk16jiuxxe.pdf",
+      "date": "2026-08-26",
+      "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/pathfinders/",
+      "checkedOn": "2026-10-05",
+      "sourceTeam": "Pathfinders",
+      "pdfPages": [
+        11,
+        12
+      ],
+      "wahapediaSnapshotLineNumbers": [
+        156,
+        159
+      ]
+    },
+    "blocks": [
+      {
+        "heading": "Additional rules",
+        "russian": "Хотя действие «Маркерный луч» (Markerlight) доступно лишь некоторым оперативникам-следопытам (PATHFINDER), его эффектами пользуются все следопыты. Когда дружественный оперативник-следопыт стреляет оружием со своей карточки (кроме термоядерной гранаты штурмового гренадёра (ASSAULT GRENADIER)), это оружие получает правила в зависимости от числа ваших жетонов маркерного луча (Markerlight) у цели. Эффекты складываются: если на враге два жетона, в этой последовательности действуют правила для одного и двух жетонов. 1 жетон: «Насыщение» (Saturate) и «Сбалансированное» (Balanced). 2 жетона: улучшите HIT стрелкового оружия на 1, максимум до 3+. 3 жетона: цель не может считаться заслонённой (Obscured). 4 жетона: «Обнаружение в свете» (Seek Light). 5 жетонов: «Обнаружение» (Seek).",
+        "english": "While only some PATHFINDER operatives can perform the Markerlight action, all PATHFINDER operatives can benefit from its effects. Whenever a friendly PATHFINDER operative is shooting with a weapon from its datacard (excluding ASSAULT GRENADIER’s fusion grenade), it has additional rules determined by the number of your Markerlight tokens the target has. These are cumulative, so if an enemy operative has two of your Markerlight tokens, the friendly operative shooting it has the rules for 1 and 2 tokens during that sequence: 1 token: Saturate and Balanced. 2 tokens: Improve ranged Hit by 1, to a maximum of 3+. 3 tokens: The target cannot be obscured. 4 tokens: Seek Light. 5 tokens: Seek.",
+        "proseTitles": [
+          "Additional rules"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "96862dbfd459399f",
+    "expectedTitle": "Saviour Protocols",
+    "team": "Pathfinders",
+    "source": {
+      "officialPdf": "https://assets.warhammer-community.com/eng_pathfinders_online_rules-dj9snutji1-zk16jiuxxe.pdf",
+      "date": "2026-08-26",
+      "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/pathfinders/",
+      "checkedOn": "2026-10-05",
+      "sourceTeam": "Pathfinders",
+      "pdfPages": [
+        12
+      ],
+      "wahapediaSnapshotLineNumbers": [
+        197
+      ]
+    },
+    "blocks": [
+      {
+        "heading": "Saviour Protocols",
+        "russian": "Примените этот приём перестрелки, когда дружественный оперативник-следопыт (PATHFINDER), кроме ДРОНА (DRONE), выбран допустимой целью действия «Стрельба» (Shoot). Выберите видимого первого оперативника дружественного дрона-следопыта в пределах 3 дюймов от него: теперь допустимой целью становится этот дрон, даже если обычно он не считался бы допустимой целью. Приём не действует против оружия с правилом «Взрыв» (Blast) или «Поток» (Torrent).\nЗаменяющий дрон получает укрытие (Cover) или заслонение (Obscured) только если их имела исходная цель.",
+        "english": "Use this firefight ploy when a friendly PATHFINDER operative (excluding DRONE) is selected as the valid target of a Shoot action. Select one friendly PATHFINDER DRONE operative visible to and within 3 inches of that first friendly operative to become the valid target instead (even if it wouldn’t normally be valid for this). This ploy has no effect if the ranged weapon has the Blast or Torrent weapon rule. That other operative is only in cover or obscured if the original target was.",
+        "proseTitles": [
+          "Saviour Protocols"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "18a38cfefdaa1e3b",
+    "expectedTitle": "Point-Blank Fusillade",
+    "team": "Pathfinders",
+    "source": {
+      "officialPdf": "https://assets.warhammer-community.com/eng_pathfinders_online_rules-dj9snutji1-zk16jiuxxe.pdf",
+      "date": "2026-08-26",
+      "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/pathfinders/",
+      "checkedOn": "2026-10-05",
+      "sourceTeam": "Pathfinders",
+      "pdfPages": [
+        12
+      ],
+      "wahapediaSnapshotLineNumbers": [
+        203
+      ]
+    },
+    "blocks": [
+      {
+        "heading": "Point-Blank Fusillade",
+        "russian": "Примените этот приём перестрелки, когда дружественный оперативник-следопыт (PATHFINDER), кроме ДРОНА (DRONE), отвечает ударом и в начале этой активации или контрдействия не находился в дистанции контроля вражеского оперативника. В этой последовательности он может использовать одно своё оружие дальнего боя как оружие ближнего боя; нельзя выбирать оружие, в названии которого есть слово «граната». При этом оперативник не может блокировать, а правила его оружия «Сокрушительное» (Devastating), «Бронебойность» (Piercing) и «Поток» (Torrent) не действуют до конца последовательности.\nЕсли дружественный оперативник готов (Ready), имеет приказ «Бой» (Engage) и отвечает в ближнем бою импульсным оружием (Pulse weapon), вы разыгрываете первый кубик атаки: защитник действует раньше атакующего.",
+        "english": "Use this firefight ploy when a friendly PATHFINDER operative (excluding DRONE) is retaliating, if it wasn’t within control range of enemy operatives at the start of that activation or counteraction. You can use one of its ranged weapons as a melee weapon (excluding a weapon that has the word ‘grenade’ in its name) during that sequence. If you do, you cannot block during that sequence, and the following weapon rules have no effect on its weapons until the end of that sequence: Devastating, Piercing, Torrent. If that friendly operative is ready, has an Engage order and is retaliating with a pulse weapon, you resolve the first attack dice (i.e. defender instead of attacker).",
+        "proseTitles": [
+          "Point-Blank Fusillade"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ea97e368880c1a1a",
+    "expectedTitle": "Recon Sweep",
+    "team": "Pathfinders",
+    "source": {
+      "officialPdf": "https://assets.warhammer-community.com/eng_pathfinders_online_rules-dj9snutji1-zk16jiuxxe.pdf",
+      "date": "2026-08-26",
+      "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/pathfinders/",
+      "checkedOn": "2026-10-05",
+      "sourceTeam": "Pathfinders",
+      "pdfPages": [
+        12
+      ],
+      "wahapediaSnapshotLineNumbers": [
+        166
+      ]
+    },
+    "blocks": [
+      {
+        "heading": "Recon Sweep",
+        "russian": "Выберите один край зоны боевых действий, кроме вашего собственного. Каждый дружественный оперативник-следопыт (PATHFINDER), полностью находящийся не далее чем в 6 дюймах от этого края, может немедленно бесплатно выполнить действие «Рывок» (Dash) в выбранном вами порядке. Каждый из них должен закончить перемещение полностью в пределах 6 дюймов от любого края зоны боевых действий, кроме вашего собственного.\nЭту уловку нельзя использовать в первом раунде.",
+        "english": "Select one killzone edge (excluding your own). Each friendly PATHFINDER operative that’s wholly within 6 inches of that edge can immediately perform a free Dash action in an order of your choice, but each that does so must end that move wholly within 6 inches of a killzone edge (excluding your own). You cannot use this ploy during the first turning point.",
+        "proseTitles": [
+          "Recon Sweep"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "eb858a073a9bead4",
+    "expectedTitle": "Photon Grenade",
+    "team": "Pathfinders",
+    "source": {
+      "officialPdf": "https://assets.warhammer-community.com/eng_pathfinders_online_rules-dj9snutji1-zk16jiuxxe.pdf",
+      "date": "2026-08-26",
+      "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/pathfinders/",
+      "checkedOn": "2026-10-05",
+      "sourceTeam": "Pathfinders",
+      "pdfPages": [
+        12
+      ],
+      "wahapediaSnapshotLineNumbers": [
+        222
+      ]
+    },
+    "blocks": [
+      {
+        "heading": "Photon Grenade",
+        "russian": "Один раз за раунд дружественный оперативник-следопыт (PATHFINDER), у которого на карточке есть действие «Маркерный луч» (Markerlight), кроме ДРОНА (DRONE), может выполнить уникальное действие «Фотонная граната» (Photon Grenade) за 1 AP. Выберите одного видимого этому оперативнику врага и бросьте D6. При результате 3+ до конца следующей активации цели уменьшите её характеристику перемещения (Move) на 2 дюйма. Оперативник не может выполнять это действие, находясь в дистанции контроля вражеского оперативника.",
+        "english": "Once per turning point, a friendly PATHFINDER operative that has the Markerlight action on their datacard (excluding DRONE) can perform the following unique action: Photon Grenade · 1 AP. Select one enemy operative visible to this operative and roll one D6: on a 3+, until the end of that operative’s next activation, subtract 2 inches from its Move stat. An operative cannot perform this action while within control range of an enemy operative.",
+        "proseTitles": [
+          "Photon Grenade"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "5a9967746d77f50b",
+    "expectedTitle": "High-Intensity Markerlight",
+    "team": "Pathfinders",
+    "source": {
+      "officialPdf": "https://assets.warhammer-community.com/eng_pathfinders_online_rules-dj9snutji1-zk16jiuxxe.pdf",
+      "date": "2026-08-26",
+      "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/pathfinders/",
+      "checkedOn": "2026-10-05",
+      "sourceTeam": "Pathfinders",
+      "pdfPages": [
+        12
+      ],
+      "wahapediaSnapshotLineNumbers": [
+        214
+      ]
+    },
+    "blocks": [
+      {
+        "heading": "High-Intensity Markerlight",
+        "russian": "До двух раз за раунд, когда дружественный оперативник-следопыт (PATHFINDER), кроме дрона-маркера MV7 (MV7 MARKER DRONE), выполняет действие «Маркерный луч» (Markerlight), вы можете применить это правило. Выбранный вражеский оперативник получает два ваших жетона маркерного луча вместо одного.",
+        "english": "Up to twice per turning point, when a friendly PATHFINDER operative (excluding MV7 MARKER DRONE) performs the Markerlight action, you can use this rule. If you do, the enemy operative you select gains two of your Markerlight tokens (instead of one).",
+        "proseTitles": [
+          "High-Intensity Markerlight"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "f2e5dd5c64bf7c37",
+    "expectedTitle": "Shas’Ui Pathfinder",
+    "team": "Pathfinders",
+    "source": {
+      "officialPdf": "https://assets.warhammer-community.com/eng_pathfinders_online_rules-dj9snutji1-zk16jiuxxe.pdf",
+      "date": "2026-08-26",
+      "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/pathfinders/",
+      "checkedOn": "2026-10-05",
+      "sourceTeam": "Pathfinders",
+      "pdfPages": [
+        12
+      ],
+      "wahapediaSnapshotLineNumbers": [
+        246
+      ]
+    },
+    "blocks": [
+      {
+        "heading": "Art of War · Once per battle Strategic Gambit",
+        "russian": "Стратегический гамбит (STRATEGIC GAMBIT), если этот оперативник находится в зоне боя. Выберите один эффект до конца раунда. Каждый вариант можно выбирать не больше одного раза за бой:\n• Мон’ка (Mont’ka): увеличьте MOVE дружественных Следопытов (PATHFINDER) на 1 дюйм.\n• Кауйон (Kauyon): дружественные Следопыты с приказом «Скрытность» (Conceal) могут бесплатно выполнять «Маркерный луч» (Markerlight) в свою активацию.",
+        "english": "STRATEGIC GAMBIT if this operative is in the killzone. Select one option and apply its rules until the end of the turning point. You cannot select each option more than once per battle. Mont’ka: Add 1\" to friendly PATHFINDER Move. Kauyon: Friendly PATHFINDER operatives can perform a free Markerlight during their activation if they have Conceal.",
+        "proseTitles": [
+          "Art of War"
+        ],
+        "newHeadingEnglish": "Art of War · Strategic Gambit",
+        "headingRussian": "Военное искусство · стратегический гамбит"
+      }
+    ]
+  },
+  {
+    "id": "9499a11d569b1821",
+    "expectedTitle": "Transpectral Interference Pathfinder",
+    "team": "Pathfinders",
+    "source": {
+      "officialPdf": "https://assets.warhammer-community.com/eng_pathfinders_online_rules-dj9snutji1-zk16jiuxxe.pdf",
+      "date": "2026-08-26",
+      "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/pathfinders/",
+      "checkedOn": "2026-10-05",
+      "sourceTeam": "Pathfinders",
+      "pdfPages": [
+        12
+      ],
+      "wahapediaSnapshotLineNumbers": [
+        344
+      ]
+    },
+    "blocks": [
+      {
+        "heading": "Multi-Dimensional Vision · 1 AP",
+        "russian": "Когда этот оперативник стреляет, вражеские оперативники не могут считаться заслонёнными (Obscured).",
+        "english": "Whenever this operative is shooting, enemy operatives cannot be obscured.",
+        "proseTitles": [
+          "Multi-Dimensional Vision"
+        ],
+        "newHeadingEnglish": "Multi-Dimensional Vision",
+        "headingRussian": "Многомерное зрение",
+        "moveCategory": "abilities"
+      }
+    ]
+  },
+  {
+    "id": "20f85d7b56121c9b",
+    "expectedTitle": "MV33 Grav-Inhibitor Drone",
+    "team": "Pathfinders",
+    "source": {
+      "officialPdf": "https://assets.warhammer-community.com/eng_pathfinders_online_rules-dj9snutji1-zk16jiuxxe.pdf",
+      "date": "2026-08-26",
+      "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/pathfinders/",
+      "checkedOn": "2026-10-05",
+      "sourceTeam": "Pathfinders",
+      "pdfPages": [
+        12
+      ],
+      "wahapediaSnapshotLineNumbers": [
+        594
+      ]
+    },
+    "blocks": [
+      {
+        "heading": "Grav-Inhibitor",
+        "russian": "Когда враг выполняет действие с перемещением, кроме «Рывка» (Dash), если он перемещается в место, видимое этому оперативнику и в пределах 6 дюймов от него, считайте пройденную дистанцию на 2 дюйма больше. Игнорируйте дополнительную дистанцию по особенностям террейна «Заграждающий» (Obstructing) и «Доступный» (Accessible).\nКогда враг сражается или отвечает в ближнем бою, будучи видимым этому оперативнику и в пределах 6 дюймов от него, ухудшите HIT оружия ближнего боя врага на 1. Это суммируется с ранением (Injured).",
+        "english": "Whenever an enemy operative performs an action in which it moves (excluding Dash), if it would move visible to and within 6\" of this operative, treat the distance as an additional 2\" and ignore additional distances from Obstructing and Accessible terrain. Whenever an enemy is fighting or retaliating while visible to and within 6\" of this operative, worsen its melee Hit by 1. This is cumulative with being injured.",
+        "proseTitles": [
+          "Grav-Inhibitor"
+        ]
+      }
+    ]
+  }
+]

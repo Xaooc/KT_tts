@@ -1,0 +1,18 @@
+const fs=require('fs');
+const report=JSON.parse(fs.readFileSync('output/reference-hud-verification.json'));
+if(!report.passed)throw Error('Reference checks not passed');
+const library=JSON.parse(fs.readFileSync('output/reference-hud-library.json'));
+const progress=JSON.parse(fs.readFileSync('output/current-progress.json'));
+progress.referenceHUD={...report,teamRuleEntries:Object.values(library.teams).reduce((n,t)=>n+t.entries.length,0),commonWeaponRules:library.common.length,universalEquipment:library.universal.length};
+const ploys=JSON.parse(fs.readFileSync('output/ploy-panel-verification.json'));if(!ploys.passed)throw Error('Ploy panel checks not passed');progress.ployPanel=ploys;
+progress.updatedAt=new Date().toISOString();
+fs.writeFileSync('output/current-progress.json',JSON.stringify(progress,null,2));
+const file='output/README.txt';let text=fs.readFileSync(file,'utf8');
+const heading='СПРАВОЧНИК В ОКНЕ R\n';
+const body=heading+'Над панелью модели: «Способности», «Трейты оружия», «Справочник отряда».\nНаведение на WR показывает правила выбранного профиля; отдельная кнопка «?» у оружия открывает их для чтения.\nРазделы: «Модель», «Оружие», «Отряд», «Уловки», «Снаряжение», «FAQ».\nПоиск на русском или английском: введите запрос и нажмите Enter.\nВ снаряжении доступны вещи фракции и 10 универсальных вариантов, включая правила оборотов.\nДлинные тексты прокручиваются. Окно можно переместить и закрыть кнопкой ×.\nТекст справочника встроен в Lua; PDF и браузер для него не нужны.\nПосле обновления перезагрузите русский стол и набор KT41-RU.\n\n';
+if(!text.includes(heading))text=text.replace('СОДЕРЖИМОЕ\n',body+'СОДЕРЖИМОЕ\n');
+const ployHeading='УЛОВКИ НА СТОЛЕ\n';
+const ployBody=ployHeading+'Кнопка «Уловки» — в левом верхнем углу экрана и возле табло, рядом с кнопкой обновления панели.\nВыберите свой отряд; выбор не меняется от просмотра чужих моделей через R.\nРазделы: «Стратегические», «Боевые», «Напоминания». Поиск: русский/английский запрос и Enter.\n«Отметить применение» отмечает уловку для этого раунда; повторное нажатие снимает отметку.\n«Закрепить» сохраняет напоминание. CP и игровые эффекты применяются вручную.\n«Конец раунда» на столе сбрасывает отметки всех игроков. Напоминания остаются до снятия.\n«Сброс отметок» очищает только ваш учёт. Выбор и отметки сохраняются вместе со столом.\nКомандный переброс допускает несколько отметок и отмену одной ошибочной отметки.\n\n';
+if(!text.includes(ployHeading))text=text.replace('СОДЕРЖИМОЕ\n',ployBody+'СОДЕРЖИМОЕ\n');
+fs.writeFileSync(file,text);
+console.log(progress.referenceHUD);

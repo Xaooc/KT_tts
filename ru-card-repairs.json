@@ -1,0 +1,246 @@
+{
+  "rules": {
+    "Ghost Rig": {
+      "source": "76e39cf471bdb76c",
+      "english": "While this operative has a Conceal order, your opponent cannot select it as a valid target unless it's within 6 inches of the operative trying to target it. This rule has no effect if this operative is not selected as the valid target, e.g. if it's a secondary target from Blast.",
+      "russian": "Пока у этого оперативника приказ «Скрытность» (Conceal), противник может выбрать его допустимой целью, только если он находится в пределах 6 дюймов от оперативника, который пытается выбрать его целью. Правило не действует, если этот оперативник не выбран допустимой целью, например если он является вторичной целью правила «Взрыв» (Blast)."
+    },
+    "Camouflaged": {
+      "source": "76e39cf471bdb76c",
+      "english": "Whenever an operative is shooting this operative, ignore the Piercing weapon rule and all cover saves are retained as critical successes. This rule has no effect if this operative is not selected as the valid target, e.g. if it's a secondary target from Blast.",
+      "russian": "Когда оперативник стреляет по этому оперативнику, игнорируйте правило оружия «Бронебойное» (Piercing), а все спасброски за укрытие сохраняйте как критические успехи. Правило не действует, если этот оперативник не выбран допустимой целью, например если он является вторичной целью правила «Взрыв» (Blast)."
+    },
+    "Warrior Instincts": {
+      "source": "1109b531d1be8546",
+      "english": "Whenever this operative is shooting, if you don't spend Communion points during that sequence, its neutron blaster has Accurate 1 until the end of that sequence.",
+      "russian": "Когда этот оперативник стреляет, если в этой последовательности вы не тратите очки Сопряжения (Communion), его нейтронный бластер получает правило «Точное 1» (Accurate 1) до конца последовательности."
+    },
+    "Neutron Bombardment": {
+      "source": "5ff5403b8e2195d3",
+      "english": "Place one of your Neutron Fallout markers within the primary target's control range.",
+      "russian": "Поместите один свой маркер «Нейтронные осадки» (Neutron Fallout) в пределах дистанции контроля основной цели."
+    },
+    "Neutron Fallout": {
+      "source": "5ff5403b8e2195d3",
+      "english": "Once during each enemy operative's activation, as soon as it's within 2 inches of one of your Neutron Fallout markers, inflict D3 damage on it (multiple markers are not cumulative).",
+      "russian": "Один раз за активацию каждого вражеского оперативника, как только он окажется в пределах 2 дюймов от одного вашего маркера «Нейтронные осадки», нанесите ему D3 урона. Эффекты нескольких маркеров не складываются."
+    },
+    "Communion Helm": {
+      "source": "c1991806d011da96",
+      "english": "Once during each of this operative's activations, you can spend 1 Communion point for free.",
+      "russian": "Один раз за каждую активацию этого оперативника вы можете бесплатно потратить 1 очко Сопряжения (Communion)."
+    },
+    "Commune": {
+      "source": "c1991806d011da96",
+      "english": "When selecting your operatives for the battle, also select one VESPID STINGWING strategy ploy. Whenever this operative is in the killzone and not within control range of an enemy operative, that ploy costs you 0CP.",
+      "russian": "При выборе оперативников для боя выберите также один стратегический приём Веспидов-жалоносцев (VESPID STINGWING). Пока этот оперативник находится в зоне боя (Killzone) и вне дистанции контроля врага, этот приём стоит 0 CP."
+    },
+    "Evasive Drone": {
+      "source": "c15b5ce0268ed326",
+      "english": "This operative cannot perform actions other than Aerial Guidance, Charge, Dash, Fall Back, Fight and Reposition. When determining control of an objective marker, treat its APL as 1 lower; this is not a change to its APL stat, so any changes are cumulative. When determining what's visible to it, the round disc at the top of the miniature is its head. While it has a Conceal order and is in cover, it cannot be selected as a valid target, taking precedence over all other rules except being within 2 inches. When an operative is shooting it, ignore Piercing.",
+      "russian": "Этот оперативник может выполнять только действия «Воздушное наведение» (Aerial Guidance), «Атака» (Charge), «Рывок» (Dash), «Отступление» (Fall Back), «Ближний бой» (Fight) и «Перемещение» (Reposition). При определении контроля над маркером цели считайте его APL на 1 ниже; это не меняет его характеристику APL, поэтому другие изменения складываются с этим эффектом. Для определения видимости головой этого оперативника считается круглый диск наверху миниатюры. Если у него приказ «Скрытность» (Conceal) и он в укрытии, его нельзя выбрать допустимой целью; это правило имеет приоритет над всеми другими, например «Поиском» (Seek) и выгодной высотой (Vantage terrain), кроме случаев, когда противник находится в пределах 2 дюймов. Когда оперативник стреляет по нему, игнорируйте правило оружия «Бронебойное» (Piercing)."
+    },
+    "Aerial Guidance (1AP)": {
+      "source": "c15b5ce0268ed326",
+      "english": "SUPPORT. Until the start of this operative's next activation, whenever another friendly VESPID STINGWING operative visible to and within 6 inches of this operative shoots an enemy visible to this operative, that friendly operative's ranged weapons have Lethal 5+ and Saturate. This has no effect while this operative is within control range of an enemy. This action cannot be performed within control range of an enemy.",
+      "russian": "ПОДДЕРЖКА (SUPPORT). До начала следующей активации этого оперативника, когда другой дружественный оперативник Веспидов-жалоносцев, видимый ему и находящийся в пределах 6 дюймов от него, стреляет по врагу, видимому этому оперативнику, дальнобойное оружие союзника получает правила «Смертоносное 5+» (Lethal 5+) и «Насыщение огнём» (Saturate). Эффект не действует, пока этот оперативник находится в дистанции контроля врага. Это действие нельзя выполнять в дистанции контроля врага."
+    },
+    "Skytorch": {
+      "source": "f50933d73f2d39ce",
+      "english": "An operative can only use this weapon during an activation in which it performed Reposition with FLY. If it does, don't select a valid target. Instead shoot against each operative within its torch zone, excluding operatives wholly underneath Vantage terrain; they aren't in cover or obscured. Roll each sequence separately from furthest to closest. The torch zone is the area between the operative's current and previous location. A 28mm round Skytorch marker can be temporarily placed underneath it before it moves to help determine this. Torrent 0 inches means you cannot select secondary targets outside the torch zone, but the weapon still has Torrent for all other rules purposes, e.g. Condensed Stronghold in Killzone Volkus.",
+      "russian": "Оперативник может использовать это оружие только в активацию, в которой выполнил действие «Перемещение» (Reposition) с Полётом (FLY). Не выбирайте допустимую цель: вместо этого стреляйте по каждому оперативнику в полосе огня, кроме оперативников, полностью находящихся под террейном высотной позиции (Vantage terrain); по выбранным таким образом оперативникам нельзя получить спасбросок за укрытие, и они не считаются заслонёнными. Проводите отдельные последовательности бросков по каждому оперативнику, от самого дальнего к ближайшему. Полоса огня — область между нынешним и предыдущим положением оперативника. Чтобы определить её, перед перемещением можно временно положить под оперативника круглый маркер «Небесный факел» диаметром 28 мм. Значение «Поток 0 дюймов» запрещает выбирать вторичные цели вне полосы огня, но для остальных правил оружие сохраняет «Поток» (Torrent), например для правила «Тесная крепость» (Condensed Stronghold) зоны боя «Волкус» (Killzone: Volkus) из основной книги Kill Team."
+    },
+    "Neutron Fragment": {
+      "source": "14edb1452bda9d0e",
+      "english": "If the target isn't incapacitated but you resolve any attack dice, the target gains one of your Neutron Fragment tokens. In the Ready step of each Strategy phase, separately inflict D3 damage on each operative for each Neutron Fragment token it has.",
+      "russian": "Если цель не выведена из строя, но вы разрешили хотя бы один кубик атаки, она получает один ваш жетон «Нейтронный осколок» (Neutron Fragment). На шаге подготовки (Ready) каждой стратегической фазы отдельно нанесите D3 урона каждому оперативнику за каждый такой жетон у него."
+    },
+    "Icon Bearer": {
+      "source": "25ee3d73420429d0",
+      "english": "When determining control of a marker, treat this operative's APL as 1 higher. This isn't a change to its APL stat, so any changes are cumulative.",
+      "russian": "При определении контроля над маркером считайте характеристику APL этого оперативника на 1 выше. Это не меняет его характеристику APL, поэтому другие изменения складываются с этим эффектом."
+    },
+    "Icon of Contagion": {
+      "source": "25ee3d73420429d0",
+      "english": "Whenever this operative is within your opponent's territory, the Contagion strategy ploy costs you 0CP.",
+      "russian": "Пока этот оперативник находится на территории противника, стратегический приём «Заражение» (Contagion) стоит вам 0 CP."
+    },
+    "Poisonous Miasma (1AP)": {
+      "source": "72a8b3e6637a1fca",
+      "english": "PSYCHIC. Select one enemy visible to and within 7 inches of this operative, or one enemy that's a valid target for it. That enemy gains one of your Poison tokens if it doesn't already have one; if it already has one, inflict 3 damage on it instead. This action cannot be performed within control range of an enemy.",
+      "russian": "ПСИХИЧЕСКОЕ (PSYCHIC). Выберите одного вражеского оперативника, который виден этому оперативнику и находится в пределах 7 дюймов от него, либо одного врага, являющегося для него допустимой целью. Выбранный враг получает один ваш жетон яда (Poison), если у него ещё нет такого жетона. Если жетон уже есть, вместо этого нанесите ему 3 урона.\nЭтот оперативник не может выполнять это действие в дистанции контроля вражеского оперативника."
+    },
+    "Putrescent Vitality (1AP)": {
+      "source": "72a8b3e6637a1fca",
+      "english": "PSYCHIC. Select one friendly operative visible to and within 3 inches of this operative, then roll 2D6. If the result is 7, it regains 7 lost wounds; otherwise it regains lost wounds equal to the highest D6. This action cannot be performed within control range of an enemy or more than once per turning point.",
+      "russian": "ПСИХИЧЕСКОЕ (PSYCHIC). Выберите одного дружественного оперативника, который виден этому оперативнику и находится в пределах 3 дюймов от него, затем бросьте 2D6. Если сумма равна 7, выбранный оперативник восстанавливает 7 потерянных ран; в противном случае он восстанавливает число потерянных ран, равное большему результату D6.\nЭтот оперативник не может выполнять это действие в дистанции контроля вражеского оперативника и не может выполнять его более одного раза за раунд."
+    },
+    "Flail (1AP)": {
+      "source": "4d2fca096f8445ed",
+      "english": "Inflict D3+2 damage on each other operative both visible to and within 2 inches of this operative. Roll separately for each. If it's an enemy and the D3 result is 3, it also gains one of your Poison tokens if it doesn't already have one. This action cannot be performed with a Conceal order or during an activation in which this operative performed more than one Fight action. It cannot perform more than one Fight action during an activation in which it performs this action.",
+      "russian": "Нанесите D3+2 урона каждому другому оперативнику, который одновременно виден этому оперативнику и находится в пределах 2 дюймов от него. Бросайте отдельно для каждого: если это враг и на D3 выпало 3, он также получает один ваш жетон яда (Poison), если у него ещё нет такого жетона.\nЭтот оперативник не может выполнять это действие, если у него приказ «Скрытность» (Conceal), а также во время активации, в которой он уже выполнил более одного действия «Ближний бой» (Fight). Во время активации, в которой он выполняет это действие, он не может выполнить более одного действия «Ближний бой» (Fight)."
+    },
+    "Grenadier": {
+      "source": "cda1037fbc50c4e2",
+      "english": "This operative can use blight and krak grenades (see faction and universal equipment). Doing so doesn't count towards limited uses you have. Whenever it does, improve Hit by 1 and blight grenades have Toxic.",
+      "russian": "Этот оперативник может использовать гранаты скверны (blight grenades) и крак-гранаты (krak grenades); см. фракционное и универсальное снаряжение. Такое использование не учитывается в общем лимите их применений, в том числе если вы выбрали эти гранаты в снаряжение других оперативников. При их использовании улучшите характеристику попадания (Hit) этого оружия на 1; гранаты скверны также получают правило оружия «Токсичное» (Toxic, см. ниже)."
+    },
+    "Toxic": {
+      "source": "cda1037fbc50c4e2",
+      "english": "Whenever this operative uses this weapon against an enemy that has one of your Poison tokens, add 1 to both Dmg stats of this weapon.",
+      "russian": "Когда этот оперативник использует это оружие против врага хотя бы с одним вашим жетоном яда (Poison), увеличьте на 1 оба значения урона (Dmg) этого оружия."
+    },
+    "Repulsive Fortitude": {
+      "source": "5ddf558c2768498c",
+      "english": "Whenever an operative is shooting this operative, defence dice results of 5+ are critical successes.",
+      "russian": "Когда оперативник стреляет по этому оперативнику, результаты 5+ на ваших кубиках защиты считаются критическими успехами."
+    },
+    "Grandfather's Blessing": {
+      "source": "0d4ac7f857b4e421",
+      "english": "Whenever an enemy with one of your Poison tokens loses a wound within 7 inches of this operative, this operative regains 1 lost wound, to a maximum of 3 lost wounds per turning point, and only if this operative isn't incapacitated.",
+      "russian": "Каждый раз, когда вражеский оперативник хотя бы с одним вашим жетоном яда (Poison) теряет рану в пределах 7 дюймов от этого оперативника, этот оперативник восстанавливает 1 потерянную рану. За раунд он может восстановить не более 3 ран, и только пока не выведен из строя."
+    }
+  },
+  "models": {
+    "289587": {
+      "abilities": [
+        "Neutron Fallout",
+        "Neutron Bombardment"
+      ],
+      "actions": [],
+      "specialRules": [
+        "Neutron Bombardment"
+      ]
+    },
+    "7652ba": {
+      "abilities": [
+        "Ghost Rig",
+        "Camouflaged"
+      ],
+      "actions": [],
+      "specialRules": [],
+      "save": 3
+    },
+    "d94e1c": {
+      "abilities": [
+        "Warrior Instincts"
+      ],
+      "actions": [],
+      "specialRules": []
+    },
+    "ac2e70": {
+      "abilities": [
+        "Warrior Instincts"
+      ],
+      "actions": [],
+      "specialRules": []
+    },
+    "d8f05b": {
+      "abilities": [
+        "Warrior Instincts"
+      ],
+      "actions": [],
+      "specialRules": []
+    },
+    "87e473": {
+      "abilities": [
+        "Warrior Instincts"
+      ],
+      "actions": [],
+      "specialRules": []
+    },
+    "7c9716": {
+      "abilities": [
+        "Communion Helm",
+        "Commune"
+      ],
+      "actions": [],
+      "specialRules": []
+    },
+    "60ccad": {
+      "abilities": [
+        "Evasive Drone"
+      ],
+      "actions": [
+        "Aerial Guidance (1AP)"
+      ],
+      "specialRules": []
+    },
+    "c5d4d7": {
+      "abilities": [
+        "Skytorch"
+      ],
+      "actions": [],
+      "specialRules": [
+        "Skytorch"
+      ]
+    },
+    "438aed": {
+      "abilities": [
+        "Neutron Fragment"
+      ],
+      "actions": [],
+      "specialRules": [
+        "Neutron Fragment"
+      ]
+    },
+    "7506bd": {
+      "abilities": [
+        "Icon Bearer",
+        "Icon of Contagion"
+      ],
+      "actions": [],
+      "specialRules": []
+    },
+    "5f35f7": {
+      "abilities": [],
+      "actions": [
+        "Poisonous Miasma (1AP)",
+        "Putrescent Vitality (1AP)"
+      ],
+      "specialRules": []
+    },
+    "0e43c7": {
+      "abilities": [],
+      "actions": [
+        "Flail (1AP)"
+      ],
+      "specialRules": []
+    },
+    "fffb0a": {
+      "abilities": [],
+      "actions": [],
+      "specialRules": []
+    },
+    "b3db26": {
+      "abilities": [
+        "Grenadier",
+        "Toxic"
+      ],
+      "actions": [],
+      "specialRules": [
+        "Toxic"
+      ]
+    },
+    "96fe20": {
+      "abilities": [
+        "Repulsive Fortitude",
+        "Toxic"
+      ],
+      "actions": [],
+      "specialRules": [
+        "Toxic"
+      ]
+    },
+    "883c89": {
+      "abilities": [
+        "Grandfather's Blessing",
+        "Toxic"
+      ],
+      "actions": [],
+      "specialRules": [
+        "Toxic"
+      ]
+    }
+  }
+}

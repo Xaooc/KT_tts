@@ -1,0 +1,2349 @@
+{
+  "batch": "01",
+  "teams": [
+    "Chaos Cult",
+    "Goremongers",
+    "Hernkyn Yaegirs",
+    "Brood Brothers"
+  ],
+  "sourceFiles": [
+    "inventory/card-assets.json",
+    "inventory/image-ocr-en.json"
+  ],
+  "included": [
+    {
+      "sourceSHA256": "02877842fe48e96c5d0264c47eed68e9420f789580ae184ca8f31a4bc8d865c3",
+      "imageIDs": [
+        "3c074be19d56b689"
+      ],
+      "appearances": [
+        {
+          "team": "Goremongers",
+          "assetName": "Chaos Sigil",
+          "side": "face",
+          "imageID": "3c074be19d56b689"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "02995b25ea8bb69104f7ed9972251cd43b9b212921997ac51a5b3d4f7666bd09",
+      "imageIDs": [
+        "5ec1827620fde77f"
+      ],
+      "appearances": [
+        {
+          "team": "Goremongers",
+          "assetName": "Lacerate Flesh",
+          "side": "face",
+          "imageID": "5ec1827620fde77f"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "0431b35c27fbee803a4d83c14880f777b8a84dc0e8d8f38c90ba9416c3360ead",
+      "imageIDs": [
+        "c5b39150eae7296f"
+      ],
+      "appearances": [
+        {
+          "team": "Brood Brothers",
+          "assetName": "Idolization",
+          "side": "face",
+          "imageID": "c5b39150eae7296f"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "05484f955ebbcda4e6e310461b806ec2506566da7e7dcb4e142fcdb16fd921c3",
+      "imageIDs": [
+        "976c015dd20a4fd5"
+      ],
+      "appearances": [
+        {
+          "team": "Hernkyn Yaegirs",
+          "assetName": "Tough Survivalists",
+          "side": "face",
+          "imageID": "976c015dd20a4fd5"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "084c803e0b402fd2033fa219d5cbec309737c5f0a5da1bbca168b83946bc0681",
+      "imageIDs": [
+        "27225dd3c7833e6d"
+      ],
+      "appearances": [
+        {
+          "team": "Chaos Cult",
+          "assetName": "Mutation",
+          "side": "back",
+          "imageID": "27225dd3c7833e6d"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "086f1e9f082757e77b747735ee3e56c390eb8680428e7a6a7c67ceca42c78bb3",
+      "imageIDs": [
+        "7c343fdf8a027da3"
+      ],
+      "appearances": [
+        {
+          "team": "Brood Brothers",
+          "assetName": "Lookout",
+          "side": "face",
+          "imageID": "7c343fdf8a027da3"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "091fe4733e56701333f8b44d6f43f5cb00a5480eee04847f9b76809948514d3d",
+      "imageIDs": [
+        "5eedbfe2bcf9a1fb"
+      ],
+      "appearances": [
+        {
+          "team": "Goremongers",
+          "assetName": "Rake",
+          "side": "face",
+          "imageID": "5eedbfe2bcf9a1fb"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "092890501749e0da25f8f46c18d4f372c339c661a15f9bf4f4eac7722aac6eec",
+      "imageIDs": [
+        "06b9f9942d362807"
+      ],
+      "appearances": [
+        {
+          "team": "Hernkyn Yaegirs",
+          "assetName": "Bonds That Bind",
+          "side": "back",
+          "imageID": "06b9f9942d362807"
+        },
+        {
+          "team": "Hernkyn Yaegirs",
+          "assetName": "Dauntless Explorers",
+          "side": "back",
+          "imageID": "06b9f9942d362807"
+        },
+        {
+          "team": "Hernkyn Yaegirs",
+          "assetName": "Firestorm bolt shells",
+          "side": "back",
+          "imageID": "06b9f9942d362807"
+        },
+        {
+          "team": "Hernkyn Yaegirs",
+          "assetName": "Hidden Engagement",
+          "side": "back",
+          "imageID": "06b9f9942d362807"
+        },
+        {
+          "team": "Hernkyn Yaegirs",
+          "assetName": "In Position",
+          "side": "back",
+          "imageID": "06b9f9942d362807"
+        },
+        {
+          "team": "Hernkyn Yaegirs",
+          "assetName": "KV-Ceramide undersuit",
+          "side": "back",
+          "imageID": "06b9f9942d362807"
+        },
+        {
+          "team": "Hernkyn Yaegirs",
+          "assetName": "Masterful Bladework",
+          "side": "back",
+          "imageID": "06b9f9942d362807"
+        },
+        {
+          "team": "Hernkyn Yaegirs",
+          "assetName": "No Kin Left Behind",
+          "side": "back",
+          "imageID": "06b9f9942d362807"
+        },
+        {
+          "team": "Hernkyn Yaegirs",
+          "assetName": "Plasma knives",
+          "side": "back",
+          "imageID": "06b9f9942d362807"
+        },
+        {
+          "team": "Hernkyn Yaegirs",
+          "assetName": "Stabilized bolt shells",
+          "side": "back",
+          "imageID": "06b9f9942d362807"
+        },
+        {
+          "team": "Hernkyn Yaegirs",
+          "assetName": "Stalwart Defence",
+          "side": "back",
+          "imageID": "06b9f9942d362807"
+        },
+        {
+          "team": "Hernkyn Yaegirs",
+          "assetName": "Sturdy",
+          "side": "back",
+          "imageID": "06b9f9942d362807"
+        },
+        {
+          "team": "Hernkyn Yaegirs",
+          "assetName": "Tough Survivalists",
+          "side": "back",
+          "imageID": "06b9f9942d362807"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "0b0f3b1d855a196c796a24c14de63bf2cfeb17f679f95c53145913c55676a273",
+      "imageIDs": [
+        "4c0989b50616005a"
+      ],
+      "appearances": [
+        {
+          "team": "Brood Brothers",
+          "assetName": "Cult Devotion",
+          "side": "face",
+          "imageID": "4c0989b50616005a"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "0d234858bddae33589ee320fadaad8f1e50fd4dae39883d471e86983b8b64679",
+      "imageIDs": [
+        "81d50844b31fc7c1"
+      ],
+      "appearances": [
+        {
+          "team": "Chaos Cult",
+          "assetName": "Chaos Torment",
+          "side": "face",
+          "imageID": "81d50844b31fc7c1"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "0e05f8d4eaddcd1fb2977c7a49d2829fe81b4f64b675345cd54974b65ffa50f5",
+      "imageIDs": [
+        "69f34119cb2d881a"
+      ],
+      "appearances": [
+        {
+          "team": "Hernkyn Yaegirs",
+          "assetName": "No Kin Left Behind",
+          "side": "face",
+          "imageID": "69f34119cb2d881a"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "113cb1135a852714eaf0829600ee91629a207fd9af6aef01d3d2987b8c4a8ba8",
+      "imageIDs": [
+        "e8ffaada71887474"
+      ],
+      "appearances": [
+        {
+          "team": "Chaos Cult",
+          "assetName": "Iconarch",
+          "side": "face",
+          "imageID": "e8ffaada71887474"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "1306be61713ce7f4d17c0979f4ea5118c918613411ba0a90021c46c90a3ae9a4",
+      "imageIDs": [
+        "cd19f030e74c3729"
+      ],
+      "appearances": [
+        {
+          "team": "Brood Brothers",
+          "assetName": "Magus",
+          "side": "face",
+          "imageID": "cd19f030e74c3729"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "14edca01827692356ac7c8f9c2b369a9cc024e28f9ff77cb387944bf91d4d7f0",
+      "imageIDs": [
+        "82bb43cff85bd05e"
+      ],
+      "appearances": [
+        {
+          "team": "Chaos Cult",
+          "assetName": "Barbed",
+          "side": "face",
+          "imageID": "82bb43cff85bd05e"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "17fd60df198f8f650bc4bde666b2c1177b8706ea9227405d0dfd76a8633ed204",
+      "imageIDs": [
+        "a268febe5af64e40"
+      ],
+      "appearances": [
+        {
+          "team": "Chaos Cult",
+          "assetName": "Blessed Blade",
+          "side": "face",
+          "imageID": "a268febe5af64e40"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "1a6e3da81d75faba5d7ea88b27ffe3d1510add20e4193f06e6589a1e7dde0cc9",
+      "imageIDs": [
+        "d266640fe4e4e8bb"
+      ],
+      "appearances": [
+        {
+          "team": "Brood Brothers",
+          "assetName": "Uprising",
+          "side": "face",
+          "imageID": "d266640fe4e4e8bb"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "1d2970d279c76825d9bfd8e311f93c6ed3e385b87254c254a5648a86df2eb0cf",
+      "imageIDs": [
+        "cc04dbad6f15ce3e"
+      ],
+      "appearances": [
+        {
+          "team": "Brood Brothers",
+          "assetName": "Primus",
+          "side": "face",
+          "imageID": "cc04dbad6f15ce3e"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "1db90b4ea4e0c4acad658971863cc90a8568fc1de0ddfb92e83f3ee27001e620",
+      "imageIDs": [
+        "ef9a401a6533004a"
+      ],
+      "appearances": [
+        {
+          "team": "Chaos Cult",
+          "assetName": "Covert Guises",
+          "side": "face",
+          "imageID": "ef9a401a6533004a"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "1e025a820a22a89fcb36e26ffdbfed8406f530f702aaff94000c11d0f15c2933",
+      "imageIDs": [
+        "f3843a37f53ca4d9"
+      ],
+      "appearances": [
+        {
+          "team": "Chaos Cult",
+          "assetName": "Creatures of Nightmare",
+          "side": "face",
+          "imageID": "f3843a37f53ca4d9"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "1eadde5d341e97730c605297ce8b0cb759448b29bb814c17072ddd831f4ff1b4",
+      "imageIDs": [
+        "dc7b35d51253c66a"
+      ],
+      "appearances": [
+        {
+          "team": "Brood Brothers",
+          "assetName": "Brood Brother Agitator",
+          "side": "face",
+          "imageID": "dc7b35d51253c66a"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "1f5cf7951b84327b9c7ea6cab9996d7e71c1abdd8f26edc39c8acc1a8255d28f",
+      "imageIDs": [
+        "94188d3a47cfc193"
+      ],
+      "appearances": [
+        {
+          "team": "Chaos Cult",
+          "assetName": "Cult Demagogue",
+          "side": "face",
+          "imageID": "94188d3a47cfc193"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "20398a6171acac2fc9e327e4dce7c5a8142b8ba125830c3e9458429b5aa74f71",
+      "imageIDs": [
+        "5e442b7c7a31311a"
+      ],
+      "appearances": [
+        {
+          "team": "Goremongers",
+          "assetName": "Augmented Endurance",
+          "side": "face",
+          "imageID": "5e442b7c7a31311a"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "2189bf310834858e035189e69bd198a8a60df6438059c9346b64c5cba1d77582",
+      "imageIDs": [
+        "52fb586c41ff095f"
+      ],
+      "appearances": [
+        {
+          "team": "Brood Brothers",
+          "assetName": "Brood Brother Iconward",
+          "side": "face",
+          "imageID": "52fb586c41ff095f"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "229e35d34cfe8635f466acbd4a0771f7843bbef83d644ead731bd1abfddb53ac",
+      "imageIDs": [
+        "773cd075357d80d7"
+      ],
+      "appearances": [
+        {
+          "team": "Hernkyn Yaegirs",
+          "assetName": "Stalwart Defence",
+          "side": "face",
+          "imageID": "773cd075357d80d7"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "2691f2f918290008e98c541cc16840fddab9bf1b59b0c9aeaadb66d9264772d0",
+      "imageIDs": [
+        "5de17a416821a63e"
+      ],
+      "appearances": [
+        {
+          "team": "Goremongers",
+          "assetName": "Goremonger Blood Herald",
+          "side": "face",
+          "imageID": "5de17a416821a63e"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "2b8b7ef9ed2dfc1ce7ced1983bb721274d77a50da88abcf5aae5daadc21adc18",
+      "imageIDs": [
+        "c5229fd3d4f73fd5"
+      ],
+      "appearances": [
+        {
+          "team": "Brood Brothers",
+          "assetName": "Embedded",
+          "side": "face",
+          "imageID": "c5229fd3d4f73fd5"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "2e22d7c816566b6218390b4d3b6335091fb273c75f186a149064977d821b19b4",
+      "imageIDs": [
+        "4e90725b68c8322c"
+      ],
+      "appearances": [
+        {
+          "team": "Chaos Cult",
+          "assetName": "",
+          "side": "face",
+          "imageID": "4e90725b68c8322c"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "32fefc996e91ceeaa4fb87182921b3eef1ad0a79b59d614434d90b3094d5b546",
+      "imageIDs": [
+        "9821e75c3db84b93"
+      ],
+      "appearances": [
+        {
+          "team": "Goremongers",
+          "assetName": "Goremonger Bloodtaker",
+          "side": "face",
+          "imageID": "9821e75c3db84b93"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "3333784665aaf3a266b77060da6f55e113048786de9551d032ca73ec1518eea1",
+      "imageIDs": [
+        "6fdf0d5c74207cba"
+      ],
+      "appearances": [
+        {
+          "team": "Brood Brothers",
+          "assetName": "Brood Brother Commander",
+          "side": "face",
+          "imageID": "6fdf0d5c74207cba"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "337d74bec33dfee6cd69c93ee90be3615aef2b2207ce40b215cfc4f410275194",
+      "imageIDs": [
+        "80989b336f2e4064"
+      ],
+      "appearances": [
+        {
+          "team": "Brood Brothers",
+          "assetName": "",
+          "side": "face",
+          "imageID": "80989b336f2e4064"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "3858d71397ecb03d718b5ccaa52154e1072138929257d2f088e318e13b5108a3",
+      "imageIDs": [
+        "7ef18d982014bd4c"
+      ],
+      "appearances": [
+        {
+          "team": "Brood Brothers",
+          "assetName": "Brood Brother Sapper",
+          "side": "face",
+          "imageID": "7ef18d982014bd4c"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "3ece99b8fe3d71674299ae67ea5d8cb1479297fabdffdf8799def48015f22b10",
+      "imageIDs": [
+        "c282f5b50f9e7a8e"
+      ],
+      "appearances": [
+        {
+          "team": "Chaos Cult",
+          "assetName": "Fervent Onslaught",
+          "side": "face",
+          "imageID": "c282f5b50f9e7a8e"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "42d0b6ebd32f654043af83863f73b73aade43b8bc9464141d3f58add057b5c3e",
+      "imageIDs": [
+        "fe3917eac3a5944d"
+      ],
+      "appearances": [
+        {
+          "team": "Chaos Cult",
+          "assetName": "Accursed Gifts",
+          "side": "face",
+          "imageID": "fe3917eac3a5944d"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "4340b4a1cde82e317be7ec3c669992e39b0d925b66ea8c9c3a37fbe2a5a67aba",
+      "imageIDs": [
+        "27fa9e5ec4a0b9a8"
+      ],
+      "appearances": [
+        {
+          "team": "Brood Brothers",
+          "assetName": "Psychic Familiar",
+          "side": "face",
+          "imageID": "27fa9e5ec4a0b9a8"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "45422105be49a166a27a828084acb2a9fb9578bd8902eab7235b78a94f005dbe",
+      "imageIDs": [
+        "521b26b021a99c84"
+      ],
+      "appearances": [
+        {
+          "team": "Goremongers",
+          "assetName": "Unbridled Aggression",
+          "side": "face",
+          "imageID": "521b26b021a99c84"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "4a0ddaba9c83bb6b39a2871d4effa2dcdd1cb9d883d3f4caa53a3598b3e363f8",
+      "imageIDs": [
+        "1e074a429eca5777"
+      ],
+      "appearances": [
+        {
+          "team": "Hernkyn Yaegirs",
+          "assetName": "Yaegir Ironbreak",
+          "side": "face",
+          "imageID": "1e074a429eca5777"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "4a3f2c40b32935ab0ebf43649248c149efc6f2234b44b66db7d0bdec80ef7f7b",
+      "imageIDs": [
+        "16eba87589e22d49"
+      ],
+      "appearances": [
+        {
+          "team": "Hernkyn Yaegirs",
+          "assetName": "Yaegir Bladekyn",
+          "side": "face",
+          "imageID": "16eba87589e22d49"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "4ec24e380683c5c9828ac1fba44fb6c2396161939e714f656f20185ad6a7671f",
+      "imageIDs": [
+        "cdcfb7595f13d54c"
+      ],
+      "appearances": [
+        {
+          "team": "Brood Brothers",
+          "assetName": "Covert Guises",
+          "side": "face",
+          "imageID": "cdcfb7595f13d54c"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "4f3390a20d07e58464c215767a9865dc9275f5e0a8594aa683359231acae6a8b",
+      "imageIDs": [
+        "1e351210c479712c"
+      ],
+      "appearances": [
+        {
+          "team": "Hernkyn Yaegirs",
+          "assetName": "Firestorm bolt shells",
+          "side": "face",
+          "imageID": "1e351210c479712c"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "505554fbb9c62238917020c8ea433d6b06811ad353335fbfdc7c7dee1c93e226",
+      "imageIDs": [
+        "179a145ff332418a"
+      ],
+      "appearances": [
+        {
+          "team": "Goremongers",
+          "assetName": "Rejuvenate",
+          "side": "face",
+          "imageID": "179a145ff332418a"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "5299f292213f6d5859ae171ca7686644b456d0465387497443fa0bdeff06d0a8",
+      "imageIDs": [
+        "5ebd080c960145d8"
+      ],
+      "appearances": [
+        {
+          "team": "Hernkyn Yaegirs",
+          "assetName": "Yaegir Gunner",
+          "side": "face",
+          "imageID": "5ebd080c960145d8"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "54ff5d7a3be533a31fab4bebd949420340215a6a48cb61dd2a97e8e271d99c20",
+      "imageIDs": [
+        "17f932af06e32386"
+      ],
+      "appearances": [
+        {
+          "team": "Goremongers",
+          "assetName": "Hunt for Blood",
+          "side": "face",
+          "imageID": "17f932af06e32386"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "571a5bd90e74b34d42d27402b52be42e84916e2cd67e643e0f74a3083310a1c7",
+      "imageIDs": [
+        "5c9f48fb113f7d51"
+      ],
+      "appearances": [
+        {
+          "team": "Chaos Cult",
+          "assetName": "Vile Blessing",
+          "side": "face",
+          "imageID": "5c9f48fb113f7d51"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "57d50fa152ed8365c17c981dc956cbf7edc4dc8d36ba295cd03016c7ca160a6c",
+      "imageIDs": [
+        "00d3bda095035692"
+      ],
+      "appearances": [
+        {
+          "team": "Brood Brothers",
+          "assetName": "Ruthless Coordination",
+          "side": "back",
+          "imageID": "00d3bda095035692"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "595668303a2f380d9aaf0d4235d06ddce2b3d3d29fafe9ad693af0fc6edd70aa",
+      "imageIDs": [
+        "4af1753cec218bb0"
+      ],
+      "appearances": [
+        {
+          "team": "Brood Brothers",
+          "assetName": "Cult Knives",
+          "side": "face",
+          "imageID": "4af1753cec218bb0"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "5c358516d158a7bc4ed4ddbd2b696d8ea758e5f1a057c79395f90acf04598edb",
+      "imageIDs": [
+        "393ce321b926349d"
+      ],
+      "appearances": [
+        {
+          "team": "Brood Brothers",
+          "assetName": "Magus",
+          "side": "back",
+          "imageID": "393ce321b926349d"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "5e738a41c8104152130755ceaa1279505965ac27e61663b6e0ddd2f34f59a33d",
+      "imageIDs": [
+        "af8238bdb99e2543"
+      ],
+      "appearances": [
+        {
+          "team": "Goremongers",
+          "assetName": "Gore Tanks",
+          "side": "back",
+          "imageID": "af8238bdb99e2543"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "5f78cab14fb3f9f4b4463106d387d25b0d9d87f963637e2a17f2f2834dda9b05",
+      "imageIDs": [
+        "5c23794d49357c4f"
+      ],
+      "appearances": [
+        {
+          "team": "Brood Brothers",
+          "assetName": "Brood Brother Gunner",
+          "side": "face",
+          "imageID": "5c23794d49357c4f"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "60db55f37e6567f204dd0f177395649aafb20124aa8aac01779eb9b5b9b4fd74",
+      "imageIDs": [
+        "6b439664c1164d8d"
+      ],
+      "appearances": [
+        {
+          "team": "Goremongers",
+          "assetName": "Surge",
+          "side": "face",
+          "imageID": "6b439664c1164d8d"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "65df4316a0dfc6213f75fe4b1b0779592a24883257cda5c311c4e6c2d102abe6",
+      "imageIDs": [
+        "4bd58eb1fe235059"
+      ],
+      "appearances": [
+        {
+          "team": "Chaos Cult",
+          "assetName": "Unholy Talisman",
+          "side": "face",
+          "imageID": "4bd58eb1fe235059"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "6743af4708a665602f158b3ae09c77f4a10700fe4987691a8cd075b6886744f8",
+      "imageIDs": [
+        "a83881c9ea12be25"
+      ],
+      "appearances": [
+        {
+          "team": "Brood Brothers",
+          "assetName": "Patriarch",
+          "side": "face",
+          "imageID": "a83881c9ea12be25"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "6884597e6fa9ee024be479846bfa3cd23571da01514477a8caae20f9af069759",
+      "imageIDs": [
+        "cafdd23b7a374e14"
+      ],
+      "appearances": [
+        {
+          "team": "Brood Brothers",
+          "assetName": "Brood Brother Vox-Operator",
+          "side": "back",
+          "imageID": "cafdd23b7a374e14"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "69bc667636ab7ebdfce7854a38154e342a4fa3208679a028d72cf93b98425724",
+      "imageIDs": [
+        "1b6f4b8a5dc6d962"
+      ],
+      "appearances": [
+        {
+          "team": "Brood Brothers",
+          "assetName": "",
+          "side": "back",
+          "imageID": "1b6f4b8a5dc6d962"
+        },
+        {
+          "team": "Brood Brothers",
+          "assetName": "Covert Guises",
+          "side": "back",
+          "imageID": "1b6f4b8a5dc6d962"
+        },
+        {
+          "team": "Brood Brothers",
+          "assetName": "Cult Devotion",
+          "side": "back",
+          "imageID": "1b6f4b8a5dc6d962"
+        },
+        {
+          "team": "Brood Brothers",
+          "assetName": "Cult Knives",
+          "side": "back",
+          "imageID": "1b6f4b8a5dc6d962"
+        },
+        {
+          "team": "Brood Brothers",
+          "assetName": "Cult Talisman",
+          "side": "back",
+          "imageID": "1b6f4b8a5dc6d962"
+        },
+        {
+          "team": "Brood Brothers",
+          "assetName": "Embedded",
+          "side": "back",
+          "imageID": "1b6f4b8a5dc6d962"
+        },
+        {
+          "team": "Brood Brothers",
+          "assetName": "Idolization",
+          "side": "back",
+          "imageID": "1b6f4b8a5dc6d962"
+        },
+        {
+          "team": "Brood Brothers",
+          "assetName": "Insidious",
+          "side": "back",
+          "imageID": "1b6f4b8a5dc6d962"
+        },
+        {
+          "team": "Brood Brothers",
+          "assetName": "Lookout",
+          "side": "back",
+          "imageID": "1b6f4b8a5dc6d962"
+        },
+        {
+          "team": "Brood Brothers",
+          "assetName": "Pervasive",
+          "side": "back",
+          "imageID": "1b6f4b8a5dc6d962"
+        },
+        {
+          "team": "Brood Brothers",
+          "assetName": "Unquestioning Loyalty",
+          "side": "back",
+          "imageID": "1b6f4b8a5dc6d962"
+        },
+        {
+          "team": "Brood Brothers",
+          "assetName": "Uprising",
+          "side": "back",
+          "imageID": "1b6f4b8a5dc6d962"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "6b8c0aa7f9c49c3e4444e24a2a8c7f714adaacdca3e9008aba41149d3ad10788",
+      "imageIDs": [
+        "d4661e710ca7e667"
+      ],
+      "appearances": [
+        {
+          "team": "Goremongers",
+          "assetName": "Goremonger Skullclaimer",
+          "side": "face",
+          "imageID": "d4661e710ca7e667"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "6fca5243fe9ae3f58b248451823d93bd289b81dcb7adf8e016f86c62a32f077f",
+      "imageIDs": [
+        "f54c3a4934074a08"
+      ],
+      "appearances": [
+        {
+          "team": "Brood Brothers",
+          "assetName": "Cult Talisman",
+          "side": "face",
+          "imageID": "f54c3a4934074a08"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "726a940e1c1c95f7bc71be206ccb5e26414e18d2397477f09da8cf6e3a07b6d4",
+      "imageIDs": [
+        "89f0268a87cd135d"
+      ],
+      "appearances": [
+        {
+          "team": "Goremongers",
+          "assetName": "Mania",
+          "side": "face",
+          "imageID": "89f0268a87cd135d"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "72a786c0ae4f2118a8c5f9cdd8b55948ba00bd54384751fcc20a01697edb4084",
+      "imageIDs": [
+        "79ead8be8b7e8d8f"
+      ],
+      "appearances": [
+        {
+          "team": "Brood Brothers",
+          "assetName": "Pervasive",
+          "side": "face",
+          "imageID": "79ead8be8b7e8d8f"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "768dcde768f786c0ca36b0ca6511737c6bbc064aff312e093a77242c73b26568",
+      "imageIDs": [
+        "5a6ffa6830c7b986"
+      ],
+      "appearances": [
+        {
+          "team": "Goremongers",
+          "assetName": "Goremonger Inciter",
+          "side": "face",
+          "imageID": "5a6ffa6830c7b986"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "76d26f379dd18175b8c1edde1cca6718deaf9247625b0fe7415e5e39200da4ea",
+      "imageIDs": [
+        "5d4dd94580a7f82e"
+      ],
+      "appearances": [
+        {
+          "team": "Goremongers",
+          "assetName": "Gory Totem",
+          "side": "face",
+          "imageID": "5d4dd94580a7f82e"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "7bb1786100132dfa4c27b950d8b3d98db794db1bcb24c512a30f13b32e46c46d",
+      "imageIDs": [
+        "8c8d1d62d63991f9"
+      ],
+      "appearances": [
+        {
+          "team": "Chaos Cult",
+          "assetName": "Baleful Script",
+          "side": "face",
+          "imageID": "8c8d1d62d63991f9"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "7bcf504d9b5dde6c8e55279e1fdfc2a91f87699a17fdf351c3d22e00e2eaf962",
+      "imageIDs": [
+        "9211f67bbf196d38"
+      ],
+      "appearances": [
+        {
+          "team": "Chaos Cult",
+          "assetName": "Mindwitch",
+          "side": "face",
+          "imageID": "9211f67bbf196d38"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "7f42fed876cfe8a1be958ca47aad993f274789a8f135c4a7f74683e2df49a44e",
+      "imageIDs": [
+        "a0609cef139681ef"
+      ],
+      "appearances": [
+        {
+          "team": "Brood Brothers",
+          "assetName": "Brood Brother Medic",
+          "side": "back",
+          "imageID": "a0609cef139681ef"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "7fd11110259edb3dcc5f7b471c94bb0f170af2bb43436ce27b9f0760ca8d8317",
+      "imageIDs": [
+        "7a95ebbdf40c516b"
+      ],
+      "appearances": [
+        {
+          "team": "Brood Brothers",
+          "assetName": "Patriarch",
+          "side": "back",
+          "imageID": "7a95ebbdf40c516b"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "84c0d6c2cfe68a57a107d72d0cc35f4715e6b9e045b5c650162096eb7af2fd98",
+      "imageIDs": [
+        "ababad2b443cf56d"
+      ],
+      "appearances": [
+        {
+          "team": "Hernkyn Yaegirs",
+          "assetName": "Hidden Engagement",
+          "side": "face",
+          "imageID": "ababad2b443cf56d"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "85369c491786549e98caadfb2c9292dbf56bf27049302a17d09b7d99863eedf4",
+      "imageIDs": [
+        "220911fe45a58d50"
+      ],
+      "appearances": [
+        {
+          "team": "Brood Brothers",
+          "assetName": "Ruthless Coordination",
+          "side": "face",
+          "imageID": "220911fe45a58d50"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "875476c58d782cb00925259adcdfd2d385aceb3c7d9a0cbd9002c4613307a3d9",
+      "imageIDs": [
+        "5c862033a5809c1f"
+      ],
+      "appearances": [
+        {
+          "team": "Goremongers",
+          "assetName": "Enhanced Violence",
+          "side": "face",
+          "imageID": "5c862033a5809c1f"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "8ae9a558b7b70cbd536a61257f4510ad23106c9a66551ec2dd8ceb2a01f42359",
+      "imageIDs": [
+        "e2a41a076097281d"
+      ],
+      "appearances": [
+        {
+          "team": "Brood Brothers",
+          "assetName": "",
+          "side": "face",
+          "imageID": "e2a41a076097281d"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "8afb5a3e34dab9ff9deedae03262c1eaaeeeb4f7cf3c982e3a2c61e998dffea2",
+      "imageIDs": [
+        "7b802077f626d64b"
+      ],
+      "appearances": [
+        {
+          "team": "Chaos Cult",
+          "assetName": "",
+          "side": "face",
+          "imageID": "7b802077f626d64b"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "8b5f79f169c2a48b1d905bc45d8a89c48d03fb6cc16f85057d7495775c61cf65",
+      "imageIDs": [
+        "a114fae2e7c7b57d"
+      ],
+      "appearances": [
+        {
+          "team": "Hernkyn Yaegirs",
+          "assetName": "Yaegir Theyn",
+          "side": "face",
+          "imageID": "a114fae2e7c7b57d"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "8dc27387f2c871ba133b0b27eb9e26560ebba48ecc9591128832e7895b556fc1",
+      "imageIDs": [
+        "1280b855898a41e5"
+      ],
+      "appearances": [
+        {
+          "team": "Goremongers",
+          "assetName": "Fury",
+          "side": "face",
+          "imageID": "1280b855898a41e5"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "8df2638ef0f422dda8ca4261395f6d5d8d421c7b3a21bde19a798d9e6c0c12df",
+      "imageIDs": [
+        "4d80c342334bc3f4"
+      ],
+      "appearances": [
+        {
+          "team": "Chaos Cult",
+          "assetName": "",
+          "side": "face",
+          "imageID": "4d80c342334bc3f4"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "8f600cc458a959e89e53d179f35e7b7809af915ed0918e0effda8641afbcd87b",
+      "imageIDs": [
+        "58bc4bc622364414"
+      ],
+      "appearances": [
+        {
+          "team": "Chaos Cult",
+          "assetName": "Deformed Wings",
+          "side": "face",
+          "imageID": "58bc4bc622364414"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "90d2768f924d66ea5957e677789ea2451ab780e64eda9f9d9fe2405f2dae6687",
+      "imageIDs": [
+        "bb5b135e30444a92"
+      ],
+      "appearances": [
+        {
+          "team": "Brood Brothers",
+          "assetName": "Brood Brother Sapper",
+          "side": "back",
+          "imageID": "bb5b135e30444a92"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "921e684225af8813c397f5518d900f402bb5035bcfbc6da1724005fa0146c5ae",
+      "imageIDs": [
+        "b0cfd7713f264bfd"
+      ],
+      "appearances": [
+        {
+          "team": "Chaos Cult",
+          "assetName": "",
+          "side": "face",
+          "imageID": "b0cfd7713f264bfd"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "9235297df8d476302198d973068855bb71a74d6eca7d2add5d831b13491c1d61",
+      "imageIDs": [
+        "2e8fda286ead5284"
+      ],
+      "appearances": [
+        {
+          "team": "Goremongers",
+          "assetName": "Gore Tanks",
+          "side": "face",
+          "imageID": "2e8fda286ead5284"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "9296bb9b1c92e62bc9364020b8e2b4f234c7cd132075643bc3e828e36d5c05f5",
+      "imageIDs": [
+        "4c310a06b3c00398"
+      ],
+      "appearances": [
+        {
+          "team": "Chaos Cult",
+          "assetName": "Sickening Aura",
+          "side": "face",
+          "imageID": "4c310a06b3c00398"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "993a65dd53f78b36b356f935e55a398818b31bd12083c42c617fd8b9b5ca9786",
+      "imageIDs": [
+        "b71a4b9b9faf9dbb"
+      ],
+      "appearances": [
+        {
+          "team": "Brood Brothers",
+          "assetName": "Brood Brother Knife Fighter",
+          "side": "face",
+          "imageID": "b71a4b9b9faf9dbb"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "99663f61bff851fb6f9e18d76b4e431b0945bd0f1b4c0148d5444bff9991de41",
+      "imageIDs": [
+        "e2d640194573e8e6"
+      ],
+      "appearances": [
+        {
+          "team": "Chaos Cult",
+          "assetName": "Mutation",
+          "side": "face",
+          "imageID": "e2d640194573e8e6"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "9bcb49e8e6feec4802389e4cbd69bd84b8066dc25edca66ca3c9882d7bd2c600",
+      "imageIDs": [
+        "246976f841b94441"
+      ],
+      "appearances": [
+        {
+          "team": "Goremongers",
+          "assetName": "Destructive Demise",
+          "side": "face",
+          "imageID": "246976f841b94441"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "a1eab01c6aa1aa4cede4215c26a263633d1f3a966ebed4a56f4b06709196ab22",
+      "imageIDs": [
+        "22f2eb7b5e43b8bb"
+      ],
+      "appearances": [
+        {
+          "team": "Goremongers",
+          "assetName": "Runes of Khorne",
+          "side": "face",
+          "imageID": "22f2eb7b5e43b8bb"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "a254b40d1c7d894630a8e48e59966ac59a0cb9b51cea673f88f89e49e89af2c4",
+      "imageIDs": [
+        "4ef79bfd02a9c209"
+      ],
+      "appearances": [
+        {
+          "team": "Chaos Cult",
+          "assetName": "Sinewed",
+          "side": "face",
+          "imageID": "4ef79bfd02a9c209"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "a8106361fad163ee7ed1d48c2dfe185df5c5e429b2eb8d1b7c743446af38c018",
+      "imageIDs": [
+        "6aa4f4882c80ea3e"
+      ],
+      "appearances": [
+        {
+          "team": "Brood Brothers",
+          "assetName": "Brood Brother Medic",
+          "side": "face",
+          "imageID": "6aa4f4882c80ea3e"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "ac96b7b28d1a83d6972d03f834f7a78398601561de371f0e1c9ba96495390549",
+      "imageIDs": [
+        "96c2c9bd994d5c55"
+      ],
+      "appearances": [
+        {
+          "team": "Brood Brothers",
+          "assetName": "Brood Brother Vox-Operator",
+          "side": "face",
+          "imageID": "96c2c9bd994d5c55"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "af324af1a869a72fabc2ba4bb6bab9eac22d9acf79a6cd788a1715607c08bb24",
+      "imageIDs": [
+        "f23c505690fde87a"
+      ],
+      "appearances": [
+        {
+          "team": "Hernkyn Yaegirs",
+          "assetName": "Resourceful",
+          "side": "back",
+          "imageID": "f23c505690fde87a"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "af3896a33e15370be17cd7bcf221abe53eb9109c6748425aa08972536a4978c7",
+      "imageIDs": [
+        "4cf632768c552346"
+      ],
+      "appearances": [
+        {
+          "team": "Hernkyn Yaegirs",
+          "assetName": "Resourceful",
+          "side": "face",
+          "imageID": "4cf632768c552346"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "b0533229f17a11badb03670f41d64767520180c37ca85ae3ee9e922044ef6555",
+      "imageIDs": [
+        "e4a8cc72fc883d03"
+      ],
+      "appearances": [
+        {
+          "team": "Hernkyn Yaegirs",
+          "assetName": "Plasma knives",
+          "side": "face",
+          "imageID": "e4a8cc72fc883d03"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "b0c78206a33693a68dcb63c285be7051a9e6cadcda722100fed0ed50127379fb",
+      "imageIDs": [
+        "830eab39174815f7"
+      ],
+      "appearances": [
+        {
+          "team": "Goremongers",
+          "assetName": "Gory Tenacity",
+          "side": "face",
+          "imageID": "830eab39174815f7"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "b284d32331b20cca5a3be3debd05039809002ef9bc7410b90e0556ee86e5e0a7",
+      "imageIDs": [
+        "567c5c84e739dad9"
+      ],
+      "appearances": [
+        {
+          "team": "Chaos Cult",
+          "assetName": "Chaos Mutant",
+          "side": "face",
+          "imageID": "567c5c84e739dad9"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "b3618815d8d0e1a851d478e77f543578970fb0a83e66a23c268ebdbae3519783",
+      "imageIDs": [
+        "dd6482dedb7550d5"
+      ],
+      "appearances": [
+        {
+          "team": "Chaos Cult",
+          "assetName": "Horned",
+          "side": "face",
+          "imageID": "dd6482dedb7550d5"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "b39bff8eaa2a6309b87fa6f27d906c786993dc53ce8b13803751444fc81952b3",
+      "imageIDs": [
+        "454e9e399cf5ae66"
+      ],
+      "appearances": [
+        {
+          "team": "Hernkyn Yaegirs",
+          "assetName": "",
+          "side": "back",
+          "imageID": "454e9e399cf5ae66"
+        },
+        {
+          "team": "Hernkyn Yaegirs",
+          "assetName": "",
+          "side": "face",
+          "imageID": "454e9e399cf5ae66"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "b604c8d6b448037e2c45d896f9e2e8b087ab0fb45dc3deef73e9ca6cb6e1f9a8",
+      "imageIDs": [
+        "85b6e26794f33f01"
+      ],
+      "appearances": [
+        {
+          "team": "Chaos Cult",
+          "assetName": "Fleet",
+          "side": "face",
+          "imageID": "85b6e26794f33f01"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "b81a71d603abc2240fd4455674a2d609445f80f013afe94dc47d44382a85404b",
+      "imageIDs": [
+        "61bdfe67318fcb0d"
+      ],
+      "appearances": [
+        {
+          "team": "Goremongers",
+          "assetName": "Goremonger Stalker",
+          "side": "face",
+          "imageID": "61bdfe67318fcb0d"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "b901b0f11219b40466ed51b039a969f2027130ea47e54b3d63f41eb1715bd250",
+      "imageIDs": [
+        "cb8d04f7506dd424"
+      ],
+      "appearances": [
+        {
+          "team": "Chaos Cult",
+          "assetName": "Exaltation in Pain",
+          "side": "face",
+          "imageID": "cb8d04f7506dd424"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "bbcd10f4d67025992e6a9ad2e37f9b763977f4fe297a64756d5b5f2d94974156",
+      "imageIDs": [
+        "86b94ce23755f9e7"
+      ],
+      "appearances": [
+        {
+          "team": "Hernkyn Yaegirs",
+          "assetName": "Yaegir Tracker",
+          "side": "face",
+          "imageID": "86b94ce23755f9e7"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "bd1258dc176cc56400a533bc12c0c968597690e2b055cf5395c127b1c18ac3ef",
+      "imageIDs": [
+        "008a2b364f7e3c33"
+      ],
+      "appearances": [
+        {
+          "team": "Goremongers",
+          "assetName": "Goremonger Aspirant",
+          "side": "face",
+          "imageID": "008a2b364f7e3c33"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "bd7306b262699e9000ddfb3e9f63a186bd65e24e257359cbd3401a4a835b7463",
+      "imageIDs": [
+        "5a80b2ad0e6fa847"
+      ],
+      "appearances": [
+        {
+          "team": "Goremongers",
+          "assetName": "Goremonger Butcher",
+          "side": "face",
+          "imageID": "5a80b2ad0e6fa847"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "bf1e5db9db23862beee5e383f333d6ab0b8eebfe08376410408b5cc8f5864b86",
+      "imageIDs": [
+        "494075c1427e7230"
+      ],
+      "appearances": [
+        {
+          "team": "Brood Brothers",
+          "assetName": "Brood Brother Veteran",
+          "side": "face",
+          "imageID": "494075c1427e7230"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "c115f007951f7074298563faeec7419085da6bb775242538325197770990f765",
+      "imageIDs": [
+        "172b771320cca657"
+      ],
+      "appearances": [
+        {
+          "team": "Hernkyn Yaegirs",
+          "assetName": "Yaegir Riflekyn",
+          "side": "face",
+          "imageID": "172b771320cca657"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "c26d8318c5056172787990e7e6f616f6fd11433f0f9365f9645e050e6e3ffc31",
+      "imageIDs": [
+        "be22a519ace734c7"
+      ],
+      "appearances": [
+        {
+          "team": "Goremongers",
+          "assetName": "Gorethirst",
+          "side": "face",
+          "imageID": "be22a519ace734c7"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "c3e5f0c9c3a46fc7051941483575f6a2e518a9709eb124f77da54438b2e0fca4",
+      "imageIDs": [
+        "cc15e400d2529c18"
+      ],
+      "appearances": [
+        {
+          "team": "Hernkyn Yaegirs",
+          "assetName": "Bonds That Bind",
+          "side": "face",
+          "imageID": "cc15e400d2529c18"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "c4e5d20555d7f3b112a5f6bad584f280ffe306fe4060095fc483f0e1edb1b446",
+      "imageIDs": [
+        "24da7c0f40688291"
+      ],
+      "appearances": [
+        {
+          "team": "Hernkyn Yaegirs",
+          "assetName": "Yaegir Bombast",
+          "side": "face",
+          "imageID": "24da7c0f40688291"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "ca9cbab5a990b24ed59913b4c5a2894f37087c9338c3f5097f0a1831cf0c5151",
+      "imageIDs": [
+        "93f7af5c4e4ed95d"
+      ],
+      "appearances": [
+        {
+          "team": "Chaos Cult",
+          "assetName": "Chitinous",
+          "side": "face",
+          "imageID": "93f7af5c4e4ed95d"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "cfc4c0ab34e7fb42a27b27ca66fd4ef41c35b3b12283db04cee5e5d14dba6cd2",
+      "imageIDs": [
+        "a3a9eb42d393ae7c"
+      ],
+      "appearances": [
+        {
+          "team": "Goremongers",
+          "assetName": "Sanguavitae",
+          "side": "face",
+          "imageID": "a3a9eb42d393ae7c"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "d114ae574c815cc52ba6af5b2419c82cfd1a078e746b1d038d635f0ebe63e7a8",
+      "imageIDs": [
+        "7257d2131dc313d9"
+      ],
+      "appearances": [
+        {
+          "team": "Goremongers",
+          "assetName": "Wrist Chains",
+          "side": "face",
+          "imageID": "7257d2131dc313d9"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "d49908676124e31c56b1451a70c8ef0ebbb0a5daa42b0ce4ea016c9cecd833b8",
+      "imageIDs": [
+        "dd6fbe314206d697"
+      ],
+      "appearances": [
+        {
+          "team": "Goremongers",
+          "assetName": "Rage",
+          "side": "face",
+          "imageID": "dd6fbe314206d697"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "d50eeaff5083d736745596b50b6240816d64a17a9e79a331e11a5f85d0a8becc",
+      "imageIDs": [
+        "352413f569c5da7b"
+      ],
+      "appearances": [
+        {
+          "team": "Brood Brothers",
+          "assetName": "Brood Brother Trooper",
+          "side": "face",
+          "imageID": "352413f569c5da7b"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "d69a1246abd17e55cb6831ecb88ad91236769d057c3bbf382151c1b2883d48d5",
+      "imageIDs": [
+        "3a57ed4e53c3ec6c"
+      ],
+      "appearances": [
+        {
+          "team": "Brood Brothers",
+          "assetName": "",
+          "side": "back",
+          "imageID": "3a57ed4e53c3ec6c"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "d7e09c2d5915dcbec5fbf578bab543932494ad2ef611fecf480379ac2d8e77bc",
+      "imageIDs": [
+        "a09d5d0a8f5de32b"
+      ],
+      "appearances": [
+        {
+          "team": "Hernkyn Yaegirs",
+          "assetName": "Yaegir Warrior",
+          "side": "face",
+          "imageID": "a09d5d0a8f5de32b"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "d8471e06739c647930e7d6f28d226ffa896f47c23fc5f792a4ef7e3470e957fa",
+      "imageIDs": [
+        "b91ca9d5daa35588"
+      ],
+      "appearances": [
+        {
+          "team": "Hernkyn Yaegirs",
+          "assetName": "Masterful Bladework",
+          "side": "face",
+          "imageID": "b91ca9d5daa35588"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "d9197f8808ab9f3b71444eae5602b1b24d534398ba95124d4a0853008f5d25c9",
+      "imageIDs": [
+        "6aa22ce98680657b"
+      ],
+      "appearances": [
+        {
+          "team": "Chaos Cult",
+          "assetName": "",
+          "side": "back",
+          "imageID": "6aa22ce98680657b"
+        },
+        {
+          "team": "Chaos Cult",
+          "assetName": "Accursed Gifts",
+          "side": "back",
+          "imageID": "6aa22ce98680657b"
+        },
+        {
+          "team": "Chaos Cult",
+          "assetName": "Baleful Script",
+          "side": "back",
+          "imageID": "6aa22ce98680657b"
+        },
+        {
+          "team": "Chaos Cult",
+          "assetName": "Barbed",
+          "side": "back",
+          "imageID": "6aa22ce98680657b"
+        },
+        {
+          "team": "Chaos Cult",
+          "assetName": "Chitinous",
+          "side": "back",
+          "imageID": "6aa22ce98680657b"
+        },
+        {
+          "team": "Chaos Cult",
+          "assetName": "Covert Guises",
+          "side": "back",
+          "imageID": "6aa22ce98680657b"
+        },
+        {
+          "team": "Chaos Cult",
+          "assetName": "Creatures of Nightmare",
+          "side": "back",
+          "imageID": "6aa22ce98680657b"
+        },
+        {
+          "team": "Chaos Cult",
+          "assetName": "Deformed Wings",
+          "side": "back",
+          "imageID": "6aa22ce98680657b"
+        },
+        {
+          "team": "Chaos Cult",
+          "assetName": "Exaltation in Pain",
+          "side": "back",
+          "imageID": "6aa22ce98680657b"
+        },
+        {
+          "team": "Chaos Cult",
+          "assetName": "Fervent Onslaught",
+          "side": "back",
+          "imageID": "6aa22ce98680657b"
+        },
+        {
+          "team": "Chaos Cult",
+          "assetName": "Fleet",
+          "side": "back",
+          "imageID": "6aa22ce98680657b"
+        },
+        {
+          "team": "Chaos Cult",
+          "assetName": "Horned",
+          "side": "back",
+          "imageID": "6aa22ce98680657b"
+        },
+        {
+          "team": "Chaos Cult",
+          "assetName": "Sickening Aura",
+          "side": "back",
+          "imageID": "6aa22ce98680657b"
+        },
+        {
+          "team": "Chaos Cult",
+          "assetName": "Sinewed",
+          "side": "back",
+          "imageID": "6aa22ce98680657b"
+        },
+        {
+          "team": "Chaos Cult",
+          "assetName": "Unholy Talisman",
+          "side": "back",
+          "imageID": "6aa22ce98680657b"
+        },
+        {
+          "team": "Chaos Cult",
+          "assetName": "Vile Blessing",
+          "side": "back",
+          "imageID": "6aa22ce98680657b"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "d95276ac44a92977076acfebbcdbed202415142aae7f3cb43a779a0e1bc43036",
+      "imageIDs": [
+        "20c900faa27e42a6"
+      ],
+      "appearances": [
+        {
+          "team": "Hernkyn Yaegirs",
+          "assetName": "KV-Ceramide undersuit",
+          "side": "face",
+          "imageID": "20c900faa27e42a6"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "db68c81c43ca24d566fd99e937b390454b6663db599199e6e395ef2dff9a593b",
+      "imageIDs": [
+        "b4ebba51116005e9"
+      ],
+      "appearances": [
+        {
+          "team": "Chaos Cult",
+          "assetName": "Iconarch",
+          "side": "back",
+          "imageID": "b4ebba51116005e9"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "db9e4d58ab2dff5bae31804597ea9b724a5841335406d4536d3c2fe5e4efb79f",
+      "imageIDs": [
+        "97dddd23170636ca"
+      ],
+      "appearances": [
+        {
+          "team": "Goremongers",
+          "assetName": "",
+          "side": "face",
+          "imageID": "97dddd23170636ca"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "e05454328ed7f32a5ee0f6f1af7ccf35c96ddca3eae0e5e636c199aa72c8f4af",
+      "imageIDs": [
+        "eab992c048bc1900"
+      ],
+      "appearances": [
+        {
+          "team": "Brood Brothers",
+          "assetName": "Insidious",
+          "side": "face",
+          "imageID": "eab992c048bc1900"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "e11d3e1575710a414c2743992f055180652a96fbc742339b4a59ef53f7abf244",
+      "imageIDs": [
+        "34ee35aac47c49de"
+      ],
+      "appearances": [
+        {
+          "team": "Goremongers",
+          "assetName": "Bloody Cadaver",
+          "side": "face",
+          "imageID": "34ee35aac47c49de"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "e1c0780e4d4e334c3f168b46514ce54e0ba777007eaa6f8135c1afeab8d471ed",
+      "imageIDs": [
+        "7e863804893eca64"
+      ],
+      "appearances": [
+        {
+          "team": "Hernkyn Yaegirs",
+          "assetName": "Sturdy",
+          "side": "face",
+          "imageID": "7e863804893eca64"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "e2b5d17d126d72b5fd555fbfd4ac5567332973987f36003e558b84a468651408",
+      "imageIDs": [
+        "908e02f6707e6380"
+      ],
+      "appearances": [
+        {
+          "team": "Chaos Cult",
+          "assetName": "",
+          "side": "back",
+          "imageID": "908e02f6707e6380"
+        },
+        {
+          "team": "Chaos Cult",
+          "assetName": "",
+          "side": "face",
+          "imageID": "908e02f6707e6380"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "e5066016c0ec8d2a5610d75d37465ebc24d7b07a57e4f041a07b461d2a6a6d69",
+      "imageIDs": [
+        "ebaba04403182e6f"
+      ],
+      "appearances": [
+        {
+          "team": "Hernkyn Yaegirs",
+          "assetName": "Dauntless Explorers",
+          "side": "face",
+          "imageID": "ebaba04403182e6f"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "ea35adb120685c7756e26192f182814eeb4206c64efb98c2de9850e6450a3d3e",
+      "imageIDs": [
+        "76b1a2ae336b6117"
+      ],
+      "appearances": [
+        {
+          "team": "Brood Brothers",
+          "assetName": "Brood Brother Sniper",
+          "side": "face",
+          "imageID": "76b1a2ae336b6117"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "f108b14a09c44e9cb786986716bb304951e90618d4a49a9d3bfdae5f32bab71e",
+      "imageIDs": [
+        "d153c4ebd4f9e852"
+      ],
+      "appearances": [
+        {
+          "team": "Goremongers",
+          "assetName": "Goremonger Inciter",
+          "side": "back",
+          "imageID": "d153c4ebd4f9e852"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "f32b73174b1179c25e77f4dd358768da3c97e521aafb0cc164d123dcebff1341",
+      "imageIDs": [
+        "ed09eea381a1904d"
+      ],
+      "appearances": [
+        {
+          "team": "Hernkyn Yaegirs",
+          "assetName": "Stabilized bolt shells",
+          "side": "face",
+          "imageID": "ed09eea381a1904d"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "f62bd9b506139f3f92fe6db37b9b02d5bae93b84effe834a27ceec4f1bd1cefc",
+      "imageIDs": [
+        "19a472de24092516"
+      ],
+      "appearances": [
+        {
+          "team": "Hernkyn Yaegirs",
+          "assetName": "In Position",
+          "side": "face",
+          "imageID": "19a472de24092516"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "f8bf3b1f11f7efb9c1ef3a50ea0d6b8c90420db578375b6261287d9523ed781e",
+      "imageIDs": [
+        "6e9543468698f1db"
+      ],
+      "appearances": [
+        {
+          "team": "Chaos Cult",
+          "assetName": "Chaos Devotee",
+          "side": "face",
+          "imageID": "6e9543468698f1db"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "fd87e442cb7293f3168e257cbcf153f8ddf338fd054ffbacf81b45a63a87d943",
+      "imageIDs": [
+        "27f1a919db3fc849"
+      ],
+      "appearances": [
+        {
+          "team": "Brood Brothers",
+          "assetName": "Unquestioning Loyalty",
+          "side": "face",
+          "imageID": "27f1a919db3fc849"
+        }
+      ]
+    }
+  ],
+  "excluded": [
+    {
+      "sourceSHA256": "17872590d23c181eed47b744f6c5e1e1d20b900a96f96deab2d02536cbf4cafa",
+      "imageIDs": [
+        "c859718e9712b30f"
+      ],
+      "appearances": [
+        {
+          "team": "Hernkyn Yaegirs",
+          "assetName": "Yaegir Bladekyn",
+          "side": "back",
+          "imageID": "c859718e9712b30f"
+        },
+        {
+          "team": "Hernkyn Yaegirs",
+          "assetName": "Yaegir Bombast",
+          "side": "back",
+          "imageID": "c859718e9712b30f"
+        },
+        {
+          "team": "Hernkyn Yaegirs",
+          "assetName": "Yaegir Gunner",
+          "side": "back",
+          "imageID": "c859718e9712b30f"
+        },
+        {
+          "team": "Hernkyn Yaegirs",
+          "assetName": "Yaegir Ironbreak",
+          "side": "back",
+          "imageID": "c859718e9712b30f"
+        },
+        {
+          "team": "Hernkyn Yaegirs",
+          "assetName": "Yaegir Riflekyn",
+          "side": "back",
+          "imageID": "c859718e9712b30f"
+        },
+        {
+          "team": "Hernkyn Yaegirs",
+          "assetName": "Yaegir Theyn",
+          "side": "back",
+          "imageID": "c859718e9712b30f"
+        },
+        {
+          "team": "Hernkyn Yaegirs",
+          "assetName": "Yaegir Tracker",
+          "side": "back",
+          "imageID": "c859718e9712b30f"
+        },
+        {
+          "team": "Hernkyn Yaegirs",
+          "assetName": "Yaegir Warrior",
+          "side": "back",
+          "imageID": "c859718e9712b30f"
+        }
+      ],
+      "reason": "No translated text record"
+    },
+    {
+      "sourceSHA256": "8bcfdd2bcce948c8f132442e962490baf2deeb8843e4143ffe5562f00e379726",
+      "imageIDs": [
+        "3576c74b5f78df7e"
+      ],
+      "appearances": [
+        {
+          "team": "Brood Brothers",
+          "assetName": "Brood Brother Agitator",
+          "side": "back",
+          "imageID": "3576c74b5f78df7e"
+        },
+        {
+          "team": "Brood Brothers",
+          "assetName": "Brood Brother Commander",
+          "side": "back",
+          "imageID": "3576c74b5f78df7e"
+        },
+        {
+          "team": "Brood Brothers",
+          "assetName": "Brood Brother Gunner",
+          "side": "back",
+          "imageID": "3576c74b5f78df7e"
+        },
+        {
+          "team": "Brood Brothers",
+          "assetName": "Brood Brother Iconward",
+          "side": "back",
+          "imageID": "3576c74b5f78df7e"
+        },
+        {
+          "team": "Brood Brothers",
+          "assetName": "Brood Brother Knife Fighter",
+          "side": "back",
+          "imageID": "3576c74b5f78df7e"
+        },
+        {
+          "team": "Brood Brothers",
+          "assetName": "Brood Brother Sniper",
+          "side": "back",
+          "imageID": "3576c74b5f78df7e"
+        },
+        {
+          "team": "Brood Brothers",
+          "assetName": "Brood Brother Trooper",
+          "side": "back",
+          "imageID": "3576c74b5f78df7e"
+        },
+        {
+          "team": "Brood Brothers",
+          "assetName": "Brood Brother Veteran",
+          "side": "back",
+          "imageID": "3576c74b5f78df7e"
+        },
+        {
+          "team": "Brood Brothers",
+          "assetName": "Primus",
+          "side": "back",
+          "imageID": "3576c74b5f78df7e"
+        },
+        {
+          "team": "Brood Brothers",
+          "assetName": "Psychic Familiar",
+          "side": "back",
+          "imageID": "3576c74b5f78df7e"
+        }
+      ],
+      "reason": "No translated text record"
+    },
+    {
+      "sourceSHA256": "98d5143e56473224c5ce33fcf5211c6da1e4c26c063fa46a024db8d67e7e17a3",
+      "imageIDs": [
+        "badcb52f09971e05"
+      ],
+      "appearances": [
+        {
+          "team": "Goremongers",
+          "assetName": "Goremonger Aspirant",
+          "side": "back",
+          "imageID": "badcb52f09971e05"
+        },
+        {
+          "team": "Goremongers",
+          "assetName": "Goremonger Blood Herald",
+          "side": "back",
+          "imageID": "badcb52f09971e05"
+        },
+        {
+          "team": "Goremongers",
+          "assetName": "Goremonger Bloodtaker",
+          "side": "back",
+          "imageID": "badcb52f09971e05"
+        },
+        {
+          "team": "Goremongers",
+          "assetName": "Goremonger Butcher",
+          "side": "back",
+          "imageID": "badcb52f09971e05"
+        },
+        {
+          "team": "Goremongers",
+          "assetName": "Goremonger Skullclaimer",
+          "side": "back",
+          "imageID": "badcb52f09971e05"
+        },
+        {
+          "team": "Goremongers",
+          "assetName": "Goremonger Stalker",
+          "side": "back",
+          "imageID": "badcb52f09971e05"
+        }
+      ],
+      "reason": "No translated text record"
+    },
+    {
+      "sourceSHA256": "bb0457b92d003572b53aae439f8e369ef659c939b78a4ad65f5cadecc432795f",
+      "imageIDs": [
+        "ac58f9998e4319d0"
+      ],
+      "appearances": [
+        {
+          "team": "Chaos Cult",
+          "assetName": "Blessed Blade",
+          "side": "back",
+          "imageID": "ac58f9998e4319d0"
+        },
+        {
+          "team": "Chaos Cult",
+          "assetName": "Chaos Devotee",
+          "side": "back",
+          "imageID": "ac58f9998e4319d0"
+        },
+        {
+          "team": "Chaos Cult",
+          "assetName": "Chaos Mutant",
+          "side": "back",
+          "imageID": "ac58f9998e4319d0"
+        },
+        {
+          "team": "Chaos Cult",
+          "assetName": "Chaos Torment",
+          "side": "back",
+          "imageID": "ac58f9998e4319d0"
+        },
+        {
+          "team": "Chaos Cult",
+          "assetName": "Cult Demagogue",
+          "side": "back",
+          "imageID": "ac58f9998e4319d0"
+        },
+        {
+          "team": "Chaos Cult",
+          "assetName": "Mindwitch",
+          "side": "back",
+          "imageID": "ac58f9998e4319d0"
+        }
+      ],
+      "reason": "No translated text record"
+    },
+    {
+      "sourceSHA256": "e5b1e34d2f567fc1b9856b459ac0c8a673774281e93a0e1d23319767da81fdd5",
+      "imageIDs": [
+        "cdaaf3616b957b69"
+      ],
+      "appearances": [
+        {
+          "team": "Goremongers",
+          "assetName": "",
+          "side": "back",
+          "imageID": "cdaaf3616b957b69"
+        },
+        {
+          "team": "Goremongers",
+          "assetName": "Augmented Endurance",
+          "side": "back",
+          "imageID": "cdaaf3616b957b69"
+        },
+        {
+          "team": "Goremongers",
+          "assetName": "Bloody Cadaver",
+          "side": "back",
+          "imageID": "cdaaf3616b957b69"
+        },
+        {
+          "team": "Goremongers",
+          "assetName": "Chaos Sigil",
+          "side": "back",
+          "imageID": "cdaaf3616b957b69"
+        },
+        {
+          "team": "Goremongers",
+          "assetName": "Destructive Demise",
+          "side": "back",
+          "imageID": "cdaaf3616b957b69"
+        },
+        {
+          "team": "Goremongers",
+          "assetName": "Enhanced Violence",
+          "side": "back",
+          "imageID": "cdaaf3616b957b69"
+        },
+        {
+          "team": "Goremongers",
+          "assetName": "Fury",
+          "side": "back",
+          "imageID": "cdaaf3616b957b69"
+        },
+        {
+          "team": "Goremongers",
+          "assetName": "Gorethirst",
+          "side": "back",
+          "imageID": "cdaaf3616b957b69"
+        },
+        {
+          "team": "Goremongers",
+          "assetName": "Gory Tenacity",
+          "side": "back",
+          "imageID": "cdaaf3616b957b69"
+        },
+        {
+          "team": "Goremongers",
+          "assetName": "Gory Totem",
+          "side": "back",
+          "imageID": "cdaaf3616b957b69"
+        },
+        {
+          "team": "Goremongers",
+          "assetName": "Hunt for Blood",
+          "side": "back",
+          "imageID": "cdaaf3616b957b69"
+        },
+        {
+          "team": "Goremongers",
+          "assetName": "Lacerate Flesh",
+          "side": "back",
+          "imageID": "cdaaf3616b957b69"
+        },
+        {
+          "team": "Goremongers",
+          "assetName": "Mania",
+          "side": "back",
+          "imageID": "cdaaf3616b957b69"
+        },
+        {
+          "team": "Goremongers",
+          "assetName": "Rage",
+          "side": "back",
+          "imageID": "cdaaf3616b957b69"
+        },
+        {
+          "team": "Goremongers",
+          "assetName": "Rake",
+          "side": "back",
+          "imageID": "cdaaf3616b957b69"
+        },
+        {
+          "team": "Goremongers",
+          "assetName": "Rejuvenate",
+          "side": "back",
+          "imageID": "cdaaf3616b957b69"
+        },
+        {
+          "team": "Goremongers",
+          "assetName": "Runes of Khorne",
+          "side": "back",
+          "imageID": "cdaaf3616b957b69"
+        },
+        {
+          "team": "Goremongers",
+          "assetName": "Sanguavitae",
+          "side": "back",
+          "imageID": "cdaaf3616b957b69"
+        },
+        {
+          "team": "Goremongers",
+          "assetName": "Surge",
+          "side": "back",
+          "imageID": "cdaaf3616b957b69"
+        },
+        {
+          "team": "Goremongers",
+          "assetName": "Unbridled Aggression",
+          "side": "back",
+          "imageID": "cdaaf3616b957b69"
+        },
+        {
+          "team": "Goremongers",
+          "assetName": "Wrist Chains",
+          "side": "back",
+          "imageID": "cdaaf3616b957b69"
+        }
+      ],
+      "reason": "No translated text record"
+    }
+  ],
+  "counts": {
+    "includedSourceSHA": 124,
+    "excludedSourceSHA": 5,
+    "referencedSourceSHA": 129
+  }
+}

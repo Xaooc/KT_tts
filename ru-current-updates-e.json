@@ -1,0 +1,2165 @@
+[
+  {
+    "id": "9e9232c01eb8f335",
+    "expectedTitle": "Veteran Astartes",
+    "team": "Deathwatch",
+    "source": {
+      "officialPdf": "https://assets.warhammer-community.com/eng_deathwatch_online_rules-vn8chdq2c8-xfl54bekws.pdf",
+      "date": "2026-08-26",
+      "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/deathwatch/",
+      "checkedOn": "2026-10-05",
+      "pdfPage": 9,
+      "pdfUrl": "https://assets.warhammer-community.com/eng_deathwatch_online_rules-vn8chdq2c8-xfl54bekws.pdf",
+      "savedOfficialPdf": "inventory/official-review/deathwatch-2026-08-26.pdf",
+      "savedOfficialPdfExtract": "inventory/official-review/deathwatch-2026-08-26.txt",
+      "wahapediaFullText": "inventory/current-team-rules/deathwatch-web-full.txt",
+      "wahapediaLines": [
+        114,
+        115
+      ],
+      "visualStrikeThroughChecked": true
+    },
+    "blocks": [
+      {
+        "heading": "Veteran Astartes",
+        "russian": "Во время каждой активации дружественный оперативник Дозора Смерти (DEATHWATCH) может выполнить либо два действия «Стрельба» (Shoot), либо два действия «Ближний бой» (Fight). Если он выполняет два действия «Стрельба», и для обоих выбраны вспомогательный гранатомёт (auxiliary grenade launcher), осколочная пушка (frag cannon), тяжёлый плазменный испепелитель (heavy plasma incinerator), тяжёлый болтер «Инфернус» (Infernus heavy bolter), плазменный пистолет (plasma pistol) или болтовая винтовка «Сталкер» (stalker bolt rifle), за второе действие нужно потратить ещё 1 AP. Каждый дружественный оперативник Дозора Смерти может совершать контрдействие независимо от приказа. При этом во время контрдействия он может бесплатно выполнить ещё одно действие стоимостью 1 AP; два действия должны быть разными.\nВо время одного контрдействия нельзя совместить «Ближний бой» (Fight) и «Стрельбу» (Shoot). Если при двойной «Стрельбе» хотя бы для одного действия выбрана мелта-бомба (Melta bomb), второе действие также требует дополнительный 1 AP.",
+        "english": "During each friendly DEATHWATCH operative's activation, it can perform either two Shoot actions or two Fight actions. If it performs two Shoot actions and an auxiliary grenade launcher, frag cannon, heavy plasma incinerator, Infernus heavy bolter, plasma pistol or stalker bolt rifle is selected for both, spend 1 additional AP for the second action. Each friendly DEATHWATCH operative can counteract regardless of its order. Whenever it does, it can perform an additional 1AP action for free during that counteraction, but the two actions must be different. You cannot perform both Fight and Shoot during that counteraction. If a melta bomb is selected for either of two Shoot actions, the second action also requires 1 additional AP.",
+        "proseTitles": [
+          "Veteran Astartes"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ab48058cc0f5ce4e",
+    "expectedTitle": "Special Issue Ammunition",
+    "team": "Deathwatch",
+    "source": {
+      "officialPdf": "https://assets.warhammer-community.com/eng_deathwatch_online_rules-vn8chdq2c8-xfl54bekws.pdf",
+      "date": "2026-08-26",
+      "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/deathwatch/",
+      "checkedOn": "2026-10-05",
+      "pdfPage": 9,
+      "pdfUrl": "https://assets.warhammer-community.com/eng_deathwatch_online_rules-vn8chdq2c8-xfl54bekws.pdf",
+      "savedOfficialPdf": "inventory/official-review/deathwatch-2026-08-26.pdf",
+      "savedOfficialPdfExtract": "inventory/official-review/deathwatch-2026-08-26.txt",
+      "wahapediaFullText": "inventory/current-team-rules/deathwatch-web-full.txt",
+      "wahapediaLines": [
+        119,
+        120,
+        121,
+        122
+      ],
+      "visualStrikeThroughChecked": true
+    },
+    "blocks": [
+      {
+        "heading": "Special Issue Ammunition",
+        "russian": "Раз за раунд, когда дружественный оперативник Дозора Смерти (DEATHWATCH) выполняет действие «Стрельба» (Shoot), на шаге выбора оружия можно применить это правило. До конца действия одно из следующих правил добавляется к оружию дальнего боя этого оперативника: «Взрыв 1 дюйм» (Blast 1\") — нельзя выбрать для профиля с правилом «Поток» (Torrent); «Разрушительное 1» (Devastating 1); «Смертоносное 5+» (Lethal 5+); «Бронебойное при критических успехах 1» (Piercing Crits 1); «Раздирающее» (Rending); «Насыщение огнём» (Saturate); «Сокрушительное» (Severe). Это правило нельзя применять к взрывным гранатам и мелта-бомбам.",
+        "english": "Once per turning point, when a friendly DEATHWATCH operative performs the Shoot action, in the Select Weapon step you can use this rule. Select one of the following weapon rules for that operative's ranged weapons until the end of the action: Blast 1\" (cannot be selected if the weapon profile being used has Torrent); Devastating 1; Lethal 5+; Piercing Crits 1; Rending; Saturate; Severe. This rule cannot be used with explosive grenades or melta bombs.",
+        "proseTitles": [
+          "Special Issue Ammunition"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "6ddbbebcac34eacf",
+    "expectedTitle": "Mission Tactics",
+    "team": "Deathwatch",
+    "source": {
+      "officialPdf": "https://assets.warhammer-community.com/eng_deathwatch_online_rules-vn8chdq2c8-xfl54bekws.pdf",
+      "date": "2026-08-26",
+      "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/deathwatch/",
+      "checkedOn": "2026-10-05",
+      "pdfPage": 8,
+      "pdfUrl": "https://assets.warhammer-community.com/eng_deathwatch_online_rules-vn8chdq2c8-xfl54bekws.pdf",
+      "savedOfficialPdf": "inventory/official-review/deathwatch-2026-08-26.pdf",
+      "savedOfficialPdfExtract": "inventory/official-review/deathwatch-2026-08-26.txt",
+      "wahapediaFullText": "inventory/current-team-rules/deathwatch-web-full.txt",
+      "visualStrikeThroughChecked": true
+    },
+    "blocks": [
+      {
+        "heading": "Mission Tactics",
+        "russian": "Выберите приказ «Скрытность» (Conceal) или «Бой» (Engage). Когда дружественный оперативник Дозора Смерти (DEATHWATCH) стреляет по вражескому оперативнику с таким приказом сражается с ним либо отвечает ему в ближнем бою, его оружие получает правило «Сбалансированное» (Balanced).",
+        "english": "Select Conceal or Engage. Whenever a friendly DEATHWATCH operative is shooting against, fighting against or retaliating against an enemy operative with that order, its weapons have the Balanced weapon rule.",
+        "proseTitles": [
+          "Mission Tactics"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "f814787023d2dde7",
+    "expectedTitle": "Suffer Not the Alien",
+    "team": "Deathwatch",
+    "source": {
+      "officialPdf": "https://assets.warhammer-community.com/eng_deathwatch_online_rules-vn8chdq2c8-xfl54bekws.pdf",
+      "date": "2026-08-26",
+      "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/deathwatch/",
+      "checkedOn": "2026-10-05",
+      "pdfPage": 8,
+      "pdfUrl": "https://assets.warhammer-community.com/eng_deathwatch_online_rules-vn8chdq2c8-xfl54bekws.pdf",
+      "savedOfficialPdf": "inventory/official-review/deathwatch-2026-08-26.pdf",
+      "savedOfficialPdfExtract": "inventory/official-review/deathwatch-2026-08-26.txt",
+      "wahapediaFullText": "inventory/current-team-rules/deathwatch-web-full.txt",
+      "visualStrikeThroughChecked": true
+    },
+    "blocks": [
+      {
+        "heading": "Suffer Not the Alien",
+        "russian": "Примените этот приём перестрелки после броска кубиков атаки дружественного оперативника Дозора Смерти (DEATHWATCH), который стреляет по вражескому оперативнику сражается с ним либо отвечает ему в ближнем бою, если у врага нет ключевого слова «Хаос» (CHAOS) или «Империум» (IMPERIUM). Можно перебросить любые из этих кубиков атаки.",
+        "english": "Use this firefight ploy after rolling attack dice for a friendly DEATHWATCH operative shooting against, fighting against or retaliating against an enemy operative that does not have the CHAOS or IMPERIUM keyword. You can re-roll any of those attack dice.",
+        "proseTitles": [
+          "Suffer Not the Alien"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "b8af37b197b7b442",
+    "expectedTitle": "The Shield That Slays",
+    "team": "Deathwatch",
+    "source": {
+      "officialPdf": "https://assets.warhammer-community.com/eng_deathwatch_online_rules-vn8chdq2c8-xfl54bekws.pdf",
+      "date": "2026-08-26",
+      "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/deathwatch/",
+      "checkedOn": "2026-10-05",
+      "pdfPage": 9,
+      "pdfUrl": "https://assets.warhammer-community.com/eng_deathwatch_online_rules-vn8chdq2c8-xfl54bekws.pdf",
+      "savedOfficialPdf": "inventory/official-review/deathwatch-2026-08-26.pdf",
+      "savedOfficialPdfExtract": "inventory/official-review/deathwatch-2026-08-26.txt",
+      "wahapediaFullText": "inventory/current-team-rules/deathwatch-web-full.txt",
+      "visualStrikeThroughChecked": true
+    },
+    "blocks": [
+      {
+        "heading": "The Shield That Slays",
+        "russian": "Когда дружественный оперативник Дозора Смерти (DEATHWATCH) целиком находится на территории противника, обычный урон (Normal Dmg) величиной 4 или выше, нанесённый ему, уменьшается на 1.",
+        "english": "Whenever a friendly DEATHWATCH operative is wholly within your opponent’s territory, Normal Dmg of 4 or more inflicted on it is reduced by 1.",
+        "proseTitles": [
+          "The Shield That Slays"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "c46d329d659988ab",
+    "expectedTitle": "The Long Vigil",
+    "team": "Deathwatch",
+    "source": {
+      "officialPdf": "https://assets.warhammer-community.com/eng_deathwatch_online_rules-vn8chdq2c8-xfl54bekws.pdf",
+      "date": "2026-08-26",
+      "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/deathwatch/",
+      "checkedOn": "2026-10-05",
+      "pdfPage": 9,
+      "pdfUrl": "https://assets.warhammer-community.com/eng_deathwatch_online_rules-vn8chdq2c8-xfl54bekws.pdf",
+      "savedOfficialPdf": "inventory/official-review/deathwatch-2026-08-26.pdf",
+      "savedOfficialPdfExtract": "inventory/official-review/deathwatch-2026-08-26.txt",
+      "wahapediaFullText": "inventory/current-team-rules/deathwatch-web-full.txt",
+      "visualStrikeThroughChecked": true
+    },
+    "blocks": [
+      {
+        "heading": "The Long Vigil",
+        "russian": "Когда вражеский оперативник стреляет по дружественному оперативнику Дозора Смерти (DEATHWATCH) целиком на вашей территории, можно перебросить один свой кубик защиты.",
+        "english": "Whenever an enemy operative is shooting a friendly DEATHWATCH operative wholly within your territory, you can re-roll one of your defence dice.",
+        "proseTitles": [
+          "The Long Vigil"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "f0269620366413ac",
+    "expectedTitle": "Demolisher Veteran",
+    "team": "Deathwatch",
+    "source": {
+      "officialPdf": "https://assets.warhammer-community.com/eng_deathwatch_online_rules-vn8chdq2c8-xfl54bekws.pdf",
+      "date": "2026-08-26",
+      "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/deathwatch/",
+      "checkedOn": "2026-10-05",
+      "pdfPage": 9,
+      "pdfUrl": "https://assets.warhammer-community.com/eng_deathwatch_online_rules-vn8chdq2c8-xfl54bekws.pdf",
+      "savedOfficialPdf": "inventory/official-review/deathwatch-2026-08-26.pdf",
+      "savedOfficialPdfExtract": "inventory/official-review/deathwatch-2026-08-26.txt",
+      "wahapediaFullText": "inventory/current-team-rules/deathwatch-web-full.txt",
+      "visualStrikeThroughChecked": true
+    },
+    "blocks": [
+      {
+        "heading": "Aggressive Force",
+        "russian": "Когда этот оперативник сражается или отвечает в ближнем бою, уменьшите на 1 обычный и критический урон (Normal/Critical Dmg) величиной 3 или выше, нанесённый ему. Это не складывается с «Щитом, который убивает» (The Shield That Slays).",
+        "english": "Whenever this operative is fighting or retaliating, Normal and Critical Dmg of 3 or more inflicted on it is reduced by 1. This is not cumulative with The Shield That Slays.",
+        "proseTitles": [
+          "Aggressive Force"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "be43bb3db3b28068",
+    "expectedTitle": "Disruptor Veteran",
+    "team": "Deathwatch",
+    "source": {
+      "officialPdf": "https://assets.warhammer-community.com/eng_deathwatch_online_rules-vn8chdq2c8-xfl54bekws.pdf",
+      "date": "2026-08-26",
+      "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/deathwatch/",
+      "checkedOn": "2026-10-05",
+      "pdfPage": 9,
+      "pdfUrl": "https://assets.warhammer-community.com/eng_deathwatch_online_rules-vn8chdq2c8-xfl54bekws.pdf",
+      "savedOfficialPdf": "inventory/official-review/deathwatch-2026-08-26.pdf",
+      "savedOfficialPdfExtract": "inventory/official-review/deathwatch-2026-08-26.txt",
+      "wahapediaFullText": "inventory/current-team-rules/deathwatch-web-full.txt",
+      "visualStrikeThroughChecked": true
+    },
+    "blocks": [
+      {
+        "heading": "Auspex Triangulation",
+        "russian": "Приём перестрелки «Усовершенствованное сканирование ауспексом» (Advanced Auspex Scan) стоит 0 командных очков (CP), если выполнены оба условия: этот оперативник не находится в дистанции контроля врага; цель действия «Стрельба» (Shoot) — основная цель, если она есть, — видима этому оперативнику. Сам этот оперативник не обязан выполнять действие «Стрельба».\nПоследующие действия «Стрельба» (Shoot) в этой активации или контрдействии тоже должны удовлетворять этим условиям; иначе уловка не действует для них.",
+        "english": "The Advanced Auspex Scan firefight ploy costs 0CP when both are true: this operative is not within control range of an enemy operative; and the target of that Shoot action (primary target, if relevant) is visible to this operative. This operative does not have to perform the Shoot action. Subsequent Shoot actions during that activation or counteraction must also meet these requirements or the ploy has no effect for them.",
+        "proseTitles": [
+          "Auspex Triangulation"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "0fd4233162520906",
+    "expectedTitle": "Transhuman Physiology",
+    "team": "Deathwatch",
+    "source": {
+      "officialPdf": "https://assets.warhammer-community.com/eng_deathwatch_online_rules-vn8chdq2c8-xfl54bekws.pdf",
+      "date": "2026-08-26",
+      "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/deathwatch/",
+      "checkedOn": "2026-10-05",
+      "pdfPage": 6,
+      "pdfUrl": "https://assets.warhammer-community.com/eng_deathwatch_online_rules-vn8chdq2c8-xfl54bekws.pdf",
+      "savedOfficialPdf": "inventory/official-review/deathwatch-2026-08-26.pdf",
+      "savedOfficialPdfExtract": "inventory/official-review/deathwatch-2026-08-26.txt",
+      "wahapediaFullText": "inventory/current-team-rules/deathwatch-web-full.txt",
+      "wahapediaLines": [
+        169
+      ],
+      "visualStrikeThroughChecked": true
+    },
+    "blocks": [
+      {
+        "heading": "Transhuman Physiology",
+        "russian": "Примените этот приём перестрелки, когда вражеский оперативник стреляет по дружественному оперативнику Дозора Смерти (DEATHWATCH), на шаге броска кубиков защиты. Сохраните один свой обычный успех как критический.",
+        "english": "Use this firefight ploy when an enemy operative is shooting a friendly DEATHWATCH operative, during the Roll Defence Dice step. Retain one of your normal successes as a critical success instead.",
+        "proseTitles": [
+          "Transhuman Physiology"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "9de8d1006b5511a4",
+    "expectedTitle": "Scout Sergeant",
+    "team": "Scout Squad",
+    "source": {
+      "officialPdf": "https://assets.warhammer-community.com/eng_29-04_kt_teamrules_scout_squad-gsh9kmjzgi-cx2xtxmp8b.pdf",
+      "date": "2026-04-29",
+      "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/scout-squad/",
+      "checkedOn": "2026-10-05",
+      "pdfPage": 8,
+      "pdfUrl": "https://assets.warhammer-community.com/eng_29-04_kt_teamrules_scout_squad-gsh9kmjzgi-cx2xtxmp8b.pdf",
+      "savedOfficialPdf": "inventory/official-review/scout-squad-2026-04-29.pdf",
+      "savedOfficialPdfExtract": "inventory/official-review/scout-squad-2026-04-29.txt",
+      "wahapediaFullText": "inventory/current-team-rules/scout-squad-web-full.txt",
+      "wahapediaLines": [
+        235
+      ],
+      "visualStrikeThroughChecked": true
+    },
+    "blocks": [
+      {
+        "heading": "Guidance and Experience",
+        "russian": "Один раз во время каждой активации этого оперативника выберите другого дружественного оперативника отряда разведчиков (SCOUT SQUAD), находящегося в зоне боя. До конца следующей активации выбранного оперативника увеличьте его лимит очков действий (APL) на 1.",
+        "english": "Once during each of this operative's activations, select one other friendly SCOUT SQUAD operative in the killzone. Until the end of that operative's next activation, add 1 to its APL stat.",
+        "proseTitles": [
+          "Guidance and Experience"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "2547518058769d09",
+    "expectedTitle": "Heavy Weapon Bipod",
+    "team": "Scout Squad",
+    "source": {
+      "officialPdf": "https://assets.warhammer-community.com/eng_29-04_kt_teamrules_scout_squad-gsh9kmjzgi-cx2xtxmp8b.pdf",
+      "date": "2026-04-29",
+      "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/scout-squad/",
+      "checkedOn": "2026-10-05",
+      "pdfPage": 8,
+      "pdfUrl": "https://assets.warhammer-community.com/eng_29-04_kt_teamrules_scout_squad-gsh9kmjzgi-cx2xtxmp8b.pdf",
+      "savedOfficialPdf": "inventory/official-review/scout-squad-2026-04-29.pdf",
+      "savedOfficialPdfExtract": "inventory/official-review/scout-squad-2026-04-29.txt",
+      "wahapediaFullText": "inventory/current-team-rules/scout-squad-web-full.txt",
+      "wahapediaLines": [
+        260
+      ],
+      "visualStrikeThroughChecked": true
+    },
+    "blocks": [
+      {
+        "heading": "Heavy Weapon Bipod",
+        "russian": "Когда дружественный тяжёлый стрелок (HEAVY GUNNER) отряда разведчиков (SCOUT SQUAD) стреляет из любого оружия на своей карточке, если он не перемещался в течение активации либо совершает контрдействие, это оружие получает правило «Непрерывное» (Ceaseless); если оно уже имеет это правило, вместо него применяется «Неумолимое» (Relentless). После стрельбы оперативник может перемещаться.",
+        "english": "Whenever a friendly SCOUT SQUAD HEAVY GUNNER operative is shooting with any weapon on its datacard, if it has not moved during the activation, or if it is a counteraction, that weapon has the Ceaseless weapon rule; if it already has that rule, it has the Relentless weapon rule. The operative is not restricted from moving after shooting.",
+        "proseTitles": [
+          "Heavy Weapon Bipod"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "29b1dd16c265cec5",
+    "expectedTitle": "Stealth Relocation",
+    "team": "Scout Squad",
+    "source": {
+      "officialPdf": "https://assets.warhammer-community.com/eng_29-04_kt_teamrules_scout_squad-gsh9kmjzgi-cx2xtxmp8b.pdf",
+      "date": "2026-04-29",
+      "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/scout-squad/",
+      "checkedOn": "2026-10-05",
+      "pdfPage": 9,
+      "pdfUrl": "https://assets.warhammer-community.com/eng_29-04_kt_teamrules_scout_squad-gsh9kmjzgi-cx2xtxmp8b.pdf",
+      "savedOfficialPdf": "inventory/official-review/scout-squad-2026-04-29.pdf",
+      "savedOfficialPdfExtract": "inventory/official-review/scout-squad-2026-04-29.txt",
+      "wahapediaFullText": "inventory/current-team-rules/scout-squad-web-full.txt",
+      "wahapediaLines": [
+        161
+      ],
+      "visualStrikeThroughChecked": true
+    },
+    "blocks": [
+      {
+        "heading": "Stealth Relocation",
+        "russian": "Выберите до D3 дружественных Разведчиков (SCOUT SQUAD) с приказом «Скрытность» (Conceal), находящихся дальше 4 дюймов от врагов. Они немедленно бесплатно выполняют «Рывок» (Dash) в выбранном вами порядке. Нельзя применять эту уловку в первом раунде.",
+        "english": "Select up to D3 friendly SCOUT SQUAD operatives with a Conceal order more than 4\" from enemy operatives. They can immediately perform a free Dash in your chosen order. You cannot use this ploy during the first turning point.",
+        "proseTitles": [
+          "Stealth Relocation"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "2bdf25789fda0d16",
+    "expectedTitle": "Scout Hunter",
+    "team": "Scout Squad",
+    "source": {
+      "officialPdf": "https://assets.warhammer-community.com/eng_29-04_kt_teamrules_scout_squad-gsh9kmjzgi-cx2xtxmp8b.pdf",
+      "date": "2026-04-29",
+      "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/scout-squad/",
+      "checkedOn": "2026-10-05",
+      "pdfPage": 9,
+      "pdfUrl": "https://assets.warhammer-community.com/eng_29-04_kt_teamrules_scout_squad-gsh9kmjzgi-cx2xtxmp8b.pdf",
+      "savedOfficialPdf": "inventory/official-review/scout-squad-2026-04-29.pdf",
+      "savedOfficialPdfExtract": "inventory/official-review/scout-squad-2026-04-29.txt",
+      "wahapediaFullText": "inventory/current-team-rules/scout-squad-web-full.txt",
+      "visualStrikeThroughChecked": true
+    },
+    "weapons": [
+      {
+        "name": "Combat blade",
+        "dmg": "4/5"
+      }
+    ]
+  },
+  {
+    "id": "d5e33a0d668f76e6",
+    "expectedTitle": "Scout Warrior",
+    "team": "Scout Squad",
+    "source": {
+      "officialPdf": "https://assets.warhammer-community.com/eng_29-04_kt_teamrules_scout_squad-gsh9kmjzgi-cx2xtxmp8b.pdf",
+      "date": "2026-04-29",
+      "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/scout-squad/",
+      "checkedOn": "2026-10-05",
+      "pdfPage": 9,
+      "pdfUrl": "https://assets.warhammer-community.com/eng_29-04_kt_teamrules_scout_squad-gsh9kmjzgi-cx2xtxmp8b.pdf",
+      "savedOfficialPdf": "inventory/official-review/scout-squad-2026-04-29.pdf",
+      "savedOfficialPdfExtract": "inventory/official-review/scout-squad-2026-04-29.txt",
+      "wahapediaFullText": "inventory/current-team-rules/scout-squad-web-full.txt",
+      "visualStrikeThroughChecked": true
+    },
+    "weapons": [
+      {
+        "name": "Combat blade",
+        "dmg": "4/5"
+      }
+    ]
+  },
+  {
+    "id": "a9eeb4bf295d7497",
+    "expectedTitle": "The Curtain Falls",
+    "team": "Void-dancer Troupe",
+    "source": {
+      "officialPdf": "https://assets.warhammer-community.com/eng_17-06_kill_team_team_rules_void-dancer_troupe_online_rules-ee8qymqvq4-w24lgiuhhz.pdf",
+      "date": "2026-06-17",
+      "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/void-dancer-troupe/",
+      "checkedOn": "2026-10-05",
+      "pdfPage": 9,
+      "pdfUrl": "https://assets.warhammer-community.com/eng_17-06_kill_team_team_rules_void-dancer_troupe_online_rules-ee8qymqvq4-w24lgiuhhz.pdf",
+      "savedOfficialPdf": "inventory/official-review/void-dancer-troupe-2026-06-17.pdf",
+      "savedOfficialPdfExtract": "inventory/official-review/void-dancer-troupe-2026-06-17.txt",
+      "wahapediaFullText": "inventory/current-team-rules/void-dancer-troupe-web-full.txt",
+      "wahapediaLines": [
+        119
+      ],
+      "visualStrikeThroughChecked": true
+    },
+    "blocks": [
+      {
+        "heading": "The Curtain Falls",
+        "russian": "Примените этот приём перестрелки, когда дружественный оперативник труппы Пустотанцоров (VOID-DANCER TROUPE) сражается в ближнем бою, после удара критическим успехом, если враг ещё не выведен из строя. Завершите эту последовательность (сбросьте оставшиеся кубики атаки) и немедленно бесплатно выполните этим оперативником действие «Отступление» (Fall Back) на расстояние до 3 дюймов (после чего действие «Ближний бой» (Fight) заканчивается). Он может сделать это, даже если уже выполнил действие, запрещающее «Отступление».",
+        "english": "Use this firefight ploy when a friendly VOID-DANCER TROUPE operative is fighting, after you strike with a critical success if the enemy is not incapacitated. End that sequence (discard any remaining attack dice) and immediately perform a free Fall Back action up to 3\" with that operative (then the Fight action ends). It can do so even if it performed an action that prevents it from performing Fall Back.",
+        "proseTitles": [
+          "The Curtain Falls"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "fd875d1b7c6410aa",
+    "expectedTitle": "Saedath · Allegories",
+    "team": "Void-dancer Troupe",
+    "source": {
+      "officialPdf": "https://assets.warhammer-community.com/eng_17-06_kill_team_team_rules_void-dancer_troupe_online_rules-ee8qymqvq4-w24lgiuhhz.pdf",
+      "date": "2026-06-17",
+      "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/void-dancer-troupe/",
+      "checkedOn": "2026-10-05",
+      "pdfPage": 9,
+      "pdfUrl": "https://assets.warhammer-community.com/eng_17-06_kill_team_team_rules_void-dancer_troupe_online_rules-ee8qymqvq4-w24lgiuhhz.pdf",
+      "savedOfficialPdf": "inventory/official-review/void-dancer-troupe-2026-06-17.pdf",
+      "savedOfficialPdfExtract": "inventory/official-review/void-dancer-troupe-2026-06-17.txt",
+      "wahapediaFullText": "inventory/current-team-rules/void-dancer-troupe-web-full.txt",
+      "wahapediaLines": [
+        75,
+        76
+      ],
+      "visualStrikeThroughChecked": true
+    },
+    "blocks": [
+      {
+        "heading": "Epic",
+        "russian": "Представление (Performance): оперативник выводит из строя врага сражаясь в ближнем бою. Акколада (Accolade): оружие ближнего боя оперативника получает правило «Сбалансированное» (Balanced).",
+        "english": "Performance: The operative incapacitates an enemy operative while fighting. Accolade: The operative's melee weapons have the Balanced weapon rule.",
+        "proseTitles": [
+          "Epic"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "fd875d1b7c6410aa",
+    "expectedTitle": "Saedath · Allegories",
+    "team": "Void-dancer Troupe",
+    "source": {
+      "officialPdf": "https://assets.warhammer-community.com/eng_17-06_kill_team_team_rules_void-dancer_troupe_online_rules-ee8qymqvq4-w24lgiuhhz.pdf",
+      "date": "2026-06-17",
+      "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/void-dancer-troupe/",
+      "checkedOn": "2026-10-05",
+      "pdfPage": 9,
+      "pdfUrl": "https://assets.warhammer-community.com/eng_17-06_kill_team_team_rules_void-dancer_troupe_online_rules-ee8qymqvq4-w24lgiuhhz.pdf",
+      "savedOfficialPdf": "inventory/official-review/void-dancer-troupe-2026-06-17.pdf",
+      "savedOfficialPdfExtract": "inventory/official-review/void-dancer-troupe-2026-06-17.txt",
+      "wahapediaFullText": "inventory/current-team-rules/void-dancer-troupe-web-full.txt",
+      "wahapediaLines": [
+        75,
+        76
+      ],
+      "visualStrikeThroughChecked": true
+    },
+    "blocks": [
+      {
+        "heading": "Epic",
+        "russian": "Представление (Performance): оперативник выводит из строя врага в ближнем бою или отвечая на атаку. Акколада (Accolade): оружие ближнего боя оперативника получает правило «Сбалансированное» (Balanced).\nАкколада применяется только когда этот оперативник сражается в ближнем бою.",
+        "english": "Performance: The operative incapacitates an enemy operative while fighting or retaliating. Accolade: The operative's melee weapons have the Balanced weapon rule. The Accolade applies while the operative is fighting.",
+        "proseTitles": [
+          "Epic"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "a896ab0c1ab41227",
+    "expectedTitle": "Shadowseer",
+    "team": "Void-dancer Troupe",
+    "source": {
+      "officialPdf": "https://assets.warhammer-community.com/eng_17-06_kill_team_team_rules_void-dancer_troupe_online_rules-ee8qymqvq4-w24lgiuhhz.pdf",
+      "date": "2026-06-17",
+      "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/void-dancer-troupe/",
+      "checkedOn": "2026-10-05",
+      "pdfPage": 9,
+      "pdfUrl": "https://assets.warhammer-community.com/eng_17-06_kill_team_team_rules_void-dancer_troupe_online_rules-ee8qymqvq4-w24lgiuhhz.pdf",
+      "savedOfficialPdf": "inventory/official-review/void-dancer-troupe-2026-06-17.pdf",
+      "savedOfficialPdfExtract": "inventory/official-review/void-dancer-troupe-2026-06-17.txt",
+      "wahapediaFullText": "inventory/current-team-rules/void-dancer-troupe-web-full.txt",
+      "wahapediaLines": [
+        233
+      ],
+      "visualStrikeThroughChecked": true
+    },
+    "weapons": [
+      {
+        "name": "Hallucinogen grenade",
+        "wrEnglish": "Range 6\", Blast 2\", Lethal 5+, Seek, Silent, Stun, Seek Light",
+        "wrRussian": "дальность 6 дюймов; Взрыв 2 дюйма (Blast 2\"); Смертоносное 5+ (Lethal 5+); Поиск цели (Seek); Бесшумное (Silent); Оглушение (Stun), Обнаружение в лёгком укрытии (Seek Light)"
+      }
+    ]
+  },
+  {
+    "id": "604c5a32aeef544b",
+    "expectedTitle": "Player",
+    "team": "Void-dancer Troupe",
+    "source": {
+      "officialPdf": "https://assets.warhammer-community.com/eng_17-06_kill_team_team_rules_void-dancer_troupe_online_rules-ee8qymqvq4-w24lgiuhhz.pdf",
+      "date": "2026-06-17",
+      "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/void-dancer-troupe/",
+      "checkedOn": "2026-10-05",
+      "pdfPage": 9,
+      "pdfUrl": "https://assets.warhammer-community.com/eng_17-06_kill_team_team_rules_void-dancer_troupe_online_rules-ee8qymqvq4-w24lgiuhhz.pdf",
+      "savedOfficialPdf": "inventory/official-review/void-dancer-troupe-2026-06-17.pdf",
+      "savedOfficialPdfExtract": "inventory/official-review/void-dancer-troupe-2026-06-17.txt",
+      "wahapediaFullText": "inventory/current-team-rules/void-dancer-troupe-web-full.txt",
+      "visualStrikeThroughChecked": true
+    },
+    "weapons": [
+      {
+        "name": "Blade",
+        "dmg": "4/6"
+      }
+    ]
+  },
+  {
+    "id": "d5bc3fe7f7af823b",
+    "expectedTitle": "Lead Player",
+    "team": "Void-dancer Troupe",
+    "source": {
+      "officialPdf": "https://assets.warhammer-community.com/eng_17-06_kill_team_team_rules_void-dancer_troupe_online_rules-ee8qymqvq4-w24lgiuhhz.pdf",
+      "date": "2026-06-17",
+      "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/void-dancer-troupe/",
+      "checkedOn": "2026-10-05",
+      "pdfPage": 9,
+      "pdfUrl": "https://assets.warhammer-community.com/eng_17-06_kill_team_team_rules_void-dancer_troupe_online_rules-ee8qymqvq4-w24lgiuhhz.pdf",
+      "savedOfficialPdf": "inventory/official-review/void-dancer-troupe-2026-06-17.pdf",
+      "savedOfficialPdfExtract": "inventory/official-review/void-dancer-troupe-2026-06-17.txt",
+      "wahapediaFullText": "inventory/current-team-rules/void-dancer-troupe-web-full.txt",
+      "visualStrikeThroughChecked": true
+    },
+    "weapons": [
+      {
+        "name": "Blade",
+        "dmg": "4/6"
+      }
+    ]
+  },
+  {
+    "id": "605f87a38d5a48b8",
+    "expectedTitle": "Fickle Fates",
+    "team": "Legionaries",
+    "source": {
+      "officialPdf": "https://assets.warhammer-community.com/eng_17-12_kt_legionaries_online_rules-wdpu85w6pv-8ndq4m5egw.pdf",
+      "date": "2025-12-17",
+      "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/legionary/",
+      "checkedOn": "2026-10-05",
+      "pdfPage": 11,
+      "pdfUrl": "https://assets.warhammer-community.com/eng_17-12_kt_legionaries_online_rules-wdpu85w6pv-8ndq4m5egw.pdf",
+      "savedOfficialPdf": "inventory/official-review/legionaries-2025-12-17.pdf",
+      "savedOfficialPdfExtract": "inventory/official-review/legionaries-2025-12-17.txt",
+      "wahapediaFullText": "inventory/current-team-rules/legionaries-web-full.txt",
+      "wahapediaLines": [
+        167
+      ],
+      "visualStrikeThroughChecked": true
+    },
+    "blocks": [
+      {
+        "heading": "Fickle Fates",
+        "russian": "Когда дружественный оперативник Легионеров (LEGIONARY) стреляет по готовому вражескому оперативнику, его оружие дальнего боя получает правило «Сбалансированное» (Balanced); если оружие уже имеет его, вместо этого оно получает правило «Неумолимое» (Relentless). Когда оперативник стреляет по готовому дружественному оперативнику Легионеров с ключевым словом ТЗИНЧ (TZEENTCH), на шаге броска кубиков защиты, если вы сохранили критические успехи, можно сохранить один свой провал как обычный успех вместо его сброса.",
+        "english": "Whenever a friendly LEGIONARY operative is shooting a ready enemy operative, its ranged weapons have Balanced; if a weapon already has Balanced, it has Relentless instead. Whenever an operative is shooting a ready friendly LEGIONARY TZEENTCH operative, in the Roll Defence Dice step, if you retain any critical successes, you can retain one of your fails as a normal success instead of discarding it.",
+        "proseTitles": [
+          "Fickle Fates"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "1a3c7f9744053401",
+    "expectedTitle": "Quicksilver Speed",
+    "team": "Legionaries",
+    "source": {
+      "officialPdf": "https://assets.warhammer-community.com/eng_17-12_kt_legionaries_online_rules-wdpu85w6pv-8ndq4m5egw.pdf",
+      "date": "2025-12-17",
+      "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/legionary/",
+      "checkedOn": "2026-10-05",
+      "pdfPage": 11,
+      "pdfUrl": "https://assets.warhammer-community.com/eng_17-12_kt_legionaries_online_rules-wdpu85w6pv-8ndq4m5egw.pdf",
+      "savedOfficialPdf": "inventory/official-review/legionaries-2025-12-17.pdf",
+      "savedOfficialPdfExtract": "inventory/official-review/legionaries-2025-12-17.txt",
+      "wahapediaFullText": "inventory/current-team-rules/legionaries-web-full.txt",
+      "visualStrikeThroughChecked": true
+    },
+    "blocks": [
+      {
+        "heading": "Quicksilver Speed",
+        "russian": "Когда дружественный оперативник Легионеров (LEGIONARY), выполнявший в этом раунде действие с перемещением, сражается либо отвечает в ближнем бою, ухудшите характеристику попадания оружия ближнего боя вражеского оперативника на 1. Когда оперативник стреляет по дружественному оперативнику Легионеров с ключевым словом СЛААНЕШ (SLAANESH), находящемуся дальше 6 дюймов и перемещавшемуся в этом раунде, ухудшите характеристику попадания оружия стреляющего на 1. Эти изменения не складываются с эффектом ранения.",
+        "english": "Whenever a friendly LEGIONARY operative that performed an action in which it moved during this turning point is fighting or retaliating, worsen the Hit stat of the enemy operative's melee weapons by 1. Whenever an operative is shooting a friendly LEGIONARY SLAANESH operative more than 6\" from it that moved during this turning point, worsen the Hit stat of the shooting operative's weapons by 1. This is not cumulative with being injured.",
+        "proseTitles": [
+          "Quicksilver Speed"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "3a0285d9ecc1dcf6",
+    "expectedTitle": "Blood for the Blood God",
+    "team": "Legionaries",
+    "source": {
+      "officialPdf": "https://assets.warhammer-community.com/eng_17-12_kt_legionaries_online_rules-wdpu85w6pv-8ndq4m5egw.pdf",
+      "date": "2025-12-17",
+      "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/legionary/",
+      "checkedOn": "2026-10-05",
+      "pdfPage": 11,
+      "pdfUrl": "https://assets.warhammer-community.com/eng_17-12_kt_legionaries_online_rules-wdpu85w6pv-8ndq4m5egw.pdf",
+      "savedOfficialPdf": "inventory/official-review/legionaries-2025-12-17.pdf",
+      "savedOfficialPdfExtract": "inventory/official-review/legionaries-2025-12-17.txt",
+      "wahapediaFullText": "inventory/current-team-rules/legionaries-web-full.txt",
+      "visualStrikeThroughChecked": true
+    },
+    "blocks": [
+      {
+        "heading": "Blood for the Blood God",
+        "russian": "Когда дружественный оперативник Легионеров (LEGIONARY), кроме оперативников с ключевым словом КХОРН (KHORNE), сражается в ближнем бою, при первом нанесённом вами ударе в этой последовательности добавьте 1 к урону. Увеличьте обе характеристики урона оружия ближнего боя дружественных оперативников Легионеров с ключевым словом КХОРН на 1.\nВ обоих случаях итоговый урон не может превышать 7.",
+        "english": "Whenever a friendly LEGIONARY operative other than KHORNE is fighting, the first time you strike during that sequence, inflict 1 additional damage. Add 1 to both Dmg stats of friendly LEGIONARY KHORNE operatives' melee weapons. Both additional damage and both Khorne melee damage stats are capped at 7.",
+        "proseTitles": [
+          "Blood for the Blood God"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "56c7f8b596dff6fb",
+    "expectedTitle": "Mutability and Change",
+    "team": "Legionaries",
+    "source": {
+      "officialPdf": "https://assets.warhammer-community.com/eng_17-12_kt_legionaries_online_rules-wdpu85w6pv-8ndq4m5egw.pdf",
+      "date": "2025-12-17",
+      "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/legionary/",
+      "checkedOn": "2026-10-05",
+      "pdfPage": 10,
+      "pdfUrl": "https://assets.warhammer-community.com/eng_17-12_kt_legionaries_online_rules-wdpu85w6pv-8ndq4m5egw.pdf",
+      "savedOfficialPdf": "inventory/official-review/legionaries-2025-12-17.pdf",
+      "savedOfficialPdfExtract": "inventory/official-review/legionaries-2025-12-17.txt",
+      "wahapediaFullText": "inventory/current-team-rules/legionaries-web-full.txt",
+      "visualStrikeThroughChecked": true
+    },
+    "blocks": [
+      {
+        "heading": "Mutability and Change",
+        "russian": "Примените этот приём перестрелки при активации дружественного оперативника Легионеров (LEGIONARY) с ключевым словом ТЗИНЧ (TZEENTCH). До конца активации увеличьте его лимит очков действий (APL) на 1. Если это воин (WARRIOR), его ключевое слово Знака Хаоса (Marks of Chaos) нельзя изменить в этом раунде (см. дополнительное правило «Инфернальный договор» (Infernal Pact)).\nВ эту активацию выбранный оперативник не может выполнить одно и то же действие больше одного раза.",
+        "english": "Use this firefight ploy when a friendly LEGIONARY TZEENTCH operative is activated. Until the end of its activation, add 1 to its APL stat. If it is a WARRIOR operative, its Marks of Chaos keyword cannot be changed during this turning point (see Infernal Pact additional rule). That operative cannot perform the same action more than once during that activation.",
+        "proseTitles": [
+          "Mutability and Change"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "7748225ca39963e8",
+    "expectedTitle": "Legionary Balefire Acolyte",
+    "team": "Legionaries",
+    "source": {
+      "officialPdf": "https://assets.warhammer-community.com/eng_17-12_kt_legionaries_online_rules-wdpu85w6pv-8ndq4m5egw.pdf",
+      "date": "2025-12-17",
+      "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/legionary/",
+      "checkedOn": "2026-10-05",
+      "pdfPage": 11,
+      "pdfUrl": "https://assets.warhammer-community.com/eng_17-12_kt_legionaries_online_rules-wdpu85w6pv-8ndq4m5egw.pdf",
+      "savedOfficialPdf": "inventory/official-review/legionaries-2025-12-17.pdf",
+      "savedOfficialPdfExtract": "inventory/official-review/legionaries-2025-12-17.txt",
+      "wahapediaFullText": "inventory/current-team-rules/legionaries-web-full.txt",
+      "visualStrikeThroughChecked": true
+    },
+    "blocks": [
+      {
+        "heading": "Siphon Life",
+        "russian": "Выбирая это оружие, можно применить данное правило. В начале шага разрешения кубиков атаки выберите дружественного оперативника Легионеров (LEGIONARY), находящегося в пределах 6 дюймов от этого бойца. За каждый кубик атаки, разрешённый на этом шаге и нанёсший урон, выбранный оперативник восстанавливает 1 потерянную рану; если это был критический успех — D3 потерянных ран. Это правило оружия нельзя применять чаще одного раза за раунд.",
+        "english": "When you select this weapon, you can use this rule. At the start of the Resolve Attack Dice step, select one friendly LEGIONARY operative within 6\" of this operative. For each attack die resolved during that step that inflicts damage, that friendly operative regains 1 lost wound, or D3 lost wounds if it was a critical success. You cannot use this weapon rule more than once per turning point.",
+        "proseTitles": [
+          "Siphon Life"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "72758258c0fba7b4",
+    "expectedTitle": "Kroot Pistolier",
+    "team": "Farstalker Kinband",
+    "source": {
+      "officialPdf": "https://assets.warhammer-community.com/eng_22-07_kill_team_team_rules_farstalker_kinband-d5j2c72vs0-mulu2ghc6b.pdf",
+      "date": "2026-07-22",
+      "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/farstalker-kinband/",
+      "checkedOn": "2026-10-05",
+      "pdfPage": 10,
+      "pdfUrl": "https://assets.warhammer-community.com/eng_22-07_kill_team_team_rules_farstalker_kinband-d5j2c72vs0-mulu2ghc6b.pdf",
+      "savedOfficialPdf": "inventory/official-review/farstalker-kinband-2026-07-22.pdf",
+      "savedOfficialPdfExtract": "inventory/official-review/farstalker-kinband-2026-07-22.txt",
+      "wahapediaFullText": "inventory/current-team-rules/farstalker-kinband-web-full.txt",
+      "wahapediaLines": [
+        366
+      ],
+      "visualStrikeThroughChecked": true
+    },
+    "blocks": [
+      {
+        "heading": "Salvo*",
+        "russian": "Выберите до двух разных допустимых целей вне дистанции контроля дружественных оперативников. Стреляйте из этого оружия по обеим в выбранном вами порядке; каждую последовательность стрельбы разрешайте отдельно.",
+        "english": "Select up to two different valid targets that aren’t within control range of friendly operatives. Shoot with this weapon against both of them in an order of your choice (roll each sequence separately).",
+        "proseTitles": [
+          "Salvo*"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "6bd6689f5e3f1851",
+    "expectedTitle": "Kroot Kill-Broker",
+    "team": "Farstalker Kinband",
+    "source": {
+      "officialPdf": "https://assets.warhammer-community.com/eng_22-07_kill_team_team_rules_farstalker_kinband-d5j2c72vs0-mulu2ghc6b.pdf",
+      "date": "2026-07-22",
+      "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/farstalker-kinband/",
+      "checkedOn": "2026-10-05",
+      "pdfPage": 8,
+      "pdfUrl": "https://assets.warhammer-community.com/eng_22-07_kill_team_team_rules_farstalker_kinband-d5j2c72vs0-mulu2ghc6b.pdf",
+      "savedOfficialPdf": "inventory/official-review/farstalker-kinband-2026-07-22.pdf",
+      "savedOfficialPdfExtract": "inventory/official-review/farstalker-kinband-2026-07-22.txt",
+      "wahapediaFullText": "inventory/current-team-rules/farstalker-kinband-web-full.txt",
+      "visualStrikeThroughChecked": true
+    },
+    "blocks": [
+      {
+        "heading": "Call the Kill — Strategic Gambit",
+        "russian": "СТРАТЕГИЧЕСКИЙ ГАМБИТ (STRATEGIC GAMBIT). Выберите одного вражеского оперативника своей целью на этот раунд. Когда дружественный оперативник отряда «Фарстолкерский киндбанд» (FARSTALKER KINBAND) стреляет по этой цели, сражается с ней в ближнем бою или отвечает ей ударом, его оружие получает правило «Сбалансированное» (Balanced). Когда цель выведена из строя, можно выбрать нового вражеского оперативника целью на этот раунд; это можно делать повторно до конца раунда.\nЕсли цель выведена из строя во время действия, нацеленного на нескольких оперативников, выберите новую цель в конце этого действия после удаления выведенных из строя оперативников.",
+        "english": "STRATEGIC GAMBIT. Select one enemy operative to be your mark for the turning point. Whenever a friendly FARSTALKER KINBAND operative is shooting against, fighting against or retaliating against your mark, that friendly operative's weapons have the Balanced weapon rule. Whenever your mark is incapacitated, you can select a new enemy operative to be your mark for the turning point (and can continue to do so during this turning point). If the mark is incapacitated during an action targeting multiple operatives, select the replacement mark at the end of that action after incapacitated operatives are removed.",
+        "proseTitles": [
+          "Call the Kill"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ac3a5bfbff545f52",
+    "expectedTitle": "Kroot Bow-Hunter",
+    "team": "Farstalker Kinband",
+    "source": {
+      "officialPdf": "https://assets.warhammer-community.com/eng_22-07_kill_team_team_rules_farstalker_kinband-d5j2c72vs0-mulu2ghc6b.pdf",
+      "date": "2026-07-22",
+      "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/farstalker-kinband/",
+      "checkedOn": "2026-10-05",
+      "pdfPage": 10,
+      "pdfUrl": "https://assets.warhammer-community.com/eng_22-07_kill_team_team_rules_farstalker_kinband-d5j2c72vs0-mulu2ghc6b.pdf",
+      "savedOfficialPdf": "inventory/official-review/farstalker-kinband-2026-07-22.pdf",
+      "savedOfficialPdfExtract": "inventory/official-review/farstalker-kinband-2026-07-22.txt",
+      "wahapediaFullText": "inventory/current-team-rules/farstalker-kinband-web-full.txt",
+      "visualStrikeThroughChecked": true
+    },
+    "weapons": [
+      {
+        "name": "Blade",
+        "dmg": "3/5"
+      }
+    ]
+  },
+  {
+    "id": "f8779804f75df1c6",
+    "expectedTitle": "Kroot Cold-Blood",
+    "team": "Farstalker Kinband",
+    "source": {
+      "officialPdf": "https://assets.warhammer-community.com/eng_22-07_kill_team_team_rules_farstalker_kinband-d5j2c72vs0-mulu2ghc6b.pdf",
+      "date": "2026-07-22",
+      "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/farstalker-kinband/",
+      "checkedOn": "2026-10-05",
+      "pdfPage": 10,
+      "pdfUrl": "https://assets.warhammer-community.com/eng_22-07_kill_team_team_rules_farstalker_kinband-d5j2c72vs0-mulu2ghc6b.pdf",
+      "savedOfficialPdf": "inventory/official-review/farstalker-kinband-2026-07-22.pdf",
+      "savedOfficialPdfExtract": "inventory/official-review/farstalker-kinband-2026-07-22.txt",
+      "wahapediaFullText": "inventory/current-team-rules/farstalker-kinband-web-full.txt",
+      "visualStrikeThroughChecked": true
+    },
+    "weapons": [
+      {
+        "name": "Blade",
+        "dmg": "3/5"
+      }
+    ]
+  },
+  {
+    "id": "b2039321461b392b",
+    "expectedTitle": "Kroot Heavy Gunner",
+    "team": "Farstalker Kinband",
+    "source": {
+      "officialPdf": "https://assets.warhammer-community.com/eng_22-07_kill_team_team_rules_farstalker_kinband-d5j2c72vs0-mulu2ghc6b.pdf",
+      "date": "2026-07-22",
+      "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/farstalker-kinband/",
+      "checkedOn": "2026-10-05",
+      "pdfPage": 10,
+      "pdfUrl": "https://assets.warhammer-community.com/eng_22-07_kill_team_team_rules_farstalker_kinband-d5j2c72vs0-mulu2ghc6b.pdf",
+      "savedOfficialPdf": "inventory/official-review/farstalker-kinband-2026-07-22.pdf",
+      "savedOfficialPdfExtract": "inventory/official-review/farstalker-kinband-2026-07-22.txt",
+      "wahapediaFullText": "inventory/current-team-rules/farstalker-kinband-web-full.txt",
+      "visualStrikeThroughChecked": true
+    },
+    "weapons": [
+      {
+        "name": "Blade",
+        "dmg": "3/5"
+      }
+    ]
+  },
+  {
+    "id": "6b9f7a41328704fd",
+    "expectedTitle": "Kroot Long-Sight",
+    "team": "Farstalker Kinband",
+    "source": {
+      "officialPdf": "https://assets.warhammer-community.com/eng_22-07_kill_team_team_rules_farstalker_kinband-d5j2c72vs0-mulu2ghc6b.pdf",
+      "date": "2026-07-22",
+      "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/farstalker-kinband/",
+      "checkedOn": "2026-10-05",
+      "pdfPage": 10,
+      "pdfUrl": "https://assets.warhammer-community.com/eng_22-07_kill_team_team_rules_farstalker_kinband-d5j2c72vs0-mulu2ghc6b.pdf",
+      "savedOfficialPdf": "inventory/official-review/farstalker-kinband-2026-07-22.pdf",
+      "savedOfficialPdfExtract": "inventory/official-review/farstalker-kinband-2026-07-22.txt",
+      "wahapediaFullText": "inventory/current-team-rules/farstalker-kinband-web-full.txt",
+      "visualStrikeThroughChecked": true
+    },
+    "weapons": [
+      {
+        "name": "Blade",
+        "dmg": "3/5"
+      }
+    ]
+  },
+  {
+    "id": "72758258c0fba7b4",
+    "expectedTitle": "Kroot Pistolier",
+    "team": "Farstalker Kinband",
+    "source": {
+      "officialPdf": "https://assets.warhammer-community.com/eng_22-07_kill_team_team_rules_farstalker_kinband-d5j2c72vs0-mulu2ghc6b.pdf",
+      "date": "2026-07-22",
+      "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/farstalker-kinband/",
+      "checkedOn": "2026-10-05",
+      "pdfPage": 10,
+      "pdfUrl": "https://assets.warhammer-community.com/eng_22-07_kill_team_team_rules_farstalker_kinband-d5j2c72vs0-mulu2ghc6b.pdf",
+      "savedOfficialPdf": "inventory/official-review/farstalker-kinband-2026-07-22.pdf",
+      "savedOfficialPdfExtract": "inventory/official-review/farstalker-kinband-2026-07-22.txt",
+      "wahapediaFullText": "inventory/current-team-rules/farstalker-kinband-web-full.txt",
+      "visualStrikeThroughChecked": true
+    },
+    "weapons": [
+      {
+        "name": "Dual Kroot pistols (focused)",
+        "dmg": "3/5"
+      },
+      {
+        "name": "Dual Kroot pistols (salvo)",
+        "dmg": "3/5"
+      },
+      {
+        "name": "Blade",
+        "dmg": "3/5"
+      }
+    ]
+  },
+  {
+    "id": "3607635439d2960e",
+    "expectedTitle": "Kroot Tracker",
+    "team": "Farstalker Kinband",
+    "source": {
+      "officialPdf": "https://assets.warhammer-community.com/eng_22-07_kill_team_team_rules_farstalker_kinband-d5j2c72vs0-mulu2ghc6b.pdf",
+      "date": "2026-07-22",
+      "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/farstalker-kinband/",
+      "checkedOn": "2026-10-05",
+      "pdfPage": 10,
+      "pdfUrl": "https://assets.warhammer-community.com/eng_22-07_kill_team_team_rules_farstalker_kinband-d5j2c72vs0-mulu2ghc6b.pdf",
+      "savedOfficialPdf": "inventory/official-review/farstalker-kinband-2026-07-22.pdf",
+      "savedOfficialPdfExtract": "inventory/official-review/farstalker-kinband-2026-07-22.txt",
+      "wahapediaFullText": "inventory/current-team-rules/farstalker-kinband-web-full.txt",
+      "visualStrikeThroughChecked": true
+    },
+    "weapons": [
+      {
+        "name": "Blade",
+        "dmg": "3/5"
+      }
+    ]
+  },
+  {
+    "id": "4d00d302ebc24be5",
+    "expectedTitle": "Kroot Warrior",
+    "team": "Farstalker Kinband",
+    "source": {
+      "officialPdf": "https://assets.warhammer-community.com/eng_22-07_kill_team_team_rules_farstalker_kinband-d5j2c72vs0-mulu2ghc6b.pdf",
+      "date": "2026-07-22",
+      "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/farstalker-kinband/",
+      "checkedOn": "2026-10-05",
+      "pdfPage": 10,
+      "pdfUrl": "https://assets.warhammer-community.com/eng_22-07_kill_team_team_rules_farstalker_kinband-d5j2c72vs0-mulu2ghc6b.pdf",
+      "savedOfficialPdf": "inventory/official-review/farstalker-kinband-2026-07-22.pdf",
+      "savedOfficialPdfExtract": "inventory/official-review/farstalker-kinband-2026-07-22.txt",
+      "wahapediaFullText": "inventory/current-team-rules/farstalker-kinband-web-full.txt",
+      "visualStrikeThroughChecked": true
+    },
+    "weapons": [
+      {
+        "name": "Blade",
+        "dmg": "3/5"
+      }
+    ]
+  },
+  {
+    "id": "53615a4af9500e52",
+    "expectedTitle": "Kroot Cut-Skin",
+    "team": "Farstalker Kinband",
+    "source": {
+      "officialPdf": "https://assets.warhammer-community.com/eng_22-07_kill_team_team_rules_farstalker_kinband-d5j2c72vs0-mulu2ghc6b.pdf",
+      "date": "2026-07-22",
+      "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/farstalker-kinband/",
+      "checkedOn": "2026-10-05",
+      "pdfPage": 10,
+      "pdfUrl": "https://assets.warhammer-community.com/eng_22-07_kill_team_team_rules_farstalker_kinband-d5j2c72vs0-mulu2ghc6b.pdf",
+      "savedOfficialPdf": "inventory/official-review/farstalker-kinband-2026-07-22.pdf",
+      "savedOfficialPdfExtract": "inventory/official-review/farstalker-kinband-2026-07-22.txt",
+      "wahapediaFullText": "inventory/current-team-rules/farstalker-kinband-web-full.txt",
+      "visualStrikeThroughChecked": true
+    },
+    "weapons": [
+      {
+        "name": "Cut-skin's blades",
+        "dmg": "3/5"
+      }
+    ]
+  },
+  {
+    "id": "f259b868282a8ab0",
+    "expectedTitle": "Kroot Stalker",
+    "team": "Farstalker Kinband",
+    "source": {
+      "officialPdf": "https://assets.warhammer-community.com/eng_22-07_kill_team_team_rules_farstalker_kinband-d5j2c72vs0-mulu2ghc6b.pdf",
+      "date": "2026-07-22",
+      "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/farstalker-kinband/",
+      "checkedOn": "2026-10-05",
+      "pdfPage": 10,
+      "pdfUrl": "https://assets.warhammer-community.com/eng_22-07_kill_team_team_rules_farstalker_kinband-d5j2c72vs0-mulu2ghc6b.pdf",
+      "savedOfficialPdf": "inventory/official-review/farstalker-kinband-2026-07-22.pdf",
+      "savedOfficialPdfExtract": "inventory/official-review/farstalker-kinband-2026-07-22.txt",
+      "wahapediaFullText": "inventory/current-team-rules/farstalker-kinband-web-full.txt",
+      "visualStrikeThroughChecked": true
+    },
+    "weapons": [
+      {
+        "name": "Stalker's blade",
+        "dmg": "3/5"
+      }
+    ]
+  },
+  {
+    "id": "727e8c1ba2f02fe5",
+    "expectedTitle": "Interrogator Agent",
+    "team": "Inquisitorial Agents",
+    "source": {
+      "officialPdf": "https://assets.warhammer-community.com/eng_inquisitorial_agents_online_rules-wxk0cybqst-vpe1dopkcv.pdf",
+      "date": "2026-08-26",
+      "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/inquisitorial-agent/",
+      "checkedOn": "2026-10-05",
+      "pdfPage": 14,
+      "pdfUrl": "https://assets.warhammer-community.com/eng_inquisitorial_agents_online_rules-wxk0cybqst-vpe1dopkcv.pdf",
+      "savedOfficialPdf": "inventory/official-review/inquisitorial-agents-2026-08-26.pdf",
+      "savedOfficialPdfExtract": "inventory/official-review/inquisitorial-agents-2026-08-26.txt",
+      "wahapediaFullText": "inventory/current-team-rules/inquisitorial-agents-web-full.txt",
+      "visualStrikeThroughChecked": true
+    },
+    "blocks": [
+      {
+        "heading": "Inquisitorial Tomes: STRATEGIC GAMBIT and/or when activated",
+        "russian": "СТРАТЕГИЧЕСКИЙ ГАМБИТ (STRATEGIC GAMBIT), если этот оперативник находится в зоне боя. Выберите одно из следующих правил «Фолиант Инквизиции» (INQUISITORIAL TOME) для этого оперативника и одно для дружественного агента Инквизиции-черепа-фолианта (INQUISITORIAL AGENT TOME-SKULL). Нельзя выбрать одно и то же правило для обоих; выбранное для другого оперативника правило каждый игнорирует.",
+        "english": "STRATEGIC GAMBIT if this operative is in the killzone. Select one of the following INQUISITORIAL TOME rules for this operative to have, and one for a friendly INQUISITORIAL AGENT TOME-SKULL operative to have (they cannot be the same, and ignore the rule you didn’t select for each operative):",
+        "proseTitles": [
+          "Inquisitorial Tomes"
+        ],
+        "newHeadingEnglish": "Inquisitorial Tomes: STRATEGIC GAMBIT",
+        "headingRussian": "Фолианты Инквизиции · стратегический гамбит (Inquisitorial Tomes)"
+      }
+    ]
+  },
+  {
+    "id": "342c98e2e7faab8a",
+    "expectedTitle": "GLORY KILL",
+    "team": "Blooded",
+    "source": {
+      "officialPdf": "https://assets.warhammer-community.com/eng_29-04_kill_team_team_rules_blooded-djvqgciu6s-zvnlalulmo.pdf",
+      "date": "2026-04-29",
+      "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/blooded/",
+      "checkedOn": "2026-10-05",
+      "pdfPage": 10,
+      "pdfUrl": "https://assets.warhammer-community.com/eng_29-04_kill_team_team_rules_blooded-djvqgciu6s-zvnlalulmo.pdf",
+      "savedOfficialPdf": "inventory/official-review/blooded-2026-04-29.pdf",
+      "savedOfficialPdfExtract": "inventory/official-review/blooded-2026-04-29.txt",
+      "wahapediaFullText": "inventory/current-team-rules/blooded-web-full.txt",
+      "visualStrikeThroughChecked": true
+    },
+    "blocks": [
+      {
+        "heading": "Effect",
+        "russian": "Выберите одного вражеского оперативника. До конца раунда, когда дружественный оперативник Кровавых стреляет по выбранному противнику, сражается с ним или отвечает ему в ближнем бою, его оружие получает правило «Непрерывное» (Ceaseless); если у этого оперативника есть ваш кровавый жетон, вместо этого оно получает правило «Неумолимое» (Relentless).",
+        "english": "Select one enemy operative. Until the end of the turning point, whenever a friendly BLOODED operative is shooting against, fighting against or retaliating against that enemy operative, its weapons have the Ceaseless weapon rule, or Relentless if that shooting, fighting or retaliating operative has one of your Blooded tokens.",
+        "proseTitles": [
+          "Effect"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "e919f43088f75f32",
+    "expectedTitle": "TRAITOR CHIEFTAIN",
+    "team": "Blooded",
+    "source": {
+      "officialPdf": "https://assets.warhammer-community.com/eng_29-04_kill_team_team_rules_blooded-djvqgciu6s-zvnlalulmo.pdf",
+      "date": "2026-04-29",
+      "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/blooded/",
+      "checkedOn": "2026-10-05",
+      "pdfPage": 10,
+      "pdfUrl": "https://assets.warhammer-community.com/eng_29-04_kill_team_team_rules_blooded-djvqgciu6s-zvnlalulmo.pdf",
+      "savedOfficialPdf": "inventory/official-review/blooded-2026-04-29.pdf",
+      "savedOfficialPdfExtract": "inventory/official-review/blooded-2026-04-29.txt",
+      "wahapediaFullText": "inventory/current-team-rules/blooded-web-full.txt",
+      "visualStrikeThroughChecked": true
+    },
+    "blocks": [
+      {
+        "heading": "Lead With Strength",
+        "russian": "Когда у этого оперативника есть ваш кровавый жетон либо он целиком находится на территории противника, считайте его находящимся под Взором Богов (GAZE OF THE GODS).",
+        "english": "Whenever this operative has one of your Blooded tokens or is wholly within your opponent’s territory, treat it as if it’s under the GAZE OF THE GODS.",
+        "proseTitles": [
+          "Lead With Strength"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "78a597e566234e0c",
+    "expectedTitle": "TRAITOR ENFORCER",
+    "team": "Blooded",
+    "source": {
+      "officialPdf": "https://assets.warhammer-community.com/eng_29-04_kill_team_team_rules_blooded-djvqgciu6s-zvnlalulmo.pdf",
+      "date": "2026-04-29",
+      "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/blooded/",
+      "checkedOn": "2026-10-05",
+      "pdfPage": 10,
+      "pdfUrl": "https://assets.warhammer-community.com/eng_29-04_kill_team_team_rules_blooded-djvqgciu6s-zvnlalulmo.pdf",
+      "savedOfficialPdf": "inventory/official-review/blooded-2026-04-29.pdf",
+      "savedOfficialPdfExtract": "inventory/official-review/blooded-2026-04-29.txt",
+      "wahapediaFullText": "inventory/current-team-rules/blooded-web-full.txt",
+      "visualStrikeThroughChecked": true
+    },
+    "blocks": [
+      {
+        "heading": "Gruelling Disciplinarian",
+        "russian": "Когда дружественный Кровавый (BLOODED) активируется в пределах 6 дюймов от этого оперативника, можно игнорировать изменения его характеристик из-за ранения (Injured), включая характеристики оружия, до конца той активации.",
+        "english": "Whenever a friendly BLOODED operative is activated within 6\" of this operative, you can ignore changes to its stats from being injured (including weapon stats) until the end of that activation.",
+        "proseTitles": [
+          "Gruelling Disciplinarian"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "0510e2cf00490dcf",
+    "expectedTitle": "NAVIS GHEISTSKULL",
+    "team": "Imperial Navy Breachers",
+    "source": {
+      "officialPdf": "https://assets.warhammer-community.com/eng_imperial_navy_breachers_online_rules-n7skbopw8m-0bb7tzt799.pdf",
+      "date": "2026-08-26",
+      "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/imperial-navy-breacher/",
+      "checkedOn": "2026-10-05",
+      "pdfPage": 10,
+      "pdfUrl": "https://assets.warhammer-community.com/eng_imperial_navy_breachers_online_rules-n7skbopw8m-0bb7tzt799.pdf",
+      "savedOfficialPdf": "inventory/official-review/imperial-navy-breachers-2026-08-26.pdf",
+      "savedOfficialPdfExtract": "inventory/official-review/imperial-navy-breachers-2026-08-26.txt",
+      "wahapediaFullText": "inventory/current-team-rules/imperial-navy-breachers-web-full.txt",
+      "visualStrikeThroughChecked": true
+    },
+    "blocks": [
+      {
+        "heading": "Boost (1AP)",
+        "russian": "При следующей «Атаке» (Charge) в эту активацию добавьте 4 дюйма к допустимой дистанции перемещения вместо обычных 2 дюймов. Нельзя выполнять это действие больше одного раза за бой либо в первом раунде.",
+        "english": "The next Charge action during this activation adds 4\" to movement instead of the normal 2\". This operative cannot perform this action more than once per battle or during the first turning point.",
+        "proseTitles": [
+          "Boost"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "9f5f940acf29e4cc",
+    "expectedTitle": "SLUGS",
+    "team": "Imperial Navy Breachers",
+    "source": {
+      "officialPdf": "https://assets.warhammer-community.com/eng_imperial_navy_breachers_online_rules-n7skbopw8m-0bb7tzt799.pdf",
+      "date": "2026-08-26",
+      "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/imperial-navy-breacher/",
+      "checkedOn": "2026-10-05",
+      "pdfPage": 10,
+      "pdfUrl": "https://assets.warhammer-community.com/eng_imperial_navy_breachers_online_rules-n7skbopw8m-0bb7tzt799.pdf",
+      "savedOfficialPdf": "inventory/official-review/imperial-navy-breachers-2026-08-26.pdf",
+      "savedOfficialPdfExtract": "inventory/official-review/imperial-navy-breachers-2026-08-26.txt",
+      "wahapediaFullText": "inventory/current-team-rules/imperial-navy-breachers-web-full.txt",
+      "visualStrikeThroughChecked": true
+    },
+    "blocks": [
+      {
+        "heading": "Effect",
+        "russian": "До трёх раз за раунд, когда дружественный абордажник Имперского флота выполняет действие «Стрельба» (Shoot) и выбирает дальний профиль навийского дробовика, вы можете применить это правило. До конца действия улучшите характеристику попадания (Hit) этого оружия на 1 и увеличьте обе характеристики урона (Dmg) на 1.\nНа тот же срок это оружие получает «Точное 1» (Accurate 1).",
+        "english": "Up to three times per turning point, whenever a friendly IMPERIAL NAVY BREACHER operative is performing the Shoot action and you select a navis shotgun (long range), you can use this rule. If you do, until the end of that action, improve the Hit stat of that weapon by 1 and add 1 to both of its Dmg stats. That weapon also has Accurate 1 until the end of that action.",
+        "proseTitles": [
+          "Effect"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "20ccadf530e8b6d7",
+    "expectedTitle": "Navis Void-Jammer",
+    "team": "Imperial Navy Breachers",
+    "source": {
+      "officialPdf": "https://assets.warhammer-community.com/eng_imperial_navy_breachers_online_rules-n7skbopw8m-0bb7tzt799.pdf",
+      "date": "2026-08-26",
+      "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/imperial-navy-breacher/",
+      "checkedOn": "2026-10-05",
+      "pdfPage": 11,
+      "pdfUrl": "https://assets.warhammer-community.com/eng_imperial_navy_breachers_online_rules-n7skbopw8m-0bb7tzt799.pdf",
+      "savedOfficialPdf": "inventory/official-review/imperial-navy-breachers-2026-08-26.pdf",
+      "savedOfficialPdfExtract": "inventory/official-review/imperial-navy-breachers-2026-08-26.txt",
+      "wahapediaFullText": "inventory/current-team-rules/imperial-navy-breachers-web-full.txt",
+      "visualStrikeThroughChecked": true
+    },
+    "weapons": [
+      {
+        "name": "Gheistskull detonator",
+        "wrEnglish": "Blast 1″, Lethal 4+, Limited 1, Silent, Stun, Detonate",
+        "wrRussian": "Взрыв 1 дюйм (Blast 1″), Смертоносное 4+ (Lethal 4+), Ограниченное 1 (Limited 1), Бесшумное (Silent), Оглушение (Stun), Детонация (Detonate)"
+      }
+    ]
+  },
+  {
+    "id": "be54dd37198fa4fc",
+    "expectedTitle": "Navis Grenadier",
+    "team": "Imperial Navy Breachers",
+    "source": {
+      "officialPdf": "https://assets.warhammer-community.com/eng_imperial_navy_breachers_online_rules-n7skbopw8m-0bb7tzt799.pdf",
+      "date": "2026-08-26",
+      "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/imperial-navy-breacher/",
+      "checkedOn": "2026-10-05",
+      "pdfPage": 11,
+      "pdfUrl": "https://assets.warhammer-community.com/eng_imperial_navy_breachers_online_rules-n7skbopw8m-0bb7tzt799.pdf",
+      "savedOfficialPdf": "inventory/official-review/imperial-navy-breachers-2026-08-26.pdf",
+      "savedOfficialPdfExtract": "inventory/official-review/imperial-navy-breachers-2026-08-26.txt",
+      "wahapediaFullText": "inventory/current-team-rules/imperial-navy-breachers-web-full.txt",
+      "visualStrikeThroughChecked": true
+    },
+    "stats": {
+      "Wounds": 8
+    }
+  },
+  {
+    "id": "3f1c1d52904552c8",
+    "expectedTitle": "Navis Surveyor",
+    "team": "Imperial Navy Breachers",
+    "source": {
+      "officialPdf": "https://assets.warhammer-community.com/eng_imperial_navy_breachers_online_rules-n7skbopw8m-0bb7tzt799.pdf",
+      "date": "2026-08-26",
+      "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/imperial-navy-breacher/",
+      "checkedOn": "2026-10-05",
+      "pdfPage": 11,
+      "pdfUrl": "https://assets.warhammer-community.com/eng_imperial_navy_breachers_online_rules-n7skbopw8m-0bb7tzt799.pdf",
+      "savedOfficialPdf": "inventory/official-review/imperial-navy-breachers-2026-08-26.pdf",
+      "savedOfficialPdfExtract": "inventory/official-review/imperial-navy-breachers-2026-08-26.txt",
+      "wahapediaFullText": "inventory/current-team-rules/imperial-navy-breachers-web-full.txt",
+      "visualStrikeThroughChecked": true
+    },
+    "stats": {
+      "Wounds": 8
+    }
+  },
+  {
+    "id": "b6d8937930077346",
+    "expectedTitle": "Navis Axejack",
+    "team": "Imperial Navy Breachers",
+    "source": {
+      "officialPdf": "https://assets.warhammer-community.com/eng_imperial_navy_breachers_online_rules-n7skbopw8m-0bb7tzt799.pdf",
+      "date": "2026-08-26",
+      "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/imperial-navy-breacher/",
+      "checkedOn": "2026-10-05",
+      "pdfPage": 11,
+      "pdfUrl": "https://assets.warhammer-community.com/eng_imperial_navy_breachers_online_rules-n7skbopw8m-0bb7tzt799.pdf",
+      "savedOfficialPdf": "inventory/official-review/imperial-navy-breachers-2026-08-26.pdf",
+      "savedOfficialPdfExtract": "inventory/official-review/imperial-navy-breachers-2026-08-26.txt",
+      "wahapediaFullText": "inventory/current-team-rules/imperial-navy-breachers-web-full.txt",
+      "visualStrikeThroughChecked": true
+    },
+    "stats": {
+      "Wounds": 8
+    }
+  },
+  {
+    "id": "132015f875e35c52",
+    "expectedTitle": "Navis Surveyor",
+    "team": "Imperial Navy Breachers",
+    "source": {
+      "officialPdf": "https://assets.warhammer-community.com/eng_imperial_navy_breachers_online_rules-n7skbopw8m-0bb7tzt799.pdf",
+      "date": "2026-08-26",
+      "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/imperial-navy-breacher/",
+      "checkedOn": "2026-10-05",
+      "pdfPage": 11,
+      "pdfUrl": "https://assets.warhammer-community.com/eng_imperial_navy_breachers_online_rules-n7skbopw8m-0bb7tzt799.pdf",
+      "savedOfficialPdf": "inventory/official-review/imperial-navy-breachers-2026-08-26.pdf",
+      "savedOfficialPdfExtract": "inventory/official-review/imperial-navy-breachers-2026-08-26.txt",
+      "wahapediaFullText": "inventory/current-team-rules/imperial-navy-breachers-web-full.txt",
+      "visualStrikeThroughChecked": true
+    },
+    "stats": {
+      "Wounds": 8
+    }
+  },
+  {
+    "id": "20e447625460cd2c",
+    "expectedTitle": "Navis Armsman",
+    "team": "Imperial Navy Breachers",
+    "source": {
+      "officialPdf": "https://assets.warhammer-community.com/eng_imperial_navy_breachers_online_rules-n7skbopw8m-0bb7tzt799.pdf",
+      "date": "2026-08-26",
+      "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/imperial-navy-breacher/",
+      "checkedOn": "2026-10-05",
+      "pdfPage": 11,
+      "pdfUrl": "https://assets.warhammer-community.com/eng_imperial_navy_breachers_online_rules-n7skbopw8m-0bb7tzt799.pdf",
+      "savedOfficialPdf": "inventory/official-review/imperial-navy-breachers-2026-08-26.pdf",
+      "savedOfficialPdfExtract": "inventory/official-review/imperial-navy-breachers-2026-08-26.txt",
+      "wahapediaFullText": "inventory/current-team-rules/imperial-navy-breachers-web-full.txt",
+      "visualStrikeThroughChecked": true
+    },
+    "stats": {
+      "Wounds": 8
+    }
+  },
+  {
+    "id": "cf83b4f1ded05c7e",
+    "expectedTitle": "Navis Void-Jammer",
+    "team": "Imperial Navy Breachers",
+    "source": {
+      "officialPdf": "https://assets.warhammer-community.com/eng_imperial_navy_breachers_online_rules-n7skbopw8m-0bb7tzt799.pdf",
+      "date": "2026-08-26",
+      "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/imperial-navy-breacher/",
+      "checkedOn": "2026-10-05",
+      "pdfPage": 11,
+      "pdfUrl": "https://assets.warhammer-community.com/eng_imperial_navy_breachers_online_rules-n7skbopw8m-0bb7tzt799.pdf",
+      "savedOfficialPdf": "inventory/official-review/imperial-navy-breachers-2026-08-26.pdf",
+      "savedOfficialPdfExtract": "inventory/official-review/imperial-navy-breachers-2026-08-26.txt",
+      "wahapediaFullText": "inventory/current-team-rules/imperial-navy-breachers-web-full.txt",
+      "visualStrikeThroughChecked": true
+    },
+    "stats": {
+      "Wounds": 8
+    }
+  },
+  {
+    "id": "b70c91dcd6dd963d",
+    "expectedTitle": "Navis Hatchcutter",
+    "team": "Imperial Navy Breachers",
+    "source": {
+      "officialPdf": "https://assets.warhammer-community.com/eng_imperial_navy_breachers_online_rules-n7skbopw8m-0bb7tzt799.pdf",
+      "date": "2026-08-26",
+      "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/imperial-navy-breacher/",
+      "checkedOn": "2026-10-05",
+      "pdfPage": 11,
+      "pdfUrl": "https://assets.warhammer-community.com/eng_imperial_navy_breachers_online_rules-n7skbopw8m-0bb7tzt799.pdf",
+      "savedOfficialPdf": "inventory/official-review/imperial-navy-breachers-2026-08-26.pdf",
+      "savedOfficialPdfExtract": "inventory/official-review/imperial-navy-breachers-2026-08-26.txt",
+      "wahapediaFullText": "inventory/current-team-rules/imperial-navy-breachers-web-full.txt",
+      "visualStrikeThroughChecked": true
+    },
+    "stats": {
+      "Wounds": 8
+    }
+  },
+  {
+    "id": "20ccadf530e8b6d7",
+    "expectedTitle": "Navis Void-Jammer",
+    "team": "Imperial Navy Breachers",
+    "source": {
+      "officialPdf": "https://assets.warhammer-community.com/eng_imperial_navy_breachers_online_rules-n7skbopw8m-0bb7tzt799.pdf",
+      "date": "2026-08-26",
+      "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/imperial-navy-breacher/",
+      "checkedOn": "2026-10-05",
+      "pdfPage": 11,
+      "pdfUrl": "https://assets.warhammer-community.com/eng_imperial_navy_breachers_online_rules-n7skbopw8m-0bb7tzt799.pdf",
+      "savedOfficialPdf": "inventory/official-review/imperial-navy-breachers-2026-08-26.pdf",
+      "savedOfficialPdfExtract": "inventory/official-review/imperial-navy-breachers-2026-08-26.txt",
+      "wahapediaFullText": "inventory/current-team-rules/imperial-navy-breachers-web-full.txt",
+      "visualStrikeThroughChecked": true
+    },
+    "stats": {
+      "Wounds": 8
+    }
+  },
+  {
+    "id": "2d7487309a1272d1",
+    "expectedTitle": "NAVIS SERGEANT-AT-ARMS",
+    "team": "Imperial Navy Breachers",
+    "source": {
+      "officialPdf": "https://assets.warhammer-community.com/eng_imperial_navy_breachers_online_rules-n7skbopw8m-0bb7tzt799.pdf",
+      "date": "2026-08-26",
+      "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/imperial-navy-breacher/",
+      "checkedOn": "2026-10-05",
+      "pdfPage": 11,
+      "pdfUrl": "https://assets.warhammer-community.com/eng_imperial_navy_breachers_online_rules-n7skbopw8m-0bb7tzt799.pdf",
+      "savedOfficialPdf": "inventory/official-review/imperial-navy-breachers-2026-08-26.pdf",
+      "savedOfficialPdfExtract": "inventory/official-review/imperial-navy-breachers-2026-08-26.txt",
+      "wahapediaFullText": "inventory/current-team-rules/imperial-navy-breachers-web-full.txt",
+      "visualStrikeThroughChecked": true
+    },
+    "stats": {
+      "Wounds": 9
+    }
+  },
+  {
+    "id": "98c1fea2ff18adce",
+    "expectedTitle": "Navis Gunner",
+    "team": "Imperial Navy Breachers",
+    "source": {
+      "officialPdf": "https://assets.warhammer-community.com/eng_imperial_navy_breachers_online_rules-n7skbopw8m-0bb7tzt799.pdf",
+      "date": "2026-08-26",
+      "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/imperial-navy-breacher/",
+      "checkedOn": "2026-10-05",
+      "pdfPage": 11,
+      "pdfUrl": "https://assets.warhammer-community.com/eng_imperial_navy_breachers_online_rules-n7skbopw8m-0bb7tzt799.pdf",
+      "savedOfficialPdf": "inventory/official-review/imperial-navy-breachers-2026-08-26.pdf",
+      "savedOfficialPdfExtract": "inventory/official-review/imperial-navy-breachers-2026-08-26.txt",
+      "wahapediaFullText": "inventory/current-team-rules/imperial-navy-breachers-web-full.txt",
+      "visualStrikeThroughChecked": true
+    },
+    "stats": {
+      "Wounds": 9
+    }
+  },
+  {
+    "id": "f7cfb4904f363beb",
+    "expectedTitle": "Navis Endurant",
+    "team": "Imperial Navy Breachers",
+    "source": {
+      "officialPdf": "https://assets.warhammer-community.com/eng_imperial_navy_breachers_online_rules-n7skbopw8m-0bb7tzt799.pdf",
+      "date": "2026-08-26",
+      "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/imperial-navy-breacher/",
+      "checkedOn": "2026-10-05",
+      "pdfPage": 11,
+      "pdfUrl": "https://assets.warhammer-community.com/eng_imperial_navy_breachers_online_rules-n7skbopw8m-0bb7tzt799.pdf",
+      "savedOfficialPdf": "inventory/official-review/imperial-navy-breachers-2026-08-26.pdf",
+      "savedOfficialPdfExtract": "inventory/official-review/imperial-navy-breachers-2026-08-26.txt",
+      "wahapediaFullText": "inventory/current-team-rules/imperial-navy-breachers-web-full.txt",
+      "visualStrikeThroughChecked": true
+    },
+    "stats": {
+      "Wounds": 11
+    }
+  },
+  {
+    "id": "16e3341d9be85071",
+    "expectedTitle": "DECK HAND",
+    "team": "Imperial Navy Breachers",
+    "source": {
+      "officialPdf": "https://assets.warhammer-community.com/eng_imperial_navy_breachers_online_rules-n7skbopw8m-0bb7tzt799.pdf",
+      "date": "2026-08-26",
+      "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/imperial-navy-breacher/",
+      "checkedOn": "2026-10-05",
+      "pdfPage": 11,
+      "pdfUrl": "https://assets.warhammer-community.com/eng_imperial_navy_breachers_online_rules-n7skbopw8m-0bb7tzt799.pdf",
+      "savedOfficialPdf": "inventory/official-review/imperial-navy-breachers-2026-08-26.pdf",
+      "savedOfficialPdfExtract": "inventory/official-review/imperial-navy-breachers-2026-08-26.txt",
+      "wahapediaFullText": "inventory/current-team-rules/imperial-navy-breachers-web-full.txt",
+      "wahapediaLines": [
+        181
+      ],
+      "visualStrikeThroughChecked": true
+    },
+    "blocks": [
+      {
+        "heading": "Effect",
+        "russian": "Примените эту уловку перестрелки (FIREFIGHT PLOY) во время активации дружественного Абордажника Имперского флота (IMPERIAL NAVY BREACHER). В эту активацию он может пройти через один элемент доступного террейна (Accessible) без дополнительного дюйма перемещения и/или бесплатно выполнить «Управлять люком» (Operate Hatch), в том числе во время «Атаки» (Charge) или «Отступления» (Fall Back). Нельзя применять к заваренной точке доступа, кроме активации дружественного Резчика люков (HATCHCUTTER).",
+        "english": "Use this firefight ploy during a friendly IMPERIAL NAVY BREACHER operative’s activation. It can move through one Accessible terrain feature without the additional inch and/or perform a free Operate Hatch during that activation, including during Charge or Fall Back. Cannot use if the access point is welded shut unless it is a friendly HATCHCUTTER operative’s activation.",
+        "proseTitles": [
+          "Effect"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "0b4e6431fa113e40",
+    "expectedTitle": "OVERWHELM TARGET",
+    "team": "Imperial Navy Breachers",
+    "source": {
+      "officialPdf": "https://assets.warhammer-community.com/eng_imperial_navy_breachers_online_rules-n7skbopw8m-0bb7tzt799.pdf",
+      "date": "2026-08-26",
+      "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/imperial-navy-breacher/",
+      "checkedOn": "2026-10-05",
+      "pdfPage": 11,
+      "pdfUrl": "https://assets.warhammer-community.com/eng_imperial_navy_breachers_online_rules-n7skbopw8m-0bb7tzt799.pdf",
+      "savedOfficialPdf": "inventory/official-review/imperial-navy-breachers-2026-08-26.pdf",
+      "savedOfficialPdfExtract": "inventory/official-review/imperial-navy-breachers-2026-08-26.txt",
+      "wahapediaFullText": "inventory/current-team-rules/imperial-navy-breachers-web-full.txt",
+      "wahapediaLines": [
+        168
+      ],
+      "visualStrikeThroughChecked": true
+    },
+    "blocks": [
+      {
+        "heading": "Effect",
+        "russian": "Примените эту уловку перестрелки (FIREFIGHT PLOY), активируя любого из двух дружественных Абордажников Имперского флота (IMPERIAL NAVY BREACHER) по правилу «Прорыв и зачистка» (Breach and Clear). До конца этой активации увеличьте APL активированного оперативника на 1.",
+        "english": "Use this firefight ploy when activating either friendly IMPERIAL NAVY BREACHER operative while using Breach and Clear. Add 1 to that activated operative’s APL until the end of its activation.",
+        "proseTitles": [
+          "Effect"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "8ec2eba8a73db500",
+    "expectedTitle": "CLOSE ASSAULT",
+    "team": "Imperial Navy Breachers",
+    "source": {
+      "officialPdf": "https://assets.warhammer-community.com/eng_imperial_navy_breachers_online_rules-n7skbopw8m-0bb7tzt799.pdf",
+      "date": "2026-08-26",
+      "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/imperial-navy-breacher/",
+      "checkedOn": "2026-10-05",
+      "pdfPage": 11,
+      "pdfUrl": "https://assets.warhammer-community.com/eng_imperial_navy_breachers_online_rules-n7skbopw8m-0bb7tzt799.pdf",
+      "savedOfficialPdf": "inventory/official-review/imperial-navy-breachers-2026-08-26.pdf",
+      "savedOfficialPdfExtract": "inventory/official-review/imperial-navy-breachers-2026-08-26.txt",
+      "wahapediaFullText": "inventory/current-team-rules/imperial-navy-breachers-web-full.txt",
+      "visualStrikeThroughChecked": true
+    },
+    "blocks": [
+      {
+        "heading": "Effect",
+        "russian": "Когда дружественный Абордажник Имперского флота (IMPERIAL NAVY BREACHER) сражается либо стреляет по оперативнику в пределах 3 дюймов, увеличьте обе характеристики DMG его навийского дробовика (Navis shotgun) и тяжёлого дробовика (Navis heavy shotgun) на 1. Если вы бросили хотя бы два провала, можно сбросить один из них, чтобы сохранить другой как обычный успех.",
+        "english": "Whenever a friendly IMPERIAL NAVY BREACHER operative is fighting or shooting an operative within 3\", add 1 to both Dmg stats of its navis shotgun and navis heavy shotgun. If you roll at least two fails, you can discard one to retain another as a normal success.",
+        "proseTitles": [
+          "Effect"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "32e61a16af16bd63",
+    "expectedTitle": "STRIKING SCORPION WARRIOR",
+    "team": "Blades of Khaine",
+    "source": {
+      "officialPdf": "https://assets.warhammer-community.com/eng_29-04_killl_team_team_rules_blades_of_khaine-p7jsqt6jno-y4kh2lus1f.pdf",
+      "date": "2026-04-29",
+      "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/blades-of-khaine/",
+      "checkedOn": "2026-10-05",
+      "pdfPage": 11,
+      "pdfUrl": "https://assets.warhammer-community.com/eng_29-04_killl_team_team_rules_blades_of_khaine-p7jsqt6jno-y4kh2lus1f.pdf",
+      "savedOfficialPdf": "inventory/official-review/blades-of-khaine-2026-04-29.pdf",
+      "savedOfficialPdfExtract": "inventory/official-review/blades-of-khaine-2026-04-29.txt",
+      "wahapediaFullText": "inventory/current-team-rules/blades-of-khaine-web-full.txt",
+      "visualStrikeThroughChecked": true
+    },
+    "stats": {
+      "Save": "3+"
+    }
+  },
+  {
+    "id": "ad3d86522e57eaa8",
+    "expectedTitle": "SHRIEK-THAT-KILLS",
+    "team": "Blades of Khaine",
+    "source": {
+      "officialPdf": "https://assets.warhammer-community.com/eng_29-04_killl_team_team_rules_blades_of_khaine-p7jsqt6jno-y4kh2lus1f.pdf",
+      "date": "2026-04-29",
+      "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/blades-of-khaine/",
+      "checkedOn": "2026-10-05",
+      "pdfPage": 12,
+      "pdfUrl": "https://assets.warhammer-community.com/eng_29-04_killl_team_team_rules_blades_of_khaine-p7jsqt6jno-y4kh2lus1f.pdf",
+      "savedOfficialPdf": "inventory/official-review/blades-of-khaine-2026-04-29.pdf",
+      "savedOfficialPdfExtract": "inventory/official-review/blades-of-khaine-2026-04-29.txt",
+      "wahapediaFullText": "inventory/current-team-rules/blades-of-khaine-web-full.txt",
+      "visualStrikeThroughChecked": true
+    },
+    "blocks": [
+      {
+        "heading": "Use",
+        "russian": "Примените эту ТЕХНИКУ АСПЕКТА, когда дружественная Воющая баньши выполняет действие «Стрельба» (Shoot). До конца действия она может использовать следующее дальнобойное оружие: «Убивающий вопль» (Shriek-that-kills), ATK 5, попадание 3+, урон 1/2, дальность 6 дюймов (Range 6″), насыщение (Saturate), подсветка (Seek Light), оглушение (Stun), поток 1 дюйм (Torrent 1″).",
+        "english": "Use this ASPECT TECHNIQUE when a friendly HOWLING BANSHEE operative is performing the Shoot action. Until the end of that action, that operative can use the following ranged weapon: Shriek-that-kills, ATK 5, HIT 3+, DMG 1/2, Range 6″, Saturate, Seek Light, Stun, Torrent 1″.",
+        "proseTitles": [
+          "Use"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ad3d86522e57eaa8",
+    "expectedTitle": "SHRIEK-THAT-KILLS",
+    "team": "Blades of Khaine",
+    "source": {
+      "officialPdf": "https://assets.warhammer-community.com/eng_29-04_killl_team_team_rules_blades_of_khaine-p7jsqt6jno-y4kh2lus1f.pdf",
+      "date": "2026-04-29",
+      "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/blades-of-khaine/",
+      "checkedOn": "2026-10-05",
+      "pdfPage": 12,
+      "pdfUrl": "https://assets.warhammer-community.com/eng_29-04_killl_team_team_rules_blades_of_khaine-p7jsqt6jno-y4kh2lus1f.pdf",
+      "savedOfficialPdf": "inventory/official-review/blades-of-khaine-2026-04-29.pdf",
+      "savedOfficialPdfExtract": "inventory/official-review/blades-of-khaine-2026-04-29.txt",
+      "wahapediaFullText": "inventory/current-team-rules/blades-of-khaine-web-full.txt",
+      "visualStrikeThroughChecked": true
+    },
+    "weapons": [
+      {
+        "name": "Shriek-that-kills",
+        "atk": 5
+      }
+    ]
+  },
+  {
+    "id": "b7eaa2b6f2ca9a40",
+    "expectedTitle": "Deadly Shots",
+    "team": "Phobos Strike Team",
+    "source": {
+      "officialPdf": "https://assets.warhammer-community.com/eng_17-12_kt_phobos_strike_team_online_rules-6mf867flcl-2xdbnfouex.pdf",
+      "date": "2025-12-17",
+      "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/phobos-strike-team/",
+      "checkedOn": "2026-10-05",
+      "pdfPage": 10,
+      "pdfUrl": "https://assets.warhammer-community.com/eng_17-12_kt_phobos_strike_team_online_rules-6mf867flcl-2xdbnfouex.pdf",
+      "savedOfficialPdf": "inventory/official-review/phobos-strike-team-2025-12-17.pdf",
+      "savedOfficialPdfExtract": "inventory/official-review/phobos-strike-team-2025-12-17.txt",
+      "wahapediaFullText": "inventory/current-team-rules/phobos-strike-team-web-full.txt",
+      "visualStrikeThroughChecked": true
+    },
+    "blocks": [
+      {
+        "heading": "Rule",
+        "russian": "Когда дружественный оперативник отряда Фобос стреляет в активацию, в которой не выполнял действия «Атака» (Charge), «Отступление» (Fall Back) или «Перемещение» (Reposition), либо стреляет по оперативнику вне укрытия и дальше 6 дюймов от него, его дальнобойное оружие получает правило «Сбалансированное» (Balanced). При первом условии оперативник может выполнить эти действия после стрельбы.",
+        "english": "Whenever a friendly PHOBOS STRIKE TEAM operative is shooting during an activation in which it hasn’t performed the Charge, Fall Back or Reposition action, or against an operative more than 6\" away that isn’t in cover, its ranged weapons have the Balanced weapon rule. For the first requirement, that operative isn’t restricted from performing those actions after shooting.",
+        "proseTitles": [
+          "Rule"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "48d42e39ac6f7abb",
+    "expectedTitle": "Reiver Warrior",
+    "team": "Phobos Strike Team",
+    "source": {
+      "officialPdf": "https://assets.warhammer-community.com/eng_17-12_kt_phobos_strike_team_online_rules-6mf867flcl-2xdbnfouex.pdf",
+      "date": "2025-12-17",
+      "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/phobos-strike-team/",
+      "checkedOn": "2026-10-05",
+      "pdfPage": 10,
+      "pdfUrl": "https://assets.warhammer-community.com/eng_17-12_kt_phobos_strike_team_online_rules-6mf867flcl-2xdbnfouex.pdf",
+      "savedOfficialPdf": "inventory/official-review/phobos-strike-team-2025-12-17.pdf",
+      "savedOfficialPdfExtract": "inventory/official-review/phobos-strike-team-2025-12-17.txt",
+      "wahapediaFullText": "inventory/current-team-rules/phobos-strike-team-web-full.txt",
+      "visualStrikeThroughChecked": true
+    },
+    "blocks": [
+      {
+        "heading": "Grav-chute and Grapnel Launcher",
+        "russian": "Когда оперативник карабкается вверх, считайте вертикальное расстояние равным 2 дюймам независимо от фактической высоты подъёма. При спуске игнорируйте вертикальное расстояние. Авангард (Vanguard): раз за раунд один дружественный оперативник отряда Фобос с этим правилом может выполнить действие «Поднять маркер» (Pick Up Marker) или действие миссии, потратив на 1 AP меньше.",
+        "english": "Whenever this operative is climbing up, treat the vertical distance as 2″ regardless of how far it actually moves vertically. Whenever this operative is dropping, ignore the vertical distance. Vanguard: Once per turning point, one friendly PHOBOS STRIKE TEAM operative with this rule can perform Pick Up Marker or a mission action for 1 less AP.",
+        "proseTitles": [
+          "Grav-chute and Grapnel Launcher"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "9345bd5c91597e10",
+    "expectedTitle": "Reiver Sergeant",
+    "team": "Phobos Strike Team",
+    "source": {
+      "officialPdf": "https://assets.warhammer-community.com/eng_17-12_kt_phobos_strike_team_online_rules-6mf867flcl-2xdbnfouex.pdf",
+      "date": "2025-12-17",
+      "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/phobos-strike-team/",
+      "checkedOn": "2026-10-05",
+      "pdfPage": 10,
+      "pdfUrl": "https://assets.warhammer-community.com/eng_17-12_kt_phobos_strike_team_online_rules-6mf867flcl-2xdbnfouex.pdf",
+      "savedOfficialPdf": "inventory/official-review/phobos-strike-team-2025-12-17.pdf",
+      "savedOfficialPdfExtract": "inventory/official-review/phobos-strike-team-2025-12-17.txt",
+      "wahapediaFullText": "inventory/current-team-rules/phobos-strike-team-web-full.txt",
+      "visualStrikeThroughChecked": true
+    },
+    "blocks": [
+      {
+        "heading": "Grav-chute and Grapnel Launcher",
+        "russian": "Когда оперативник карабкается вверх, считайте вертикальное расстояние равным 2 дюймам независимо от фактической высоты подъёма; при спуске игнорируйте вертикальное расстояние. Тактическое преимущество (Tactical Advantage): один раз за битву перебросьте D6 при определении инициативы, если оперативник в зоне боевых действий. Примените приём перестрелки за 0 CP (CP), если он требует именно этого оперативника отряда Фобос (включая «Повтор приказа» (Command Re-roll), если за него бросали атакующий или защитный кубик), либо «Терпеливую засаду» (Patient Ambush) за 0 CP, если он готов и вне зон контроля врагов.",
+        "english": "Whenever this operative is climbing up, treat the vertical distance as 2″ regardless of how far it actually moves vertically. Whenever this operative is dropping, ignore the vertical distance. Tactical Advantage: Once per battle, re-roll your D6 when deciding initiative if this operative is in the killzone. You can use a firefight ploy for 0CP if it specifies this PHOBOS STRIKE TEAM operative (including Command Re-roll if one of its attack or defence dice was rolled), or Patient Ambush for 0CP if it is ready and outside enemy control range.",
+        "proseTitles": [
+          "Grav-chute and Grapnel Launcher"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "c4cbb7311efd91b4",
+    "expectedTitle": "Tempestus Scion Medic",
+    "team": "Inquisitorial Agents",
+    "source": {
+      "officialPdf": "https://assets.warhammer-community.com/eng_inquisitorial_agents_online_rules-wxk0cybqst-vpe1dopkcv.pdf",
+      "date": "2026-08-26",
+      "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/inquisitorial-agent/",
+      "checkedOn": "2026-10-05",
+      "pdfPage": 15,
+      "pdfUrl": "https://assets.warhammer-community.com/eng_inquisitorial_agents_online_rules-wxk0cybqst-vpe1dopkcv.pdf",
+      "savedOfficialPdf": "inventory/official-review/inquisitorial-agents-2026-08-26.pdf",
+      "savedOfficialPdfExtract": "inventory/official-review/inquisitorial-agents-2026-08-26.txt",
+      "wahapediaFullText": "inventory/current-team-rules/inquisitorial-agents-web-full.txt",
+      "wahapediaLines": [
+        662,
+        663
+      ],
+      "visualStrikeThroughChecked": true
+    },
+    "blocks": [
+      {
+        "heading": "Medic!",
+        "russian": "Первый раз за раунд, когда другой дружественный оперативник Агентов Инквизиции (INQUISITORIAL AGENT) должен быть выведен из строя, находясь на виду у медика и в пределах 3 дюймов от него, вы можете применить это правило, если ни один из этих оперативников не находится в дистанции контроля врага. Тогда союзник остаётся в игре с 1 раной и не может быть выведен из строя до конца текущего действия. После действия он может немедленно бесплатно выполнить «Рывок» (Dash), но должен закончить перемещение в дистанции контроля медика. Уменьшите APL обоих оперативников на 1 до конца их следующих активаций соответственно; если правило применено во время активации спасённого оперативника, его активация завершается. Нельзя применять это правило, если медик выведен из строя или во время действия «Стрельба» (Shoot), когда медик был бы основной или вторичной целью.",
+        "english": "The first time during each turning point that another friendly INQUISITORIAL AGENT operative would be incapacitated while visible to and within 3\" of this operative, you can use this rule, providing neither this nor that operative is within control range of an enemy operative. If you do, that friendly operative isn't incapacitated, has 1 wound remaining and cannot be incapacitated for the remainder of the action. After that action, that friendly operative can immediately perform a free Dash action, but must end that move within this operative's control range. Subtract 1 from this and that operative's APL stats until the end of their next activations respectively, and if this rule was used during that friendly operative's activation, that activation ends. You cannot use this rule if this operative is incapacitated, or if it's a Shoot action and this operative would be a primary or secondary target.",
+        "proseTitles": [
+          "Medic!"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "31b1a15aa1035eba",
+    "expectedTitle": "Infiltrator Helix Adept",
+    "team": "Phobos Strike Team",
+    "source": {
+      "officialPdf": "https://assets.warhammer-community.com/eng_17-12_kt_phobos_strike_team_online_rules-6mf867flcl-2xdbnfouex.pdf",
+      "date": "2025-12-17",
+      "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/phobos-strike-team/",
+      "checkedOn": "2026-10-05",
+      "pdfPage": 10,
+      "pdfUrl": "https://assets.warhammer-community.com/eng_17-12_kt_phobos_strike_team_online_rules-6mf867flcl-2xdbnfouex.pdf",
+      "savedOfficialPdf": "inventory/official-review/phobos-strike-team-2025-12-17.pdf",
+      "savedOfficialPdfExtract": "inventory/official-review/phobos-strike-team-2025-12-17.txt",
+      "wahapediaFullText": "inventory/current-team-rules/phobos-strike-team-web-full.txt",
+      "visualStrikeThroughChecked": true
+    },
+    "blocks": [
+      {
+        "heading": "Medic!",
+        "russian": "Первый раз за раунд, когда другой дружественный оперативник Ударного отряда Фобос (PHOBOS STRIKE TEAM) должен быть выведен из строя, находясь на виду у медика и в пределах 3 дюймов от него, вы можете применить это правило, если ни один из этих оперативников не находится в дистанции контроля врага. Тогда союзник остаётся в игре с 1 раной и не может быть выведен из строя до конца текущего действия. После действия он может немедленно бесплатно выполнить «Рывок» (Dash), но должен закончить перемещение в дистанции контроля медика. Уменьшите APL обоих оперативников на 1 до конца их следующих активаций соответственно; если правило применено во время активации спасённого оперативника, его активация завершается. Нельзя применять это правило, если медик выведен из строя или во время действия «Стрельба» (Shoot), когда медик был бы основной или вторичной целью.",
+        "english": "The first time during each turning point that another friendly PHOBOS STRIKE TEAM operative would be incapacitated while visible to and within 3\" of this operative, you can use this rule, providing neither this nor that operative is within control range of an enemy operative. If you do, that friendly operative isn't incapacitated, has 1 wound remaining and cannot be incapacitated for the remainder of the action. After that action, that friendly operative can immediately perform a free Dash action, but must end that move within this operative's control range. Subtract 1 from this and that operative's APL stats until the end of their next activations respectively, and if this rule was used during that friendly operative's activation, that activation ends. You cannot use this rule if this operative is incapacitated, or if it's a Shoot action and this operative would be a primary or secondary target.",
+        "proseTitles": [
+          "Medic!"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "6441c4532120fe45",
+    "expectedTitle": "Infiltrator Saboteur",
+    "team": "Phobos Strike Team",
+    "source": {
+      "officialPdf": "https://assets.warhammer-community.com/eng_17-12_kt_phobos_strike_team_online_rules-6mf867flcl-2xdbnfouex.pdf",
+      "date": "2025-12-17",
+      "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/phobos-strike-team/",
+      "checkedOn": "2026-10-05",
+      "pdfPage": 10,
+      "pdfUrl": "https://assets.warhammer-community.com/eng_17-12_kt_phobos_strike_team_online_rules-6mf867flcl-2xdbnfouex.pdf",
+      "savedOfficialPdf": "inventory/official-review/phobos-strike-team-2025-12-17.pdf",
+      "savedOfficialPdfExtract": "inventory/official-review/phobos-strike-team-2025-12-17.txt",
+      "wahapediaFullText": "inventory/current-team-rules/phobos-strike-team-web-full.txt",
+      "visualStrikeThroughChecked": true
+    },
+    "blocks": [
+      {
+        "heading": "Plant Explosives",
+        "russian": "Этот оперативник несёт маркер взрывчатки (Explosives). Он может выполнить на нём действие «Поднять маркер» (Pick Up Marker); когда он выполняет на нём действие «Разместить маркер» (Place Marker), он может немедленно выполнить бесплатный «Рывок» (Dash). *Детонация (Detonate): не выбирайте допустимую цель. Вместо этого стреляйте по каждому оперативнику в пределах 2 дюймов от маркера, если между ним и маркером нет полностью преграждающего тяжёлого террейна. Эти оперативники не могут быть в укрытии или считаться заслонёнными. Разрешайте каждую последовательность отдельно в выбранном порядке. Нельзя выбрать это оружие, если маркера взрывчатки нет в зоне боевых действий. В конце действия удалите маркер из зоны боевых действий.\nВ зонах боя с правилами тесного боя (Close Quarters) оружие детонации (Detonate) получает «Смертоносное 5+» (Lethal 5+).",
+        "english": "This operative carries your Explosives marker. It can perform Pick Up Marker on it, and whenever it performs Place Marker on that marker, it can immediately perform a free Dash action. *Detonate: Don’t select a valid target. Instead, shoot against each operative within 2″ of your Explosives marker unless Heavy terrain is wholly intervening between that operative and the marker. Each of those operatives cannot be in cover or obscured. Roll each sequence separately in an order of your choice. This weapon cannot be selected if your Explosives marker isn’t in the killzone. At the end of the action, remove your Explosives marker from the killzone. In close-quarters killzones the Detonate weapon gains Lethal 5+.",
+        "proseTitles": [
+          "Plant Explosives"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "63bfa2140498145d",
+    "expectedTitle": "Rejuvenat Adept",
+    "team": "Elucidian Starstriders",
+    "source": {
+      "officialPdf": "https://assets.warhammer-community.com/eng_29-04_kill_team_team_rules_elucidian_starstriders-4c0hnv9gz9-4fuvbi96ce.pdf",
+      "date": "2026-04-29",
+      "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/elucidian-starstrider/",
+      "checkedOn": "2026-10-05",
+      "pdfPage": 10,
+      "pdfUrl": "https://assets.warhammer-community.com/eng_29-04_kill_team_team_rules_elucidian_starstriders-4c0hnv9gz9-4fuvbi96ce.pdf",
+      "savedOfficialPdf": "inventory/official-review/elucidian-starstriders-2026-04-29.pdf",
+      "savedOfficialPdfExtract": "inventory/official-review/elucidian-starstriders-2026-04-29.txt",
+      "wahapediaFullText": "inventory/current-team-rules/elucidian-starstriders-web-full.txt",
+      "visualStrikeThroughChecked": true
+    },
+    "blocks": [
+      {
+        "heading": "Medic!",
+        "russian": "Первый раз за раунд, когда другой дружественный Элюцидийский звёздостранник (ELUCIDIAN STARSTRIDER), видимый этому оперативнику и в пределах 3 дюймов, должен быть выведен из строя, можно применить это правило, если ни один из них не находится в дистанции контроля врага. Союзник не выводится из строя: у него остаётся 3 раны и его нельзя вывести из строя до конца текущего действия. После этого действия он может немедленно бесплатно выполнить «Рывок» (Dash), закончив его в дистанции контроля медика. Если правило применено в активацию спасённого союзника, она заканчивается. Нельзя применять правило, если медик выведен из строя либо если это «Стрельба» (Shoot), при которой медик становится основной или вторичной целью.",
+        "english": "The first time each turning point that another friendly ELUCIDIAN STARSTRIDER would be incapacitated while visible to and within 3\" of this operative, you can use this rule providing neither is within enemy control range. It is not incapacitated, has 3 wounds remaining and cannot be incapacitated for the remainder of the action. After that action it can immediately perform a free Dash ending within this operative’s control range. If used during that friendly operative’s activation, that activation ends. Cannot use if this operative is incapacitated or if it is a Shoot action and this operative would be a primary or secondary target.",
+        "proseTitles": [
+          "Medic!"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "0a7928ff7d5e3b9e",
+    "expectedTitle": "Autosavant Agent",
+    "team": "Inquisitorial Agents",
+    "source": {
+      "officialPdf": "https://assets.warhammer-community.com/eng_inquisitorial_agents_online_rules-wxk0cybqst-vpe1dopkcv.pdf",
+      "date": "2026-08-26",
+      "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/inquisitorial-agent/",
+      "checkedOn": "2026-10-05",
+      "pdfPage": 14,
+      "pdfUrl": "https://assets.warhammer-community.com/eng_inquisitorial_agents_online_rules-wxk0cybqst-vpe1dopkcv.pdf",
+      "savedOfficialPdf": "inventory/official-review/inquisitorial-agents-2026-08-26.pdf",
+      "savedOfficialPdfExtract": "inventory/official-review/inquisitorial-agents-2026-08-26.txt",
+      "wahapediaFullText": "inventory/current-team-rules/inquisitorial-agents-web-full.txt",
+      "wahapediaLines": [
+        398
+      ],
+      "visualStrikeThroughChecked": true
+    },
+    "blocks": [
+      {
+        "heading": "Scrivener",
+        "russian": "Каждый последующий раз за бой, когда противник применяет тот или иной приём (Ploy), кроме «Командного переброса» (Command Re-roll), вы получаете 1 командное очко (CP), но не более 2 CP за раунд.\nЭффект действует только пока этот оперативник находится в зоне боя.",
+        "english": "Each subsequent time your opponent uses each ploy during the battle (excluding Command Re-roll), you gain 1CP (to a maximum of 2CP per turning point). This effect only applies if this operative is in the killzone.",
+        "proseTitles": [
+          "Scrivener"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ad6f5970257f30d0",
+    "expectedTitle": "Survivalist",
+    "team": "Elucidian Starstriders",
+    "source": {
+      "officialPdf": "https://assets.warhammer-community.com/eng_29-04_kill_team_team_rules_elucidian_starstriders-4c0hnv9gz9-4fuvbi96ce.pdf",
+      "date": "2026-04-29",
+      "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/elucidian-starstrider/",
+      "checkedOn": "2026-10-05",
+      "pdfPage": 10,
+      "pdfUrl": "https://assets.warhammer-community.com/eng_29-04_kill_team_team_rules_elucidian_starstriders-4c0hnv9gz9-4fuvbi96ce.pdf",
+      "savedOfficialPdf": "inventory/official-review/elucidian-starstriders-2026-04-29.pdf",
+      "savedOfficialPdfExtract": "inventory/official-review/elucidian-starstriders-2026-04-29.txt",
+      "wahapediaFullText": "inventory/current-team-rules/elucidian-starstriders-web-full.txt",
+      "visualStrikeThroughChecked": true
+    },
+    "blocks": [
+      {
+        "heading": "Rule",
+        "russian": "Примените эту уловку перестрелки (FIREFIGHT PLOY), когда активируется дружественный Элюцидийский звёздостранник (ELUCIDIAN STARSTRIDER). Он восстанавливает до D3+2 потерянных ран. До конца этой активации можно игнорировать любые изменения его APL.",
+        "english": "Use this firefight ploy when a friendly ELUCIDIAN STARSTRIDER operative is activated. It regains up to D3+2 lost wounds and during that activation you can ignore any changes to its APL stat.",
+        "proseTitles": [
+          "Rule"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "5a8641e9e73a2a8b",
+    "expectedTitle": "Warrant of Trade",
+    "team": "Elucidian Starstriders",
+    "source": {
+      "officialPdf": "https://assets.warhammer-community.com/eng_29-04_kill_team_team_rules_elucidian_starstriders-4c0hnv9gz9-4fuvbi96ce.pdf",
+      "date": "2026-04-29",
+      "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/elucidian-starstrider/",
+      "checkedOn": "2026-10-05",
+      "pdfPage": 10,
+      "pdfUrl": "https://assets.warhammer-community.com/eng_29-04_kill_team_team_rules_elucidian_starstriders-4c0hnv9gz9-4fuvbi96ce.pdf",
+      "savedOfficialPdf": "inventory/official-review/elucidian-starstriders-2026-04-29.pdf",
+      "savedOfficialPdfExtract": "inventory/official-review/elucidian-starstriders-2026-04-29.txt",
+      "wahapediaFullText": "inventory/current-team-rules/elucidian-starstriders-web-full.txt",
+      "visualStrikeThroughChecked": true
+    },
+    "blocks": [
+      {
+        "heading": "Rule",
+        "russian": "До четырёх раз за битву вы можете использовать правила торгового патента (WARRANT OF TRADE), приведённые ниже. Для каждого указано, когда его можно применить; одно и то же правило нельзя использовать более одного раза за битву.",
+        "english": "Up to four times per battle, you can use a WARRANT OF TRADE rule below. Each specifies when it can be used, and you cannot use the same rule more than once per battle.",
+        "proseTitles": [
+          "Rule"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "13c583504a992529",
+    "expectedTitle": "Elucia Vhane",
+    "team": "Elucidian Starstriders",
+    "source": {
+      "officialPdf": "https://assets.warhammer-community.com/eng_29-04_kill_team_team_rules_elucidian_starstriders-4c0hnv9gz9-4fuvbi96ce.pdf",
+      "date": "2026-04-29",
+      "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/elucidian-starstrider/",
+      "checkedOn": "2026-10-05",
+      "pdfPage": 10,
+      "pdfUrl": "https://assets.warhammer-community.com/eng_29-04_kill_team_team_rules_elucidian_starstriders-4c0hnv9gz9-4fuvbi96ce.pdf",
+      "savedOfficialPdf": "inventory/official-review/elucidian-starstriders-2026-04-29.pdf",
+      "savedOfficialPdfExtract": "inventory/official-review/elucidian-starstriders-2026-04-29.txt",
+      "wahapediaFullText": "inventory/current-team-rules/elucidian-starstriders-web-full.txt",
+      "visualStrikeThroughChecked": true
+    },
+    "blocks": [
+      {
+        "heading": "Reputation to Maintain",
+        "russian": "Впервые за битву, когда этот оперативник выводит врага из строя, выберите одно: получите ещё 1 CP (CP) или примените дополнительное правило торгового патента (WARRANT OF TRADE), увеличив предел до пяти применений за битву. Одно и то же правило всё равно нельзя использовать более одного раза.",
+        "english": "The first time this operative incapacitates an enemy operative during the battle, you can either gain 1 additional CP or use an additional WARRANT OF TRADE rule (up to five uses per battle instead of four). You still cannot use the same Warrant of Trade rule more than once per battle.",
+        "proseTitles": [
+          "Reputation to Maintain"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "1b60d0859e3cf555",
+    "expectedTitle": "Warrant of Trade",
+    "team": "Elucidian Starstriders",
+    "source": {
+      "officialPdf": "https://assets.warhammer-community.com/eng_29-04_kill_team_team_rules_elucidian_starstriders-4c0hnv9gz9-4fuvbi96ce.pdf",
+      "date": "2026-04-29",
+      "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/elucidian-starstrider/",
+      "checkedOn": "2026-10-05",
+      "pdfPage": 10,
+      "pdfUrl": "https://assets.warhammer-community.com/eng_29-04_kill_team_team_rules_elucidian_starstriders-4c0hnv9gz9-4fuvbi96ce.pdf",
+      "savedOfficialPdf": "inventory/official-review/elucidian-starstriders-2026-04-29.pdf",
+      "savedOfficialPdfExtract": "inventory/official-review/elucidian-starstriders-2026-04-29.txt",
+      "wahapediaFullText": "inventory/current-team-rules/elucidian-starstriders-web-full.txt",
+      "visualStrikeThroughChecked": true
+    },
+    "blocks": [
+      {
+        "heading": "Coerce",
+        "russian": "Когда: в начале шага выставления оперативников (Set Up Operatives). Противник выставляет всех своих оперативников до вас. Также выберите один вариант: противник выставляет всё своё снаряжение до вашего; либо вы выставляете всё своё снаряжение до противника.",
+        "english": "When: At the start of Set Up Operatives. Your opponent sets up all their operatives before you set up any. Also select one: your opponent sets up all their equipment before you set up any; or you set up all your equipment before your opponent sets up any.",
+        "proseTitles": [
+          "Coerce"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "1b60d0859e3cf555",
+    "expectedTitle": "Warrant of Trade",
+    "team": "Elucidian Starstriders",
+    "source": {
+      "officialPdf": "https://assets.warhammer-community.com/eng_29-04_kill_team_team_rules_elucidian_starstriders-4c0hnv9gz9-4fuvbi96ce.pdf",
+      "date": "2026-04-29",
+      "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/elucidian-starstrider/",
+      "checkedOn": "2026-10-05",
+      "pdfPage": 10,
+      "pdfUrl": "https://assets.warhammer-community.com/eng_29-04_kill_team_team_rules_elucidian_starstriders-4c0hnv9gz9-4fuvbi96ce.pdf",
+      "savedOfficialPdf": "inventory/official-review/elucidian-starstriders-2026-04-29.pdf",
+      "savedOfficialPdfExtract": "inventory/official-review/elucidian-starstriders-2026-04-29.txt",
+      "wahapediaFullText": "inventory/current-team-rules/elucidian-starstriders-web-full.txt",
+      "visualStrikeThroughChecked": true
+    },
+    "blocks": [
+      {
+        "heading": "Explore",
+        "russian": "Когда: стратегический манёвр (Strategic Gambit) в первом раунде. Эффект: D3 дружественных оперативника отряда, целиком находящихся в зоне высадки, бесплатно выполняют действие «Перемещение» (Reposition). Каждый должен закончить перемещение целиком в пределах 4 дюймов от вашей зоны высадки.",
+        "english": "When: STRATEGIC GAMBIT in the first turning point. Effect: Perform a free Reposition action with D3 friendly ELUCIDIAN STARSTRIDER operatives wholly within your drop zone. Each must end that move wholly within 4″ of your drop zone.",
+        "proseTitles": [
+          "Explore"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "32d974b31c3d615e",
+    "expectedTitle": "Hot Shot Capacitor Packs",
+    "team": "Elucidian Starstriders",
+    "source": {
+      "officialPdf": "https://assets.warhammer-community.com/eng_29-04_kill_team_team_rules_elucidian_starstriders-4c0hnv9gz9-4fuvbi96ce.pdf",
+      "date": "2026-04-29",
+      "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/elucidian-starstrider/",
+      "checkedOn": "2026-10-05",
+      "pdfPage": 10,
+      "pdfUrl": "https://assets.warhammer-community.com/eng_29-04_kill_team_team_rules_elucidian_starstriders-4c0hnv9gz9-4fuvbi96ce.pdf",
+      "savedOfficialPdf": "inventory/official-review/elucidian-starstriders-2026-04-29.pdf",
+      "savedOfficialPdfExtract": "inventory/official-review/elucidian-starstriders-2026-04-29.txt",
+      "wahapediaFullText": "inventory/current-team-rules/elucidian-starstriders-web-full.txt",
+      "visualStrikeThroughChecked": true
+    },
+    "blocks": [
+      {
+        "heading": "Rule",
+        "russian": "До двух раз за раунд, когда дружественный оперативник выполняет «Стрельбу» (Shoot) и выбирает лазпистолет, лазган или реликтовый лазпистолет, примените это правило. До конца раунда увеличьте обе характеристики урона (Dmg) оружия на 1; оно получает правила «Перегрев» (Hot) и «Бронебойное критическими успехами 1» (Piercing Crits 1).",
+        "english": "Up to twice per turning point, whenever a friendly ELUCIDIAN STARSTRIDER operative performs the Shoot action and you select a laspistol, lasgun or relic laspistol, you can use this rule. Until the end of the turning point, add 1 to both Dmg stats of that weapon and it has the Hot and Piercing Crits 1 weapon rules.",
+        "proseTitles": [
+          "Rule"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "d6f944d9540b2d17",
+    "expectedTitle": "Stake Claim",
+    "team": "Elucidian Starstriders",
+    "source": {
+      "officialPdf": "https://assets.warhammer-community.com/eng_29-04_kill_team_team_rules_elucidian_starstriders-4c0hnv9gz9-4fuvbi96ce.pdf",
+      "date": "2026-04-29",
+      "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/elucidian-starstrider/",
+      "checkedOn": "2026-10-05",
+      "pdfPage": 10,
+      "pdfUrl": "https://assets.warhammer-community.com/eng_29-04_kill_team_team_rules_elucidian_starstriders-4c0hnv9gz9-4fuvbi96ce.pdf",
+      "savedOfficialPdf": "inventory/official-review/elucidian-starstriders-2026-04-29.pdf",
+      "savedOfficialPdfExtract": "inventory/official-review/elucidian-starstriders-2026-04-29.txt",
+      "wahapediaFullText": "inventory/current-team-rules/elucidian-starstriders-web-full.txt",
+      "visualStrikeThroughChecked": true
+    },
+    "blocks": [
+      {
+        "heading": "Rule",
+        "russian": "Разместите маркер Притязаний (Claim) в зоне боя. Когда дружественный Элюцидийский звёздостранник (ELUCIDIAN STARSTRIDER) стреляет по врагу, сражается с ним либо отвечает ему в ближнем бою, если враг в пределах 3 дюймов от маркера, на шаге броска кубиков атаки можно сохранить один провал как обычный успех вместо сброса либо один обычный успех как критический. Удалите маркер в конце раунда.",
+        "english": "Place your Claim marker in the killzone. Whenever a friendly ELUCIDIAN STARSTRIDER is shooting against, fighting against or retaliating against an enemy within 3\" of it, in the Roll Attack Dice step you can retain a fail as a normal success instead of discarding it or a normal success as a critical. Remove the marker at the end of the turning point.",
+        "proseTitles": [
+          "Rule"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "bac3cbefba0ba5f5",
+    "expectedTitle": "Chapter Tactics",
+    "team": "Angels of Death",
+    "source": {
+      "officialPdf": "https://assets.warhammer-community.com/eng_26-08_killteam_angels_of_death_online_rules-1rwlnicmkz-qjtykwlybg.pdf",
+      "date": "2026-08-26",
+      "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/angel-of-death/",
+      "checkedOn": "2026-10-05",
+      "pdfPage": 10,
+      "pdfUrl": "https://assets.warhammer-community.com/eng_26-08_killteam_angels_of_death_online_rules-1rwlnicmkz-qjtykwlybg.pdf",
+      "savedOfficialPdf": "inventory/official-review/angels-of-death-2026-08-26.pdf",
+      "savedOfficialPdfExtract": "inventory/official-review/angels-of-death-2026-08-26.txt",
+      "wahapediaFullText": "inventory/current-team-rules/angels-of-death-web-full.txt",
+      "visualStrikeThroughChecked": true
+    },
+    "blocks": [
+      {
+        "heading": "3. Resolute",
+        "russian": "Игнорируйте любые изменения лимита очков действий (APL) этого оперативника.\nТакже игнорируйте эффекты вражеского оружия с «Потрясением» (Shock).",
+        "english": "You can ignore any changes to this operative’s APL stat. Also ignore enemy Shock effects.",
+        "proseTitles": [
+          "3. Resolute"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "d9f03b0308d76e73",
+    "expectedTitle": "Chapter Tactics",
+    "team": "Angels of Death",
+    "source": {
+      "officialPdf": "https://assets.warhammer-community.com/eng_26-08_killteam_angels_of_death_online_rules-1rwlnicmkz-qjtykwlybg.pdf",
+      "date": "2026-08-26",
+      "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/angel-of-death/",
+      "checkedOn": "2026-10-05",
+      "pdfPage": 10,
+      "pdfUrl": "https://assets.warhammer-community.com/eng_26-08_killteam_angels_of_death_online_rules-1rwlnicmkz-qjtykwlybg.pdf",
+      "savedOfficialPdf": "inventory/official-review/angels-of-death-2026-08-26.pdf",
+      "savedOfficialPdfExtract": "inventory/official-review/angels-of-death-2026-08-26.txt",
+      "wahapediaFullText": "inventory/current-team-rules/angels-of-death-web-full.txt",
+      "visualStrikeThroughChecked": true
+    },
+    "blocks": [
+      {
+        "heading": "7. Sharpshooter",
+        "russian": "Когда оперативник стреляет в активацию, в которой не выполнял действия «Атака» (Charge), «Отступление» (Fall Back) или «Перемещение» (Reposition), его болтовое оружие (bolt weapon) получает правило «Тяжёлые ранения» (Severe).\nНа тот же срок это оружие также получает «Точное 1» (Accurate 1).",
+        "english": "Whenever this operative is shooting during an activation in which it hasn’t performed Charge, Fall Back or Reposition, its bolt weapons have the Severe weapon rule. The bolt weapons also have Accurate 1 for the same duration.",
+        "proseTitles": [
+          "7. Sharpshooter"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "d9f03b0308d76e73",
+    "expectedTitle": "Chapter Tactics",
+    "team": "Angels of Death",
+    "source": {
+      "officialPdf": "https://assets.warhammer-community.com/eng_26-08_killteam_angels_of_death_online_rules-1rwlnicmkz-qjtykwlybg.pdf",
+      "date": "2026-08-26",
+      "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/angel-of-death/",
+      "checkedOn": "2026-10-05",
+      "pdfPage": 10,
+      "pdfUrl": "https://assets.warhammer-community.com/eng_26-08_killteam_angels_of_death_online_rules-1rwlnicmkz-qjtykwlybg.pdf",
+      "savedOfficialPdf": "inventory/official-review/angels-of-death-2026-08-26.pdf",
+      "savedOfficialPdfExtract": "inventory/official-review/angels-of-death-2026-08-26.txt",
+      "wahapediaFullText": "inventory/current-team-rules/angels-of-death-web-full.txt",
+      "visualStrikeThroughChecked": true
+    },
+    "blocks": [
+      {
+        "heading": "8. Siege Specialist",
+        "russian": "Дальнобойное оружие этого оперативника получает правило «Насыщенное огнём» (Saturate).\nКогда этот оперативник сражается либо отвечает в ближнем бою, враги не могут получать помощь (Assistance).",
+        "english": "This operative’s ranged weapons have the Saturate weapon rule. Whenever this operative is fighting or retaliating, enemy operatives cannot assist.",
+        "proseTitles": [
+          "8. Siege Specialist"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "e0f79e0072b6dbad",
+    "expectedTitle": "Intercessor Sergeant",
+    "team": "Angels of Death",
+    "source": {
+      "officialPdf": "https://assets.warhammer-community.com/eng_26-08_killteam_angels_of_death_online_rules-1rwlnicmkz-qjtykwlybg.pdf",
+      "date": "2026-08-26",
+      "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/angel-of-death/",
+      "checkedOn": "2026-10-05",
+      "pdfPage": 10,
+      "pdfUrl": "https://assets.warhammer-community.com/eng_26-08_killteam_angels_of_death_online_rules-1rwlnicmkz-qjtykwlybg.pdf",
+      "savedOfficialPdf": "inventory/official-review/angels-of-death-2026-08-26.pdf",
+      "savedOfficialPdfExtract": "inventory/official-review/angels-of-death-2026-08-26.txt",
+      "wahapediaFullText": "inventory/current-team-rules/angels-of-death-web-full.txt",
+      "visualStrikeThroughChecked": true
+    },
+    "blocks": [
+      {
+        "heading": "Doctrine Warfare",
+        "russian": "Один раз за битву, когда вы применяете стратегический приём «Боевая доктрина» (Combat Doctrine) и выбираете доктрину опустошителя (Devastator), оперативник в зоне боевых действий делает приём бесплатным (0 CP); то же действует при выборе тактической доктрины (Tactical). Ветеран ордена (Chapter Veteran): в конце шага выбора оперативников, если оперативник выбран для выставления, выберите ему ещё одну тактику ордена на битву. В отличие от основной и вторичной тактики, её можно менять между битвами кампании или турнира.\nВарианты Доктрины опустошителя (Devastator) и Тактической доктрины (Tactical) можно применить каждый по одному разу за бой.",
+        "english": "Once per battle, whenever you would use the Combat Doctrine strategy ploy and select Devastator, if this operative is in the killzone, it costs 0CP; and whenever you select Tactical, if this operative is in the killzone, it costs 0CP. Chapter Veteran: At the end of the Select Operatives step, if this operative is selected for deployment, select one additional CHAPTER TACTIC for it to have for the battle. Unlike primary and secondary tactics, it need not be the same for each battle in a campaign or tournament. The Devastator and Tactical options can each be used once per battle.",
+        "proseTitles": [
+          "Doctrine Warfare"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "a76a6eb54656a79c",
+    "expectedTitle": "Tilting Shields",
+    "team": "Angels of Death",
+    "source": {
+      "officialPdf": "https://assets.warhammer-community.com/eng_26-08_killteam_angels_of_death_online_rules-1rwlnicmkz-qjtykwlybg.pdf",
+      "date": "2026-08-26",
+      "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/angel-of-death/",
+      "checkedOn": "2026-10-05",
+      "pdfPage": 10,
+      "pdfUrl": "https://assets.warhammer-community.com/eng_26-08_killteam_angels_of_death_online_rules-1rwlnicmkz-qjtykwlybg.pdf",
+      "savedOfficialPdf": "inventory/official-review/angels-of-death-2026-08-26.pdf",
+      "savedOfficialPdfExtract": "inventory/official-review/angels-of-death-2026-08-26.txt",
+      "wahapediaFullText": "inventory/current-team-rules/angels-of-death-web-full.txt",
+      "visualStrikeThroughChecked": true
+    },
+    "blocks": [
+      {
+        "heading": "Rule",
+        "russian": "Раз за раунд, когда дружественный Ангел Смерти сражается в ближнем бою или отражает атаку, после броска атакующих кубиков противника, но до перебросков примените это правило. В этой последовательности противник не может сохранять результаты ниже 6 как критические успехи (например, благодаря правилам «Смертоносное» (Lethal), «Разрывающее» (Rending) или «Тяжёлые ранения» (Severe)).",
+        "english": "Once per turning point, when a friendly ANGEL OF DEATH operative is fighting or retaliating, after your opponent rolls attack dice, but before re-rolls, you can use this rule. Your opponent cannot retain attack dice results of less than 6 as critical successes during that sequence (e.g. due to Lethal, Rending or Severe).",
+        "proseTitles": [
+          "Rule"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "889e5ca6534fb5be",
+    "expectedTitle": "Space Marine Captain",
+    "team": "Angels of Death",
+    "source": {
+      "officialPdf": "https://assets.warhammer-community.com/eng_26-08_killteam_angels_of_death_online_rules-1rwlnicmkz-qjtykwlybg.pdf",
+      "date": "2026-08-26",
+      "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/angel-of-death/",
+      "checkedOn": "2026-10-05",
+      "pdfPage": 10,
+      "pdfUrl": "https://assets.warhammer-community.com/eng_26-08_killteam_angels_of_death_online_rules-1rwlnicmkz-qjtykwlybg.pdf",
+      "savedOfficialPdf": "inventory/official-review/angels-of-death-2026-08-26.pdf",
+      "savedOfficialPdfExtract": "inventory/official-review/angels-of-death-2026-08-26.txt",
+      "wahapediaFullText": "inventory/current-team-rules/angels-of-death-web-full.txt",
+      "visualStrikeThroughChecked": true
+    },
+    "blocks": [
+      {
+        "heading": "Heroic Leader",
+        "russian": "Один раз за раунд выберите один вариант:\n• Применить уловку перестрелки за 0 CP, если она требует именно этого Ангела Смерти (ANGEL OF DEATH), кроме «Командного переброса» (Command Re-roll).\n• Применить стратегическую уловку «Боевая доктрина» (Combat Doctrine) при активации дружественного Ангела Смерти, если этот оперативник находится в зоне боя и вне дистанции контроля врагов. Оплатите CP как обычно; нельзя сделать это, если в этом раунде вы уже применяли эту уловку.\n• Применить «Сменить доктрину» (Adjust Doctrine) за 0 CP, если этот оперативник находится в зоне боя и вне дистанции контроля врагов.",
+        "english": "Once per turning point choose one: use a firefight ploy for 0CP if this is the specified ANGEL OF DEATH operative (excluding Command Re-roll); use Combat Doctrine when activating a friendly ANGEL OF DEATH operative if this operative is in the killzone and outside enemy control range, paying its normal CP cost and not if that ploy was already used this turning point; or use Adjust Doctrine for 0CP if this operative is in the killzone and outside enemy control range.",
+        "proseTitles": [
+          "Heroic Leader"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "cfc6b86250de2f98",
+    "expectedTitle": "Heavy Intercessor Gunner",
+    "team": "Angels of Death",
+    "source": {
+      "officialPdf": "https://assets.warhammer-community.com/eng_26-08_killteam_angels_of_death_online_rules-1rwlnicmkz-qjtykwlybg.pdf",
+      "date": "2026-08-26",
+      "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/angel-of-death/",
+      "checkedOn": "2026-10-05",
+      "pdfPage": 10,
+      "pdfUrl": "https://assets.warhammer-community.com/eng_26-08_killteam_angels_of_death_online_rules-1rwlnicmkz-qjtykwlybg.pdf",
+      "savedOfficialPdf": "inventory/official-review/angels-of-death-2026-08-26.pdf",
+      "savedOfficialPdfExtract": "inventory/official-review/angels-of-death-2026-08-26.txt",
+      "wahapediaFullText": "inventory/current-team-rules/angels-of-death-web-full.txt",
+      "visualStrikeThroughChecked": true
+    },
+    "weapons": [
+      {
+        "name": "Bolt pistol",
+        "append": true,
+        "type": "R",
+        "russian": "Болт-пистолет (Bolt pistol)",
+        "atk": 4,
+        "hit": "3+",
+        "dmg": "3/4",
+        "wrEnglish": "Range 8\"",
+        "wrRussian": "Дальность 8\" (Range 8\")"
+      }
+    ]
+  },
+  {
+    "id": "41d86922d26f2902",
+    "expectedTitle": "Angels of Death Kill Team",
+    "team": "Angels of Death",
+    "source": {
+      "officialPdf": "https://assets.warhammer-community.com/eng_26-08_killteam_angels_of_death_online_rules-1rwlnicmkz-qjtykwlybg.pdf",
+      "date": "2026-08-26",
+      "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/angel-of-death/",
+      "checkedOn": "2026-10-05",
+      "pdfPage": 10,
+      "pdfUrl": "https://assets.warhammer-community.com/eng_26-08_killteam_angels_of_death_online_rules-1rwlnicmkz-qjtykwlybg.pdf",
+      "savedOfficialPdf": "inventory/official-review/angels-of-death-2026-08-26.pdf",
+      "savedOfficialPdfExtract": "inventory/official-review/angels-of-death-2026-08-26.txt",
+      "wahapediaFullText": "inventory/current-team-rules/angels-of-death-web-full.txt",
+      "visualStrikeThroughChecked": true
+    },
+    "blocks": [
+      {
+        "heading": "Operatives (continued)",
+        "russian": "Выберите 5 Ангелов Смерти из списка: гренадер штурмовых интерцессоров; воин штурмовых интерцессоров; снайпер элиминаторов*; тяжёлый стрелок интерцессоров*; стрелок интерцессоров с подствольным гранатомётом и одним комплектом: автоматическая болтовая винтовка и кулаки; болтовая винтовка и кулаки; винтовка «Сталкер» и кулаки; воин интерцессоров с одним из этих трёх комплектов винтовки и кулаков. Кроме воинов, каждого оперативника из списка можно включить только один раз. В некоторых правилах Ангелов Смерти упоминается болтовое оружие (bolt weapon) — дальнобойное оружие со словом bolt в названии, например винтовка «Сталкер» или тяжёлый болтовой пистолет.",
+        "english": "Choose 5 ANGEL OF DEATH operatives from: ASSAULT INTERCESSOR GRENADIER; ASSAULT INTERCESSOR WARRIOR; ELIMINATOR SNIPER; HEAVY INTERCESSOR GUNNER; INTERCESSOR GUNNER with auxiliary grenade launcher and one of: auto bolt rifle and fists; bolt rifle and fists; stalker bolt rifle and fists; INTERCESSOR WARRIOR with one of those same three rifle-and-fists options. Other than WARRIOR operatives, each operative on this list can be included only once. Some ANGEL OF DEATH rules refer to a “bolt weapon”: a ranged weapon with “bolt” in its name, e.g. stalker bolt rifle or heavy bolt pistol.",
+        "proseTitles": [
+          "Operatives"
+        ]
+      }
+    ]
+  }
+]

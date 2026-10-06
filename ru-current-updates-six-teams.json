@@ -1,0 +1,1264 @@
+[
+  {
+    "id": "cb8d04f7506dd424",
+    "expectedTitle": "Exaltation in Pain",
+    "team": "Chaos Cult",
+    "source": {
+      "date": "2025-12-17",
+      "officialPdf": "https://assets.warhammer-community.com/eng_17-12_kill_team_team_rules_chaos_cult-x4tsrknbaq-lc1rwd37iy.pdf",
+      "pdfPages": [
+        5,
+        9
+      ],
+      "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/chaos-cult/",
+      "snapshotLineNumbers": [
+        109
+      ],
+      "checkedOn": "2026-10-05",
+      "basis": "Full official rules plus visually checked effective errata"
+    },
+    "blocks": [
+      {
+        "heading": "Rule",
+        "english": "You can ignore any changes to the Hit stat of friendly CHAOS CULT operatives’ weapons from being injured. Whenever an operative is shooting a friendly CHAOS CULT operative that’s wounded, you can re-roll one of your defence dice.",
+        "russian": "Можно игнорировать ухудшение HIT оружия дружественных оперативников Культа Хаоса (CHAOS CULT), вызванное ранением (Injured). Каждый раз, когда по раненому дружественному оперативнику Культа Хаоса стреляют, вы можете перебросить один свой защитный кубик."
+      }
+    ]
+  },
+  {
+    "id": "82bb43cff85bd05e",
+    "expectedTitle": "Barbed",
+    "team": "Chaos Cult",
+    "source": {
+      "date": "2025-12-17",
+      "officialPdf": "https://assets.warhammer-community.com/eng_17-12_kill_team_team_rules_chaos_cult-x4tsrknbaq-lc1rwd37iy.pdf",
+      "pdfPages": [
+        4,
+        9
+      ],
+      "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/chaos-cult/",
+      "snapshotLineNumbers": [
+        86
+      ],
+      "checkedOn": "2026-10-05",
+      "basis": "Full official rules plus visually checked effective errata"
+    },
+    "blocks": [
+      {
+        "heading": "6. Barbed",
+        "english": "Whenever this operative is fighting or retaliating: enemy operatives cannot assist. The first time you strike during that sequence, also inflict 1 damage on each other enemy operative within this operative’s control range, or D3 damage instead if this operative is a TORMENT.",
+        "russian": "Когда этот оперативник сражается или отвечает в ближнем бою (Fight / Retaliate), вражеские оперативники не могут помогать (Assist). При первом нанесении удара (Strike) в этой последовательности также нанесите 1 урона каждому другому вражескому оперативнику в дистанции контроля этого оперативника. Если этот оперативник — Терзаемый (TORMENT), вместо этого нанесите D3 урона.",
+        "proseTitles": [
+          "Barbed"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "7b802077f626d64b",
+    "expectedTitle": "Unleash the Daemon",
+    "team": "Chaos Cult",
+    "source": {
+      "date": "2025-12-17",
+      "officialPdf": "https://assets.warhammer-community.com/eng_17-12_kill_team_team_rules_chaos_cult-x4tsrknbaq-lc1rwd37iy.pdf",
+      "pdfPages": [
+        7,
+        9
+      ],
+      "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/chaos-cult/",
+      "snapshotLineNumbers": [
+        146
+      ],
+      "checkedOn": "2026-10-05",
+      "basis": "Full official rules plus visually checked effective errata"
+    },
+    "blocks": [
+      {
+        "heading": "Rule",
+        "english": "Use this firefight ploy during a friendly CHAOS CULT MUTANT or CHAOS CULT TORMENT operative’s activation, before or after it performs an action. During that activation, that operative can perform two Fight actions, and one of them can be free.",
+        "russian": "Примените эту тактическую уловку (Firefight Ploy) во время активации дружественного Мутанта (MUTANT) или Терзаемого (TORMENT) Культа Хаоса, до или после выполнения им действия. В эту активацию он может выполнить два действия «Сражаться» (Fight), одно из которых может быть бесплатным."
+      }
+    ]
+  },
+  {
+    "id": "a268febe5af64e40",
+    "expectedTitle": "Blessed Blade",
+    "team": "Chaos Cult",
+    "source": {
+      "date": "2025-12-17",
+      "officialPdf": "https://assets.warhammer-community.com/eng_17-12_kill_team_team_rules_chaos_cult-x4tsrknbaq-lc1rwd37iy.pdf",
+      "pdfPages": [
+        9
+      ],
+      "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/chaos-cult/",
+      "snapshotLineNumbers": [
+        213
+      ],
+      "checkedOn": "2026-10-05",
+      "basis": "Full official rules plus visually checked effective errata"
+    },
+    "baseSizeNote": "Диаметр базы: 28 мм"
+  },
+  {
+    "id": "52fb586c41ff095f",
+    "expectedTitle": "Brood Brother Iconward",
+    "team": "Brood Brothers",
+    "source": {
+      "date": "2026-08-26",
+      "officialPdf": "https://assets.warhammer-community.com/eng_brood_brothers_online_rules-ztviivggwv-tdvilxxaue.pdf",
+      "pdfPages": [
+        12
+      ],
+      "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/brood-brother/",
+      "snapshotLineNumbers": [
+        313,
+        315
+      ],
+      "checkedOn": "2026-10-05",
+      "basis": "Full official rules plus visually checked effective errata"
+    },
+    "blocks": [
+      {
+        "heading": "Cult Icon",
+        "english": "Whenever determining control of a marker within 4″ of this operative, treat the total APL stat of friendly BROOD BROTHER operatives that contest it as 1 higher if at least one friendly BROOD BROTHER operative contests that marker. Note this isn’t a change to the APL stat, so any changes are cumulative with this.",
+        "russian": "При определении контроля маркера в пределах 4 дюймов от этого оперативника считайте суммарный APL дружественных оперативников Братьев Выводка (BROOD BROTHER), оспаривающих этот маркер, на 1 выше, если хотя бы один дружественный оперативник Братьев Выводка его оспаривает. Это не изменение характеристики APL: другие модификаторы суммируются с этим правилом.",
+        "proseTitles": [
+          "Cult Icon"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "393ce321b926349d",
+    "expectedTitle": "Magus",
+    "team": "Brood Brothers",
+    "source": {
+      "date": "2026-08-26",
+      "officialPdf": "https://assets.warhammer-community.com/eng_brood_brothers_online_rules-ztviivggwv-tdvilxxaue.pdf",
+      "pdfPages": [
+        4,
+        11
+      ],
+      "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/brood-brother/",
+      "snapshotLineNumbers": [
+        498,
+        500
+      ],
+      "checkedOn": "2026-10-05",
+      "basis": "Full official rules plus visually checked effective errata"
+    },
+    "blocks": [
+      {
+        "heading": "Telepathic Overload · 1AP",
+        "english": "PSYCHIC. Select one enemy operative that’s a valid target for this operative. Until the end of that operative’s activation, subtract 1 from its APL stat. This operative cannot perform this action while within control range of an enemy operative.",
+        "russian": "ПСИХИЧЕСКОЕ (PSYCHIC). Выберите вражеского оперативника, являющегося допустимой целью (Valid Target) для этого оперативника. До конца активации выбранного оперативника вычитайте 1 из его APL. Нельзя выполнять это действие в дистанции контроля вражеского оперативника.",
+        "proseTitles": [
+          "Telepathic Overload"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "6fdf0d5c74207cba",
+    "expectedTitle": "Brood Brother Commander",
+    "team": "Brood Brothers",
+    "source": {
+      "date": "2026-08-26",
+      "officialPdf": "https://assets.warhammer-community.com/eng_brood_brothers_online_rules-ztviivggwv-tdvilxxaue.pdf",
+      "pdfPages": [
+        1,
+        12
+      ],
+      "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/brood-brother/",
+      "snapshotLineNumbers": [
+        257
+      ],
+      "checkedOn": "2026-10-05",
+      "basis": "Full official rules plus visually checked effective errata"
+    },
+    "blocks": [
+      {
+        "heading": "Coordinate · Strategic Gambit",
+        "english": "Coordinate: STRATEGIC GAMBIT if this operative is in the killzone. Select one enemy operative to gain one of your Crossfire tokens.",
+        "russian": "Стратегический гамбит (STRATEGIC GAMBIT), если этот оперативник находится в зоне боя. Выберите одного вражеского оперативника: он получает один ваш жетон перекрёстного огня (Crossfire).",
+        "proseTitles": [
+          "Coordinate"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "4c0989b50616005a",
+    "expectedTitle": "Cult Devotion",
+    "team": "Brood Brothers",
+    "source": {
+      "date": "2026-08-26",
+      "officialPdf": "https://assets.warhammer-community.com/eng_brood_brothers_online_rules-ztviivggwv-tdvilxxaue.pdf",
+      "pdfPages": [
+        7
+      ],
+      "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/brood-brother/",
+      "snapshotLineNumbers": [
+        71
+      ],
+      "checkedOn": "2026-10-05",
+      "basis": "Full official rules plus visually checked effective errata"
+    },
+    "blocks": [
+      {
+        "heading": "Rule",
+        "english": "Whenever a friendly BROOD BROTHER operative (excluding PATRIARCH) is incapacitated while fighting or retaliating, if you have any unresolved successes, you can roll one D6: if the result is a success as if it were the Roll Attack Dice step of that sequence (i.e. using the same weapon, but with no re-rolls), you can strike the enemy operative in that sequence with one of your unresolved normal successes, or any of your successes instead if the D6 result is a critical success. In either case, that friendly operative is removed from the killzone afterwards.",
+        "russian": "Когда дружественный оперативник Братьев Выводка (кроме Патриарха, PATRIARCH) выведен из строя во время боя или ответного боя, если у вас остались неразыгранные успехи, можно бросить один D6. Определите успех так, как на шаге броска кубиков атаки (Roll Attack Dice) этой последовательности: используйте HIT того же оружия, без перебросов. При успехе можно нанести врагу удар одним из своих неразыгранных обычных успехов; при критическом успехе D6 можно использовать любой свой неразыгранный успех. Затем дружественного оперативника убирают из зоны боя."
+      }
+    ]
+  },
+  {
+    "id": "a0609cef139681ef",
+    "expectedTitle": "Brood Brother Medic",
+    "team": "Brood Brothers",
+    "source": {
+      "date": "2026-08-26",
+      "officialPdf": "https://assets.warhammer-community.com/eng_brood_brothers_online_rules-ztviivggwv-tdvilxxaue.pdf",
+      "pdfPages": [
+        2
+      ],
+      "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/brood-brother/",
+      "snapshotLineNumbers": [
+        351
+      ],
+      "checkedOn": "2026-10-05",
+      "basis": "Full official rules plus visually checked effective errata"
+    },
+    "blocks": [
+      {
+        "heading": "Medikit · 1AP",
+        "english": "Select one friendly BROOD BROTHER operative (excluding PATRIARCH) within this operative’s control range to regain up to 2D3 lost wounds. It cannot be an operative that the Medic! rule was used on during this turning point. This operative cannot perform this action while within control range of an enemy operative.",
+        "russian": "Выберите одного дружественного оперативника Братьев Выводка (кроме Патриарха) в дистанции контроля этого оперативника: выбранный оперативник восстанавливает до 2D3 потерянных ран. Нельзя выбирать оперативника, к которому в этом раунде применяли правило «Медик!» (Medic!).\nЭто действие нельзя выполнять в дистанции контроля вражеского оперативника.",
+        "proseTitles": [
+          "Medikit"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "6fdf0d5c74207cba",
+    "expectedTitle": "Brood Brother Commander",
+    "team": "Brood Brothers",
+    "source": {
+      "date": "2026-08-26",
+      "officialPdf": "https://assets.warhammer-community.com/eng_brood_brothers_online_rules-ztviivggwv-tdvilxxaue.pdf",
+      "pdfPages": [
+        12
+      ],
+      "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/brood-brother/",
+      "snapshotLineNumbers": [],
+      "checkedOn": "2026-10-05",
+      "basis": "Full official rules plus visually checked effective errata"
+    },
+    "keyword": [
+      "TYRANID",
+      "ТИРАНИД (TYRANID)"
+    ]
+  },
+  {
+    "id": "96c2c9bd994d5c55",
+    "expectedTitle": "Brood Brother Vox-Operator",
+    "team": "Brood Brothers",
+    "source": {
+      "date": "2026-08-26",
+      "officialPdf": "https://assets.warhammer-community.com/eng_brood_brothers_online_rules-ztviivggwv-tdvilxxaue.pdf",
+      "pdfPages": [
+        12
+      ],
+      "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/brood-brother/",
+      "snapshotLineNumbers": [],
+      "checkedOn": "2026-10-05",
+      "basis": "Full official rules plus visually checked effective errata"
+    },
+    "keyword": [
+      "TYRANID",
+      "ТИРАНИД (TYRANID)"
+    ]
+  },
+  {
+    "id": "352413f569c5da7b",
+    "expectedTitle": "Brood Brother Trooper",
+    "team": "Brood Brothers",
+    "source": {
+      "date": "2026-08-26",
+      "officialPdf": "https://assets.warhammer-community.com/eng_brood_brothers_online_rules-ztviivggwv-tdvilxxaue.pdf",
+      "pdfPages": [
+        12
+      ],
+      "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/brood-brother/",
+      "snapshotLineNumbers": [],
+      "checkedOn": "2026-10-05",
+      "basis": "Full official rules plus visually checked effective errata"
+    },
+    "keyword": [
+      "TYRANID",
+      "ТИРАНИД (TYRANID)"
+    ]
+  },
+  {
+    "id": "dc7b35d51253c66a",
+    "expectedTitle": "Brood Brother Agitator",
+    "team": "Brood Brothers",
+    "source": {
+      "date": "2026-08-26",
+      "officialPdf": "https://assets.warhammer-community.com/eng_brood_brothers_online_rules-ztviivggwv-tdvilxxaue.pdf",
+      "pdfPages": [
+        12
+      ],
+      "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/brood-brother/",
+      "snapshotLineNumbers": [],
+      "checkedOn": "2026-10-05",
+      "basis": "Full official rules plus visually checked effective errata"
+    },
+    "keyword": [
+      "TYRANID",
+      "ТИРАНИД (TYRANID)"
+    ]
+  },
+  {
+    "id": "76b1a2ae336b6117",
+    "expectedTitle": "Brood Brother Sniper",
+    "team": "Brood Brothers",
+    "source": {
+      "date": "2026-08-26",
+      "officialPdf": "https://assets.warhammer-community.com/eng_brood_brothers_online_rules-ztviivggwv-tdvilxxaue.pdf",
+      "pdfPages": [
+        12
+      ],
+      "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/brood-brother/",
+      "snapshotLineNumbers": [],
+      "checkedOn": "2026-10-05",
+      "basis": "Full official rules plus visually checked effective errata"
+    },
+    "keyword": [
+      "TYRANID",
+      "ТИРАНИД (TYRANID)"
+    ]
+  },
+  {
+    "id": "5c23794d49357c4f",
+    "expectedTitle": "Brood Brother Gunner",
+    "team": "Brood Brothers",
+    "source": {
+      "date": "2026-08-26",
+      "officialPdf": "https://assets.warhammer-community.com/eng_brood_brothers_online_rules-ztviivggwv-tdvilxxaue.pdf",
+      "pdfPages": [
+        12
+      ],
+      "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/brood-brother/",
+      "snapshotLineNumbers": [],
+      "checkedOn": "2026-10-05",
+      "basis": "Full official rules plus visually checked effective errata"
+    },
+    "keyword": [
+      "TYRANID",
+      "ТИРАНИД (TYRANID)"
+    ]
+  },
+  {
+    "id": "494075c1427e7230",
+    "expectedTitle": "Brood Brother Veteran",
+    "team": "Brood Brothers",
+    "source": {
+      "date": "2026-08-26",
+      "officialPdf": "https://assets.warhammer-community.com/eng_brood_brothers_online_rules-ztviivggwv-tdvilxxaue.pdf",
+      "pdfPages": [
+        12
+      ],
+      "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/brood-brother/",
+      "snapshotLineNumbers": [],
+      "checkedOn": "2026-10-05",
+      "basis": "Full official rules plus visually checked effective errata"
+    },
+    "keyword": [
+      "TYRANID",
+      "ТИРАНИД (TYRANID)"
+    ]
+  },
+  {
+    "id": "7ef18d982014bd4c",
+    "expectedTitle": "Brood Brother Sapper",
+    "team": "Brood Brothers",
+    "source": {
+      "date": "2026-08-26",
+      "officialPdf": "https://assets.warhammer-community.com/eng_brood_brothers_online_rules-ztviivggwv-tdvilxxaue.pdf",
+      "pdfPages": [
+        12
+      ],
+      "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/brood-brother/",
+      "snapshotLineNumbers": [],
+      "checkedOn": "2026-10-05",
+      "basis": "Full official rules plus visually checked effective errata"
+    },
+    "keyword": [
+      "TYRANID",
+      "ТИРАНИД (TYRANID)"
+    ]
+  },
+  {
+    "id": "b71a4b9b9faf9dbb",
+    "expectedTitle": "Brood Brother Knife Fighter",
+    "team": "Brood Brothers",
+    "source": {
+      "date": "2026-08-26",
+      "officialPdf": "https://assets.warhammer-community.com/eng_brood_brothers_online_rules-ztviivggwv-tdvilxxaue.pdf",
+      "pdfPages": [
+        12
+      ],
+      "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/brood-brother/",
+      "snapshotLineNumbers": [],
+      "checkedOn": "2026-10-05",
+      "basis": "Full official rules plus visually checked effective errata"
+    },
+    "keyword": [
+      "TYRANID",
+      "ТИРАНИД (TYRANID)"
+    ]
+  },
+  {
+    "id": "6aa4f4882c80ea3e",
+    "expectedTitle": "Brood Brother Medic",
+    "team": "Brood Brothers",
+    "source": {
+      "date": "2026-08-26",
+      "officialPdf": "https://assets.warhammer-community.com/eng_brood_brothers_online_rules-ztviivggwv-tdvilxxaue.pdf",
+      "pdfPages": [
+        12
+      ],
+      "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/brood-brother/",
+      "snapshotLineNumbers": [],
+      "checkedOn": "2026-10-05",
+      "basis": "Full official rules plus visually checked effective errata"
+    },
+    "keyword": [
+      "TYRANID",
+      "ТИРАНИД (TYRANID)"
+    ]
+  },
+  {
+    "id": "27fa9e5ec4a0b9a8",
+    "expectedTitle": "Psychic Familiar",
+    "team": "Brood Brothers",
+    "source": {
+      "date": "2026-08-26",
+      "officialPdf": "https://assets.warhammer-community.com/eng_brood_brothers_online_rules-ztviivggwv-tdvilxxaue.pdf",
+      "pdfPages": [
+        12
+      ],
+      "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/brood-brother/",
+      "snapshotLineNumbers": [],
+      "checkedOn": "2026-10-05",
+      "basis": "Full official rules plus visually checked effective errata"
+    },
+    "keyword": [
+      "TYRANID",
+      "ТИРАНИД (TYRANID)"
+    ]
+  },
+  {
+    "id": "220911fe45a58d50",
+    "expectedTitle": "Ruthless Coordination",
+    "team": "Brood Brothers",
+    "source": {
+      "date": "2026-08-26",
+      "officialPdf": "https://assets.warhammer-community.com/eng_brood_brothers_online_rules-ztviivggwv-tdvilxxaue.pdf",
+      "pdfPages": [
+        13
+      ],
+      "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/brood-brother/",
+      "snapshotLineNumbers": [
+        71,
+        73,
+        75
+      ],
+      "checkedOn": "2026-10-05",
+      "basis": "Full official rules plus visually checked effective errata"
+    },
+    "blocks": [
+      {
+        "heading": "Rules Commentary",
+        "headingRussian": "Разъяснения правил",
+        "english": "Ruthless Coordination vs Wolf Scout obscured by Call the Storm at 3″: the Wolf Scout is not obscured. Cult Devotion when an operative is incapacitated during an action: its stats do not change during that action. Ruthless Coordination vs an operative wholly in smoke when the intervening friendly is within 2″: smoke and similar rules have no effect.",
+        "russian": "«Безжалостная координация» (Ruthless Coordination): Волчий скаут (WOLF SCOUT) в 3 дюймах, которому «Призыв бури» (Call the Storm) даёт заслонение (Obscured), не считается заслонённым. Если цель целиком в дыму, а находящийся между стрелком и целью дружественный оперативник в пределах 2 дюймов от неё, дым и подобные правила не действуют.\n«Преданность культу» (Cult Devotion): если оперативник выведен из строя во время действия, его характеристики не меняются в ходе этого действия.",
+        "append": true
+      }
+    ]
+  },
+  {
+    "id": "4cf632768c552346",
+    "expectedTitle": "Resourceful",
+    "team": "Hernkyn Yaegirs",
+    "source": {
+      "date": "2026-08-26",
+      "officialPdf": "https://assets.warhammer-community.com/eng_hernkyn_yaegirs_online_rules-7vprxsaew8-0p1ctuqlni.pdf",
+      "pdfPages": [
+        9
+      ],
+      "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/hernkyn-yaegir/",
+      "snapshotLineNumbers": [
+        115,
+        119,
+        120,
+        121
+      ],
+      "checkedOn": "2026-10-05",
+      "basis": "Full official rules plus visually checked effective errata"
+    },
+    "blocks": [
+      {
+        "heading": "Rule",
+        "english": "Resourceful points gained in the Ready step of each Strategy phase after the first depend on the number of friendly HERNKYN YAEGIR operatives in the killzone and not within enemy control range: 5+ operatives = 2 points; 1–4 = 1; 0 = 0. Points are discarded at the end of each turning point. During an operative’s activation, spend 1 point either before/after an action to add 1 to APL until end of activation, or when activated to regain up to D3+1 lost wounds; neither option is available within enemy control range.",
+        "russian": "На шаге готовности (Ready) каждой фазы стратегии после первой получайте очки находчивости (Resourceful) по числу дружественных оперативников Хернкин-ягирей (HERNKYN YAEGIR) в зоне боя, находящихся вне дистанции контроля врагов: 5 и более — 2 очка; 1–4 — 1 очко; 0 — 0 очков. В конце каждого раунда сбросьте оставшиеся очки.\nВ каждую активацию каждого дружественного оперативника можно потратить 1 очко находчивости, выбрав один эффект:\n• До или после действия, если оперативник вне дистанции контроля врагов: увеличьте его APL на 1 до конца этой активации.\n• При активации, если оперативник вне дистанции контроля врагов: восстановите ему до D3+1 потерянных ран."
+      },
+      {
+        "heading": "OPERATIVES · RESOURCEFUL POINTS",
+        "russian": "",
+        "columnsRussian": [
+          "Оперативники",
+          "Очки находчивости"
+        ],
+        "rowsRussian": [
+          [
+            "5+",
+            "2"
+          ],
+          [
+            "1–4",
+            "1"
+          ],
+          [
+            "0",
+            "0"
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "id": "f23c505690fde87a",
+    "expectedTitle": "Resourceful",
+    "team": "Hernkyn Yaegirs",
+    "source": {
+      "date": "2026-08-26",
+      "officialPdf": "https://assets.warhammer-community.com/eng_hernkyn_yaegirs_online_rules-7vprxsaew8-0p1ctuqlni.pdf",
+      "pdfPages": [
+        9
+      ],
+      "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/hernkyn-yaegir/",
+      "snapshotLineNumbers": [
+        115,
+        119,
+        120,
+        121
+      ],
+      "checkedOn": "2026-10-05",
+      "basis": "Full official rules plus visually checked effective errata"
+    },
+    "blocks": [
+      {
+        "heading": "Rule",
+        "english": "Resourceful points gained in the Ready step of each Strategy phase after the first depend on the number of friendly HERNKYN YAEGIR operatives in the killzone and not within enemy control range: 5+ operatives = 2 points; 1–4 = 1; 0 = 0. Points are discarded at the end of each turning point. During an operative’s activation, spend 1 point either before/after an action to add 1 to APL until end of activation, or when activated to regain up to D3+1 lost wounds; neither option is available within enemy control range.",
+        "russian": "На шаге готовности (Ready) каждой фазы стратегии после первой получайте очки находчивости (Resourceful) по числу дружественных оперативников Хернкин-ягирей (HERNKYN YAEGIR) в зоне боя, находящихся вне дистанции контроля врагов: 5 и более — 2 очка; 1–4 — 1 очко; 0 — 0 очков. В конце каждого раунда сбросьте оставшиеся очки.\nВ каждую активацию каждого дружественного оперативника можно потратить 1 очко находчивости, выбрав один эффект:\n• До или после действия, если оперативник вне дистанции контроля врагов: увеличьте его APL на 1 до конца этой активации.\n• При активации, если оперативник вне дистанции контроля врагов: восстановите ему до D3+1 потерянных ран."
+      }
+    ]
+  },
+  {
+    "id": "a114fae2e7c7b57d",
+    "expectedTitle": "Yaegir Theyn",
+    "team": "Hernkyn Yaegirs",
+    "source": {
+      "date": "2026-08-26",
+      "officialPdf": "https://assets.warhammer-community.com/eng_hernkyn_yaegirs_online_rules-7vprxsaew8-0p1ctuqlni.pdf",
+      "pdfPages": [
+        1,
+        2,
+        8,
+        9
+      ],
+      "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/hernkyn-yaegir/",
+      "snapshotLineNumbers": [
+        220,
+        216
+      ],
+      "checkedOn": "2026-10-05",
+      "basis": "Full official rules plus visually checked effective errata"
+    },
+    "blocks": [
+      {
+        "heading": "Veteran Adventurer",
+        "english": "In the Ready step of each Strategy phase after the first, if this operative is in the killzone and isn’t within control range of enemy operatives, you gain 1 Resourceful point.",
+        "russian": "На шаге готовности каждой фазы стратегии после первой, если этот оперативник находится в зоне боя и вне дистанции контроля врагов, получите 1 очко находчивости.",
+        "proseTitles": [
+          "Veteran Adventurer"
+        ]
+      }
+    ],
+    "weapons": [
+      {
+        "name": "Bolt shotgun (long range)",
+        "dmg": "2/3"
+      }
+    ]
+  },
+  {
+    "id": "a09d5d0a8f5de32b",
+    "expectedTitle": "Yaegir Warrior",
+    "team": "Hernkyn Yaegirs",
+    "source": {
+      "date": "2026-08-26",
+      "officialPdf": "https://assets.warhammer-community.com/eng_hernkyn_yaegirs_online_rules-7vprxsaew8-0p1ctuqlni.pdf",
+      "pdfPages": [
+        2,
+        8
+      ],
+      "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/hernkyn-yaegir/",
+      "snapshotLineNumbers": [
+        359,
+        367
+      ],
+      "checkedOn": "2026-10-05",
+      "basis": "Full official rules plus visually checked effective errata"
+    },
+    "blocks": [
+      {
+        "heading": "Intrepid",
+        "english": "Whenever you spend a Resourceful point for this operative, the following take precedence: if you add 1 to its APL stat, it lasts until the start of its next activation instead; if it regains lost wounds, it regains up to 4 instead.",
+        "russian": "Когда вы тратите очко находчивости на этого оперативника, следующие правила имеют приоритет:\n• Если увеличиваете его APL на 1, эффект длится до начала его следующей активации.\n• Если восстанавливаете потерянные раны, он восстанавливает до 4 ран вместо обычного количества.",
+        "proseTitles": [
+          "Intrepid"
+        ]
+      }
+    ],
+    "weapons": [
+      {
+        "name": "Bolt shotgun (long range)",
+        "dmg": "2/3"
+      }
+    ]
+  },
+  {
+    "id": "b91ca9d5daa35588",
+    "expectedTitle": "Masterful Bladework",
+    "team": "Hernkyn Yaegirs",
+    "source": {
+      "date": "2026-08-26",
+      "officialPdf": "https://assets.warhammer-community.com/eng_hernkyn_yaegirs_online_rules-7vprxsaew8-0p1ctuqlni.pdf",
+      "pdfPages": [
+        4,
+        9
+      ],
+      "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/hernkyn-yaegir/",
+      "snapshotLineNumbers": [
+        137
+      ],
+      "checkedOn": "2026-10-05",
+      "basis": "Full official rules plus visually checked effective errata"
+    },
+    "blocks": [
+      {
+        "heading": "Rule",
+        "english": "Whenever a friendly HERNKYN YAEGIR operative is fighting, or has a Conceal order and is retaliating, add 1 to the Atk stat of its melee weapons (to a maximum of 4) and they have the Balanced weapon rule; if the weapon already has that weapon rule, it has the Ceaseless weapon rule instead of Balanced.",
+        "russian": "Когда дружественный оперативник Хернкин-ягирей сражается либо отвечает в ближнем бою с приказом «Скрытность» (Conceal), увеличьте ATK его оружия ближнего боя на 1, максимум до 4, и добавьте этому оружию правило «Сбалансированное» (Balanced). Если оружие уже имеет Balanced, вместо него оно получает «Непрерывное» (Ceaseless)."
+      }
+    ]
+  },
+  {
+    "id": "773cd075357d80d7",
+    "expectedTitle": "Stalwart Defence",
+    "team": "Hernkyn Yaegirs",
+    "source": {
+      "date": "2026-08-26",
+      "officialPdf": "https://assets.warhammer-community.com/eng_hernkyn_yaegirs_online_rules-7vprxsaew8-0p1ctuqlni.pdf",
+      "pdfPages": [
+        6,
+        9
+      ],
+      "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/hernkyn-yaegir/",
+      "snapshotLineNumbers": [
+        169
+      ],
+      "checkedOn": "2026-10-05",
+      "basis": "Full official rules plus visually checked effective errata"
+    },
+    "blocks": [
+      {
+        "heading": "Rule",
+        "english": "Use this firefight ploy when an enemy operative ends the Charge action within control range of a friendly HERNKYN YAEGIR operative. Select one other friendly HERNKYN YAEGIR operative visible to and within 6″ of that friendly operative, but that isn’t itself within control range of enemy operatives. The selected operative can perform a free Shoot action. During that action: it can target that enemy operative even though it’s within control range of a friendly operative; you cannot select any other enemy operative as a valid target; you cannot select a frag or krak grenade, or a weapon with the Blast or x″ Devastating x weapon rule. The current rule has no Hit penalty.",
+        "russian": "Примените эту тактическую уловку, когда вражеский оперативник заканчивает действие «Атака» (Charge) в дистанции контроля дружественного оперативника Хернкин-ягирей. Выберите другого дружественного оперативника Хернкин-ягирей, видимого первому и в пределах 6 дюймов от него; выбранный оперативник должен находиться вне дистанции контроля врагов. Он может бесплатно выполнить действие «Стрелять» (Shoot).\nВ этом действии можно стрелять только по атакующему врагу, несмотря на то что тот находится в дистанции контроля дружественного оперативника. Нельзя выбирать осколочную или противотанковую гранату, а также оружие с правилом «Взрыв» (Blast) или «x дюймов Разрушительное x» (x″ Devastating x)."
+      }
+    ]
+  },
+  {
+    "id": "e4a8cc72fc883d03",
+    "expectedTitle": "Plasma Knives",
+    "team": "Hernkyn Yaegirs",
+    "source": {
+      "date": "2026-08-26",
+      "officialPdf": "https://assets.warhammer-community.com/eng_hernkyn_yaegirs_online_rules-7vprxsaew8-0p1ctuqlni.pdf",
+      "pdfPages": [
+        9
+      ],
+      "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/hernkyn-yaegir/",
+      "snapshotLineNumbers": [
+        179
+      ],
+      "checkedOn": "2026-10-05",
+      "basis": "Full official rules plus visually checked effective errata"
+    },
+    "blocks": [
+      {
+        "heading": "Rule",
+        "english": "Friendly HERNKYN YAEGIR operatives have the following melee weapon: Plasma Knife, 3 Attacks, Hit 4+, Dmg 3/5, Lethal 5+. Some operatives already have this weapon with better stats; use the better version, and that weapon has the Balanced weapon rule for the battle.",
+        "russian": "Дружественные оперативники Хернкин-ягирей получают плазменный нож (Plasma Knife), указанный в таблице. У некоторых оперативников уже есть это оружие с лучшими характеристиками: используйте лучшую версию, и на весь бой она также получает правило «Сбалансированное» (Balanced)."
+      }
+    ]
+  },
+  {
+    "id": "ed09eea381a1904d",
+    "expectedTitle": "Stabilised Boltshells",
+    "team": "Hernkyn Yaegirs",
+    "source": {
+      "date": "2026-08-26",
+      "officialPdf": "https://assets.warhammer-community.com/eng_hernkyn_yaegirs_online_rules-7vprxsaew8-0p1ctuqlni.pdf",
+      "pdfPages": [
+        6,
+        8
+      ],
+      "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/hernkyn-yaegir/",
+      "snapshotLineNumbers": [
+        190
+      ],
+      "checkedOn": "2026-10-05",
+      "basis": "Full official rules plus visually checked effective errata"
+    },
+    "blocks": [
+      {
+        "heading": "Rule",
+        "english": "Up to twice per turning point, whenever a friendly HERNKYN YAEGIR operative performs the Shoot action and selects a bolt shotgun (long range), you can use this rule. Until the end of that action, improve the weapon’s Hit stat by 1, add 1 to both Dmg stats, and give it Accurate 1.",
+        "russian": "До двух раз за раунд, когда дружественный оперативник Хернкин-ягирей выполняет действие «Стрелять» и выбирает болтовый дробовик — дальний огонь (Bolt shotgun, long range), можно применить это правило. До конца действия улучшите HIT этого оружия на 1, увеличьте обе характеристики DMG на 1 и добавьте правило «Точное 1» (Accurate 1)."
+      }
+    ]
+  },
+  {
+    "id": "69f34119cb2d881a",
+    "expectedTitle": "No Kin Left Behind",
+    "team": "Hernkyn Yaegirs",
+    "source": {
+      "date": "2026-08-26",
+      "officialPdf": "https://assets.warhammer-community.com/eng_hernkyn_yaegirs_online_rules-7vprxsaew8-0p1ctuqlni.pdf",
+      "pdfPages": [
+        5
+      ],
+      "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/hernkyn-yaegir/",
+      "snapshotLineNumbers": [
+        165
+      ],
+      "checkedOn": "2026-10-05",
+      "basis": "Full official rules plus visually checked effective errata"
+    },
+    "blocks": [
+      {
+        "heading": "Rule",
+        "english": "Use this firefight ploy when a friendly HERNKYN YAEGIR operative is incapacitated. Before it is removed from the killzone, remove your Fallen Kin marker (if any), then place it within that operative’s control range. That operative is then removed from the killzone as normal. Whenever a friendly HERNKYN YAEGIR operative within 3″ of your Fallen Kin marker is shooting, fighting or retaliating, in the Roll Attack Dice step, you can retain one fail as a normal success instead of discarding it, or retain one normal success as a critical success instead.",
+        "russian": "Примените эту тактическую уловку, когда дружественный оперативник Хернкин-ягирей выведен из строя. До его удаления из зоны боя уберите свой прежний маркер павшего родича (Fallen Kin), если он есть, и поставьте маркер в дистанции контроля этого оперативника. Затем оперативника убирают как обычно.\nКогда дружественный оперативник Хернкин-ягирей в пределах 3 дюймов от вашего маркера павшего родича стреляет, сражается или отвечает в ближнем бою, на шаге броска кубиков атаки можно сохранить один провал как обычный успех вместо сброса либо один обычный успех как критический."
+      }
+    ]
+  },
+  {
+    "id": "cc15e400d2529c18",
+    "expectedTitle": "Bonds That Bind",
+    "team": "Hernkyn Yaegirs",
+    "source": {
+      "date": "2026-08-26",
+      "officialPdf": "https://assets.warhammer-community.com/eng_hernkyn_yaegirs_online_rules-7vprxsaew8-0p1ctuqlni.pdf",
+      "pdfPages": [
+        5
+      ],
+      "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/hernkyn-yaegir/",
+      "snapshotLineNumbers": [
+        160
+      ],
+      "checkedOn": "2026-10-05",
+      "basis": "Full official rules plus visually checked effective errata"
+    },
+    "blocks": [
+      {
+        "heading": "Rule",
+        "english": "Use this firefight ploy when a friendly HERNKYN YAEGIR operative is activated. Select one other ready friendly HERNKYN YAEGIR operative visible to and within 3″ of it. When the first operative is expended, you can activate the other operative before your opponent activates. When that other operative is expended, your opponent then activates as normal. Neither operative can be a BOMBAST operative if its Wroughtlock Negotiation STRATEGIC GAMBIT has been used this turning point.",
+        "russian": "Примените эту тактическую уловку при активации дружественного оперативника Хернкин-ягирей. Выберите другого готового (Ready) дружественного оперативника Хернкин-ягирей, видимого первому и в пределах 3 дюймов от него. Когда первый оперативник станет отыгравшим (Expended), можно активировать выбранного оперативника до активации противника. Когда выбранный оперативник станет отыгравшим, противник активирует оперативника по обычным правилам.\nНи один из двух оперативников не может быть Бомбастом (BOMBAST), если в этом раунде использовался его стратегический гамбит «Переговоры Ротлока» (Wroughtlock Negotiation)."
+      }
+    ]
+  },
+  {
+    "id": "911bb430ed975a77",
+    "expectedTitle": "Kommando Boss Nob",
+    "team": "Kommandos",
+    "source": {
+      "date": "2026-06-17",
+      "officialPdf": "https://assets.warhammer-community.com/eng_17-06_kill_team_team_rules_kommandos_online_rules-ova8v1kjds-ds3ouz4k04.pdf",
+      "pdfPages": [
+        1,
+        4,
+        9
+      ],
+      "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/kommandos/",
+      "snapshotLineNumbers": [
+        221,
+        222,
+        231
+      ],
+      "checkedOn": "2026-10-05",
+      "basis": "Full official rules plus visually checked effective errata"
+    },
+    "weapons": [
+      {
+        "name": "Big choppa",
+        "atk": 5,
+        "wrEnglish": "—",
+        "wrRussian": "—"
+      },
+      {
+        "name": "Power klaw",
+        "wrEnglish": "Brutal, Shock",
+        "wrRussian": "«Жестокое» (Brutal); «Шок» (Shock)"
+      }
+    ],
+    "blocks": [
+      {
+        "heading": "Krumpin’ Time",
+        "headingRussian": "Пора крушить",
+        "english": "This operative can perform two Fight actions during its activation.",
+        "russian": "Этот оперативник может выполнить два действия «Сражаться» (Fight) в свою активацию.",
+        "append": true,
+        "proseTitles": [
+          "Krumpin’ Time",
+          "Krumpin' Time"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "c727608e1c218721",
+    "expectedTitle": "Kommando Dakka Boy",
+    "team": "Kommandos",
+    "source": {
+      "date": "2026-06-17",
+      "officialPdf": "https://assets.warhammer-community.com/eng_17-06_kill_team_team_rules_kommandos_online_rules-ova8v1kjds-ds3ouz4k04.pdf",
+      "pdfPages": [
+        2,
+        9
+      ],
+      "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/kommandos/",
+      "snapshotLineNumbers": [
+        346
+      ],
+      "checkedOn": "2026-10-05",
+      "basis": "Full official rules plus visually checked effective errata"
+    },
+    "weapons": [
+      {
+        "name": "Dakka shoota (short range)",
+        "wrEnglish": "Range 9\", Ceaseless",
+        "wrRussian": "Дальность 9 дюймов (Range 9″); «Непрерывное» (Ceaseless)"
+      }
+    ]
+  },
+  {
+    "id": "c43d301c2b092878",
+    "expectedTitle": "Collapsible Stocks",
+    "team": "Kommandos",
+    "source": {
+      "date": "2026-06-17",
+      "officialPdf": "https://assets.warhammer-community.com/eng_17-06_kill_team_team_rules_kommandos_online_rules-ova8v1kjds-ds3ouz4k04.pdf",
+      "pdfPages": [
+        7,
+        9
+      ],
+      "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/kommandos/",
+      "snapshotLineNumbers": [
+        203
+      ],
+      "checkedOn": "2026-10-05",
+      "basis": "Full official rules plus visually checked effective errata"
+    },
+    "blocks": [
+      {
+        "heading": "Rule",
+        "english": "Remove the Range weapon rule from the following ranged weapons friendly KOMMANDO operatives have: Shokka pistol; Slugga.",
+        "russian": "Уберите правило «Дальность» (Range) у следующего стрелкового оружия дружественных оперативников Коммандос (KOMMANDO): шокка-пистолет (Shokka pistol) и слагга (Slugga)."
+      }
+    ]
+  },
+  {
+    "id": "da3a5b297d00091e",
+    "expectedTitle": "Kommando Burna Boy",
+    "team": "Kommandos",
+    "source": {
+      "date": "2026-06-17",
+      "officialPdf": "https://assets.warhammer-community.com/eng_17-06_kill_team_team_rules_kommandos_online_rules-ova8v1kjds-ds3ouz4k04.pdf",
+      "pdfPages": [
+        2,
+        9
+      ],
+      "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/kommandos/",
+      "snapshotLineNumbers": [
+        307,
+        308
+      ],
+      "checkedOn": "2026-10-05",
+      "basis": "Full official rules plus visually checked effective errata"
+    },
+    "weapons": [
+      {
+        "name": "Burna (deluge)",
+        "wrEnglish": "Range 4\", Saturate, Seek, Torrent 0\"*",
+        "wrRussian": "Дальность 4 дюйма (Range 4″); «Насыщение» (Saturate); «Обнаружение» (Seek); «Поток 0 дюймов» (Torrent 0″)*"
+      }
+    ],
+    "blocks": [
+      {
+        "heading": "Torrent 0″*",
+        "headingRussian": "Поток 0 дюймов",
+        "english": " means you cannot select secondary targets, but this weapon still has the Torrent weapon rule for all other rules purposes, e.g. the Condensed Stronghold rule.",
+        "russian": "Нельзя выбирать вторичные цели. Однако оружие сохраняет правило «Поток» (Torrent) для всех остальных взаимодействий с правилами, например «Тесная крепость» (Condensed Stronghold).",
+        "append": true
+      }
+    ]
+  },
+  {
+    "id": "c679d35bfeddb9a4",
+    "expectedTitle": "Kommando Bomb Squig · reverse",
+    "team": "Kommandos",
+    "source": {
+      "date": "2026-06-17",
+      "officialPdf": "https://assets.warhammer-community.com/eng_17-06_kill_team_team_rules_kommandos_online_rules-ova8v1kjds-ds3ouz4k04.pdf",
+      "pdfPages": [
+        9
+      ],
+      "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/kommandos/",
+      "snapshotLineNumbers": [
+        251
+      ],
+      "checkedOn": "2026-10-05",
+      "basis": "Full official rules plus visually checked effective errata"
+    },
+    "blocks": [
+      {
+        "heading": "Expendable",
+        "english": "This operative is ignored for your opponent’s kill/elimination op (when it’s incapacitated, and when determining your starting number of operatives). It’s also ignored for victory conditions and scoring VPs if either require operatives to ‘escape’, ‘survive’ or be incapacitated by enemy operatives (if it escapes/survives/is incapacitated, determining how many operatives must escape/survive/be incapacitated, etc.).",
+        "russian": "Игнорируйте этого оперативника при подсчёте операции уничтожения / ликвидации (Kill / Elimination Op) противника: как при его выведении из строя, так и при определении вашего начального числа оперативников. Также игнорируйте его для условий победы и начисления VP, требующих от оперативников «сбежать», «выжить» или быть выведенными из строя врагами. Это относится и к самому событию, и к определению необходимого количества таких оперативников.",
+        "proseTitles": [
+          "Expendable"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "b80d4f605f6d77b0",
+    "expectedTitle": "Kommando Bomb Squig",
+    "team": "Kommandos",
+    "source": {
+      "date": "2026-06-17",
+      "officialPdf": "https://assets.warhammer-community.com/eng_17-06_kill_team_team_rules_kommandos_online_rules-ova8v1kjds-ds3ouz4k04.pdf",
+      "pdfPages": [
+        8
+      ],
+      "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/kommandos/",
+      "snapshotLineNumbers": [
+        61
+      ],
+      "checkedOn": "2026-10-05",
+      "basis": "Full official rules plus visually checked effective errata"
+    },
+    "blocks": [
+      {
+        "heading": "Rules Commentary",
+        "headingRussian": "Разъяснение правил",
+        "english": "Q: If a KOMMANDO BOMB SQUIG is incapacitated during a Door Fight or Hatchway Fight, or through a door ignored when determining visibility for control range, is the other operative a secondary target for the Boom! Shoot? A: No.",
+        "russian": "Если бомбовый сквиг (BOMB SQUIG) Коммандос выведен из строя при бое через дверь (Door Fight), бойницу (Hatchway Fight) или через дверь, игнорируемую при определении видимости для дистанции контроля, другой участвующий оперативник не становится вторичной целью выстрела по правилу «Бум!» (Boom!).",
+        "append": true
+      }
+    ]
+  },
+  {
+    "id": "7e8f8f54046e7bd9",
+    "expectedTitle": "Rust Emanations",
+    "team": "Gellerpox Infected",
+    "source": {
+      "date": "2026-08-26",
+      "officialPdf": "https://assets.warhammer-community.com/eng_gellerpox_infected_online_rules-cchcqkm6eu-fsvtx5g2ca.pdf",
+      "pdfPages": [
+        6,
+        9
+      ],
+      "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/gellerpox-infected/",
+      "snapshotLineNumbers": [
+        130
+      ],
+      "checkedOn": "2026-10-05",
+      "basis": "Full official rules plus visually checked effective errata"
+    },
+    "blocks": [
+      {
+        "heading": "Rule",
+        "english": "Whenever a friendly GELLERPOX INFECTED NIGHTMARE HULK operative (excluding MUTOID VERMIN) is fighting or retaliating, your opponent cannot retain results of 3 as successes.",
+        "russian": "Когда дружественный Кошмарный громила (NIGHTMARE HULK) Заражённых Геллерпокс (GELLERPOX INFECTED), кроме Мутоидной мелочи (MUTOID VERMIN), сражается или отвечает в ближнем бою, противник не может сохранять результаты 3 как успехи."
+      }
+    ]
+  },
+  {
+    "id": "b3e4059f4ca03adf",
+    "expectedTitle": "Mutoid Vermin",
+    "team": "Gellerpox Infected",
+    "source": {
+      "date": "2026-08-26",
+      "officialPdf": "https://assets.warhammer-community.com/eng_gellerpox_infected_online_rules-cchcqkm6eu-fsvtx5g2ca.pdf",
+      "pdfPages": [
+        10
+      ],
+      "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/gellerpox-infected/",
+      "snapshotLineNumbers": [
+        143
+      ],
+      "checkedOn": "2026-10-05",
+      "basis": "Full official rules plus visually checked effective errata"
+    },
+    "blocks": [
+      {
+        "heading": "Rule",
+        "english": "After revealing this equipment option, add four GELLERPOX INFECTED MUTOID VERMIN operatives to your kill team for the battle.",
+        "russian": "После раскрытия этого варианта снаряжения добавьте в отряд на этот бой четырёх оперативников Мутоидной мелочи (MUTOID VERMIN) Заражённых Геллерпокс."
+      }
+    ]
+  },
+  {
+    "id": "6becc23e0f15670b",
+    "expectedTitle": "Sludge-Grub",
+    "team": "Gellerpox Infected",
+    "source": {
+      "date": "2026-08-26",
+      "officialPdf": "https://assets.warhammer-community.com/eng_gellerpox_infected_online_rules-cchcqkm6eu-fsvtx5g2ca.pdf",
+      "pdfPages": [
+        3
+      ],
+      "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/gellerpox-infected/",
+      "snapshotLineNumbers": [
+        336
+      ],
+      "checkedOn": "2026-10-05",
+      "basis": "Full official rules plus visually checked effective errata"
+    },
+    "blocks": [
+      {
+        "heading": "Caustic Demise",
+        "english": "When this operative is incapacitated, before it’s removed from the killzone, roll one D6 separately for each visible enemy operative within 2″ of it: on a 4+, inflict 1 damage.",
+        "russian": "Когда этот оперативник выведен из строя, до его удаления из зоны боя бросьте по одному D6 отдельно за каждого видимого вражеского оперативника в пределах 2 дюймов от него. При результате 4+ нанесите этому врагу 1 урона.",
+        "proseTitles": [
+          "Caustic Demise"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "f741feeec58add9e",
+    "expectedTitle": "Tanked Up",
+    "team": "Wrecka Krew",
+    "source": {
+      "date": "2026-06-17",
+      "officialPdf": "https://assets.warhammer-community.com/eng_17-06_kill_team_team_rules_wrecka_krew_online_rules-1o31d0dshf-1p2z1ugswl.pdf",
+      "pdfPages": [
+        3,
+        8
+      ],
+      "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/wrecka-krew/",
+      "snapshotLineNumbers": [
+        140
+      ],
+      "checkedOn": "2026-10-05",
+      "basis": "Full official rules plus visually checked effective errata"
+    },
+    "blocks": [
+      {
+        "heading": "Rule",
+        "english": "The first time a friendly WRECKA KREW operative (excluding BOMB SQUIG) that has an Engage order performs either the Charge, Shoot or Fight action (excluding Guard) during each of its activations/counteractions, add 1 to its APL stat until the start of its next activation.",
+        "russian": "В каждую активацию / контратаку дружественного оперативника Банды крушил (WRECKA KREW), кроме Бомбового сквига, с приказом «Бой» (Engage), когда он впервые выполняет одно из действий «Атака» (Charge), «Стрелять» (Shoot) или «Сражаться» (Fight), кроме действий по правилу «Дозор» (Guard), увеличьте его APL на 1 до начала следующей активации."
+      }
+    ]
+  },
+  {
+    "id": "6d1c8460df89f231",
+    "expectedTitle": "Wrecka Rampage",
+    "team": "Wrecka Krew",
+    "source": {
+      "date": "2026-06-17",
+      "officialPdf": "https://assets.warhammer-community.com/eng_17-06_kill_team_team_rules_wrecka_krew_online_rules-1o31d0dshf-1p2z1ugswl.pdf",
+      "pdfPages": [
+        3,
+        8
+      ],
+      "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/wrecka-krew/",
+      "snapshotLineNumbers": [
+        134,
+        135
+      ],
+      "checkedOn": "2026-10-05",
+      "basis": "Full official rules plus visually checked effective errata"
+    },
+    "blocks": [
+      {
+        "heading": "Rule",
+        "english": "Whenever a friendly WRECKA KREW operative is shooting, fighting or retaliating, in the Roll Attack Dice step, for each attack dice result of 6 you retain, gain one Wrecka point. You can spend up to 2 Wrecka points (unless it’s a BOMB SQUIG, then you cannot spend any). For each point spent, retain one fail as a normal success instead of discarding it. You cannot have more than 6 Wrecka points at once. You can gain and spend Wrecka points during the same action in an order of your choice, unless you started the action with 6, in which case you can only spend them.",
+        "russian": "Когда дружественный оперативник Банды крушил стреляет, сражается или отвечает в ближнем бою, на шаге броска кубиков атаки получите по 1 очку крушил (Wrecka point) за каждый сохранённый результат 6. Можно потратить до 2 очков крушил: за каждое сохраните один провал как обычный успех вместо сброса. Бомбовые сквиги не могут тратить эти очки.\nОдновременно у вас может быть не больше 6 очков крушил. В одном действии можно получать и тратить очки в любом порядке. Если вы начали действие с 6 очками, в этом действии их можно только тратить."
+      }
+    ]
+  },
+  {
+    "id": "2d958b2c099487bb",
+    "expectedTitle": "Wrecka Boss Nob",
+    "team": "Wrecka Krew",
+    "source": {
+      "date": "2026-06-17",
+      "officialPdf": "https://assets.warhammer-community.com/eng_17-06_kill_team_team_rules_wrecka_krew_online_rules-1o31d0dshf-1p2z1ugswl.pdf",
+      "pdfPages": [
+        1,
+        8
+      ],
+      "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/wrecka-krew/",
+      "snapshotLineNumbers": [
+        231
+      ],
+      "checkedOn": "2026-10-05",
+      "basis": "Full official rules plus visually checked effective errata"
+    },
+    "blocks": [
+      {
+        "heading": "Salvo*",
+        "english": "Select up to two different valid targets that aren’t within control range of friendly operatives. Shoot with this weapon against both primary targets in an order of your choice, then against all remaining secondary targets in the same manner (roll each sequence separately). Each target (primary and secondary) cannot be shot more than once during the action.",
+        "russian": "Выберите до двух разных допустимых целей вне дистанции контроля дружественных оперативников. Стреляйте этим оружием по обеим основным целям в любом порядке, затем по оставшимся вторичным целям таким же образом. Каждую последовательность бросков разыгрывайте отдельно. По каждой цели, основной или вторичной, можно стрелять лишь один раз в это действие.",
+        "proseTitles": [
+          "Salvo"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "8c07a608c5d5fff3",
+    "expectedTitle": "Breaka Boy Demolisha",
+    "team": "Wrecka Krew",
+    "source": {
+      "date": "2026-06-17",
+      "officialPdf": "https://assets.warhammer-community.com/eng_17-06_kill_team_team_rules_wrecka_krew_online_rules-1o31d0dshf-1p2z1ugswl.pdf",
+      "pdfPages": [
+        1,
+        8
+      ],
+      "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/wrecka-krew/",
+      "snapshotLineNumbers": [
+        268
+      ],
+      "checkedOn": "2026-10-05",
+      "basis": "Full official rules plus visually checked effective errata"
+    },
+    "blocks": [
+      {
+        "heading": "Detonate*",
+        "english": "The first time you would inflict damage on an enemy operative with this weapon profile during the battle, inflict D6+6 damage on that enemy operative and each other operative within its control range if it’s a normal success, or 2D6+6 damage if it’s a critical success (roll separately for each). Then the action ends and you gain 1 Wrecka point, plus 1 for each operative incapacitated during that action. Damage from this weapon rule cannot be ignored or reduced.",
+        "russian": "Когда впервые за бой вы должны нанести урон врагу этим профилем оружия, вместо обычного урона нанесите этому врагу и каждому другому оперативнику в его дистанции контроля D6+6 урона при обычном успехе либо 2D6+6 при критическом успехе. Бросайте отдельно за каждого оперативника. Затем действие заканчивается: получите 1 очко крушил плюс ещё по 1 за каждого оперативника, выведенного из строя в ходе этого действия.\nУрон от этого правила нельзя игнорировать или уменьшать.",
+        "proseTitles": [
+          "Detonate"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "1e85bf035b09b8ef",
+    "expectedTitle": "Wrecka Bomb Squig",
+    "team": "Wrecka Krew",
+    "source": {
+      "date": "2026-06-17",
+      "officialPdf": "https://assets.warhammer-community.com/eng_17-06_kill_team_team_rules_wrecka_krew_online_rules-1o31d0dshf-1p2z1ugswl.pdf",
+      "pdfPages": [
+        1,
+        8
+      ],
+      "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/wrecka-krew/",
+      "snapshotLineNumbers": [
+        250
+      ],
+      "checkedOn": "2026-10-05",
+      "basis": "Full official rules plus visually checked effective errata"
+    },
+    "blocks": [
+      {
+        "heading": "Expendable",
+        "english": "This operative is ignored for your opponent’s kill/elimination op (when it’s incapacitated, and when determining your starting number of operatives). It’s also ignored for victory conditions and scoring VPs if either require operatives to ‘escape’, ‘survive’ or be incapacitated by enemy operatives (if it escapes/survives/is incapacitated, determining how many operatives must escape/survive/be incapacitated, etc.).",
+        "russian": "Игнорируйте этого оперативника при подсчёте операции уничтожения / ликвидации (Kill / Elimination Op) противника: как при его выведении из строя, так и при определении вашего начального числа оперативников. Также игнорируйте его для условий победы и начисления VP, требующих от оперативников «сбежать», «выжить» или быть выведенными из строя врагами. Это относится и к самому событию, и к определению необходимого количества таких оперативников.",
+        "proseTitles": [
+          "Expendable"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "5d5070693aa9483a",
+    "expectedTitle": "Extra Armour",
+    "team": "Wrecka Krew",
+    "source": {
+      "date": "2026-06-17",
+      "officialPdf": "https://assets.warhammer-community.com/eng_17-06_kill_team_team_rules_wrecka_krew_online_rules-1o31d0dshf-1p2z1ugswl.pdf",
+      "pdfPages": [
+        6,
+        8
+      ],
+      "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/wrecka-krew/",
+      "snapshotLineNumbers": [
+        202
+      ],
+      "checkedOn": "2026-10-05",
+      "basis": "Full official rules plus visually checked effective errata"
+    },
+    "blocks": [
+      {
+        "heading": "Rule",
+        "english": "Subtract 1″ from the Move stat of friendly WRECKA KREW operatives and improve their Save stat by 1. This excludes BOMB SQUIG operatives and isn’t cumulative with the Protective rule of a Portable Barricade from universal equipment.",
+        "russian": "Уменьшите MOVE дружественных оперативников Банды крушил на 1 дюйм и улучшите SAVE на 1. Бомбовые сквиги исключаются. Эффект не суммируется с правилом «Защитное» (Protective) переносной баррикады (Portable Barricade) из общего снаряжения."
+      }
+    ]
+  },
+  {
+    "id": "1e85bf035b09b8ef",
+    "expectedTitle": "Wrecka Bomb Squig",
+    "team": "Wrecka Krew",
+    "source": {
+      "date": "2026-06-17",
+      "officialPdf": "https://assets.warhammer-community.com/eng_17-06_kill_team_team_rules_wrecka_krew_online_rules-1o31d0dshf-1p2z1ugswl.pdf",
+      "pdfPages": [
+        7,
+        8
+      ],
+      "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/wrecka-krew/",
+      "snapshotLineNumbers": [
+        55,
+        57,
+        59,
+        60
+      ],
+      "checkedOn": "2026-10-05",
+      "basis": "Full official rules plus visually checked effective errata"
+    },
+    "blocks": [
+      {
+        "heading": "Rules Commentary",
+        "headingRussian": "Разъяснения правил",
+        "english": "Bomb Squig/Boom!: The other operative is not a secondary target from Door/Hatchway Fight or ignored-door visibility, except if it is within 2″ and visible during Hatchway Fight and Kaboom! is used. Krusha/Smash: if a marker that would end the moved enemy’s action is within that enemy’s control range but not the Krusha’s, the Fight action does not end. Tanked Up: add the Charge APL increase at the start of that action, before moving.",
+        "russian": "Бомбовый сквиг: другой оперативник в бою через дверь / бойницу или при игнорировании двери для видимости не становится вторичной целью «Бум!» (Boom!). Исключение: бой через бойницу, другой оперативник видим и в пределах 2 дюймов, а сквиг использует «Кабум!» (Kaboom!).\nКруша (KRUSHA), «Сокрушение» (Smash): если маркер, способный закончить действие перемещённого врага, находится в дистанции контроля врага, но вне дистанции контроля Круши, действие «Сражаться» не заканчивается.\n«Под завязку» (Tanked Up): бонус APL за действие «Атака» применяется в начале действия, до перемещения.",
+        "append": true
+      }
+    ]
+  }
+]

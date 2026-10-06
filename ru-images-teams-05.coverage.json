@@ -1,0 +1,2321 @@
+{
+  "batch": "05",
+  "teams": [
+    "Kasrkin",
+    "Hierotek Circle",
+    "Corsair Voidscarred",
+    "Nemesis Claw"
+  ],
+  "sourceFiles": [
+    "inventory/card-assets.json",
+    "inventory/image-sources.json",
+    "inventory/image-ocr-en.json",
+    "inventory/original-images/*.img"
+  ],
+  "included": [
+    {
+      "sourceSHA256": "005ee8b599f9999e00eb5385d6e387fd0af2599b1f1489bff71a5c87b91873ac",
+      "imageIDs": [
+        "3b9149accbeb7822"
+      ],
+      "appearances": [
+        {
+          "team": "Kasrkin",
+          "assetName": "Breach and Clear",
+          "side": "face",
+          "imageID": "3b9149accbeb7822"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "018f2b154fd9a9d6f950dbd5bf72b8306af744f54fc139ffe3cbe06350ace7b7",
+      "imageIDs": [
+        "5e8338a1773628c6"
+      ],
+      "appearances": [
+        {
+          "team": "Kasrkin",
+          "assetName": "Kasrkin Recon-Trooper",
+          "side": "face",
+          "imageID": "5e8338a1773628c6"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "02ad00f4ba06163b70f0300ba1835a5bb9c6f1ef2590a7f9a00e94074aa22d5f",
+      "imageIDs": [
+        "750dd27acc9f5fc5"
+      ],
+      "appearances": [
+        {
+          "team": "Corsair Voidscarred",
+          "assetName": "Voidscarred Way Seeker",
+          "side": "back",
+          "imageID": "750dd27acc9f5fc5"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "030fdf4073276e3939b6f7f15668c57aaf936b34d01f8d9d9681a28c44be0bec",
+      "imageIDs": [
+        "b93856986c125ff6"
+      ],
+      "appearances": [
+        {
+          "team": "Kasrkin",
+          "assetName": "Seize the Initiative",
+          "side": "face",
+          "imageID": "b93856986c125ff6"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "03fb8b79bbb1544790fc3ab80e945bdd3990dadaa7de9a4359423d638016f1e0",
+      "imageIDs": [
+        "e6f58da5ce6d5c05"
+      ],
+      "appearances": [
+        {
+          "team": "Hierotek Circle",
+          "assetName": "Tesla Weave",
+          "side": "face",
+          "imageID": "e6f58da5ce6d5c05"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "06f78e085c510564be7b347beb790de04f09bbef60f058433cff1db065a30b57",
+      "imageIDs": [
+        "7d02f6c1baab8125"
+      ],
+      "appearances": [
+        {
+          "team": "Hierotek Circle",
+          "assetName": "Living Metal",
+          "side": "face",
+          "imageID": "7d02f6c1baab8125"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "081beb6763205cb8cda8801ce7427429cd16dea9e020410285b72ba0d70b93c5",
+      "imageIDs": [
+        "a3e11640901aa0e5"
+      ],
+      "appearances": [
+        {
+          "team": "Kasrkin",
+          "assetName": "Relocate",
+          "side": "face",
+          "imageID": "a3e11640901aa0e5"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "08eda45c9ac9cf976356c0695de5ad2cbb0144cec3fd1950940536ed23063290",
+      "imageIDs": [
+        "2cfa7414d3eb916d"
+      ],
+      "appearances": [
+        {
+          "team": "Hierotek Circle",
+          "assetName": "Command Underlings",
+          "side": "face",
+          "imageID": "2cfa7414d3eb916d"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "0efceea103aaf1b2c77b0720d12346514a98e52d56a975063dbab703a2bcff2f",
+      "imageIDs": [
+        "9029ec159a16ac07"
+      ],
+      "appearances": [
+        {
+          "team": "Nemesis Claw",
+          "assetName": "Flayed skin",
+          "side": "face",
+          "imageID": "9029ec159a16ac07"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "10347d39be264e75814e072b73a923993376619275b8a7570e38d2e1af60303f",
+      "imageIDs": [
+        "fa0ab8893c45e820"
+      ],
+      "appearances": [
+        {
+          "team": "Nemesis Claw",
+          "assetName": "Return To Darkness",
+          "side": "face",
+          "imageID": "fa0ab8893c45e820"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "1086322960223a696bb77c85acadfdb89dd8105d26d30ff7622dd061083de3cb",
+      "imageIDs": [
+        "7f26a73788f7bcad"
+      ],
+      "appearances": [
+        {
+          "team": "Hierotek Circle",
+          "assetName": "Technomancer",
+          "side": "face",
+          "imageID": "7f26a73788f7bcad"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "14815836e0c3862041ccde7b162be1c295c103c59801b3d8f7f7cbbd69e28d12",
+      "imageIDs": [
+        "feafc556d9a6d853"
+      ],
+      "appearances": [
+        {
+          "team": "Corsair Voidscarred",
+          "assetName": "Star Charts",
+          "side": "face",
+          "imageID": "feafc556d9a6d853"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "1fcf63ce84683d42b4ff1ea170d326ab6ad20c5a164ed85990973d1b1ab194a6",
+      "imageIDs": [
+        "4e4b20a05478bd75"
+      ],
+      "appearances": [
+        {
+          "team": "Kasrkin",
+          "assetName": "Kasrkin Gunner",
+          "side": "face",
+          "imageID": "4e4b20a05478bd75"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "2339dd592fab29a12403ca2dde6e06d8d0716071629891acf1303d5db8fc19ff",
+      "imageIDs": [
+        "fffb0948d21cd1a7"
+      ],
+      "appearances": [
+        {
+          "team": "Hierotek Circle",
+          "assetName": "Technomancer",
+          "side": "back",
+          "imageID": "fffb0948d21cd1a7"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "236c35cde8b68406ff3f7d348d5f3f5b1878c0b8dfb2d022568d50083bf49813",
+      "imageIDs": [
+        "53cbf36c3ba5b07d"
+      ],
+      "appearances": [
+        {
+          "team": "Corsair Voidscarred",
+          "assetName": "Voidscarred Shade Runner",
+          "side": "back",
+          "imageID": "53cbf36c3ba5b07d"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "244a693305fa6ec29b53571eccbfc16460edec58c3daf376977023f1328095de",
+      "imageIDs": [
+        "8e6ebb22c5060f69"
+      ],
+      "appearances": [
+        {
+          "team": "Kasrkin",
+          "assetName": "Long-Range Scope",
+          "side": "face",
+          "imageID": "8e6ebb22c5060f69"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "2466c3ac243796a81d84d3186d1e136a5e978ec485ce2c712da1659a5f08fd3e",
+      "imageIDs": [
+        "93f9bd78cd76e0bc"
+      ],
+      "appearances": [
+        {
+          "team": "Hierotek Circle",
+          "assetName": "Immortal Despotek",
+          "side": "back",
+          "imageID": "93f9bd78cd76e0bc"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "254ce4a3c35bf07842e9dd13f9c3d337608422cca0801f4db7f0f1aad15178a7",
+      "imageIDs": [
+        "f26d587e756e9e22"
+      ],
+      "appearances": [
+        {
+          "team": "Hierotek Circle",
+          "assetName": "Psychomancer",
+          "side": "face",
+          "imageID": "f26d587e756e9e22"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "27cd93be2b615578df7fe9d04ef13edb2ae95a4965cce5e4b54279071be789a5",
+      "imageIDs": [
+        "e75dd57dd4535639"
+      ],
+      "appearances": [
+        {
+          "team": "Corsair Voidscarred",
+          "assetName": "Voidscarred Kurnathi",
+          "side": "face",
+          "imageID": "e75dd57dd4535639"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "282085f79fbbda9e894e5711e4a8aeb15e7d5c5076408df1657e622aaf34db90",
+      "imageIDs": [
+        "ff36ad20317a7344"
+      ],
+      "appearances": [
+        {
+          "team": "Corsair Voidscarred",
+          "assetName": "Voidscarred Felarch",
+          "side": "face",
+          "imageID": "ff36ad20317a7344"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "296b129ece423e2cc68a683849e23a3c29df99095b3b067daeb31e456bd486d7",
+      "imageIDs": [
+        "9b6137514de92336"
+      ],
+      "appearances": [
+        {
+          "team": "Nemesis Claw",
+          "assetName": "In Midnight Clad",
+          "side": "back",
+          "imageID": "9b6137514de92336"
+        },
+        {
+          "team": "Nemesis Claw",
+          "assetName": "Preysight",
+          "side": "back",
+          "imageID": "9b6137514de92336"
+        },
+        {
+          "team": "Nemesis Claw",
+          "assetName": "Return To Darkness",
+          "side": "back",
+          "imageID": "9b6137514de92336"
+        },
+        {
+          "team": "Nemesis Claw",
+          "assetName": "We Have Come For You",
+          "side": "back",
+          "imageID": "9b6137514de92336"
+        },
+        {
+          "team": "Nemesis Claw",
+          "assetName": "The Black Hunt",
+          "side": "back",
+          "imageID": "9b6137514de92336"
+        },
+        {
+          "team": "Nemesis Claw",
+          "assetName": "Proclivity For Murder",
+          "side": "back",
+          "imageID": "9b6137514de92336"
+        },
+        {
+          "team": "Nemesis Claw",
+          "assetName": "Vox Scream",
+          "side": "back",
+          "imageID": "9b6137514de92336"
+        },
+        {
+          "team": "Nemesis Claw",
+          "assetName": "Dirty Fighter",
+          "side": "back",
+          "imageID": "9b6137514de92336"
+        },
+        {
+          "team": "Nemesis Claw",
+          "assetName": "Death to The False Emperor",
+          "side": "back",
+          "imageID": "9b6137514de92336"
+        },
+        {
+          "team": "Nemesis Claw",
+          "assetName": "Astartes",
+          "side": "back",
+          "imageID": "9b6137514de92336"
+        },
+        {
+          "team": "Nemesis Claw",
+          "assetName": "Comms jammers",
+          "side": "back",
+          "imageID": "9b6137514de92336"
+        },
+        {
+          "team": "Nemesis Claw",
+          "assetName": "Chain snare",
+          "side": "back",
+          "imageID": "9b6137514de92336"
+        },
+        {
+          "team": "Nemesis Claw",
+          "assetName": "Flayed skin",
+          "side": "back",
+          "imageID": "9b6137514de92336"
+        },
+        {
+          "team": "Nemesis Claw",
+          "assetName": "Grisly trophy",
+          "side": "back",
+          "imageID": "9b6137514de92336"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "2c659a74501af8ba81386acaf5e1e19c0221c35e6408b649a637af759e681474",
+      "imageIDs": [
+        "53f5ab0aea867129"
+      ],
+      "appearances": [
+        {
+          "team": "Corsair Voidscarred",
+          "assetName": "Rifles",
+          "side": "face",
+          "imageID": "53f5ab0aea867129"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "2ea4fbbd8a6348ecf3988fe88d7cf84c6dd9fb639ae32cde766ba3ea0b4e06f7",
+      "imageIDs": [
+        "e87a5cd0ad4075af"
+      ],
+      "appearances": [
+        {
+          "team": "Kasrkin",
+          "assetName": "Combat Daggers",
+          "side": "back",
+          "imageID": "e87a5cd0ad4075af"
+        },
+        {
+          "team": "Kasrkin",
+          "assetName": "Relics of Cadia",
+          "side": "back",
+          "imageID": "e87a5cd0ad4075af"
+        },
+        {
+          "team": "Kasrkin",
+          "assetName": "Long-Range Scope",
+          "side": "back",
+          "imageID": "e87a5cd0ad4075af"
+        },
+        {
+          "team": "Kasrkin",
+          "assetName": "Foregrip",
+          "side": "back",
+          "imageID": "e87a5cd0ad4075af"
+        },
+        {
+          "team": "Kasrkin",
+          "assetName": "Clearance Sweep",
+          "side": "back",
+          "imageID": "e87a5cd0ad4075af"
+        },
+        {
+          "team": "Kasrkin",
+          "assetName": "Relocate",
+          "side": "back",
+          "imageID": "e87a5cd0ad4075af"
+        },
+        {
+          "team": "Kasrkin",
+          "assetName": "Elimination Pattern",
+          "side": "back",
+          "imageID": "e87a5cd0ad4075af"
+        },
+        {
+          "team": "Kasrkin",
+          "assetName": "Engage from cover",
+          "side": "back",
+          "imageID": "e87a5cd0ad4075af"
+        },
+        {
+          "team": "Kasrkin",
+          "assetName": "Give no Ground",
+          "side": "back",
+          "imageID": "e87a5cd0ad4075af"
+        },
+        {
+          "team": "Kasrkin",
+          "assetName": "Neutralize Target",
+          "side": "back",
+          "imageID": "e87a5cd0ad4075af"
+        },
+        {
+          "team": "Kasrkin",
+          "assetName": "Cover Retreat",
+          "side": "back",
+          "imageID": "e87a5cd0ad4075af"
+        },
+        {
+          "team": "Kasrkin",
+          "assetName": "Seize the Initiative",
+          "side": "back",
+          "imageID": "e87a5cd0ad4075af"
+        },
+        {
+          "team": "Kasrkin",
+          "assetName": "Skill at Arms",
+          "side": "back",
+          "imageID": "e87a5cd0ad4075af"
+        },
+        {
+          "team": "Kasrkin",
+          "assetName": "Light ’Em Up",
+          "side": "back",
+          "imageID": "e87a5cd0ad4075af"
+        },
+        {
+          "team": "Kasrkin",
+          "assetName": "Strike Fast",
+          "side": "back",
+          "imageID": "e87a5cd0ad4075af"
+        },
+        {
+          "team": "Kasrkin",
+          "assetName": "Ice In Your Veins",
+          "side": "back",
+          "imageID": "e87a5cd0ad4075af"
+        },
+        {
+          "team": "Kasrkin",
+          "assetName": "For Cadia!",
+          "side": "back",
+          "imageID": "e87a5cd0ad4075af"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "30df1e6084e63b32cb911450871fb004ab3ed04978d3047c29e6b970f3a41265",
+      "imageIDs": [
+        "112062af91b8119f"
+      ],
+      "appearances": [
+        {
+          "team": "Nemesis Claw",
+          "assetName": "In Midnight Clad",
+          "side": "face",
+          "imageID": "112062af91b8119f"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "3277d9afa808645a0e793e2d1bd366c34475b9ac6e681a76491f31391defe8a6",
+      "imageIDs": [
+        "c533e2072fea8e38"
+      ],
+      "appearances": [
+        {
+          "team": "Kasrkin",
+          "assetName": "Kasrkin Combat Medic",
+          "side": "face",
+          "imageID": "c533e2072fea8e38"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "33b1a5ac71b65facbc9ff6109ff1cf3c308d73dc5e1fba16554102030293cffd",
+      "imageIDs": [
+        "73935255c8b5cf9c"
+      ],
+      "appearances": [
+        {
+          "team": "Corsair Voidscarred",
+          "assetName": "Voidscarred Heavy Gunner",
+          "side": "face",
+          "imageID": "73935255c8b5cf9c"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "36dfbd481286f15d50d1610a0414460a32fc5d16153f5859e9618d8e50eb2abc",
+      "imageIDs": [
+        "2bc399ca0e6b7063"
+      ],
+      "appearances": [
+        {
+          "team": "Corsair Voidscarred",
+          "assetName": "Diuturnal Mantles",
+          "side": "face",
+          "imageID": "2bc399ca0e6b7063"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "38b89d3e44c4565f387e63acba8f577c781ae2fe031cdbbc7c47d6707dacd33c",
+      "imageIDs": [
+        "0afc2316bf68f135"
+      ],
+      "appearances": [
+        {
+          "team": "Hierotek Circle",
+          "assetName": "Magnification Conduit",
+          "side": "face",
+          "imageID": "0afc2316bf68f135"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "3b617f862a8958e60280a30afdcc920abff072d77dcd3cbee066d36ef4623985",
+      "imageIDs": [
+        "e9f03b89c5f2a919"
+      ],
+      "appearances": [
+        {
+          "team": "Kasrkin",
+          "assetName": "Ice In Your Veins",
+          "side": "face",
+          "imageID": "e9f03b89c5f2a919"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "3c82597310f60c12dc95a4348258f372555337a7f29d081f6385219dc9f735db",
+      "imageIDs": [
+        "ba4c615e80489294"
+      ],
+      "appearances": [
+        {
+          "team": "Corsair Voidscarred",
+          "assetName": "Voidscarred Starstorm Duelist",
+          "side": "face",
+          "imageID": "ba4c615e80489294"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "4a4abaca08980a78e5ee1b11139017df41246e1190d61b54c97e4ae9aec3823d",
+      "imageIDs": [
+        "7e0fef87fe11a70c"
+      ],
+      "appearances": [
+        {
+          "team": "Hierotek Circle",
+          "assetName": "Methodical Elimination",
+          "side": "face",
+          "imageID": "7e0fef87fe11a70c"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "4d8c777e43d249b93ba118599e776b61060ac5c93a6577b2a05ffbbcc5abc655",
+      "imageIDs": [
+        "8390f1fce588b8c3"
+      ],
+      "appearances": [
+        {
+          "team": "Kasrkin",
+          "assetName": "Combat Daggers",
+          "side": "face",
+          "imageID": "8390f1fce588b8c3"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "4f1a2ae438dc01120452b1eaaa63c8b201fb4ac28d8c1334373a29988573f4c8",
+      "imageIDs": [
+        "3deea12717c30e97"
+      ],
+      "appearances": [
+        {
+          "team": "Kasrkin",
+          "assetName": "Cover Retreat",
+          "side": "face",
+          "imageID": "3deea12717c30e97"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "5201507303632c634708e571beaac900d14d70978245c3d918f956c4eea01bc1",
+      "imageIDs": [
+        "5d4d8aafc42b0d13"
+      ],
+      "appearances": [
+        {
+          "team": "Kasrkin",
+          "assetName": "Kasrkin Trooper",
+          "side": "face",
+          "imageID": "5d4d8aafc42b0d13"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "54a0fa09e6f378d5eea4c7382c65cba0edb73ded821410d5f5d101621041ca8e",
+      "imageIDs": [
+        "1a00cf0f73cd8d80"
+      ],
+      "appearances": [
+        {
+          "team": "Corsair Voidscarred",
+          "assetName": "",
+          "side": "face",
+          "imageID": "1a00cf0f73cd8d80"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "58447499c57cb71a64ce12a12fd50ea2208c75b962a9efaf4362cb1145c504d1",
+      "imageIDs": [
+        "85947e2fc978a039"
+      ],
+      "appearances": [
+        {
+          "team": "Corsair Voidscarred",
+          "assetName": "",
+          "side": "face",
+          "imageID": "85947e2fc978a039"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "58a43d3f61ce4250055cd2e1426c99e07a2120d128ad5a388ce3353ecd8e275e",
+      "imageIDs": [
+        "13e2623a37b7d8f7"
+      ],
+      "appearances": [
+        {
+          "team": "Corsair Voidscarred",
+          "assetName": "Mistfield",
+          "side": "face",
+          "imageID": "13e2623a37b7d8f7"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "5aa25d7f37c6881c26d1484f8bd24db7513d316a6adaa3f9e69695feba88af27",
+      "imageIDs": [
+        "c0c1c2da756f94bd"
+      ],
+      "appearances": [
+        {
+          "team": "Kasrkin",
+          "assetName": "Elimination Pattern",
+          "side": "face",
+          "imageID": "c0c1c2da756f94bd"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "5bfc2860d3f88b54a954c2af09b10be8915906332a5382e157aa5782315c5295",
+      "imageIDs": [
+        "5bd57189382f2117"
+      ],
+      "appearances": [
+        {
+          "team": "Nemesis Claw",
+          "assetName": "Night Lord Gunner",
+          "side": "face",
+          "imageID": "5bd57189382f2117"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "5e901097b01229a590f5b084607af6ef9de720d6233b96d4c63c180f102d7155",
+      "imageIDs": [
+        "e3851dbc90b87609"
+      ],
+      "appearances": [
+        {
+          "team": "Hierotek Circle",
+          "assetName": "Chronomancer",
+          "side": "face",
+          "imageID": "e3851dbc90b87609"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "5eb2aa9ff8d9878cb652dc10f40a99b5e5a35f72693ead0be9cdb00cc9188334",
+      "imageIDs": [
+        "b162a13873437e41"
+      ],
+      "appearances": [
+        {
+          "team": "Hierotek Circle",
+          "assetName": "Plasmacyte Reanimator",
+          "side": "face",
+          "imageID": "b162a13873437e41"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "604aede9ef09aa803c556318dd5931a3bde2084fe757b917fdb1d0d4962f8d31",
+      "imageIDs": [
+        "81f2d2a9428b724c"
+      ],
+      "appearances": [
+        {
+          "team": "Corsair Voidscarred",
+          "assetName": "Voidscarred Way Seeker",
+          "side": "face",
+          "imageID": "81f2d2a9428b724c"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "6203d438f1e71324422cec98a83dbc076197680d14bb1221a9852981e8deb351",
+      "imageIDs": [
+        "5a4d679fed98ed11"
+      ],
+      "appearances": [
+        {
+          "team": "Hierotek Circle",
+          "assetName": "Undying Androids",
+          "side": "face",
+          "imageID": "5a4d679fed98ed11"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "623f6e5ace002c6490bfc11023b1108a4029f99c8556b703f9ea7d45be7f0faa",
+      "imageIDs": [
+        "960fda8c107ff70a"
+      ],
+      "appearances": [
+        {
+          "team": "Kasrkin",
+          "assetName": "For Cadia!",
+          "side": "face",
+          "imageID": "960fda8c107ff70a"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "64429cb36da4bd2f2cd02d446b781d5e1c12cd7436983a74ff49b46135addb5f",
+      "imageIDs": [
+        "853e6d7b7352cda7"
+      ],
+      "appearances": [
+        {
+          "team": "Hierotek Circle",
+          "assetName": "Reanimation Protocols",
+          "side": "back",
+          "imageID": "853e6d7b7352cda7"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "66388000c0e54a5e89174c58fd4269f9f9c508664061b75a66959fcd03b11b50",
+      "imageIDs": [
+        "118f2f76baa9e0c3"
+      ],
+      "appearances": [
+        {
+          "team": "Kasrkin",
+          "assetName": "Foregrip",
+          "side": "face",
+          "imageID": "118f2f76baa9e0c3"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "66f11076a3a8b76e466ad7c02a388c037d2b8ad77dd96f5b600deb2a936cda4b",
+      "imageIDs": [
+        "a2823bc89807f4e6"
+      ],
+      "appearances": [
+        {
+          "team": "Nemesis Claw",
+          "assetName": "We Have Come For You",
+          "side": "face",
+          "imageID": "a2823bc89807f4e6"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "6a8bcbbb1e5003a7e2a936e18d68b439d1a9430d7adb9f482bcd76aa9b75cae7",
+      "imageIDs": [
+        "3f5dc96fe76bfae2"
+      ],
+      "appearances": [
+        {
+          "team": "Hierotek Circle",
+          "assetName": "",
+          "side": "face",
+          "imageID": "3f5dc96fe76bfae2"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "6f8d48e8d2439689df3c90fdc9efd43a4ad7355f4492969bf25218813a9e39b0",
+      "imageIDs": [
+        "185cd74dd92cea36"
+      ],
+      "appearances": [
+        {
+          "team": "Corsair Voidscarred",
+          "assetName": "Voidscarred Warrior",
+          "side": "face",
+          "imageID": "185cd74dd92cea36"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "6fdb941d7df8bf7c58e255d9e265521be3a04a007b8e0648b1c16b10738ffa64",
+      "imageIDs": [
+        "c82050ece6c6c727"
+      ],
+      "appearances": [
+        {
+          "team": "Kasrkin",
+          "assetName": "Strike Fast",
+          "side": "face",
+          "imageID": "c82050ece6c6c727"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "7125269afe01cabc7555bce7f6cf9fcdcba7416c2a26482c8f58c1a65b68c971",
+      "imageIDs": [
+        "22571915ee6f5cb8"
+      ],
+      "appearances": [
+        {
+          "team": "Hierotek Circle",
+          "assetName": "Living Lightning",
+          "side": "back",
+          "imageID": "22571915ee6f5cb8"
+        },
+        {
+          "team": "Hierotek Circle",
+          "assetName": "Cortical Control",
+          "side": "back",
+          "imageID": "22571915ee6f5cb8"
+        },
+        {
+          "team": "Hierotek Circle",
+          "assetName": "Reanimated Function",
+          "side": "back",
+          "imageID": "22571915ee6f5cb8"
+        },
+        {
+          "team": "Hierotek Circle",
+          "assetName": "Dimensional Ambush",
+          "side": "back",
+          "imageID": "22571915ee6f5cb8"
+        },
+        {
+          "team": "Hierotek Circle",
+          "assetName": "Living Metal",
+          "side": "back",
+          "imageID": "22571915ee6f5cb8"
+        },
+        {
+          "team": "Hierotek Circle",
+          "assetName": "Magnify",
+          "side": "back",
+          "imageID": "22571915ee6f5cb8"
+        },
+        {
+          "team": "Hierotek Circle",
+          "assetName": "Relentless Onslaught",
+          "side": "back",
+          "imageID": "22571915ee6f5cb8"
+        },
+        {
+          "team": "Hierotek Circle",
+          "assetName": "Command Underlings",
+          "side": "back",
+          "imageID": "22571915ee6f5cb8"
+        },
+        {
+          "team": "Hierotek Circle",
+          "assetName": "Methodical Elimination",
+          "side": "back",
+          "imageID": "22571915ee6f5cb8"
+        },
+        {
+          "team": "Hierotek Circle",
+          "assetName": "Undying Androids",
+          "side": "back",
+          "imageID": "22571915ee6f5cb8"
+        },
+        {
+          "team": "Hierotek Circle",
+          "assetName": "Magnification Conduit",
+          "side": "back",
+          "imageID": "22571915ee6f5cb8"
+        },
+        {
+          "team": "Hierotek Circle",
+          "assetName": "Phase Shifter",
+          "side": "back",
+          "imageID": "22571915ee6f5cb8"
+        },
+        {
+          "team": "Hierotek Circle",
+          "assetName": "Tesseract Cube",
+          "side": "back",
+          "imageID": "22571915ee6f5cb8"
+        },
+        {
+          "team": "Hierotek Circle",
+          "assetName": "Tesla Weave",
+          "side": "back",
+          "imageID": "22571915ee6f5cb8"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "730ee980f71324b9fb1dcfd7219f7c3b58a26f9af2eb9cae2acc4c827146df6e",
+      "imageIDs": [
+        "289711af6d9b05f8"
+      ],
+      "appearances": [
+        {
+          "team": "Corsair Voidscarred",
+          "assetName": "Voidscarred Gunner",
+          "side": "face",
+          "imageID": "289711af6d9b05f8"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "73b9e37f7d360877f5a6bfd664c7d5b92d797febcdd2ebe827feea69d4f9a0e9",
+      "imageIDs": [
+        "da3acdb34ea63850"
+      ],
+      "appearances": [
+        {
+          "team": "Hierotek Circle",
+          "assetName": "Plasmacyte Reanimator",
+          "side": "back",
+          "imageID": "da3acdb34ea63850"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "743e53662e81706e254df45cc6a79f914d57f7015c3e02a8519e25bf9e302c26",
+      "imageIDs": [
+        "8d8cda91e5665663"
+      ],
+      "appearances": [
+        {
+          "team": "Hierotek Circle",
+          "assetName": "Psychomancer",
+          "side": "face",
+          "imageID": "8d8cda91e5665663"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "7503cfeae64db175de44337e16c245537964289dd7c353d1d9116ac682233c30",
+      "imageIDs": [
+        "f8b06ab893179125"
+      ],
+      "appearances": [
+        {
+          "team": "Nemesis Claw",
+          "assetName": "Grisly trophy",
+          "side": "face",
+          "imageID": "f8b06ab893179125"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "773e90ee16cedb4cb6df788897fc5689524b753e48a8bee75076ad14f69bb5df",
+      "imageIDs": [
+        "51440ce5702621be"
+      ],
+      "appearances": [
+        {
+          "team": "Nemesis Claw",
+          "assetName": "The Black Hunt",
+          "side": "face",
+          "imageID": "51440ce5702621be"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "7ec245ac09898c9a418ef766bf5229b6f253e599cae8f0d93fefe4da72f46aef",
+      "imageIDs": [
+        "277093dffad86304"
+      ],
+      "appearances": [
+        {
+          "team": "Kasrkin",
+          "assetName": "Kasrkin Vox-Trooper",
+          "side": "face",
+          "imageID": "277093dffad86304"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "810aac9726907576a07a00510792ecb206a096d56f05d9764d8e7be8665ab684",
+      "imageIDs": [
+        "fa8b36c46208de31"
+      ],
+      "appearances": [
+        {
+          "team": "Nemesis Claw",
+          "assetName": "Night Lord Heavy Gunner",
+          "side": "face",
+          "imageID": "fa8b36c46208de31"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "887eaba0ae239c6c90d3d2907111b2d65b89ad988fdb086098a798dc3ffed1ff",
+      "imageIDs": [
+        "edc4a038dada18d4"
+      ],
+      "appearances": [
+        {
+          "team": "Nemesis Claw",
+          "assetName": "",
+          "side": "face",
+          "imageID": "edc4a038dada18d4"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "8936e13d2b51d075c613a3189215647e5def6e76fa8dddbceb9d82786ed57897",
+      "imageIDs": [
+        "b326983534339cf3"
+      ],
+      "appearances": [
+        {
+          "team": "Nemesis Claw",
+          "assetName": "Dirty Fighter",
+          "side": "face",
+          "imageID": "b326983534339cf3"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "89aad482a782c02387f906bb5e93afb7cb5172d529e40ab5a0075acfd29fa67a",
+      "imageIDs": [
+        "8eb2d3bab6fa0765"
+      ],
+      "appearances": [
+        {
+          "team": "Hierotek Circle",
+          "assetName": "",
+          "side": "back",
+          "imageID": "8eb2d3bab6fa0765"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "8af43ed03ff68f99fe548ca30a11da95c5ad7b809a927f1c64875d3ff0c59abf",
+      "imageIDs": [
+        "f664481f5470f23e"
+      ],
+      "appearances": [
+        {
+          "team": "Corsair Voidscarred",
+          "assetName": "Rifles",
+          "side": "back",
+          "imageID": "f664481f5470f23e"
+        },
+        {
+          "team": "Corsair Voidscarred",
+          "assetName": "Plunderers",
+          "side": "back",
+          "imageID": "f664481f5470f23e"
+        },
+        {
+          "team": "Corsair Voidscarred",
+          "assetName": "Outcasts",
+          "side": "back",
+          "imageID": "f664481f5470f23e"
+        },
+        {
+          "team": "Corsair Voidscarred",
+          "assetName": "Mobile Engagement",
+          "side": "back",
+          "imageID": "f664481f5470f23e"
+        },
+        {
+          "team": "Corsair Voidscarred",
+          "assetName": "Piratical Profiteers",
+          "side": "back",
+          "imageID": "f664481f5470f23e"
+        },
+        {
+          "team": "Corsair Voidscarred",
+          "assetName": "Runes of Guidance",
+          "side": "back",
+          "imageID": "f664481f5470f23e"
+        },
+        {
+          "team": "Corsair Voidscarred",
+          "assetName": "Mistfield",
+          "side": "back",
+          "imageID": "f664481f5470f23e"
+        },
+        {
+          "team": "Corsair Voidscarred",
+          "assetName": "Diuturnal Mantles",
+          "side": "back",
+          "imageID": "f664481f5470f23e"
+        },
+        {
+          "team": "Corsair Voidscarred",
+          "assetName": "Star Charts",
+          "side": "back",
+          "imageID": "f664481f5470f23e"
+        },
+        {
+          "team": "Corsair Voidscarred",
+          "assetName": "Aeldari Raiders",
+          "side": "back",
+          "imageID": "f664481f5470f23e"
+        },
+        {
+          "team": "Corsair Voidscarred",
+          "assetName": "",
+          "side": "back",
+          "imageID": "f664481f5470f23e"
+        },
+        {
+          "team": "Corsair Voidscarred",
+          "assetName": "",
+          "side": "back",
+          "imageID": "f664481f5470f23e"
+        },
+        {
+          "team": "Corsair Voidscarred",
+          "assetName": "",
+          "side": "back",
+          "imageID": "f664481f5470f23e"
+        },
+        {
+          "team": "Corsair Voidscarred",
+          "assetName": "",
+          "side": "back",
+          "imageID": "f664481f5470f23e"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "8f194700da07b5fd34c10b437c0b4062c57abbc51a44ac5e4ddce79dc6d13e31",
+      "imageIDs": [
+        "015ca59735651150"
+      ],
+      "appearances": [
+        {
+          "team": "Nemesis Claw",
+          "assetName": "Night Lord Visionary",
+          "side": "back",
+          "imageID": "015ca59735651150"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "92f05ae9d0d7c99318ccbace03bf45448d7499e8a43bccaa28e8f4c4322000b1",
+      "imageIDs": [
+        "b0382e7f6649b90c"
+      ],
+      "appearances": [
+        {
+          "team": "Nemesis Claw",
+          "assetName": "Night Lord Ventrilokar",
+          "side": "face",
+          "imageID": "b0382e7f6649b90c"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "94665170cde758bf2690a8459ee504df4af2befb74605a562008dbf99b6dc651",
+      "imageIDs": [
+        "cc67c65088d632b7"
+      ],
+      "appearances": [
+        {
+          "team": "Hierotek Circle",
+          "assetName": "Chronomancer",
+          "side": "back",
+          "imageID": "cc67c65088d632b7"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "9cd2c26242acd4a493d82c9f771e47b5d81e2618e3fecbfb67f519c17d6b6669",
+      "imageIDs": [
+        "3c36e37eb03306db"
+      ],
+      "appearances": [
+        {
+          "team": "Hierotek Circle",
+          "assetName": "Immortal Guardian",
+          "side": "face",
+          "imageID": "3c36e37eb03306db"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "a8078e616108dc5653da57d3c615bf0a05a0e5ec6d91fbf39b8f9ecb20207acb",
+      "imageIDs": [
+        "be043a4ba6887d40"
+      ],
+      "appearances": [
+        {
+          "team": "Nemesis Claw",
+          "assetName": "Astartes",
+          "side": "face",
+          "imageID": "be043a4ba6887d40"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "a87c24835df8f1d6833243bb5c1d2306cee715c73254408e26c751cfcb847de9",
+      "imageIDs": [
+        "1973e93a032dd9f3"
+      ],
+      "appearances": [
+        {
+          "team": "Corsair Voidscarred",
+          "assetName": "Outcasts",
+          "side": "face",
+          "imageID": "1973e93a032dd9f3"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "aaf1659dc322ca3de1840c9f1a59dfb3ff146c2365747437240bc3141c4a0557",
+      "imageIDs": [
+        "2c381b14cbbb9ee9"
+      ],
+      "appearances": [
+        {
+          "team": "Corsair Voidscarred",
+          "assetName": "Voidscarred Kurnite Hunter",
+          "side": "face",
+          "imageID": "2c381b14cbbb9ee9"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "ad348a55637d29bfa7c62410c6db4342b575eda81e850eeb49a252cf12d22113",
+      "imageIDs": [
+        "96538a3d548cbd0e"
+      ],
+      "appearances": [
+        {
+          "team": "Hierotek Circle",
+          "assetName": "Living Lightning",
+          "side": "face",
+          "imageID": "96538a3d548cbd0e"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "ad5356de992cbf91ba017a661bc80f6b3a76288f89acf647690dd624fe6fc133",
+      "imageIDs": [
+        "c650589fb4a19658"
+      ],
+      "appearances": [
+        {
+          "team": "Corsair Voidscarred",
+          "assetName": "Runes of Guidance",
+          "side": "face",
+          "imageID": "c650589fb4a19658"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "adc588f837995760f0adfb06817d922835a4cd2e7896369316e8e1a7dde2a381",
+      "imageIDs": [
+        "369895f2b81d61c4"
+      ],
+      "appearances": [
+        {
+          "team": "Nemesis Claw",
+          "assetName": "Death to The False Emperor",
+          "side": "face",
+          "imageID": "369895f2b81d61c4"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "ae17d9495e1f426d6f8822e837333d18b4884337f82205bc50d03a42beee8238",
+      "imageIDs": [
+        "3d5c04bcd1b6a03e"
+      ],
+      "appearances": [
+        {
+          "team": "Kasrkin",
+          "assetName": "Engage from cover",
+          "side": "face",
+          "imageID": "3d5c04bcd1b6a03e"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "ae960be6fc3d8507ae54a353d72d7e52605276af4cfc116a16f41ff84628df46",
+      "imageIDs": [
+        "1704fa1cb1b41de0"
+      ],
+      "appearances": [
+        {
+          "team": "Nemesis Claw",
+          "assetName": "Night Lord Screecher",
+          "side": "face",
+          "imageID": "1704fa1cb1b41de0"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "afa73bbbc30641b23b449755547f7ae0bd67715b6a03e37a1ed4fc19775b1884",
+      "imageIDs": [
+        "6c5ea89a573d5c72"
+      ],
+      "appearances": [
+        {
+          "team": "Hierotek Circle",
+          "assetName": "Technomancer",
+          "side": "face",
+          "imageID": "6c5ea89a573d5c72"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "b1f6173d5d5b3854519430f289d8c1f1ff65c3c1f8afa3ca62a44571981e861b",
+      "imageIDs": [
+        "19b05d9b157c60b3"
+      ],
+      "appearances": [
+        {
+          "team": "Hierotek Circle",
+          "assetName": "Tesseract Cube",
+          "side": "face",
+          "imageID": "19b05d9b157c60b3"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "b508979f6ac00fe2775a7a1ef866956a7c4ce8882b17edfb4d7e7bd0cc53225a",
+      "imageIDs": [
+        "1e228b07ed188641"
+      ],
+      "appearances": [
+        {
+          "team": "Kasrkin",
+          "assetName": "Breach and Clear",
+          "side": "back",
+          "imageID": "1e228b07ed188641"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "b6052be52f5702d11e2400c56f29002b150f7b44ae270d1245c1cf7f70dfdce8",
+      "imageIDs": [
+        "01c649f98fc93104"
+      ],
+      "appearances": [
+        {
+          "team": "Kasrkin",
+          "assetName": "",
+          "side": "face",
+          "imageID": "01c649f98fc93104"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "b60c1a38a9a74c35e78b8b4ce2cff899950967159f92ad5dcd072622ae3d69d7",
+      "imageIDs": [
+        "fa2eb5c7c83ae2f9"
+      ],
+      "appearances": [
+        {
+          "team": "Nemesis Claw",
+          "assetName": "Preysight",
+          "side": "face",
+          "imageID": "fa2eb5c7c83ae2f9"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "b666625d2858c101f3408ee1ade911c5101fcccacd4b53c526aa1868d4b37918",
+      "imageIDs": [
+        "4d929bd5645bad9b"
+      ],
+      "appearances": [
+        {
+          "team": "Corsair Voidscarred",
+          "assetName": "Mobile Engagement",
+          "side": "face",
+          "imageID": "4d929bd5645bad9b"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "b7ca8e966d313f5d036d510db0f675f742449d96259883c4f256677159fc3d3b",
+      "imageIDs": [
+        "a8dd4ae2ce71d16a"
+      ],
+      "appearances": [
+        {
+          "team": "Corsair Voidscarred",
+          "assetName": "",
+          "side": "face",
+          "imageID": "a8dd4ae2ce71d16a"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "b9d2623835dc30750ae2fb994bda9fb55ed47a8142862e061cfc28285fcc357e",
+      "imageIDs": [
+        "10f06ff46910927b"
+      ],
+      "appearances": [
+        {
+          "team": "Kasrkin",
+          "assetName": "Kasrkin Demo-Trooper",
+          "side": "face",
+          "imageID": "10f06ff46910927b"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "ba84f543d920c1c75bdd85face115710aa92ffe8a1b4a463a9061dbf294b1b79",
+      "imageIDs": [
+        "7c4bf333c7fe80bb"
+      ],
+      "appearances": [
+        {
+          "team": "Hierotek Circle",
+          "assetName": "Dimensional Ambush",
+          "side": "face",
+          "imageID": "7c4bf333c7fe80bb"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "bac99c20570ee6a7c970d8b49cbadf06241bcba49b3a3e9151278710258eb1fe",
+      "imageIDs": [
+        "8c5a508b24d6cca2"
+      ],
+      "appearances": [
+        {
+          "team": "Nemesis Claw",
+          "assetName": "Proclivity For Murder",
+          "side": "face",
+          "imageID": "8c5a508b24d6cca2"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "beb9921946a00eb5c1a2a5873e2bc7192e2a226804671f55e225c17876950acf",
+      "imageIDs": [
+        "af2405c62a9a5e6f"
+      ],
+      "appearances": [
+        {
+          "team": "Kasrkin",
+          "assetName": "Kasrkin Sharpshooter",
+          "side": "face",
+          "imageID": "af2405c62a9a5e6f"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "c0a65608858deb5058f482c217140d0df1a3dc7bce46aface03c3c7857e1ebc5",
+      "imageIDs": [
+        "7d6e3e1cfaab5468"
+      ],
+      "appearances": [
+        {
+          "team": "Hierotek Circle",
+          "assetName": "Relentless Onslaught",
+          "side": "face",
+          "imageID": "7d6e3e1cfaab5468"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "c16319db51e1936070f71143e47c61b4e30c94a7f5fc68600154dc3e38038513",
+      "imageIDs": [
+        "cb7a5e9594d46418"
+      ],
+      "appearances": [
+        {
+          "team": "Nemesis Claw",
+          "assetName": "Comms jammers",
+          "side": "face",
+          "imageID": "cb7a5e9594d46418"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "c4f741af017565029e0d757cb32542be9fe71b6fc5a980d550808664adc78ab8",
+      "imageIDs": [
+        "a90eb598b780099b"
+      ],
+      "appearances": [
+        {
+          "team": "Kasrkin",
+          "assetName": "Relics of Cadia",
+          "side": "face",
+          "imageID": "a90eb598b780099b"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "c6da0fb3dd2cf1f201ed172fb3bfe0feaaf6428709a414a6a2e3a66ef8fdcf14",
+      "imageIDs": [
+        "5cf8ecc11e91e6ea"
+      ],
+      "appearances": [
+        {
+          "team": "Kasrkin",
+          "assetName": "Skill at Arms",
+          "side": "face",
+          "imageID": "5cf8ecc11e91e6ea"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "c8b6618350d2453ea9502cba128a6fc26085405d5dcec923c83b4bac60c590a0",
+      "imageIDs": [
+        "1a2c9683b9a8b41c"
+      ],
+      "appearances": [
+        {
+          "team": "Kasrkin",
+          "assetName": "",
+          "side": "back",
+          "imageID": "1a2c9683b9a8b41c"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "c91bb1018a9e3845a5fcc3942e2c3a8403ea659f2b1384429b0b1aef4762bf03",
+      "imageIDs": [
+        "78b06d6155a6a360"
+      ],
+      "appearances": [
+        {
+          "team": "Kasrkin",
+          "assetName": "Kasrkin Demo-Trooper",
+          "side": "back",
+          "imageID": "78b06d6155a6a360"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "c97d4494bd2ebf9e9375e86131b74e463439f9a85ba4a51e445e5354aa464797",
+      "imageIDs": [
+        "bc4d0ca8f37b8494"
+      ],
+      "appearances": [
+        {
+          "team": "Corsair Voidscarred",
+          "assetName": "Aeldari Raiders",
+          "side": "face",
+          "imageID": "bc4d0ca8f37b8494"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "cdad25fe0b8f1959833e15c4226c5837f2a2ff5f430a2eccce3898428e909149",
+      "imageIDs": [
+        "5c617afdb25350e0"
+      ],
+      "appearances": [
+        {
+          "team": "Corsair Voidscarred",
+          "assetName": "",
+          "side": "face",
+          "imageID": "5c617afdb25350e0"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "ce5308c0d54a30a1af1006f43b08fda464460267b0f22c6679e0481c025683fd",
+      "imageIDs": [
+        "64fc1e9ce5ca01bc"
+      ],
+      "appearances": [
+        {
+          "team": "Corsair Voidscarred",
+          "assetName": "Plunderers",
+          "side": "face",
+          "imageID": "64fc1e9ce5ca01bc"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "cfd60b3852513e015cab07b8553eb4c56b35884468114ce0ae98dd00b795fa9a",
+      "imageIDs": [
+        "cafe84a90606d02e"
+      ],
+      "appearances": [
+        {
+          "team": "Nemesis Claw",
+          "assetName": "Night Lord Warrior",
+          "side": "face",
+          "imageID": "cafe84a90606d02e"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "d093ce9d611af20a597f82aa703e67fb21258be856b7a1f9ac8c4c3e0c363e79",
+      "imageIDs": [
+        "2235ca994aca9176"
+      ],
+      "appearances": [
+        {
+          "team": "Nemesis Claw",
+          "assetName": "Vox Scream",
+          "side": "face",
+          "imageID": "2235ca994aca9176"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "d25c0146681725247f763f3317064331d88e60968ead6205e82ae3177c5be052",
+      "imageIDs": [
+        "185e0e8f7462686d"
+      ],
+      "appearances": [
+        {
+          "team": "Hierotek Circle",
+          "assetName": "Cortical Control",
+          "side": "face",
+          "imageID": "185e0e8f7462686d"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "d30091780e52c2395a8a0574d876583774addd5b168c91e3148fde10f9ba5d49",
+      "imageIDs": [
+        "c54f0514d3523963"
+      ],
+      "appearances": [
+        {
+          "team": "Hierotek Circle",
+          "assetName": "Apprentek",
+          "side": "face",
+          "imageID": "c54f0514d3523963"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "d35873870eefa7d3ab9b0bbabe9a174d30c7de991139e827de28b9f547fa6cd4",
+      "imageIDs": [
+        "814543083a874bf9"
+      ],
+      "appearances": [
+        {
+          "team": "Hierotek Circle",
+          "assetName": "Reanimated Function",
+          "side": "face",
+          "imageID": "814543083a874bf9"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "d380beed980a26c91e64d973c0d29e5b605eaa38b7dd16ee225c42e060a336de",
+      "imageIDs": [
+        "7b4647116410ccd3"
+      ],
+      "appearances": [
+        {
+          "team": "Hierotek Circle",
+          "assetName": "Immortal Despotek",
+          "side": "face",
+          "imageID": "7b4647116410ccd3"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "d4775ba05be9a0f49a5232ddae788859390682d1a217bff81cf92d919bb5c05b",
+      "imageIDs": [
+        "e834e1eb37a00f7a"
+      ],
+      "appearances": [
+        {
+          "team": "Kasrkin",
+          "assetName": "Give no Ground",
+          "side": "face",
+          "imageID": "e834e1eb37a00f7a"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "d54da0aab820d09f51dab34441be8de740804fcd45bf9c63faa93d5ebb0fbaa6",
+      "imageIDs": [
+        "31084992503c1fff"
+      ],
+      "appearances": [
+        {
+          "team": "Nemesis Claw",
+          "assetName": "Night Lord Fearmonger",
+          "side": "face",
+          "imageID": "31084992503c1fff"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "d5b93bcb0f57cc25d90cd9a5bbd1e91737545a6b98e78229163be0ff82cec56e",
+      "imageIDs": [
+        "81bc67503397170b"
+      ],
+      "appearances": [
+        {
+          "team": "Nemesis Claw",
+          "assetName": "Night Lord Skinthief",
+          "side": "face",
+          "imageID": "81bc67503397170b"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "d837de80ff729ef8fd26af09f39cbea48e1d08af2b84e161d80029e9e250e98d",
+      "imageIDs": [
+        "89b684b46a7bb36f"
+      ],
+      "appearances": [
+        {
+          "team": "Nemesis Claw",
+          "assetName": "",
+          "side": "back",
+          "imageID": "89b684b46a7bb36f"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "d8b7a2b229ccf9c6a0ba3c61b2dbf63e21fdc0ba35b0e60d127a6f2be57fae05",
+      "imageIDs": [
+        "20e5bd96c210fc8e"
+      ],
+      "appearances": [
+        {
+          "team": "Corsair Voidscarred",
+          "assetName": "Voidscarred Fate Dealer",
+          "side": "face",
+          "imageID": "20e5bd96c210fc8e"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "db5d7b16b419c269c022cd8c362323fec578510e95d9a79bd5a7d8253af82cb2",
+      "imageIDs": [
+        "1bf262812045d933"
+      ],
+      "appearances": [
+        {
+          "team": "Kasrkin",
+          "assetName": "Light ’Em Up",
+          "side": "face",
+          "imageID": "1bf262812045d933"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "dbbd6a6f828d96fb3c439bd624debf47efcd651d169fb53995cabddc9c304edb",
+      "imageIDs": [
+        "1eadd0586a1cf549"
+      ],
+      "appearances": [
+        {
+          "team": "Hierotek Circle",
+          "assetName": "Phase Shifter",
+          "side": "face",
+          "imageID": "1eadd0586a1cf549"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "dbf95c7bf35824541c38a1c66ffaf341c6ef19f887e2037e2c8c9a08f20af909",
+      "imageIDs": [
+        "c6b0f537006c5a56"
+      ],
+      "appearances": [
+        {
+          "team": "Kasrkin",
+          "assetName": "Kasrkin Sergeant",
+          "side": "face",
+          "imageID": "c6b0f537006c5a56"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "dc2c23ab8c136499315de3843fb31da17c1fcb58392e497b4878bf6a0f98dc4c",
+      "imageIDs": [
+        "d944e170d3b6c460"
+      ],
+      "appearances": [
+        {
+          "team": "Hierotek Circle",
+          "assetName": "Plasmacyte Accelerator",
+          "side": "face",
+          "imageID": "d944e170d3b6c460"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "dc526d07c85c7c127d5fad2a7edabfc99ccaf84f2bc5fa7d220704e2c98b4190",
+      "imageIDs": [
+        "093cca401006641d"
+      ],
+      "appearances": [
+        {
+          "team": "Hierotek Circle",
+          "assetName": "Reanimation Protocols",
+          "side": "face",
+          "imageID": "093cca401006641d"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "dcca01eafbf6c1380fb17b935a45a1184e01f59158b6d29ba883c12d4b97af35",
+      "imageIDs": [
+        "abe433433726b40f"
+      ],
+      "appearances": [
+        {
+          "team": "Hierotek Circle",
+          "assetName": "Magnify",
+          "side": "face",
+          "imageID": "abe433433726b40f"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "dd82a7816be78326cd173c5d3e733f71ad4dad33806068b2117c5969c339a165",
+      "imageIDs": [
+        "92aaf821a26bbea2"
+      ],
+      "appearances": [
+        {
+          "team": "Corsair Voidscarred",
+          "assetName": "Piratical Profiteers",
+          "side": "face",
+          "imageID": "92aaf821a26bbea2"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "e7983e1c7c58dc494ed91ba986ce98a8123f70b15442bc6a3279db908f54497f",
+      "imageIDs": [
+        "edb13cd012fa6e9a"
+      ],
+      "appearances": [
+        {
+          "team": "Kasrkin",
+          "assetName": "Kasrkin Combat Medic",
+          "side": "back",
+          "imageID": "edb13cd012fa6e9a"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "ed5010dbc94c82c840d2b06cc9eae6a02335f22fadb8fe5cebc2b987f3c4a7f4",
+      "imageIDs": [
+        "c5d58f579f8c430a"
+      ],
+      "appearances": [
+        {
+          "team": "Hierotek Circle",
+          "assetName": "Deathmark",
+          "side": "face",
+          "imageID": "c5d58f579f8c430a"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "edddb541eb0942bdb8fee74193e2bb97bf47a6fa452c4c39b1f548ae5e84c1e3",
+      "imageIDs": [
+        "d941ab98b7f4afa3"
+      ],
+      "appearances": [
+        {
+          "team": "Nemesis Claw",
+          "assetName": "Night Lord Visionary",
+          "side": "face",
+          "imageID": "d941ab98b7f4afa3"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "ef007c0484deb91ec0bc1e3f0f46974d5d421eeff347fa7955353e46d2ff9cf9",
+      "imageIDs": [
+        "f9d6a721f71267e0"
+      ],
+      "appearances": [
+        {
+          "team": "Kasrkin",
+          "assetName": "Clearance Sweep",
+          "side": "face",
+          "imageID": "f9d6a721f71267e0"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "eff44f2825df5bb326f0632085711c7d085f6d788d19827fa151d4fb66144cfa",
+      "imageIDs": [
+        "d597e9952867c8bc"
+      ],
+      "appearances": [
+        {
+          "team": "Kasrkin",
+          "assetName": "Neutralize Target",
+          "side": "face",
+          "imageID": "d597e9952867c8bc"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "f0371dde456b0886e7bee25d22ef2e40a8270e923f1027b35036b1f1236e0f96",
+      "imageIDs": [
+        "3910cebdd87ea602"
+      ],
+      "appearances": [
+        {
+          "team": "Hierotek Circle",
+          "assetName": "Chronomancer",
+          "side": "face",
+          "imageID": "3910cebdd87ea602"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "f398fce72e5049b87ea49ceb0d1010880f7a7e2b80a7759983d57e6777e5458c",
+      "imageIDs": [
+        "2993363088d2c6d5"
+      ],
+      "appearances": [
+        {
+          "team": "Nemesis Claw",
+          "assetName": "Chain snare",
+          "side": "face",
+          "imageID": "2993363088d2c6d5"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "f3ebc23e616d8758b9cbfebf81c5987046cf5d1d5a2087ae00e2c90c90799c73",
+      "imageIDs": [
+        "9caf51ee0a1925d7"
+      ],
+      "appearances": [
+        {
+          "team": "Corsair Voidscarred",
+          "assetName": "",
+          "side": "back",
+          "imageID": "9caf51ee0a1925d7"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "f458d9151cc8eee75fd37bcbf57cb91c75173527ec2610b4e1a045f7864e3300",
+      "imageIDs": [
+        "2665a215e6b433fd"
+      ],
+      "appearances": [
+        {
+          "team": "Corsair Voidscarred",
+          "assetName": "",
+          "side": "face",
+          "imageID": "2665a215e6b433fd"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "f66adff4a938315fce3a03f11fd1d774f364ee0d17c49ca0551aebfeee5af81e",
+      "imageIDs": [
+        "4958830bbbf14c54"
+      ],
+      "appearances": [
+        {
+          "team": "Nemesis Claw",
+          "assetName": "Night Lord Fearmonger",
+          "side": "back",
+          "imageID": "4958830bbbf14c54"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "f704c2dae0474903bff7066650177f8fbcdf25aa3724e009d9f5a64eea75715a",
+      "imageIDs": [
+        "b613781d21e2b60c"
+      ],
+      "appearances": [
+        {
+          "team": "Corsair Voidscarred",
+          "assetName": "Voidscarred Soul Weaver",
+          "side": "face",
+          "imageID": "b613781d21e2b60c"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "f9016d2a61ab54166b919190b9bfa3135bb37bd2ab2ca03d9e9c276ced58c53d",
+      "imageIDs": [
+        "aad24bdd4f289b34"
+      ],
+      "appearances": [
+        {
+          "team": "Hierotek Circle",
+          "assetName": "Psychomancer",
+          "side": "back",
+          "imageID": "aad24bdd4f289b34"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "f987982af88e7a97cd067a84ed8353bf68190fede3a34b8d62f9e1594d6f240d",
+      "imageIDs": [
+        "fb966be5691bc43d"
+      ],
+      "appearances": [
+        {
+          "team": "Corsair Voidscarred",
+          "assetName": "Voidscarred Shade Runner",
+          "side": "face",
+          "imageID": "fb966be5691bc43d"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "fda38e973b8163e1f4d359bf20d38448d7d03d9bac04d61f6bc7949cc075d4ab",
+      "imageIDs": [
+        "d85d6ab829b14707"
+      ],
+      "appearances": [
+        {
+          "team": "Kasrkin",
+          "assetName": "Kasrkin Sergeant",
+          "side": "back",
+          "imageID": "d85d6ab829b14707"
+        }
+      ]
+    }
+  ],
+  "excluded": [
+    {
+      "sourceSHA256": "4e97061aa296b80a67630c026d8347bc706f76d4da14998e0a257b059df5bc5d",
+      "imageIDs": [
+        "8c51e5940d55e7f3"
+      ],
+      "appearances": [
+        {
+          "team": "Corsair Voidscarred",
+          "assetName": "Voidscarred Gunner",
+          "side": "back",
+          "imageID": "8c51e5940d55e7f3"
+        },
+        {
+          "team": "Corsair Voidscarred",
+          "assetName": "Voidscarred Heavy Gunner",
+          "side": "back",
+          "imageID": "8c51e5940d55e7f3"
+        },
+        {
+          "team": "Corsair Voidscarred",
+          "assetName": "Voidscarred Fate Dealer",
+          "side": "back",
+          "imageID": "8c51e5940d55e7f3"
+        },
+        {
+          "team": "Corsair Voidscarred",
+          "assetName": "Voidscarred Kurnathi",
+          "side": "back",
+          "imageID": "8c51e5940d55e7f3"
+        },
+        {
+          "team": "Corsair Voidscarred",
+          "assetName": "Voidscarred Soul Weaver",
+          "side": "back",
+          "imageID": "8c51e5940d55e7f3"
+        },
+        {
+          "team": "Corsair Voidscarred",
+          "assetName": "Voidscarred Warrior",
+          "side": "back",
+          "imageID": "8c51e5940d55e7f3"
+        },
+        {
+          "team": "Corsair Voidscarred",
+          "assetName": "Voidscarred Felarch",
+          "side": "back",
+          "imageID": "8c51e5940d55e7f3"
+        },
+        {
+          "team": "Corsair Voidscarred",
+          "assetName": "Voidscarred Starstorm Duelist",
+          "side": "back",
+          "imageID": "8c51e5940d55e7f3"
+        },
+        {
+          "team": "Corsair Voidscarred",
+          "assetName": "Voidscarred Kurnite Hunter",
+          "side": "back",
+          "imageID": "8c51e5940d55e7f3"
+        }
+      ],
+      "reason": "Pixel-reviewed reverse contains artwork only and no readable text."
+    },
+    {
+      "sourceSHA256": "9202279f001d078c6b48fafbfa16646b4db4a96b9ece1d70d7fd1fb0df2e8225",
+      "imageIDs": [
+        "1157b107df5a81fa"
+      ],
+      "appearances": [
+        {
+          "team": "Kasrkin",
+          "assetName": "Kasrkin Gunner",
+          "side": "back",
+          "imageID": "1157b107df5a81fa"
+        },
+        {
+          "team": "Kasrkin",
+          "assetName": "Kasrkin Recon-Trooper",
+          "side": "back",
+          "imageID": "1157b107df5a81fa"
+        },
+        {
+          "team": "Kasrkin",
+          "assetName": "Kasrkin Sharpshooter",
+          "side": "back",
+          "imageID": "1157b107df5a81fa"
+        },
+        {
+          "team": "Kasrkin",
+          "assetName": "Kasrkin Vox-Trooper",
+          "side": "back",
+          "imageID": "1157b107df5a81fa"
+        },
+        {
+          "team": "Kasrkin",
+          "assetName": "Kasrkin Trooper",
+          "side": "back",
+          "imageID": "1157b107df5a81fa"
+        }
+      ],
+      "reason": "Pixel-reviewed reverse contains artwork only and no readable text."
+    },
+    {
+      "sourceSHA256": "a71751d5c4fd95c8ef3efe1564a60e7efb5ae5062465ac5170402bc3c951bc94",
+      "imageIDs": [
+        "03e5f5c87d1df5e7"
+      ],
+      "appearances": [
+        {
+          "team": "Hierotek Circle",
+          "assetName": "Immortal Guardian",
+          "side": "back",
+          "imageID": "03e5f5c87d1df5e7"
+        },
+        {
+          "team": "Hierotek Circle",
+          "assetName": "Apprentek",
+          "side": "back",
+          "imageID": "03e5f5c87d1df5e7"
+        },
+        {
+          "team": "Hierotek Circle",
+          "assetName": "Deathmark",
+          "side": "back",
+          "imageID": "03e5f5c87d1df5e7"
+        },
+        {
+          "team": "Hierotek Circle",
+          "assetName": "Plasmacyte Accelerator",
+          "side": "back",
+          "imageID": "03e5f5c87d1df5e7"
+        },
+        {
+          "team": "Hierotek Circle",
+          "assetName": "Psychomancer",
+          "side": "back",
+          "imageID": "03e5f5c87d1df5e7"
+        },
+        {
+          "team": "Hierotek Circle",
+          "assetName": "Technomancer",
+          "side": "back",
+          "imageID": "03e5f5c87d1df5e7"
+        },
+        {
+          "team": "Hierotek Circle",
+          "assetName": "Chronomancer",
+          "side": "back",
+          "imageID": "03e5f5c87d1df5e7"
+        }
+      ],
+      "reason": "Pixel-reviewed reverse contains artwork only and no readable text."
+    },
+    {
+      "sourceSHA256": "d3d8771f7e70cbab42ac8618633e50b6db74e1f3d24513954dc285eaf3316b2b",
+      "imageIDs": [
+        "f4a2ea9fefca5ae1"
+      ],
+      "appearances": [
+        {
+          "team": "Nemesis Claw",
+          "assetName": "Night Lord Skinthief",
+          "side": "back",
+          "imageID": "f4a2ea9fefca5ae1"
+        },
+        {
+          "team": "Nemesis Claw",
+          "assetName": "Night Lord Ventrilokar",
+          "side": "back",
+          "imageID": "f4a2ea9fefca5ae1"
+        },
+        {
+          "team": "Nemesis Claw",
+          "assetName": "Night Lord Heavy Gunner",
+          "side": "back",
+          "imageID": "f4a2ea9fefca5ae1"
+        },
+        {
+          "team": "Nemesis Claw",
+          "assetName": "Night Lord Gunner",
+          "side": "back",
+          "imageID": "f4a2ea9fefca5ae1"
+        },
+        {
+          "team": "Nemesis Claw",
+          "assetName": "Night Lord Screecher",
+          "side": "back",
+          "imageID": "f4a2ea9fefca5ae1"
+        },
+        {
+          "team": "Nemesis Claw",
+          "assetName": "Night Lord Warrior",
+          "side": "back",
+          "imageID": "f4a2ea9fefca5ae1"
+        }
+      ],
+      "reason": "Pixel-reviewed reverse contains artwork only and no readable text."
+    }
+  ],
+  "counts": {
+    "includedSourceSHA": 126,
+    "excludedSourceSHA": 4,
+    "referencedSourceSHA": 130,
+    "includedImageIDs": 126,
+    "excludedImageIDs": 4,
+    "translatedAppearances": 181,
+    "excludedAppearances": 27,
+    "requiredAppearances": 208
+  }
+}

@@ -1,0 +1,2342 @@
+{
+  "batch": "07",
+  "teams": [
+    "Exaction Squad",
+    "Pathfinders",
+    "Tempestus Aquilons",
+    "Warpcoven"
+  ],
+  "sourceFiles": [
+    "inventory/card-assets.json",
+    "inventory/image-ocr-en.json",
+    "inventory/image-sources.json"
+  ],
+  "included": [
+    {
+      "sourceSHA256": "01c9fa0464e30e06aa46cc8d62d6a69effff1a4709366674facd78a498ed93a6",
+      "imageIDs": [
+        "f2e5dd5c64bf7c37"
+      ],
+      "appearances": [
+        {
+          "team": "Pathfinders",
+          "assetName": "Shas'Ui Pathfinder",
+          "side": "face",
+          "imageID": "f2e5dd5c64bf7c37"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "03fd858d7c722aa8ed841dcc188b8de60d286ed0769574b3882a035d5ea42aa1",
+      "imageIDs": [
+        "480bc633059c37b3"
+      ],
+      "appearances": [
+        {
+          "team": "Warpcoven",
+          "assetName": "Rubric Marine Warrior",
+          "side": "face",
+          "imageID": "480bc633059c37b3"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "0a3b445ed51a3761371bc5b05afa59737ade52ed3f6408442d5ef5edf4a7b674",
+      "imageIDs": [
+        "dca71f61da6ccb83"
+      ],
+      "appearances": [
+        {
+          "team": "Warpcoven",
+          "assetName": "Tzaangor Warrior",
+          "side": "face",
+          "imageID": "dca71f61da6ccb83"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "0ccc061b7fa248570f61603a9b8cc0dbae6d2f26e95e6ee8145091f5024ebe9f",
+      "imageIDs": [
+        "25ef8bf0aa80d6d5"
+      ],
+      "appearances": [
+        {
+          "team": "Exaction Squad",
+          "assetName": "Arbites Vigilant",
+          "side": "face",
+          "imageID": "25ef8bf0aa80d6d5"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "0da59e49b4d05eb59184f2c2d14eeaf22349fd088bb1da25c7766fbf9efe69c1",
+      "imageIDs": [
+        "315bb4f14ee86549"
+      ],
+      "appearances": [
+        {
+          "team": "Exaction Squad",
+          "assetName": "Strobing Phosphor-Lumen",
+          "side": "face",
+          "imageID": "315bb4f14ee86549"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "0db140c53e7b72fc8ec00b82a7dc01a2b56498860143ab232abf1daa7bbe4e79",
+      "imageIDs": [
+        "0f7da1586c495aab"
+      ],
+      "appearances": [
+        {
+          "team": "Tempestus Aquilons",
+          "assetName": "Aquilon Marksman",
+          "side": "face",
+          "imageID": "0f7da1586c495aab"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "0f5c4b68635eb03875caccdfbf39f23d44aeb3f1839c158f0e13eded9cdd143e",
+      "imageIDs": [
+        "5c8dc66045d8d0c9"
+      ],
+      "appearances": [
+        {
+          "team": "Warpcoven",
+          "assetName": "Aetherial Warding",
+          "side": "face",
+          "imageID": "5c8dc66045d8d0c9"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "12049a276195f6624823e0e548ff09a415864e24ec38339ca9de71bc66632728",
+      "imageIDs": [
+        "18a38cfefdaa1e3b"
+      ],
+      "appearances": [
+        {
+          "team": "Pathfinders",
+          "assetName": "Point-Blank Fusillade",
+          "side": "face",
+          "imageID": "18a38cfefdaa1e3b"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "16355e1edd0e2a706691bcb210fb78e9ce211d249a0dd8ef16a9bc46922ae05f",
+      "imageIDs": [
+        "63cdb6179f4e28ae"
+      ],
+      "appearances": [
+        {
+          "team": "Warpcoven",
+          "assetName": "Boon of Tzeentch",
+          "side": "face",
+          "imageID": "63cdb6179f4e28ae"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "1b09f978a7a118c45ed7113124864ac0d08ad192bac1baddd29438f67faa44a1",
+      "imageIDs": [
+        "e044462ec70c104b"
+      ],
+      "appearances": [
+        {
+          "team": "Exaction Squad",
+          "assetName": "Arbites Malocator",
+          "side": "face",
+          "imageID": "e044462ec70c104b"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "1dcf10733ae03cc972c69cf76cbdc7de8b64c4d17ac04fb61ef2c3a06cc6bd50",
+      "imageIDs": [
+        "9b1dd4e918134600"
+      ],
+      "appearances": [
+        {
+          "team": "Exaction Squad",
+          "assetName": "Terminal Decree",
+          "side": "face",
+          "imageID": "9b1dd4e918134600"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "1f49f28513f084d35f397b017a0e5fa0bb9d8675cf77aab0cbfd576eec102e72",
+      "imageIDs": [
+        "38468184db3adf53"
+      ],
+      "appearances": [
+        {
+          "team": "Warpcoven",
+          "assetName": "Psychic Cabal",
+          "side": "face",
+          "imageID": "38468184db3adf53"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "252248f7b7c64ae4db385ac95c041429c345a314df9f933a7c732c1745ee3edf",
+      "imageIDs": [
+        "d7bf8d3f6f6a5e7a"
+      ],
+      "appearances": [
+        {
+          "team": "Warpcoven",
+          "assetName": "Savage Herd",
+          "side": "face",
+          "imageID": "d7bf8d3f6f6a5e7a"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "25f8a7b8e79b5556f8189be0a1f7125d8422cc79b81e525fd1d3333331258e44",
+      "imageIDs": [
+        "f1488d27aba95467"
+      ],
+      "appearances": [
+        {
+          "team": "Pathfinders",
+          "assetName": "MV4 Shield Drone",
+          "side": "face",
+          "imageID": "f1488d27aba95467"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "264278de036e447c792dd1e896902d9dbb957d142b3a1f115e8bde27a5197c8f",
+      "imageIDs": [
+        "c32635e95dd3a97e"
+      ],
+      "appearances": [
+        {
+          "team": "Pathfinders",
+          "assetName": "MV31 Pulse Acceleration Drone",
+          "side": "face",
+          "imageID": "c32635e95dd3a97e"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "2b2c0a2a1b973b98bd07fa5794ffce39ed6f9ab96cf635c23d0e8a26c430b278",
+      "imageIDs": [
+        "5f1deb603c6f1466"
+      ],
+      "appearances": [
+        {
+          "team": "Warpcoven",
+          "assetName": "Arcane Robes",
+          "side": "face",
+          "imageID": "5f1deb603c6f1466"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "3130ded2df071bdd2b07279f1ecf69625883ac82a59e49f91c32461b80ef2994",
+      "imageIDs": [
+        "5c4ab1aee684d389"
+      ],
+      "appearances": [
+        {
+          "team": "Warpcoven",
+          "assetName": "Boon of Tzeentch",
+          "side": "back",
+          "imageID": "5c4ab1aee684d389"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "31723d981dbb37d44a4ed96e9475a0fd3aeaf0d7eea949369db7507743da535a",
+      "imageIDs": [
+        "5d622fab2f2c04fe"
+      ],
+      "appearances": [
+        {
+          "team": "Pathfinders",
+          "assetName": "Medical Technician Pathfinder",
+          "side": "back",
+          "imageID": "5d622fab2f2c04fe"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "32214dedee92e23a08ed9bacbd8c3e0e9c4d1f24479b8c85d4aa4301e721b8bf",
+      "imageIDs": [
+        "dc59b3015d8fd377"
+      ],
+      "appearances": [
+        {
+          "team": "Tempestus Aquilons",
+          "assetName": "Tempestus Exemplars",
+          "side": "face",
+          "imageID": "dc59b3015d8fd377"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "35e0a767ea8f5bb4ee8dadc5d2897c310a9eca39a385522df7dd1c7ee37b9fa0",
+      "imageIDs": [
+        "c61e244c0f927306"
+      ],
+      "appearances": [
+        {
+          "team": "Exaction Squad",
+          "assetName": "Arbites Vox-Signifier",
+          "side": "face",
+          "imageID": "c61e244c0f927306"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "371f4b8192aed1b38df7624ae3c14613bec2fd8e911d53bf634748d7c734b04b",
+      "imageIDs": [
+        "083a1f531744f029"
+      ],
+      "appearances": [
+        {
+          "team": "Tempestus Aquilons",
+          "assetName": "Progena",
+          "side": "face",
+          "imageID": "083a1f531744f029"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "38cadad041a63dc0ab5cd740e7af94c35f47ff35958cec02eaf66796ee4b2039",
+      "imageIDs": [
+        "0db06d3365bef07e"
+      ],
+      "appearances": [
+        {
+          "team": "Exaction Squad",
+          "assetName": "Arbites Subductor",
+          "side": "face",
+          "imageID": "0db06d3365bef07e"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "3936caa02b62e4d3f320bba9b54d58f5c232b5126007a4ad2cbfc0638f56d06e",
+      "imageIDs": [
+        "d96f121eb5638066"
+      ],
+      "appearances": [
+        {
+          "team": "Exaction Squad",
+          "assetName": "Ruthless Efficiency",
+          "side": "face",
+          "imageID": "d96f121eb5638066"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "3e6eb1f9ebff027e0205e1510f4bc172bb173e530c332d3c955dfe8c0ae45a83",
+      "imageIDs": [
+        "d2b5c7942aadcaf5"
+      ],
+      "appearances": [
+        {
+          "team": "Pathfinders",
+          "assetName": "Supporting Fire",
+          "side": "face",
+          "imageID": "d2b5c7942aadcaf5"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "3fc14ea73bd8c67ca193c7f48f992c03b7f781527e24b1df7b8ada1dcdb3bc11",
+      "imageIDs": [
+        "f2aa022bed69db95"
+      ],
+      "appearances": [
+        {
+          "team": "Warpcoven",
+          "assetName": "Sorcerer of Tempyrion",
+          "side": "back",
+          "imageID": "f2aa022bed69db95"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "40c0f824cc23c854995635cd3cc547b7bd786b2e908c6653daddcc04284eff24",
+      "imageIDs": [
+        "31a6961ba1bf3f62"
+      ],
+      "appearances": [
+        {
+          "team": "Tempestus Aquilons",
+          "assetName": "Aquilon Gunfighter",
+          "side": "face",
+          "imageID": "31a6961ba1bf3f62"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "46587fcc59b31ced52e49e3a6c74932ec332746aa692dc32337a902314997649",
+      "imageIDs": [
+        "1a92d171b3cbda4e"
+      ],
+      "appearances": [
+        {
+          "team": "Warpcoven",
+          "assetName": "Sourcerous Scrolls",
+          "side": "face",
+          "imageID": "1a92d171b3cbda4e"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "46682e23743e8a6a890caa09d5cf42023fc27f617bc6c675a68fc35650a086c5",
+      "imageIDs": [
+        "f1127a9cef4f9a94"
+      ],
+      "appearances": [
+        {
+          "team": "Warpcoven",
+          "assetName": "All is Dust",
+          "side": "face",
+          "imageID": "f1127a9cef4f9a94"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "46f7790cf3d39c4a6e4b9bcd94ca405bdd2a9bc545c4944cbf427fbd8f399244",
+      "imageIDs": [
+        "cc2efeeacfb1a9f5"
+      ],
+      "appearances": [
+        {
+          "team": "Tempestus Aquilons",
+          "assetName": "",
+          "side": "back",
+          "imageID": "cc2efeeacfb1a9f5"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "46fcf6c82cd5503c0e526091d00629d57e4cb8f70a7d25de1a73ea0ca0d4f409",
+      "imageIDs": [
+        "81fa8e0aab9044d0"
+      ],
+      "appearances": [
+        {
+          "team": "Exaction Squad",
+          "assetName": "Manacles",
+          "side": "back",
+          "imageID": "81fa8e0aab9044d0"
+        },
+        {
+          "team": "Exaction Squad",
+          "assetName": "Reinforced Mirror-Visor",
+          "side": "back",
+          "imageID": "81fa8e0aab9044d0"
+        },
+        {
+          "team": "Exaction Squad",
+          "assetName": "Special-Issue Shells",
+          "side": "back",
+          "imageID": "81fa8e0aab9044d0"
+        },
+        {
+          "team": "Exaction Squad",
+          "assetName": "Strobing Phosphor-Lumen",
+          "side": "back",
+          "imageID": "81fa8e0aab9044d0"
+        },
+        {
+          "team": "Exaction Squad",
+          "assetName": "Ruthless Efficiency",
+          "side": "back",
+          "imageID": "81fa8e0aab9044d0"
+        },
+        {
+          "team": "Exaction Squad",
+          "assetName": "Marked for Justice",
+          "side": "back",
+          "imageID": "81fa8e0aab9044d0"
+        },
+        {
+          "team": "Exaction Squad",
+          "assetName": "Exact Punishment",
+          "side": "back",
+          "imageID": "81fa8e0aab9044d0"
+        },
+        {
+          "team": "Exaction Squad",
+          "assetName": "Long Arm of the Emperor's Law",
+          "side": "back",
+          "imageID": "81fa8e0aab9044d0"
+        },
+        {
+          "team": "Exaction Squad",
+          "assetName": "Brutal Backup",
+          "side": "back",
+          "imageID": "81fa8e0aab9044d0"
+        },
+        {
+          "team": "Exaction Squad",
+          "assetName": "Execution Order",
+          "side": "back",
+          "imageID": "81fa8e0aab9044d0"
+        },
+        {
+          "team": "Exaction Squad",
+          "assetName": "Ruthless Efficiency",
+          "side": "back",
+          "imageID": "81fa8e0aab9044d0"
+        },
+        {
+          "team": "Exaction Squad",
+          "assetName": "Guilt Reveals Itself",
+          "side": "back",
+          "imageID": "81fa8e0aab9044d0"
+        },
+        {
+          "team": "Exaction Squad",
+          "assetName": "Inviolate Jurisdiction",
+          "side": "back",
+          "imageID": "81fa8e0aab9044d0"
+        },
+        {
+          "team": "Exaction Squad",
+          "assetName": "Dispense Justice",
+          "side": "back",
+          "imageID": "81fa8e0aab9044d0"
+        },
+        {
+          "team": "Exaction Squad",
+          "assetName": "Terminal Decree",
+          "side": "back",
+          "imageID": "81fa8e0aab9044d0"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "489320deb4cbf75f845e8bc53233a0e0b916e56aa93641497451718d0dcc9b3e",
+      "imageIDs": [
+        "65d2ee852264691e"
+      ],
+      "appearances": [
+        {
+          "team": "Pathfinders",
+          "assetName": "Bonded",
+          "side": "face",
+          "imageID": "65d2ee852264691e"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "48ab8504bc0ee969d19ed15e0fec0f01186a19cb9e064f367ec81306ebc1cf1c",
+      "imageIDs": [
+        "9e9a09e1af414fc9"
+      ],
+      "appearances": [
+        {
+          "team": "Pathfinders",
+          "assetName": "Assault Grenadier Pathfinder",
+          "side": "face",
+          "imageID": "9e9a09e1af414fc9"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "499f4b7c044f7cff0d9044b2ec4753ff0f991b76b8f853275539ab644dddeadc",
+      "imageIDs": [
+        "26b26c716905bbc4"
+      ],
+      "appearances": [
+        {
+          "team": "Tempestus Aquilons",
+          "assetName": "Aquilon Tempestor",
+          "side": "face",
+          "imageID": "26b26c716905bbc4"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "4a8f1d1f3d68f6834afde41abf3cc5fa59b3a9457355548388199389d0d82019",
+      "imageIDs": [
+        "ea97e368880c1a1a"
+      ],
+      "appearances": [
+        {
+          "team": "Pathfinders",
+          "assetName": "Recon Sweep",
+          "side": "face",
+          "imageID": "ea97e368880c1a1a"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "4d6706861cac4e1d3b8d3a9ee036fb8a2f7ec5d9fb16afdb0620d814bcfa6b9b",
+      "imageIDs": [
+        "afa286896ab497d6"
+      ],
+      "appearances": [
+        {
+          "team": "Warpcoven",
+          "assetName": "Sorcerer of Destiny",
+          "side": "back",
+          "imageID": "afa286896ab497d6"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "51b52165f332e9e1b1f75c435f6fac127d5ea40d63f7a63a0e38009df4325d4b",
+      "imageIDs": [
+        "b1001a2ad47144d1"
+      ],
+      "appearances": [
+        {
+          "team": "Exaction Squad",
+          "assetName": "Arbites Chirurgant",
+          "side": "back",
+          "imageID": "b1001a2ad47144d1"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "51b8582878bcc1d7baaf9119bd2c1537a42ab97a18b08dbd09f2588aa044460b",
+      "imageIDs": [
+        "a0a0537182579b87"
+      ],
+      "appearances": [
+        {
+          "team": "Tempestus Aquilons",
+          "assetName": "Sudden Offensive",
+          "side": "face",
+          "imageID": "a0a0537182579b87"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "52e431b8306751a866f24670ff7ff816c9e3a97b2a0ace1f4a1cb687b1e7e824",
+      "imageIDs": [
+        "e66e9094e783e53a"
+      ],
+      "appearances": [
+        {
+          "team": "Exaction Squad",
+          "assetName": "Arbites Leashmaster",
+          "side": "back",
+          "imageID": "e66e9094e783e53a"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "545e73f4df5664255887c548ed527373ad232846b2e30c2de5d3eddc029fa427",
+      "imageIDs": [
+        "b4b1eecc02e694d5"
+      ],
+      "appearances": [
+        {
+          "team": "Tempestus Aquilons",
+          "assetName": "Aquilon Gunner",
+          "side": "face",
+          "imageID": "b4b1eecc02e694d5"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "5504112a6bc68f90d281d44fef5d2778836d584cfc17ecb1c7284c59ca6e2f5e",
+      "imageIDs": [
+        "c9a96e03fd33aa4c"
+      ],
+      "appearances": [
+        {
+          "team": "Warpcoven",
+          "assetName": "Tzaangor Icon Bearer",
+          "side": "face",
+          "imageID": "c9a96e03fd33aa4c"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "58917877aec101359b17f0145321c063029e0b8decf29754d8cde3c202c01841",
+      "imageIDs": [
+        "eb63f3f14ba25446"
+      ],
+      "appearances": [
+        {
+          "team": "Pathfinders",
+          "assetName": "Take Cover",
+          "side": "face",
+          "imageID": "eb63f3f14ba25446"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "58ed2e5b29ca3365d3cc5bc79c124777424dd17020e523217a15ca9a0471f0f9",
+      "imageIDs": [
+        "f4a9494cc76c2c42"
+      ],
+      "appearances": [
+        {
+          "team": "Exaction Squad",
+          "assetName": "Arbites Marksman",
+          "side": "face",
+          "imageID": "f4a9494cc76c2c42"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "5a874ea7a0a5673252ec60b2508906a9dd5e0c5b4f6fd43991098e065a742d3a",
+      "imageIDs": [
+        "b1c0581af4c74d00"
+      ],
+      "appearances": [
+        {
+          "team": "Warpcoven",
+          "assetName": "Mutant Herd",
+          "side": "face",
+          "imageID": "b1c0581af4c74d00"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "5bb4bcf28423a5d0c52bb19bf4863f2c9ee4f85418697cf3cf1b7627c88570ae",
+      "imageIDs": [
+        "e5b36c5cfd75680c"
+      ],
+      "appearances": [
+        {
+          "team": "Exaction Squad",
+          "assetName": "",
+          "side": "back",
+          "imageID": "e5b36c5cfd75680c"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "5c8003fd6ae0e061e8876b266a1c920e4bc98ba1af9f07341b4c4c45a44a30fc",
+      "imageIDs": [
+        "fc0740e5d8275174"
+      ],
+      "appearances": [
+        {
+          "team": "Exaction Squad",
+          "assetName": "Arbites Gunner",
+          "side": "face",
+          "imageID": "fc0740e5d8275174"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "616e743579ffcbc6c716c6197f22236a49d9f53a87dcc0e61d62404da792dd5c",
+      "imageIDs": [
+        "c6ff9f9b4ba3d363"
+      ],
+      "appearances": [
+        {
+          "team": "Warpcoven",
+          "assetName": "Fate Itself is my Weapon",
+          "side": "face",
+          "imageID": "c6ff9f9b4ba3d363"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "67897eaf01472f2b8f6a14ed27ed7eccbf0414b9c05e41610336987b8f3a3712",
+      "imageIDs": [
+        "c4820cc5587d6d1e"
+      ],
+      "appearances": [
+        {
+          "team": "Pathfinders",
+          "assetName": "Weapons Expert Pathfinder",
+          "side": "face",
+          "imageID": "c4820cc5587d6d1e"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "67fb885761e54bb23c0bb594824625f22235c59bc46bd66a08f6c0926c5aa4c1",
+      "imageIDs": [
+        "157a2a4a61391be9"
+      ],
+      "appearances": [
+        {
+          "team": "Pathfinders",
+          "assetName": "Comms Specialist Pathfinder",
+          "side": "face",
+          "imageID": "157a2a4a61391be9"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "680e16ef0e257811f923b6c9d9b04668e4736abe3d5424024b52810fb11e388e",
+      "imageIDs": [
+        "52334cb7c571a285"
+      ],
+      "appearances": [
+        {
+          "team": "Tempestus Aquilons",
+          "assetName": "Drop Insertion",
+          "side": "back",
+          "imageID": "52334cb7c571a285"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "68623c95573521fa0c52aa4dcce81d07a680a297da0a7d44e9d0f415f46cf2c5",
+      "imageIDs": [
+        "25b26888852b1330"
+      ],
+      "appearances": [
+        {
+          "team": "Exaction Squad",
+          "assetName": "",
+          "side": "face",
+          "imageID": "25b26888852b1330"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "6c609c47b87b6358c5c90a9c8e3d741b66d5d97197a188486cee5819e2be658d",
+      "imageIDs": [
+        "2a0165d2c3bca4d1"
+      ],
+      "appearances": [
+        {
+          "team": "Tempestus Aquilons",
+          "assetName": "Aquilon Servo-Sentry",
+          "side": "face",
+          "imageID": "2a0165d2c3bca4d1"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "6effdbb7bdb99799a14bd920246f7ee7c777f79f8d4d0989dc34b83cda0ba295",
+      "imageIDs": [
+        "74221226e171585b"
+      ],
+      "appearances": [
+        {
+          "team": "Exaction Squad",
+          "assetName": "Arbites Chirurgant",
+          "side": "face",
+          "imageID": "74221226e171585b"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "6f4e35a654105705b7249ed63c99c1f4fa1bfe16e5e6d96eabeb3ed3f2ea05c7",
+      "imageIDs": [
+        "26842a058578a48b"
+      ],
+      "appearances": [
+        {
+          "team": "Tempestus Aquilons",
+          "assetName": "Aquilon Trooper",
+          "side": "face",
+          "imageID": "26842a058578a48b"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "736d22197e55b1b8f8ce3d9fd858f03028a10419ae2d5080b8b4651b70a32c23",
+      "imageIDs": [
+        "89e94cea9d573bd0"
+      ],
+      "appearances": [
+        {
+          "team": "Tempestus Aquilons",
+          "assetName": "Drop and Secure",
+          "side": "face",
+          "imageID": "89e94cea9d573bd0"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "73b08fd249c6fea547c5d796537a4ee2385567b06c68f49523048c41f46f76b2",
+      "imageIDs": [
+        "eb858a073a9bead4"
+      ],
+      "appearances": [
+        {
+          "team": "Pathfinders",
+          "assetName": "Photon Grenade",
+          "side": "face",
+          "imageID": "eb858a073a9bead4"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "748970e565164a3204c2c12ee96aa5fa1f810114c226e48d557bc5b3d37fb056",
+      "imageIDs": [
+        "e663bce416fc6836"
+      ],
+      "appearances": [
+        {
+          "team": "Tempestus Aquilons",
+          "assetName": "Grav-Chute",
+          "side": "back",
+          "imageID": "e663bce416fc6836"
+        },
+        {
+          "team": "Tempestus Aquilons",
+          "assetName": "Adjust Coordinates",
+          "side": "back",
+          "imageID": "e663bce416fc6836"
+        },
+        {
+          "team": "Tempestus Aquilons",
+          "assetName": "Tempestus Exemplars",
+          "side": "back",
+          "imageID": "e663bce416fc6836"
+        },
+        {
+          "team": "Tempestus Aquilons",
+          "assetName": "Progena",
+          "side": "back",
+          "imageID": "e663bce416fc6836"
+        },
+        {
+          "team": "Tempestus Aquilons",
+          "assetName": "Hot Drop",
+          "side": "back",
+          "imageID": "e663bce416fc6836"
+        },
+        {
+          "team": "Tempestus Aquilons",
+          "assetName": "Drop and Secure",
+          "side": "back",
+          "imageID": "e663bce416fc6836"
+        },
+        {
+          "team": "Tempestus Aquilons",
+          "assetName": "Maintain Momentum",
+          "side": "back",
+          "imageID": "e663bce416fc6836"
+        },
+        {
+          "team": "Tempestus Aquilons",
+          "assetName": "Sudden Offensive",
+          "side": "back",
+          "imageID": "e663bce416fc6836"
+        },
+        {
+          "team": "Tempestus Aquilons",
+          "assetName": "Eye Above",
+          "side": "back",
+          "imageID": "e663bce416fc6836"
+        },
+        {
+          "team": "Tempestus Aquilons",
+          "assetName": "Remote Overseers",
+          "side": "back",
+          "imageID": "e663bce416fc6836"
+        },
+        {
+          "team": "Tempestus Aquilons",
+          "assetName": "Combat Stimms",
+          "side": "back",
+          "imageID": "e663bce416fc6836"
+        },
+        {
+          "team": "Tempestus Aquilons",
+          "assetName": "Tempestus Daggers",
+          "side": "back",
+          "imageID": "e663bce416fc6836"
+        },
+        {
+          "team": "Tempestus Aquilons",
+          "assetName": "Drop Augury",
+          "side": "back",
+          "imageID": "e663bce416fc6836"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "75daa4aae663790ad71a093fa83f01788d2ac07b3b1a2943d2dffeceb862a59a",
+      "imageIDs": [
+        "b6c32d6712100f16"
+      ],
+      "appearances": [
+        {
+          "team": "Warpcoven",
+          "assetName": "Aetherial Warding",
+          "side": "back",
+          "imageID": "b6c32d6712100f16"
+        },
+        {
+          "team": "Warpcoven",
+          "assetName": "Fate Itself is my Weapon",
+          "side": "back",
+          "imageID": "b6c32d6712100f16"
+        },
+        {
+          "team": "Warpcoven",
+          "assetName": "Brotherhood of Sorcerers",
+          "side": "back",
+          "imageID": "b6c32d6712100f16"
+        },
+        {
+          "team": "Warpcoven",
+          "assetName": "Savage Herd",
+          "side": "back",
+          "imageID": "b6c32d6712100f16"
+        },
+        {
+          "team": "Warpcoven",
+          "assetName": "Ensorcelled Rounds",
+          "side": "back",
+          "imageID": "b6c32d6712100f16"
+        },
+        {
+          "team": "Warpcoven",
+          "assetName": "Daemonmaw Weapons",
+          "side": "back",
+          "imageID": "b6c32d6712100f16"
+        },
+        {
+          "team": "Warpcoven",
+          "assetName": "Sourcerous Scrolls",
+          "side": "back",
+          "imageID": "b6c32d6712100f16"
+        },
+        {
+          "team": "Warpcoven",
+          "assetName": "Arcane Robes",
+          "side": "back",
+          "imageID": "b6c32d6712100f16"
+        },
+        {
+          "team": "Warpcoven",
+          "assetName": "Astartes",
+          "side": "back",
+          "imageID": "b6c32d6712100f16"
+        },
+        {
+          "team": "Warpcoven",
+          "assetName": "All is Dust",
+          "side": "back",
+          "imageID": "b6c32d6712100f16"
+        },
+        {
+          "team": "Warpcoven",
+          "assetName": "Capricious Plan",
+          "side": "back",
+          "imageID": "b6c32d6712100f16"
+        },
+        {
+          "team": "Warpcoven",
+          "assetName": "Mutant Herd",
+          "side": "back",
+          "imageID": "b6c32d6712100f16"
+        },
+        {
+          "team": "Warpcoven",
+          "assetName": "Psychic Cabal",
+          "side": "back",
+          "imageID": "b6c32d6712100f16"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "78e2cdc738b4f3716dceda24c1ee40c0e5444e0d4ed2dea5d8e1071579da2b17",
+      "imageIDs": [
+        "3e1bf23d23194c28"
+      ],
+      "appearances": [
+        {
+          "team": "Warpcoven",
+          "assetName": "Sorcerer of Tempyrion",
+          "side": "face",
+          "imageID": "3e1bf23d23194c28"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "7a1f305c64eeaa710b7b493045a3fab8eaa8788ccc98ef833a17bc8bb0061cb9",
+      "imageIDs": [
+        "21fa90891c52bf16"
+      ],
+      "appearances": [
+        {
+          "team": "Exaction Squad",
+          "assetName": "Exact Punishment",
+          "side": "face",
+          "imageID": "21fa90891c52bf16"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "7d7e9b57e94dc27e3eb37183d19212400f1c8e70f04735d3321231fcaa30415a",
+      "imageIDs": [
+        "00da1d3559a8b8a9"
+      ],
+      "appearances": [
+        {
+          "team": "Pathfinders",
+          "assetName": "Target Analysis Optic",
+          "side": "face",
+          "imageID": "00da1d3559a8b8a9"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "82e000d821a736a535e0e7f74a6e22e826b1dac001415d9b5ad840c3a0e12883",
+      "imageIDs": [
+        "036acf287dac3c95"
+      ],
+      "appearances": [
+        {
+          "team": "Pathfinders",
+          "assetName": "Orbital Survey Link",
+          "side": "face",
+          "imageID": "036acf287dac3c95"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "83e3dc93c7cb76210fe14fda4e87b8b48ac0bb72852feebcf6f69e0e593504bc",
+      "imageIDs": [
+        "905954c6e81efd3c"
+      ],
+      "appearances": [
+        {
+          "team": "Exaction Squad",
+          "assetName": "Marked for Justice",
+          "side": "face",
+          "imageID": "905954c6e81efd3c"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "843c2c50a2f009af4efe71db470e1c8f2b96a36f68b8ad2e84a23de6a905c7b3",
+      "imageIDs": [
+        "03500bf2d3616b5a"
+      ],
+      "appearances": [
+        {
+          "team": "Warpcoven",
+          "assetName": "Tzaangor Champion",
+          "side": "face",
+          "imageID": "03500bf2d3616b5a"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "84588ced8340c95bcfccbc0db579164d8931c86998c5083f5c95cfc2040003c9",
+      "imageIDs": [
+        "a5ff29a6153b0cc9"
+      ],
+      "appearances": [
+        {
+          "team": "Exaction Squad",
+          "assetName": "Brutal Backup",
+          "side": "face",
+          "imageID": "a5ff29a6153b0cc9"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "84e336cae9e6c76dda9bac774aae0ce9d657388997c8ad950776a52b18694b42",
+      "imageIDs": [
+        "0779e78603b9953f"
+      ],
+      "appearances": [
+        {
+          "team": "Warpcoven",
+          "assetName": "Brotherhood of Sorcerers",
+          "side": "face",
+          "imageID": "0779e78603b9953f"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "85db8deab3f314e3a605e4d48d49018157511fc0dd048da8bfa21b21400829f7",
+      "imageIDs": [
+        "5a9967746d77f50b"
+      ],
+      "appearances": [
+        {
+          "team": "Pathfinders",
+          "assetName": "High-Intencity Markerlight",
+          "side": "face",
+          "imageID": "5a9967746d77f50b"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "86b4d6ea19fa254febfda33d67189d9b46db1a5ca388217060dcb6f14edb802c",
+      "imageIDs": [
+        "ae5d75bfd794b6fb"
+      ],
+      "appearances": [
+        {
+          "team": "Exaction Squad",
+          "assetName": "Long Arm of the Emperor's Law",
+          "side": "face",
+          "imageID": "ae5d75bfd794b6fb"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "86d24129721af3f3d0b5a640e43b9cf270920e11aa8c330c226f87099e8b818e",
+      "imageIDs": [
+        "640d8473f6b65454"
+      ],
+      "appearances": [
+        {
+          "team": "Pathfinders",
+          "assetName": "MV7 Marker Drone",
+          "side": "face",
+          "imageID": "640d8473f6b65454"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "87dd27a00af502ab4a0564e3567c35a6bdff9924563bbb75afba302363412758",
+      "imageIDs": [
+        "67f82c419930eb37"
+      ],
+      "appearances": [
+        {
+          "team": "Pathfinders",
+          "assetName": "A Worthy Cause",
+          "side": "face",
+          "imageID": "67f82c419930eb37"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "89eef0156fc9fb59844e5b298553ec3c6cd81eeb564a7bdf742e2c293fe66c38",
+      "imageIDs": [
+        "77e5cb39ab75c9cb"
+      ],
+      "appearances": [
+        {
+          "team": "Tempestus Aquilons",
+          "assetName": "Aquilon Tempestor",
+          "side": "back",
+          "imageID": "77e5cb39ab75c9cb"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "8f9331227f67246c2e9951415cf8bc44e07df52dd3b4c245b55ca3823bd770c8",
+      "imageIDs": [
+        "6065eef7a86daf8f"
+      ],
+      "appearances": [
+        {
+          "team": "Exaction Squad",
+          "assetName": "Manacles",
+          "side": "face",
+          "imageID": "6065eef7a86daf8f"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "9174f438aa3f7d559d437feb38de0b81725d91bc39904ca2861715e42ee539ed",
+      "imageIDs": [
+        "9c1ffbad1252f7aa"
+      ],
+      "appearances": [
+        {
+          "team": "Warpcoven",
+          "assetName": "Boon of Tzeentch",
+          "side": "face",
+          "imageID": "9c1ffbad1252f7aa"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "93bc92b66673c3384fc3dfddcdb8d0a51dabfb53da7dc8c1e316cb972e85db0f",
+      "imageIDs": [
+        "85ea0fd13c789062"
+      ],
+      "appearances": [
+        {
+          "team": "Warpcoven",
+          "assetName": "Sorcerer of Destiny",
+          "side": "face",
+          "imageID": "85ea0fd13c789062"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "94fbf909d5dcaa8d22177f232ec840696a11c9e88466794c0d7e153f687e9b40",
+      "imageIDs": [
+        "76430cc6f0f1b390"
+      ],
+      "appearances": [
+        {
+          "team": "Tempestus Aquilons",
+          "assetName": "Maintain Momentum",
+          "side": "face",
+          "imageID": "76430cc6f0f1b390"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "9772ad9793d04e43e8215d56ea20713c24f0ff9b90425248c286c57d3c6d9642",
+      "imageIDs": [
+        "d7d15dde52f6966a"
+      ],
+      "appearances": [
+        {
+          "team": "Warpcoven",
+          "assetName": "Sorcerer of Warpfire",
+          "side": "back",
+          "imageID": "d7d15dde52f6966a"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "977b58f147f905d34f4421b2cf247831967e798ee1ae5cab0abeb464ca6fa5e3",
+      "imageIDs": [
+        "66984dcee5674e36"
+      ],
+      "appearances": [
+        {
+          "team": "Pathfinders",
+          "assetName": "Markerlights",
+          "side": "back",
+          "imageID": "66984dcee5674e36"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "9815f0147f872d7d12d66db4196ce678be9ab484bd9f3aacec4a0c76052b549b",
+      "imageIDs": [
+        "4a0f024455651c51"
+      ],
+      "appearances": [
+        {
+          "team": "Pathfinders",
+          "assetName": "Drone Controller Pathfinder",
+          "side": "face",
+          "imageID": "4a0f024455651c51"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "9b6ea84402b91392b2c524cd232b5dd3c5fb8b07d15e79aa2909f5eb873cb32d",
+      "imageIDs": [
+        "6be3c5d3cab3d09b"
+      ],
+      "appearances": [
+        {
+          "team": "Exaction Squad",
+          "assetName": "Reinforced Mirror-Visor",
+          "side": "face",
+          "imageID": "6be3c5d3cab3d09b"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "9fd6535375ee8f8cb69743eace2b21d6a5d64cd28f42d869f8cae6296101701d",
+      "imageIDs": [
+        "41436de20559a032"
+      ],
+      "appearances": [
+        {
+          "team": "Pathfinders",
+          "assetName": "MB3 Recon Drone",
+          "side": "face",
+          "imageID": "41436de20559a032"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "a34d96a49e87201af893cdabd50c1b8f89fd1244cd894a2b6b4f1b9fd8260229",
+      "imageIDs": [
+        "20f85d7b56121c9b"
+      ],
+      "appearances": [
+        {
+          "team": "Pathfinders",
+          "assetName": "MV33 Grav-Inhibitor Drone",
+          "side": "face",
+          "imageID": "20f85d7b56121c9b"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "a45b2233daff0cb47152eeead555707fb95b2de7ea9472deab329e54902ea373",
+      "imageIDs": [
+        "81bca333f8bdee18"
+      ],
+      "appearances": [
+        {
+          "team": "Exaction Squad",
+          "assetName": "Inviolate Jurisdiction",
+          "side": "face",
+          "imageID": "81bca333f8bdee18"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "a80ce7bb65cc0146c3dd74df54a2a7f530d29c1ce426ec5b6535fffedb7e36b3",
+      "imageIDs": [
+        "a7c6488d04557893"
+      ],
+      "appearances": [
+        {
+          "team": "Exaction Squad",
+          "assetName": "Ruthless Efficiency",
+          "side": "face",
+          "imageID": "a7c6488d04557893"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "a83f70889b769ce5ad87a5f16f22d0fff71ac333a08dd75c6d93f2907001b6a5",
+      "imageIDs": [
+        "927df53a0be9b3a0"
+      ],
+      "appearances": [
+        {
+          "team": "Pathfinders",
+          "assetName": "Marksman Pathfinder",
+          "side": "face",
+          "imageID": "927df53a0be9b3a0"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "a855db3d6162e04b0e8f2ef649986215d9dd45dac3256477dac251b1e1a663a6",
+      "imageIDs": [
+        "2cf8d7a6ce30b971"
+      ],
+      "appearances": [
+        {
+          "team": "Tempestus Aquilons",
+          "assetName": "Tempestus Daggers",
+          "side": "face",
+          "imageID": "2cf8d7a6ce30b971"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "a939d0b1e8e3085aa39afc5f3ede4b1f7e0a144de8ba1a417102d29dc33c46bb",
+      "imageIDs": [
+        "815febbfcea2148c"
+      ],
+      "appearances": [
+        {
+          "team": "Pathfinders",
+          "assetName": "Medical Technician Pathfinder",
+          "side": "face",
+          "imageID": "815febbfcea2148c"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "a944353191c82a51178b9bf7ed6b26f868c24ad4614723ec801352e1bc97d40b",
+      "imageIDs": [
+        "d17b95af8bc4ed5d"
+      ],
+      "appearances": [
+        {
+          "team": "Tempestus Aquilons",
+          "assetName": "Drop Insertion",
+          "side": "face",
+          "imageID": "d17b95af8bc4ed5d"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "ab127ae9360ee6456f0fd17449c21fe17548c5bb5947f0346c1a334d2ceeb4fc",
+      "imageIDs": [
+        "d042d500e8fd8b1e"
+      ],
+      "appearances": [
+        {
+          "team": "Pathfinders",
+          "assetName": "Drone Controller Pathfinder",
+          "side": "back",
+          "imageID": "d042d500e8fd8b1e"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "abe8648b9d502792d8f17b82daad098795bf0be9027f2a07865d5d1bb78c6b0f",
+      "imageIDs": [
+        "49d94710ae79ea39"
+      ],
+      "appearances": [
+        {
+          "team": "Exaction Squad",
+          "assetName": "Arbites Revelatum",
+          "side": "face",
+          "imageID": "49d94710ae79ea39"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "afc85ea5d498f0de9324d92bd8b3d7c758727d2df4faa9f5a420a4ac9e4be191",
+      "imageIDs": [
+        "db0ac376714913be"
+      ],
+      "appearances": [
+        {
+          "team": "Exaction Squad",
+          "assetName": "Arbites Proctor-Exactant",
+          "side": "face",
+          "imageID": "db0ac376714913be"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "b0328e545ee9194381a51e826144e099ace66d6b8c460df6e96e288c53c12bfb",
+      "imageIDs": [
+        "b034553b1257ba1b"
+      ],
+      "appearances": [
+        {
+          "team": "Pathfinders",
+          "assetName": "Markerlights",
+          "side": "face",
+          "imageID": "b034553b1257ba1b"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "b16a70ddbadf37f92f682ee81d99bb22e637c23dfc652d2a6eb2f220c12112e3",
+      "imageIDs": [
+        "73aaac13db0b4f82"
+      ],
+      "appearances": [
+        {
+          "team": "Tempestus Aquilons",
+          "assetName": "Combat Stimms",
+          "side": "face",
+          "imageID": "73aaac13db0b4f82"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "b1cfacb7119ffdd261d4c5121ca9a60c1e54a327ac4a8e7fe80a9604fb1f6de1",
+      "imageIDs": [
+        "f50f7631215cbcd9"
+      ],
+      "appearances": [
+        {
+          "team": "Tempestus Aquilons",
+          "assetName": "Eye Above",
+          "side": "face",
+          "imageID": "f50f7631215cbcd9"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "b248a6489a50537eb58996ba0332c8dceae08644f4a4bb7ff193c6ffffa6d1a1",
+      "imageIDs": [
+        "510f6e591357288f"
+      ],
+      "appearances": [
+        {
+          "team": "Warpcoven",
+          "assetName": "Rubric Marine Icon Bearer",
+          "side": "face",
+          "imageID": "510f6e591357288f"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "b30944a972eb56154cf5be33bb1eeb729aedb497f7afa5cd9f38ec8d8973a331",
+      "imageIDs": [
+        "619bdce230c164fd"
+      ],
+      "appearances": [
+        {
+          "team": "Warpcoven",
+          "assetName": "Astartes",
+          "side": "face",
+          "imageID": "619bdce230c164fd"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "b4f453b62a0ed1dc7c5e767db6d828544e661acdbc979d73d6edcb6ddf5de11b",
+      "imageIDs": [
+        "241ec729a47ab6d3"
+      ],
+      "appearances": [
+        {
+          "team": "Exaction Squad",
+          "assetName": "R-VR Cyber-Mastiff",
+          "side": "face",
+          "imageID": "241ec729a47ab6d3"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "b637d5c8dfa4a7cbed20b2009f3f862a6205ae95045067bf7949f6afe3af31b7",
+      "imageIDs": [
+        "f291a0189b18dcdd"
+      ],
+      "appearances": [
+        {
+          "team": "Warpcoven",
+          "assetName": "Daemonmaw Weapons",
+          "side": "face",
+          "imageID": "f291a0189b18dcdd"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "bc1c0eead74af118e2e9bf23a4cd4500b56e8796e82804a79c70c259e25c6aa4",
+      "imageIDs": [
+        "5709292bffa860d2"
+      ],
+      "appearances": [
+        {
+          "team": "Pathfinders",
+          "assetName": "Blooded Pathfinder",
+          "side": "face",
+          "imageID": "5709292bffa860d2"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "bee601a6fe06fd6bda675b57d5c11836252b13885d19afbeb24464e1f96738eb",
+      "imageIDs": [
+        "c063843d87212ac7"
+      ],
+      "appearances": [
+        {
+          "team": "Pathfinders",
+          "assetName": "",
+          "side": "face",
+          "imageID": "c063843d87212ac7"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "c4965c15ccdd98b84bcaaf4cfe2e4723b05e2a9fba73f4fbf330ad03274b8020",
+      "imageIDs": [
+        "db58df655b8299d3"
+      ],
+      "appearances": [
+        {
+          "team": "Exaction Squad",
+          "assetName": "Guilt Reveals Itself",
+          "side": "face",
+          "imageID": "db58df655b8299d3"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "cb15af49e3290c5938b05464ef6f19c52a15726f1377f6fea20bbf761d4a1e4c",
+      "imageIDs": [
+        "d07cb513507f922c"
+      ],
+      "appearances": [
+        {
+          "team": "Tempestus Aquilons",
+          "assetName": "Aquilon Precursor",
+          "side": "face",
+          "imageID": "d07cb513507f922c"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "cd9128091905ee577f30e81365b9543e8a867dd7da244a0295e3fb39541140f3",
+      "imageIDs": [
+        "184dfe4d803cf6a2"
+      ],
+      "appearances": [
+        {
+          "team": "Pathfinders",
+          "assetName": "Suppresing Fire",
+          "side": "face",
+          "imageID": "184dfe4d803cf6a2"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "d61b88820aeef7951fe22a8c647dfb141865f202c61dfddecb32b479bd5c10a9",
+      "imageIDs": [
+        "9499a11d569b1821"
+      ],
+      "appearances": [
+        {
+          "team": "Pathfinders",
+          "assetName": "Transpectral Interference Pathfinder",
+          "side": "face",
+          "imageID": "9499a11d569b1821"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "d709ae4cdab0b167fc4a4c633228ded15375b88154d6b7f796e5ee39bdb56a1f",
+      "imageIDs": [
+        "6be3bc10a9cac0e2"
+      ],
+      "appearances": [
+        {
+          "team": "Warpcoven",
+          "assetName": "Tzaangor Horn Bearer",
+          "side": "face",
+          "imageID": "6be3bc10a9cac0e2"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "d8080f1c51afd71bd28d601f027f44b8856c333af634a32cfaef042914b04f36",
+      "imageIDs": [
+        "e68ce49993530187"
+      ],
+      "appearances": [
+        {
+          "team": "Warpcoven",
+          "assetName": "Boon of Tzeentch",
+          "side": "back",
+          "imageID": "e68ce49993530187"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "d99c9c3506dac16f0cb2010e3e395d21c3af4180143619b1334279bfc56c18e3",
+      "imageIDs": [
+        "e433c230cd9976ee"
+      ],
+      "appearances": [
+        {
+          "team": "Warpcoven",
+          "assetName": "Capricious Plan",
+          "side": "face",
+          "imageID": "e433c230cd9976ee"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "dc609e222e784cc491494d0399b3f53a8798be20b5657800137c2a810da21a51",
+      "imageIDs": [
+        "476e963e7c82df41"
+      ],
+      "appearances": [
+        {
+          "team": "Exaction Squad",
+          "assetName": "Special-Issue Shells",
+          "side": "face",
+          "imageID": "476e963e7c82df41"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "dce719e8c4ec8f0c40d3f8751a90cd5d621049d038a9eb90647f9251bcc2ed04",
+      "imageIDs": [
+        "6ad644f344ba5b82"
+      ],
+      "appearances": [
+        {
+          "team": "Exaction Squad",
+          "assetName": "Arbites Castigator",
+          "side": "face",
+          "imageID": "6ad644f344ba5b82"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "dd3b626595580b75377878a16d4c85a0e796a2289ea195164aa2af5db287dfe9",
+      "imageIDs": [
+        "9a8888d6c864a320"
+      ],
+      "appearances": [
+        {
+          "team": "Exaction Squad",
+          "assetName": "Dispense Justice",
+          "side": "face",
+          "imageID": "9a8888d6c864a320"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "dd9c083a4b5c793be3b3b1d2e8aeb3322c3109361de75eb08583bf85dd142e65",
+      "imageIDs": [
+        "14029bbc169aeaf2"
+      ],
+      "appearances": [
+        {
+          "team": "Tempestus Aquilons",
+          "assetName": "Drop Augury",
+          "side": "face",
+          "imageID": "14029bbc169aeaf2"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "deacd91a14cb0bbd158e456592551893f17db50623a818cee99d350e2f4a28bf",
+      "imageIDs": [
+        "c58dad9bb9382dc5"
+      ],
+      "appearances": [
+        {
+          "team": "Exaction Squad",
+          "assetName": "Arbites Proctor-Exactant",
+          "side": "back",
+          "imageID": "c58dad9bb9382dc5"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "decbede4a0b4ebbc298c0d764c05e62fe957896e86751414301d754be135cd85",
+      "imageIDs": [
+        "63167df09ac6ee43"
+      ],
+      "appearances": [
+        {
+          "team": "Warpcoven",
+          "assetName": "Ensorcelled Rounds",
+          "side": "face",
+          "imageID": "63167df09ac6ee43"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "df684978731773067c9615ecef2f488ffbf23becf6df6988016f1dbe433dde1a",
+      "imageIDs": [
+        "349e3c33348203ff"
+      ],
+      "appearances": [
+        {
+          "team": "Exaction Squad",
+          "assetName": "Execution Order",
+          "side": "face",
+          "imageID": "349e3c33348203ff"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "e2d3407faffa334053170526da00f804dac6f06ce0b1b902fae715a1219a1e22",
+      "imageIDs": [
+        "fdf321cf0469521b"
+      ],
+      "appearances": [
+        {
+          "team": "Tempestus Aquilons",
+          "assetName": "Grav-Chute",
+          "side": "face",
+          "imageID": "fdf321cf0469521b"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "e371994053a24c0a22841ca3fda30ee303db90f6a5472889aa9e82904832a86b",
+      "imageIDs": [
+        "673ea5c543bf6649"
+      ],
+      "appearances": [
+        {
+          "team": "Tempestus Aquilons",
+          "assetName": "Aquilon Grenadier",
+          "side": "face",
+          "imageID": "673ea5c543bf6649"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "e50fe8dd638bc900d723b294a69a15791c209cde7086fbe3d199aff75832919c",
+      "imageIDs": [
+        "e1baa9a338e31e80"
+      ],
+      "appearances": [
+        {
+          "team": "Tempestus Aquilons",
+          "assetName": "",
+          "side": "face",
+          "imageID": "e1baa9a338e31e80"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "e6d2fb531c28ef6d8cf928e2e10b55d0ffce4c50326f3d4ae59e3598285f049a",
+      "imageIDs": [
+        "b3af8084fdfda090"
+      ],
+      "appearances": [
+        {
+          "team": "Pathfinders",
+          "assetName": "Shas'La Pathfinder",
+          "side": "face",
+          "imageID": "b3af8084fdfda090"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "eb66c6df052feb9b3767bd8edc2f8455d0ee4f5a958a371288de4b5dda17443c",
+      "imageIDs": [
+        "4202eff20aa10fff"
+      ],
+      "appearances": [
+        {
+          "team": "Tempestus Aquilons",
+          "assetName": "Remote Overseers",
+          "side": "face",
+          "imageID": "4202eff20aa10fff"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "eb71144a20f9f9a5e2fb32308efad8f44e10b65cbcee3853b6b2a944f71bc570",
+      "imageIDs": [
+        "034e25942bb94cb5"
+      ],
+      "appearances": [
+        {
+          "team": "Tempestus Aquilons",
+          "assetName": "Adjust Coordinates",
+          "side": "face",
+          "imageID": "034e25942bb94cb5"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "ebbf119e0b63c194ae2eda65003ecda0e2b17010d9c46fec58bb6f46e23f3bfa",
+      "imageIDs": [
+        "370a749a0f442676"
+      ],
+      "appearances": [
+        {
+          "team": "Pathfinders",
+          "assetName": "",
+          "side": "back",
+          "imageID": "370a749a0f442676"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "ef1f00630f5f948caca4cde7c3b593fb7249308464009d9a16b7b0d2317c1e02",
+      "imageIDs": [
+        "60f836ae85fdf353"
+      ],
+      "appearances": [
+        {
+          "team": "Warpcoven",
+          "assetName": "Sorcerer of Warpfire",
+          "side": "face",
+          "imageID": "60f836ae85fdf353"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "f387bf41859e3594f5c206656bb2d9edebca4a61a007049af64adbda116f31fd",
+      "imageIDs": [
+        "96862dbfd459399f"
+      ],
+      "appearances": [
+        {
+          "team": "Pathfinders",
+          "assetName": "Saviour Protocol",
+          "side": "face",
+          "imageID": "96862dbfd459399f"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "f4d4d37282edf06a23dcfa15319da2c27e74b70cd5bb54d29679d01b6d4cc768",
+      "imageIDs": [
+        "5cfd07669b1c0709"
+      ],
+      "appearances": [
+        {
+          "team": "Exaction Squad",
+          "assetName": "Arbites Leashmaster",
+          "side": "face",
+          "imageID": "5cfd07669b1c0709"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "f5b5cf4130cd02350af878c3516fccff2f3c83a86eaff999b143d3dece7be666",
+      "imageIDs": [
+        "fe255a760ce9128b"
+      ],
+      "appearances": [
+        {
+          "team": "Warpcoven",
+          "assetName": "Rubric Marine Gunner",
+          "side": "face",
+          "imageID": "fe255a760ce9128b"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "f83f529b22e1445ea410a857260db7d17c887c66333cc7296d193918866266f2",
+      "imageIDs": [
+        "d60468be404677d9"
+      ],
+      "appearances": [
+        {
+          "team": "Pathfinders",
+          "assetName": "MV1 Gun Drone",
+          "side": "face",
+          "imageID": "d60468be404677d9"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "fb7062a8effcc5f15aaedc855caf53f26866c03a53b91133b8a2e8aa603b6594",
+      "imageIDs": [
+        "d89179bbc2bbfa83"
+      ],
+      "appearances": [
+        {
+          "team": "Pathfinders",
+          "assetName": "A Worthy Cause",
+          "side": "back",
+          "imageID": "d89179bbc2bbfa83"
+        },
+        {
+          "team": "Pathfinders",
+          "assetName": "Saviour Protocol",
+          "side": "back",
+          "imageID": "d89179bbc2bbfa83"
+        },
+        {
+          "team": "Pathfinders",
+          "assetName": "Supporting Fire",
+          "side": "back",
+          "imageID": "d89179bbc2bbfa83"
+        },
+        {
+          "team": "Pathfinders",
+          "assetName": "Point-Blank Fusillade",
+          "side": "back",
+          "imageID": "d89179bbc2bbfa83"
+        },
+        {
+          "team": "Pathfinders",
+          "assetName": "Recon Sweep",
+          "side": "back",
+          "imageID": "d89179bbc2bbfa83"
+        },
+        {
+          "team": "Pathfinders",
+          "assetName": "Bonded",
+          "side": "back",
+          "imageID": "d89179bbc2bbfa83"
+        },
+        {
+          "team": "Pathfinders",
+          "assetName": "Take Cover",
+          "side": "back",
+          "imageID": "d89179bbc2bbfa83"
+        },
+        {
+          "team": "Pathfinders",
+          "assetName": "Suppresing Fire",
+          "side": "back",
+          "imageID": "d89179bbc2bbfa83"
+        },
+        {
+          "team": "Pathfinders",
+          "assetName": "High-Intencity Markerlight",
+          "side": "back",
+          "imageID": "d89179bbc2bbfa83"
+        },
+        {
+          "team": "Pathfinders",
+          "assetName": "Photon Grenade",
+          "side": "back",
+          "imageID": "d89179bbc2bbfa83"
+        },
+        {
+          "team": "Pathfinders",
+          "assetName": "Target Analysis Optic",
+          "side": "back",
+          "imageID": "d89179bbc2bbfa83"
+        },
+        {
+          "team": "Pathfinders",
+          "assetName": "Orbital Survey Link",
+          "side": "back",
+          "imageID": "d89179bbc2bbfa83"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "fdef7ab22ca8ba4f474c2c8da4e8ad77f5f69bfcf43f7fea15a9ce10ca0db16d",
+      "imageIDs": [
+        "5bcd71471486e751"
+      ],
+      "appearances": [
+        {
+          "team": "Tempestus Aquilons",
+          "assetName": "Hot Drop",
+          "side": "face",
+          "imageID": "5bcd71471486e751"
+        }
+      ]
+    }
+  ],
+  "excluded": [
+    {
+      "sourceSHA256": "11107cde397f1a5918a7453461aac518164bee431957c9fb13a441c31d07d266",
+      "imageIDs": [
+        "5e471c11a2b7d068"
+      ],
+      "appearances": [
+        {
+          "team": "Warpcoven",
+          "assetName": "Rubric Marine Gunner",
+          "side": "back",
+          "imageID": "5e471c11a2b7d068"
+        },
+        {
+          "team": "Warpcoven",
+          "assetName": "Rubric Marine Icon Bearer",
+          "side": "back",
+          "imageID": "5e471c11a2b7d068"
+        },
+        {
+          "team": "Warpcoven",
+          "assetName": "Rubric Marine Warrior",
+          "side": "back",
+          "imageID": "5e471c11a2b7d068"
+        },
+        {
+          "team": "Warpcoven",
+          "assetName": "Tzaangor Champion",
+          "side": "back",
+          "imageID": "5e471c11a2b7d068"
+        },
+        {
+          "team": "Warpcoven",
+          "assetName": "Tzaangor Horn Bearer",
+          "side": "back",
+          "imageID": "5e471c11a2b7d068"
+        },
+        {
+          "team": "Warpcoven",
+          "assetName": "Tzaangor Warrior",
+          "side": "back",
+          "imageID": "5e471c11a2b7d068"
+        },
+        {
+          "team": "Warpcoven",
+          "assetName": "Tzaangor Icon Bearer",
+          "side": "back",
+          "imageID": "5e471c11a2b7d068"
+        }
+      ],
+      "reason": "Pure artwork with no translatable text; visually inspected"
+    },
+    {
+      "sourceSHA256": "794430dd49386d14e01f613d73c87dff108b41846d534e9208a329ebc7ef2229",
+      "imageIDs": [
+        "06ab8298ab2f4d7e"
+      ],
+      "appearances": [
+        {
+          "team": "Exaction Squad",
+          "assetName": "Arbites Vox-Signifier",
+          "side": "back",
+          "imageID": "06ab8298ab2f4d7e"
+        },
+        {
+          "team": "Exaction Squad",
+          "assetName": "Arbites Castigator",
+          "side": "back",
+          "imageID": "06ab8298ab2f4d7e"
+        },
+        {
+          "team": "Exaction Squad",
+          "assetName": "Arbites Vigilant",
+          "side": "back",
+          "imageID": "06ab8298ab2f4d7e"
+        },
+        {
+          "team": "Exaction Squad",
+          "assetName": "Arbites Subductor",
+          "side": "back",
+          "imageID": "06ab8298ab2f4d7e"
+        },
+        {
+          "team": "Exaction Squad",
+          "assetName": "R-VR Cyber-Mastiff",
+          "side": "back",
+          "imageID": "06ab8298ab2f4d7e"
+        },
+        {
+          "team": "Exaction Squad",
+          "assetName": "Arbites Gunner",
+          "side": "back",
+          "imageID": "06ab8298ab2f4d7e"
+        },
+        {
+          "team": "Exaction Squad",
+          "assetName": "Arbites Marksman",
+          "side": "back",
+          "imageID": "06ab8298ab2f4d7e"
+        },
+        {
+          "team": "Exaction Squad",
+          "assetName": "Arbites Revelatum",
+          "side": "back",
+          "imageID": "06ab8298ab2f4d7e"
+        },
+        {
+          "team": "Exaction Squad",
+          "assetName": "Arbites Malocator",
+          "side": "back",
+          "imageID": "06ab8298ab2f4d7e"
+        }
+      ],
+      "reason": "Pure artwork with no translatable text; visually inspected"
+    },
+    {
+      "sourceSHA256": "ac81bf564a33d326fda474163fa363e351efd75cf08b799e79ee973b249aef0c",
+      "imageIDs": [
+        "1dc13ae9de2351ae"
+      ],
+      "appearances": [
+        {
+          "team": "Pathfinders",
+          "assetName": "Assault Grenadier Pathfinder",
+          "side": "back",
+          "imageID": "1dc13ae9de2351ae"
+        },
+        {
+          "team": "Pathfinders",
+          "assetName": "Blooded Pathfinder",
+          "side": "back",
+          "imageID": "1dc13ae9de2351ae"
+        },
+        {
+          "team": "Pathfinders",
+          "assetName": "Comms Specialist Pathfinder",
+          "side": "back",
+          "imageID": "1dc13ae9de2351ae"
+        },
+        {
+          "team": "Pathfinders",
+          "assetName": "Marksman Pathfinder",
+          "side": "back",
+          "imageID": "1dc13ae9de2351ae"
+        },
+        {
+          "team": "Pathfinders",
+          "assetName": "Shas'La Pathfinder",
+          "side": "back",
+          "imageID": "1dc13ae9de2351ae"
+        },
+        {
+          "team": "Pathfinders",
+          "assetName": "Transpectral Interference Pathfinder",
+          "side": "back",
+          "imageID": "1dc13ae9de2351ae"
+        },
+        {
+          "team": "Pathfinders",
+          "assetName": "Weapons Expert Pathfinder",
+          "side": "back",
+          "imageID": "1dc13ae9de2351ae"
+        },
+        {
+          "team": "Pathfinders",
+          "assetName": "MV1 Gun Drone",
+          "side": "back",
+          "imageID": "1dc13ae9de2351ae"
+        },
+        {
+          "team": "Pathfinders",
+          "assetName": "MV33 Grav-Inhibitor Drone",
+          "side": "back",
+          "imageID": "1dc13ae9de2351ae"
+        },
+        {
+          "team": "Pathfinders",
+          "assetName": "MB3 Recon Drone",
+          "side": "back",
+          "imageID": "1dc13ae9de2351ae"
+        },
+        {
+          "team": "Pathfinders",
+          "assetName": "MV31 Pulse Acceleration Drone",
+          "side": "back",
+          "imageID": "1dc13ae9de2351ae"
+        },
+        {
+          "team": "Pathfinders",
+          "assetName": "MV7 Marker Drone",
+          "side": "back",
+          "imageID": "1dc13ae9de2351ae"
+        },
+        {
+          "team": "Pathfinders",
+          "assetName": "MV4 Shield Drone",
+          "side": "back",
+          "imageID": "1dc13ae9de2351ae"
+        },
+        {
+          "team": "Pathfinders",
+          "assetName": "Shas'Ui Pathfinder",
+          "side": "back",
+          "imageID": "1dc13ae9de2351ae"
+        }
+      ],
+      "reason": "Pure artwork with no translatable text; visually inspected"
+    },
+    {
+      "sourceSHA256": "ccf0b0cf590d739a6fb5ae8c558fc7526a366380082cc7af7387dd091d4cba77",
+      "imageIDs": [
+        "ef9963c544f5a3cf"
+      ],
+      "appearances": [
+        {
+          "team": "Tempestus Aquilons",
+          "assetName": "Aquilon Precursor",
+          "side": "back",
+          "imageID": "ef9963c544f5a3cf"
+        },
+        {
+          "team": "Tempestus Aquilons",
+          "assetName": "Aquilon Gunner",
+          "side": "back",
+          "imageID": "ef9963c544f5a3cf"
+        },
+        {
+          "team": "Tempestus Aquilons",
+          "assetName": "Aquilon Servo-Sentry",
+          "side": "back",
+          "imageID": "ef9963c544f5a3cf"
+        },
+        {
+          "team": "Tempestus Aquilons",
+          "assetName": "Aquilon Trooper",
+          "side": "back",
+          "imageID": "ef9963c544f5a3cf"
+        },
+        {
+          "team": "Tempestus Aquilons",
+          "assetName": "Aquilon Marksman",
+          "side": "back",
+          "imageID": "ef9963c544f5a3cf"
+        },
+        {
+          "team": "Tempestus Aquilons",
+          "assetName": "Aquilon Gunfighter",
+          "side": "back",
+          "imageID": "ef9963c544f5a3cf"
+        },
+        {
+          "team": "Tempestus Aquilons",
+          "assetName": "Aquilon Grenadier",
+          "side": "back",
+          "imageID": "ef9963c544f5a3cf"
+        }
+      ],
+      "reason": "Pure artwork with no translatable text; visually inspected"
+    }
+  ],
+  "counts": {
+    "includedSourceSHA": 126,
+    "excludedSourceSHA": 4,
+    "referencedSourceSHA": 130,
+    "translatedImageIDs": 126,
+    "excludedImageIDs": 4,
+    "appearances": 212
+  }
+}

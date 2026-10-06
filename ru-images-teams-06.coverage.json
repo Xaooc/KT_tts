@@ -1,0 +1,3563 @@
+{
+  "batch": "06",
+  "teams": [
+    "Inquisitorial Agents",
+    "Blooded",
+    "Imperial Navy Breachers",
+    "Blades of Khaine"
+  ],
+  "sourceFiles": [
+    "inventory/card-assets.json",
+    "inventory/image-sources.json",
+    "inventory/image-ocr-en.json",
+    "inventory/original-images/*.img"
+  ],
+  "included": [
+    {
+      "sourceSHA256": "005aee8fa1e2433a32096bca98b23eb351500caafcfb9beb2c2143d053f058cf",
+      "imageIDs": [
+        "05b27a5bfb60089c"
+      ],
+      "appearances": [
+        {
+          "team": "Inquisitorial Agents",
+          "assetName": "Death World Veteran Agent",
+          "side": "face",
+          "imageID": "05b27a5bfb60089c"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "014c9455d1cb532011ce427be4394e66711716fea5e4e34efe9e53e5dfe94e78",
+      "imageIDs": [
+        "d220501c21f347bb"
+      ],
+      "appearances": [
+        {
+          "team": "Inquisitorial Agents",
+          "assetName": "Servo-Skull",
+          "side": "face",
+          "imageID": "d220501c21f347bb"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "018f2b154fd9a9d6f950dbd5bf72b8306af744f54fc139ffe3cbe06350ace7b7",
+      "imageIDs": [
+        "5e8338a1773628c6"
+      ],
+      "appearances": [
+        {
+          "team": "Inquisitorial Agents",
+          "assetName": "Kasrkin Recon-Trooper",
+          "side": "face",
+          "imageID": "5e8338a1773628c6"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "020a7f8d9f27d4fe321eb3ffc5a9600212446b685eae2d0ffa5a84e648e41e81",
+      "imageIDs": [
+        "c3fb4d3f5a053104"
+      ],
+      "appearances": [
+        {
+          "team": "Inquisitorial Agents",
+          "assetName": "Absolute Authority",
+          "side": "face",
+          "imageID": "c3fb4d3f5a053104"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "03138712a59aa2d39f83f84afd90d96bce9e271bf56bfbcdc81d06798e0aac0c",
+      "imageIDs": [
+        "b196b7ff280989b2"
+      ],
+      "appearances": [
+        {
+          "team": "Blooded",
+          "assetName": "Traitor Butcher",
+          "side": "face",
+          "imageID": "b196b7ff280989b2"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "061aad26dc56018aea78330a79c6657cce8ae62843950b9489d5f0e48b98b906",
+      "imageIDs": [
+        "d0d07a51f8dd1924"
+      ],
+      "appearances": [
+        {
+          "team": "Blooded",
+          "assetName": "Traitor Gunner",
+          "side": "face",
+          "imageID": "d0d07a51f8dd1924"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "074c76db95f10c61c6054c9071d22e0c167a8c805c1173907f2bd318d2ed7fae",
+      "imageIDs": [
+        "c973a82e8eab4f27"
+      ],
+      "appearances": [
+        {
+          "team": "Blooded",
+          "assetName": "Traitor Commsman",
+          "side": "face",
+          "imageID": "c973a82e8eab4f27"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "074d664f3d2cf33ff4f7e8f1890db41c861c060620a3b24ec54c30921e1b554e",
+      "imageIDs": [
+        "be54dd37198fa4fc"
+      ],
+      "appearances": [
+        {
+          "team": "Inquisitorial Agents",
+          "assetName": "Navis Grenadier",
+          "side": "face",
+          "imageID": "be54dd37198fa4fc"
+        },
+        {
+          "team": "Imperial Navy Breachers",
+          "assetName": "Navis Grenadier",
+          "side": "face",
+          "imageID": "be54dd37198fa4fc"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "074f32981253400816d8cc5561ef8295384ee25713caa04d1ae20b715131e392",
+      "imageIDs": [
+        "c4dded97f767cca7"
+      ],
+      "appearances": [
+        {
+          "team": "Inquisitorial Agents",
+          "assetName": "Questkeeper Agent",
+          "side": "face",
+          "imageID": "c4dded97f767cca7"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "078502debd337f70f90c3e9a1b47620065476038df5ab1610eeb6bc57b14ae1e",
+      "imageIDs": [
+        "a2f6c5473585ad4e"
+      ],
+      "appearances": [
+        {
+          "team": "Blades of Khaine",
+          "assetName": "Ruthless Poise",
+          "side": "face",
+          "imageID": "a2f6c5473585ad4e"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "079aadda938ebc2d1eafb208c5b59f3320f431cb3f917c028928001fc33293e4",
+      "imageIDs": [
+        "f7cfb4904f363beb"
+      ],
+      "appearances": [
+        {
+          "team": "Inquisitorial Agents",
+          "assetName": "Navis Endurant",
+          "side": "face",
+          "imageID": "f7cfb4904f363beb"
+        },
+        {
+          "team": "Imperial Navy Breachers",
+          "assetName": "Navis Endurant",
+          "side": "face",
+          "imageID": "f7cfb4904f363beb"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "0a8edc9172b13e8b43812d56b26424be882a534feffc048dc3a5eed71ed90b23",
+      "imageIDs": [
+        "c38d4ce46e64431b"
+      ],
+      "appearances": [
+        {
+          "team": "Blooded",
+          "assetName": "Symbols of Bloody Worship",
+          "side": "face",
+          "imageID": "c38d4ce46e64431b"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "0c0deb31bdd8bd44ed1853eb001a4d8875a86746ec26895e9ec0f63450a58bc1",
+      "imageIDs": [
+        "78a597e566234e0c"
+      ],
+      "appearances": [
+        {
+          "team": "Blooded",
+          "assetName": "Traitor Enforcer",
+          "side": "face",
+          "imageID": "78a597e566234e0c"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "0ccc061b7fa248570f61603a9b8cc0dbae6d2f26e95e6ee8145091f5024ebe9f",
+      "imageIDs": [
+        "25ef8bf0aa80d6d5"
+      ],
+      "appearances": [
+        {
+          "team": "Inquisitorial Agents",
+          "assetName": "Arbites Vigilant",
+          "side": "face",
+          "imageID": "25ef8bf0aa80d6d5"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "0d7b1673614223cbf09f5a49d9adf47c87fad81d85424c5af935fb6f6449ca74",
+      "imageIDs": [
+        "59a4c5fd74cc7b5e"
+      ],
+      "appearances": [
+        {
+          "team": "Inquisitorial Agents",
+          "assetName": "Requisitioned Gun Servitor",
+          "side": "face",
+          "imageID": "59a4c5fd74cc7b5e"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "0e44be539ae53feed8b5243fd1f84943e5ef22f3c286e38154df6b30c3f2dfbd",
+      "imageIDs": [
+        "1af21509ac78b9bb"
+      ],
+      "appearances": [
+        {
+          "team": "Inquisitorial Agents",
+          "assetName": "Relentless in Pursuit",
+          "side": "face",
+          "imageID": "1af21509ac78b9bb"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "1080b82628aed0350bd36e0134dba3e1ecfa7e3caebb06b34871b7c931fb4c77",
+      "imageIDs": [
+        "f21f11b0d59fecb0"
+      ],
+      "appearances": [
+        {
+          "team": "Inquisitorial Agents",
+          "assetName": "Death Korps Zealot",
+          "side": "face",
+          "imageID": "f21f11b0d59fecb0"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "130834b954d9e2de5716b5f6958e659a5ec39a8bdf75a3dab132cc3d550b7517",
+      "imageIDs": [
+        "fa889ad20cbb6d82"
+      ],
+      "appearances": [
+        {
+          "team": "Imperial Navy Breachers",
+          "assetName": "Void Armour",
+          "side": "face",
+          "imageID": "fa889ad20cbb6d82"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "135498a2bc1c9a56fbec10bf772d68a7dd83cbe8262339e33c8db18697a6f80c",
+      "imageIDs": [
+        "415321ca2561a28b"
+      ],
+      "appearances": [
+        {
+          "team": "Imperial Navy Breachers",
+          "assetName": "Attack Order",
+          "side": "face",
+          "imageID": "415321ca2561a28b"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "1454e07ed4038e6304a23afb3cbde797bba8e66db6f838bcd754fe174560efd2",
+      "imageIDs": [
+        "3f1c1d52904552c8"
+      ],
+      "appearances": [
+        {
+          "team": "Inquisitorial Agents",
+          "assetName": "Navis Surveyor",
+          "side": "back",
+          "imageID": "3f1c1d52904552c8"
+        },
+        {
+          "team": "Imperial Navy Breachers",
+          "assetName": "Navis Surveyor",
+          "side": "back",
+          "imageID": "3f1c1d52904552c8"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "17217f1cac7f1bf987bf7963d283f9966c4266accccce5eefc8f71e035be3f28",
+      "imageIDs": [
+        "adcd5fef777e27a6"
+      ],
+      "appearances": [
+        {
+          "team": "Inquisitorial Agents",
+          "assetName": "Death Korps Trooper",
+          "side": "face",
+          "imageID": "adcd5fef777e27a6"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "18185f956e917ba5b04787b0acef3a41bdc08a4be3589eec288d3124a32e96f6",
+      "imageIDs": [
+        "b80ac9caeecf435c"
+      ],
+      "appearances": [
+        {
+          "team": "Blooded",
+          "assetName": "Chaos Sigil",
+          "side": "face",
+          "imageID": "b80ac9caeecf435c"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "19080489d7937f40b2b4949f752d0551c438facbecdeb2839183bddf631af1cc",
+      "imageIDs": [
+        "6cf58a5c7f2c5c51"
+      ],
+      "appearances": [
+        {
+          "team": "Blades of Khaine",
+          "assetName": "Patient Stalk, Sudden Blow",
+          "side": "face",
+          "imageID": "6cf58a5c7f2c5c51"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "1929c523523e622b8c94dd1226e7c11aa5916df61019e469e390982ae5f8ca09",
+      "imageIDs": [
+        "32e61a16af16bd63"
+      ],
+      "appearances": [
+        {
+          "team": "Blades of Khaine",
+          "assetName": "Striking Scorpion Warrior",
+          "side": "face",
+          "imageID": "32e61a16af16bd63"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "1a199a60740eb7818993cdbe3bb278366baae7274b6486590038232554d84b69",
+      "imageIDs": [
+        "d4dbd4d95bf5de80"
+      ],
+      "appearances": [
+        {
+          "team": "Inquisitorial Agents",
+          "assetName": "Tome-Skull",
+          "side": "back",
+          "imageID": "d4dbd4d95bf5de80"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "1ac87d15994788f666df4fd2213513c0b59ead32a2402b09b285f247ce331cbe",
+      "imageIDs": [
+        "e919f43088f75f32"
+      ],
+      "appearances": [
+        {
+          "team": "Blooded",
+          "assetName": "Traitor Chieftain",
+          "side": "back",
+          "imageID": "e919f43088f75f32"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "1c2b97b9501a744438f879e040e93a98a2bf5b62736b989a997ae873c2ab27c6",
+      "imageIDs": [
+        "c6013d655c5586ff"
+      ],
+      "appearances": [
+        {
+          "team": "Inquisitorial Agents",
+          "assetName": "Navis C.A.T Unit",
+          "side": "back",
+          "imageID": "c6013d655c5586ff"
+        },
+        {
+          "team": "Imperial Navy Breachers",
+          "assetName": "Navis C.A.T Unit",
+          "side": "back",
+          "imageID": "c6013d655c5586ff"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "1ebe597fce468b674a9ecb9a269b5a60485a34225c14bd50a3d4970a0d1285b7",
+      "imageIDs": [
+        "43a5e10d70b01269"
+      ],
+      "appearances": [
+        {
+          "team": "Blooded",
+          "assetName": "Traitor Corpseman",
+          "side": "face",
+          "imageID": "43a5e10d70b01269"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "1ec1ddfdf4f21ee691d44a975a3b545dc5b69b37b7c37ab4fc76afc467ae2a95",
+      "imageIDs": [
+        "75fb28a1060ba00b"
+      ],
+      "appearances": [
+        {
+          "team": "Imperial Navy Breachers",
+          "assetName": "IMPERIAL NAVY BREACHERS KILL TEAM",
+          "side": "face",
+          "imageID": "75fb28a1060ba00b"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "1fcf63ce84683d42b4ff1ea170d326ab6ad20c5a164ed85990973d1b1ab194a6",
+      "imageIDs": [
+        "4e4b20a05478bd75"
+      ],
+      "appearances": [
+        {
+          "team": "Inquisitorial Agents",
+          "assetName": "Kasrkin Gunner",
+          "side": "face",
+          "imageID": "4e4b20a05478bd75"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "2165ca3af44b91a139260f1404df74e4b0c9f3730fd6528db380ea1a562273bd",
+      "imageIDs": [
+        "ad3d86522e57eaa8"
+      ],
+      "appearances": [
+        {
+          "team": "Blades of Khaine",
+          "assetName": "Shriek-that-Kills",
+          "side": "face",
+          "imageID": "ad3d86522e57eaa8"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "276fd1148039235a535c363cd1130f6e723992b64c5fe0daaf5f9eb0574c4e3a",
+      "imageIDs": [
+        "35bdb266c37fc4aa"
+      ],
+      "appearances": [
+        {
+          "team": "Blooded",
+          "assetName": "Traitor Flenser",
+          "side": "face",
+          "imageID": "35bdb266c37fc4aa"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "2956b345e156a2978e5defa8539622e9b62dcd406ca2232c4c44fe43577634b2",
+      "imageIDs": [
+        "b6d8937930077346"
+      ],
+      "appearances": [
+        {
+          "team": "Inquisitorial Agents",
+          "assetName": "Navis Axejack",
+          "side": "face",
+          "imageID": "b6d8937930077346"
+        },
+        {
+          "team": "Imperial Navy Breachers",
+          "assetName": "Navis Axejack",
+          "side": "face",
+          "imageID": "b6d8937930077346"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "2a9b548eb0ebc1218ce9b1a3be74bc37f50ed978a352cc7105c0ab79c6315844",
+      "imageIDs": [
+        "727e8c1ba2f02fe5"
+      ],
+      "appearances": [
+        {
+          "team": "Inquisitorial Agents",
+          "assetName": "Interrogator Agent",
+          "side": "face",
+          "imageID": "727e8c1ba2f02fe5"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "2b9c3a4c09936483446b501d2cd9f39bb7d25412b6e3457eec3bc15e64cb165d",
+      "imageIDs": [
+        "daa3b910a503e576"
+      ],
+      "appearances": [
+        {
+          "team": "Inquisitorial Agents",
+          "assetName": "Penal Legionaire Agent",
+          "side": "face",
+          "imageID": "daa3b910a503e576"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "2be23baac2acbb3fde78d9910c3cdbbc393fb7579f8d19210c1d362ec941b786",
+      "imageIDs": [
+        "dd591b981dfe3e18"
+      ],
+      "appearances": [
+        {
+          "team": "Inquisitorial Agents",
+          "assetName": "Death Korps Confidant",
+          "side": "face",
+          "imageID": "dd591b981dfe3e18"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "2bebd24f7bc1375142407da304de3fdc0eb19678789e896aa4a901aa36829ca4",
+      "imageIDs": [
+        "9f55697ac6e39d46"
+      ],
+      "appearances": [
+        {
+          "team": "Imperial Navy Breachers",
+          "assetName": "Blitz",
+          "side": "face",
+          "imageID": "9f55697ac6e39d46"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "2d8af2332a1d30e578e55ea239f2bb8041e099d1fc1e3b2a3e094202fc8665b6",
+      "imageIDs": [
+        "415708c7df3938ec"
+      ],
+      "appearances": [
+        {
+          "team": "Blades of Khaine",
+          "assetName": "Fading Light",
+          "side": "face",
+          "imageID": "415708c7df3938ec"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "304a355aadc867834fcb13dd559d314372b97a0278174416f834fbabb5d2ff57",
+      "imageIDs": [
+        "8f8cf67be904e5cd"
+      ],
+      "appearances": [
+        {
+          "team": "Blades of Khaine",
+          "assetName": "Bladewind",
+          "side": "face",
+          "imageID": "8f8cf67be904e5cd"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "3277d9afa808645a0e793e2d1bd366c34475b9ac6e681a76491f31391defe8a6",
+      "imageIDs": [
+        "c533e2072fea8e38"
+      ],
+      "appearances": [
+        {
+          "team": "Inquisitorial Agents",
+          "assetName": "Kasrkin Combat Medic",
+          "side": "face",
+          "imageID": "c533e2072fea8e38"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "3350b7ca88befd102e203233b91f8b1e4ec8f1e0db0879372053f9fcf6f3560c",
+      "imageIDs": [
+        "698702da106c1737"
+      ],
+      "appearances": [
+        {
+          "team": "Blooded",
+          "assetName": "Blooded",
+          "side": "face",
+          "imageID": "698702da106c1737"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "340ff4f07d556ac1e27951d1ecc71cd58f830b4e00e2b021b00ae4b1907f950f",
+      "imageIDs": [
+        "de89c1ddc943f02b"
+      ],
+      "appearances": [
+        {
+          "team": "Inquisitorial Agents",
+          "assetName": "Death Korps Bruiser",
+          "side": "face",
+          "imageID": "de89c1ddc943f02b"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "34e7e368bb0cc2562232db6a64d91899a870f4879327386cc57631eaa899a285",
+      "imageIDs": [
+        "448e1035f722d584"
+      ],
+      "appearances": [
+        {
+          "team": "Blades of Khaine",
+          "assetName": "Strike and Fade",
+          "side": "face",
+          "imageID": "448e1035f722d584"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "350c2803d9f4b278c8c3f553b4670341f0cbc0d18f28228351c9e2c6445cec68",
+      "imageIDs": [
+        "132015f875e35c52"
+      ],
+      "appearances": [
+        {
+          "team": "Inquisitorial Agents",
+          "assetName": "Navis Surveyor",
+          "side": "face",
+          "imageID": "132015f875e35c52"
+        },
+        {
+          "team": "Imperial Navy Breachers",
+          "assetName": "Navis Surveyor",
+          "side": "face",
+          "imageID": "132015f875e35c52"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "35e0a767ea8f5bb4ee8dadc5d2897c310a9eca39a385522df7dd1c7ee37b9fa0",
+      "imageIDs": [
+        "c61e244c0f927306"
+      ],
+      "appearances": [
+        {
+          "team": "Inquisitorial Agents",
+          "assetName": "Arbites Vox-Signifier",
+          "side": "face",
+          "imageID": "c61e244c0f927306"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "3718c278f1ae47b354c5e24706598e2d7837bb333a1f75aa51dcece75db31f10",
+      "imageIDs": [
+        "530d0ab7bb5dfcf2"
+      ],
+      "appearances": [
+        {
+          "team": "Inquisitorial Agents",
+          "assetName": "Denounce",
+          "side": "face",
+          "imageID": "530d0ab7bb5dfcf2"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "37d76c43eed4ac10fbd8f83f0ab43ef7811a1bc5b9cdac6afbc6e67e83b316c3",
+      "imageIDs": [
+        "20e447625460cd2c"
+      ],
+      "appearances": [
+        {
+          "team": "Inquisitorial Agents",
+          "assetName": "Navis Armsman",
+          "side": "face",
+          "imageID": "20e447625460cd2c"
+        },
+        {
+          "team": "Imperial Navy Breachers",
+          "assetName": "Navis Armsman",
+          "side": "face",
+          "imageID": "20e447625460cd2c"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "3868ab33ff3c82d1e45865152882e3b24516f7143f5ade6fbda6769a132c96ae",
+      "imageIDs": [
+        "699e1445eaff2468"
+      ],
+      "appearances": [
+        {
+          "team": "Blades of Khaine",
+          "assetName": "Dire Avenger Exarch",
+          "side": "back",
+          "imageID": "699e1445eaff2468"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "38cadad041a63dc0ab5cd740e7af94c35f47ff35958cec02eaf66796ee4b2039",
+      "imageIDs": [
+        "0db06d3365bef07e"
+      ],
+      "appearances": [
+        {
+          "team": "Inquisitorial Agents",
+          "assetName": "Arbites Subductor",
+          "side": "face",
+          "imageID": "0db06d3365bef07e"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "3aef0cd998c6aa80b9d0e78ab4e2b849872ccbaa27cad7a3311ab58efc924338",
+      "imageIDs": [
+        "0a0fb58d617a9971"
+      ],
+      "appearances": [
+        {
+          "team": "Blades of Khaine",
+          "assetName": "Merciless Strikes",
+          "side": "face",
+          "imageID": "0a0fb58d617a9971"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "405d0b3ac4e9be4944595ea4d341c3701d5cb040a9b55ce5618fa4007b3c6b0f",
+      "imageIDs": [
+        "c84afb28993c4446"
+      ],
+      "appearances": [
+        {
+          "team": "Inquisitorial Agents",
+          "assetName": "Intimidating Presence",
+          "side": "face",
+          "imageID": "c84afb28993c4446"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "40863cf6a7d08fcc672bbbdec4af1790c082323e47126671977cf28fe11d640e",
+      "imageIDs": [
+        "ba9f245b0c5590e1"
+      ],
+      "appearances": [
+        {
+          "team": "Inquisitorial Agents",
+          "assetName": "Inquisitorial Agents Kill Team",
+          "side": "back",
+          "imageID": "ba9f245b0c5590e1"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "43c80c59db9d51f761607c5f171e3ca8972722608be2a65473427f94834e6282",
+      "imageIDs": [
+        "52a07e7eb8c67a3a"
+      ],
+      "appearances": [
+        {
+          "team": "Inquisitorial Agents",
+          "assetName": "Pistolier Agent",
+          "side": "face",
+          "imageID": "52a07e7eb8c67a3a"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "445341758fd28f2257d3987aef5afaf55a6fb9807ce5f4e28036b5a352b5587f",
+      "imageIDs": [
+        "80cb40757d67cd84"
+      ],
+      "appearances": [
+        {
+          "team": "Blooded",
+          "assetName": "Traitor Sharpshooter",
+          "side": "face",
+          "imageID": "80cb40757d67cd84"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "44ff56e49a0239c532fc8d19653208a998822b2fcdf1cdcbfaf8144937a72478",
+      "imageIDs": [
+        "49785a6cbeb79a3a"
+      ],
+      "appearances": [
+        {
+          "team": "Blades of Khaine",
+          "assetName": "Rune of Foresight",
+          "side": "face",
+          "imageID": "49785a6cbeb79a3a"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "45f64dbb2a90ec70aa2ff4822f2f89be9b788bf7cc21d0a4729da47b1cd60a4d",
+      "imageIDs": [
+        "4cf3c327a53136f8"
+      ],
+      "appearances": [
+        {
+          "team": "Inquisitorial Agents",
+          "assetName": "Inquisitorial Requisition",
+          "side": "back",
+          "imageID": "4cf3c327a53136f8"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "486ae231b889181eaa0206c5e60fdb7e204f420b7f270c75baa17e45b6ac4835",
+      "imageIDs": [
+        "125c7c5bf0a20493"
+      ],
+      "appearances": [
+        {
+          "team": "Blades of Khaine",
+          "assetName": "Scream-that-Steals",
+          "side": "face",
+          "imageID": "125c7c5bf0a20493"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "488a83f0e633eaa195f978f81d8b24474f65e7c7cc6d25625e16bf09b6db16d5",
+      "imageIDs": [
+        "9e336bf01a711b39"
+      ],
+      "appearances": [
+        {
+          "team": "Inquisitorial Agents",
+          "assetName": "Death Korps Sniper",
+          "side": "face",
+          "imageID": "9e336bf01a711b39"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "49e61514eba89f106b5047b70e3b99d0a6c95f2a69b10b46451c30bde5d17515",
+      "imageIDs": [
+        "4b8056636add6491"
+      ],
+      "appearances": [
+        {
+          "team": "Inquisitorial Agents",
+          "assetName": "Intense Scrutiny",
+          "side": "face",
+          "imageID": "4b8056636add6491"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "4ff5b4dd86ba7288331597f0a9c23128ad77c58bcc9cf03e6f351efff7ae6885",
+      "imageIDs": [
+        "18a1756265da23be"
+      ],
+      "appearances": [
+        {
+          "team": "Blades of Khaine",
+          "assetName": "Howling Banshee Exarch",
+          "side": "face",
+          "imageID": "18a1756265da23be"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "5054a0201af86c396adc0ba62367ca8487a8289fb392af925206f6bdca91316f",
+      "imageIDs": [
+        "d97eaca60a3148e7"
+      ],
+      "appearances": [
+        {
+          "team": "Inquisitorial Agents",
+          "assetName": "Tempestus Scion Gunner",
+          "side": "face",
+          "imageID": "d97eaca60a3148e7"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "51b52165f332e9e1b1f75c435f6fac127d5ea40d63f7a63a0e38009df4325d4b",
+      "imageIDs": [
+        "b1001a2ad47144d1"
+      ],
+      "appearances": [
+        {
+          "team": "Inquisitorial Agents",
+          "assetName": "Arbites Chirurgant",
+          "side": "back",
+          "imageID": "b1001a2ad47144d1"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "5201507303632c634708e571beaac900d14d70978245c3d918f956c4eea01bc1",
+      "imageIDs": [
+        "5d4d8aafc42b0d13"
+      ],
+      "appearances": [
+        {
+          "team": "Inquisitorial Agents",
+          "assetName": "Kasrkin Trooper",
+          "side": "face",
+          "imageID": "5d4d8aafc42b0d13"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "52e431b8306751a866f24670ff7ff816c9e3a97b2a0ace1f4a1cb687b1e7e824",
+      "imageIDs": [
+        "e66e9094e783e53a"
+      ],
+      "appearances": [
+        {
+          "team": "Inquisitorial Agents",
+          "assetName": "Arbites Leashmaster",
+          "side": "back",
+          "imageID": "e66e9094e783e53a"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "53ca9425cc5cd4c07b75ffe17cf8d3bc8d937f7c79a2f203666d1480322dd225",
+      "imageIDs": [
+        "ddcd879bb53a05b8"
+      ],
+      "appearances": [
+        {
+          "team": "Imperial Navy Breachers",
+          "assetName": "Brace for Counterattack",
+          "side": "face",
+          "imageID": "ddcd879bb53a05b8"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "54eac3e9f3fcb9822e84b15050191d0c22668e5bcb63a05399f76e27aa6ec1b2",
+      "imageIDs": [
+        "2d7487309a1272d1"
+      ],
+      "appearances": [
+        {
+          "team": "Imperial Navy Breachers",
+          "assetName": "Navis Sergeant-At-Arms",
+          "side": "face",
+          "imageID": "2d7487309a1272d1"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "5688a5ac246881d9b5b0b74bbb8990a4b9867aa0462ed5ef2b68830825ead52e",
+      "imageIDs": [
+        "7cb67df11006d92b"
+      ],
+      "appearances": [
+        {
+          "team": "Inquisitorial Agents",
+          "assetName": "Death Korps",
+          "side": "face",
+          "imageID": "7cb67df11006d92b"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "57727be4ab46e09ee420f588fb213294ef376f460991bb7042f41737488736d9",
+      "imageIDs": [
+        "0cca7bec1c969bba"
+      ],
+      "appearances": [
+        {
+          "team": "Inquisitorial Agents",
+          "assetName": "Sisters of Silence",
+          "side": "back",
+          "imageID": "0cca7bec1c969bba"
+        },
+        {
+          "team": "Inquisitorial Agents",
+          "assetName": "Kasrkin",
+          "side": "back",
+          "imageID": "0cca7bec1c969bba"
+        },
+        {
+          "team": "Inquisitorial Agents",
+          "assetName": "Tempestus Scions",
+          "side": "back",
+          "imageID": "0cca7bec1c969bba"
+        },
+        {
+          "team": "Inquisitorial Agents",
+          "assetName": "Intimidating Presence",
+          "side": "back",
+          "imageID": "0cca7bec1c969bba"
+        },
+        {
+          "team": "Inquisitorial Agents",
+          "assetName": "Relentless in Pursuit",
+          "side": "back",
+          "imageID": "0cca7bec1c969bba"
+        },
+        {
+          "team": "Inquisitorial Agents",
+          "assetName": "Absolute Authority",
+          "side": "back",
+          "imageID": "0cca7bec1c969bba"
+        },
+        {
+          "team": "Inquisitorial Agents",
+          "assetName": "The Emperor's Will",
+          "side": "back",
+          "imageID": "0cca7bec1c969bba"
+        },
+        {
+          "team": "Inquisitorial Agents",
+          "assetName": "Denounce",
+          "side": "back",
+          "imageID": "0cca7bec1c969bba"
+        },
+        {
+          "team": "Inquisitorial Agents",
+          "assetName": "Intense Scrutiny",
+          "side": "back",
+          "imageID": "0cca7bec1c969bba"
+        },
+        {
+          "team": "Inquisitorial Agents",
+          "assetName": "Quarry",
+          "side": "back",
+          "imageID": "0cca7bec1c969bba"
+        },
+        {
+          "team": "Inquisitorial Agents",
+          "assetName": "Irrefutable Jurisdiction",
+          "side": "back",
+          "imageID": "0cca7bec1c969bba"
+        },
+        {
+          "team": "Inquisitorial Agents",
+          "assetName": "Inquisitorial Rosette",
+          "side": "back",
+          "imageID": "0cca7bec1c969bba"
+        },
+        {
+          "team": "Inquisitorial Agents",
+          "assetName": "Combat Daggers",
+          "side": "back",
+          "imageID": "0cca7bec1c969bba"
+        },
+        {
+          "team": "Inquisitorial Agents",
+          "assetName": "Armoured Bodysuits",
+          "side": "back",
+          "imageID": "0cca7bec1c969bba"
+        },
+        {
+          "team": "Inquisitorial Agents",
+          "assetName": "Servo-Skull",
+          "side": "back",
+          "imageID": "0cca7bec1c969bba"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "58ed2e5b29ca3365d3cc5bc79c124777424dd17020e523217a15ca9a0471f0f9",
+      "imageIDs": [
+        "f4a9494cc76c2c42"
+      ],
+      "appearances": [
+        {
+          "team": "Inquisitorial Agents",
+          "assetName": "Arbites Marksman",
+          "side": "face",
+          "imageID": "f4a9494cc76c2c42"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "5a641758d23220049da2262f491f3f375948b4862ab4072c2d39c10ccd63d69d",
+      "imageIDs": [
+        "00370aceef97d205"
+      ],
+      "appearances": [
+        {
+          "team": "Inquisitorial Agents",
+          "assetName": "Tempestus Scion Medic",
+          "side": "back",
+          "imageID": "00370aceef97d205"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "5c8003fd6ae0e061e8876b266a1c920e4bc98ba1af9f07341b4c4c45a44a30fc",
+      "imageIDs": [
+        "fc0740e5d8275174"
+      ],
+      "appearances": [
+        {
+          "team": "Inquisitorial Agents",
+          "assetName": "Arbites Gunner",
+          "side": "face",
+          "imageID": "fc0740e5d8275174"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "5d8ace3f13d25017bf7f9516bd0a18cc14a924eaa19b821aba00b57714cd9578",
+      "imageIDs": [
+        "a73a846137cc143e"
+      ],
+      "appearances": [
+        {
+          "team": "Inquisitorial Agents",
+          "assetName": "Imperial Navy Breachers",
+          "side": "back",
+          "imageID": "a73a846137cc143e"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "5f9f0484044aa54f2e813b026ce148265286d46064f559a22fd04697b365e90e",
+      "imageIDs": [
+        "9f5f940acf29e4cc"
+      ],
+      "appearances": [
+        {
+          "team": "Imperial Navy Breachers",
+          "assetName": "Slugs",
+          "side": "face",
+          "imageID": "9f5f940acf29e4cc"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "61690220b937da36ffe182ee3ed853810cbe1eba8c67171af75c0af3b8a04d31",
+      "imageIDs": [
+        "20c4b5e699a0b051"
+      ],
+      "appearances": [
+        {
+          "team": "Inquisitorial Agents",
+          "assetName": "The Emperor's Will",
+          "side": "face",
+          "imageID": "20c4b5e699a0b051"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "62ca85fb73155ff648f824b050962fb398d39be540233eb08a45506d36da67a2",
+      "imageIDs": [
+        "c2d1f20329e12244"
+      ],
+      "appearances": [
+        {
+          "team": "Blooded",
+          "assetName": "Traitor Ogryn",
+          "side": "face",
+          "imageID": "c2d1f20329e12244"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "6334a80390554e202c60bffe31c3457e77a531720146661139e1e4c23b543aed",
+      "imageIDs": [
+        "c6e100f4bb697a78"
+      ],
+      "appearances": [
+        {
+          "team": "Blades of Khaine",
+          "assetName": "Rune of Prophesy",
+          "side": "face",
+          "imageID": "c6e100f4bb697a78"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "63ab8822c16ee65024238628dfd77fe8511e862dd12394915b918355030ed9f1",
+      "imageIDs": [
+        "e0f14f52863b15bd"
+      ],
+      "appearances": [
+        {
+          "team": "Blades of Khaine",
+          "assetName": "Forewarned",
+          "side": "face",
+          "imageID": "e0f14f52863b15bd"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "642fda837544cecbf59f0f4e2aa0b337d41770b0fc6e87f2d7d08a36b0217f61",
+      "imageIDs": [
+        "87cd250bee3bcb70"
+      ],
+      "appearances": [
+        {
+          "team": "Inquisitorial Agents",
+          "assetName": "Sister of Silence Prosecutor",
+          "side": "face",
+          "imageID": "87cd250bee3bcb70"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "65eb45f49a75d06c977c354af9da9be7634921b5a777fdfc7cb914d427aaf7ee",
+      "imageIDs": [
+        "0510e2cf00490dcf"
+      ],
+      "appearances": [
+        {
+          "team": "Inquisitorial Agents",
+          "assetName": "Navis Gheistskull",
+          "side": "face",
+          "imageID": "0510e2cf00490dcf"
+        },
+        {
+          "team": "Imperial Navy Breachers",
+          "assetName": "Navis Gheistskull",
+          "side": "face",
+          "imageID": "0510e2cf00490dcf"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "6b7794deb3aa4ff5c5e6ffc34ff65a8bc990b376b271e67f86d8ac4941723eee",
+      "imageIDs": [
+        "25d8c9d28d60f3ed"
+      ],
+      "appearances": [
+        {
+          "team": "Inquisitorial Agents",
+          "assetName": "Mystic Agent",
+          "side": "face",
+          "imageID": "25d8c9d28d60f3ed"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "6bc221c5ac40df5ba435118688fb31dc94128e8d0d721c3521b3ebc07e1f81d6",
+      "imageIDs": [
+        "8b0cab4ef930614b"
+      ],
+      "appearances": [
+        {
+          "team": "Inquisitorial Agents",
+          "assetName": "Imperial Navy Breachers",
+          "side": "face",
+          "imageID": "8b0cab4ef930614b"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "6c6c62f1670697143c45e09687bd290e3fdd92fee2bfc4fbed6c0d5f23555b63",
+      "imageIDs": [
+        "0c23238efd38a481"
+      ],
+      "appearances": [
+        {
+          "team": "Imperial Navy Breachers",
+          "assetName": "System Override Device",
+          "side": "face",
+          "imageID": "0c23238efd38a481"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "702e729bdb6a8627a59b07b92d3d9bc9002d2b67e9f9450d4f31f015f987a762",
+      "imageIDs": [
+        "5add42d81d1350ea"
+      ],
+      "appearances": [
+        {
+          "team": "Blades of Khaine",
+          "assetName": "Acrobatic",
+          "side": "face",
+          "imageID": "5add42d81d1350ea"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "70d1c307cba101a3be64355195cac24b7b48bfa0294c6a8d39b6e46be2dc2ad8",
+      "imageIDs": [
+        "cb21608a412e894e"
+      ],
+      "appearances": [
+        {
+          "team": "Inquisitorial Agents",
+          "assetName": "Inquisitorial Requisition",
+          "side": "face",
+          "imageID": "cb21608a412e894e"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "74f0c8f4a3cd487d0f0bceda42822aabdab4fb007a230353e8f624e40d177fcd",
+      "imageIDs": [
+        "98c1fea2ff18adce"
+      ],
+      "appearances": [
+        {
+          "team": "Inquisitorial Agents",
+          "assetName": "Navis Gunner",
+          "side": "face",
+          "imageID": "98c1fea2ff18adce"
+        },
+        {
+          "team": "Imperial Navy Breachers",
+          "assetName": "Navis Gunner",
+          "side": "face",
+          "imageID": "98c1fea2ff18adce"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "7631ab33abf2cb65c8a8ccec0cb2a196e4ce75e914aab17c71cb95ac827e307b",
+      "imageIDs": [
+        "18b8601b6cbbc907"
+      ],
+      "appearances": [
+        {
+          "team": "Inquisitorial Agents",
+          "assetName": "Death Korps Veteran",
+          "side": "face",
+          "imageID": "18b8601b6cbbc907"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "78a864d0960bcd51f3200f715dace57fe4acded25d2dee1aaf0f73d00f40cc3a",
+      "imageIDs": [
+        "900958e9f1f21e31"
+      ],
+      "appearances": [
+        {
+          "team": "Imperial Navy Breachers",
+          "assetName": "Navis Sergeant-At-Arms",
+          "side": "back",
+          "imageID": "900958e9f1f21e31"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "791b79e0b1987174b2113e344f9dc9861fa3f5c89f8bf1902905f29c80a39e2a",
+      "imageIDs": [
+        "8f64fae5a8a1c2ea"
+      ],
+      "appearances": [
+        {
+          "team": "Inquisitorial Agents",
+          "assetName": "Tempestus Scion Trooper",
+          "side": "face",
+          "imageID": "8f64fae5a8a1c2ea"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "7940afb1b7b455af6bb9bb99c85c4b7972f679f6208cdb2d07a85d3ef5c299f8",
+      "imageIDs": [
+        "0a7928ff7d5e3b9e"
+      ],
+      "appearances": [
+        {
+          "team": "Inquisitorial Agents",
+          "assetName": "Autosavant Agent",
+          "side": "face",
+          "imageID": "0a7928ff7d5e3b9e"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "7a50ecbd923b39b2607ef68485e2286fae8f2a14f1f6569bbef325194771506a",
+      "imageIDs": [
+        "6539c9b06f453cd1"
+      ],
+      "appearances": [
+        {
+          "team": "Blooded",
+          "assetName": "Bitter Demise",
+          "side": "face",
+          "imageID": "6539c9b06f453cd1"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "7acb2eaa7bbba912b010aa79cbbc59397b01eeff699c064fedc0c57c7df56616",
+      "imageIDs": [
+        "cfd6a6a56b0f2f47"
+      ],
+      "appearances": [
+        {
+          "team": "Inquisitorial Agents",
+          "assetName": "Death Korps",
+          "side": "back",
+          "imageID": "cfd6a6a56b0f2f47"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "7c42dca5f5d671a51052ecd9aaebed939b87739dd6144d1df4d606cd7cda60d9",
+      "imageIDs": [
+        "e97c0e40c19e7ad7"
+      ],
+      "appearances": [
+        {
+          "team": "Blooded",
+          "assetName": "BLOODED KILL TEAM",
+          "side": "back",
+          "imageID": "e97c0e40c19e7ad7"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "7ce4a48a08ab94b975ba36c28ec13f3dec9477e9eb9bba8df2a8504d0f56a639",
+      "imageIDs": [
+        "aba580d70984e49e"
+      ],
+      "appearances": [
+        {
+          "team": "Inquisitorial Agents",
+          "assetName": "Kasrkin",
+          "side": "face",
+          "imageID": "aba580d70984e49e"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "7e70ae9e72ff094ea3f924ca85624d6c45b243bbd75d0a2c363cd12bc188fc34",
+      "imageIDs": [
+        "f9e5648ec03544e6"
+      ],
+      "appearances": [
+        {
+          "team": "Inquisitorial Agents",
+          "assetName": "Armoured Bodysuits",
+          "side": "face",
+          "imageID": "f9e5648ec03544e6"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "7ec245ac09898c9a418ef766bf5229b6f253e599cae8f0d93fefe4da72f46aef",
+      "imageIDs": [
+        "277093dffad86304"
+      ],
+      "appearances": [
+        {
+          "team": "Inquisitorial Agents",
+          "assetName": "Kasrkin Vox-Trooper",
+          "side": "face",
+          "imageID": "277093dffad86304"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "80a55b5b40520d062ece6d4350413cf810da1f87259d517f2dc39c771fb1c440",
+      "imageIDs": [
+        "4c321c989cc406b3"
+      ],
+      "appearances": [
+        {
+          "team": "Inquisitorial Agents",
+          "assetName": "Death Korps Spotter",
+          "side": "face",
+          "imageID": "4c321c989cc406b3"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "8305250de022363cd87f9bd17e300e91c26afb1910000fa79a0c31b49b641fda",
+      "imageIDs": [
+        "0b4e6431fa113e40"
+      ],
+      "appearances": [
+        {
+          "team": "Imperial Navy Breachers",
+          "assetName": "Overwhelm Target",
+          "side": "face",
+          "imageID": "0b4e6431fa113e40"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "8320d61fd2bf4e04d262def21059b297688a9a9fe066630608796014e6cdfc26",
+      "imageIDs": [
+        "7ad1d7b53d9484f6"
+      ],
+      "appearances": [
+        {
+          "team": "Blades of Khaine",
+          "assetName": "Scorpion's Eye",
+          "side": "face",
+          "imageID": "7ad1d7b53d9484f6"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "8629b7f8c4f9c113ad4aa11cebea76083307923561ad92039760e38f9baf54c5",
+      "imageIDs": [
+        "ba4a3c7a39d603ab"
+      ],
+      "appearances": [
+        {
+          "team": "Inquisitorial Agents",
+          "assetName": "Sisters of Silence",
+          "side": "face",
+          "imageID": "ba4a3c7a39d603ab"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "86a875422d7bff650aac7e233dcf99250096a3082e3a2af85f36bdc7074da642",
+      "imageIDs": [
+        "3465ea9e43ba264b"
+      ],
+      "appearances": [
+        {
+          "team": "Blades of Khaine",
+          "assetName": "Dance of Death",
+          "side": "face",
+          "imageID": "3465ea9e43ba264b"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "87e678cee49f3280d28883658c92dea0ae2960250fd2cbc1be106655be66df9f",
+      "imageIDs": [
+        "45c02cba66319640"
+      ],
+      "appearances": [
+        {
+          "team": "Inquisitorial Agents",
+          "assetName": "Death Korps Vox-Operator",
+          "side": "face",
+          "imageID": "45c02cba66319640"
+        },
+        {
+          "team": "Inquisitorial Agents",
+          "assetName": "Death Korps Vox-Operator",
+          "side": "back",
+          "imageID": "45c02cba66319640"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "8cec3818eaf873aab8982ab7c18e3bb777b699506b6cd7d273d1f5e7e4f14ddb",
+      "imageIDs": [
+        "31392bb43c68226d"
+      ],
+      "appearances": [
+        {
+          "team": "Blooded",
+          "assetName": "Dark Favour",
+          "side": "face",
+          "imageID": "31392bb43c68226d"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "8d3cd2b0fdab8a9fde858d29e19acc6b62354158f514f5af3407c5212947c83a",
+      "imageIDs": [
+        "2ed129ee854e1912"
+      ],
+      "appearances": [
+        {
+          "team": "Imperial Navy Breachers",
+          "assetName": "Defence Order",
+          "side": "face",
+          "imageID": "2ed129ee854e1912"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "926b4ba98f592bc50eb4ae3236538ce4a304aa458262479dac8a455175c332fd",
+      "imageIDs": [
+        "899d973c00154181"
+      ],
+      "appearances": [
+        {
+          "team": "Blades of Khaine",
+          "assetName": "Wraithbone Talisman",
+          "side": "face",
+          "imageID": "899d973c00154181"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "92bfc40cf3086fcb18a3d11bf39ae9355a0a569599135eb15625aac06affdbe7",
+      "imageIDs": [
+        "0577d12a052d0f4b"
+      ],
+      "appearances": [
+        {
+          "team": "Blades of Khaine",
+          "assetName": "Unsisting, Immovable",
+          "side": "face",
+          "imageID": "0577d12a052d0f4b"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "94a6a4d4d140a743a12e97afe1bed5dc174300b492e348755aec30751b1a2793",
+      "imageIDs": [
+        "dc7e38f33dc20696"
+      ],
+      "appearances": [
+        {
+          "team": "Inquisitorial Agents",
+          "assetName": "Tome-Skull",
+          "side": "face",
+          "imageID": "dc7e38f33dc20696"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "953d1963512c45aedabf40969ebee67ae77c120eef377d3a554c814e757c34c0",
+      "imageIDs": [
+        "742b681b4bdbee2b"
+      ],
+      "appearances": [
+        {
+          "team": "Imperial Navy Breachers",
+          "assetName": "Combat Stimms",
+          "side": "face",
+          "imageID": "742b681b4bdbee2b"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "959e453b7a6e34a22fe3d01802f30409ef76e37555713b759a4ccacd47bc8c8e",
+      "imageIDs": [
+        "7728826d14c21c15"
+      ],
+      "appearances": [
+        {
+          "team": "Blades of Khaine",
+          "assetName": "Raging Heat of the Dying Flame",
+          "side": "face",
+          "imageID": "7728826d14c21c15"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "9927e9c52c2b36ebb5861c4b064b1fb1335471bbc17c3071859a32b792c1767e",
+      "imageIDs": [
+        "6314c7612f520759"
+      ],
+      "appearances": [
+        {
+          "team": "Inquisitorial Agents",
+          "assetName": "Enlightener Agent",
+          "side": "face",
+          "imageID": "6314c7612f520759"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "993f743fb7ad3fb7f2cbef5bdb8bff5d5a3a5ba797423890e3aac91b1b566704",
+      "imageIDs": [
+        "f02702bab45d699d"
+      ],
+      "appearances": [
+        {
+          "team": "Inquisitorial Agents",
+          "assetName": "Death Korps Confidant",
+          "side": "back",
+          "imageID": "f02702bab45d699d"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "99fde51a645fde051fbbaab65fe733b60bbd6a83e65f4b932a7470b7fbc28c25",
+      "imageIDs": [
+        "dc4779172f8f75b3"
+      ],
+      "appearances": [
+        {
+          "team": "Inquisitorial Agents",
+          "assetName": "Sister of Silence Witchseeker",
+          "side": "face",
+          "imageID": "dc4779172f8f75b3"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "9a2d94a018d77f65100b00befb79ae352154981613973003f0cccc7484d5ec23",
+      "imageIDs": [
+        "6fcbac28d8e5d060"
+      ],
+      "appearances": [
+        {
+          "team": "Blades of Khaine",
+          "assetName": "One with the Gloom",
+          "side": "face",
+          "imageID": "6fcbac28d8e5d060"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "9bd64e03950abfbebacd566003fa0e96f9e4ab12b5473b91f3836d8e46555a1b",
+      "imageIDs": [
+        "84791fe702c1b990"
+      ],
+      "appearances": [
+        {
+          "team": "Imperial Navy Breachers",
+          "assetName": "IMPERIAL NAVY BREACHERS KILL TEAM",
+          "side": "back",
+          "imageID": "84791fe702c1b990"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "9d497a0500acdaee5490e2031469d22b971f8acb2cec7c8a5ff53d5664038b3b",
+      "imageIDs": [
+        "cf28c3ad159b7f6b"
+      ],
+      "appearances": [
+        {
+          "team": "Inquisitorial Agents",
+          "assetName": "Death Korps Sapper",
+          "side": "face",
+          "imageID": "cf28c3ad159b7f6b"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "9ea025ae5da38a3f4aef0c13706279832227d3f318ba3aff07db65549be1bb10",
+      "imageIDs": [
+        "acbcd1c36b7023ad"
+      ],
+      "appearances": [
+        {
+          "team": "Blooded",
+          "assetName": "Callous Disregard",
+          "side": "face",
+          "imageID": "acbcd1c36b7023ad"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "9f47bfb7a3eeac09558238153b60e2476815d58309fbb45a259366b19bf0c9d5",
+      "imageIDs": [
+        "8bec06936b4068c0"
+      ],
+      "appearances": [
+        {
+          "team": "Blades of Khaine",
+          "assetName": "Aspect Techniques",
+          "side": "face",
+          "imageID": "8bec06936b4068c0"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "9fe899860eeb13ace816bcdda8a334a8b17c61462b36dda9a705109bac686245",
+      "imageIDs": [
+        "16e3341d9be85071"
+      ],
+      "appearances": [
+        {
+          "team": "Imperial Navy Breachers",
+          "assetName": "Deck Hand",
+          "side": "face",
+          "imageID": "16e3341d9be85071"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "a01f7185a33793d238f8da8a24f03d39ba20dc252dca0468ef41300640dee8b8",
+      "imageIDs": [
+        "e1a2be7f696768b1"
+      ],
+      "appearances": [
+        {
+          "team": "Inquisitorial Agents",
+          "assetName": "Sister of Silence Vigilator",
+          "side": "face",
+          "imageID": "e1a2be7f696768b1"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "a1f519c39e5e1ed3e5d5b3059ed5af0d151bc478fff58106a5e6ef0e9124244a",
+      "imageIDs": [
+        "d60df827b3e170f8"
+      ],
+      "appearances": [
+        {
+          "team": "Blades of Khaine",
+          "assetName": "The Slicing Hurricane",
+          "side": "face",
+          "imageID": "d60df827b3e170f8"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "a31ca8228c78d4360a15349c937e95e3f48a363cc6d60ae21065e769b7990dd7",
+      "imageIDs": [
+        "fbf31b574824b951"
+      ],
+      "appearances": [
+        {
+          "team": "Blooded",
+          "assetName": "Traitor Chieftain",
+          "side": "face",
+          "imageID": "fbf31b574824b951"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "a3c69bb52889607f4587913969ec3d88d4349d53acb067992644e3e4dabe7fba",
+      "imageIDs": [
+        "8ec2eba8a73db500"
+      ],
+      "appearances": [
+        {
+          "team": "Imperial Navy Breachers",
+          "assetName": "Close Assault",
+          "side": "face",
+          "imageID": "8ec2eba8a73db500"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "a4f2abb746ed0c9f3bc63d76feeaa6ab924eed5e0d9e7569431c189f94ae69df",
+      "imageIDs": [
+        "8f1f8bfd29b8f693"
+      ],
+      "appearances": [
+        {
+          "team": "Blades of Khaine",
+          "assetName": "Vigilance of the Avenger",
+          "side": "face",
+          "imageID": "8f1f8bfd29b8f693"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "a658f4c6c2bb2830c45b8689bc986e38e15a5a0ad6dc7563cfcd46a1c40b0550",
+      "imageIDs": [
+        "c3920a74a3110ce6"
+      ],
+      "appearances": [
+        {
+          "team": "Inquisitorial Agents",
+          "assetName": "Exaction Squad",
+          "side": "face",
+          "imageID": "c3920a74a3110ce6"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "a7a380dbfdc86dfa9e57cc66ed10350a9dcc1d3cbbc545061f93564bdcfad21d",
+      "imageIDs": [
+        "5470b5430830d22c"
+      ],
+      "appearances": [
+        {
+          "team": "Inquisitorial Agents",
+          "assetName": "Inquisitorial Rosette",
+          "side": "face",
+          "imageID": "5470b5430830d22c"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "a917c5e31087a02ea2e5d5a6ff9b11433ca6b33ae3f4f54d6d2a95f5d45cbd15",
+      "imageIDs": [
+        "ca1b404e8606b9b8"
+      ],
+      "appearances": [
+        {
+          "team": "Blooded",
+          "assetName": "Trator Thug",
+          "side": "face",
+          "imageID": "ca1b404e8606b9b8"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "a95bda86a518e45b8c5fce53a883d1bc4313018b5192fb53ba70814e635cceb7",
+      "imageIDs": [
+        "cf83b4f1ded05c7e"
+      ],
+      "appearances": [
+        {
+          "team": "Inquisitorial Agents",
+          "assetName": "Navis Void Jammer",
+          "side": "back",
+          "imageID": "cf83b4f1ded05c7e"
+        },
+        {
+          "team": "Imperial Navy Breachers",
+          "assetName": "Navis Void Jammer",
+          "side": "back",
+          "imageID": "cf83b4f1ded05c7e"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "a9c606e5378d11dcbf824f7d25de8b96d76e6279ade962aa75d1cd305fbfcda2",
+      "imageIDs": [
+        "4416ed576f32d499"
+      ],
+      "appearances": [
+        {
+          "team": "Inquisitorial Agents",
+          "assetName": "Tempestus Scions",
+          "side": "face",
+          "imageID": "4416ed576f32d499"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "ac935055b145110f87bc4b6a785c17fb8b5163a627f70002b703f327c61c3077",
+      "imageIDs": [
+        "52f8346d0a7367c7"
+      ],
+      "appearances": [
+        {
+          "team": "Blooded",
+          "assetName": "Reward Earned",
+          "side": "face",
+          "imageID": "52f8346d0a7367c7"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "b04b651014be1713b868aa5a420f03b2d5696e3b5c2464f6198f8f1f2d899053",
+      "imageIDs": [
+        "1c155ac8bd6f46f9"
+      ],
+      "appearances": [
+        {
+          "team": "Blooded",
+          "assetName": "Malevolent Grit",
+          "side": "face",
+          "imageID": "1c155ac8bd6f46f9"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "b06f4b34f9f8c4bba916f1fcb8a6681bbe53dda78487f7880c596cfd1f9f982a",
+      "imageIDs": [
+        "1eb451d73f195c35"
+      ],
+      "appearances": [
+        {
+          "team": "Inquisitorial Agents",
+          "assetName": "Arbites Chirurgant",
+          "side": "face",
+          "imageID": "1eb451d73f195c35"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "b0f5facdd0e228bcd3d1eb886d49cb0bc18611854a9c28d3523e079fb45b580f",
+      "imageIDs": [
+        "e7a61a734820f892"
+      ],
+      "appearances": [
+        {
+          "team": "Blades of Khaine",
+          "assetName": "The Woe",
+          "side": "face",
+          "imageID": "e7a61a734820f892"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "b2f31d4219b426a45d336157fcbfa7a4a20daef703154359de9c1942883b861e",
+      "imageIDs": [
+        "b70c91dcd6dd963d"
+      ],
+      "appearances": [
+        {
+          "team": "Inquisitorial Agents",
+          "assetName": "Navis Hatchcutter",
+          "side": "face",
+          "imageID": "b70c91dcd6dd963d"
+        },
+        {
+          "team": "Imperial Navy Breachers",
+          "assetName": "Navis Hatchcutter",
+          "side": "face",
+          "imageID": "b70c91dcd6dd963d"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "b3ca5772275cd12bb2d79655a26e71eb49c5b1889e69f95fde62ff90c3d0286b",
+      "imageIDs": [
+        "d9dac103c5a2f4b5"
+      ],
+      "appearances": [
+        {
+          "team": "Blades of Khaine",
+          "assetName": "BLADES OF KHAINE KILL TEAM",
+          "side": "back",
+          "imageID": "d9dac103c5a2f4b5"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "b4f453b62a0ed1dc7c5e767db6d828544e661acdbc979d73d6edcb6ddf5de11b",
+      "imageIDs": [
+        "241ec729a47ab6d3"
+      ],
+      "appearances": [
+        {
+          "team": "Inquisitorial Agents",
+          "assetName": "R-VR Cyber-Mastiff",
+          "side": "face",
+          "imageID": "241ec729a47ab6d3"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "b4ff4fc03057849d94022407bfb54c40202f1d3de8af870316c9004098758327",
+      "imageIDs": [
+        "39b31a7c9cbc4c31"
+      ],
+      "appearances": [
+        {
+          "team": "Blades of Khaine",
+          "assetName": "Death of the Thousand Blades",
+          "side": "face",
+          "imageID": "39b31a7c9cbc4c31"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "b6175a9df4c1317c14bbba5ef27cff95d6b351892be24bd8c0ff7ee6f7e6e8a2",
+      "imageIDs": [
+        "116a28c7f35e337d"
+      ],
+      "appearances": [
+        {
+          "team": "Blades of Khaine",
+          "assetName": "Rain of Tears",
+          "side": "face",
+          "imageID": "116a28c7f35e337d"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "b6259277d136d930048f6a30707e3ff2accbc1c343190533ee78bfcf7afe0f46",
+      "imageIDs": [
+        "c87f6b1145414f6f"
+      ],
+      "appearances": [
+        {
+          "team": "Blades of Khaine",
+          "assetName": "BLADES OF KHAINE KILL TEAM",
+          "side": "face",
+          "imageID": "c87f6b1145414f6f"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "b751f8c4fdc4408bfaafa98fe43b3fa0e9f584f966be137086b07f84e554e6a9",
+      "imageIDs": [
+        "c19329f6a84b8f98"
+      ],
+      "appearances": [
+        {
+          "team": "Inquisitorial Agents",
+          "assetName": "Exaction Squad",
+          "side": "back",
+          "imageID": "c19329f6a84b8f98"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "b9d2623835dc30750ae2fb994bda9fb55ed47a8142862e061cfc28285fcc357e",
+      "imageIDs": [
+        "10f06ff46910927b"
+      ],
+      "appearances": [
+        {
+          "team": "Inquisitorial Agents",
+          "assetName": "Kasrkin Demo-Trooper",
+          "side": "face",
+          "imageID": "10f06ff46910927b"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "bc5d817287987bcdccbe4a41c7bb269e877e14107717930e95516cca5f06e70c",
+      "imageIDs": [
+        "bc939f1637427599"
+      ],
+      "appearances": [
+        {
+          "team": "Blades of Khaine",
+          "assetName": "Striking Scorpion Exarch",
+          "side": "face",
+          "imageID": "bc939f1637427599"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "beb9921946a00eb5c1a2a5873e2bc7192e2a226804671f55e225c17876950acf",
+      "imageIDs": [
+        "af2405c62a9a5e6f"
+      ],
+      "appearances": [
+        {
+          "team": "Inquisitorial Agents",
+          "assetName": "Kasrkin Sharpshooter",
+          "side": "face",
+          "imageID": "af2405c62a9a5e6f"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "bfbf4f4277afe2a741c1e43bb08b06210c66534f220eb02bb7315fa483a2c1f5",
+      "imageIDs": [
+        "51c73047cb6ee9fd"
+      ],
+      "appearances": [
+        {
+          "team": "Blooded",
+          "assetName": "Sinister Trophies",
+          "side": "face",
+          "imageID": "51c73047cb6ee9fd"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "c0c84c581f53a777f79d7569f2d6560572f5e4ab2b249b7c48f36e0b7aaff30a",
+      "imageIDs": [
+        "342c98e2e7faab8a"
+      ],
+      "appearances": [
+        {
+          "team": "Blooded",
+          "assetName": "Glory Kill",
+          "side": "face",
+          "imageID": "342c98e2e7faab8a"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "c3689cf238aeac4177d49778f14357889893ef4be9f94b7dd838ce45fae2b8fb",
+      "imageIDs": [
+        "c0a303805cec1dfd"
+      ],
+      "appearances": [
+        {
+          "team": "Blades of Khaine",
+          "assetName": "Dire Avenger Warrior",
+          "side": "face",
+          "imageID": "c0a303805cec1dfd"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "c49c75150ac4384e5fb066216c8e4ec25f0e01c511a53ff43d645369ae22a102",
+      "imageIDs": [
+        "c4cbb7311efd91b4"
+      ],
+      "appearances": [
+        {
+          "team": "Inquisitorial Agents",
+          "assetName": "Tempestus Scion Medic",
+          "side": "face",
+          "imageID": "c4cbb7311efd91b4"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "c6d2574a5b3f97ee2d2e5c255c25c538ccf9340e9d762e738ee74ef25e6b20d0",
+      "imageIDs": [
+        "ada83852bf705bc3"
+      ],
+      "appearances": [
+        {
+          "team": "Inquisitorial Agents",
+          "assetName": "Tempestus Scion Vox-Operator",
+          "side": "face",
+          "imageID": "ada83852bf705bc3"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "c91bb1018a9e3845a5fcc3942e2c3a8403ea659f2b1384429b0b1aef4762bf03",
+      "imageIDs": [
+        "78b06d6155a6a360"
+      ],
+      "appearances": [
+        {
+          "team": "Inquisitorial Agents",
+          "assetName": "Kasrkin Demo-Trooper",
+          "side": "back",
+          "imageID": "78b06d6155a6a360"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "cd279d7b52187da7e43993f269c7759eb29c8e2ccef5365041af131ae6d83461",
+      "imageIDs": [
+        "d52bc844ec3e9c57"
+      ],
+      "appearances": [
+        {
+          "team": "Inquisitorial Agents",
+          "assetName": "Navis Hatchcutter",
+          "side": "back",
+          "imageID": "d52bc844ec3e9c57"
+        },
+        {
+          "team": "Imperial Navy Breachers",
+          "assetName": "Navis Hatchcutter",
+          "side": "back",
+          "imageID": "d52bc844ec3e9c57"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "cdbadb513457cfcb809882e5f19701fdd212318b796e7c80308fcc129b776b83",
+      "imageIDs": [
+        "becc4d80ee3c0d47"
+      ],
+      "appearances": [
+        {
+          "team": "Inquisitorial Agents",
+          "assetName": "Navis C.A.T Unit",
+          "side": "face",
+          "imageID": "becc4d80ee3c0d47"
+        },
+        {
+          "team": "Imperial Navy Breachers",
+          "assetName": "Navis C.A.T Unit",
+          "side": "face",
+          "imageID": "becc4d80ee3c0d47"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "ce570219860c4ba91511b103af4d53e7929d9f4ee51f3f4f02aa1ae1aba79f2d",
+      "imageIDs": [
+        "9b0e6bb7f3b1afb8"
+      ],
+      "appearances": [
+        {
+          "team": "Blooded",
+          "assetName": "Reckless Aspirant",
+          "side": "face",
+          "imageID": "9b0e6bb7f3b1afb8"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "cec49bacd739343641e743e008748a894555d55353075021560848a1bbe084ab",
+      "imageIDs": [
+        "f25d08917d40a3d8"
+      ],
+      "appearances": [
+        {
+          "team": "Blades of Khaine",
+          "assetName": "Howling Banshee Warrior",
+          "side": "face",
+          "imageID": "f25d08917d40a3d8"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "d16171326dd0e095249a0edb99b21d90bee95d294a5b7053a9c4182d687df572",
+      "imageIDs": [
+        "89fd0dd89816b6a8"
+      ],
+      "appearances": [
+        {
+          "team": "Imperial Navy Breachers",
+          "assetName": "Rebreathers",
+          "side": "face",
+          "imageID": "89fd0dd89816b6a8"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "d2250cdcd35e0acc83d515a71f17860f0f321a4f7358bc5f062ab1861a900246",
+      "imageIDs": [
+        "ef7f9ae5cd804383"
+      ],
+      "appearances": [
+        {
+          "team": "Inquisitorial Agents",
+          "assetName": "Arbites Malocator",
+          "side": "face",
+          "imageID": "ef7f9ae5cd804383"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "d24ba8ca7908aac2edbf9f713dc23e3dd29ee4fec63d077d19b3e8eb69fbd7ef",
+      "imageIDs": [
+        "c6c79c2f5ab933a1"
+      ],
+      "appearances": [
+        {
+          "team": "Blooded",
+          "assetName": "Traitor Corpseman",
+          "side": "back",
+          "imageID": "c6c79c2f5ab933a1"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "d268b6815754b2d169f714f3dc21ed8d5b6236ab7abd24247ba67801959acc12",
+      "imageIDs": [
+        "b3b14444f3b1810e"
+      ],
+      "appearances": [
+        {
+          "team": "Inquisitorial Agents",
+          "assetName": "Death Korps Medic",
+          "side": "back",
+          "imageID": "b3b14444f3b1810e"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "d37edc33daac995faf21b7cd107d52e3f2270f924767b1760599c28f5ca27fc8",
+      "imageIDs": [
+        "e1298b6d7300f05e"
+      ],
+      "appearances": [
+        {
+          "team": "Blades of Khaine",
+          "assetName": "Khaine's Vengeance",
+          "side": "face",
+          "imageID": "e1298b6d7300f05e"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "d5ec52c6113a88f7f962deee582e9bddd5614d85ff3e3704c426091c3d4236a2",
+      "imageIDs": [
+        "087359c48b7b8236"
+      ],
+      "appearances": [
+        {
+          "team": "Blooded",
+          "assetName": "Blooded",
+          "side": "back",
+          "imageID": "087359c48b7b8236"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "dbf95c7bf35824541c38a1c66ffaf341c6ef19f887e2037e2c8c9a08f20af909",
+      "imageIDs": [
+        "c6b0f537006c5a56"
+      ],
+      "appearances": [
+        {
+          "team": "Inquisitorial Agents",
+          "assetName": "Kasrkin Sergeant",
+          "side": "face",
+          "imageID": "c6b0f537006c5a56"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "dce719e8c4ec8f0c40d3f8751a90cd5d621049d038a9eb90647f9251bcc2ed04",
+      "imageIDs": [
+        "6ad644f344ba5b82"
+      ],
+      "appearances": [
+        {
+          "team": "Inquisitorial Agents",
+          "assetName": "Arbites Castigator",
+          "side": "face",
+          "imageID": "6ad644f344ba5b82"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "de12a9b807432cd9d4d8881f0ebe194b44985724245238a9566665008ef610de",
+      "imageIDs": [
+        "62075d25e05dea37"
+      ],
+      "appearances": [
+        {
+          "team": "Inquisitorial Agents",
+          "assetName": "Death Korps Medic",
+          "side": "face",
+          "imageID": "62075d25e05dea37"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "e3d9ce4d9e2a02ebaaf8f9789d45eea7ba6e8f1f1854cf29d29aad5a335c08ed",
+      "imageIDs": [
+        "5c9a908c21e2f28e"
+      ],
+      "appearances": [
+        {
+          "team": "Blooded",
+          "assetName": "BLOODED KILL TEAM",
+          "side": "face",
+          "imageID": "5c9a908c21e2f28e"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "e4f3d25ff1ad1af3f27b14f6a38d47c965b3f0a2557c0f7f0cd03865e0b56307",
+      "imageIDs": [
+        "05a04bd5a91b14d7"
+      ],
+      "appearances": [
+        {
+          "team": "Inquisitorial Agents",
+          "assetName": "Combat Daggers",
+          "side": "face",
+          "imageID": "05a04bd5a91b14d7"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "e69010f84d1435232bd2935d26e8401de16bccc32968d239add0be6719d27863",
+      "imageIDs": [
+        "15531f635dd7a31c"
+      ],
+      "appearances": [
+        {
+          "team": "Blades of Khaine",
+          "assetName": "Dire Avenger Exarch",
+          "side": "face",
+          "imageID": "15531f635dd7a31c"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "e7983e1c7c58dc494ed91ba986ce98a8123f70b15442bc6a3279db908f54497f",
+      "imageIDs": [
+        "edb13cd012fa6e9a"
+      ],
+      "appearances": [
+        {
+          "team": "Inquisitorial Agents",
+          "assetName": "Kasrkin Combat Medic",
+          "side": "back",
+          "imageID": "edb13cd012fa6e9a"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "e8839d90c79111a2822742cf929b482e6034431492e98a5bd29b3564a8beb3e2",
+      "imageIDs": [
+        "da63e9e0162de4e5"
+      ],
+      "appearances": [
+        {
+          "team": "Blooded",
+          "assetName": "Traitor Brimstone Grenadier",
+          "side": "face",
+          "imageID": "da63e9e0162de4e5"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "e9415b0e0247f3fbca58d347534010f0601c35d0edbaf5fb280e82833e1bcfc0",
+      "imageIDs": [
+        "d7323442492f5767"
+      ],
+      "appearances": [
+        {
+          "team": "Inquisitorial Agents",
+          "assetName": "Hexorcist Agent",
+          "side": "face",
+          "imageID": "d7323442492f5767"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "ea17b1fea6f1b2d6f1f7bb81a151a8a80eed606ea242a2a69c94d945ea79a336",
+      "imageIDs": [
+        "ca1efc30c5bda1cf"
+      ],
+      "appearances": [
+        {
+          "team": "Blooded",
+          "assetName": "Moment of Repute",
+          "side": "face",
+          "imageID": "ca1efc30c5bda1cf"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "eb5c6c4bd3fc0d97f89e68e0918782a753559fc2436abfc118d3e1a217ccf521",
+      "imageIDs": [
+        "b7e381f24012359c"
+      ],
+      "appearances": [
+        {
+          "team": "Blades of Khaine",
+          "assetName": "Starfall",
+          "side": "face",
+          "imageID": "b7e381f24012359c"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "ed33b423f6862818765299ff740188d136b29bf299a6582111b2b6d00989ceb4",
+      "imageIDs": [
+        "a2e8f0472d2db009"
+      ],
+      "appearances": [
+        {
+          "team": "Blooded",
+          "assetName": "Wicked Blades",
+          "side": "face",
+          "imageID": "a2e8f0472d2db009"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "efbceeb6864fc9cb5bfb4742cfd75daf844be858f8c004ccf5da67452c51a970",
+      "imageIDs": [
+        "5a9732e36fd5c0a3"
+      ],
+      "appearances": [
+        {
+          "team": "Blooded",
+          "assetName": "Traitor Trooper",
+          "side": "face",
+          "imageID": "5a9732e36fd5c0a3"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "f4d4d37282edf06a23dcfa15319da2c27e74b70cd5bb54d29679d01b6d4cc768",
+      "imageIDs": [
+        "5cfd07669b1c0709"
+      ],
+      "appearances": [
+        {
+          "team": "Inquisitorial Agents",
+          "assetName": "Arbites Leashmaster",
+          "side": "face",
+          "imageID": "5cfd07669b1c0709"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "f51dc302f00e205358cb86add3963013b7705cea6a26abda464ca2a0a6aa9d49",
+      "imageIDs": [
+        "73f300d03eab0fbd"
+      ],
+      "appearances": [
+        {
+          "team": "Blades of Khaine",
+          "assetName": "Rune of Shielding",
+          "side": "face",
+          "imageID": "73f300d03eab0fbd"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "f6c4d6a8b649477ecf846a249034b32eab7d89ddc96e40df854b194c4dbe26c2",
+      "imageIDs": [
+        "7baecde52a25140d"
+      ],
+      "appearances": [
+        {
+          "team": "Inquisitorial Agents",
+          "assetName": "Death Korps Gunner",
+          "side": "face",
+          "imageID": "7baecde52a25140d"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "f6d04fb9be52025ab2ed6b6ac7b2f161497f45d51589566cca6e46bbb2ec4093",
+      "imageIDs": [
+        "893a7c3814025559"
+      ],
+      "appearances": [
+        {
+          "team": "Inquisitorial Agents",
+          "assetName": "Quarry",
+          "side": "face",
+          "imageID": "893a7c3814025559"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "f756858a8da91ecb5a94ea4439811057949af7e1bfd9f5c3c9a8f84cb15ae8c0",
+      "imageIDs": [
+        "b24b02cb725ecc33"
+      ],
+      "appearances": [
+        {
+          "team": "Inquisitorial Agents",
+          "assetName": "Inquisitorial Agents Kill Team",
+          "side": "face",
+          "imageID": "b24b02cb725ecc33"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "f7e0f6c3e30436cc7e673b5c4aac236fca681e1d4df3644ccfa06996f8a2511c",
+      "imageIDs": [
+        "b7b1dd3bbeff801a"
+      ],
+      "appearances": [
+        {
+          "team": "Blooded",
+          "assetName": "Traitor Trench Sweeper",
+          "side": "face",
+          "imageID": "b7b1dd3bbeff801a"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "fad9465e17b626737da299798aabd6e4bbafb8c95f351cbb31384994d1b8cd52",
+      "imageIDs": [
+        "b240cf11e35316c6"
+      ],
+      "appearances": [
+        {
+          "team": "Blades of Khaine",
+          "assetName": "Contempt",
+          "side": "face",
+          "imageID": "b240cf11e35316c6"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "fb84aa53df3b4c01dfa5a87ae596bf9a5bc215996601754b17c7d4b4efa62dd1",
+      "imageIDs": [
+        "ba571663af986c22"
+      ],
+      "appearances": [
+        {
+          "team": "Inquisitorial Agents",
+          "assetName": "Irrefutable Jurisdiction",
+          "side": "face",
+          "imageID": "ba571663af986c22"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "fb95508e22c99e167d91c24901acbb27e7f6d86fa67046c0a5c1e92d0fa968a7",
+      "imageIDs": [
+        "bb2f206ebbc8f812"
+      ],
+      "appearances": [
+        {
+          "team": "Imperial Navy Breachers",
+          "assetName": "Lock it Down",
+          "side": "face",
+          "imageID": "bb2f206ebbc8f812"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "fc3917304f4be21bb485a2e53ed0faaa068e8358de3f256b6c439d983c0dc304",
+      "imageIDs": [
+        "d8adfd099d9ce7c9"
+      ],
+      "appearances": [
+        {
+          "team": "Inquisitorial Agents",
+          "assetName": "Arbites Revelatum",
+          "side": "face",
+          "imageID": "d8adfd099d9ce7c9"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "fc41b84cb128bfe1941e1367a2521d6887eca281620515ccc07b6505045bcf83",
+      "imageIDs": [
+        "20ccadf530e8b6d7"
+      ],
+      "appearances": [
+        {
+          "team": "Inquisitorial Agents",
+          "assetName": "Navis Void Jammer",
+          "side": "face",
+          "imageID": "20ccadf530e8b6d7"
+        },
+        {
+          "team": "Imperial Navy Breachers",
+          "assetName": "Navis Void Jammer",
+          "side": "face",
+          "imageID": "20ccadf530e8b6d7"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "fda38e973b8163e1f4d359bf20d38448d7d03d9bac04d61f6bc7949cc075d4ab",
+      "imageIDs": [
+        "d85d6ab829b14707"
+      ],
+      "appearances": [
+        {
+          "team": "Inquisitorial Agents",
+          "assetName": "Kasrkin Sergeant",
+          "side": "back",
+          "imageID": "d85d6ab829b14707"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "ff976607488eee6b6415e8d49558d4c1d6735791f5d2e6c745b6322b4a4ef2ad",
+      "imageIDs": [
+        "402c6678898554ac"
+      ],
+      "appearances": [
+        {
+          "team": "Inquisitorial Agents",
+          "assetName": "Mystic Agent",
+          "side": "back",
+          "imageID": "402c6678898554ac"
+        }
+      ]
+    }
+  ],
+  "excluded": [
+    {
+      "sourceSHA256": "111962ff52c4d6974e57ec1578086c87b007f5f3dff0609c42c4e218b75bbf77",
+      "imageIDs": [
+        "3f94e3866fdbe1c3"
+      ],
+      "appearances": [
+        {
+          "team": "Inquisitorial Agents",
+          "assetName": "Death Korps Gunner",
+          "side": "back",
+          "imageID": "3f94e3866fdbe1c3"
+        },
+        {
+          "team": "Inquisitorial Agents",
+          "assetName": "Death Korps Veteran",
+          "side": "back",
+          "imageID": "3f94e3866fdbe1c3"
+        },
+        {
+          "team": "Inquisitorial Agents",
+          "assetName": "Death Korps Trooper",
+          "side": "back",
+          "imageID": "3f94e3866fdbe1c3"
+        },
+        {
+          "team": "Inquisitorial Agents",
+          "assetName": "Death Korps Sniper",
+          "side": "back",
+          "imageID": "3f94e3866fdbe1c3"
+        },
+        {
+          "team": "Inquisitorial Agents",
+          "assetName": "Death Korps Bruiser",
+          "side": "back",
+          "imageID": "3f94e3866fdbe1c3"
+        },
+        {
+          "team": "Inquisitorial Agents",
+          "assetName": "Death Korps Zealot",
+          "side": "back",
+          "imageID": "3f94e3866fdbe1c3"
+        },
+        {
+          "team": "Inquisitorial Agents",
+          "assetName": "Death Korps Spotter",
+          "side": "back",
+          "imageID": "3f94e3866fdbe1c3"
+        },
+        {
+          "team": "Inquisitorial Agents",
+          "assetName": "Death Korps Sapper",
+          "side": "back",
+          "imageID": "3f94e3866fdbe1c3"
+        }
+      ],
+      "reason": "Pixel-reviewed art-only side; no readable rules, flavor or other translatable text."
+    },
+    {
+      "sourceSHA256": "233f13200f4b9e6e81d692cb4c36dd7a03940de165ad53b47d70405493b61e98",
+      "imageIDs": [
+        "080d757ed9031d96"
+      ],
+      "appearances": [
+        {
+          "team": "Blades of Khaine",
+          "assetName": "Striking Scorpion Warrior",
+          "side": "back",
+          "imageID": "080d757ed9031d96"
+        },
+        {
+          "team": "Blades of Khaine",
+          "assetName": "Striking Scorpion Exarch",
+          "side": "back",
+          "imageID": "080d757ed9031d96"
+        },
+        {
+          "team": "Blades of Khaine",
+          "assetName": "Howling Banshee Warrior",
+          "side": "back",
+          "imageID": "080d757ed9031d96"
+        },
+        {
+          "team": "Blades of Khaine",
+          "assetName": "Howling Banshee Exarch",
+          "side": "back",
+          "imageID": "080d757ed9031d96"
+        },
+        {
+          "team": "Blades of Khaine",
+          "assetName": "Dire Avenger Warrior",
+          "side": "back",
+          "imageID": "080d757ed9031d96"
+        }
+      ],
+      "reason": "Pixel-reviewed art-only side; no readable rules, flavor or other translatable text."
+    },
+    {
+      "sourceSHA256": "2f35841bfcb28860ac89afc8e07e3df87905b68fd597565f478be4f6ffcf5581",
+      "imageIDs": [
+        "6d2c841e07fdaa15"
+      ],
+      "appearances": [
+        {
+          "team": "Inquisitorial Agents",
+          "assetName": "Requisitioned Gun Servitor",
+          "side": "back",
+          "imageID": "6d2c841e07fdaa15"
+        },
+        {
+          "team": "Inquisitorial Agents",
+          "assetName": "Pistolier Agent",
+          "side": "back",
+          "imageID": "6d2c841e07fdaa15"
+        },
+        {
+          "team": "Inquisitorial Agents",
+          "assetName": "Autosavant Agent",
+          "side": "back",
+          "imageID": "6d2c841e07fdaa15"
+        },
+        {
+          "team": "Inquisitorial Agents",
+          "assetName": "Penal Legionaire Agent",
+          "side": "back",
+          "imageID": "6d2c841e07fdaa15"
+        },
+        {
+          "team": "Inquisitorial Agents",
+          "assetName": "Questkeeper Agent",
+          "side": "back",
+          "imageID": "6d2c841e07fdaa15"
+        },
+        {
+          "team": "Inquisitorial Agents",
+          "assetName": "Hexorcist Agent",
+          "side": "back",
+          "imageID": "6d2c841e07fdaa15"
+        },
+        {
+          "team": "Inquisitorial Agents",
+          "assetName": "Enlightener Agent",
+          "side": "back",
+          "imageID": "6d2c841e07fdaa15"
+        },
+        {
+          "team": "Inquisitorial Agents",
+          "assetName": "Death World Veteran Agent",
+          "side": "back",
+          "imageID": "6d2c841e07fdaa15"
+        },
+        {
+          "team": "Inquisitorial Agents",
+          "assetName": "Interrogator Agent",
+          "side": "back",
+          "imageID": "6d2c841e07fdaa15"
+        },
+        {
+          "team": "Inquisitorial Agents",
+          "assetName": "Tempestus Scion Vox-Operator",
+          "side": "back",
+          "imageID": "6d2c841e07fdaa15"
+        },
+        {
+          "team": "Inquisitorial Agents",
+          "assetName": "Tempestus Scion Trooper",
+          "side": "back",
+          "imageID": "6d2c841e07fdaa15"
+        },
+        {
+          "team": "Inquisitorial Agents",
+          "assetName": "Tempestus Scion Gunner",
+          "side": "back",
+          "imageID": "6d2c841e07fdaa15"
+        },
+        {
+          "team": "Inquisitorial Agents",
+          "assetName": "Sister of Silence Prosecutor",
+          "side": "back",
+          "imageID": "6d2c841e07fdaa15"
+        },
+        {
+          "team": "Inquisitorial Agents",
+          "assetName": "Sister of Silence Witchseeker",
+          "side": "back",
+          "imageID": "6d2c841e07fdaa15"
+        },
+        {
+          "team": "Inquisitorial Agents",
+          "assetName": "Sister of Silence Vigilator",
+          "side": "back",
+          "imageID": "6d2c841e07fdaa15"
+        }
+      ],
+      "reason": "Pixel-reviewed art-only side; no readable rules, flavor or other translatable text."
+    },
+    {
+      "sourceSHA256": "794430dd49386d14e01f613d73c87dff108b41846d534e9208a329ebc7ef2229",
+      "imageIDs": [
+        "06ab8298ab2f4d7e"
+      ],
+      "appearances": [
+        {
+          "team": "Inquisitorial Agents",
+          "assetName": "Arbites Malocator",
+          "side": "back",
+          "imageID": "06ab8298ab2f4d7e"
+        },
+        {
+          "team": "Inquisitorial Agents",
+          "assetName": "Arbites Revelatum",
+          "side": "back",
+          "imageID": "06ab8298ab2f4d7e"
+        },
+        {
+          "team": "Inquisitorial Agents",
+          "assetName": "Arbites Marksman",
+          "side": "back",
+          "imageID": "06ab8298ab2f4d7e"
+        },
+        {
+          "team": "Inquisitorial Agents",
+          "assetName": "Arbites Vox-Signifier",
+          "side": "back",
+          "imageID": "06ab8298ab2f4d7e"
+        },
+        {
+          "team": "Inquisitorial Agents",
+          "assetName": "R-VR Cyber-Mastiff",
+          "side": "back",
+          "imageID": "06ab8298ab2f4d7e"
+        },
+        {
+          "team": "Inquisitorial Agents",
+          "assetName": "Arbites Subductor",
+          "side": "back",
+          "imageID": "06ab8298ab2f4d7e"
+        },
+        {
+          "team": "Inquisitorial Agents",
+          "assetName": "Arbites Gunner",
+          "side": "back",
+          "imageID": "06ab8298ab2f4d7e"
+        },
+        {
+          "team": "Inquisitorial Agents",
+          "assetName": "Arbites Vigilant",
+          "side": "back",
+          "imageID": "06ab8298ab2f4d7e"
+        },
+        {
+          "team": "Inquisitorial Agents",
+          "assetName": "Arbites Castigator",
+          "side": "back",
+          "imageID": "06ab8298ab2f4d7e"
+        }
+      ],
+      "reason": "Pixel-reviewed art-only side; no readable rules, flavor or other translatable text."
+    },
+    {
+      "sourceSHA256": "90e6749bc1c6ec4b4ffb6401ccb75a6d5f5bfb80951b60f611c088cc0dc4523e",
+      "imageIDs": [
+        "ebabda8a73aba502"
+      ],
+      "appearances": [
+        {
+          "team": "Blades of Khaine",
+          "assetName": "Khaine's Vengeance",
+          "side": "back",
+          "imageID": "ebabda8a73aba502"
+        },
+        {
+          "team": "Blades of Khaine",
+          "assetName": "Ruthless Poise",
+          "side": "back",
+          "imageID": "ebabda8a73aba502"
+        },
+        {
+          "team": "Blades of Khaine",
+          "assetName": "Dance of Death",
+          "side": "back",
+          "imageID": "ebabda8a73aba502"
+        },
+        {
+          "team": "Blades of Khaine",
+          "assetName": "Forewarned",
+          "side": "back",
+          "imageID": "ebabda8a73aba502"
+        },
+        {
+          "team": "Blades of Khaine",
+          "assetName": "Death of the Thousand Blades",
+          "side": "back",
+          "imageID": "ebabda8a73aba502"
+        },
+        {
+          "team": "Blades of Khaine",
+          "assetName": "Raging Heat of the Dying Flame",
+          "side": "back",
+          "imageID": "ebabda8a73aba502"
+        },
+        {
+          "team": "Blades of Khaine",
+          "assetName": "Vigilance of the Avenger",
+          "side": "back",
+          "imageID": "ebabda8a73aba502"
+        },
+        {
+          "team": "Blades of Khaine",
+          "assetName": "The Slicing Hurricane",
+          "side": "back",
+          "imageID": "ebabda8a73aba502"
+        },
+        {
+          "team": "Blades of Khaine",
+          "assetName": "Unsisting, Immovable",
+          "side": "back",
+          "imageID": "ebabda8a73aba502"
+        },
+        {
+          "team": "Blades of Khaine",
+          "assetName": "Strike and Fade",
+          "side": "back",
+          "imageID": "ebabda8a73aba502"
+        },
+        {
+          "team": "Blades of Khaine",
+          "assetName": "Scorpion's Eye",
+          "side": "back",
+          "imageID": "ebabda8a73aba502"
+        },
+        {
+          "team": "Blades of Khaine",
+          "assetName": "Patient Stalk, Sudden Blow",
+          "side": "back",
+          "imageID": "ebabda8a73aba502"
+        },
+        {
+          "team": "Blades of Khaine",
+          "assetName": "Merciless Strikes",
+          "side": "back",
+          "imageID": "ebabda8a73aba502"
+        },
+        {
+          "team": "Blades of Khaine",
+          "assetName": "One with the Gloom",
+          "side": "back",
+          "imageID": "ebabda8a73aba502"
+        },
+        {
+          "team": "Blades of Khaine",
+          "assetName": "Wraithbone Talisman",
+          "side": "back",
+          "imageID": "ebabda8a73aba502"
+        },
+        {
+          "team": "Blades of Khaine",
+          "assetName": "Rune of Prophesy",
+          "side": "back",
+          "imageID": "ebabda8a73aba502"
+        },
+        {
+          "team": "Blades of Khaine",
+          "assetName": "Rune of Shielding",
+          "side": "back",
+          "imageID": "ebabda8a73aba502"
+        },
+        {
+          "team": "Blades of Khaine",
+          "assetName": "Rune of Foresight",
+          "side": "back",
+          "imageID": "ebabda8a73aba502"
+        },
+        {
+          "team": "Blades of Khaine",
+          "assetName": "The Woe",
+          "side": "back",
+          "imageID": "ebabda8a73aba502"
+        },
+        {
+          "team": "Blades of Khaine",
+          "assetName": "Acrobatic",
+          "side": "back",
+          "imageID": "ebabda8a73aba502"
+        },
+        {
+          "team": "Blades of Khaine",
+          "assetName": "Rain of Tears",
+          "side": "back",
+          "imageID": "ebabda8a73aba502"
+        },
+        {
+          "team": "Blades of Khaine",
+          "assetName": "Scream-that-Steals",
+          "side": "back",
+          "imageID": "ebabda8a73aba502"
+        },
+        {
+          "team": "Blades of Khaine",
+          "assetName": "Shriek-that-Kills",
+          "side": "back",
+          "imageID": "ebabda8a73aba502"
+        },
+        {
+          "team": "Blades of Khaine",
+          "assetName": "Bladewind",
+          "side": "back",
+          "imageID": "ebabda8a73aba502"
+        },
+        {
+          "team": "Blades of Khaine",
+          "assetName": "Contempt",
+          "side": "back",
+          "imageID": "ebabda8a73aba502"
+        },
+        {
+          "team": "Blades of Khaine",
+          "assetName": "Starfall",
+          "side": "back",
+          "imageID": "ebabda8a73aba502"
+        },
+        {
+          "team": "Blades of Khaine",
+          "assetName": "Fading Light",
+          "side": "back",
+          "imageID": "ebabda8a73aba502"
+        },
+        {
+          "team": "Blades of Khaine",
+          "assetName": "Aspect Techniques",
+          "side": "back",
+          "imageID": "ebabda8a73aba502"
+        }
+      ],
+      "reason": "Pixel-reviewed art-only side; no readable rules, flavor or other translatable text."
+    },
+    {
+      "sourceSHA256": "9202279f001d078c6b48fafbfa16646b4db4a96b9ece1d70d7fd1fb0df2e8225",
+      "imageIDs": [
+        "1157b107df5a81fa"
+      ],
+      "appearances": [
+        {
+          "team": "Inquisitorial Agents",
+          "assetName": "Kasrkin Sharpshooter",
+          "side": "back",
+          "imageID": "1157b107df5a81fa"
+        },
+        {
+          "team": "Inquisitorial Agents",
+          "assetName": "Kasrkin Trooper",
+          "side": "back",
+          "imageID": "1157b107df5a81fa"
+        },
+        {
+          "team": "Inquisitorial Agents",
+          "assetName": "Kasrkin Vox-Trooper",
+          "side": "back",
+          "imageID": "1157b107df5a81fa"
+        },
+        {
+          "team": "Inquisitorial Agents",
+          "assetName": "Kasrkin Gunner",
+          "side": "back",
+          "imageID": "1157b107df5a81fa"
+        },
+        {
+          "team": "Inquisitorial Agents",
+          "assetName": "Kasrkin Recon-Trooper",
+          "side": "back",
+          "imageID": "1157b107df5a81fa"
+        }
+      ],
+      "reason": "Pixel-reviewed art-only side; no readable rules, flavor or other translatable text."
+    },
+    {
+      "sourceSHA256": "9797d282de79ba2c70f831d9ab6deca46e2311c7f4494ebdf67843e13a72c962",
+      "imageIDs": [
+        "f151d74cbeb2711b"
+      ],
+      "appearances": [
+        {
+          "team": "Blooded",
+          "assetName": "Bitter Demise",
+          "side": "back",
+          "imageID": "f151d74cbeb2711b"
+        },
+        {
+          "team": "Blooded",
+          "assetName": "Malevolent Grit",
+          "side": "back",
+          "imageID": "f151d74cbeb2711b"
+        },
+        {
+          "team": "Blooded",
+          "assetName": "Reckless Aspirant",
+          "side": "back",
+          "imageID": "f151d74cbeb2711b"
+        },
+        {
+          "team": "Blooded",
+          "assetName": "Glory Kill",
+          "side": "back",
+          "imageID": "f151d74cbeb2711b"
+        },
+        {
+          "team": "Blooded",
+          "assetName": "Moment of Repute",
+          "side": "back",
+          "imageID": "f151d74cbeb2711b"
+        },
+        {
+          "team": "Blooded",
+          "assetName": "Reward Earned",
+          "side": "back",
+          "imageID": "f151d74cbeb2711b"
+        },
+        {
+          "team": "Blooded",
+          "assetName": "Callous Disregard",
+          "side": "back",
+          "imageID": "f151d74cbeb2711b"
+        },
+        {
+          "team": "Blooded",
+          "assetName": "Dark Favour",
+          "side": "back",
+          "imageID": "f151d74cbeb2711b"
+        },
+        {
+          "team": "Blooded",
+          "assetName": "Chaos Sigil",
+          "side": "back",
+          "imageID": "f151d74cbeb2711b"
+        },
+        {
+          "team": "Blooded",
+          "assetName": "Sinister Trophies",
+          "side": "back",
+          "imageID": "f151d74cbeb2711b"
+        },
+        {
+          "team": "Blooded",
+          "assetName": "Wicked Blades",
+          "side": "back",
+          "imageID": "f151d74cbeb2711b"
+        },
+        {
+          "team": "Blooded",
+          "assetName": "Symbols of Bloody Worship",
+          "side": "back",
+          "imageID": "f151d74cbeb2711b"
+        }
+      ],
+      "reason": "Pixel-reviewed art-only side; no readable rules, flavor or other translatable text."
+    },
+    {
+      "sourceSHA256": "b508979f6ac00fe2775a7a1ef866956a7c4ce8882b17edfb4d7e7bd0cc53225a",
+      "imageIDs": [
+        "1e228b07ed188641"
+      ],
+      "appearances": [
+        {
+          "team": "Imperial Navy Breachers",
+          "assetName": "Void Armour",
+          "side": "back",
+          "imageID": "1e228b07ed188641"
+        },
+        {
+          "team": "Imperial Navy Breachers",
+          "assetName": "Close Assault",
+          "side": "back",
+          "imageID": "1e228b07ed188641"
+        },
+        {
+          "team": "Imperial Navy Breachers",
+          "assetName": "Attack Order",
+          "side": "back",
+          "imageID": "1e228b07ed188641"
+        },
+        {
+          "team": "Imperial Navy Breachers",
+          "assetName": "Defence Order",
+          "side": "back",
+          "imageID": "1e228b07ed188641"
+        },
+        {
+          "team": "Imperial Navy Breachers",
+          "assetName": "Brace for Counterattack",
+          "side": "back",
+          "imageID": "1e228b07ed188641"
+        },
+        {
+          "team": "Imperial Navy Breachers",
+          "assetName": "Overwhelm Target",
+          "side": "back",
+          "imageID": "1e228b07ed188641"
+        },
+        {
+          "team": "Imperial Navy Breachers",
+          "assetName": "Lock it Down",
+          "side": "back",
+          "imageID": "1e228b07ed188641"
+        },
+        {
+          "team": "Imperial Navy Breachers",
+          "assetName": "Deck Hand",
+          "side": "back",
+          "imageID": "1e228b07ed188641"
+        },
+        {
+          "team": "Imperial Navy Breachers",
+          "assetName": "Blitz",
+          "side": "back",
+          "imageID": "1e228b07ed188641"
+        },
+        {
+          "team": "Imperial Navy Breachers",
+          "assetName": "Slugs",
+          "side": "back",
+          "imageID": "1e228b07ed188641"
+        },
+        {
+          "team": "Imperial Navy Breachers",
+          "assetName": "Combat Stimms",
+          "side": "back",
+          "imageID": "1e228b07ed188641"
+        },
+        {
+          "team": "Imperial Navy Breachers",
+          "assetName": "Rebreathers",
+          "side": "back",
+          "imageID": "1e228b07ed188641"
+        },
+        {
+          "team": "Imperial Navy Breachers",
+          "assetName": "System Override Device",
+          "side": "back",
+          "imageID": "1e228b07ed188641"
+        }
+      ],
+      "reason": "Pixel-reviewed art-only side; no readable rules, flavor or other translatable text."
+    },
+    {
+      "sourceSHA256": "f95094b48c4b75f7579de364612704a6c03890ac4a1126a40b97ef67caea9ca0",
+      "imageIDs": [
+        "e86b13880bb59983"
+      ],
+      "appearances": [
+        {
+          "team": "Blooded",
+          "assetName": "Trator Thug",
+          "side": "back",
+          "imageID": "e86b13880bb59983"
+        },
+        {
+          "team": "Blooded",
+          "assetName": "Traitor Butcher",
+          "side": "back",
+          "imageID": "e86b13880bb59983"
+        },
+        {
+          "team": "Blooded",
+          "assetName": "Traitor Ogryn",
+          "side": "back",
+          "imageID": "e86b13880bb59983"
+        },
+        {
+          "team": "Blooded",
+          "assetName": "Traitor Sharpshooter",
+          "side": "back",
+          "imageID": "e86b13880bb59983"
+        },
+        {
+          "team": "Blooded",
+          "assetName": "Traitor Commsman",
+          "side": "back",
+          "imageID": "e86b13880bb59983"
+        },
+        {
+          "team": "Blooded",
+          "assetName": "Traitor Trooper",
+          "side": "back",
+          "imageID": "e86b13880bb59983"
+        },
+        {
+          "team": "Blooded",
+          "assetName": "Traitor Gunner",
+          "side": "back",
+          "imageID": "e86b13880bb59983"
+        },
+        {
+          "team": "Blooded",
+          "assetName": "Traitor Trench Sweeper",
+          "side": "back",
+          "imageID": "e86b13880bb59983"
+        },
+        {
+          "team": "Blooded",
+          "assetName": "Traitor Flenser",
+          "side": "back",
+          "imageID": "e86b13880bb59983"
+        },
+        {
+          "team": "Blooded",
+          "assetName": "Traitor Enforcer",
+          "side": "back",
+          "imageID": "e86b13880bb59983"
+        },
+        {
+          "team": "Blooded",
+          "assetName": "Traitor Brimstone Grenadier",
+          "side": "back",
+          "imageID": "e86b13880bb59983"
+        }
+      ],
+      "reason": "Pixel-reviewed art-only side; no readable rules, flavor or other translatable text."
+    },
+    {
+      "sourceSHA256": "fffd4e93fdd52ff66d2cf156fc8d01005eddb4f1df01e9621363127ff29cf2ee",
+      "imageIDs": [
+        "b588b7da2108d6bf"
+      ],
+      "appearances": [
+        {
+          "team": "Inquisitorial Agents",
+          "assetName": "Navis Axejack",
+          "side": "back",
+          "imageID": "b588b7da2108d6bf"
+        },
+        {
+          "team": "Inquisitorial Agents",
+          "assetName": "Navis Gunner",
+          "side": "back",
+          "imageID": "b588b7da2108d6bf"
+        },
+        {
+          "team": "Inquisitorial Agents",
+          "assetName": "Navis Armsman",
+          "side": "back",
+          "imageID": "b588b7da2108d6bf"
+        },
+        {
+          "team": "Inquisitorial Agents",
+          "assetName": "Navis Grenadier",
+          "side": "back",
+          "imageID": "b588b7da2108d6bf"
+        },
+        {
+          "team": "Inquisitorial Agents",
+          "assetName": "Navis Gheistskull",
+          "side": "back",
+          "imageID": "b588b7da2108d6bf"
+        },
+        {
+          "team": "Inquisitorial Agents",
+          "assetName": "Navis Endurant",
+          "side": "back",
+          "imageID": "b588b7da2108d6bf"
+        },
+        {
+          "team": "Imperial Navy Breachers",
+          "assetName": "Navis Axejack",
+          "side": "back",
+          "imageID": "b588b7da2108d6bf"
+        },
+        {
+          "team": "Imperial Navy Breachers",
+          "assetName": "Navis Gunner",
+          "side": "back",
+          "imageID": "b588b7da2108d6bf"
+        },
+        {
+          "team": "Imperial Navy Breachers",
+          "assetName": "Navis Armsman",
+          "side": "back",
+          "imageID": "b588b7da2108d6bf"
+        },
+        {
+          "team": "Imperial Navy Breachers",
+          "assetName": "Navis Grenadier",
+          "side": "back",
+          "imageID": "b588b7da2108d6bf"
+        },
+        {
+          "team": "Imperial Navy Breachers",
+          "assetName": "Navis Gheistskull",
+          "side": "back",
+          "imageID": "b588b7da2108d6bf"
+        },
+        {
+          "team": "Imperial Navy Breachers",
+          "assetName": "Navis Endurant",
+          "side": "back",
+          "imageID": "b588b7da2108d6bf"
+        }
+      ],
+      "reason": "Pixel-reviewed art-only side; no readable rules, flavor or other translatable text."
+    }
+  ],
+  "counts": {
+    "includedSourceSHA": 183,
+    "excludedSourceSHA": 10,
+    "referencedSourceSHA": 193,
+    "includedImageIDs": 183,
+    "excludedImageIDs": 10,
+    "translatedAppearances": 212,
+    "excludedAppearances": 118,
+    "requiredAppearances": 330
+  }
+}

@@ -1,0 +1,2375 @@
+{
+  "batch": "04",
+  "teams": [
+    "Novitiates",
+    "Hearthkyn Salvager",
+    "Sanctifiers",
+    "Death Korps"
+  ],
+  "sourceFiles": [
+    "inventory/card-assets.json",
+    "inventory/image-ocr-en.json"
+  ],
+  "included": [
+    {
+      "sourceSHA256": "0056b04b79d7e58776cc3553a1596dfdfa921a65d68e18383a843eec18bf47a2",
+      "imageIDs": [
+        "71ea6f41d49ab4c6"
+      ],
+      "appearances": [
+        {
+          "team": "Hearthkyn Salvager",
+          "assetName": "Hearthkyn Dôzr",
+          "side": "face",
+          "imageID": "71ea6f41d49ab4c6"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "0497a42a4be2846c5373f1c5178f9c7d8d440f756546fa061ee14830d008d8e1",
+      "imageIDs": [
+        "9abb7f47058dca2e"
+      ],
+      "appearances": [
+        {
+          "team": "Sanctifiers",
+          "assetName": "Sanctifier Conflaglator",
+          "side": "face",
+          "imageID": "9abb7f47058dca2e"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "097dfe680a93cb0372b816745ac93c9ef4982b978e1fe5af5e98b5a3677a1cfd",
+      "imageIDs": [
+        "4aca3660bccc64f2"
+      ],
+      "appearances": [
+        {
+          "team": "Hearthkyn Salvager",
+          "assetName": "",
+          "side": "face",
+          "imageID": "4aca3660bccc64f2"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "0d1bdfc9c3c43d576b82729e706585b99473f5fe9d0c1bdd22b5b3ec2b42148e",
+      "imageIDs": [
+        "11d81ca2c9162aff"
+      ],
+      "appearances": [
+        {
+          "team": "Novitiates",
+          "assetName": "Novitiate Duelist",
+          "side": "face",
+          "imageID": "11d81ca2c9162aff"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "0ee6edb608835ddaca4a5efc70b516fd31300c3f5ab0f4ac017a72cfd1456404",
+      "imageIDs": [
+        "99850bfb8e970c6b"
+      ],
+      "appearances": [
+        {
+          "team": "Hearthkyn Salvager",
+          "assetName": "Hearthkyn Gunner",
+          "side": "back",
+          "imageID": "99850bfb8e970c6b"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "1025365f44b26f119243ab7ad51711be3139d24a41b8ae726961086eacbf8576",
+      "imageIDs": [
+        "827002d9eb9f10d1"
+      ],
+      "appearances": [
+        {
+          "team": "Sanctifiers",
+          "assetName": "Ecclesiarchy Texts",
+          "side": "face",
+          "imageID": "827002d9eb9f10d1"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "1080b82628aed0350bd36e0134dba3e1ecfa7e3caebb06b34871b7c931fb4c77",
+      "imageIDs": [
+        "f21f11b0d59fecb0"
+      ],
+      "appearances": [
+        {
+          "team": "Death Korps",
+          "assetName": "Death Korps Zealot",
+          "side": "face",
+          "imageID": "f21f11b0d59fecb0"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "130155b63105e3d47ddcc501c1c1b102d346fb7dc23ca0c61c5f80a4ec68dea7",
+      "imageIDs": [
+        "36db751ce30b4fe7"
+      ],
+      "appearances": [
+        {
+          "team": "Sanctifiers",
+          "assetName": "Sanctifier Persecutor",
+          "side": "face",
+          "imageID": "36db751ce30b4fe7"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "13e0af51a416918e31b45b3210955fd7c08b6685c2fbb18a4aaed290dcda514b",
+      "imageIDs": [
+        "cde221a868564b5c"
+      ],
+      "appearances": [
+        {
+          "team": "Novitiates",
+          "assetName": "Novitiate Dialogus",
+          "side": "back",
+          "imageID": "cde221a868564b5c"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "16176da273f7903467367fcb02e397d4827f12ed735ae5735916c667a6bd37c6",
+      "imageIDs": [
+        "bcc956f5b367a75e"
+      ],
+      "appearances": [
+        {
+          "team": "Hearthkyn Salvager",
+          "assetName": "Plasma Knives",
+          "side": "face",
+          "imageID": "bcc956f5b367a75e"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "17217f1cac7f1bf987bf7963d283f9966c4266accccce5eefc8f71e035be3f28",
+      "imageIDs": [
+        "adcd5fef777e27a6"
+      ],
+      "appearances": [
+        {
+          "team": "Death Korps",
+          "assetName": "Death Korps Trooper",
+          "side": "face",
+          "imageID": "adcd5fef777e27a6"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "18ceaca88c8f2e0b97df4b5dc66689f07c2cb26527ce3002f8d1a4bbc2049e43",
+      "imageIDs": [
+        "c28898f6ff4d444e"
+      ],
+      "appearances": [
+        {
+          "team": "Sanctifiers",
+          "assetName": "Rosarius",
+          "side": "face",
+          "imageID": "c28898f6ff4d444e"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "19599a8f640a7ea4700bd810f3aa68cce850dc93ad09f263d1f9c4e40fc47a44",
+      "imageIDs": [
+        "9b2921c4438ea8c2"
+      ],
+      "appearances": [
+        {
+          "team": "Novitiates",
+          "assetName": "Novitiate Militant",
+          "side": "face",
+          "imageID": "9b2921c4438ea8c2"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "1b8c7f957a409694c2de4133d8e5b0a355e3cb3c29ce87bffb5c537bb61f5f91",
+      "imageIDs": [
+        "04e9f1b2e0c6055a"
+      ],
+      "appearances": [
+        {
+          "team": "Sanctifiers",
+          "assetName": "Sanctifier Reliquant",
+          "side": "face",
+          "imageID": "04e9f1b2e0c6055a"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "1df0f37d06d2d324d050e27644103cedb508ba2f518685eb549a96709ba52431",
+      "imageIDs": [
+        "f833f9ccea1dacf7"
+      ],
+      "appearances": [
+        {
+          "team": "Hearthkyn Salvager",
+          "assetName": "Hearthkyn Warrior",
+          "side": "face",
+          "imageID": "f833f9ccea1dacf7"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "1f1a00ed7bc90610e210a2a1c8af62f4305d00935e2264c7f15b0ba7272f10e0",
+      "imageIDs": [
+        "3c023f3600c61209"
+      ],
+      "appearances": [
+        {
+          "team": "Sanctifiers",
+          "assetName": "Imperial Cult Symbols",
+          "side": "face",
+          "imageID": "3c023f3600c61209"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "2073dc22684660b5f1f67562770dbf59146ea24202cdebccd304a85a40aa68db",
+      "imageIDs": [
+        "67e0d4f68c471264"
+      ],
+      "appearances": [
+        {
+          "team": "Novitiates",
+          "assetName": "Novitiate Preceptor",
+          "side": "face",
+          "imageID": "67e0d4f68c471264"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "2198870e0cfea7fdc5f741c6065093a8c61cffc20cea2c9fd79a027365974682",
+      "imageIDs": [
+        "b7da2a5fb8acefa3"
+      ],
+      "appearances": [
+        {
+          "team": "Sanctifiers",
+          "assetName": "",
+          "side": "face",
+          "imageID": "b7da2a5fb8acefa3"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "2293b6404681f77f6310ba9076334ce0ebdf3f9fb675f7ef70ee99224a9dd783",
+      "imageIDs": [
+        "54e8ab258b117494"
+      ],
+      "appearances": [
+        {
+          "team": "Novitiates",
+          "assetName": "Blazing Inferno",
+          "side": "face",
+          "imageID": "54e8ab258b117494"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "22c4711e071d0938e3136f9d32ef18dd6c9f93bc69ddce0c05222ad845179e80",
+      "imageIDs": [
+        "f475f1e101b9a6c0"
+      ],
+      "appearances": [
+        {
+          "team": "Death Korps",
+          "assetName": "Take Aim! and Fix Bayonets!",
+          "side": "face",
+          "imageID": "f475f1e101b9a6c0"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "25ac4af3542d9ecd1433cd093ef9fa0a74467de9f8b35f7754ecff9b6cb52c79",
+      "imageIDs": [
+        "8404eb6afd871907"
+      ],
+      "appearances": [
+        {
+          "team": "Hearthkyn Salvager",
+          "assetName": "Hearthkyn Kognitâar",
+          "side": "face",
+          "imageID": "8404eb6afd871907"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "26ac5a34db5e95634cf36dcadcf0072610c8eef53bb9a369878b3119ef35d84b",
+      "imageIDs": [
+        "7ee4718e28e8583e"
+      ],
+      "appearances": [
+        {
+          "team": "Novitiates",
+          "assetName": "Guided by Faith",
+          "side": "face",
+          "imageID": "7ee4718e28e8583e"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "2ae012072ef1593ea58bb3d9bc467cee17cb8113b7442d610d399a6f0db82a87",
+      "imageIDs": [
+        "892b756b260d2075"
+      ],
+      "appearances": [
+        {
+          "team": "Hearthkyn Salvager",
+          "assetName": "Hearthkyn Grenadier",
+          "side": "back",
+          "imageID": "892b756b260d2075"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "2b3de7672aeec4d2d4cb4dff8ee1640a60c0b20932c78231f4866e859a609d0d",
+      "imageIDs": [
+        "d783cdb52b6d9aad"
+      ],
+      "appearances": [
+        {
+          "team": "Novitiates",
+          "assetName": "Novitiate Reliquarius",
+          "side": "face",
+          "imageID": "d783cdb52b6d9aad"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "2bd5b00e4cb2d96751dcfd99bcd616174502f4b536145a724a10226ef7b5c6ca",
+      "imageIDs": [
+        "969e2aadbf951ebd"
+      ],
+      "appearances": [
+        {
+          "team": "Sanctifiers",
+          "assetName": "Sanctification Orbs",
+          "side": "back",
+          "imageID": "969e2aadbf951ebd"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "2be23baac2acbb3fde78d9910c3cdbbc393fb7579f8d19210c1d362ec941b786",
+      "imageIDs": [
+        "dd591b981dfe3e18"
+      ],
+      "appearances": [
+        {
+          "team": "Death Korps",
+          "assetName": "Death Korps Confidant",
+          "side": "face",
+          "imageID": "dd591b981dfe3e18"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "340ff4f07d556ac1e27951d1ecc71cd58f830b4e00e2b021b00ae4b1907f950f",
+      "imageIDs": [
+        "de89c1ddc943f02b"
+      ],
+      "appearances": [
+        {
+          "team": "Death Korps",
+          "assetName": "Death Korps Bruiser",
+          "side": "face",
+          "imageID": "de89c1ddc943f02b"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "3553679bd020502765987be389b3ca49de07a91c03006a9cdd860a2430cd64c2",
+      "imageIDs": [
+        "8ce279691b3fbdde"
+      ],
+      "appearances": [
+        {
+          "team": "Novitiates",
+          "assetName": "Acts of Faith",
+          "side": "face",
+          "imageID": "8ce279691b3fbdde"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "38d6f59cf0363bf0b0e8583e23b6f9df0673811dad481f8b48f9cfd26f35d2ad",
+      "imageIDs": [
+        "5f4b1734e4e5701d"
+      ],
+      "appearances": [
+        {
+          "team": "Death Korps",
+          "assetName": "Death Korps Watchmaster",
+          "side": "face",
+          "imageID": "5f4b1734e4e5701d"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "38ebecd254e2b6e4a2bcd2f06239bcf51076a050f1a3c3460c95a7626926364e",
+      "imageIDs": [
+        "9b19369c07360939"
+      ],
+      "appearances": [
+        {
+          "team": "Novitiates",
+          "assetName": "Novitiate Exactor",
+          "side": "face",
+          "imageID": "9b19369c07360939"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "3a76815c8d3e5daa26196508764d264a3541713bbd9ba389c67d2b483b2e6190",
+      "imageIDs": [
+        "86819999d1b4f5b8"
+      ],
+      "appearances": [
+        {
+          "team": "Hearthkyn Salvager",
+          "assetName": "Worth it",
+          "side": "face",
+          "imageID": "86819999d1b4f5b8"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "3e8d54fcd61dac7c0a242d4f47807b6d9246ed003e814d7fcfbc30e441d214b9",
+      "imageIDs": [
+        "8596034d38cde7db"
+      ],
+      "appearances": [
+        {
+          "team": "Death Korps",
+          "assetName": "Dig In! and Move! Move! Move!",
+          "side": "face",
+          "imageID": "8596034d38cde7db"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "3fc2558038adbdb70725433004c5b4f00882e8e8a72c320a49fdc1bbc8bef0a2",
+      "imageIDs": [
+        "9c769e81da922285"
+      ],
+      "appearances": [
+        {
+          "team": "Death Korps",
+          "assetName": "In Life, Shame",
+          "side": "face",
+          "imageID": "9c769e81da922285"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "3fc5ca9cd891bf00b47ce63ec709d0d4c028d1eac83b7be665d92ed98460d5dd",
+      "imageIDs": [
+        "446929d4d175c54c"
+      ],
+      "appearances": [
+        {
+          "team": "Hearthkyn Salvager",
+          "assetName": "Hearthkyn Theyn",
+          "side": "back",
+          "imageID": "446929d4d175c54c"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "434f17e4e55c52357d2fb30506e90b47f51eb32d3a1ee988e6d79168a2173ea3",
+      "imageIDs": [
+        "dad9d218685ce93d"
+      ],
+      "appearances": [
+        {
+          "team": "Hearthkyn Salvager",
+          "assetName": "Hearthkyn Gunner",
+          "side": "face",
+          "imageID": "dad9d218685ce93d"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "478769253cb75aee57c2933f491e9cd1a34a902a0e6d6e86427f576162f72e3b",
+      "imageIDs": [
+        "c3a883ba2c5e5744"
+      ],
+      "appearances": [
+        {
+          "team": "Hearthkyn Salvager",
+          "assetName": "",
+          "side": "back",
+          "imageID": "c3a883ba2c5e5744"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "488a83f0e633eaa195f978f81d8b24474f65e7c7cc6d25625e16bf09b6db16d5",
+      "imageIDs": [
+        "9e336bf01a711b39"
+      ],
+      "appearances": [
+        {
+          "team": "Death Korps",
+          "assetName": "Death Korps Sniper",
+          "side": "face",
+          "imageID": "9e336bf01a711b39"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "50dbee77039210a4c6ed2229f6a1e12b351dc40142d347d9d8ab655c136bd1f9",
+      "imageIDs": [
+        "97d5ce0ed7779c69"
+      ],
+      "appearances": [
+        {
+          "team": "Death Korps",
+          "assetName": "",
+          "side": "face",
+          "imageID": "97d5ce0ed7779c69"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "58838003741dd0f63a077bc7d400add5115ec2a3eaaabbb3761730c32565517b",
+      "imageIDs": [
+        "7b57d5bb83d8aba7"
+      ],
+      "appearances": [
+        {
+          "team": "Death Korps",
+          "assetName": "Death Korps Medic",
+          "side": "face",
+          "imageID": "7b57d5bb83d8aba7"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "58c4f3b156213120de482d8564b97f2a7bf0f8f2d9a14c6fafe2f87956cca056",
+      "imageIDs": [
+        "128dce88fecf15a0"
+      ],
+      "appearances": [
+        {
+          "team": "Novitiates",
+          "assetName": "Novitiate Purgatus",
+          "side": "face",
+          "imageID": "128dce88fecf15a0"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "59c7b5b26bf1d1f7fd8d6ec9a93eb453efc835a36a73e21fcecdcad6216c3fdc",
+      "imageIDs": [
+        "c7d92b4cb0282237"
+      ],
+      "appearances": [
+        {
+          "team": "Novitiates",
+          "assetName": "Glorious Martyrdom",
+          "side": "face",
+          "imageID": "c7d92b4cb0282237"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "5a24c5cc5965f5758d99f65bd40f94feabbb32be84488a9c0f0d5270b13987d7",
+      "imageIDs": [
+        "ea7da48cef6dc2b9"
+      ],
+      "appearances": [
+        {
+          "team": "Novitiates",
+          "assetName": "Novitiate Penitent",
+          "side": "face",
+          "imageID": "ea7da48cef6dc2b9"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "5a8075c87cd23135ac89b695e51be42d93d276fc96f1e0041d62c27111e1ce96",
+      "imageIDs": [
+        "d69ccbb321f3cc5f"
+      ],
+      "appearances": [
+        {
+          "team": "Hearthkyn Salvager",
+          "assetName": "Sturdy",
+          "side": "face",
+          "imageID": "d69ccbb321f3cc5f"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "5b076819a562ea2ef91395b82c2cd53019b52e0f4938c37aa9587cb3c75a28cb",
+      "imageIDs": [
+        "0acb185d702bac2b"
+      ],
+      "appearances": [
+        {
+          "team": "Hearthkyn Salvager",
+          "assetName": "Hearthkyn Theyn",
+          "side": "face",
+          "imageID": "0acb185d702bac2b"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "5d8565b77a103dc195f4aca05008ce48fcdf932e682879ea7cd6248b92a498f7",
+      "imageIDs": [
+        "8e240ae57dc79362"
+      ],
+      "appearances": [
+        {
+          "team": "Sanctifiers",
+          "assetName": "",
+          "side": "back",
+          "imageID": "8e240ae57dc79362"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "5f7ec79374a657e0835f9a4ed2ccd924a8d0a8295856a1f52b62468d1920390a",
+      "imageIDs": [
+        "6bcded2d30aab327"
+      ],
+      "appearances": [
+        {
+          "team": "Sanctifiers",
+          "assetName": "Purity Seals",
+          "side": "face",
+          "imageID": "6bcded2d30aab327"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "6376bba02918578c07b04278d7010ba44926ded0557531ddf12d0441ef1ac942",
+      "imageIDs": [
+        "4b95fcd9a9630abd"
+      ],
+      "appearances": [
+        {
+          "team": "Death Korps",
+          "assetName": "Guardsmen Orders",
+          "side": "back",
+          "imageID": "4b95fcd9a9630abd"
+        },
+        {
+          "team": "Death Korps",
+          "assetName": "Dig In! and Move! Move! Move!",
+          "side": "back",
+          "imageID": "4b95fcd9a9630abd"
+        },
+        {
+          "team": "Death Korps",
+          "assetName": "Take Aim! and Fix Bayonets!",
+          "side": "back",
+          "imageID": "4b95fcd9a9630abd"
+        },
+        {
+          "team": "Death Korps",
+          "assetName": "Regroup",
+          "side": "back",
+          "imageID": "4b95fcd9a9630abd"
+        },
+        {
+          "team": "Death Korps",
+          "assetName": "Take Cover",
+          "side": "back",
+          "imageID": "4b95fcd9a9630abd"
+        },
+        {
+          "team": "Death Korps",
+          "assetName": "Siege Warfare",
+          "side": "back",
+          "imageID": "4b95fcd9a9630abd"
+        },
+        {
+          "team": "Death Korps",
+          "assetName": "Clear the Line",
+          "side": "back",
+          "imageID": "4b95fcd9a9630abd"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "6b6ab8d850d0bf1e3b8666bacea98a8e46775eb89ccced4e6e083ae99e995b1b",
+      "imageIDs": [
+        "04ff96d4bb7e1acd"
+      ],
+      "appearances": [
+        {
+          "team": "Sanctifiers",
+          "assetName": "Zealous Persecution",
+          "side": "face",
+          "imageID": "04ff96d4bb7e1acd"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "6c284dfaa22bcfd63c4546920961169bcc3227f6d0f6ff6b9100c58be6eccf43",
+      "imageIDs": [
+        "00ca70b95d00a713"
+      ],
+      "appearances": [
+        {
+          "team": "Death Korps",
+          "assetName": "Regroup",
+          "side": "face",
+          "imageID": "00ca70b95d00a713"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "71947dc098df3497d43e9501ea56d5e4a143bd5f4dcee7bf101ad5eec13c895e",
+      "imageIDs": [
+        "04709faea430a55e"
+      ],
+      "appearances": [
+        {
+          "team": "Sanctifiers",
+          "assetName": "Rally the Flock",
+          "side": "face",
+          "imageID": "04709faea430a55e"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "749323806dda1a19d3f8905f7edf1d850b6ebfc976e0b8c133dab4b75a6a5214",
+      "imageIDs": [
+        "326d7dad9a62ba8a"
+      ],
+      "appearances": [
+        {
+          "team": "Novitiates",
+          "assetName": "Novitiate Condemnor",
+          "side": "face",
+          "imageID": "326d7dad9a62ba8a"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "7497b4261b8862d27adb43369af934d80754830f355845675c0af6fecd0b28b4",
+      "imageIDs": [
+        "3fb8978a24ead311"
+      ],
+      "appearances": [
+        {
+          "team": "Sanctifiers",
+          "assetName": "Sanctifier Missionary",
+          "side": "face",
+          "imageID": "3fb8978a24ead311"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "7555fd0cc2790880465af771ada342428cebf125f204273c37c3adf8fb4b07d3",
+      "imageIDs": [
+        "5cf7af7a30eef61a"
+      ],
+      "appearances": [
+        {
+          "team": "Hearthkyn Salvager",
+          "assetName": "Hearthkyn Lugger",
+          "side": "face",
+          "imageID": "5cf7af7a30eef61a"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "7631ab33abf2cb65c8a8ccec0cb2a196e4ce75e914aab17c71cb95ac827e307b",
+      "imageIDs": [
+        "18b8601b6cbbc907"
+      ],
+      "appearances": [
+        {
+          "team": "Death Korps",
+          "assetName": "Death Korps Veteran",
+          "side": "face",
+          "imageID": "18b8601b6cbbc907"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "778e57662f5b358004495be76f5f1a85d9a111bb96b06c7e71c81da45c4c438c",
+      "imageIDs": [
+        "ac7d5db9d5dc0ab1"
+      ],
+      "appearances": [
+        {
+          "team": "Sanctifiers",
+          "assetName": "The Emperor Protects",
+          "side": "face",
+          "imageID": "ac7d5db9d5dc0ab1"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "77a31cdb6ecd33d724029c4eba0d3f62cd5037435bfdcc6e1949cff500cf63cc",
+      "imageIDs": [
+        "88de43baea84c6c6"
+      ],
+      "appearances": [
+        {
+          "team": "Death Korps",
+          "assetName": "Chronometer",
+          "side": "face",
+          "imageID": "88de43baea84c6c6"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "7bb3df8e73551d979c0f50d706b96d31e0acdc95a6cefd55499572d6f5b20231",
+      "imageIDs": [
+        "eda4eaa93c554146"
+      ],
+      "appearances": [
+        {
+          "team": "Sanctifiers",
+          "assetName": "Sanctification Orbs",
+          "side": "face",
+          "imageID": "eda4eaa93c554146"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "7bd73adc93ba90dc658e2a03339810288af56fe767f80e64734a802594799d59",
+      "imageIDs": [
+        "6c7d80f7456a5f7f"
+      ],
+      "appearances": [
+        {
+          "team": "Death Korps",
+          "assetName": "Comms-Beads",
+          "side": "face",
+          "imageID": "6c7d80f7456a5f7f"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "7cf1aa67668e4437fc18ff60fee432abbb2ca4888472498805b191fca392f708",
+      "imageIDs": [
+        "eb5e03cdec478a79"
+      ],
+      "appearances": [
+        {
+          "team": "Novitiates",
+          "assetName": "Defenders of the Faith",
+          "side": "face",
+          "imageID": "eb5e03cdec478a79"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "7e507411bb7c774d25ee785206b8de78a0443f1a8f5394aff195d7ea9b61fcee",
+      "imageIDs": [
+        "d95e573dcb77e0bd"
+      ],
+      "appearances": [
+        {
+          "team": "Hearthkyn Salvager",
+          "assetName": "Hearthkyn Kognitâar",
+          "side": "back",
+          "imageID": "d95e573dcb77e0bd"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "7e84c57b8cafdef1051d7579616eb6558984f392def85e43025800e179ace02b",
+      "imageIDs": [
+        "aff5fe9152adaa95"
+      ],
+      "appearances": [
+        {
+          "team": "Death Korps",
+          "assetName": "Clear the Line",
+          "side": "face",
+          "imageID": "aff5fe9152adaa95"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "7ffe32207e112f744fab7a167557674fa143a568d8727bebd1c93c4f3510ffe6",
+      "imageIDs": [
+        "7711352fca8a97f9"
+      ],
+      "appearances": [
+        {
+          "team": "Death Korps",
+          "assetName": "Inspirational Leadership",
+          "side": "back",
+          "imageID": "7711352fca8a97f9"
+        },
+        {
+          "team": "Death Korps",
+          "assetName": "Combined Arms",
+          "side": "back",
+          "imageID": "7711352fca8a97f9"
+        },
+        {
+          "team": "Death Korps",
+          "assetName": "In Life, Shame",
+          "side": "back",
+          "imageID": "7711352fca8a97f9"
+        },
+        {
+          "team": "Death Korps",
+          "assetName": "In Death, Atonement",
+          "side": "back",
+          "imageID": "7711352fca8a97f9"
+        },
+        {
+          "team": "Death Korps",
+          "assetName": "Gas Bombardment",
+          "side": "back",
+          "imageID": "7711352fca8a97f9"
+        },
+        {
+          "team": "Death Korps",
+          "assetName": "Chronometer",
+          "side": "back",
+          "imageID": "7711352fca8a97f9"
+        },
+        {
+          "team": "Death Korps",
+          "assetName": "Comms-Beads",
+          "side": "back",
+          "imageID": "7711352fca8a97f9"
+        },
+        {
+          "team": "Death Korps",
+          "assetName": "Hand Axes",
+          "side": "back",
+          "imageID": "7711352fca8a97f9"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "80a55b5b40520d062ece6d4350413cf810da1f87259d517f2dc39c771fb1c440",
+      "imageIDs": [
+        "4c321c989cc406b3"
+      ],
+      "appearances": [
+        {
+          "team": "Death Korps",
+          "assetName": "Death Korps Spotter",
+          "side": "face",
+          "imageID": "4c321c989cc406b3"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "83da85f42cbacd10bcd585cd94f69c90f6d879aa11272866ce4bc98367597f6e",
+      "imageIDs": [
+        "5b79c3bbd4bc50f6"
+      ],
+      "appearances": [
+        {
+          "team": "Hearthkyn Salvager",
+          "assetName": "Hearthkyn Grenadier",
+          "side": "face",
+          "imageID": "5b79c3bbd4bc50f6"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "87d3b85002b0c6ba4627f77d4b5b61bba7368119a38fd115143d41c6174048d3",
+      "imageIDs": [
+        "6175c40f5a439073"
+      ],
+      "appearances": [
+        {
+          "team": "Novitiates",
+          "assetName": "Acts of Faith",
+          "side": "back",
+          "imageID": "6175c40f5a439073"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "87e678cee49f3280d28883658c92dea0ae2960250fd2cbc1be106655be66df9f",
+      "imageIDs": [
+        "45c02cba66319640"
+      ],
+      "appearances": [
+        {
+          "team": "Death Korps",
+          "assetName": "Death Korps Vox-Operator",
+          "side": "face",
+          "imageID": "45c02cba66319640"
+        },
+        {
+          "team": "Death Korps",
+          "assetName": "Death Korps Vox-Operator",
+          "side": "back",
+          "imageID": "45c02cba66319640"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "8824c35d83129d3a4e1c6e8625c657d7e19ad0fa8097a73e1318ee3a76ca3655",
+      "imageIDs": [
+        "89aa210ea4c2d731"
+      ],
+      "appearances": [
+        {
+          "team": "Sanctifiers",
+          "assetName": "Sanctifier Confessor",
+          "side": "face",
+          "imageID": "89aa210ea4c2d731"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "8881976cf4ebcbf5735664da6ff4e52287570b2af34f2dd33dd0f47a3ed87c27",
+      "imageIDs": [
+        "e19a139ae056b431"
+      ],
+      "appearances": [
+        {
+          "team": "Death Korps",
+          "assetName": "Hand Axes",
+          "side": "face",
+          "imageID": "e19a139ae056b431"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "8943185e7b62d6d615874939adabe4a7e567c2a36d0e815d0ec584122127dacd",
+      "imageIDs": [
+        "7e0b961b4474907f"
+      ],
+      "appearances": [
+        {
+          "team": "Novitiates",
+          "assetName": "",
+          "side": "face",
+          "imageID": "7e0b961b4474907f"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "8a17a864c027795eb70ae157232e8074609fa43d3a134e62f807da528f3c7bea",
+      "imageIDs": [
+        "2d645c4c925b553b"
+      ],
+      "appearances": [
+        {
+          "team": "Sanctifiers",
+          "assetName": "Sanctifier Cherub",
+          "side": "back",
+          "imageID": "2d645c4c925b553b"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "8be90b0a4ba5a9c779fc1fcda2dca64a6f07624b21caff059ec324634d60564b",
+      "imageIDs": [
+        "271513b08b1b25bb"
+      ],
+      "appearances": [
+        {
+          "team": "Death Korps",
+          "assetName": "Inspirational Leadership",
+          "side": "face",
+          "imageID": "271513b08b1b25bb"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "8c82f0f44f749422eb075c05ade2a448d55230a9d714b2b15ab4ead7dc87c0f2",
+      "imageIDs": [
+        "e90dd270290dc84f"
+      ],
+      "appearances": [
+        {
+          "team": "Hearthkyn Salvager",
+          "assetName": "Hearthkyn Jump Pack Warrior",
+          "side": "face",
+          "imageID": "e90dd270290dc84f"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "8cf96e00fa9c0bf16110022884db95974dc409a08224508b68625eeebd76bd3c",
+      "imageIDs": [
+        "f3c64c4b5d06a2d9"
+      ],
+      "appearances": [
+        {
+          "team": "Novitiates",
+          "assetName": "Blinding Aura",
+          "side": "face",
+          "imageID": "f3c64c4b5d06a2d9"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "9010c78a1d02e39779dbc5e4edfd0735f200fc837720604a6ad0ecda81197704",
+      "imageIDs": [
+        "6133ea0246729ed4"
+      ],
+      "appearances": [
+        {
+          "team": "Novitiates",
+          "assetName": "Novitiate Hospitallier",
+          "side": "face",
+          "imageID": "6133ea0246729ed4"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "9152a8f2bde5ca78bdd9cd191559f9748136e6524b26b6a368526b7c0f67f59d",
+      "imageIDs": [
+        "7531e13be87d7996"
+      ],
+      "appearances": [
+        {
+          "team": "Hearthkyn Salvager",
+          "assetName": "Hearthkyn Lokâtr",
+          "side": "back",
+          "imageID": "7531e13be87d7996"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "929be97bb85d01b58a3280edd1712543a9fd8675a5876c37124a7a0c955ae593",
+      "imageIDs": [
+        "9d76d7fcf8037c3f"
+      ],
+      "appearances": [
+        {
+          "team": "Hearthkyn Salvager",
+          "assetName": "Hearthkyn Field Medic",
+          "side": "back",
+          "imageID": "9d76d7fcf8037c3f"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "93158145e69ef3acff86d40d42a60dc98ecabb7a6a893c2c6b08383a71a94ef3",
+      "imageIDs": [
+        "0ccd819aff73448d"
+      ],
+      "appearances": [
+        {
+          "team": "Sanctifiers",
+          "assetName": "Sanctifier Missionary",
+          "side": "back",
+          "imageID": "0ccd819aff73448d"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "947e19a9ae0cb50d487454ac48fcec8c4ccb90f71b308a0aa138d14495007ffd",
+      "imageIDs": [
+        "93343bbbfb6d0118"
+      ],
+      "appearances": [
+        {
+          "team": "Hearthkyn Salvager",
+          "assetName": "Wrought Defence",
+          "side": "face",
+          "imageID": "93343bbbfb6d0118"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "993f743fb7ad3fb7f2cbef5bdb8bff5d5a3a5ba797423890e3aac91b1b566704",
+      "imageIDs": [
+        "f02702bab45d699d"
+      ],
+      "appearances": [
+        {
+          "team": "Death Korps",
+          "assetName": "Death Korps Confidant",
+          "side": "back",
+          "imageID": "f02702bab45d699d"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "9bb2bb8a6dc890ca8d4c95b9d168b9039f12e3f6cf158920bf6864676081d6ef",
+      "imageIDs": [
+        "dea1846342ce3553"
+      ],
+      "appearances": [
+        {
+          "team": "Sanctifiers",
+          "assetName": "Sanctifier Miraculist",
+          "side": "face",
+          "imageID": "dea1846342ce3553"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "9c67ca15e3ca6623da46f188c3fff2c0aef05b225021eb64ba4753e4a8ed1a4f",
+      "imageIDs": [
+        "bafd7258c4ae62c4"
+      ],
+      "appearances": [
+        {
+          "team": "Sanctifiers",
+          "assetName": "Ministorum Sermon",
+          "side": "face",
+          "imageID": "bafd7258c4ae62c4"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "9d497a0500acdaee5490e2031469d22b971f8acb2cec7c8a5ff53d5664038b3b",
+      "imageIDs": [
+        "cf28c3ad159b7f6b"
+      ],
+      "appearances": [
+        {
+          "team": "Death Korps",
+          "assetName": "Death Korps Sapper",
+          "side": "face",
+          "imageID": "cf28c3ad159b7f6b"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "a14c8a9331f4c2bb034eb0d8748879db5ada8a89e4d416e65d284e4a26f3c3a7",
+      "imageIDs": [
+        "b4ae6e7cf15027ad"
+      ],
+      "appearances": [
+        {
+          "team": "Novitiates",
+          "assetName": "Holy Embrocations",
+          "side": "face",
+          "imageID": "b4ae6e7cf15027ad"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "a15f9dc4ac7f8a6c32ed15df0dee20758743332a3ad6e7d513bec6e187604051",
+      "imageIDs": [
+        "e97e2d0b02549136"
+      ],
+      "appearances": [
+        {
+          "team": "Sanctifiers",
+          "assetName": "Ministorum Sermon",
+          "side": "back",
+          "imageID": "e97e2d0b02549136"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "a3c5179fb82428d6432af4e177c1a184ac7d44cad1b930940482dc246d0b1592",
+      "imageIDs": [
+        "441db3ee20051edb"
+      ],
+      "appearances": [
+        {
+          "team": "Death Korps",
+          "assetName": "In Death, Atonement",
+          "side": "face",
+          "imageID": "441db3ee20051edb"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "a3c61a983a388f7569169997d4b6f5b6ed9159635d547a3323ce1201e6f85a92",
+      "imageIDs": [
+        "11e0b759ec1d99a8"
+      ],
+      "appearances": [
+        {
+          "team": "Novitiates",
+          "assetName": "Novitiate Hospitallier",
+          "side": "back",
+          "imageID": "11e0b759ec1d99a8"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "a61abfe5868c7a0e6c8aac6ead54d89df7be3f5dcaac723445d4c8fcd9c1a941",
+      "imageIDs": [
+        "754fbe315d556359"
+      ],
+      "appearances": [
+        {
+          "team": "Death Korps",
+          "assetName": "Combined Arms",
+          "side": "face",
+          "imageID": "754fbe315d556359"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "a7597b66fb6dbfa260f1f8ae2b09c6ee2f7362afa5ea2666ae3275e247fd3ddb",
+      "imageIDs": [
+        "6e166a8ea506b7dd"
+      ],
+      "appearances": [
+        {
+          "team": "Death Korps",
+          "assetName": "",
+          "side": "back",
+          "imageID": "6e166a8ea506b7dd"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "a7bc6b7ad896e9b1b2db23c9de47b41bdd019f140acba027bc87a50daa5d4a19",
+      "imageIDs": [
+        "7cf4461664f32e6a"
+      ],
+      "appearances": [
+        {
+          "team": "Novitiates",
+          "assetName": "Sanctified Rounds",
+          "side": "face",
+          "imageID": "7cf4461664f32e6a"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "a81b17b05b3b5df0f162ac111f387dfc9326003f2b3048d8910833df2d93efdb",
+      "imageIDs": [
+        "e9e53f2beb384aa7"
+      ],
+      "appearances": [
+        {
+          "team": "Sanctifiers",
+          "assetName": "Sanctifier Death Cult Assassin",
+          "side": "face",
+          "imageID": "e9e53f2beb384aa7"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "a8b710d7d62ef5ede351295d220014eba7acabb5ad73d383ae591c2e42655093",
+      "imageIDs": [
+        "61fd6f458617f83f"
+      ],
+      "appearances": [
+        {
+          "team": "Sanctifiers",
+          "assetName": "Unwavering Devotion",
+          "side": "face",
+          "imageID": "61fd6f458617f83f"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "ab3c8bcf59abe2793a96b53b8aaba455ae71e4731a1b875420e01679df8bd562",
+      "imageIDs": [
+        "bc4e3f0914247511"
+      ],
+      "appearances": [
+        {
+          "team": "Novitiates",
+          "assetName": "Novitiate Pronatus",
+          "side": "face",
+          "imageID": "bc4e3f0914247511"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "ad11bc02e811b61343fcd611bfc2b8446cb019f5a4d71ec0fe13b4ca37658dd2",
+      "imageIDs": [
+        "978c06a0946f2d21"
+      ],
+      "appearances": [
+        {
+          "team": "Hearthkyn Salvager",
+          "assetName": "Need Keeps",
+          "side": "face",
+          "imageID": "978c06a0946f2d21"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "ad8a257584cfa054ba9a7acc5643e211d6e94ef1ab9dd32afee7ca090089f7ed",
+      "imageIDs": [
+        "528a4d35899808a0"
+      ],
+      "appearances": [
+        {
+          "team": "Sanctifiers",
+          "assetName": "Sanctifier Miraculist",
+          "side": "back",
+          "imageID": "528a4d35899808a0"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "b5f1a16a199fdefe0de0d2cfa1448ab9670f3c2863a73761fb9ea22c3941a274",
+      "imageIDs": [
+        "837feaca645643fc"
+      ],
+      "appearances": [
+        {
+          "team": "Hearthkyn Salvager",
+          "assetName": "The Ancestors are Watching",
+          "side": "face",
+          "imageID": "837feaca645643fc"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "ba05ab7cbd783a520986bce0663bd58fc63bfed63c79bb675e0068978be723c7",
+      "imageIDs": [
+        "4d5e4139ef715aaf"
+      ],
+      "appearances": [
+        {
+          "team": "Hearthkyn Salvager",
+          "assetName": "Climbing Rigs",
+          "side": "face",
+          "imageID": "4d5e4139ef715aaf"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "bb759b48d182652ab71d7f3edd73bf5b801a5eab82febbb84ee76a69a7e9ce0e",
+      "imageIDs": [
+        "e1e02e0ae3519af5"
+      ],
+      "appearances": [
+        {
+          "team": "Novitiates",
+          "assetName": "",
+          "side": "back",
+          "imageID": "e1e02e0ae3519af5"
+        },
+        {
+          "team": "Novitiates",
+          "assetName": "Blazing Inferno",
+          "side": "back",
+          "imageID": "e1e02e0ae3519af5"
+        },
+        {
+          "team": "Novitiates",
+          "assetName": "Guided by Faith",
+          "side": "back",
+          "imageID": "e1e02e0ae3519af5"
+        },
+        {
+          "team": "Novitiates",
+          "assetName": "Blinding Aura",
+          "side": "back",
+          "imageID": "e1e02e0ae3519af5"
+        },
+        {
+          "team": "Novitiates",
+          "assetName": "Glorious Martyrdom",
+          "side": "back",
+          "imageID": "e1e02e0ae3519af5"
+        },
+        {
+          "team": "Novitiates",
+          "assetName": "Icon of Faith",
+          "side": "back",
+          "imageID": "e1e02e0ae3519af5"
+        },
+        {
+          "team": "Novitiates",
+          "assetName": "Auto-Chastisers",
+          "side": "back",
+          "imageID": "e1e02e0ae3519af5"
+        },
+        {
+          "team": "Novitiates",
+          "assetName": "Holy Embrocations",
+          "side": "back",
+          "imageID": "e1e02e0ae3519af5"
+        },
+        {
+          "team": "Novitiates",
+          "assetName": "Sanctified Rounds",
+          "side": "back",
+          "imageID": "e1e02e0ae3519af5"
+        },
+        {
+          "team": "Novitiates",
+          "assetName": "Blessed Rejuvination",
+          "side": "back",
+          "imageID": "e1e02e0ae3519af5"
+        },
+        {
+          "team": "Novitiates",
+          "assetName": "Righteous Advance",
+          "side": "back",
+          "imageID": "e1e02e0ae3519af5"
+        },
+        {
+          "team": "Novitiates",
+          "assetName": "Defenders of the Faith",
+          "side": "back",
+          "imageID": "e1e02e0ae3519af5"
+        },
+        {
+          "team": "Novitiates",
+          "assetName": "Ardent Vengeance",
+          "side": "back",
+          "imageID": "e1e02e0ae3519af5"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "bc46d9eec4d34f3a8294a6474c37047d0a673f481276d70cab45055640570502",
+      "imageIDs": [
+        "331289ea3407d2e6"
+      ],
+      "appearances": [
+        {
+          "team": "Sanctifiers",
+          "assetName": "Sanctifier Confessor",
+          "side": "back",
+          "imageID": "331289ea3407d2e6"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "c051b24a3eb73a53280ca92317f5989a39b28124e89d5f113bb114cce5bd80d9",
+      "imageIDs": [
+        "dafd7ec137498eac"
+      ],
+      "appearances": [
+        {
+          "team": "Hearthkyn Salvager",
+          "assetName": "Grudge",
+          "side": "face",
+          "imageID": "dafd7ec137498eac"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "c41091000d0f6c35658c47bac77d4d35caea43844459bb294c6080baed9a08e8",
+      "imageIDs": [
+        "e65272ffc968e491"
+      ],
+      "appearances": [
+        {
+          "team": "Death Korps",
+          "assetName": "Death Korps Watchmaster",
+          "side": "back",
+          "imageID": "e65272ffc968e491"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "c4e971b119c7f99167e1bbba34e2bd35afed92c0f0ceb3955b71aabc54bb9f03",
+      "imageIDs": [
+        "26f12ecdb5bdff90"
+      ],
+      "appearances": [
+        {
+          "team": "Hearthkyn Salvager",
+          "assetName": "Excavation Tools",
+          "side": "face",
+          "imageID": "26f12ecdb5bdff90"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "c56d6737bb84eb79803095b8c189a0675e9d3814887d590a4772623e9fc7d6b6",
+      "imageIDs": [
+        "4ac46e24580f966a"
+      ],
+      "appearances": [
+        {
+          "team": "Hearthkyn Salvager",
+          "assetName": "Engage to Acquire",
+          "side": "face",
+          "imageID": "4ac46e24580f966a"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "ca9ee857ffb6b9c0b00090498dee8d792d710f41e63c098c1c39ef3f4b778e7c",
+      "imageIDs": [
+        "611e550fc969f471"
+      ],
+      "appearances": [
+        {
+          "team": "Hearthkyn Salvager",
+          "assetName": "Proximate Firepower",
+          "side": "face",
+          "imageID": "611e550fc969f471"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "cb1ae8323859e78db937cd99da6d4c0a3cc915b0b76626359468ff95b66be40b",
+      "imageIDs": [
+        "6fad65bdf7118d64"
+      ],
+      "appearances": [
+        {
+          "team": "Hearthkyn Salvager",
+          "assetName": "Hearthkyn Lokâtr",
+          "side": "face",
+          "imageID": "6fad65bdf7118d64"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "cccb6d8dcc8975006b281f780df6f510e9e41573d6233a38c638161e88376869",
+      "imageIDs": [
+        "300f3c3e9a26bca1"
+      ],
+      "appearances": [
+        {
+          "team": "Novitiates",
+          "assetName": "Novitiate Superior",
+          "side": "face",
+          "imageID": "300f3c3e9a26bca1"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "d268b6815754b2d169f714f3dc21ed8d5b6236ab7abd24247ba67801959acc12",
+      "imageIDs": [
+        "b3b14444f3b1810e"
+      ],
+      "appearances": [
+        {
+          "team": "Death Korps",
+          "assetName": "Death Korps Medic",
+          "side": "back",
+          "imageID": "b3b14444f3b1810e"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "d5b3c78545cfa7a426246e8629f8e79cecd8358ad36ae170a796d8d218b320c5",
+      "imageIDs": [
+        "b56a0a0de4ba2791"
+      ],
+      "appearances": [
+        {
+          "team": "Sanctifiers",
+          "assetName": "Sanctifier Cherub",
+          "side": "face",
+          "imageID": "b56a0a0de4ba2791"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "d5c12ff4b7108b9f8ecd402e8cc8e0bc83f649c4c94d1ff1c81d5f114bb6a3ac",
+      "imageIDs": [
+        "44615c91d47776bd"
+      ],
+      "appearances": [
+        {
+          "team": "Sanctifiers",
+          "assetName": "Sanctifier Salvationist",
+          "side": "face",
+          "imageID": "44615c91d47776bd"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "dad36b3001966e4c46ef43ad1366a55c4829dbf2a11b2c0b538003f4ab899563",
+      "imageIDs": [
+        "58c4556c7ec2da5a"
+      ],
+      "appearances": [
+        {
+          "team": "Hearthkyn Salvager",
+          "assetName": "Hearthkyn Field Medic",
+          "side": "face",
+          "imageID": "58c4556c7ec2da5a"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "dc7a7c0311da306d218fac564fcf9caa83ed171955b43914d2a92e58f49756b0",
+      "imageIDs": [
+        "102d0dd49aaef68d"
+      ],
+      "appearances": [
+        {
+          "team": "Death Korps",
+          "assetName": "Take Cover",
+          "side": "face",
+          "imageID": "102d0dd49aaef68d"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "dd955b6ca581568349fd08ea700669e8b6d0ab0dd8eeca4d9f202f8a46c691dd",
+      "imageIDs": [
+        "c28aca0695d09a1f"
+      ],
+      "appearances": [
+        {
+          "team": "Death Korps",
+          "assetName": "Siege Warfare",
+          "side": "face",
+          "imageID": "c28aca0695d09a1f"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "df0ca977aaeea2cda5975d70a92a6f1ed83a934a04afa42f8e98f9dc40c112b3",
+      "imageIDs": [
+        "f0e7c77ba2f5eae0"
+      ],
+      "appearances": [
+        {
+          "team": "Novitiates",
+          "assetName": "Blessed Rejuvination",
+          "side": "face",
+          "imageID": "f0e7c77ba2f5eae0"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "e0c94354f87ec8fe2101f78aebaa3e8979be380e1551e8079063359e587cd20f",
+      "imageIDs": [
+        "2e812b2b3239657d"
+      ],
+      "appearances": [
+        {
+          "team": "Hearthkyn Salvager",
+          "assetName": "Hearthkyn Kinlynk",
+          "side": "face",
+          "imageID": "2e812b2b3239657d"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "e236ff577e43bcd46aa32aaec6d3268ac1ecba7de453177f0159af0735894c19",
+      "imageIDs": [
+        "3042d5dff7036d9b"
+      ],
+      "appearances": [
+        {
+          "team": "Novitiates",
+          "assetName": "Icon of Faith",
+          "side": "face",
+          "imageID": "3042d5dff7036d9b"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "e61b616ee1cb51f82d3bf3281e8e35800627deb223e6dd2217e3d16d3ce5ac52",
+      "imageIDs": [
+        "cc4cc32fb66c4461"
+      ],
+      "appearances": [
+        {
+          "team": "Sanctifiers",
+          "assetName": "Sanctifier Preacher",
+          "side": "face",
+          "imageID": "cc4cc32fb66c4461"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "e6a0d75eba5e2e60ab536885f7efb859d6a1f175e9e90fa3b1ce666dbd4f18d0",
+      "imageIDs": [
+        "c8aa629ffec838cd"
+      ],
+      "appearances": [
+        {
+          "team": "Hearthkyn Salvager",
+          "assetName": "Writ of Claim",
+          "side": "face",
+          "imageID": "c8aa629ffec838cd"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "eb9646abd67ab3be5848d20498aef10eee361ea3b850f100506b5267edfe74c9",
+      "imageIDs": [
+        "6580f88c967ea92c"
+      ],
+      "appearances": [
+        {
+          "team": "Sanctifiers",
+          "assetName": "Redeemd Through Fire",
+          "side": "face",
+          "imageID": "6580f88c967ea92c"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "eec838e81b72a37c8e0d8c2a73244e77a9eedf5f171d2355181c52dcfe4b92e5",
+      "imageIDs": [
+        "8eb9d14422e58f07"
+      ],
+      "appearances": [
+        {
+          "team": "Hearthkyn Salvager",
+          "assetName": "Need Keeps",
+          "side": "back",
+          "imageID": "8eb9d14422e58f07"
+        },
+        {
+          "team": "Hearthkyn Salvager",
+          "assetName": "Toil Earns",
+          "side": "back",
+          "imageID": "8eb9d14422e58f07"
+        },
+        {
+          "team": "Hearthkyn Salvager",
+          "assetName": "Proximate Firepower",
+          "side": "back",
+          "imageID": "8eb9d14422e58f07"
+        },
+        {
+          "team": "Hearthkyn Salvager",
+          "assetName": "Wrought Defence",
+          "side": "back",
+          "imageID": "8eb9d14422e58f07"
+        },
+        {
+          "team": "Hearthkyn Salvager",
+          "assetName": "Writ of Claim",
+          "side": "back",
+          "imageID": "8eb9d14422e58f07"
+        },
+        {
+          "team": "Hearthkyn Salvager",
+          "assetName": "Plasma Knives",
+          "side": "back",
+          "imageID": "8eb9d14422e58f07"
+        },
+        {
+          "team": "Hearthkyn Salvager",
+          "assetName": "Excavation Tools",
+          "side": "back",
+          "imageID": "8eb9d14422e58f07"
+        },
+        {
+          "team": "Hearthkyn Salvager",
+          "assetName": "Climbing Rigs",
+          "side": "back",
+          "imageID": "8eb9d14422e58f07"
+        },
+        {
+          "team": "Hearthkyn Salvager",
+          "assetName": "Worth it",
+          "side": "back",
+          "imageID": "8eb9d14422e58f07"
+        },
+        {
+          "team": "Hearthkyn Salvager",
+          "assetName": "The Ancestors are Watching",
+          "side": "back",
+          "imageID": "8eb9d14422e58f07"
+        },
+        {
+          "team": "Hearthkyn Salvager",
+          "assetName": "Sturdy",
+          "side": "back",
+          "imageID": "8eb9d14422e58f07"
+        },
+        {
+          "team": "Hearthkyn Salvager",
+          "assetName": "Engage to Acquire",
+          "side": "back",
+          "imageID": "8eb9d14422e58f07"
+        },
+        {
+          "team": "Hearthkyn Salvager",
+          "assetName": "Grudge",
+          "side": "back",
+          "imageID": "8eb9d14422e58f07"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "f05d6beb55d5e786bd971eed7a8063e280bb3af694a312c75490b8a757126e82",
+      "imageIDs": [
+        "6477fc18ce11eca8"
+      ],
+      "appearances": [
+        {
+          "team": "Novitiates",
+          "assetName": "Righteous Advance",
+          "side": "face",
+          "imageID": "6477fc18ce11eca8"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "f1b63e97d41983ce9315fc25efc44952063b8f3c692b05e51813f63030d426b0",
+      "imageIDs": [
+        "89e6efe2e3ba97eb"
+      ],
+      "appearances": [
+        {
+          "team": "Sanctifiers",
+          "assetName": "Ardent Eradication",
+          "side": "face",
+          "imageID": "89e6efe2e3ba97eb"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "f3291696af06cc9a0d554f31e24fe29022aec87c61f3b5366625590ea7080f99",
+      "imageIDs": [
+        "bf46583d7caa9138"
+      ],
+      "appearances": [
+        {
+          "team": "Novitiates",
+          "assetName": "Novitiate Dialogus",
+          "side": "face",
+          "imageID": "bf46583d7caa9138"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "f426cb2752b68e368695dd8c053db2f5e6213100673e2bae815f54352575e51b",
+      "imageIDs": [
+        "4a4fb32c97bc1bc6"
+      ],
+      "appearances": [
+        {
+          "team": "Sanctifiers",
+          "assetName": "Blaze",
+          "side": "face",
+          "imageID": "4a4fb32c97bc1bc6"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "f568a9eb356b968e778df36c23c01c99dd6ca65e767a555587e0e67016a5a3e0",
+      "imageIDs": [
+        "4adc5a6b72ea3385"
+      ],
+      "appearances": [
+        {
+          "team": "Novitiates",
+          "assetName": "Ardent Vengeance",
+          "side": "face",
+          "imageID": "4adc5a6b72ea3385"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "f5bb2a0b8e4307e1f26861be2a882410a2f71f5c9b97d8a4b4292916d30982a4",
+      "imageIDs": [
+        "436d7b0675a3bab9"
+      ],
+      "appearances": [
+        {
+          "team": "Hearthkyn Salvager",
+          "assetName": "Hearthkyn Kinlynk",
+          "side": "back",
+          "imageID": "436d7b0675a3bab9"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "f6c4d6a8b649477ecf846a249034b32eab7d89ddc96e40df854b194c4dbe26c2",
+      "imageIDs": [
+        "7baecde52a25140d"
+      ],
+      "appearances": [
+        {
+          "team": "Death Korps",
+          "assetName": "Death Korps Gunner",
+          "side": "face",
+          "imageID": "7baecde52a25140d"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "f8a86b5d2f35a01cc81b1b355a415e1680b2da06d5b0b45624fc3cd385eec087",
+      "imageIDs": [
+        "32b32d2a8f59a5ab"
+      ],
+      "appearances": [
+        {
+          "team": "Novitiates",
+          "assetName": "Auto-Chastisers",
+          "side": "face",
+          "imageID": "32b32d2a8f59a5ab"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "f9506dc4bd36dcda32a65ad1c0a8d45e11799e0856e31002fd4e9ca77c627b8e",
+      "imageIDs": [
+        "837021dcba5e4ee1"
+      ],
+      "appearances": [
+        {
+          "team": "Death Korps",
+          "assetName": "Guardsmen Orders",
+          "side": "face",
+          "imageID": "837021dcba5e4ee1"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "faa176d2f199c5ecefc949e54413ee107d6609b953ab1e61e5be7543f09347bc",
+      "imageIDs": [
+        "3a22b11e600db05f"
+      ],
+      "appearances": [
+        {
+          "team": "Sanctifiers",
+          "assetName": "Sanctifier Drill Abbot",
+          "side": "face",
+          "imageID": "3a22b11e600db05f"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "fda6a02da327953044d4a90bd59a78380741dd84f37f05350a8f22f37232706c",
+      "imageIDs": [
+        "60b209d52c2442c8"
+      ],
+      "appearances": [
+        {
+          "team": "Death Korps",
+          "assetName": "Gas Bombardment",
+          "side": "face",
+          "imageID": "60b209d52c2442c8"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "fdbad158fd2640375336b38eac21117cafebdfe203f1ce830e5102a3383bf06d",
+      "imageIDs": [
+        "fa9d045b899d17e1"
+      ],
+      "appearances": [
+        {
+          "team": "Sanctifiers",
+          "assetName": "Fervent Brawl",
+          "side": "face",
+          "imageID": "fa9d045b899d17e1"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "ffbdf9d76bc800e2ccb9318309129a900647bf9b1763153dd3d7ab7296ab0a9a",
+      "imageIDs": [
+        "ea61dfe827301bdb"
+      ],
+      "appearances": [
+        {
+          "team": "Hearthkyn Salvager",
+          "assetName": "Toil Earns",
+          "side": "face",
+          "imageID": "ea61dfe827301bdb"
+        }
+      ]
+    }
+  ],
+  "excluded": [
+    {
+      "sourceSHA256": "111962ff52c4d6974e57ec1578086c87b007f5f3dff0609c42c4e218b75bbf77",
+      "imageIDs": [
+        "3f94e3866fdbe1c3"
+      ],
+      "appearances": [
+        {
+          "team": "Death Korps",
+          "assetName": "Death Korps Gunner",
+          "side": "back",
+          "imageID": "3f94e3866fdbe1c3"
+        },
+        {
+          "team": "Death Korps",
+          "assetName": "Death Korps Veteran",
+          "side": "back",
+          "imageID": "3f94e3866fdbe1c3"
+        },
+        {
+          "team": "Death Korps",
+          "assetName": "Death Korps Trooper",
+          "side": "back",
+          "imageID": "3f94e3866fdbe1c3"
+        },
+        {
+          "team": "Death Korps",
+          "assetName": "Death Korps Sniper",
+          "side": "back",
+          "imageID": "3f94e3866fdbe1c3"
+        },
+        {
+          "team": "Death Korps",
+          "assetName": "Death Korps Bruiser",
+          "side": "back",
+          "imageID": "3f94e3866fdbe1c3"
+        },
+        {
+          "team": "Death Korps",
+          "assetName": "Death Korps Zealot",
+          "side": "back",
+          "imageID": "3f94e3866fdbe1c3"
+        },
+        {
+          "team": "Death Korps",
+          "assetName": "Death Korps Spotter",
+          "side": "back",
+          "imageID": "3f94e3866fdbe1c3"
+        },
+        {
+          "team": "Death Korps",
+          "assetName": "Death Korps Sapper",
+          "side": "back",
+          "imageID": "3f94e3866fdbe1c3"
+        }
+      ],
+      "reason": "Pure artwork with no translatable text; visually inspected"
+    },
+    {
+      "sourceSHA256": "358d8e3ecc422747c782fddc084bfb25a831e2c1b1d62757b660d755ba76a797",
+      "imageIDs": [
+        "2f441ebf93e369da"
+      ],
+      "appearances": [
+        {
+          "team": "Novitiates",
+          "assetName": "Novitiate Purgatus",
+          "side": "back",
+          "imageID": "2f441ebf93e369da"
+        },
+        {
+          "team": "Novitiates",
+          "assetName": "Novitiate Reliquarius",
+          "side": "back",
+          "imageID": "2f441ebf93e369da"
+        },
+        {
+          "team": "Novitiates",
+          "assetName": "Novitiate Condemnor",
+          "side": "back",
+          "imageID": "2f441ebf93e369da"
+        },
+        {
+          "team": "Novitiates",
+          "assetName": "Novitiate Militant",
+          "side": "back",
+          "imageID": "2f441ebf93e369da"
+        },
+        {
+          "team": "Novitiates",
+          "assetName": "Novitiate Penitent",
+          "side": "back",
+          "imageID": "2f441ebf93e369da"
+        },
+        {
+          "team": "Novitiates",
+          "assetName": "Novitiate Pronatus",
+          "side": "back",
+          "imageID": "2f441ebf93e369da"
+        },
+        {
+          "team": "Novitiates",
+          "assetName": "Novitiate Preceptor",
+          "side": "back",
+          "imageID": "2f441ebf93e369da"
+        },
+        {
+          "team": "Novitiates",
+          "assetName": "Novitiate Duelist",
+          "side": "back",
+          "imageID": "2f441ebf93e369da"
+        },
+        {
+          "team": "Novitiates",
+          "assetName": "Novitiate Exactor",
+          "side": "back",
+          "imageID": "2f441ebf93e369da"
+        },
+        {
+          "team": "Novitiates",
+          "assetName": "Novitiate Superior",
+          "side": "back",
+          "imageID": "2f441ebf93e369da"
+        }
+      ],
+      "reason": "Pure artwork with no translatable text; visually inspected"
+    },
+    {
+      "sourceSHA256": "5fd7817be2a05e57fab3018c20778a9d08325d200032835894a4131692655dec",
+      "imageIDs": [
+        "96318393d79c834d"
+      ],
+      "appearances": [
+        {
+          "team": "Hearthkyn Salvager",
+          "assetName": "Hearthkyn Lugger",
+          "side": "back",
+          "imageID": "96318393d79c834d"
+        },
+        {
+          "team": "Hearthkyn Salvager",
+          "assetName": "Hearthkyn Jump Pack Warrior",
+          "side": "back",
+          "imageID": "96318393d79c834d"
+        },
+        {
+          "team": "Hearthkyn Salvager",
+          "assetName": "Hearthkyn Dôzr",
+          "side": "back",
+          "imageID": "96318393d79c834d"
+        },
+        {
+          "team": "Hearthkyn Salvager",
+          "assetName": "Hearthkyn Warrior",
+          "side": "back",
+          "imageID": "96318393d79c834d"
+        }
+      ],
+      "reason": "Pure artwork with no translatable text; visually inspected"
+    },
+    {
+      "sourceSHA256": "791fa04d0b90476adddb291c5afa455ced82cc96b35ef26b1f6380a0943c55b9",
+      "imageIDs": [
+        "26a0ca90408caf35"
+      ],
+      "appearances": [
+        {
+          "team": "Sanctifiers",
+          "assetName": "Sanctifier Salvationist",
+          "side": "back",
+          "imageID": "26a0ca90408caf35"
+        },
+        {
+          "team": "Sanctifiers",
+          "assetName": "Sanctifier Reliquant",
+          "side": "back",
+          "imageID": "26a0ca90408caf35"
+        },
+        {
+          "team": "Sanctifiers",
+          "assetName": "Sanctifier Persecutor",
+          "side": "back",
+          "imageID": "26a0ca90408caf35"
+        },
+        {
+          "team": "Sanctifiers",
+          "assetName": "Sanctifier Preacher",
+          "side": "back",
+          "imageID": "26a0ca90408caf35"
+        },
+        {
+          "team": "Sanctifiers",
+          "assetName": "Sanctifier Drill Abbot",
+          "side": "back",
+          "imageID": "26a0ca90408caf35"
+        },
+        {
+          "team": "Sanctifiers",
+          "assetName": "Sanctifier Death Cult Assassin",
+          "side": "back",
+          "imageID": "26a0ca90408caf35"
+        },
+        {
+          "team": "Sanctifiers",
+          "assetName": "Sanctifier Conflaglator",
+          "side": "back",
+          "imageID": "26a0ca90408caf35"
+        }
+      ],
+      "reason": "Pure artwork with no translatable text; visually inspected"
+    },
+    {
+      "sourceSHA256": "d8910c1b50393559a0b30feec359ddc71712d05d62067e0d25e71da9fb367a81",
+      "imageIDs": [
+        "93d226a1c4155d1f"
+      ],
+      "appearances": [
+        {
+          "team": "Sanctifiers",
+          "assetName": "Blaze",
+          "side": "back",
+          "imageID": "93d226a1c4155d1f"
+        },
+        {
+          "team": "Sanctifiers",
+          "assetName": "Purity Seals",
+          "side": "back",
+          "imageID": "93d226a1c4155d1f"
+        },
+        {
+          "team": "Sanctifiers",
+          "assetName": "Ecclesiarchy Texts",
+          "side": "back",
+          "imageID": "93d226a1c4155d1f"
+        },
+        {
+          "team": "Sanctifiers",
+          "assetName": "Imperial Cult Symbols",
+          "side": "back",
+          "imageID": "93d226a1c4155d1f"
+        },
+        {
+          "team": "Sanctifiers",
+          "assetName": "Rally the Flock",
+          "side": "back",
+          "imageID": "93d226a1c4155d1f"
+        },
+        {
+          "team": "Sanctifiers",
+          "assetName": "Zealous Persecution",
+          "side": "back",
+          "imageID": "93d226a1c4155d1f"
+        },
+        {
+          "team": "Sanctifiers",
+          "assetName": "The Emperor Protects",
+          "side": "back",
+          "imageID": "93d226a1c4155d1f"
+        },
+        {
+          "team": "Sanctifiers",
+          "assetName": "Fervent Brawl",
+          "side": "back",
+          "imageID": "93d226a1c4155d1f"
+        },
+        {
+          "team": "Sanctifiers",
+          "assetName": "Redeemd Through Fire",
+          "side": "back",
+          "imageID": "93d226a1c4155d1f"
+        },
+        {
+          "team": "Sanctifiers",
+          "assetName": "Unwavering Devotion",
+          "side": "back",
+          "imageID": "93d226a1c4155d1f"
+        },
+        {
+          "team": "Sanctifiers",
+          "assetName": "Ardent Eradication",
+          "side": "back",
+          "imageID": "93d226a1c4155d1f"
+        },
+        {
+          "team": "Sanctifiers",
+          "assetName": "Rosarius",
+          "side": "back",
+          "imageID": "93d226a1c4155d1f"
+        }
+      ],
+      "reason": "Pure artwork with no translatable text; visually inspected"
+    }
+  ],
+  "counts": {
+    "includedSourceSHA": 131,
+    "excludedSourceSHA": 5,
+    "referencedSourceSHA": 136
+  }
+}

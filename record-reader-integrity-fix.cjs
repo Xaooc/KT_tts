@@ -1,0 +1,19 @@
+const fs=require('fs'),assert=require('assert'),crypto=require('crypto');
+const read=p=>JSON.parse(fs.readFileSync(p,'utf8').replace(/^\uFEFF/,''));
+const sha=b=>crypto.createHash('sha256').update(b).digest('hex');
+const installation=read('output/installation-workshop.json');
+const installed=fs.readFileSync(installation.files[0].destination);
+const hud=JSON.parse(installed).ObjectStates.find(o=>o.GUID==='efa3fe').LuaScript;
+const reports={};
+for(const [name,fixture] of [['reader-integrity','reader-integrity'],['compact-rules','compact-rules'],['reference','reference-hud'],['rich-reader','rich-reader'],['ploy','ploy-panel']]){
+ const report=read('output/moonsharp-'+name+'-verification.json');assert(report.passed);
+ const script=fs.readFileSync('tmp/'+fixture+'-test.lua','utf8');assert(script.includes(hud),'Fixture differs from installed HUD: '+name);
+ reports[name]={...report,fixtureSHA256:sha(script),installedHUDSHA256:sha(hud)};
+}
+const result={status:'installed',installedAt:installation.installedAt,installedSHA256:sha(installed),changedObjectGUID:'efa3fe',changedProperty:'LuaScript',modelsChecked:1405,ruleBodiesChecked:2071,compactModelsChecked:726,compactCardsChecked:1048,fullDescriptionsPreserved:true,cyrillicRoundtrip:true,numericWeaponTraitsPreserved:true,scrollContentBounds:true,horizontalScrollingDisabled:true,scrollBackgroundTransparent:true,tooltipsWrappedAndBounded:true,duplicateUntranslatedHeadingsRemoved:true,nativeInterpreterTested:true,inGameUIAutomationTested:false,computerUse:false,criticSwarm:{model:'gpt-6-luna',reasoningEffort:'max',roles:['Unicode and rule integrity','Native scroll attributes and geometry','Reading and compact card usability']},preview:'output/reader-integrity-preview.png',verification:reports,installationVerification:read('output/final-installation-verification.json')};
+assert(result.installationVerification.passed);
+fs.writeFileSync('output/reader-integrity-fix-verification.json',JSON.stringify(result,null,2));
+const progressPath='output/current-progress.json',progress=read(progressPath);progress.updatedAt=new Date().toISOString();progress.readerIntegrityFix=result;if(progress.readerDesign)progress.readerDesign.status='installed';fs.writeFileSync(progressPath,JSON.stringify(progress,null,2));
+const manifestPath='output/design-candidate-manifest.json',manifest=read(manifestPath);assert.equal(manifest.candidateSHA256,result.installedSHA256);manifest.status='installed';manifest.installedAt=installation.installedAt;manifest.installedVersionUnchanged=false;manifest.nativeInterpreterTested=true;manifest.inGameUIAutomationTested=false;manifest.nativeInterpreterReport='output/reader-integrity-fix-verification.json';manifest.examples=['output/reader-integrity-preview.png','output/compact-rules-preview.png'];fs.writeFileSync(manifestPath,JSON.stringify(manifest,null,2));
+const readmePath='output/README.txt';let text=fs.readFileSync(readmePath,'utf8');const heading='СПРАВОЧНИК И КАРТОЧКИ — ИСПРАВЛЕНА ОБРАБОТКА ТЕКСТА И ПРОКРУТКА\n';if(!text.includes(heading))text=heading+'Кириллица и числовые трейты оружия сохраняются. Убраны серый фон прокрутки и горизонтальные полосы; ширина текста учитывает вертикальную полосу.\nВсплывающие подсказки ограничены по ширине и длине, полный текст доступен в справочнике. Дубли одинаковых заголовков убраны.\nПроверены 1405 вариантов моделей и 2071 текст правил на MoonSharp из TTS. Проверка отрисовки в игре не выполнена; компьютерное управление не использовалось.\nЛокальные изменения в наборе KT41-RU сохранены. Загрузите сохранение «KT24 The Killzone — русский перевод» заново.\n\n'+text;fs.writeFileSync(readmePath,text);
+console.log({status:result.status,installedAt:result.installedAt,models:result.modelsChecked,bodies:result.ruleBodiesChecked,sha256:result.installedSHA256});

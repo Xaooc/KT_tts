@@ -1,0 +1,1584 @@
+[
+  {
+    "id": "6ff3d14da5094f64",
+    "expectedTitle": "Mandrake Nightfiend",
+    "team": "Mandrakes",
+    "source": {
+      "officialPdf": "https://assets.warhammer-community.com/eng_28-01_kill_team_team_rules_mandrakes-w2j9qwhaxz-oveknnlmoe.pdf",
+      "date": "2026-01-28",
+      "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/mandrakes/",
+      "checkedOn": "2026-10-05",
+      "evidence": "Official PDF p9 January ’26 Errata; p1 main rule; Waha full text inventory/current-team-rules/mandrakes-web-full.txt L241-242."
+    },
+    "blocks": [
+      {
+        "heading": "Harrowing Whispers",
+        "russian": "Когда противник собирается активировать вражеского оперативника в пределах 6 дюймов от этого оперативника, можно бросить один D6. Нельзя делать этот бросок, если в этом раунде вы уже прерывали активацию выбранного врага этим правилом или правилом «Зловещий прицел» (Haunting Focus) оперативника DIRGEMAW. Если результат D6 выше APL выбранного врага, противник не может активировать его в эту активацию. Если нет других врагов, которых можно активировать, правило не действует.",
+        "english": "Whenever your opponent would activate an enemy operative within 6″ of this operative, you can roll one D6 (you cannot do so if you already interrupted that operative’s activation with this rule or the DIRGEMAW operative’s Haunting Focus additional rule during this turning point): if the result is higher than that enemy operative’s APL stat, your opponent cannot activate it during this activation. If there are no other enemy operatives eligible to be activated, this rule has no effect.",
+        "proseTitles": [
+          "Harrowing Whispers"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "da594f66d6057f82",
+    "expectedTitle": "Mandrake Dirgemaw",
+    "team": "Mandrakes",
+    "source": {
+      "officialPdf": "https://assets.warhammer-community.com/eng_28-01_kill_team_team_rules_mandrakes-w2j9qwhaxz-oveknnlmoe.pdf",
+      "date": "2026-01-28",
+      "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/mandrakes/",
+      "checkedOn": "2026-10-05",
+      "evidence": "Official PDF p10 Previous Errata changes the 4th and final sentences; Waha current full text around L302-L303."
+    },
+    "blocks": [
+      {
+        "heading": "Haunting Focus: STRATEGIC GAMBIT",
+        "russian": "Выберите одного вражеского оперативника: до шага готовности (Ready) следующей фазы стратегии он получает ваш жетон зловещего прицела (Haunting Focus). Когда противник в следующий раз собирается активировать врага с этим жетоном, если этот оперативник готов, можно сначала активировать его. Нельзя делать это, если в этом раунде вы уже бросали кубик для предотвращения активации выбранного врага правилом «Мучительные шёпоты» (Harrowing Whispers) оперативника NIGHTFIEND.\nВ эту активацию этот оперативник должен сразиться с выбранным врагом или выстрелить по нему; до этого он не может сражаться или стрелять по другим врагам. Если выполнить это невозможно, активация отменяется. После его активации противник активирует выбранного врага, если возможно, либо другого врага, если выбранного активировать нельзя.",
+        "english": "Select one enemy operative. Until the Ready step of the next Strategy phase, it gains your Haunting Focus token. The next time your opponent would activate an enemy operative that has your Haunting Focus token, if this operative is ready, you can activate this operative first (you cannot do so if you also rolled to prevent that operative’s activation with the NIGHTFIEND operative’s Harrowing Whispers additional rule during this turning point). If you do, during that activation, this operative must fight against or shoot against that enemy operative, and cannot do so against any other enemy operatives until it does (if this isn’t possible, this operative’s activation is cancelled). After completing this operative’s activation, your opponent activates that enemy operative (if possible), or activates a different enemy operative if they can’t.",
+        "proseTitles": [
+          "Haunting Focus"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "7c166e06d7fdb2c1",
+    "expectedTitle": "Mandrake Dirgemaw",
+    "team": "Mandrakes",
+    "source": {
+      "officialPdf": "https://assets.warhammer-community.com/eng_28-01_kill_team_team_rules_mandrakes-w2j9qwhaxz-oveknnlmoe.pdf",
+      "date": "2026-01-28",
+      "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/mandrakes/",
+      "checkedOn": "2026-10-05",
+      "evidence": "Official PDF p9 January ’26 Errata deletes the APL clause; main rule p2."
+    },
+    "blocks": [
+      {
+        "heading": "Pareidolic Projection (1AP)",
+        "russian": "Выберите одного врага, который является допустимой целью для этого оперативника или находится в тени (WITHIN SHADOW). До начала следующей активации этого оперативника, его выведения из строя или повторного выполнения им этого действия — что наступит раньше — ухудшите HIT оружия выбранного врага на 1 и уменьшите его MOVE на 2 дюйма. Эффект не суммируется с ранением.\nЭто действие нельзя выполнять в дистанции контроля врага, если только выбранный враг не является единственным врагом в дистанции контроля этого оперативника.",
+        "english": "Select one enemy operative that’s a valid target for this operative or is WITHIN SHADOW. Until the start of this operative’s next activation, until it’s incapacitated or until it performs this action again (whichever comes first), worsen the Hit stat of that enemy operative’s weapons by 1 and subtract 2″ from its Move stat (these aren’t cumulative with being injured). This operative cannot perform this action while within control range of an enemy operative, unless the only enemy operative it’s within control range of is selected for this action.",
+        "proseTitles": [
+          "Pareidolic Projection"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "31cbced9ebec4534",
+    "expectedTitle": "Chain Snare",
+    "team": "Mandrakes",
+    "source": {
+      "officialPdf": "https://assets.warhammer-community.com/eng_28-01_kill_team_team_rules_mandrakes-w2j9qwhaxz-oveknnlmoe.pdf",
+      "date": "2026-01-28",
+      "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/mandrakes/",
+      "checkedOn": "2026-10-05",
+      "evidence": "Official PDF p9 January ’26 Errata changes the final sentence."
+    },
+    "blocks": [
+      {
+        "heading": "Rule",
+        "russian": "Когда вражеский оперативник собирается выполнить действие «Отступление» (Fall Back) в дистанции контроля дружественного оперативника Мандрагор (MANDRAKE), и в дистанции контроля этого дружественного оперативника нет других врагов, вы можете применить это правило. Бросьте 2D6 или только 1D6, если характеристика ран (Wounds) врага выше, чем у дружественного оперативника. При результате 4+ враг не может выполнить это действие в данной активации или контрдействии; очки действий за него не тратятся.\nПосле результата 4+ это правило нельзя применять повторно в том же раунде.",
+        "english": "Whenever an enemy operative would perform the Fall Back action while within control range of a friendly MANDRAKE operative, if no other enemy operatives are within that friendly operative’s control range, you can use this rule. If you do, roll two D6, or one D6 if that enemy operative has a higher Wounds stat than that friendly operative. If any result is a 4+, that enemy operative cannot perform that action during that activation or counteraction (no AP are spent on it). If any result is a 4+, you cannot use this rule again during this turning point.",
+        "proseTitles": [
+          "Rule"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "042802d29dee3478",
+    "expectedTitle": "Chain Snare",
+    "team": "Hand of the Archon",
+    "source": {
+      "officialPdf": "https://assets.warhammer-community.com/eng_28-01_kill_team_team_rules_hand_of_the_archon-ijq4ui6dxc-qnz6k5jaxl.pdf",
+      "date": "2026-01-28",
+      "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/hand-of-the-archon/",
+      "checkedOn": "2026-10-05",
+      "evidence": "Official PDF p10 January ’26 Errata."
+    },
+    "blocks": [
+      {
+        "heading": "Rule",
+        "russian": "Когда вражеский оперативник собирается выполнить действие «Отступление» (Fall Back), находясь в дистанции контроля дружественного оперативника отряда «Длань Архонта» (HAND OF THE ARCHON), вы можете применить это правило, если в дистанции контроля того дружественного оперативника нет других врагов. Бросьте два D6 или один D6, если характеристика ран (Wounds) вражеского оперативника выше, чем у дружественного. Если хотя бы один результат равен 4+, враг не может выполнить это действие в эту активацию или ответное действие; очки действий (AP) за него не тратятся.\nПосле результата 4+ это правило нельзя применять повторно в том же раунде.",
+        "english": "Whenever an enemy operative would perform the Fall Back action while within control range of a friendly HAND OF THE ARCHON operative, if no other enemy operatives are within that friendly operative’s control range, you can use this rule. If you do, roll two D6, or one D6 if that enemy operative has a higher Wounds stat than that friendly operative. If any result is a 4+, that enemy operative cannot perform that action during that activation or counteraction (no AP are spent on it). If any result is a 4+, you cannot use this rule again during this turning point.",
+        "proseTitles": [
+          "Rule"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "54a0f3ae9f11005b",
+    "expectedTitle": "Locus",
+    "team": "Wyrmblade",
+    "source": {
+      "officialPdf": "https://assets.warhammer-community.com/eng_17-12_killteam_wyrmblade_online_rules-nzx8yswdj0-9lcmzodiqo.pdf",
+      "date": "2025-12-17",
+      "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/wyrmblade/",
+      "checkedOn": "2026-10-05",
+      "evidence": "Official PDF p10 November ’25 Errata deletes that phrase from the first sentence; main rule p1."
+    },
+    "blocks": [
+      {
+        "heading": "Quicksilver Strike",
+        "russian": "Один раз за раунд, после того как вражеский оперативник выполнит действие с перемещением или будет выставлен на поле, вы можете прервать последовательность игры и применить это правило. Если вы это делаете, данный оперативник может немедленно бесплатно выполнить действие «Атака» (Charge), изменив для этого его приказ. Он не может переместиться более чем на 3 дюйма и должен завершить перемещение в дистанции контроля того врага. Если это невозможно, прерывание отменяется, и правило считается не использованным.",
+        "english": "Once per turning point, after an enemy operative performs an action in which it moves or is set up, you can interrupt to use this rule. If you do, this operative can immediately perform a free Charge action (you can change its order to do so), but it cannot move more than 3″, and it must end that move within control range of that enemy operative. If this isn’t possible, the interruption is cancelled and this rule hasn’t been used.",
+        "proseTitles": [
+          "Quicksilver Strike"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "d088373d73aa2e25",
+    "expectedTitle": "Unquestioning Loyalty",
+    "team": "Wyrmblade",
+    "source": {
+      "officialPdf": "https://assets.warhammer-community.com/eng_17-12_killteam_wyrmblade_online_rules-nzx8yswdj0-9lcmzodiqo.pdf",
+      "date": "2025-12-17",
+      "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/wyrmblade/",
+      "checkedOn": "2026-10-05",
+      "evidence": "Official PDF p10 Previous Errata adds this sentence to the ploy."
+    },
+    "blocks": [
+      {
+        "heading": "Rule",
+        "russian": "Примените этот приём перестрелки (Firefight Ploy), когда дружественный оперативник-агент Культа (CULT AGENT) или ПРЕДВОДИТЕЛЬ (LEADER) отряда «Клинок Змея» (WYRMBLADE) выбран допустимой целью действия «Стрельба» (Shoot) или целью действия «Ближний бой» (Fight). Вместо него выберите другого дружественного оперативника-неофита (NEOPHYTE) отряда «Клинок Змея» (WYRMBLADE), кроме ПРЕДВОДИТЕЛЯ (LEADER), который виден первому оперативнику и находится в пределах 3 дюймов от него. Новый оперативник становится допустимой целью выстрела или целью ближнего боя, даже если обычно не мог бы ею быть. Если это действие «Ближний бой», считайте выбранного оперативника находящимся в дистанции контроля атакующего на протяжении всего действия. Приём не действует против выстрела из оружия с правилом «Взрыв» (Blast) или «Поток» (Torrent).\nЕсли это действие «Стрелять» (Shoot), заменяющий оперативник получает укрытие (Cover) или заслонение (Obscured) только если их имела исходная цель.",
+        "english": "Use this firefight ploy when a friendly WYRMBLADE CULT AGENT or WYRMBLADE LEADER operative is selected as the valid target of a Shoot action or to fight against during the Fight action. Select one other friendly WYRMBLADE NEOPHYTE operative (excluding LEADER) visible to and within 3″ of that first friendly operative to become the valid target or to be fought against (as appropriate) instead (even if it wouldn’t normally be valid for this). If it’s the Fight action, treat that other operative as being within the fighting operative’s control range for the duration of that action. This ploy has no effect if it’s the Shoot action and the ranged weapon has the Blast or Torrent weapon rule. If it is the Shoot action, that other operative is only in cover or obscured if the original target was.",
+        "proseTitles": [
+          "Rule"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "20c635bd1ec406a7",
+    "expectedTitle": "Sanctus Sniper",
+    "team": "Wyrmblade",
+    "source": {
+      "officialPdf": "https://assets.warhammer-community.com/eng_17-12_killteam_wyrmblade_online_rules-nzx8yswdj0-9lcmzodiqo.pdf",
+      "date": "2025-12-17",
+      "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/wyrmblade/",
+      "checkedOn": "2026-10-05",
+      "evidence": "Official PDF p3 profile; Waha profile agrees."
+    },
+    "stats": {
+      "Wounds": 9
+    }
+  },
+  {
+    "id": "dbc4eae2602698e3",
+    "expectedTitle": "Sanctus Sniper",
+    "team": "Wyrmblade",
+    "source": {
+      "officialPdf": "https://assets.warhammer-community.com/eng_17-12_killteam_wyrmblade_online_rules-nzx8yswdj0-9lcmzodiqo.pdf",
+      "date": "2025-12-17",
+      "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/wyrmblade/",
+      "checkedOn": "2026-10-05",
+      "evidence": "Official PDF p3 profile; reverse card record has the wrong repeated value."
+    },
+    "stats": {
+      "Wounds": 9
+    }
+  },
+  {
+    "id": "d6d6542b40671e16",
+    "expectedTitle": "Kabalite Archsybarite",
+    "team": "Hand of the Archon",
+    "source": {
+      "officialPdf": "https://assets.warhammer-community.com/eng_28-01_kill_team_team_rules_hand_of_the_archon-ijq4ui6dxc-qnz6k5jaxl.pdf",
+      "date": "2026-01-28",
+      "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/hand-of-the-archon/",
+      "checkedOn": "2026-10-05",
+      "evidence": "Official PDF p11 Previous Errata; current operative profile p1."
+    },
+    "blocks": [
+      {
+        "heading": "Cunning",
+        "russian": "На шаге гамбитов каждой фазы стратегии, если этот оперативник находится в зоне боя и вы пасуете при первой возможности, получите 1 CP. При проверке этого условия игнорируйте стратегические гамбиты (STRATEGIC GAMBIT) набора миссий, если они есть.",
+        "english": "In the Gambit step of each Strategy phase, if this operative is in the killzone and you pass at the first opportunity, you gain 1CP. Ignore each STRATEGIC GAMBIT from the mission pack (if any) when determining this.",
+        "proseTitles": [
+          "Cunning"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "d6d6542b40671e16",
+    "expectedTitle": "Kabalite Archsybarite",
+    "team": "Hand of the Archon",
+    "source": {
+      "officialPdf": "https://assets.warhammer-community.com/eng_28-01_kill_team_team_rules_hand_of_the_archon-ijq4ui6dxc-qnz6k5jaxl.pdf",
+      "date": "2026-01-28",
+      "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/hand-of-the-archon/",
+      "checkedOn": "2026-10-05",
+      "evidence": "Official PDF p1 contains it and p10 January ’26 Errata says Torturous Vision additional rule added; Waha full text L237."
+    },
+    "blocks": [
+      {
+        "heading": "Torturous Vision",
+        "russian": "Один раз в каждую свою активацию, когда этот оперативник выполняет действие «Сражаться» (Fight) или «Стрелять» (Shoot), если у него нет ваших жетонов боли (Pain), он может получить один такой жетон при выборе допустимой цели стрельбы или врага для боя.",
+        "english": "Once during each of this operative’s activations, if it doesn’t have any of your Pain tokens when it performs either the Fight or Shoot action, it can gain one of your Pain tokens when you select a valid target or an enemy operative to fight against.",
+        "proseTitles": [
+          "Torturous Vision"
+        ],
+        "append": true,
+        "headingRussian": "Мучительное видение"
+      }
+    ]
+  },
+  {
+    "id": "7885899943d199ec",
+    "expectedTitle": "Kabalite Elixicant",
+    "team": "Hand of the Archon",
+    "source": {
+      "officialPdf": "https://assets.warhammer-community.com/eng_28-01_kill_team_team_rules_hand_of_the_archon-ijq4ui6dxc-qnz6k5jaxl.pdf",
+      "date": "2026-01-28",
+      "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/hand-of-the-archon/",
+      "checkedOn": "2026-10-05",
+      "evidence": "Official PDF p10 January ’26 Errata; current Elixicant profile p2."
+    },
+    "blocks": [
+      {
+        "heading": "Combat Drugs",
+        "russian": "В конце шага выбора оперативников (Select Operatives), если этот оперативник выбран для выставления, выберите одно из следующих правил «Боевые наркотики» (COMBAT DRUG) для дружественных оперативников отряда «Длань Архонта» (HAND OF THE ARCHON); оно действует до конца битвы.\n«Несущий боль» (Painbringer): каждый раз, когда кубик атаки наносит этому оперативнику 3 или больше урона, бросьте D6. На 6 уменьшите урон от этого кубика на 1.\n«Адреналайт» (Adrenalight): на шаге готовности (Ready) каждой фазы стратегии можно выбрать одного дружественного оперативника с этим COMBAT DRUG: он получает ваш жетон «Боль» (Pain).\n«Гипекс» (Hypex): игнорируйте любые изменения характеристики перемещения (Move) этого оперативника, вызванные ранением.",
+        "english": "At the end of the Select Operatives step, if this operative is selected for deployment, select one of the following COMBAT DRUG rules for friendly HAND OF THE ARCHON operatives to have for the battle: Painbringer: Whenever an attack dice inflicts damage of 3 or more on this operative, roll one D6: on a 6, subtract 1 from that inflicted damage. Adrenalight: In the Ready step of each Strategy phase, you can select one friendly operative that has this COMBAT DRUG to gain one of your Pain tokens. Hypex: You can ignore any changes to this operative’s Move stat from being injured.",
+        "proseTitles": [
+          "Combat Drugs"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "a9c48ec51474b99e",
+    "expectedTitle": "Kabalite Crimson Duellist",
+    "team": "Hand of the Archon",
+    "source": {
+      "officialPdf": "https://assets.warhammer-community.com/eng_28-01_kill_team_team_rules_hand_of_the_archon-ijq4ui6dxc-qnz6k5jaxl.pdf",
+      "date": "2026-01-28",
+      "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/hand-of-the-archon/",
+      "checkedOn": "2026-10-05",
+      "evidence": "Official PDF p11 Previous Errata replaces the rule."
+    },
+    "blocks": [
+      {
+        "heading": "Crimson Duellist",
+        "russian": "Этот оперативник может выполнить два действия «Сражаться» (Fight) в свою активацию.",
+        "english": "This operative can perform two Fight actions during its activation.",
+        "proseTitles": [
+          "Crimson Duellist"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "90b6c4f96c677060",
+    "expectedTitle": "Power from Pain",
+    "team": "Hand of the Archon",
+    "source": {
+      "officialPdf": "https://assets.warhammer-community.com/eng_28-01_kill_team_team_rules_hand_of_the_archon-ijq4ui6dxc-qnz6k5jaxl.pdf",
+      "date": "2026-01-28",
+      "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/hand-of-the-archon/",
+      "checkedOn": "2026-10-05",
+      "evidence": "Official PDF p11 Previous Errata changes the effect."
+    },
+    "blocks": [
+      {
+        "heading": "Stimulated Senses",
+        "russian": "Когда: после броска кубиков атаки или защиты за оперативника. Эффект: выберите одно значение результата, например 2, и перебросьте любое количество своих кубиков с этим результатом.",
+        "english": "When: After rolling your attack or defence dice for the operative. Effect: You can re-roll any of your dice results of one result (e.g. results of 2).",
+        "proseTitles": [
+          "Stimulated Senses"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "5454d0f24401a215",
+    "expectedTitle": "Power from Pain",
+    "team": "Hand of the Archon",
+    "source": {
+      "officialPdf": "https://assets.warhammer-community.com/eng_28-01_kill_team_team_rules_hand_of_the_archon-ijq4ui6dxc-qnz6k5jaxl.pdf",
+      "date": "2026-01-28",
+      "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/hand-of-the-archon/",
+      "checkedOn": "2026-10-05",
+      "evidence": "Official PDF p11 Previous Errata replaces this sentence."
+    },
+    "blocks": [
+      {
+        "heading": "Power from Pain",
+        "russian": "После того как дружественный оперативник отряда «Длань Архонта» (HAND OF THE ARCHON) выполняет действие, он получает один ваш жетон «Боль» (Pain), если во время этого действия вражеский оперативник был ранен, но не выведен из строя, или если вражеский оперативник был выведен из строя. Если у выведенного из строя врага было 12 или больше ран (Wounds), дружественный оперативник вместо этого получает два ваших жетона «Боль». Когда наступает указанное условие «Когда» (When), тратьте жетоны «Боль» дружественных оперативников на усиления (Invigorations). За активацию или ответное действие можно использовать не более одного усиления, кроме «Стимулированных чувств» (Stimulated Senses): его можно использовать один раз за активацию или контратаку дополнительно к одному другому усилению.",
+        "english": "After a friendly HAND OF THE ARCHON operative performs an action, it gains one of your Pain tokens if: An enemy operative was injured during that action, but was not incapacitated; or an enemy operative was incapacitated during that action. If that enemy operative had a Wounds stat of 12 or more, that friendly operative gains two of your Pain tokens instead. You can spend friendly operatives’ Pain tokens on invigorations when the ‘when’ condition is met. You cannot use more than one invigoration per activation or counteraction, except Stimulated Senses, which can be used once per activation or counteraction in addition to another invigoration.",
+        "proseTitles": [
+          "Power from Pain"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "62187b561036904a",
+    "expectedTitle": "Denizens of Night",
+    "team": "Hand of the Archon",
+    "source": {
+      "officialPdf": "https://assets.warhammer-community.com/eng_28-01_kill_team_team_rules_hand_of_the_archon-ijq4ui6dxc-qnz6k5jaxl.pdf",
+      "date": "2026-01-28",
+      "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/hand-of-the-archon/",
+      "checkedOn": "2026-10-05",
+      "evidence": "Official PDF p11 Previous Errata adds Light terrain."
+    },
+    "blocks": [
+      {
+        "heading": "Rule",
+        "russian": "Когда вражеский оперативник стреляет по дружественному оперативнику отряда «Длань Архонта» (HAND OF THE ARCHON), находящемуся более чем в 2 дюймах от вражеских оперативников, вы можете перебросить один кубик защиты, если между ними стоит тяжёлый (Heavy) или лёгкий (Light) террейн либо часть подставки дружественного оперативника находится под террейном с высотной позицией (Vantage terrain).",
+        "english": "Whenever an enemy operative is shooting a friendly HAND OF THE ARCHON operative that’s more than 2″ from enemy operatives, if Heavy or Light terrain is intervening, or any part of that friendly operative’s base is underneath Vantage terrain, you can re-roll one of your defence dice.",
+        "proseTitles": [
+          "Rule"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "00080c27039bb502",
+    "expectedTitle": "Hunter Clade roster restrictions",
+    "team": "Hunter Clade",
+    "source": {
+      "officialPdf": "https://assets.warhammer-community.com/eng_28-01_kill_team_team_rules_hunter_clade-iw4pezoqcm-axjoncdqci.pdf",
+      "date": "2026-01-28",
+      "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/hunter-clade/",
+      "checkedOn": "2026-10-05",
+      "evidence": "Official PDF p11 Previous Errata changes the roster restriction."
+    },
+    "blocks": [
+      {
+        "heading": "Roster restrictions",
+        "russian": "* В сумме нельзя выбрать более 7 таких оперативников. За исключением стрелков (GUNNER) и воинов (WARRIOR), каждый оперативник из списка может входить в отряд только один раз. В отряде может быть не более одного диктата (DIKTAT), одного наблюдателя (SURVEYOR) и пяти сикариев (SICARIAN). В отряде может быть не более одной дуговой винтовки (arc rifle), одного плазменного калибера (plasma caliver) и одного трансураниевого аркебуза (transuranic arquebus).",
+        "english": "* You cannot select more than 7 of these operatives combined. Other than GUNNER and WARRIOR operatives, your kill team can only include each operative on this list once. Your kill team can only include up to one DIKTAT operative, up to one SURVEYOR operative and up to five SICARIAN operatives. Your kill team can only include up to one arc rifle, up to one plasma caliver and up to one transuranic arquebus.",
+        "proseTitles": [
+          "Roster restrictions"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "b375deff78340e15",
+    "expectedTitle": "Skitarii Ranger Alpha",
+    "team": "Hunter Clade",
+    "source": {
+      "officialPdf": "https://assets.warhammer-community.com/eng_28-01_kill_team_team_rules_hunter_clade-iw4pezoqcm-axjoncdqci.pdf",
+      "date": "2026-01-28",
+      "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/hunter-clade/",
+      "checkedOn": "2026-10-05",
+      "evidence": "Official PDF p11 adds this rule to Ranger Alpha, Vanguard Alpha and both Princeps profiles."
+    },
+    "blocks": [
+      {
+        "heading": "Control Protocol",
+        "russian": "Можно применить тактическую уловку «Переопределение команд» (Command Override) за 0 CP, если указанный в ней дружественный оперативник Охотничьей клады (HUNTER CLADE) видим этому оперативнику.",
+        "english": "You can use the Command Override firefight ploy for 0CP if the specified friendly HUNTER CLADE operative is visible to this operative.",
+        "proseTitles": [
+          "Control Protocol"
+        ],
+        "append": true,
+        "headingRussian": "Протокол управления"
+      }
+    ]
+  },
+  {
+    "id": "f85b0e624090cffb",
+    "expectedTitle": "Skitarii Ranger Alpha",
+    "team": "Hunter Clade",
+    "source": {
+      "officialPdf": "https://assets.warhammer-community.com/eng_28-01_kill_team_team_rules_hunter_clade-iw4pezoqcm-axjoncdqci.pdf",
+      "date": "2026-01-28",
+      "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/hunter-clade/",
+      "checkedOn": "2026-10-05",
+      "evidence": "Official PDF p11 adds this rule to Ranger Alpha."
+    },
+    "blocks": [
+      {
+        "heading": "Control Protocol",
+        "russian": "Можно применить тактическую уловку «Переопределение команд» (Command Override) за 0 CP, если указанный в ней дружественный оперативник Охотничьей клады (HUNTER CLADE) видим этому оперативнику.",
+        "english": "You can use the Command Override firefight ploy for 0CP if the specified friendly HUNTER CLADE operative is visible to this operative.",
+        "proseTitles": [
+          "Control Protocol"
+        ],
+        "append": true,
+        "headingRussian": "Протокол управления"
+      }
+    ]
+  },
+  {
+    "id": "0f01b694c5a0a493",
+    "expectedTitle": "Skitarii Vanguard Alpha",
+    "team": "Hunter Clade",
+    "source": {
+      "officialPdf": "https://assets.warhammer-community.com/eng_28-01_kill_team_team_rules_hunter_clade-iw4pezoqcm-axjoncdqci.pdf",
+      "date": "2026-01-28",
+      "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/hunter-clade/",
+      "checkedOn": "2026-10-05",
+      "evidence": "Official PDF p11 adds this rule to Vanguard Alpha."
+    },
+    "blocks": [
+      {
+        "heading": "Control Protocol",
+        "russian": "Можно применить тактическую уловку «Переопределение команд» (Command Override) за 0 CP, если указанный в ней дружественный оперативник Охотничьей клады (HUNTER CLADE) видим этому оперативнику.",
+        "english": "You can use the Command Override firefight ploy for 0CP if the specified friendly HUNTER CLADE operative is visible to this operative.",
+        "proseTitles": [
+          "Control Protocol"
+        ],
+        "append": true,
+        "headingRussian": "Протокол управления"
+      }
+    ]
+  },
+  {
+    "id": "bac6425af5e66e43",
+    "expectedTitle": "Skitarii Vanguard Alpha",
+    "team": "Hunter Clade",
+    "source": {
+      "officialPdf": "https://assets.warhammer-community.com/eng_28-01_kill_team_team_rules_hunter_clade-iw4pezoqcm-axjoncdqci.pdf",
+      "date": "2026-01-28",
+      "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/hunter-clade/",
+      "checkedOn": "2026-10-05",
+      "evidence": "Official PDF p11 adds this rule to Vanguard Alpha."
+    },
+    "blocks": [
+      {
+        "heading": "Control Protocol",
+        "russian": "Можно применить тактическую уловку «Переопределение команд» (Command Override) за 0 CP, если указанный в ней дружественный оперативник Охотничьей клады (HUNTER CLADE) видим этому оперативнику.",
+        "english": "You can use the Command Override firefight ploy for 0CP if the specified friendly HUNTER CLADE operative is visible to this operative.",
+        "proseTitles": [
+          "Control Protocol"
+        ],
+        "append": true,
+        "headingRussian": "Протокол управления"
+      }
+    ]
+  },
+  {
+    "id": "212f8243a05e6939",
+    "expectedTitle": "Sicarian Infiltrator Princeps",
+    "team": "Hunter Clade",
+    "source": {
+      "officialPdf": "https://assets.warhammer-community.com/eng_28-01_kill_team_team_rules_hunter_clade-iw4pezoqcm-axjoncdqci.pdf",
+      "date": "2026-01-28",
+      "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/hunter-clade/",
+      "checkedOn": "2026-10-05",
+      "evidence": "Official PDF p11 adds this rule to the Infiltrator Princeps."
+    },
+    "blocks": [
+      {
+        "heading": "Control Protocol",
+        "russian": "Можно применить тактическую уловку «Переопределение команд» (Command Override) за 0 CP, если указанный в ней дружественный оперативник Охотничьей клады (HUNTER CLADE) видим этому оперативнику.",
+        "english": "You can use the Command Override firefight ploy for 0CP if the specified friendly HUNTER CLADE operative is visible to this operative.",
+        "proseTitles": [
+          "Control Protocol"
+        ],
+        "append": true,
+        "headingRussian": "Протокол управления"
+      }
+    ]
+  },
+  {
+    "id": "19a932f7785e5c4e",
+    "expectedTitle": "Sicarian Ruststalker Princeps",
+    "team": "Hunter Clade",
+    "source": {
+      "officialPdf": "https://assets.warhammer-community.com/eng_28-01_kill_team_team_rules_hunter_clade-iw4pezoqcm-axjoncdqci.pdf",
+      "date": "2026-01-28",
+      "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/hunter-clade/",
+      "checkedOn": "2026-10-05",
+      "evidence": "Official PDF p11 adds this rule to the Ruststalker Princeps."
+    },
+    "blocks": [
+      {
+        "heading": "Control Protocol",
+        "russian": "Можно применить тактическую уловку «Переопределение команд» (Command Override) за 0 CP, если указанный в ней дружественный оперативник Охотничьей клады (HUNTER CLADE) видим этому оперативнику.",
+        "english": "You can use the Command Override firefight ploy for 0CP if the specified friendly HUNTER CLADE operative is visible to this operative.",
+        "proseTitles": [
+          "Control Protocol"
+        ],
+        "append": true,
+        "headingRussian": "Протокол управления"
+      }
+    ]
+  },
+  {
+    "id": "78ab5784a44cbdd3",
+    "expectedTitle": "Skitarii Ranger Warrior",
+    "team": "Hunter Clade",
+    "source": {
+      "officialPdf": "https://assets.warhammer-community.com/eng_28-01_kill_team_team_rules_hunter_clade-iw4pezoqcm-axjoncdqci.pdf",
+      "date": "2026-01-28",
+      "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/hunter-clade/",
+      "checkedOn": "2026-10-05",
+      "evidence": "Official PDF p11 Previous Errata: ALL OPERATIVES, IMPERIUM keyword added; exact IDs are listed in coverageSummary."
+    },
+    "keyword": [
+      "IMPERIUM",
+      "ИМПЕРИУМ (IMPERIUM)"
+    ]
+  },
+  {
+    "id": "2cbe4dc69d958480",
+    "expectedTitle": "Skitarii Ranger Diktat",
+    "team": "Hunter Clade",
+    "source": {
+      "officialPdf": "https://assets.warhammer-community.com/eng_28-01_kill_team_team_rules_hunter_clade-iw4pezoqcm-axjoncdqci.pdf",
+      "date": "2026-01-28",
+      "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/hunter-clade/",
+      "checkedOn": "2026-10-05",
+      "evidence": "Official PDF p11 Previous Errata: ALL OPERATIVES, IMPERIUM keyword added; exact IDs are listed in coverageSummary."
+    },
+    "keyword": [
+      "IMPERIUM",
+      "ИМПЕРИУМ (IMPERIUM)"
+    ]
+  },
+  {
+    "id": "63ecfb17d118b455",
+    "expectedTitle": "Skitarii Ranger Surveyor",
+    "team": "Hunter Clade",
+    "source": {
+      "officialPdf": "https://assets.warhammer-community.com/eng_28-01_kill_team_team_rules_hunter_clade-iw4pezoqcm-axjoncdqci.pdf",
+      "date": "2026-01-28",
+      "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/hunter-clade/",
+      "checkedOn": "2026-10-05",
+      "evidence": "Official PDF p11 Previous Errata: ALL OPERATIVES, IMPERIUM keyword added; exact IDs are listed in coverageSummary."
+    },
+    "keyword": [
+      "IMPERIUM",
+      "ИМПЕРИУМ (IMPERIUM)"
+    ]
+  },
+  {
+    "id": "f06c5362546db87f",
+    "expectedTitle": "Skitarii Ranger Gunner",
+    "team": "Hunter Clade",
+    "source": {
+      "officialPdf": "https://assets.warhammer-community.com/eng_28-01_kill_team_team_rules_hunter_clade-iw4pezoqcm-axjoncdqci.pdf",
+      "date": "2026-01-28",
+      "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/hunter-clade/",
+      "checkedOn": "2026-10-05",
+      "evidence": "Official PDF p11 Previous Errata: ALL OPERATIVES, IMPERIUM keyword added; exact IDs are listed in coverageSummary."
+    },
+    "keyword": [
+      "IMPERIUM",
+      "ИМПЕРИУМ (IMPERIUM)"
+    ]
+  },
+  {
+    "id": "ffd278509b3c7369",
+    "expectedTitle": "Skitarii Vanguard Warrior",
+    "team": "Hunter Clade",
+    "source": {
+      "officialPdf": "https://assets.warhammer-community.com/eng_28-01_kill_team_team_rules_hunter_clade-iw4pezoqcm-axjoncdqci.pdf",
+      "date": "2026-01-28",
+      "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/hunter-clade/",
+      "checkedOn": "2026-10-05",
+      "evidence": "Official PDF p11 Previous Errata: ALL OPERATIVES, IMPERIUM keyword added; exact IDs are listed in coverageSummary."
+    },
+    "keyword": [
+      "IMPERIUM",
+      "ИМПЕРИУМ (IMPERIUM)"
+    ]
+  },
+  {
+    "id": "0e82581fae608043",
+    "expectedTitle": "Skitarii Vanguard Diktat",
+    "team": "Hunter Clade",
+    "source": {
+      "officialPdf": "https://assets.warhammer-community.com/eng_28-01_kill_team_team_rules_hunter_clade-iw4pezoqcm-axjoncdqci.pdf",
+      "date": "2026-01-28",
+      "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/hunter-clade/",
+      "checkedOn": "2026-10-05",
+      "evidence": "Official PDF p11 Previous Errata: ALL OPERATIVES, IMPERIUM keyword added; exact IDs are listed in coverageSummary."
+    },
+    "keyword": [
+      "IMPERIUM",
+      "ИМПЕРИУМ (IMPERIUM)"
+    ]
+  },
+  {
+    "id": "e371e230e1762bc2",
+    "expectedTitle": "Skitarii Vanguard Surveyor",
+    "team": "Hunter Clade",
+    "source": {
+      "officialPdf": "https://assets.warhammer-community.com/eng_28-01_kill_team_team_rules_hunter_clade-iw4pezoqcm-axjoncdqci.pdf",
+      "date": "2026-01-28",
+      "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/hunter-clade/",
+      "checkedOn": "2026-10-05",
+      "evidence": "Official PDF p11 Previous Errata: ALL OPERATIVES, IMPERIUM keyword added; exact IDs are listed in coverageSummary."
+    },
+    "keyword": [
+      "IMPERIUM",
+      "ИМПЕРИУМ (IMPERIUM)"
+    ]
+  },
+  {
+    "id": "79f52ccc747d091d",
+    "expectedTitle": "Skitarii Vanguard Gunner",
+    "team": "Hunter Clade",
+    "source": {
+      "officialPdf": "https://assets.warhammer-community.com/eng_28-01_kill_team_team_rules_hunter_clade-iw4pezoqcm-axjoncdqci.pdf",
+      "date": "2026-01-28",
+      "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/hunter-clade/",
+      "checkedOn": "2026-10-05",
+      "evidence": "Official PDF p11 Previous Errata: ALL OPERATIVES, IMPERIUM keyword added; exact IDs are listed in coverageSummary."
+    },
+    "keyword": [
+      "IMPERIUM",
+      "ИМПЕРИУМ (IMPERIUM)"
+    ]
+  },
+  {
+    "id": "2f81b5479f0822ac",
+    "expectedTitle": "Sicarian Ruststalker Warrior",
+    "team": "Hunter Clade",
+    "source": {
+      "officialPdf": "https://assets.warhammer-community.com/eng_28-01_kill_team_team_rules_hunter_clade-iw4pezoqcm-axjoncdqci.pdf",
+      "date": "2026-01-28",
+      "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/hunter-clade/",
+      "checkedOn": "2026-10-05",
+      "evidence": "Official PDF p11 Previous Errata: ALL OPERATIVES, IMPERIUM keyword added; exact IDs are listed in coverageSummary."
+    },
+    "keyword": [
+      "IMPERIUM",
+      "ИМПЕРИУМ (IMPERIUM)"
+    ]
+  },
+  {
+    "id": "8d56ccc96166eb3c",
+    "expectedTitle": "Sicarian Infiltrator Warrior",
+    "team": "Hunter Clade",
+    "source": {
+      "officialPdf": "https://assets.warhammer-community.com/eng_28-01_kill_team_team_rules_hunter_clade-iw4pezoqcm-axjoncdqci.pdf",
+      "date": "2026-01-28",
+      "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/hunter-clade/",
+      "checkedOn": "2026-10-05",
+      "evidence": "Official PDF p11 Previous Errata: ALL OPERATIVES, IMPERIUM keyword added; exact IDs are listed in coverageSummary."
+    },
+    "keyword": [
+      "IMPERIUM",
+      "ИМПЕРИУМ (IMPERIUM)"
+    ]
+  },
+  {
+    "id": "212f8243a05e6939",
+    "expectedTitle": "Sicarian Infiltrator Princeps",
+    "team": "Hunter Clade",
+    "source": {
+      "officialPdf": "https://assets.warhammer-community.com/eng_28-01_kill_team_team_rules_hunter_clade-iw4pezoqcm-axjoncdqci.pdf",
+      "date": "2026-01-28",
+      "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/hunter-clade/",
+      "checkedOn": "2026-10-05",
+      "evidence": "Official PDF p11 Previous Errata: ALL OPERATIVES, IMPERIUM keyword added; exact IDs are listed in coverageSummary."
+    },
+    "keyword": [
+      "IMPERIUM",
+      "ИМПЕРИУМ (IMPERIUM)"
+    ]
+  },
+  {
+    "id": "19a932f7785e5c4e",
+    "expectedTitle": "Sicarian Ruststalker Princeps",
+    "team": "Hunter Clade",
+    "source": {
+      "officialPdf": "https://assets.warhammer-community.com/eng_28-01_kill_team_team_rules_hunter_clade-iw4pezoqcm-axjoncdqci.pdf",
+      "date": "2026-01-28",
+      "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/hunter-clade/",
+      "checkedOn": "2026-10-05",
+      "evidence": "Official PDF p11 Previous Errata: ALL OPERATIVES, IMPERIUM keyword added; exact IDs are listed in coverageSummary."
+    },
+    "keyword": [
+      "IMPERIUM",
+      "ИМПЕРИУМ (IMPERIUM)"
+    ]
+  },
+  {
+    "id": "b375deff78340e15",
+    "expectedTitle": "Skitarii Ranger Alpha",
+    "team": "Hunter Clade",
+    "source": {
+      "officialPdf": "https://assets.warhammer-community.com/eng_28-01_kill_team_team_rules_hunter_clade-iw4pezoqcm-axjoncdqci.pdf",
+      "date": "2026-01-28",
+      "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/hunter-clade/",
+      "checkedOn": "2026-10-05",
+      "evidence": "Official PDF p11 Previous Errata: ALL OPERATIVES, IMPERIUM keyword added; exact IDs are listed in coverageSummary."
+    },
+    "keyword": [
+      "IMPERIUM",
+      "ИМПЕРИУМ (IMPERIUM)"
+    ]
+  },
+  {
+    "id": "f85b0e624090cffb",
+    "expectedTitle": "Skitarii Ranger Alpha",
+    "team": "Hunter Clade",
+    "source": {
+      "officialPdf": "https://assets.warhammer-community.com/eng_28-01_kill_team_team_rules_hunter_clade-iw4pezoqcm-axjoncdqci.pdf",
+      "date": "2026-01-28",
+      "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/hunter-clade/",
+      "checkedOn": "2026-10-05",
+      "evidence": "Official PDF p11 Previous Errata: ALL OPERATIVES, IMPERIUM keyword added; exact IDs are listed in coverageSummary."
+    },
+    "keyword": [
+      "IMPERIUM",
+      "ИМПЕРИУМ (IMPERIUM)"
+    ]
+  },
+  {
+    "id": "0f01b694c5a0a493",
+    "expectedTitle": "Skitarii Vanguard Alpha",
+    "team": "Hunter Clade",
+    "source": {
+      "officialPdf": "https://assets.warhammer-community.com/eng_28-01_kill_team_team_rules_hunter_clade-iw4pezoqcm-axjoncdqci.pdf",
+      "date": "2026-01-28",
+      "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/hunter-clade/",
+      "checkedOn": "2026-10-05",
+      "evidence": "Official PDF p11 Previous Errata: ALL OPERATIVES, IMPERIUM keyword added; exact IDs are listed in coverageSummary."
+    },
+    "keyword": [
+      "IMPERIUM",
+      "ИМПЕРИУМ (IMPERIUM)"
+    ]
+  },
+  {
+    "id": "bac6425af5e66e43",
+    "expectedTitle": "Skitarii Vanguard Alpha",
+    "team": "Hunter Clade",
+    "source": {
+      "officialPdf": "https://assets.warhammer-community.com/eng_28-01_kill_team_team_rules_hunter_clade-iw4pezoqcm-axjoncdqci.pdf",
+      "date": "2026-01-28",
+      "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/hunter-clade/",
+      "checkedOn": "2026-10-05",
+      "evidence": "Official PDF p11 Previous Errata: ALL OPERATIVES, IMPERIUM keyword added; exact IDs are listed in coverageSummary."
+    },
+    "keyword": [
+      "IMPERIUM",
+      "ИМПЕРИУМ (IMPERIUM)"
+    ]
+  },
+  {
+    "id": "27a2fd6a17ce2ba6",
+    "expectedTitle": "Omnissiah’s Imperative",
+    "team": "Hunter Clade",
+    "source": {
+      "officialPdf": "https://assets.warhammer-community.com/eng_28-01_kill_team_team_rules_hunter_clade-iw4pezoqcm-axjoncdqci.pdf",
+      "date": "2026-01-28",
+      "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/hunter-clade/",
+      "checkedOn": "2026-10-05",
+      "evidence": "Official PDF p11 Previous Errata deletes the third sentence of the first paragraph."
+    },
+    "blocks": [
+      {
+        "heading": "Rule",
+        "russian": "Примените этот приём перестрелки (Firefight Ploy) во время активации дружественного оперативника «Охотничьей клады» (HUNTER CLADE). Либо примените его в конце шага броска кубиков атаки (Roll Attack Dice), когда враг стреляет по дружественному оперативнику «Охотничьей клады». До шага подготовки (Ready step) следующей стратегической фазы он получает дополнительное правило, зависящее от текущего императива доктрины (DOCTRINA IMPERATIVE):\nЗащитник (Protector): стрелковое оружие этого оперативника получает правило «Свирепое» (Severe).\nЗавоеватель (Conqueror): когда этот оперативник сражается в ближнем бою, после разрешения первого своего кубика атаки в этой последовательности вы можете немедленно разрешить ещё один кубик (до действий противника).",
+        "english": "Use this firefight ploy during a friendly HUNTER CLADE operative’s activation. Alternatively, use it when an enemy operative is shooting a friendly HUNTER CLADE operative, at the end of the Roll Attack Dice step. Until the Ready step of the next Strategy phase, that friendly operative has an additional rule determined by its current DOCTRINA IMPERATIVE as follows:\nProtector: This operative’s ranged weapons have the Severe weapon rule.\nConqueror: Whenever this operative is fighting, after resolving your first attack dice during that sequence, you can immediately resolve another (before your opponent).",
+        "proseTitles": [
+          "Rule"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "e9acf17da00e7bb8",
+    "expectedTitle": "Omnissiah’s Imperative",
+    "team": "Hunter Clade",
+    "source": {
+      "officialPdf": "https://assets.warhammer-community.com/eng_28-01_kill_team_team_rules_hunter_clade-iw4pezoqcm-axjoncdqci.pdf",
+      "date": "2026-01-28",
+      "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/hunter-clade/",
+      "checkedOn": "2026-10-05",
+      "evidence": "Official PDF p11 Previous Errata changes the Aggressor bullet."
+    },
+    "blocks": [
+      {
+        "heading": "Rule · continuation",
+        "russian": "Оплот (Bulwark): улучшите показатель защиты (Save) этого оперативника на 1. Кроме того, каждый раз, когда по нему стреляют, вы можете взять и бросить дополнительный кубик защиты. Если вы применяете этот приём во время действия «Стрельба» (Shoot), показатель Save меняется немедленно; это имеет приоритет над основными правилами.\nАгрессор (Aggressor): во время одного подъёма вверх этот оперативник может не учитывать первые 2 дюйма вертикального расстояния, на которое перемещается.\nНейтральный (Neutral): без эффекта.\nЭтот приём можно применять после броска кубиков атаки или защиты за этого оперативника, а также до или после сохранения или переброса этих кубиков.",
+        "english": "Bulwark: Improve this operative’s Save stat by 1. In addition, whenever an operative is shooting this operative, you can collect and roll an additional defence dice. If you use this ploy during a Shoot action, this operative’s Save stat is changed immediately (this takes precedence over the core rules).\nAggressor: You can ignore the first vertical distance of 2″ this operative moves during one climb up.\nNeutral: None.\nNote that you can use this ploy after rolling attack or defence dice for this operative, or before or after retaining or re-rolling those dice.",
+        "proseTitles": [
+          "Rule"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "9b19369c07360939",
+    "expectedTitle": "Novitiate Exactor",
+    "team": "Novitiates",
+    "source": {
+      "officialPdf": "https://assets.warhammer-community.com/eng_novitiates_online_rules-b4a5xsy3fu-5twxaatuzc.pdf",
+      "date": "2026-08-26",
+      "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/novitiates/",
+      "checkedOn": "2026-10-05",
+      "evidence": "Official PDF p9 August ’26 Errata changes the second sentence."
+    },
+    "blocks": [
+      {
+        "heading": "Whip Into Frenzy · 1AP",
+        "russian": "Выберите другого дружественного оперативника-новицийку, кроме СТАРШЕЙ (SUPERIOR), который виден этой оперативнице, находится в пределах 3 дюймов от неё и ещё не получает эффект этого действия. До конца следующей активации выбранного оперативника увеличьте его APL на 1 и MOVE на 1 дюйм; во время следующей активации он может выполнить два действия «Ближний бой» (Fight), одно из которых может быть бесплатным. Экзактор не может выполнять это действие в дистанции контроля вражеского оперативника.",
+        "english": "Select one other friendly NOVITIATE operative (excluding SUPERIOR) visible to and within 3\" of this operative that isn’t currently benefitting from the effects of this action. Until the end of that operative’s next activation, add 1 to its APL stat, add 1\" to its Move stat, it can perform two Fight actions during its next activation, and one of them can be free. This operative cannot perform this action while within control range of an enemy operative.",
+        "proseTitles": [
+          "Whip Into Frenzy"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "6133ea0246729ed4",
+    "expectedTitle": "Novitiate Hospitallier",
+    "team": "Novitiates",
+    "source": {
+      "officialPdf": "https://assets.warhammer-community.com/eng_novitiates_online_rules-b4a5xsy3fu-5twxaatuzc.pdf",
+      "date": "2026-08-26",
+      "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/novitiates/",
+      "checkedOn": "2026-10-05",
+      "evidence": "Official PDF p2 current profile and p10 Previous Errata replacement."
+    },
+    "blocks": [
+      {
+        "heading": "Medic",
+        "russian": "Первый раз за раунд, когда другой дружественный оперативник Новициаток (NOVITIATE) должен быть выведен из строя, находясь на виду у медика и в пределах 3 дюймов от него, вы можете применить это правило, если ни один из этих оперативников не находится в дистанции контроля врага. Тогда союзник остаётся в игре с 1 раной и не может быть выведен из строя до конца текущего действия. После действия он может немедленно бесплатно выполнить «Рывок» (Dash), но должен закончить перемещение в дистанции контроля медика. Уменьшите APL обоих оперативников на 1 до конца их следующих активаций соответственно; если правило применено во время активации спасённого оперативника, его активация завершается. Нельзя применять это правило, если медик выведен из строя или во время действия «Стрельба» (Shoot), когда медик был бы основной или вторичной целью.",
+        "english": "The first time during each turning point that another friendly NOVITIATE operative would be incapacitated while visible to and within 3\" of this operative, you can use this rule, providing neither this nor that operative is within control range of an enemy operative. If you do, that friendly operative isn't incapacitated, has 1 wound remaining and cannot be incapacitated for the remainder of the action. After that action, that friendly operative can immediately perform a free Dash action, but must end that move within this operative's control range. Subtract 1 from this and that operative's APL stats until the end of their next activations respectively, and if this rule was used during that friendly operative's activation, that activation ends. You cannot use this rule if this operative is incapacitated, or if it's a Shoot action and this operative would be a primary or secondary target.",
+        "proseTitles": [
+          "Medic"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "11e0b759ec1d99a8",
+    "expectedTitle": "Novitiate Hospitallier",
+    "team": "Novitiates",
+    "source": {
+      "officialPdf": "https://assets.warhammer-community.com/eng_novitiates_online_rules-b4a5xsy3fu-5twxaatuzc.pdf",
+      "date": "2026-08-26",
+      "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/novitiates/",
+      "checkedOn": "2026-10-05",
+      "evidence": "Official PDF p2 current Hospitaller action."
+    },
+    "blocks": [
+      {
+        "heading": "Chirurgeon’s Tools · 1AP",
+        "russian": "Выберите дружественного оперативника-новицийку в дистанции контроля этой оперативницы; он восстанавливает до 2D3 потерянных ран. Нельзя выбирать оперативника, на котором в этом раунде уже применяли правило «Медик» (Medic). Госпиталерка не может выполнять это действие в дистанции контроля вражеского оперативника.",
+        "english": "Select one friendly NOVITIATE operative within this operative’s control range to regain up to 2D3 lost wounds. It cannot be an operative that the Medic! rule was used on during this turning point. This operative cannot perform this action while within control range of an enemy operative.",
+        "proseTitles": [
+          "Chirurgeon’s Tools"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "eb5e03cdec478a79",
+    "expectedTitle": "Defenders of the Faith",
+    "team": "Novitiates",
+    "source": {
+      "officialPdf": "https://assets.warhammer-community.com/eng_novitiates_online_rules-b4a5xsy3fu-5twxaatuzc.pdf",
+      "date": "2026-08-26",
+      "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/novitiates/",
+      "checkedOn": "2026-10-05",
+      "evidence": "Official PDF p10 Previous Errata adds “or one of your mission markers”."
+    },
+    "blocks": [
+      {
+        "heading": "Rule",
+        "russian": "Когда оперативник стреляет по дружественной оперативнице-новицийке, оспаривающей маркер цели или один ваш маркер миссии, сражается с ней или отвечает на её атаку, на шаге разрешения кубиков атаки (Resolve Attack Dice) вы можете вдвое уменьшить урон, наносимый этой новицийке одним обычным успехом (округляя вверх, минимум до 2).",
+        "english": "Whenever an operative is shooting against, fighting against or retaliating against a friendly NOVITIATE operative that contests an objective marker or one of your mission markers, in the Resolve Attack Dice step of that sequence, you can halve the damage inflicted (rounding up and to a minimum of 2) on that friendly operative from one normal success.",
+        "proseTitles": [
+          "Rule"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "f0e7c77ba2f5eae0",
+    "expectedTitle": "Blessed Rejuvenation",
+    "team": "Novitiates",
+    "source": {
+      "officialPdf": "https://assets.warhammer-community.com/eng_novitiates_online_rules-b4a5xsy3fu-5twxaatuzc.pdf",
+      "date": "2026-08-26",
+      "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/novitiates/",
+      "checkedOn": "2026-10-05",
+      "evidence": "Official PDF p10 Previous Errata replaces this rule."
+    },
+    "blocks": [
+      {
+        "heading": "Rule",
+        "russian": "Каждый раз, когда вы тратите очки веры, в конце этого действия выбранный для их траты дружественный оперативник может восстановить до D3 потерянных ран. Этот приём не действует, если Деяние веры (ACT OF FAITH) не требует очков веры, например при использовании снаряжения «Самобичеватели» (Auto-Chastisers).\nЭта уловка также не действует, если выбранный оперативник был выведен из строя в ходе этого действия.",
+        "english": "Whenever you spend Faith points, at the end of that action, the friendly operative you spent them on can regain up to D3 lost wounds. Note this ploy has no effect if the ACT OF FAITH doesn’t cost any Faith points, e.g. Auto-chastisers equipment. This ploy also has no effect if that friendly operative was incapacitated during that action.",
+        "proseTitles": [
+          "Rule"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "c7d92b4cb0282237",
+    "expectedTitle": "Glorious Martyrdom",
+    "team": "Novitiates",
+    "source": {
+      "officialPdf": "https://assets.warhammer-community.com/eng_novitiates_online_rules-b4a5xsy3fu-5twxaatuzc.pdf",
+      "date": "2026-08-26",
+      "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/novitiates/",
+      "checkedOn": "2026-10-05",
+      "evidence": "Official PDF p10 Previous Errata adds this timing."
+    },
+    "blocks": [
+      {
+        "heading": "Rule",
+        "russian": "Примените этот приём перестрелки, когда дружественный оперативник-новицийка выведен из строя, до его удаления из зоны боя. За каждого вражеского оперативника, видимого ему и находящегося в пределах 2 дюймов, вы получаете 1 очко веры и наносите этому врагу D3 урона (для каждого бросайте отдельно).",
+        "english": "Use this firefight ploy when a friendly NOVITIATE operative is incapacitated, before it is removed from the killzone. For each enemy operative visible to and within 2\" of it, you gain 1 Faith point and inflict D3 damage on that enemy operative (roll separately for each).",
+        "proseTitles": [
+          "Rule"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "54e8ab258b117494",
+    "expectedTitle": "Blazing Inferno",
+    "team": "Novitiates",
+    "source": {
+      "officialPdf": "https://assets.warhammer-community.com/eng_novitiates_online_rules-b4a5xsy3fu-5twxaatuzc.pdf",
+      "date": "2026-08-26",
+      "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/novitiates/",
+      "checkedOn": "2026-10-05",
+      "evidence": "Official PDF p10 Previous Errata changes the first sentence."
+    },
+    "blocks": [
+      {
+        "heading": "Rule",
+        "russian": "Примените этот приём перестрелки, когда дружественный оперативник-новицийка (NOVITIATE) стреляет из министерского огнемёта (Ministorum flamer) и вы наносите урон хотя бы одним критическим успехом. Цель получает один ваш жетон «Пламя» (Blaze), если у неё его ещё нет. Когда активируется оперативник с вашим жетоном Blaze, нанесите ему D3 урона. Управляющий им игрок может уменьшить его APL на 1 до конца этой активации, чтобы снять жетон; сделать это нужно до того, как оперативник выполнит в эту активацию какое-либо действие.",
+        "english": "Use this firefight ploy when a friendly NOVITIATE operative is shooting with a Ministorum flamer and you inflict damage with any critical successes. The target gains one of your Blaze tokens (if it doesn’t already have one). Whenever an operative that has one of your Blaze tokens is activated: Inflict D3 damage on it. Its controlling player can subtract 1 from that operative’s APL stat until the end of that activation to remove that token. Note that this must be done before that operative performs any actions during that activation.",
+        "proseTitles": [
+          "Rule"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "6133ea0246729ed4",
+    "expectedTitle": "Novitiate Hospitallier",
+    "team": "Novitiates",
+    "source": {
+      "officialPdf": "https://assets.warhammer-community.com/eng_novitiates_online_rules-b4a5xsy3fu-5twxaatuzc.pdf",
+      "date": "2026-08-26",
+      "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/novitiates/",
+      "checkedOn": "2026-10-05",
+      "evidence": "Official PDF p2 heading; same typo appears on reverse ID 11e0b759ec1d99a8."
+    },
+    "titleEnglish": "Novitiate Hospitaller",
+    "titleRussian": "Госпиталерка Новициаток (Novitiate Hospitaller)"
+  },
+  {
+    "id": "11e0b759ec1d99a8",
+    "expectedTitle": "Novitiate Hospitallier",
+    "team": "Novitiates",
+    "source": {
+      "officialPdf": "https://assets.warhammer-community.com/eng_novitiates_online_rules-b4a5xsy3fu-5twxaatuzc.pdf",
+      "date": "2026-08-26",
+      "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/novitiates/",
+      "checkedOn": "2026-10-05",
+      "evidence": "Official PDF p2 operative heading."
+    },
+    "titleEnglish": "Novitiate Hospitaller",
+    "titleRussian": "Госпиталерка Новициаток (Novitiate Hospitaller)"
+  },
+  {
+    "id": "11d81ca2c9162aff",
+    "expectedTitle": "Novitiate Duelist",
+    "team": "Novitiates",
+    "source": {
+      "officialPdf": "https://assets.warhammer-community.com/eng_novitiates_online_rules-b4a5xsy3fu-5twxaatuzc.pdf",
+      "date": "2026-08-26",
+      "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/novitiates/",
+      "checkedOn": "2026-10-05",
+      "evidence": "Official PDF p2 operative heading."
+    },
+    "titleEnglish": "Novitiate Duellist",
+    "titleRussian": "Дуэлянтка Новициаток (Novitiate Duellist)"
+  },
+  {
+    "id": "dafd7ec137498eac",
+    "expectedTitle": "Grudge",
+    "team": "Hearthkyn Salvagers",
+    "source": {
+      "officialPdf": "https://assets.warhammer-community.com/eng_29-04_kill_team_team_rules_hearthkyn_salvagers-7ih6r2u7u4-sof3ovjopi.pdf",
+      "date": "2026-04-29",
+      "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/hearthkyn-salvager/",
+      "checkedOn": "2026-10-05",
+      "evidence": "Official PDF p11 Previous Errata adds the parenthetical."
+    },
+    "blocks": [
+      {
+        "heading": "Grudge",
+        "russian": "Когда вражеский оперативник выводит из строя дружественного оперативника-харткина-спасателя (HEARTHKYN SALVAGER), враг получает один ваш жетон «Обиды» (Grudge) до конца битвы. Когда дружественный HEARTHKYN SALVAGER стреляет по врагу, участвует в ближнем бою с ним или наносит ему ответный удар, за каждый ваш жетон Grudge на этом враге вы можете сохранить один обычный успех как критический. При этом жетоны Grudge не снимаются.\nЭто включает обычные успехи, сохранённые по правилу «Точное» (Accurate).",
+        "english": "Whenever an enemy operative incapacitates a friendly HEARTHKYN SALVAGER operative, that enemy operative gains one of your Grudge tokens for the battle. Whenever a friendly HEARTHKYN SALVAGER operative is shooting against, fighting against or retaliating against an enemy operative, for each of your Grudge tokens that enemy operative has, you can retain one of your normal successes as a critical success instead. Grudge tokens aren't removed when you do this. This includes normal successes retained as a result of the Accurate weapon rule.",
+        "proseTitles": [
+          "Grudge"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "837feaca645643fc",
+    "expectedTitle": "The Ancestors Are Watching",
+    "team": "Hearthkyn Salvagers",
+    "source": {
+      "officialPdf": "https://assets.warhammer-community.com/eng_29-04_kill_team_team_rules_hearthkyn_salvagers-7ih6r2u7u4-sof3ovjopi.pdf",
+      "date": "2026-04-29",
+      "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/hearthkyn-salvager/",
+      "checkedOn": "2026-10-05",
+      "evidence": "Official PDF p10 April ’26 Errata adds the final clause."
+    },
+    "blocks": [
+      {
+        "heading": "Rule",
+        "russian": "Примените этот приём перестрелки во время активации дружественного оперативника HEARTHKYN SALVAGER. До конца этой активации он может бесплатно выполнить либо действие «Стрельба» (Shoot), либо действие «Ближний бой» (Fight).\nМожно игнорировать любые изменения характеристик оружия выбранного оперативника от ранения (Injured).",
+        "english": "Use this firefight ploy during a friendly HEARTHKYN SALVAGER operative's activation. Until the end of that activation, that operative can perform either a free Shoot or a free Fight action. You can ignore any changes to that operative’s weapon stats from being injured.",
+        "proseTitles": [
+          "Rule"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "5cf7af7a30eef61a",
+    "expectedTitle": "Hearthkyn Lugger",
+    "team": "Hearthkyn Salvagers",
+    "source": {
+      "officialPdf": "https://assets.warhammer-community.com/eng_29-04_kill_team_team_rules_hearthkyn_salvagers-7ih6r2u7u4-sof3ovjopi.pdf",
+      "date": "2026-04-29",
+      "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/hearthkyn-salvager/",
+      "checkedOn": "2026-10-05",
+      "evidence": "Official PDF p10 April ’26 Errata."
+    },
+    "blocks": [
+      {
+        "heading": "Well Supplied",
+        "russian": "Можно выбрать один дополнительный вариант снаряжения. На шаге готовности первой фазы стратегии получите 1 дополнительный CP.",
+        "english": "You can select one additional equipment option, and in the Ready step of the first Strategy phase, you gain 1 additional CP.",
+        "proseTitles": [
+          "Well Supplied"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "978c06a0946f2d21",
+    "expectedTitle": "Need Keeps",
+    "team": "Hearthkyn Salvagers",
+    "source": {
+      "officialPdf": "https://assets.warhammer-community.com/eng_29-04_kill_team_team_rules_hearthkyn_salvagers-7ih6r2u7u4-sof3ovjopi.pdf",
+      "date": "2026-04-29",
+      "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/hearthkyn-salvager/",
+      "checkedOn": "2026-10-05",
+      "evidence": "Official PDF p11 Previous Errata adds this clause."
+    },
+    "blocks": [
+      {
+        "heading": "Rule",
+        "russian": "Выберите один маркер цели или один свой маркер миссии. При определении контроля над выбранным маркером считайте суммарный лимит очков действий (APL) дружественных оперативников HEARTHKYN SALVAGER, оспаривающих его, на 1 выше, если хотя бы один такой оперативник оспаривает маркер. Это не меняет характеристику APL, поэтому другие изменения к ней складываются с этим эффектом. Когда дружественный оперативник HEARTHKYN SALVAGER находится в пределах 3 дюймов от маркера, увеличьте число атак (Atk) его оружия ближнего боя на 1 (до максимума 4).\nЕсли у оружия ближнего боя уже ATK 4, вместо увеличения ATK оно получает правило «Сбалансированное» (Balanced).",
+        "english": "Select one objective marker or one of your mission markers. Whenever determining control of that marker, treat the total APL stat of friendly HEARTHKYN SALVAGER operatives that contest it as 1 higher if at least one friendly HEARTHKYN SALVAGER operative contests that marker. This isn't a change to the APL stat, so any changes are cumulative with this. Whenever a friendly HEARTHKYN SALVAGER operative is within 3\" of that marker, add 1 to the Atk stat of its melee weapons (to a maximum of 4). If the melee weapon already has an Atk stat of 4, it has the Balanced weapon rule.",
+        "proseTitles": [
+          "Rule"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "611e550fc969f471",
+    "expectedTitle": "Proximate Firepower",
+    "team": "Hearthkyn Salvagers",
+    "source": {
+      "officialPdf": "https://assets.warhammer-community.com/eng_29-04_kill_team_team_rules_hearthkyn_salvagers-7ih6r2u7u4-sof3ovjopi.pdf",
+      "date": "2026-04-29",
+      "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/hearthkyn-salvager/",
+      "checkedOn": "2026-10-05",
+      "evidence": "Official PDF p11 Previous Errata adds this text."
+    },
+    "blocks": [
+      {
+        "heading": "Rule",
+        "russian": "Когда дружественный оперативник HEARTHKYN SALVAGER стреляет по вражескому оперативнику в пределах 6 дюймов от себя, улучшите характеристику попадания (Hit) его дальнобойного оружия на 1 (максимум до 3+).\nИзменение HIT можно применить или убрать во время действия. Это имеет приоритет над основными правилами.",
+        "english": "Whenever a friendly HEARTHKYN SALVAGER operative is shooting an enemy operative within 6\" of it, improve the Hit stat of its ranged weapons by 1 (to a maximum of 3+). This Hit stat change can be applied or removed during an action; this takes precedence over the core rules.",
+        "proseTitles": [
+          "Rule"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "93343bbbfb6d0118",
+    "expectedTitle": "Wrought Defence",
+    "team": "Hearthkyn Salvagers",
+    "source": {
+      "officialPdf": "https://assets.warhammer-community.com/eng_29-04_kill_team_team_rules_hearthkyn_salvagers-7ih6r2u7u4-sof3ovjopi.pdf",
+      "date": "2026-04-29",
+      "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/hearthkyn-salvager/",
+      "checkedOn": "2026-10-05",
+      "evidence": "Official PDF p11 Previous Errata replaces the rule."
+    },
+    "blocks": [
+      {
+        "heading": "Rule",
+        "russian": "Когда по дружественному оперативнику Харткин-спасателей (HEARTHKYN SALVAGER) стреляют, на шаге броска кубиков защиты, если у вас выпал один успех или меньше, включая перебросы, можно сохранить один провал как обычный успех вместо сброса.",
+        "english": "Whenever an operative is shooting a friendly HEARTHKYN SALVAGER operative, in the Roll Defence Dice step, if you rolled one or less successes (including any re-rolls), you can retain one of your fails as a normal success instead of discarding it.",
+        "proseTitles": [
+          "Rule"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "4d5e4139ef715aaf",
+    "expectedTitle": "Climbing Rigs",
+    "team": "Hearthkyn Salvagers",
+    "source": {
+      "officialPdf": "https://assets.warhammer-community.com/eng_29-04_kill_team_team_rules_hearthkyn_salvagers-7ih6r2u7u4-sof3ovjopi.pdf",
+      "date": "2026-04-29",
+      "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/hearthkyn-salvager/",
+      "checkedOn": "2026-10-05",
+      "evidence": "Official PDF p11 Previous Errata replaces the equipment rule."
+    },
+    "blocks": [
+      {
+        "heading": "Rule",
+        "russian": "В каждую активацию каждого дружественного оперативника Харткин-спасателей выберите один эффект:\n• При подъёме вверх (Climb Up) считайте вертикальную дистанцию равной 2 дюймам независимо от фактического расстояния.\n• При спуске (Drop) игнорируйте вертикальную дистанцию.",
+        "english": "During each friendly operative’s activation choose one: while climbing up, treat vertical distance as 2″ regardless of actual vertical movement; while dropping, ignore vertical distance.",
+        "proseTitles": [
+          "Rule"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "0acb185d702bac2b",
+    "expectedTitle": "Hearthkyn Theyn",
+    "team": "Hearthkyn Salvagers",
+    "source": {
+      "officialPdf": "https://assets.warhammer-community.com/eng_29-04_kill_team_team_rules_hearthkyn_salvagers-7ih6r2u7u4-sof3ovjopi.pdf",
+      "date": "2026-04-29",
+      "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/hearthkyn-salvager/",
+      "checkedOn": "2026-10-05",
+      "evidence": "Official PDF p11 Previous Errata changes the first sentence."
+    },
+    "blocks": [
+      {
+        "heading": "Eye of the Ancestors",
+        "russian": "Стратегический гамбит (STRATEGIC GAMBIT), если этот оперативник находится в зоне боя. Выберите одного вражеского оперативника или до двух, если выведены из строя не менее трёх дружественных оперативников HEARTHKYN SALVAGER. Каждый выбранный враг получает один ваш жетон «Обиды» (Grudge).",
+        "english": "STRATEGIC GAMBIT if this operative is in the killzone. Select one enemy operative, or up to two enemy operatives if three or more friendly HEARTHKYN SALVAGER operatives are incapacitated. Each of those enemy operatives gains one of your Grudge tokens.",
+        "proseTitles": [
+          "Eye of the Ancestors"
+        ],
+        "append": true,
+        "headingRussian": "Взор предков"
+      }
+    ]
+  },
+  {
+    "id": "446929d4d175c54c",
+    "expectedTitle": "Hearthkyn Theyn · Ancestors' Eye and Weavefield Crest",
+    "team": "Hearthkyn Salvagers",
+    "source": {
+      "officialPdf": "https://assets.warhammer-community.com/eng_29-04_kill_team_team_rules_hearthkyn_salvagers-7ih6r2u7u4-sof3ovjopi.pdf",
+      "date": "2026-04-29",
+      "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/hearthkyn-salvager/",
+      "checkedOn": "2026-10-05",
+      "evidence": "Official PDF p11 Previous Errata changes the first sentence."
+    },
+    "blocks": [
+      {
+        "heading": "Eye of the Ancestors",
+        "russian": "Стратегический гамбит (STRATEGIC GAMBIT), если этот оперативник находится в зоне боя. Выберите одного вражеского оперативника или до двух, если выведены из строя не менее трёх дружественных оперативников HEARTHKYN SALVAGER. Каждый выбранный враг получает один ваш жетон «Обиды» (Grudge).",
+        "english": "STRATEGIC GAMBIT if this operative is in the killzone. Select one enemy operative, or up to two enemy operatives if three or more friendly HEARTHKYN SALVAGER operatives are incapacitated. Each of those enemy operatives gains one of your Grudge tokens.",
+        "proseTitles": [
+          "Eye of the Ancestors"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "71ea6f41d49ab4c6",
+    "expectedTitle": "Hearthkyn Dôzr",
+    "team": "Hearthkyn Salvagers",
+    "source": {
+      "officialPdf": "https://assets.warhammer-community.com/eng_29-04_kill_team_team_rules_hearthkyn_salvagers-7ih6r2u7u4-sof3ovjopi.pdf",
+      "date": "2026-04-29",
+      "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/hearthkyn-salvager/",
+      "checkedOn": "2026-10-05",
+      "evidence": "Official PDF p11 Previous Errata adds this bullet."
+    },
+    "blocks": [
+      {
+        "heading": "Brawler",
+        "russian": "Когда этот оперативник участвует в ближнем бою или наносит ответный удар, вражеские оперативники не могут оказывать поддержку. Если он выведен из строя, перед удалением из зоны боя вы можете нанести вражескому оперативнику в этой последовательности удар одним из своих ещё не использованных успехов.\nЕсли кубик атаки наносит этому оперативнику обычный урон (Normal Dmg) 4 или больше, уменьшите этот урон на 1.",
+        "english": "Whenever this operative is fighting or retaliating, enemy operatives cannot assist. If it's incapacitated, you can strike the enemy operative in that sequence with one of your unresolved successes before it's removed from the killzone. Whenever an attack dice inflicts Normal Dmg of 4 or more on this operative, subtract 1 from that inflicted damage.",
+        "proseTitles": [
+          "Brawler"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "2e812b2b3239657d",
+    "expectedTitle": "Hearthkyn Kinlynk",
+    "team": "Hearthkyn Salvagers",
+    "source": {
+      "officialPdf": "https://assets.warhammer-community.com/eng_29-04_kill_team_team_rules_hearthkyn_salvagers-7ih6r2u7u4-sof3ovjopi.pdf",
+      "date": "2026-04-29",
+      "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/hearthkyn-salvager/",
+      "checkedOn": "2026-10-05",
+      "evidence": "Official PDF p11 Previous Errata changes the action effect."
+    },
+    "blocks": [
+      {
+        "heading": "Signal · 1AP · SUPPORT",
+        "russian": "Выберите другого дружественного оперативника HEARTHKYN SALVAGER, находящегося в зоне боя. До конца следующей активации выбранного оперативника увеличьте его APL на 1. Этот оперативник не может выполнять действие, находясь в дистанции контроля врага.",
+        "english": "Select one other friendly HEARTHKYN SALVAGER operative in the killzone. Until the end of that operative's next activation, add 1 to its APL stat. This operative cannot perform this action while within control range of an enemy operative.",
+        "proseTitles": [
+          "Signal"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "8404eb6afd871907",
+    "expectedTitle": "Hearthkyn Kognitâar",
+    "team": "Hearthkyn Salvagers",
+    "source": {
+      "officialPdf": "https://assets.warhammer-community.com/eng_29-04_kill_team_team_rules_hearthkyn_salvagers-7ih6r2u7u4-sof3ovjopi.pdf",
+      "date": "2026-04-29",
+      "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/hearthkyn-salvager/",
+      "checkedOn": "2026-10-05",
+      "evidence": "Official PDF p11 Previous Errata updates both parts."
+    },
+    "blocks": [
+      {
+        "heading": "Tactician",
+        "russian": "Стратегический гамбит (STRATEGIC GAMBIT), если этот оперативник находится в зоне боя. Разместите свой маркер атаки (Attack) или защиты (Defence) в зоне боя. Когда дружественный Харткин-спасатель стреляет, сражается или отвечает в ближнем бою против врага в пределах 3 дюймов от маркера атаки, его оружие получает «Сбалансированное» (Balanced). Когда враг стреляет по дружественному Харткин-спасателю в пределах 3 дюймов от маркера защиты, можно перебросить один свой защитный кубик. Уберите маркер на шаге готовности следующей фазы стратегии.",
+        "english": "STRATEGIC GAMBIT if this operative is in the killzone. Place either your Attack or Defence marker in the killzone. Whenever a friendly HEARTHKYN SALVAGER operative is shooting against, fighting against or retaliating against an enemy operative within 3\" of your Attack marker, its weapons have Balanced. Whenever an enemy operative is shooting a friendly HEARTHKYN SALVAGER operative within 3\" of your Defence marker, you can re-roll one defence dice. In the Ready step of the next Strategy phase, remove that marker.",
+        "proseTitles": [
+          "Tactician"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "446929d4d175c54c",
+    "expectedTitle": "Hearthkyn Theyn · Ancestors' Eye and Weavefield Crest",
+    "team": "Hearthkyn Salvagers",
+    "source": {
+      "officialPdf": "https://assets.warhammer-community.com/eng_29-04_kill_team_team_rules_hearthkyn_salvagers-7ih6r2u7u4-sof3ovjopi.pdf",
+      "date": "2026-04-29",
+      "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/hearthkyn-salvager/",
+      "checkedOn": "2026-10-05",
+      "evidence": "Official PDF p11 Previous Errata replaces the rule."
+    },
+    "blocks": [
+      {
+        "heading": "Weavefield Crest",
+        "russian": "Один раз за бой, когда кубик атаки наносит этому оперативнику обычный урон (Normal Dmg), можно проигнорировать этот урон.",
+        "english": "Once per battle, when an attack dice inflicts Normal Dmg on this operative, you can ignore that inflicted damage.",
+        "proseTitles": [
+          "Weavefield Crest"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "e23163dbe54a3e06",
+    "expectedTitle": "Poison",
+    "team": "Plague Marines",
+    "source": {
+      "officialPdf": "https://assets.warhammer-community.com/eng_plague_marines_online_rules-wqjvit50wj-jvekzllwdl.pdf",
+      "date": "2026-08-26",
+      "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/plague-marines/",
+      "checkedOn": "2026-10-05",
+      "evidence": "Official PDF p8 Previous Errata adds the exclusion."
+    },
+    "blocks": [
+      {
+        "heading": "Poison",
+        "russian": "Некоторое оружие этого отряда имеет правило «Яд» (Poison). На шаге разрешения кубиков атаки, если вы нанесли урон любыми успехами, оперативник, против которого использовали это оружие, кроме дружественного чумного десантника (PLAGUE MARINE), получает один ваш жетон яда, если у него ещё нет такого жетона. Каждый раз, когда активируется оперативник хотя бы с одним вашим жетоном яда (Poison), нанесите ему 1 урон.",
+        "english": "Some weapons in this team’s rules have the Poison weapon rule. In the Resolve Attack Dice step, if you inflict damage with any successes, the operative this weapon is being used against (excluding friendly PLAGUE MARINE operatives) gains one of your Poison tokens if it does not already have one. Whenever an operative that has one of your Poison tokens is activated, inflict 1 damage on it.",
+        "proseTitles": [
+          "Poison"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "07ca9868b1fff6b8",
+    "expectedTitle": "Poison Vents",
+    "team": "Plague Marines",
+    "source": {
+      "officialPdf": "https://assets.warhammer-community.com/eng_plague_marines_online_rules-wqjvit50wj-jvekzllwdl.pdf",
+      "date": "2026-08-26",
+      "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/plague-marines/",
+      "checkedOn": "2026-10-05",
+      "evidence": "Official PDF p8 Previous Errata replaces this equipment rule."
+    },
+    "blocks": [
+      {
+        "heading": "Rule",
+        "russian": "Когда вражеский оперативник активируется в пределах 3 дюймов от дружественного чумного десантника (PLAGUE MARINE):\n• Если у врага ещё нет вашего жетона яда (Poison), бросьте D3: на 3 враг получает один такой жетон.\n• Если у врага уже есть ваш жетон яда, нанесите ему D3 урона вместо обычного 1.",
+        "english": "When an enemy is activated within 3″ of a friendly PLAGUE MARINE: if it has no Poison token, roll D3 and on 3 it gains one; if it already has one, inflict D3 damage instead of 1.",
+        "proseTitles": [
+          "Rule"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "bfc68c7dc804d9ef",
+    "expectedTitle": "Poisonous Demise",
+    "team": "Plague Marines",
+    "source": {
+      "officialPdf": "https://assets.warhammer-community.com/eng_plague_marines_online_rules-wqjvit50wj-jvekzllwdl.pdf",
+      "date": "2026-08-26",
+      "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/plague-marines/",
+      "checkedOn": "2026-10-05",
+      "evidence": "Official PDF p8 Previous Errata adds this timing."
+    },
+    "blocks": [
+      {
+        "heading": "Rule",
+        "russian": "Примените этот приём перестрелки, когда дружественный чумной десантник выведен из строя, до его удаления из зоны боя. Каждый вражеский оперативник, видимый ему и находящийся в пределах 3 дюймов, получает один ваш жетон яда (Poison), если у него ещё нет такого жетона. Вместо этого нанесите 1 урон каждому из этих врагов, у которого уже есть ваш жетон яда, в том числе если он получил его во время этого действия.",
+        "english": "Use this firefight ploy when a friendly PLAGUE MARINE operative is incapacitated, before it is removed from the killzone. Each enemy operative visible to and within 3 inches of that operative gains one of your Poison tokens if it does not already have one. For each of those enemy operatives that already has one of your Poison tokens (including if they gained one during this action), inflict 1 damage on them instead.",
+        "proseTitles": [
+          "Rule"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "029544d63bfe752b",
+    "expectedTitle": "Curse of Rot",
+    "team": "Plague Marines",
+    "source": {
+      "officialPdf": "https://assets.warhammer-community.com/eng_plague_marines_online_rules-wqjvit50wj-jvekzllwdl.pdf",
+      "date": "2026-08-26",
+      "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/plague-marines/",
+      "checkedOn": "2026-10-05",
+      "evidence": "Official PDF p8 Previous Errata replaces this sentence."
+    },
+    "blocks": [
+      {
+        "heading": "Rule",
+        "russian": "Примените этот приём перестрелки, когда дружественный чумной десантник сражается в ближнем бою с врагом или стреляет по врагу в пределах 3 дюймов от себя (либо в пределах 7 дюймов, если у врага есть ваш жетон яда (Poison)). После броска кубиков атаки или защиты противника нанесите этому врагу 1 урон за каждый выпавший у противника результат 3. Каждый такой результат нельзя сохранить как успех, и его нельзя перебросить.",
+        "english": "Use this firefight ploy when a friendly PLAGUE MARINE operative is fighting against or shooting against an enemy operative within 3 inches of it (or within 7 inches if that enemy operative has one of your Poison tokens), after your opponent rolls their attack or defence dice. For each result of 3 they roll, inflict 1 damage on that enemy operative, that result cannot be retained as a success and cannot be re-rolled.",
+        "proseTitles": [
+          "Rule"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "6bb74f0665c3d57c",
+    "expectedTitle": "Virulent Poison",
+    "team": "Plague Marines",
+    "source": {
+      "officialPdf": "https://assets.warhammer-community.com/eng_plague_marines_online_rules-wqjvit50wj-jvekzllwdl.pdf",
+      "date": "2026-08-26",
+      "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/plague-marines/",
+      "checkedOn": "2026-10-05",
+      "evidence": "Official PDF p8 Previous Errata changes the ploy text."
+    },
+    "blocks": [
+      {
+        "heading": "Rule",
+        "russian": "Примените этот приём перестрелки во время активации или контрдействия (Counteract) дружественного чумного десантника, до или после его действия. Выберите один вариант: вражеский оперативник в пределах 3 дюймов от него либо видимый ему и в пределах 7 дюймов от него получает один ваш жетон яда (Poison), если у него ещё нет такого жетона; либо бросьте 2D6 — при результате 7+ один вражеский оперативник в пределах 7 дюймов от него получает ваш жетон яда, если у него его ещё нет.",
+        "english": "Use this firefight ploy during a friendly PLAGUE MARINE operative’s activation or Counteract, before or after it performs an action. Select one of the following: one enemy operative within 3 inches of that operative, or visible to and within 7 inches of it, gains one of your Poison tokens if it does not already have one; or roll 2D6, and on a result of 7+, one enemy operative within 7 inches of that operative gains one of your Poison tokens if it does not already have one.",
+        "proseTitles": [
+          "Rule"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "35929e5804721328",
+    "expectedTitle": "Contagion",
+    "team": "Plague Marines",
+    "source": {
+      "officialPdf": "https://assets.warhammer-community.com/eng_plague_marines_online_rules-wqjvit50wj-jvekzllwdl.pdf",
+      "date": "2026-08-26",
+      "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/plague-marines/",
+      "checkedOn": "2026-10-05",
+      "evidence": "Official PDF p8 Previous Errata deletes the first bullet."
+    },
+    "blocks": [
+      {
+        "heading": "Rule",
+        "russian": "Уменьшите MOVE врага на 2 дюйма и ухудшите HIT его оружия на 1, когда выполняется хотя бы одно условие:\n• У врага есть ваш жетон яда (Poison), он в пределах 3 дюймов от дружественного чумного десантника (PLAGUE MARINE), и хотя бы один из них видит другого.\n• Враг в пределах 3 дюймов от дружественного Носителя иконы (ICON BEARER) Чумных десантников, и хотя бы один из них видит другого.\nЭффект не суммируется с ранением.",
+        "english": "Subtract 2\" from an enemy operative’s Move and worsen its weapons’ Hit by 1 (not cumulative with being injured) whenever it has one of your Poison tokens and is visible to (or vice versa) and within 3\" of a friendly PLAGUE MARINE, or is visible to (or vice versa) and within 3\" of a friendly PLAGUE MARINE ICON BEARER.",
+        "proseTitles": [
+          "Rule"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "d0997b01f6b7f2de",
+    "expectedTitle": "Cloud of Flies",
+    "team": "Plague Marines",
+    "source": {
+      "officialPdf": "https://assets.warhammer-community.com/eng_plague_marines_online_rules-wqjvit50wj-jvekzllwdl.pdf",
+      "date": "2026-08-26",
+      "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/plague-marines/",
+      "checkedOn": "2026-10-05",
+      "evidence": "Official PDF p8 Previous Errata changes the distance to 1″."
+    },
+    "blocks": [
+      {
+        "heading": "Rule",
+        "russian": "Поместите один свой маркер «Облако мух» (Cloud of Flies) в зону боя. Когда оперативник стреляет по дружественному чумному десантнику, находящемуся дальше 3 дюймов от стрелка, если цель целиком находится в пределах 1 дюйма от этого маркера, цель считается заслонённой. На шаге подготовки (Ready) следующей стратегической фазы уберите маркер.",
+        "english": "Place one of your Cloud of Flies markers in the killzone. Whenever an operative is shooting a friendly PLAGUE MARINE operative that’s more than 3\" from it, if that friendly operative is wholly within 1\" of that marker, that friendly operative is obscured. In the Ready step of the next Strategy phase, remove that marker.",
+        "proseTitles": [
+          "Rule"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "5ddf558c2768498c",
+    "expectedTitle": "Plague Marine Warrior",
+    "team": "Plague Marines",
+    "source": {
+      "officialPdf": "https://assets.warhammer-community.com/eng_plague_marines_online_rules-wqjvit50wj-jvekzllwdl.pdf",
+      "date": "2026-08-26",
+      "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/plague-marines/",
+      "checkedOn": "2026-10-05",
+      "evidence": "Official PDF p7 August ’26 Errata."
+    },
+    "blocks": [
+      {
+        "heading": "Toxic",
+        "russian": "Когда этот оперативник использует это оружие против врага, у которого в начале этого действия уже был ваш жетон яда (Poison), увеличьте обе характеристики DMG этого оружия на 1.",
+        "english": "Whenever this operative is using this weapon against an enemy operative that had one of your Poison tokens at the start of that action, add 1 to both Dmg stats of this weapon.",
+        "proseTitles": [
+          "Toxic"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "cda1037fbc50c4e2",
+    "expectedTitle": "Plague Marine Bombardier",
+    "team": "Plague Marines",
+    "source": {
+      "officialPdf": "https://assets.warhammer-community.com/eng_plague_marines_online_rules-wqjvit50wj-jvekzllwdl.pdf",
+      "date": "2026-08-26",
+      "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/plague-marines/",
+      "checkedOn": "2026-10-05",
+      "evidence": "Official PDF p7 August ’26 Errata."
+    },
+    "blocks": [
+      {
+        "heading": "Toxic",
+        "russian": "Когда этот оперативник использует это оружие против врага, у которого в начале этого действия уже был ваш жетон яда (Poison), увеличьте обе характеристики DMG этого оружия на 1.",
+        "english": "Whenever this operative is using this weapon against an enemy operative that had one of your Poison tokens at the start of that action, add 1 to both Dmg stats of this weapon.",
+        "proseTitles": [
+          "Toxic"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "0d4ac7f857b4e421",
+    "expectedTitle": "Plague Marine Champion",
+    "team": "Plague Marines",
+    "source": {
+      "officialPdf": "https://assets.warhammer-community.com/eng_plague_marines_online_rules-wqjvit50wj-jvekzllwdl.pdf",
+      "date": "2026-08-26",
+      "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/plague-marines/",
+      "checkedOn": "2026-10-05",
+      "evidence": "Official PDF p7 August ’26 Errata."
+    },
+    "blocks": [
+      {
+        "heading": "Toxic",
+        "russian": "Когда этот оперативник использует это оружие против врага, у которого в начале этого действия уже был ваш жетон яда (Poison), увеличьте обе характеристики DMG этого оружия на 1.",
+        "english": "Whenever this operative is using this weapon against an enemy operative that had one of your Poison tokens at the start of that action, add 1 to both Dmg stats of this weapon.",
+        "proseTitles": [
+          "Toxic"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "0d4ac7f857b4e421",
+    "expectedTitle": "Plague Marine Champion",
+    "team": "Plague Marines",
+    "source": {
+      "officialPdf": "https://assets.warhammer-community.com/eng_plague_marines_online_rules-wqjvit50wj-jvekzllwdl.pdf",
+      "date": "2026-08-26",
+      "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/plague-marines/",
+      "checkedOn": "2026-10-05",
+      "evidence": "Official PDF p8 Previous Errata replaces the rule."
+    },
+    "blocks": [
+      {
+        "heading": "Grandfather’s Blessing",
+        "russian": "Когда враг с вашим жетоном яда (Poison) теряет одну или больше ран в пределах 7 дюймов от этого оперативника, этот оперативник восстанавливает до такого же числа потерянных ран. За раунд можно восстановить не больше 3 ран; эффект действует, только если этот оперативник не выведен из строя.",
+        "english": "When a poisoned enemy loses one or more wounds within 7″, the Champion regains up to an equal number of lost wounds (maximum 3 per turning point; only if not incapacitated).",
+        "proseTitles": [
+          "Grandfather’s Blessing"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "4d2fca096f8445ed",
+    "expectedTitle": "Plague Marine Fighter",
+    "team": "Plague Marines",
+    "source": {
+      "officialPdf": "https://assets.warhammer-community.com/eng_plague_marines_online_rules-wqjvit50wj-jvekzllwdl.pdf",
+      "date": "2026-08-26",
+      "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/plague-marines/",
+      "checkedOn": "2026-10-05",
+      "evidence": "Official PDF p8 Previous Errata adds Bolt pistol to Fighter; main operative profile p1."
+    },
+    "weapons": [
+      {
+        "name": "Bolt pistol",
+        "append": true,
+        "type": "R",
+        "russian": "Болт-пистолет (Bolt pistol)",
+        "atk": 4,
+        "hit": "3+",
+        "dmg": "3/4",
+        "wrEnglish": "Range 8\"",
+        "wrRussian": "Дальность 8 дюймов (Range 8″)"
+      }
+    ]
+  },
+  {
+    "id": "d1e0290d79721cdf",
+    "expectedTitle": "Plague Marine Heavy Gunner",
+    "team": "Plague Marines",
+    "source": {
+      "officialPdf": "https://assets.warhammer-community.com/eng_plague_marines_online_rules-wqjvit50wj-jvekzllwdl.pdf",
+      "date": "2026-08-26",
+      "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/plague-marines/",
+      "checkedOn": "2026-10-05",
+      "evidence": "Official PDF p8 Previous Errata adds Bolt pistol to Heavy Gunner; main operative profile p1."
+    },
+    "weapons": [
+      {
+        "name": "Bolt pistol",
+        "append": true,
+        "type": "R",
+        "russian": "Болт-пистолет (Bolt pistol)",
+        "atk": 4,
+        "hit": "3+",
+        "dmg": "3/4",
+        "wrEnglish": "Range 8\"",
+        "wrRussian": "Дальность 8 дюймов (Range 8″)"
+      }
+    ]
+  }
+]

@@ -1,0 +1,942 @@
+{
+  "6c54edf65c577dd6": {
+    "kind": "card",
+    "titleEnglish": "Farstalker Kinband — Kroot Mercenary Crew",
+    "titleRussian": "Фарстолкерский киндбанд (Farstalker Kinband) — наёмный отряд крутов (Kroot Mercenary Crew)",
+    "categoryEnglish": "CARD BACK",
+    "categoryRussian": "Фарстолкерский киндбанд (Farstalker Kinband) · ОБОРОТ КАРТЫ (Card Back)",
+    "verifiedAgainstPixels": true
+  },
+  "0428ab52e8bec272": {
+    "kind": "card",
+    "titleEnglish": "Bound",
+    "titleRussian": "Прыгучесть (Bound)",
+    "categoryEnglish": "STRATEGY PLOY",
+    "categoryRussian": "Фарстолкерский киндбанд (Farstalker Kinband) · СТРАТЕГИЧЕСКИЙ ПРИЁМ (Strategy Ploy)",
+    "verifiedAgainstPixels": true,
+    "flavorEnglish": "The long, muscular legs of the Kroot allow them to cover great distances in a single, bounding leap.",
+    "flavorRussian": "Длинные мускулистые ноги крутов позволяют им одним прыжком преодолевать большие расстояния.",
+    "blocks": [
+      {
+        "type": "paragraph",
+        "headingEnglish": "Bound",
+        "headingRussian": "Прыгучесть (Bound)",
+        "english": "During each friendly FARSTALKER KINBAND operative's activation, you can ignore the first vertical distance of 2\" they move during one climb.",
+        "russian": "Во время активации каждого дружественного оперативника отряда «Фарстолкерский киндбанд» (FARSTALKER KINBAND) можно не учитывать первые 2 дюйма вертикального перемещения во время одного подъёма."
+      }
+    ]
+  },
+  "7928ed5f6bd1dd1f": {
+    "kind": "card",
+    "titleEnglish": "Rogue",
+    "titleRussian": "Плут (Rogue)",
+    "categoryEnglish": "STRATEGY PLOY",
+    "categoryRussian": "Фарстолкерский киндбанд (Farstalker Kinband) · СТРАТЕГИЧЕСКИЙ ПРИЁМ (Strategy Ploy)",
+    "verifiedAgainstPixels": true,
+    "flavorEnglish": "Kroot Farstalkers are naturally gifted hunters, using cover and shadow to their advantage as they close in upon their prey.",
+    "flavorRussian": "Фарстолкеры-круты от природы одарены охотничьим чутьём и используют укрытия и тени, приближаясь к добыче.",
+    "blocks": [
+      {
+        "type": "paragraph",
+        "headingEnglish": "Rogue",
+        "headingRussian": "Плут (Rogue)",
+        "english": "Whenever an operative is shooting a friendly FARSTALKER KINBAND operative: ignore the Saturate weapon rule; if you can retain any cover saves, you can retain one additional cover save, or you can retain one cover save as a critical success. This isn't cumulative with improved cover saves from Vantage terrain.",
+        "russian": "Когда оперативник стреляет по дружественному оперативнику отряда «Фарстолкерский киндбанд» (FARSTALKER KINBAND), игнорируйте правило оружия «Насыщение огнём» (Saturate). Если вы можете сохранить хотя бы один кубик защиты за укрытие, сохраните один дополнительный такой кубик либо сохраните один кубик защиты за укрытие как критический успех. Этот эффект не суммируется с улучшенными спас-бросками за укрытие от террейна с высотной позицией (Vantage terrain)."
+      }
+    ]
+  },
+  "68393427f7190f96": {
+    "kind": "card",
+    "titleEnglish": "Prey",
+    "titleRussian": "Добыча (Prey)",
+    "categoryEnglish": "STRATEGY PLOY",
+    "categoryRussian": "Фарстолкерский киндбанд (Farstalker Kinband) · СТРАТЕГИЧЕСКИЙ ПРИЁМ (Strategy Ploy)",
+    "verifiedAgainstPixels": true,
+    "flavorEnglish": "When a Kroot Farstalker has selected their target, the hunter's focus is directed fully towards bringing down their chosen prey.",
+    "flavorRussian": "Выбрав цель, крут-фарстолкер полностью сосредоточивается на том, чтобы настичь и повалить добычу.",
+    "blocks": [
+      {
+        "type": "paragraph",
+        "headingEnglish": "Prey",
+        "headingRussian": "Добыча (Prey)",
+        "english": "Whenever a friendly FARSTALKER KINBAND operative is shooting during an activation in which it hasn't performed the Charge, Fall Back or Reposition action, its ranged weapons have the Balanced and Severe weapon rules; if the weapon already has the Balanced weapon rule, it has the Ceaseless and Severe weapon rules instead. Note that operative isn't restricted from performing those actions after shooting.",
+        "russian": "Когда дружественный оперативник отряда «Фарстолкерский киндбанд» (FARSTALKER KINBAND) стреляет во время активации, в которой он ещё не выполнял действия «Атака» (Charge), «Отступление» (Fall Back) или «Перемещение» (Reposition), его оружие дальнего боя получает правила «Сбалансированное» (Balanced) и «Сокрушительное» (Severe). Если у оружия уже есть правило «Сбалансированное» (Balanced), вместо него оно получает правила «Непрерывное» (Ceaseless) и «Сокрушительное» (Severe). После стрельбы оперативник всё ещё может выполнить эти действия."
+      }
+    ]
+  },
+  "868f9674cabbf624": {
+    "kind": "card",
+    "titleEnglish": "Cut-Throats",
+    "titleRussian": "Горлорезы (Cut-Throats)",
+    "categoryEnglish": "STRATEGY PLOY",
+    "categoryRussian": "Фарстолкерский киндбанд (Farstalker Kinband) · СТРАТЕГИЧЕСКИЙ ПРИЁМ (Strategy Ploy)",
+    "verifiedAgainstPixels": true,
+    "flavorEnglish": "Kroot warriors are lethal melee combatants. Their bladed weapons are capable of tearing through exposed flesh with ease.",
+    "flavorRussian": "Воины-круты смертоносны в ближнем бою: их клинки легко вспарывают незащищённую плоть.",
+    "blocks": [
+      {
+        "type": "paragraph",
+        "headingEnglish": "Cut-Throats",
+        "headingRussian": "Горлорезы (Cut-Throats)",
+        "english": "Add 1 to the Atk stat of friendly FARSTALKER KINBAND operatives' melee weapons (to a maximum of 5).",
+        "russian": "Увеличьте характеристику атак (Atk) оружия ближнего боя дружественных оперативников отряда «Фарстолкерский киндбанд» (FARSTALKER KINBAND) на 1, но не выше 5."
+      }
+    ]
+  },
+  "b2039321461b392b": {
+    "kind": "card",
+    "titleEnglish": "Kroot Heavy Gunner",
+    "titleRussian": "Тяжёлый стрелок-крут (Kroot Heavy Gunner)",
+    "categoryEnglish": "OPERATIVE",
+    "categoryRussian": "Фарстолкерский киндбанд (Farstalker Kinband) · ОПЕРАТИВНИК (Operative)",
+    "verifiedAgainstPixels": true,
+    "stats": {
+      "APL": 2,
+      "Move": "6\"",
+      "Save": "5+",
+      "Wounds": 8
+    },
+    "weapons": [
+      {
+        "type": "R",
+        "english": "Dvorgite skinner",
+        "russian": "Сдиратель кожи дворгитов (Dvorgite skinner)",
+        "atk": 5,
+        "hit": "2+",
+        "dmg": "3/3",
+        "wrEnglish": "Range 6\", Heavy (Reposition only), Piercing 2, Torrent 2\"",
+        "wrRussian": "дальность 6 дюймов; Тяжёлое (только после действия «Перемещение» (Reposition)); Бронебойное 2 (Piercing 2); Поток 2 дюйма (Torrent 2\")"
+      },
+      {
+        "type": "R",
+        "english": "Londaxi tribalest",
+        "russian": "Племенной арбалет лондакси (Londaxi tribalest)",
+        "atk": 5,
+        "hit": "4+",
+        "dmg": "4/5",
+        "wrEnglish": "Heavy (Reposition only), Piercing 1, Rending",
+        "wrRussian": "Тяжёлое (только после действия «Перемещение» (Reposition)); Бронебойное 1 (Piercing 1); Раздирающее (Rending)"
+      },
+      {
+        "type": "M",
+        "english": "Blade",
+        "russian": "Клинок (Blade)",
+        "atk": 3,
+        "hit": "3+",
+        "dmg": "3/4",
+        "wrEnglish": "",
+        "wrRussian": ""
+      }
+    ],
+    "footerEnglish": "FARSTALKER KINBAND, T'AU EMPIRE, KROOT, HEAVY GUNNER",
+    "footerRussian": "ФАРСТОЛКЕРСКИЙ КИНДБАНД (FARSTALKER KINBAND), ИМПЕРИЯ ТАУ (T'AU EMPIRE), КРУТЫ (KROOT), ТЯЖЁЛЫЙ СТРЕЛОК (HEAVY GUNNER)"
+  },
+  "ddac05cc1939e2a8": {
+    "kind": "card",
+    "titleEnglish": "Kroot Hound",
+    "titleRussian": "Гончая крутов (Kroot Hound)",
+    "categoryEnglish": "OPERATIVE",
+    "categoryRussian": "Фарстолкерский киндбанд (Farstalker Kinband) · ОПЕРАТИВНИК (Operative)",
+    "verifiedAgainstPixels": true,
+    "stats": {
+      "APL": 2,
+      "Move": "8\"",
+      "Save": "5+",
+      "Wounds": 7
+    },
+    "weapons": [
+      {
+        "type": "M",
+        "english": "Ripping fangs",
+        "russian": "Рвущие клыки (Ripping fangs)",
+        "atk": 4,
+        "hit": "3+",
+        "dmg": "3/4",
+        "wrEnglish": "Rending",
+        "wrRussian": "Раздирающее (Rending)"
+      }
+    ],
+    "blocks": [
+      {
+        "type": "paragraph",
+        "headingEnglish": "Beast",
+        "headingRussian": "Зверь (Beast)",
+        "english": "This operative cannot perform any actions other than Charge, Dash, Fall Back, Fight, Gather, Guard, Reposition, Pick Up Marker and Place Marker. It cannot use any weapons that aren't on its datacard.",
+        "russian": "Этот оперативник может выполнять только действия «Атака» (Charge), «Рывок» (Dash), «Отступление» (Fall Back), «Ближний бой» (Fight), «Сбор» (Gather), «Дозор» (Guard), «Перемещение» (Reposition), «Поднять маркер» (Pick Up Marker) и «Разместить маркер» (Place Marker). Он не может использовать оружие, не указанное на его карточке."
+      },
+      {
+        "type": "paragraph",
+        "headingEnglish": "Bad-tempered",
+        "headingRussian": "Скверный нрав (Bad-tempered)",
+        "english": "Whenever an enemy operative performs the Fight action, if this operative is a valid operative to fight against, you can force them to select this operative to fight against instead. Whenever an enemy operative ends the Charge action within control range of another friendly FARSTALKER KINBAND operative within 3\" of this operative, if this operative isn't within control range of enemy operatives, this operative can perform a free Charge action, but must end that move within control range of that enemy operative.",
+        "russian": "Когда вражеский оперативник выполняет действие «Ближний бой» (Fight), если эту гончую можно выбрать противником для этого действия, вы можете заставить его выбрать её вместо другого оперативника. Когда вражеский оперативник заканчивает действие «Атака» (Charge) в дистанции контроля другого дружественного оперативника отряда «Фарстолкерский киндбанд» (FARSTALKER KINBAND), находящегося не далее 3 дюймов от этой гончей, если сама гончая не находится в дистанции контроля вражеских оперативников, она может бесплатно выполнить действие «Атака» (Charge). Она должна закончить это перемещение в дистанции контроля того вражеского оперативника."
+      },
+      {
+        "type": "paragraph",
+        "headingEnglish": "Gather — 1AP",
+        "headingRussian": "Сбор (Gather) — 1 ОД",
+        "english": "Perform a free Dash or Reposition action with this operative. During that move, you can perform a free Pick Up Marker or Place Marker action with this operative (you can determine control during that action to do so), and any remaining move distance it had from the Dash or Reposition action can be used after it does so.",
+        "russian": "Бесплатно выполните этим оперативником действие «Рывок» (Dash) или «Перемещение» (Reposition). Во время этого перемещения он может бесплатно выполнить действие «Поднять маркер» (Pick Up Marker) или «Разместить маркер» (Place Marker); для этого можно определить контроль над маркером непосредственно во время действия. После этого он может продолжить перемещение на оставшееся расстояние, разрешённое действием «Рывок» или «Перемещение»."
+      }
+    ],
+    "footerEnglish": "FARSTALKER KINBAND, T'AU EMPIRE, KROOT, HOUND",
+    "footerRussian": "ФАРСТОЛКЕРСКИЙ КИНДБАНД (FARSTALKER KINBAND), ИМПЕРИЯ ТАУ (T'AU EMPIRE), КРУТЫ (KROOT), ГОНЧАЯ (HOUND)"
+  },
+  "6b9f7a41328704fd": {
+    "kind": "card",
+    "titleEnglish": "Kroot Long-Sight",
+    "titleRussian": "Крут-дальнозор (Kroot Long-Sight)",
+    "categoryEnglish": "OPERATIVE",
+    "categoryRussian": "Фарстолкерский киндбанд (Farstalker Kinband) · ОПЕРАТИВНИК (Operative)",
+    "verifiedAgainstPixels": true,
+    "stats": {
+      "APL": 2,
+      "Move": "6\"",
+      "Save": "5+",
+      "Wounds": 8
+    },
+    "weapons": [
+      {
+        "type": "R",
+        "english": "Kroot hunting rifle (concealed)",
+        "russian": "Охотничья винтовка крутов (Kroot hunting rifle), скрытый профиль (concealed)",
+        "atk": 4,
+        "hit": "2+",
+        "dmg": "3/3",
+        "wrEnglish": "Heavy, Devastating 3, Silent, Concealed Position*",
+        "wrRussian": "Тяжёлое (Heavy); Разрушительное 3 (Devastating 3); Бесшумное (Silent); Скрытая позиция (Concealed Position)*"
+      },
+      {
+        "type": "R",
+        "english": "Kroot hunting rifle (mobile)",
+        "russian": "Охотничья винтовка крутов (Kroot hunting rifle), подвижный профиль (mobile)",
+        "atk": 4,
+        "hit": "3+",
+        "dmg": "3/4",
+        "wrEnglish": "",
+        "wrRussian": ""
+      },
+      {
+        "type": "R",
+        "english": "Kroot hunting rifle (stationary)",
+        "russian": "Охотничья винтовка крутов (Kroot hunting rifle), неподвижный профиль (stationary)",
+        "atk": 4,
+        "hit": "2+",
+        "dmg": "3/3",
+        "wrEnglish": "Heavy, Devastating 3",
+        "wrRussian": "Тяжёлое (Heavy); Разрушительное 3 (Devastating 3)"
+      },
+      {
+        "type": "M",
+        "english": "Blade",
+        "russian": "Клинок (Blade)",
+        "atk": 3,
+        "hit": "3+",
+        "dmg": "3/4",
+        "wrEnglish": "",
+        "wrRussian": ""
+      }
+    ],
+    "blocks": [
+      {
+        "type": "paragraph",
+        "headingEnglish": "Concealed Position",
+        "headingRussian": "Скрытая позиция (Concealed Position)",
+        "english": "This operative can only use this weapon the first time it's performing the Shoot action during the battle.",
+        "russian": "Этот оперативник может использовать это оружие только при первом за бой выполнении им действия «Стрельба» (Shoot)."
+      }
+    ],
+    "footerEnglish": "FARSTALKER KINBAND, T'AU EMPIRE, KROOT, LONG-SIGHT",
+    "footerRussian": "ФАРСТОЛКЕРСКИЙ КИНДБАНД (FARSTALKER KINBAND), ИМПЕРИЯ ТАУ (T'AU EMPIRE), КРУТЫ (KROOT), ДАЛЬНОЗОР (LONG-SIGHT)"
+  },
+  "d992031118d8e605": {
+    "kind": "card",
+    "titleEnglish": "Kroot Long-Sight — Long-Sight",
+    "titleRussian": "Крут-дальнозор (Kroot Long-Sight) — Дальнозор (Long-Sight)",
+    "categoryEnglish": "OPERATIVE",
+    "categoryRussian": "Фарстолкерский киндбанд (Farstalker Kinband) · ОПЕРАТИВНИК (Operative)",
+    "verifiedAgainstPixels": true,
+    "blocks": [
+      {
+        "type": "paragraph",
+        "headingEnglish": "Long-Sight — 1AP",
+        "headingRussian": "Дальнозор (Long-Sight) — 1 ОД",
+        "english": "Until the start of this operative's next activation: the concealed and stationary profiles of its Kroot hunting rifle have the Lethal 5+ weapon rule; whenever it's shooting with its Kroot hunting rifle, enemy operatives cannot be Obscured. This operative cannot perform this action while within control range of an enemy operative.",
+        "russian": "До начала следующей активации этого оперативника скрытый и неподвижный профили его охотничьей винтовки крутов (Kroot hunting rifle) получают правило оружия «Смертоносное 5+» (Lethal 5+); когда он стреляет из этой винтовки, вражеские оперативники не могут считаться скрытыми (Obscured). Этот оперативник не может выполнить действие, находясь в дистанции контроля вражеского оперативника."
+      }
+    ]
+  },
+  "4d00d302ebc24be5": {
+    "kind": "card",
+    "titleEnglish": "Kroot Warrior",
+    "titleRussian": "Воин-крут (Kroot Warrior)",
+    "categoryEnglish": "OPERATIVE",
+    "categoryRussian": "Фарстолкерский киндбанд (Farstalker Kinband) · ОПЕРАТИВНИК (Operative)",
+    "verifiedAgainstPixels": true,
+    "stats": {
+      "APL": 2,
+      "Move": "6\"",
+      "Save": "5+",
+      "Wounds": 8
+    },
+    "weapons": [
+      {
+        "type": "R",
+        "english": "Kroot rifle",
+        "russian": "Винтовка крутов (Kroot rifle)",
+        "atk": 4,
+        "hit": "3+",
+        "dmg": "3/4",
+        "wrEnglish": "",
+        "wrRussian": ""
+      },
+      {
+        "type": "R",
+        "english": "Kroot scattergun",
+        "russian": "Дробовик крутов (Kroot scattergun)",
+        "atk": 4,
+        "hit": "3+",
+        "dmg": "3/3",
+        "wrEnglish": "Range 6\"",
+        "wrRussian": "дальность 6 дюймов (Range 6\")"
+      },
+      {
+        "type": "M",
+        "english": "Blade",
+        "russian": "Клинок (Blade)",
+        "atk": 3,
+        "hit": "3+",
+        "dmg": "3/4",
+        "wrEnglish": "",
+        "wrRussian": ""
+      }
+    ],
+    "blocks": [
+      {
+        "type": "paragraph",
+        "headingEnglish": "Ready for Anything",
+        "headingRussian": "Готов ко всему (Ready for Anything)",
+        "english": "Once per turning point, during a friendly WARRIOR operative's activation, you can use the Meat, Piercing Shot or Toxin Shot rule (see faction equipment) for that operative. Doing so doesn't count for its once per turning point limit.",
+        "russian": "Один раз за раунд во время активации дружественного оперативника-воина (WARRIOR) можно применить к нему правило «Мясо» (Meat), «Бронебойный выстрел» (Piercing Shot) или «Токсичный выстрел» (Toxin Shot) из раздела «Снаряжение фракции». Это не расходует обычное ограничение «один раз за раунд» для выбранного правила."
+      }
+    ],
+    "footerEnglish": "FARSTALKER KINBAND, T'AU EMPIRE, KROOT, WARRIOR",
+    "footerRussian": "ФАРСТОЛКЕРСКИЙ КИНДБАНД (FARSTALKER KINBAND), ИМПЕРИЯ ТАУ (T'AU EMPIRE), КРУТЫ (KROOT), ВОИН (WARRIOR)"
+  },
+  "ac3a5bfbff545f52": {
+    "kind": "card",
+    "titleEnglish": "Kroot Bow-Hunter",
+    "titleRussian": "Крут-лучник (Kroot Bow-Hunter)",
+    "categoryEnglish": "OPERATIVE",
+    "categoryRussian": "Фарстолкерский киндбанд (Farstalker Kinband) · ОПЕРАТИВНИК (Operative)",
+    "verifiedAgainstPixels": true,
+    "stats": {
+      "APL": 2,
+      "Move": "6\"",
+      "Save": "5+",
+      "Wounds": 8
+    },
+    "weapons": [
+      {
+        "type": "R",
+        "english": "Accelerator bow (fused arrow)",
+        "russian": "Ускорительный лук (Accelerator bow), сросшаяся стрела (fused arrow)",
+        "atk": 4,
+        "hit": "3+",
+        "dmg": "4/5",
+        "wrEnglish": "Piercing 1",
+        "wrRussian": "Бронебойное 1 (Piercing 1)"
+      },
+      {
+        "type": "R",
+        "english": "Accelerator bow (glide arrow)",
+        "russian": "Ускорительный лук (Accelerator bow), планирующая стрела (glide arrow)",
+        "atk": 4,
+        "hit": "3+",
+        "dmg": "3/4",
+        "wrEnglish": "Silent",
+        "wrRussian": "Бесшумное (Silent)"
+      },
+      {
+        "type": "R",
+        "english": "Accelerator bow (voltaic arrow)",
+        "russian": "Ускорительный лук (Accelerator bow), вольтовая стрела (voltaic arrow)",
+        "atk": 4,
+        "hit": "3+",
+        "dmg": "3/5",
+        "wrEnglish": "Blast 1\"",
+        "wrRussian": "Взрыв 1 дюйм (Blast 1\")"
+      },
+      {
+        "type": "M",
+        "english": "Blade",
+        "russian": "Клинок (Blade)",
+        "atk": 3,
+        "hit": "3+",
+        "dmg": "3/4",
+        "wrEnglish": "",
+        "wrRussian": ""
+      }
+    ],
+    "blocks": [
+      {
+        "type": "paragraph",
+        "headingEnglish": "Energise — 1AP",
+        "headingRussian": "Зарядить (Energise) — 1 ОД",
+        "english": "Until the end of the turning point or until this operative has shot with its accelerator bow (whichever comes first), all profiles of its accelerator bow have the Lethal 5+ weapon rule. This operative cannot perform this action while within control range of an enemy operative.",
+        "russian": "До конца раунда или до того, как этот оперативник выстрелит из ускорительного лука (Accelerator bow), смотря что наступит раньше, все профили лука получают правило оружия «Смертоносное 5+» (Lethal 5+). Оперативник не может выполнить это действие, находясь в дистанции контроля врага."
+      }
+    ],
+    "footerEnglish": "FARSTALKER KINBAND, T'AU EMPIRE, KROOT, BOW-HUNTER",
+    "footerRussian": "ФАРСТОЛКЕРСКИЙ КИНДБАНД (FARSTALKER KINBAND), ИМПЕРИЯ ТАУ (T'AU EMPIRE), КРУТЫ (KROOT), ЛУЧНИК (BOW-HUNTER)"
+  },
+  "f8779804f75df1c6": {
+    "kind": "card",
+    "titleEnglish": "Kroot Cold-Blood",
+    "titleRussian": "Хладнокровный крут (Kroot Cold-Blood)",
+    "categoryEnglish": "OPERATIVE",
+    "categoryRussian": "Фарстолкерский киндбанд (Farstalker Kinband) · ОПЕРАТИВНИК (Operative)",
+    "verifiedAgainstPixels": true,
+    "stats": {
+      "APL": 2,
+      "Move": "6\"",
+      "Save": "5+",
+      "Wounds": 9
+    },
+    "weapons": [
+      {
+        "type": "R",
+        "english": "Kroot rifle",
+        "russian": "Винтовка крутов (Kroot rifle)",
+        "atk": 4,
+        "hit": "3+",
+        "dmg": "3/4",
+        "wrEnglish": "",
+        "wrRussian": ""
+      },
+      {
+        "type": "M",
+        "english": "Blade",
+        "russian": "Клинок (Blade)",
+        "atk": 3,
+        "hit": "3+",
+        "dmg": "3/4",
+        "wrEnglish": "",
+        "wrRussian": ""
+      }
+    ],
+    "blocks": [
+      {
+        "type": "paragraph",
+        "headingEnglish": "Hardy",
+        "headingRussian": "Живучий (Hardy)",
+        "english": "Whenever an attack dice would inflict Critical Dmg on this operative, you can choose for that attack dice to inflict Normal Dmg instead.",
+        "russian": "Когда кубик атаки должен нанести этому оперативнику критический урон, можно решить, что этот кубик вместо этого нанесёт обычный урон."
+      },
+      {
+        "type": "paragraph",
+        "headingEnglish": "Cold-blooded",
+        "headingRussian": "Хладнокровный (Cold-blooded)",
+        "english": "Whenever this operative is shooting against, fighting against or retaliating against a wounded enemy operative, this operative's weapons have the Lethal 5+ weapon rule; if that enemy operative is also injured, this operative's weapons also have the Rending weapon rule.",
+        "russian": "Когда этот оперативник стреляет по раненому врагу, сражается с ним в ближнем бою или отвечает ему ударом, его оружие получает правило «Смертоносное 5+» (Lethal 5+). Если тот враг также тяжело ранен, оружие этого оперативника дополнительно получает правило «Раздирающее» (Rending)."
+      }
+    ],
+    "footerEnglish": "FARSTALKER KINBAND, T'AU EMPIRE, KROOT, COLD-BLOOD",
+    "footerRussian": "ФАРСТОЛКЕРСКИЙ КИНДБАНД (FARSTALKER KINBAND), ИМПЕРИЯ ТАУ (T'AU EMPIRE), КРУТЫ (KROOT), ХЛАДНОКРОВНЫЙ (COLD-BLOOD)"
+  },
+  "72758258c0fba7b4": {
+    "kind": "card",
+    "titleEnglish": "Kroot Pistolier",
+    "titleRussian": "Крут-пистолетчик (Kroot Pistolier)",
+    "categoryEnglish": "OPERATIVE",
+    "categoryRussian": "Фарстолкерский киндбанд (Farstalker Kinband) · ОПЕРАТИВНИК (Operative)",
+    "verifiedAgainstPixels": true,
+    "stats": {
+      "APL": 2,
+      "Move": "6\"",
+      "Save": "5+",
+      "Wounds": 8
+    },
+    "weapons": [
+      {
+        "type": "R",
+        "english": "Dual Kroot pistols (focused)",
+        "russian": "Парные пистолеты крутов (Dual Kroot pistols), прицельный профиль (focused)",
+        "atk": 4,
+        "hit": "3+",
+        "dmg": "3/4",
+        "wrEnglish": "Range 8\", Ceaseless, Lethal 5+",
+        "wrRussian": "дальность 8 дюймов; Непрерывное (Ceaseless); Смертоносное 5+ (Lethal 5+)"
+      },
+      {
+        "type": "R",
+        "english": "Dual Kroot pistols (salvo)",
+        "russian": "Парные пистолеты крутов (Dual Kroot pistols), залповый профиль (salvo)",
+        "atk": 4,
+        "hit": "3+",
+        "dmg": "3/4",
+        "wrEnglish": "Range 8\", Salvo*",
+        "wrRussian": "дальность 8 дюймов; Залп (Salvo)*"
+      },
+      {
+        "type": "M",
+        "english": "Blade",
+        "russian": "Клинок (Blade)",
+        "atk": 3,
+        "hit": "3+",
+        "dmg": "3/4",
+        "wrEnglish": "",
+        "wrRussian": ""
+      }
+    ],
+    "blocks": [
+      {
+        "type": "paragraph",
+        "headingEnglish": "Quick Draw",
+        "headingRussian": "Быстрая реакция (Quick Draw)",
+        "english": "Once per turning point, when an enemy operative is performing the Shoot action and this operative is selected as the valid target (or if it will be a secondary target from the Blast weapon rule), if this operative is ready, you can interrupt that action to use this rule. If you do, this operative can immediately perform a free Shoot action with its dual Kroot pistols (focused) against that enemy operative (you can change its order to Engage to do so), but that enemy operative must be a valid target.",
+        "russian": "Один раз за раунд, когда вражеский оперативник выполняет действие «Стрельба» (Shoot) и этот оперативник выбран допустимой целью (или станет вторичной целью из-за правила оружия «Взрыв» (Blast)), если он готов, можно прервать то действие и применить это правило. Если вы это сделали, этот оперативник немедленно бесплатно выполняет действие «Стрельба» (Shoot) из прицельного профиля парных пистолетов крутов (Dual Kroot pistols (focused)) по тому вражескому оперативнику. Для этого можно сменить его приказ на «Бой» (Engage), но враг должен быть допустимой целью."
+      },
+      {
+        "type": "paragraph",
+        "headingEnglish": "Salvo*",
+        "headingRussian": "Залп (Salvo)*",
+        "english": "Select up to two valid targets. Shoot with this weapon against both of them in an order of your choice (roll each sequence separately).",
+        "russian": "Выберите до двух допустимых целей. Стреляйте из этого оружия по обеим в выбранном вами порядке; каждую последовательность стрельбы разрешайте отдельно."
+      }
+    ],
+    "footerEnglish": "FARSTALKER KINBAND, T'AU EMPIRE, KROOT, PISTOLIER",
+    "footerRussian": "ФАРСТОЛКЕРСКИЙ КИНДБАНД (FARSTALKER KINBAND), ИМПЕРИЯ ТАУ (T'AU EMPIRE), КРУТЫ (KROOT), ПИСТОЛЕТЧИК (PISTOLIER)"
+  },
+  "53615a4af9500e52": {
+    "kind": "card",
+    "titleEnglish": "Kroot Cut-Skin",
+    "titleRussian": "Крут-кожерез (Kroot Cut-Skin)",
+    "categoryEnglish": "OPERATIVE",
+    "categoryRussian": "Фарстолкерский киндбанд (Farstalker Kinband) · ОПЕРАТИВНИК (Operative)",
+    "verifiedAgainstPixels": true,
+    "stats": {
+      "APL": 2,
+      "Move": "6\"",
+      "Save": "5+",
+      "Wounds": 8
+    },
+    "weapons": [
+      {
+        "type": "M",
+        "english": "Cut-skin's blades",
+        "russian": "Клинки кожереза (Cut-skin's blades)",
+        "atk": 4,
+        "hit": "3+",
+        "dmg": "3/4",
+        "wrEnglish": "Ceaseless, Lethal 5+",
+        "wrRussian": "Непрерывное (Ceaseless); Смертоносное 5+ (Lethal 5+)"
+      }
+    ],
+    "blocks": [
+      {
+        "type": "paragraph",
+        "headingEnglish": "Vicious Duellist",
+        "headingRussian": "Жестокий дуэлянт (Vicious Duellist)",
+        "english": "Whenever this operative is fighting or retaliating, for each attack dice your opponent discards as a fail, inflict 1 damage on the enemy operative in that sequence.",
+        "russian": "Когда этот оперативник сражается в ближнем бою или отвечает ударом, за каждый кубик атаки, который противник отбрасывает как провал, нанесите вражескому оперативнику в этой последовательности 1 единицу урона."
+      },
+      {
+        "type": "paragraph",
+        "headingEnglish": "Savage Assault",
+        "headingRussian": "Свирепый натиск (Savage Assault)",
+        "english": "The first time this operative performs the Fight action during each of its activations, if neither it nor the enemy operative in that sequence is incapacitated, this operative can immediately perform a free Fight action afterwards, but it can only fight against that enemy operative (and only if it's still valid to fight against). This takes precedence over action restrictions.",
+        "russian": "При первом за каждую активацию выполнении этим оперативником действия «Ближний бой» (Fight), если ни он, ни вражеский оперативник в этой последовательности не выведен из строя, он может сразу после неё бесплатно выполнить ещё одно действие «Ближний бой». В этой дополнительной схватке он может сражаться только с тем же врагом, и только если тот всё ещё является допустимым противником. Это правило имеет приоритет над ограничениями на действия."
+      }
+    ],
+    "footerEnglish": "FARSTALKER KINBAND, T'AU EMPIRE, KROOT, CUT-SKIN",
+    "footerRussian": "ФАРСТОЛКЕРСКИЙ КИНДБАНД (FARSTALKER KINBAND), ИМПЕРИЯ ТАУ (T'AU EMPIRE), КРУТЫ (KROOT), КОЖЕРЕЗ (CUT-SKIN)"
+  },
+  "f259b868282a8ab0": {
+    "kind": "card",
+    "titleEnglish": "Kroot Stalker",
+    "titleRussian": "Крут-сталкер (Kroot Stalker)",
+    "categoryEnglish": "OPERATIVE",
+    "categoryRussian": "Фарстолкерский киндбанд (Farstalker Kinband) · ОПЕРАТИВНИК (Operative)",
+    "verifiedAgainstPixels": true,
+    "stats": {
+      "APL": 2,
+      "Move": "6\"",
+      "Save": "5+",
+      "Wounds": 8
+    },
+    "weapons": [
+      {
+        "type": "R",
+        "english": "Kroot scattergun",
+        "russian": "Дробовик крутов (Kroot scattergun)",
+        "atk": 4,
+        "hit": "3+",
+        "dmg": "3/3",
+        "wrEnglish": "Range 6\"",
+        "wrRussian": "дальность 6 дюймов (Range 6\")"
+      },
+      {
+        "type": "M",
+        "english": "Stalker's blade",
+        "russian": "Клинок сталкера (Stalker's blade)",
+        "atk": 4,
+        "hit": "3+",
+        "dmg": "3/4",
+        "wrEnglish": "Balanced, Rending",
+        "wrRussian": "Сбалансированное (Balanced); Раздирающее (Rending)"
+      }
+    ],
+    "blocks": [
+      {
+        "type": "paragraph",
+        "headingEnglish": "Stalker",
+        "headingRussian": "Сталкер (Stalker)",
+        "english": "This operative can perform the Charge action while it has a Conceal order.",
+        "russian": "Этот оперативник может выполнять действие «Атака» (Charge), имея приказ «Скрытность» (Conceal)."
+      },
+      {
+        "type": "paragraph",
+        "headingEnglish": "Stealth Attack — 2AP",
+        "headingRussian": "Скрытная атака (Stealth Attack) — 2 ОД",
+        "english": "Perform a free Charge action with this operative, but don't exceed its Move stat (i.e. don't add 2\"). Then immediately perform a free Fight action with this operative. The first time you strike during that action, you can immediately resolve another of your successes as a strike (before your opponent). This operative cannot perform this action while it has an Engage order, while within control range of an enemy operative, or if it isn't within 1\" of Light or Heavy terrain.",
+        "russian": "Бесплатно выполните этим оперативником действие «Атака» (Charge), но не превышайте его характеристику перемещения (Move), то есть не добавляйте 2 дюйма к расстоянию. Затем сразу бесплатно выполните им действие «Ближний бой» (Fight). При первом ударе в этой схватке немедленно разрешите ещё один свой успех как удар до того, как это сделает противник. Оперативник не может выполнить это действие с приказом «Бой» (Engage), находясь в дистанции контроля вражеского оперативника или дальше 1 дюйма от лёгкого либо тяжёлого террейна."
+      }
+    ],
+    "footerEnglish": "FARSTALKER KINBAND, T'AU EMPIRE, KROOT, STALKER",
+    "footerRussian": "ФАРСТОЛКЕРСКИЙ КИНДБАНД (FARSTALKER KINBAND), ИМПЕРИЯ ТАУ (T'AU EMPIRE), КРУТЫ (KROOT), СТАЛКЕР (STALKER)"
+  },
+  "3607635439d2960e": {
+    "kind": "card",
+    "titleEnglish": "Kroot Tracker",
+    "titleRussian": "Крут-следопыт (Kroot Tracker)",
+    "categoryEnglish": "OPERATIVE",
+    "categoryRussian": "Фарстолкерский киндбанд (Farstalker Kinband) · ОПЕРАТИВНИК (Operative)",
+    "verifiedAgainstPixels": true,
+    "stats": {
+      "APL": 2,
+      "Move": "6\"",
+      "Save": "5+",
+      "Wounds": 8
+    },
+    "weapons": [
+      {
+        "type": "R",
+        "english": "Kroot rifle",
+        "russian": "Винтовка крутов (Kroot rifle)",
+        "atk": 4,
+        "hit": "4+",
+        "dmg": "3/4",
+        "wrEnglish": "",
+        "wrRussian": ""
+      },
+      {
+        "type": "M",
+        "english": "Blade",
+        "russian": "Клинок (Blade)",
+        "atk": 3,
+        "hit": "3+",
+        "dmg": "3/4",
+        "wrEnglish": "",
+        "wrRussian": ""
+      }
+    ],
+    "blocks": [
+      {
+        "type": "paragraph",
+        "headingEnglish": "Marked for the Hunt — 1AP",
+        "headingRussian": "Пометить для охоты (Marked for the Hunt) — 1 ОД",
+        "english": "Remove your Pech'ra marker from the killzone (if any). Then place your Pech'ra marker visible to this operative, or on Vantage terrain of a terrain feature that's visible to this operative. Whenever a friendly FARSTALKER KINBAND operative is shooting an enemy operative that has that marker within its control range, that friendly operative's ranged weapons have the Seek Light weapon rule. At the start of this operative's next activation or if it's removed from the killzone (whichever comes first), remove your Pech'ra marker from the killzone. This operative cannot perform this action while within control range of an enemy operative.",
+        "russian": "Уберите из зоны боя (Killzone) свой маркер Печ’ра (Pech'ra), если он там есть. Затем разместите его так, чтобы он был виден этому оперативнику, либо на террейне с высотной позицией (Vantage terrain) элемента террейна, видимого этому оперативнику. Когда дружественный оперативник отряда «Фарстолкерский киндбанд» (FARSTALKER KINBAND) стреляет по вражескому оперативнику, у которого этот маркер находится в дистанции контроля, оружие дальнего боя стреляющего получает правило «Поиск света» (Seek Light). В начале следующей активации этого оперативника или когда он будет удалён из зоны боя — смотря что наступит раньше — уберите маркер Печ’ра из зоны боя. Этот оперативник не может выполнить это действие, находясь в дистанции контроля врага."
+      }
+    ],
+    "footerEnglish": "FARSTALKER KINBAND, T'AU EMPIRE, KROOT, TRACKER",
+    "footerRussian": "ФАРСТОЛКЕРСКИЙ КИНДБАНД (FARSTALKER KINBAND), ИМПЕРИЯ ТАУ (T'AU EMPIRE), КРУТЫ (KROOT), СЛЕДОПЫТ (TRACKER)"
+  },
+  "a0fc75357fc97a11": {
+    "kind": "card",
+    "titleEnglish": "Kroot Tracker — From the Eye Above",
+    "titleRussian": "Крут-следопыт (Kroot Tracker) — С высоты птичьего полёта (From the Eye Above)",
+    "categoryEnglish": "OPERATIVE",
+    "categoryRussian": "Фарстолкерский киндбанд (Farstalker Kinband) · ОПЕРАТИВНИК (Operative)",
+    "verifiedAgainstPixels": true,
+    "blocks": [
+      {
+        "type": "paragraph",
+        "headingEnglish": "From the Eye Above — 1AP",
+        "headingRussian": "С высоты птичьего полёта (From the Eye Above) — 1 ОД",
+        "english": "SUPPORT. Select one other friendly FARSTALKER KINBAND operative visible to and within 6\" of this operative. Until the end of that operative's next activation, add 1 to its APL stat. This operative cannot perform this action while within control range of an enemy operative.",
+        "russian": "ПОДДЕРЖКА (SUPPORT). Выберите другого дружественного оперативника отряда «Фарстолкерский киндбанд» (FARSTALKER KINBAND), видимого этому оперативнику и находящегося в пределах 6 дюймов от него. До конца следующей активации выбранного оперативника увеличьте его лимит очков действий (APL) на 1. Этот оперативник не может выполнить действие, находясь в дистанции контроля врага."
+      }
+    ]
+  },
+  "6bd6689f5e3f1851": {
+    "kind": "card",
+    "titleEnglish": "Kroot Kill-Broker",
+    "titleRussian": "Крут-торговец смертью (Kroot Kill-Broker)",
+    "categoryEnglish": "OPERATIVE",
+    "categoryRussian": "Фарстолкерский киндбанд (Farstalker Kinband) · ОПЕРАТИВНИК (Operative)",
+    "verifiedAgainstPixels": true,
+    "stats": {
+      "APL": 2,
+      "Move": "6\"",
+      "Save": "5+",
+      "Wounds": 9
+    },
+    "weapons": [
+      {
+        "type": "R",
+        "english": "Kroot rifle",
+        "russian": "Винтовка крутов (Kroot rifle)",
+        "atk": 4,
+        "hit": "3+",
+        "dmg": "3/4",
+        "wrEnglish": "",
+        "wrRussian": ""
+      },
+      {
+        "type": "R",
+        "english": "Pulse weapon",
+        "russian": "Импульсное оружие (Pulse weapon)",
+        "atk": 4,
+        "hit": "4+",
+        "dmg": "4/5",
+        "wrEnglish": "",
+        "wrRussian": ""
+      },
+      {
+        "type": "M",
+        "english": "Ritual blade",
+        "russian": "Ритуальный клинок (Ritual blade)",
+        "atk": 4,
+        "hit": "3+",
+        "dmg": "4/5",
+        "wrEnglish": "",
+        "wrRussian": ""
+      }
+    ],
+    "blocks": [
+      {
+        "type": "paragraph",
+        "headingEnglish": "Call the Kill — Strategic Gambit",
+        "headingRussian": "Призыв к расправе (Call the Kill) — стратегический гамбит (Strategic Gambit)",
+        "english": "STRATEGIC GAMBIT. Select one enemy operative to be your mark for the turning point. Whenever a friendly FARSTALKER KINBAND operative is shooting against, fighting against or retaliating against your mark, that friendly operative's weapons have the Balanced weapon rule. Whenever your mark is incapacitated, you can select a new enemy operative to be your mark for the turning point (and can continue to do so during this turning point).",
+        "russian": "СТРАТЕГИЧЕСКИЙ ГАМБИТ (STRATEGIC GAMBIT). Выберите одного вражеского оперативника своей целью на этот раунд. Когда дружественный оперативник отряда «Фарстолкерский киндбанд» (FARSTALKER KINBAND) стреляет по этой цели, сражается с ней в ближнем бою или отвечает ей ударом, его оружие получает правило «Сбалансированное» (Balanced). Когда цель выведена из строя, можно выбрать нового вражеского оперативника целью на этот раунд; это можно делать повторно до конца раунда."
+      },
+      {
+        "type": "paragraph",
+        "headingEnglish": "Victory Shriek",
+        "headingRussian": "Победный клич (Victory Shriek)",
+        "english": "Whenever your mark is incapacitated, you can select one friendly FARSTALKER KINBAND operative within 6\" of this operative. Until the end of the battle, that operative's weapons have the Balanced weapon rule. Each friendly operative can only be selected for this rule once per battle.",
+        "russian": "Когда ваша цель выведена из строя, можно выбрать одного дружественного оперативника отряда «Фарстолкерский киндбанд» (FARSTALKER KINBAND) в пределах 6 дюймов от этого оперативника. До конца боя оружие выбранного оперативника получает правило «Сбалансированное» (Balanced). Каждый дружественный оперативник может быть выбран для этого правила лишь один раз за бой."
+      }
+    ],
+    "footerEnglish": "FARSTALKER KINBAND, T'AU EMPIRE, LEADER, KROOT, KILL-BROKER",
+    "footerRussian": "ФАРСТОЛКЕРСКИЙ КИНДБАНД (FARSTALKER KINBAND), ИМПЕРИЯ ТАУ (T'AU EMPIRE), ЛИДЕР (LEADER), КРУТЫ (KROOT), ТОРГОВЕЦ СМЕРТЬЮ (KILL-BROKER)"
+  },
+  "3f535fd54a1bc174": {
+    "kind": "card",
+    "titleEnglish": "Farstalker Kinband Kill Team",
+    "titleRussian": "Отряд «Фарстолкерский киндбанд» (Farstalker Kinband Kill Team)",
+    "categoryEnglish": "KILL TEAM",
+    "categoryRussian": "Фарстолкерский киндбанд (Farstalker Kinband) · ОТРЯД (Kill Team)",
+    "verifiedAgainstPixels": true,
+    "blocks": [
+      {
+        "type": "paragraph",
+        "headingEnglish": "Archetypes: Infiltration, Recon",
+        "headingRussian": "Архетипы: проникновение (Infiltration), разведка (Recon)",
+        "english": "Select 1 FARSTALKER KINBAND KILL-BROKER operative with one of the following options: Kroot rifle; ritual blade, or Pulse weapon; ritual blade. Select 11 FARSTALKER KINBAND operatives from the following list: BOW-HUNTER; LONG-SIGHT; COLD-BLOOD; PISTOLIER; CUT-SKIN; STALKER; HOUND; TRACKER; HEAVY GUNNER with either a Dvorgite skinner and blade or a Londaxi tribalest and blade; WARRIOR with either a Kroot rifle and blade or a Kroot scattergun and blade.",
+        "russian": "Выберите 1 оперативника-торговца смертью (KILL-BROKER) отряда FARSTALKER KINBAND с одним из комплектов оружия: винтовка крутов (Kroot rifle) и ритуальный клинок (ritual blade) либо импульсное оружие (Pulse weapon) и ритуальный клинок. Затем выберите 11 оперативников отряда FARSTALKER KINBAND из списка: лучник (BOW-HUNTER), дальнозор (LONG-SIGHT), хладнокровный (COLD-BLOOD), пистолетчик (PISTOLIER), кожерез (CUT-SKIN), сталкер (STALKER), гончая (HOUND), следопыт (TRACKER), тяжёлый стрелок (HEAVY GUNNER) с сдирателем кожи дворгитов (Dvorgite skinner) и клинком либо племенным арбалетом лондакси (Londaxi tribalest) и клинком, а также воин (WARRIOR) с винтовкой крутов и клинком либо дробовиком крутов и клинком."
+      }
+    ]
+  },
+  "971b431e625bc0aa": {
+    "kind": "card",
+    "titleEnglish": "Farstalker Kinband Kill Team — Operative limits",
+    "titleRussian": "Отряд «Фарстолкерский киндбанд» (Farstalker Kinband Kill Team) — ограничения состава",
+    "categoryEnglish": "KILL TEAM",
+    "categoryRussian": "Фарстолкерский киндбанд (Farstalker Kinband) · ОТРЯД (Kill Team)",
+    "verifiedAgainstPixels": true,
+    "blocks": [
+      {
+        "type": "paragraph",
+        "headingEnglish": "Operative limits",
+        "headingRussian": "Ограничения состава (Operative limits)",
+        "english": "Other than HOUND and WARRIOR operatives, your kill team can only include each operative on this list once. Your kill team can only include up to two HOUND operatives.",
+        "russian": "Кроме гончих (HOUND) и воинов (WARRIOR), каждый тип оперативника из этого списка может входить в отряд только один раз. В отряд можно включить не более двух гончих (HOUND)."
+      }
+    ]
+  },
+  "2502b38a55eb241f": {
+    "kind": "card",
+    "titleEnglish": "Poach",
+    "titleRussian": "Перехват добычи (Poach)",
+    "categoryEnglish": "FIREFIGHT PLOY",
+    "categoryRussian": "Фарстолкерский киндбанд (Farstalker Kinband) · ПРИЁМ ПЕРЕСТРЕЛКИ (Firefight Ploy)",
+    "verifiedAgainstPixels": true,
+    "flavorEnglish": "Farstalker Kindbands avoid protracted fights, using their speed and dexterity to advance upon and seize their objectives as swiftly as possible.",
+    "flavorRussian": "Фарстолкерские киндбанды избегают затяжных схваток и благодаря скорости и ловкости быстро захватывают цели.",
+    "blocks": [
+      {
+        "type": "paragraph",
+        "headingEnglish": "Poach",
+        "headingRussian": "Перехват добычи (Poach)",
+        "english": "Use this firefight ploy during a friendly FARSTALKER KINBAND operative's activation. Until the end of that activation, that operative doesn't have to control a marker to perform the Pick Up Marker or mission actions that usually require this (taking precedence over that action's conditions — it only needs to contest the marker).",
+        "russian": "Примените этот приём перестрелки во время активации дружественного оперативника отряда «Фарстолкерский киндбанд» (FARSTALKER KINBAND). До конца активации ему не нужно контролировать маркер, чтобы выполнить действие «Поднять маркер» (Pick Up Marker) или миссионное действие, для которого обычно требуется контроль над маркером; это условие имеет приоритет над требованиями такого действия — оперативнику достаточно оспаривать контроль над маркером."
+      }
+    ]
+  },
+  "c2f741a6027173a6": {
+    "kind": "card",
+    "titleEnglish": "Savage Ambush",
+    "titleRussian": "Свирепая засада (Savage Ambush)",
+    "categoryEnglish": "FIREFIGHT PLOY",
+    "categoryRussian": "Фарстолкерский киндбанд (Farstalker Kinband) · ПРИЁМ ПЕРЕСТРЕЛКИ (Firefight Ploy)",
+    "verifiedAgainstPixels": true,
+    "flavorEnglish": "Kroot Farstalkers are ambush predators, relying upon stealth, speed and bursts of savage violence to take down their enemies.",
+    "flavorRussian": "Круты-фарстолкеры охотятся из засады, полагаясь на скрытность, скорость и вспышки яростного насилия.",
+    "blocks": [
+      {
+        "type": "paragraph",
+        "headingEnglish": "Savage Ambush",
+        "headingRussian": "Свирепая засада (Savage Ambush)",
+        "english": "Use this firefight ploy during the Fight action when a ready friendly FARSTALKER KINBAND operative that has Light or Heavy terrain within its control range is selected to fight against. In the Resolve Attack Dice step of that sequence, you resolve the first attack dice (i.e. defender instead of attacker).",
+        "russian": "Примените этот приём перестрелки во время действия «Ближний бой» (Fight), когда готового дружественного оперативника отряда «Фарстолкерский киндбанд» (FARSTALKER KINBAND), в дистанции контроля которого находится лёгкий или тяжёлый террейн, выбирают для схватки. На шаге разрешения кубиков атаки в этой последовательности первым разрешайте кубик атаки за защитника, а не за атакующего."
+      }
+    ]
+  },
+  "4d2a0ad640b677db": {
+    "kind": "card",
+    "titleEnglish": "Vengeance for the Kinband",
+    "titleRussian": "Месть за киндбанд (Vengeance for the Kinband)",
+    "categoryEnglish": "FIREFIGHT PLOY",
+    "categoryRussian": "Фарстолкерский киндбанд (Farstalker Kinband) · ПРИЁМ ПЕРЕСТРЕЛКИ (Firefight Ploy)",
+    "verifiedAgainstPixels": true,
+    "flavorEnglish": "Farstalker Kinbands are bonded by blood. The death of an ally awakes within the survivors a vengeful fury.",
+    "flavorRussian": "Фарстолкеров связывают кровные узы. Гибель соратника пробуждает в уцелевших жажду мести.",
+    "blocks": [
+      {
+        "type": "paragraph",
+        "headingEnglish": "Vengeance for the Kinband",
+        "headingRussian": "Месть за киндбанд (Vengeance for the Kinband)",
+        "english": "Use this firefight ploy when a friendly FARSTALKER KINBAND operative is incapacitated by an enemy operative. Until the end of the battle, whenever another friendly FARSTALKER KINBAND operative is shooting against, fighting against or retaliating against that enemy operative, that other friendly operative's weapons have the Relentless weapon rule. You cannot use this ploy again during the battle until that enemy operative is incapacitated.",
+        "russian": "Примените этот приём перестрелки, когда вражеский оперативник выводит из строя дружественного оперативника отряда «Фарстолкерский киндбанд» (FARSTALKER KINBAND). До конца боя, когда другой дружественный оперативник отряда стреляет по этому врагу, сражается с ним в ближнем бою или отвечает ему ударом, его оружие получает правило «Неумолимое» (Relentless). Повторно применить этот приём в этом бою можно только после того, как тот вражеский оперативник будет выведен из строя."
+      }
+    ]
+  },
+  "33c1912e17e15244": {
+    "kind": "card",
+    "titleEnglish": "Slip Away",
+    "titleRussian": "Ускользнуть (Slip Away)",
+    "categoryEnglish": "FIREFIGHT PLOY",
+    "categoryRussian": "Фарстолкерский киндбанд (Farstalker Kinband) · ПРИЁМ ПЕРЕСТРЕЛКИ (Firefight Ploy)",
+    "verifiedAgainstPixels": true,
+    "flavorEnglish": "Lithe and agile, the Kroot melt away from a fight using the same speed with which they strike.",
+    "flavorRussian": "Гибкие и проворные круты с той же стремительностью, с какой атакуют, исчезают из схватки.",
+    "blocks": [
+      {
+        "type": "paragraph",
+        "headingEnglish": "Slip Away",
+        "headingRussian": "Ускользнуть (Slip Away)",
+        "english": "Use this firefight ploy during a friendly FARSTALKER KINBAND operative's activation, before or after it performs an action. During that activation, that operative can perform the Fall Back action for 1 less AP.",
+        "russian": "Примените этот приём перестрелки во время активации дружественного оперативника отряда «Фарстолкерский киндбанд» (FARSTALKER KINBAND), до или после выполнения им действия. До конца этой активации он может выполнить действие «Отступление» (Fall Back) на 1 ОД дешевле."
+      }
+    ]
+  },
+  "6daa0287fcd0b677": {
+    "kind": "card",
+    "titleEnglish": "Meat",
+    "titleRussian": "Мясо (Meat)",
+    "categoryEnglish": "FACTION EQUIPMENT",
+    "categoryRussian": "Фарстолкерский киндбанд (Farstalker Kinband) · СНАРЯЖЕНИЕ ФРАКЦИИ (Faction Equipment)",
+    "verifiedAgainstPixels": true,
+    "flavorEnglish": "Kroot physiologies are far more resilient than their wiry frames suggest. The ingestion of raw meat only serves to bolster their regenerative abilities.",
+    "flavorRussian": "Организм крутов куда выносливее, чем можно предположить по их жилистому телосложению. Сырая плоть лишь усиливает их способность к регенерации.",
+    "blocks": [
+      {
+        "type": "paragraph",
+        "headingEnglish": "Meat",
+        "headingRussian": "Мясо (Meat)",
+        "english": "Once per turning point, when a friendly FARSTALKER KINBAND operative (excluding HOUND) is activated, if it's not within control range of enemy operatives, you can use this rule. If you do, that friendly operative regains D3+1 lost wounds.",
+        "russian": "Один раз за раунд, когда активируется дружественный оперативник отряда «Фарстолкерский киндбанд» (FARSTALKER KINBAND), кроме гончей (HOUND), если он не находится в дистанции контроля врагов, примените это правило. Этот оперативник восстанавливает D3+1 потерянных ран."
+      }
+    ]
+  },
+  "6c617f1403b28a6a": {
+    "kind": "card",
+    "titleEnglish": "Toxin Shot",
+    "titleRussian": "Токсичный выстрел (Toxin Shot)",
+    "categoryEnglish": "FACTION EQUIPMENT",
+    "categoryRussian": "Фарстолкерский киндбанд (Farstalker Kinband) · СНАРЯЖЕНИЕ ФРАКЦИИ (Faction Equipment)",
+    "verifiedAgainstPixels": true,
+    "flavorEnglish": "Kroot toxin bullets contain reservoirs of venom extracted from various alien fauna, all of which is incredibly lethal.",
+    "flavorRussian": "Пули крутов с токсином содержат яд, извлечённый из самых разных инопланетных животных; он чрезвычайно смертоносен.",
+    "blocks": [
+      {
+        "type": "paragraph",
+        "headingEnglish": "Toxin Shot",
+        "headingRussian": "Токсичный выстрел (Toxin Shot)",
+        "english": "Once per turning point, when a friendly FARSTALKER KINBAND operative is performing the Shoot action and you select a Kroot rifle, Kroot scattergun or dual Kroot pistols (focused), you can use this rule. If you do, until the end of that action, that weapon has the Lethal 5+ and Stun weapon rules. You cannot use the Piercing Shot and Toxin Shot rule during the same action.",
+        "russian": "Один раз за раунд, когда дружественный оперативник отряда «Фарстолкерский киндбанд» (FARSTALKER KINBAND) выполняет действие «Стрельба» (Shoot) и выбирает винтовку крутов (Kroot rifle), дробовик крутов (Kroot scattergun) или прицельный профиль парных пистолетов крутов (Dual Kroot pistols (focused)), примените это правило. До конца действия оружие получает правила «Смертоносное 5+» (Lethal 5+) и «Оглушение» (Stun). В течение одного действия нельзя одновременно применять правила «Бронебойный выстрел» (Piercing Shot) и «Токсичный выстрел» (Toxin Shot)."
+      }
+    ]
+  },
+  "1780226b6d750f79": {
+    "kind": "card",
+    "titleEnglish": "Trophy",
+    "titleRussian": "Трофей (Trophy)",
+    "categoryEnglish": "FACTION EQUIPMENT",
+    "categoryRussian": "Фарстолкерский киндбанд (Farstalker Kinband) · СНАРЯЖЕНИЕ ФРАКЦИИ (Faction Equipment)",
+    "verifiedAgainstPixels": true,
+    "flavorEnglish": "Kroot Farstalkers seek to cut down the most powerful of foes. They will aggressively pursue any enemy they judge worthy and harvest trophies from the corpse.",
+    "flavorRussian": "Круты-фарстолкеры стремятся одолеть сильнейших врагов. Они упорно преследуют всякого противника, которого считают достойным, и собирают трофеи с его тела.",
+    "blocks": [
+      {
+        "type": "paragraph",
+        "headingEnglish": "Trophy",
+        "headingRussian": "Трофей (Trophy)",
+        "english": "Once per battle, during a friendly FARSTALKER KINBAND operative's activation (excluding HOUND), before or after it performs an action, if it's not within control range of enemy operatives, you can use this rule. If you do, add 1 to that friendly operative's APL stat until the end of its activation.",
+        "russian": "Один раз за бой во время активации дружественного оперативника отряда «Фарстолкерский киндбанд» (FARSTALKER KINBAND), кроме гончей (HOUND), до или после его действия, если он не находится в дистанции контроля врагов, примените это правило. До конца активации увеличьте лимит очков действий (APL) этого оперативника на 1."
+      }
+    ]
+  },
+  "788ed32946437cfc": {
+    "kind": "card",
+    "titleEnglish": "Piercing Shot",
+    "titleRussian": "Бронебойный выстрел (Piercing Shot)",
+    "categoryEnglish": "FACTION EQUIPMENT",
+    "categoryRussian": "Фарстолкерский киндбанд (Farstalker Kinband) · СНАРЯЖЕНИЕ ФРАКЦИИ (Faction Equipment)",
+    "verifiedAgainstPixels": true,
+    "flavorEnglish": "The Kroot make use of many forms of specially crafted ammunition. Bullets tipped with hardened alloys can punch through cover and armour alike.",
+    "flavorRussian": "Круты используют множество видов специально изготовленных боеприпасов. Пули с наконечниками из твёрдых сплавов пробивают и укрытия, и броню.",
+    "blocks": [
+      {
+        "type": "paragraph",
+        "headingEnglish": "Piercing Shot",
+        "headingRussian": "Бронебойный выстрел (Piercing Shot)",
+        "english": "Once per turning point, when a friendly FARSTALKER KINBAND operative is performing the Shoot action and you select a Kroot rifle, Kroot scattergun or dual Kroot pistols (focused), you can use this rule. If you do, until the end of that action, that weapon has the Piercing 1 weapon rule. You cannot use the Piercing Shot and Toxin Shot rule during the same action.",
+        "russian": "Один раз за раунд, когда дружественный оперативник отряда «Фарстолкерский киндбанд» (FARSTALKER KINBAND) выполняет действие «Стрельба» (Shoot) и выбирает винтовку крутов (Kroot rifle), дробовик крутов (Kroot scattergun) или прицельный профиль парных пистолетов крутов (Dual Kroot pistols (focused)), примените это правило. До конца действия оружие получает правило «Бронебойное 1» (Piercing 1). В течение одного действия нельзя одновременно применять правила «Бронебойный выстрел» (Piercing Shot) и «Токсичный выстрел» (Toxin Shot)."
+      }
+    ]
+  },
+  "d74575eb0f06f409": {
+    "kind": "card",
+    "titleEnglish": "Farstalker",
+    "titleRussian": "Фарстолкер (Farstalker)",
+    "categoryEnglish": "FACTION RULE",
+    "categoryRussian": "Фарстолкерский киндбанд (Farstalker Kinband) · ПРАВИЛО ФРАКЦИИ (Faction Rule)",
+    "verifiedAgainstPixels": true,
+    "flavorEnglish": "Farstalker Kinbands move and fight instinctively, reacting to developing battlefield conditions with an inhuman speed of thought.",
+    "flavorRussian": "Фарстолкерские киндбанды действуют в движении и бою инстинктивно, реагируя на перемены на поле боя с нечеловеческой скоростью мысли.",
+    "blocks": [
+      {
+        "type": "paragraph",
+        "headingEnglish": "Farstalker",
+        "headingRussian": "Фарстолкер (Farstalker)",
+        "english": "In the Ready step of each Strategy phase, you can change the order of up to three friendly FARSTALKER KINBAND operatives that are not within control range of enemy operatives. Whenever it's your turn to counteract, you can change the order of one friendly FARSTALKER KINBAND operative that's not within control range of enemy operatives instead. This still counts as you counteracting (so activation alternates back to your opponent afterwards), but doesn't count as that friendly operative's counteraction for this turning point.",
+        "russian": "На шаге подготовки (Ready step) каждой стратегической фазы можно изменить приказ до трёх дружественных оперативников отряда «Фарстолкерский киндбанд» (FARSTALKER KINBAND), не находящихся в дистанции контроля врагов. Когда наступает ваша очередь выполнять контрдействие (counteract), вместо этого можно изменить приказ одного дружественного оперативника отряда, который не находится в дистанции контроля врагов. Это всё равно считается вашим контрдействием, поэтому после него активация снова переходит к противнику, но не считается контрдействием выбранного оперативника за этот раунд."
+      }
+    ]
+  }
+}

@@ -1,0 +1,14 @@
+const fs=require('fs'),assert=require('assert'),crypto=require('crypto');
+const sha=b=>crypto.createHash('sha256').update(b).digest('hex');
+const manifest=JSON.parse(fs.readFileSync('output/design-candidate-manifest.json'));
+const candidate=fs.readFileSync(manifest.candidate);assert.equal(sha(candidate),manifest.candidateSHA256,'Candidate changed after review');
+const installed='C:/Users/PC/Documents/My Games/Tabletop Simulator/Mods/Workshop/3573927734_RU.json';const previous=fs.readFileSync(installed);
+assert.equal(sha(previous),manifest.installedSHA256,'Installed version changed since candidate creation');
+const source='output/KT24-The-Killzone-RU-assets-working.json';assert.equal(sha(fs.readFileSync(source)),sha(previous),'Asset build differs from installed version');
+const oldTable=JSON.parse(previous),newTable=JSON.parse(candidate);const target=newTable.ObjectStates.find(o=>o.GUID==='efa3fe');assert(target);
+const newScript=target.LuaScript;target.LuaScript=oldTable.ObjectStates.find(o=>o.GUID==='efa3fe').LuaScript;
+assert.deepStrictEqual(newTable,oldTable,'Unexpected changes outside the reader script');
+assert(newScript.includes('function ruReaderFrame') && newScript.includes('ruTermRevision'),'Modern reader is absent');
+const rollback=process.argv.includes('--reader-integrity-fix')?'output/KT24-The-Killzone-RU-before-reader-integrity-fix.json':process.argv.includes('--compact-parentheses-fix')?'output/KT24-The-Killzone-RU-before-compact-parentheses-fix.json':process.argv.includes('--compact-fix')?'output/KT24-The-Killzone-RU-before-compact-fix.json':process.argv.includes('--reader-fix')?'output/KT24-The-Killzone-RU-before-reader-fix.json':'output/KT24-The-Killzone-RU-before-modern-ui.json';
+if(fs.existsSync(rollback))assert.equal(sha(fs.readFileSync(rollback)),sha(previous),'Different rollback preserved');else fs.writeFileSync(rollback,previous);
+fs.writeFileSync(source,candidate);manifest.rollback=rollback;fs.writeFileSync('output/design-candidate-manifest.json',JSON.stringify(manifest,null,2));console.log(JSON.stringify({promoted:source,rollback,sha256:sha(candidate)}));

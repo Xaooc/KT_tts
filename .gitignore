@@ -1,0 +1,8 @@
+# Generated builds, previews, reports and extracted source dumps (multi-GB)
+output/
+tmp/
+inventory/
+__pycache__/
+*.pyc
+*.staging
+tools/

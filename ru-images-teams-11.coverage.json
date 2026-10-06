@@ -1,0 +1,604 @@
+{
+  "batch": "11",
+  "teams": [
+    "Farstalker Kinband"
+  ],
+  "sourceFiles": [
+    "inventory/card-assets.json",
+    "inventory/image-sources.json",
+    "inventory/image-ocr-en.json",
+    "inventory/original-images/*.img"
+  ],
+  "pixelReviewedContactSheets": [
+    "tmp/pixel-review/b11-01.png",
+    "tmp/pixel-review/b11-02.png",
+    "tmp/pixel-review/b11-03.png",
+    "tmp/pixel-review/b11-04.png",
+    "tmp/pixel-review/b11-05.png",
+    "tmp/pixel-review/b11-06.png",
+    "tmp/pixel-review/b11-07.png",
+    "tmp/pixel-review/b11-08.png"
+  ],
+  "included": [
+    {
+      "sourceSHA256": "0407441400af5932d6a272a92cc91cb51acf4ada4b633d1299f4a64ec67b3628",
+      "imageIDs": [
+        "4d00d302ebc24be5"
+      ],
+      "appearances": [
+        {
+          "team": "Farstalker Kinband",
+          "assetName": "Kroot Warrior",
+          "side": "face",
+          "imageID": "4d00d302ebc24be5"
+        }
+      ],
+      "translationImageID": "4d00d302ebc24be5"
+    },
+    {
+      "sourceSHA256": "09c09d330a14838e73c3bfe359e5f57b944d0befc476291b31ff85a756f43649",
+      "imageIDs": [
+        "ac3a5bfbff545f52"
+      ],
+      "appearances": [
+        {
+          "team": "Farstalker Kinband",
+          "assetName": "Kroot Bow-Hunter",
+          "side": "face",
+          "imageID": "ac3a5bfbff545f52"
+        }
+      ],
+      "translationImageID": "ac3a5bfbff545f52"
+    },
+    {
+      "sourceSHA256": "0d91605bfe31133cdf068d9de9a72d4db633f96d5b08a2832af1219ad9f72877",
+      "imageIDs": [
+        "7928ed5f6bd1dd1f"
+      ],
+      "appearances": [
+        {
+          "team": "Farstalker Kinband",
+          "assetName": "Rogue",
+          "side": "face",
+          "imageID": "7928ed5f6bd1dd1f"
+        }
+      ],
+      "translationImageID": "7928ed5f6bd1dd1f"
+    },
+    {
+      "sourceSHA256": "13722488263c21c9dcce11c86ce9587213ab8d8ce4d8b459c6e76ad4d927ca60",
+      "imageIDs": [
+        "2502b38a55eb241f"
+      ],
+      "appearances": [
+        {
+          "team": "Farstalker Kinband",
+          "assetName": "Poach",
+          "side": "face",
+          "imageID": "2502b38a55eb241f"
+        }
+      ],
+      "translationImageID": "2502b38a55eb241f"
+    },
+    {
+      "sourceSHA256": "1a1e528b452fc0ff635b6c3eeb7d2ea0a4d2bf87cd95b3abc57d9f6f0e0300d2",
+      "imageIDs": [
+        "6daa0287fcd0b677"
+      ],
+      "appearances": [
+        {
+          "team": "Farstalker Kinband",
+          "assetName": "Meat",
+          "side": "face",
+          "imageID": "6daa0287fcd0b677"
+        }
+      ],
+      "translationImageID": "6daa0287fcd0b677"
+    },
+    {
+      "sourceSHA256": "3557286fef2efb15eb90bbd9b0f80e0a04322d40d4595589e17761e4cad7e09a",
+      "imageIDs": [
+        "0428ab52e8bec272"
+      ],
+      "appearances": [
+        {
+          "team": "Farstalker Kinband",
+          "assetName": "Bound",
+          "side": "face",
+          "imageID": "0428ab52e8bec272"
+        }
+      ],
+      "translationImageID": "0428ab52e8bec272"
+    },
+    {
+      "sourceSHA256": "3a9a5cf018a5ae2844f77202698ecc9ece2811638dfa857940c77a448fab7fbb",
+      "imageIDs": [
+        "971b431e625bc0aa"
+      ],
+      "appearances": [
+        {
+          "team": "Farstalker Kinband",
+          "assetName": "",
+          "side": "back",
+          "imageID": "971b431e625bc0aa"
+        }
+      ],
+      "translationImageID": "971b431e625bc0aa"
+    },
+    {
+      "sourceSHA256": "3bbccf43738829ba42f0bf012bc29dd1bab7746e868c101d8f58398c8162c5d6",
+      "imageIDs": [
+        "b2039321461b392b"
+      ],
+      "appearances": [
+        {
+          "team": "Farstalker Kinband",
+          "assetName": "Kroot Heavy Gunner",
+          "side": "face",
+          "imageID": "b2039321461b392b"
+        }
+      ],
+      "translationImageID": "b2039321461b392b"
+    },
+    {
+      "sourceSHA256": "40922a56697b5f3d3579ed5b7d4e4ce3021058d92b7c7b8da13ceb33bcbda230",
+      "imageIDs": [
+        "868f9674cabbf624"
+      ],
+      "appearances": [
+        {
+          "team": "Farstalker Kinband",
+          "assetName": "Cut-Throats",
+          "side": "face",
+          "imageID": "868f9674cabbf624"
+        }
+      ],
+      "translationImageID": "868f9674cabbf624"
+    },
+    {
+      "sourceSHA256": "4108af72012e37eef0ee9f193cabd150056673fdbaa6855cfc695f79cea0c805",
+      "imageIDs": [
+        "a0fc75357fc97a11"
+      ],
+      "appearances": [
+        {
+          "team": "Farstalker Kinband",
+          "assetName": "Kroot Tracker",
+          "side": "back",
+          "imageID": "a0fc75357fc97a11"
+        }
+      ],
+      "translationImageID": "a0fc75357fc97a11"
+    },
+    {
+      "sourceSHA256": "5fa3f63c0a92918bfadeb7ab723f43681737ba24f6cbc259748a1a81269c6266",
+      "imageIDs": [
+        "3607635439d2960e"
+      ],
+      "appearances": [
+        {
+          "team": "Farstalker Kinband",
+          "assetName": "Kroot Tracker",
+          "side": "face",
+          "imageID": "3607635439d2960e"
+        }
+      ],
+      "translationImageID": "3607635439d2960e"
+    },
+    {
+      "sourceSHA256": "62c1dcdbff71c7d531c6a03ec3a42cdbea1a1bad7a0ccca7f50e18689eabefa8",
+      "imageIDs": [
+        "4d2a0ad640b677db"
+      ],
+      "appearances": [
+        {
+          "team": "Farstalker Kinband",
+          "assetName": "Vengeance for the Kinband",
+          "side": "face",
+          "imageID": "4d2a0ad640b677db"
+        }
+      ],
+      "translationImageID": "4d2a0ad640b677db"
+    },
+    {
+      "sourceSHA256": "6a745a9fb362602ec0e99867b18c020b8103e5287bd3966ef75be50ff7d10375",
+      "imageIDs": [
+        "72758258c0fba7b4"
+      ],
+      "appearances": [
+        {
+          "team": "Farstalker Kinband",
+          "assetName": "Kroot Pistolier",
+          "side": "face",
+          "imageID": "72758258c0fba7b4"
+        }
+      ],
+      "translationImageID": "72758258c0fba7b4"
+    },
+    {
+      "sourceSHA256": "6f782d8962b702861cfb0b65e291801547dc78c38dafeef00fa44ff19914d385",
+      "imageIDs": [
+        "53615a4af9500e52"
+      ],
+      "appearances": [
+        {
+          "team": "Farstalker Kinband",
+          "assetName": "Kroot Cut-Skin",
+          "side": "face",
+          "imageID": "53615a4af9500e52"
+        }
+      ],
+      "translationImageID": "53615a4af9500e52"
+    },
+    {
+      "sourceSHA256": "78c77e33b5e257c877cb7fd6e5f378a4c9ce544bb51d2c642979f2675fd9627c",
+      "imageIDs": [
+        "d992031118d8e605"
+      ],
+      "appearances": [
+        {
+          "team": "Farstalker Kinband",
+          "assetName": "Kroot Long-Sight",
+          "side": "back",
+          "imageID": "d992031118d8e605"
+        }
+      ],
+      "translationImageID": "d992031118d8e605"
+    },
+    {
+      "sourceSHA256": "80868a091d64de2fe1bf6ef1a1826ba3c040afde2f180595b90e8e702d155311",
+      "imageIDs": [
+        "f8779804f75df1c6"
+      ],
+      "appearances": [
+        {
+          "team": "Farstalker Kinband",
+          "assetName": "Kroot Cold-Blood",
+          "side": "face",
+          "imageID": "f8779804f75df1c6"
+        }
+      ],
+      "translationImageID": "f8779804f75df1c6"
+    },
+    {
+      "sourceSHA256": "8e9da2810afd71993e53066a5b81f46d3a90ea0efc2f0b7539e65bf5d211f7d6",
+      "imageIDs": [
+        "3f535fd54a1bc174"
+      ],
+      "appearances": [
+        {
+          "team": "Farstalker Kinband",
+          "assetName": "",
+          "side": "face",
+          "imageID": "3f535fd54a1bc174"
+        }
+      ],
+      "translationImageID": "3f535fd54a1bc174"
+    },
+    {
+      "sourceSHA256": "a49f55198e7e4341551f33dcbff03e8b37f0dc881a005f42b69f0bb3cd5d1b62",
+      "imageIDs": [
+        "ddac05cc1939e2a8"
+      ],
+      "appearances": [
+        {
+          "team": "Farstalker Kinband",
+          "assetName": "Kroot Hound",
+          "side": "face",
+          "imageID": "ddac05cc1939e2a8"
+        }
+      ],
+      "translationImageID": "ddac05cc1939e2a8"
+    },
+    {
+      "sourceSHA256": "a936739c1ecd8274ef00247b7eccc6ff121591a0d074ccf8d6054c5f649a62db",
+      "imageIDs": [
+        "788ed32946437cfc"
+      ],
+      "appearances": [
+        {
+          "team": "Farstalker Kinband",
+          "assetName": "Piercing Shot",
+          "side": "face",
+          "imageID": "788ed32946437cfc"
+        }
+      ],
+      "translationImageID": "788ed32946437cfc"
+    },
+    {
+      "sourceSHA256": "b2b82fb0228888522015cd869381e9bd4dc23ccf0da99261c9c21fc26c2cf090",
+      "imageIDs": [
+        "6c617f1403b28a6a"
+      ],
+      "appearances": [
+        {
+          "team": "Farstalker Kinband",
+          "assetName": "Toxin Shot",
+          "side": "face",
+          "imageID": "6c617f1403b28a6a"
+        }
+      ],
+      "translationImageID": "6c617f1403b28a6a"
+    },
+    {
+      "sourceSHA256": "b3860acd130eb8781c4212e88d878d8669b45598a6e63acc847ebcc75a4630e3",
+      "imageIDs": [
+        "33c1912e17e15244"
+      ],
+      "appearances": [
+        {
+          "team": "Farstalker Kinband",
+          "assetName": "Slip Away",
+          "side": "face",
+          "imageID": "33c1912e17e15244"
+        }
+      ],
+      "translationImageID": "33c1912e17e15244"
+    },
+    {
+      "sourceSHA256": "bfc864302649bdebcd861adb2ea1ecfbe073e738e27e87f232ef1abf4baf43d6",
+      "imageIDs": [
+        "d74575eb0f06f409"
+      ],
+      "appearances": [
+        {
+          "team": "Farstalker Kinband",
+          "assetName": "Farstalker",
+          "side": "face",
+          "imageID": "d74575eb0f06f409"
+        }
+      ],
+      "translationImageID": "d74575eb0f06f409"
+    },
+    {
+      "sourceSHA256": "ca077581db640cf56fbee39cc0c39618a334f10deba7e2f54e8197bef7a437f4",
+      "imageIDs": [
+        "68393427f7190f96"
+      ],
+      "appearances": [
+        {
+          "team": "Farstalker Kinband",
+          "assetName": "Prey",
+          "side": "face",
+          "imageID": "68393427f7190f96"
+        }
+      ],
+      "translationImageID": "68393427f7190f96"
+    },
+    {
+      "sourceSHA256": "d37e2acffac722cb1149d785813c297f2589f62e7b30bc3e76093c4ef0258866",
+      "imageIDs": [
+        "6b9f7a41328704fd"
+      ],
+      "appearances": [
+        {
+          "team": "Farstalker Kinband",
+          "assetName": "Kroot Long-Sight",
+          "side": "face",
+          "imageID": "6b9f7a41328704fd"
+        }
+      ],
+      "translationImageID": "6b9f7a41328704fd"
+    },
+    {
+      "sourceSHA256": "d4467a4a103d298c834d1eb7d523d317e0796a28f92a6da5c587e1c2d2967a01",
+      "imageIDs": [
+        "6c54edf65c577dd6"
+      ],
+      "appearances": [
+        {
+          "team": "Farstalker Kinband",
+          "assetName": "Bound",
+          "side": "back",
+          "imageID": "6c54edf65c577dd6"
+        },
+        {
+          "team": "Farstalker Kinband",
+          "assetName": "Cut-Throats",
+          "side": "back",
+          "imageID": "6c54edf65c577dd6"
+        },
+        {
+          "team": "Farstalker Kinband",
+          "assetName": "Farstalker",
+          "side": "back",
+          "imageID": "6c54edf65c577dd6"
+        },
+        {
+          "team": "Farstalker Kinband",
+          "assetName": "Meat",
+          "side": "back",
+          "imageID": "6c54edf65c577dd6"
+        },
+        {
+          "team": "Farstalker Kinband",
+          "assetName": "Piercing Shot",
+          "side": "back",
+          "imageID": "6c54edf65c577dd6"
+        },
+        {
+          "team": "Farstalker Kinband",
+          "assetName": "Poach",
+          "side": "back",
+          "imageID": "6c54edf65c577dd6"
+        },
+        {
+          "team": "Farstalker Kinband",
+          "assetName": "Prey",
+          "side": "back",
+          "imageID": "6c54edf65c577dd6"
+        },
+        {
+          "team": "Farstalker Kinband",
+          "assetName": "Rogue",
+          "side": "back",
+          "imageID": "6c54edf65c577dd6"
+        },
+        {
+          "team": "Farstalker Kinband",
+          "assetName": "Savage Ambush",
+          "side": "back",
+          "imageID": "6c54edf65c577dd6"
+        },
+        {
+          "team": "Farstalker Kinband",
+          "assetName": "Slip Away",
+          "side": "back",
+          "imageID": "6c54edf65c577dd6"
+        },
+        {
+          "team": "Farstalker Kinband",
+          "assetName": "Toxin Shot",
+          "side": "back",
+          "imageID": "6c54edf65c577dd6"
+        },
+        {
+          "team": "Farstalker Kinband",
+          "assetName": "Trophy",
+          "side": "back",
+          "imageID": "6c54edf65c577dd6"
+        },
+        {
+          "team": "Farstalker Kinband",
+          "assetName": "Vengeance for the Kinband",
+          "side": "back",
+          "imageID": "6c54edf65c577dd6"
+        }
+      ],
+      "translationImageID": "6c54edf65c577dd6"
+    },
+    {
+      "sourceSHA256": "d4a875e61eecf8911e3b004c37da47c156ce0e03a437ed87222d1f95a34c2f51",
+      "imageIDs": [
+        "6bd6689f5e3f1851"
+      ],
+      "appearances": [
+        {
+          "team": "Farstalker Kinband",
+          "assetName": "Kroot Kill-Broker",
+          "side": "face",
+          "imageID": "6bd6689f5e3f1851"
+        }
+      ],
+      "translationImageID": "6bd6689f5e3f1851"
+    },
+    {
+      "sourceSHA256": "d6a1ac111d44b25e538677a71a92212cc3397c31d167034c355bee10859f44f0",
+      "imageIDs": [
+        "1780226b6d750f79"
+      ],
+      "appearances": [
+        {
+          "team": "Farstalker Kinband",
+          "assetName": "Trophy",
+          "side": "face",
+          "imageID": "1780226b6d750f79"
+        }
+      ],
+      "translationImageID": "1780226b6d750f79"
+    },
+    {
+      "sourceSHA256": "f06ed65a164d8dce3a0266b1172afda56a7e9b7ee09172672e357d2a6292d29e",
+      "imageIDs": [
+        "c2f741a6027173a6"
+      ],
+      "appearances": [
+        {
+          "team": "Farstalker Kinband",
+          "assetName": "Savage Ambush",
+          "side": "face",
+          "imageID": "c2f741a6027173a6"
+        }
+      ],
+      "translationImageID": "c2f741a6027173a6"
+    },
+    {
+      "sourceSHA256": "fc7e48b3ed7163433d79de262974a4d6a9b4cd90608ce633133c175fc4b0db65",
+      "imageIDs": [
+        "f259b868282a8ab0"
+      ],
+      "appearances": [
+        {
+          "team": "Farstalker Kinband",
+          "assetName": "Kroot Stalker",
+          "side": "face",
+          "imageID": "f259b868282a8ab0"
+        }
+      ],
+      "translationImageID": "f259b868282a8ab0"
+    }
+  ],
+  "excluded": [
+    {
+      "sourceSHA256": "2c550123c38bf0d7cbe79ad773712258640335d88ffb3d89fe71f27c1052564d",
+      "imageIDs": [
+        "30f43343ee220c7b"
+      ],
+      "appearances": [
+        {
+          "team": "Farstalker Kinband",
+          "assetName": "Kroot Bow-Hunter",
+          "side": "back",
+          "imageID": "30f43343ee220c7b"
+        },
+        {
+          "team": "Farstalker Kinband",
+          "assetName": "Kroot Cold-Blood",
+          "side": "back",
+          "imageID": "30f43343ee220c7b"
+        },
+        {
+          "team": "Farstalker Kinband",
+          "assetName": "Kroot Cut-Skin",
+          "side": "back",
+          "imageID": "30f43343ee220c7b"
+        },
+        {
+          "team": "Farstalker Kinband",
+          "assetName": "Kroot Heavy Gunner",
+          "side": "back",
+          "imageID": "30f43343ee220c7b"
+        },
+        {
+          "team": "Farstalker Kinband",
+          "assetName": "Kroot Hound",
+          "side": "back",
+          "imageID": "30f43343ee220c7b"
+        },
+        {
+          "team": "Farstalker Kinband",
+          "assetName": "Kroot Kill-Broker",
+          "side": "back",
+          "imageID": "30f43343ee220c7b"
+        },
+        {
+          "team": "Farstalker Kinband",
+          "assetName": "Kroot Pistolier",
+          "side": "back",
+          "imageID": "30f43343ee220c7b"
+        },
+        {
+          "team": "Farstalker Kinband",
+          "assetName": "Kroot Stalker",
+          "side": "back",
+          "imageID": "30f43343ee220c7b"
+        },
+        {
+          "team": "Farstalker Kinband",
+          "assetName": "Kroot Warrior",
+          "side": "back",
+          "imageID": "30f43343ee220c7b"
+        }
+      ],
+      "reason": "Оборот карточки тяжёлого стрелка содержит только иллюстрацию без текста."
+    }
+  ],
+  "statistics": {
+    "uniqueSourceSHAs": 30,
+    "translatedSourceSHAs": 29,
+    "artOnlySourceSHAs": 1,
+    "translatedImageIDs": 29,
+    "artOnlyImageIDs": 1,
+    "appearances": 50
+  }
+}

@@ -1,0 +1,2134 @@
+{
+  "batch": "02",
+  "teams": [
+    "Fellgor Ravager",
+    "Kommandos",
+    "Gellerpox Infected",
+    "Wrecka Krew"
+  ],
+  "sourceFiles": [
+    "inventory/card-assets.json",
+    "inventory/image-sources.json",
+    "inventory/image-ocr-en.json",
+    "inventory/original-images/*.img"
+  ],
+  "included": [
+    {
+      "sourceSHA256": "00e0cde9a17298cf3cb5004574ec1e800ce4922d8ec0687bc2ee9f4d5ae906f1",
+      "imageIDs": [
+        "0eb56415cc4c3e20"
+      ],
+      "appearances": [
+        {
+          "team": "Gellerpox Infected",
+          "assetName": "Nightmare Hulks",
+          "side": "face",
+          "imageID": "0eb56415cc4c3e20"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "0156841bea40ab0e2f2068b25cd9bcaaef1362eec3ba35c0a939779ce5c1dc38",
+      "imageIDs": [
+        "19e3234391f8ecca"
+      ],
+      "appearances": [
+        {
+          "team": "Fellgor Ravager",
+          "assetName": "Fellgor Vandal",
+          "side": "face",
+          "imageID": "19e3234391f8ecca"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "05e1441cdcb7ee07812bef3aeeaebaf9bbeca357f2946573e9e3be3c0fb627c1",
+      "imageIDs": [
+        "6cce585bdaec7ab1"
+      ],
+      "appearances": [
+        {
+          "team": "Fellgor Ravager",
+          "assetName": "Reckless Determination",
+          "side": "face",
+          "imageID": "6cce585bdaec7ab1"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "07390988e97997bdf618afb2c53d34881ee125625c3f2609ca7009c170287705",
+      "imageIDs": [
+        "e9c4af5df0622e84"
+      ],
+      "appearances": [
+        {
+          "team": "Fellgor Ravager",
+          "assetName": "Fellgor Deathknell",
+          "side": "face",
+          "imageID": "e9c4af5df0622e84"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "08272e185daef7bf30533c113300ee3e645e7c96f81d2d2633ada1f8dff613c8",
+      "imageIDs": [
+        "840a45426416ca97"
+      ],
+      "appearances": [
+        {
+          "team": "Kommandos",
+          "assetName": "Kommando Rokkit Boy",
+          "side": "face",
+          "imageID": "840a45426416ca97"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "0b5af41fd96e74426342ee9a2a24c015bee31b81ed7f5d0ecb9f182561853396",
+      "imageIDs": [
+        "ded95634a6a721fd"
+      ],
+      "appearances": [
+        {
+          "team": "Wrecka Krew",
+          "assetName": "Kaboom!",
+          "side": "face",
+          "imageID": "ded95634a6a721fd"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "0cd3905104f1083536c16ca8f1edcc0434af817a87fc1c980a9771d4bde32741",
+      "imageIDs": [
+        "958820ee7325ece4"
+      ],
+      "appearances": [
+        {
+          "team": "Fellgor Ravager",
+          "assetName": "Fellgor Ironhorn",
+          "side": "face",
+          "imageID": "958820ee7325ece4"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "0cfb435f25e1d53b56fede8d86885e5655d442382692b09462b0a4a942134018",
+      "imageIDs": [
+        "da3a5b297d00091e"
+      ],
+      "appearances": [
+        {
+          "team": "Kommandos",
+          "assetName": "Kommando Burna Boy",
+          "side": "face",
+          "imageID": "da3a5b297d00091e"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "0f3d277fb3cc73145c0a92a05307340dc4c2103c1c36885b1b4169a83033efac",
+      "imageIDs": [
+        "62922d174c760944"
+      ],
+      "appearances": [
+        {
+          "team": "Kommandos",
+          "assetName": "SSSSHHHH!",
+          "side": "face",
+          "imageID": "62922d174c760944"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "1e6ea594af010a1bd02e1bddb5454ba3256c5b8efdea6904080310b026ee758e",
+      "imageIDs": [
+        "def609ae5697b957"
+      ],
+      "appearances": [
+        {
+          "team": "Gellerpox Infected",
+          "assetName": "Eyestinger Swarm",
+          "side": "face",
+          "imageID": "def609ae5697b957"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "1f16e2f5b6523f30b92a87c0a4e0a9d785ea6737455777d9a0ddccd3ed27d92f",
+      "imageIDs": [
+        "923113d8b3c00366"
+      ],
+      "appearances": [
+        {
+          "team": "Wrecka Krew",
+          "assetName": "Tankbusta Gunner",
+          "side": "face",
+          "imageID": "923113d8b3c00366"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "2823801512928f8fd828ef6f7bea61f6652e16f582fb64a0f88c2774f1626064",
+      "imageIDs": [
+        "cdfd3f2c24ea33a0"
+      ],
+      "appearances": [
+        {
+          "team": "Wrecka Krew",
+          "assetName": "Engine Oil",
+          "side": "face",
+          "imageID": "cdfd3f2c24ea33a0"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "292c2851096a0e5a25a41465ae81b02ee64b11a279acc851ed8cd64fd35500cd",
+      "imageIDs": [
+        "2d958b2c099487bb"
+      ],
+      "appearances": [
+        {
+          "team": "Wrecka Krew",
+          "assetName": "Boss Nob",
+          "side": "face",
+          "imageID": "2d958b2c099487bb"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "2a78b35348afff762bd83746131be9546eab9364c99669ac997ae54591c6b675",
+      "imageIDs": [
+        "228899b1533df85d"
+      ],
+      "appearances": [
+        {
+          "team": "Kommandos",
+          "assetName": "Choppas",
+          "side": "face",
+          "imageID": "228899b1533df85d"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "2e1a25f7cf33fb22cab4705ff25a50c86f7271581c5be4912b4513b0c4628e8c",
+      "imageIDs": [
+        "071bac70667fde4e"
+      ],
+      "appearances": [
+        {
+          "team": "Kommandos",
+          "assetName": "Just a Scratch",
+          "side": "face",
+          "imageID": "071bac70667fde4e"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "31798771c56cb4e55501aa07bd4b7c3ff4721471688b54164045c69647a53549",
+      "imageIDs": [
+        "1d9db653be92257c"
+      ],
+      "appearances": [
+        {
+          "team": "Kommandos",
+          "assetName": "Kommando Snipa Boy",
+          "side": "face",
+          "imageID": "1d9db653be92257c"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "3a08d97a685424d1d70e3a8dccbada95dd3c726aa9fb2def0842e7952c07e992",
+      "imageIDs": [
+        "b5b88158cdcdf68b"
+      ],
+      "appearances": [
+        {
+          "team": "Gellerpox Infected",
+          "assetName": "Techno-Curse",
+          "side": "back",
+          "imageID": "b5b88158cdcdf68b"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "3bc7c7a71935c2d7b68a2435c44a5d2f8fe370b0892b7d11811e15b3e48e3e27",
+      "imageIDs": [
+        "77cc3ea21056a777"
+      ],
+      "appearances": [
+        {
+          "team": "Gellerpox Infected",
+          "assetName": "Mutoid Vermin",
+          "side": "face",
+          "imageID": "77cc3ea21056a777"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "3edcdc6afd7a9ed5dd0bec61cac12ff99611e9850cfbc5703f323acb6f5a558c",
+      "imageIDs": [
+        "8c07a608c5d5fff3"
+      ],
+      "appearances": [
+        {
+          "team": "Wrecka Krew",
+          "assetName": "Breaka Boy Demolisha",
+          "side": "face",
+          "imageID": "8c07a608c5d5fff3"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "43f717508542c9b091152e07e995aa1c454e48d56b42f6b361c99fc164a8b06e",
+      "imageIDs": [
+        "97285aa4925d43ed"
+      ],
+      "appearances": [
+        {
+          "team": "Gellerpox Infected",
+          "assetName": "Vulgrar Thrice-Cursed",
+          "side": "back",
+          "imageID": "97285aa4925d43ed"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "4552cf9198001b5d70b9ffc548213c6ca3789ae1a9ac37cb8485d005a70ee6d9",
+      "imageIDs": [
+        "c6e890b3a58d4770"
+      ],
+      "appearances": [
+        {
+          "team": "Fellgor Ravager",
+          "assetName": "",
+          "side": "face",
+          "imageID": "c6e890b3a58d4770"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "486b9bed9896c2d545fb426e178a664d509c0eed2372d5b5bfd58a0452ee5b2f",
+      "imageIDs": [
+        "7eeaaf83207b81ad"
+      ],
+      "appearances": [
+        {
+          "team": "Kommandos",
+          "assetName": "Kommando Slasha Boy",
+          "side": "face",
+          "imageID": "7eeaaf83207b81ad"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "49214831f0006d0ffd07ae7c0df8a99f26e0db7cd1d2fe5a3892438c66af13c5",
+      "imageIDs": [
+        "ad1f671575cc472e"
+      ],
+      "appearances": [
+        {
+          "team": "Wrecka Krew",
+          "assetName": "Waagh!",
+          "side": "face",
+          "imageID": "ad1f671575cc472e"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "4aab87633d7b948379e33c7c306ad7a0243e10b86aeee86c2a01abce5f3fb3ad",
+      "imageIDs": [
+        "f0122bc2652e827c"
+      ],
+      "appearances": [
+        {
+          "team": "Gellerpox Infected",
+          "assetName": "",
+          "side": "back",
+          "imageID": "f0122bc2652e827c"
+        },
+        {
+          "team": "Gellerpox Infected",
+          "assetName": "",
+          "side": "face",
+          "imageID": "f0122bc2652e827c"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "4b5b9a6aee85467b518fa317b176d3a930f95f144c42780ffaa146b9e67914d0",
+      "imageIDs": [
+        "95c55b313c3017ff"
+      ],
+      "appearances": [
+        {
+          "team": "Fellgor Ravager",
+          "assetName": "Fellgor Gnarlscar",
+          "side": "face",
+          "imageID": "95c55b313c3017ff"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "4fb2453c5b37eecf378b0ed737823a334a949ca97b7f0cfe30249f558510d363",
+      "imageIDs": [
+        "6d1c8460df89f231"
+      ],
+      "appearances": [
+        {
+          "team": "Wrecka Krew",
+          "assetName": "Wrecka Rampage",
+          "side": "face",
+          "imageID": "6d1c8460df89f231"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "50dfc2febcabc637d6d15c861ae73aff6d860bd24160444032f2762117465d24",
+      "imageIDs": [
+        "29188be4342e3803"
+      ],
+      "appearances": [
+        {
+          "team": "Wrecka Krew",
+          "assetName": "",
+          "side": "face",
+          "imageID": "29188be4342e3803"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "51dc0c9a60407520ba63b44f8f9fd06ace4836ea72536b5c035b9cd62fcd04fd",
+      "imageIDs": [
+        "e9ff26fe7cea18cf"
+      ],
+      "appearances": [
+        {
+          "team": "Gellerpox Infected",
+          "assetName": "Putrescent Demise",
+          "side": "face",
+          "imageID": "e9ff26fe7cea18cf"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "51e033e60d2a60f9c144db9e607bb96397fefbd6d4e04573f3da4790052b3c78",
+      "imageIDs": [
+        "6becc23e0f15670b"
+      ],
+      "appearances": [
+        {
+          "team": "Gellerpox Infected",
+          "assetName": "Sludge-Grub",
+          "side": "face",
+          "imageID": "6becc23e0f15670b"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "54b7ff8af83c52c3f6f5af1073b0c819c0680d5f39a66a9e6dab3578e3dbc23b",
+      "imageIDs": [
+        "7a9b27e944b128a1"
+      ],
+      "appearances": [
+        {
+          "team": "Wrecka Krew",
+          "assetName": "Proppa Scrap",
+          "side": "face",
+          "imageID": "7a9b27e944b128a1"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "57c30c5671baa0e18c7241795efa3c85eae38b3414159bcd67929c3f0f97bf19",
+      "imageIDs": [
+        "99ffd0f33e83c271"
+      ],
+      "appearances": [
+        {
+          "team": "Kommandos",
+          "assetName": "",
+          "side": "back",
+          "imageID": "99ffd0f33e83c271"
+        },
+        {
+          "team": "Kommandos",
+          "assetName": "Choppas",
+          "side": "back",
+          "imageID": "99ffd0f33e83c271"
+        },
+        {
+          "team": "Kommandos",
+          "assetName": "Collapsible Stocks",
+          "side": "back",
+          "imageID": "99ffd0f33e83c271"
+        },
+        {
+          "team": "Kommandos",
+          "assetName": "Dakka! Dakka! Dakka!",
+          "side": "back",
+          "imageID": "99ffd0f33e83c271"
+        },
+        {
+          "team": "Kommandos",
+          "assetName": "Dynamite",
+          "side": "back",
+          "imageID": "99ffd0f33e83c271"
+        },
+        {
+          "team": "Kommandos",
+          "assetName": "Harpoon",
+          "side": "back",
+          "imageID": "99ffd0f33e83c271"
+        },
+        {
+          "team": "Kommandos",
+          "assetName": "Just a Scratch",
+          "side": "back",
+          "imageID": "99ffd0f33e83c271"
+        },
+        {
+          "team": "Kommandos",
+          "assetName": "Krump 'Em!",
+          "side": "back",
+          "imageID": "99ffd0f33e83c271"
+        },
+        {
+          "team": "Kommandos",
+          "assetName": "Kunnin' but Brutal",
+          "side": "back",
+          "imageID": "99ffd0f33e83c271"
+        },
+        {
+          "team": "Kommandos",
+          "assetName": "Shake it Off",
+          "side": "back",
+          "imageID": "99ffd0f33e83c271"
+        },
+        {
+          "team": "Kommandos",
+          "assetName": "Skulk About",
+          "side": "back",
+          "imageID": "99ffd0f33e83c271"
+        },
+        {
+          "team": "Kommandos",
+          "assetName": "SSSSHHHH!",
+          "side": "back",
+          "imageID": "99ffd0f33e83c271"
+        },
+        {
+          "team": "Kommandos",
+          "assetName": "Throat Slittas",
+          "side": "back",
+          "imageID": "99ffd0f33e83c271"
+        },
+        {
+          "team": "Kommandos",
+          "assetName": "Waaagh!",
+          "side": "back",
+          "imageID": "99ffd0f33e83c271"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "5991b83241e89af23e48481def771766cb656abb1c6813ab381a8eb6f3cdaef8",
+      "imageIDs": [
+        "c727608e1c218721"
+      ],
+      "appearances": [
+        {
+          "team": "Kommandos",
+          "assetName": "Kommando Dakka Boy",
+          "side": "face",
+          "imageID": "c727608e1c218721"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "5cccc0a6b5f1a337b6d8134cea6f9d3f8f910648b510998513e5781232b306f6",
+      "imageIDs": [
+        "5d5070693aa9483a"
+      ],
+      "appearances": [
+        {
+          "team": "Wrecka Krew",
+          "assetName": "Extra Armour",
+          "side": "face",
+          "imageID": "5d5070693aa9483a"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "5de72cf95fef040a984d0adfda574cb7e913b12496ac63a798699847b4147ff4",
+      "imageIDs": [
+        "7e8f8f54046e7bd9"
+      ],
+      "appearances": [
+        {
+          "team": "Gellerpox Infected",
+          "assetName": "Rust Emanations",
+          "side": "face",
+          "imageID": "7e8f8f54046e7bd9"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "5ef47f1549590976cd72288851418657163dd0cd7290ac324e37a72abe6f54a2",
+      "imageIDs": [
+        "1d97588d62602cba"
+      ],
+      "appearances": [
+        {
+          "team": "Kommandos",
+          "assetName": "Dynamite",
+          "side": "face",
+          "imageID": "1d97588d62602cba"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "63b463c27aab3304c121e72360d7322eada33af3d9b767b1dd88d02dfe708332",
+      "imageIDs": [
+        "cfcc7caf9ce43de3"
+      ],
+      "appearances": [
+        {
+          "team": "Gellerpox Infected",
+          "assetName": "Techno-Curse",
+          "side": "face",
+          "imageID": "cfcc7caf9ce43de3"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "63d6016a95aa2ae385981368534962e4cedc9fba71fbb06fa42443643b886be6",
+      "imageIDs": [
+        "eb427b5af0060ec8"
+      ],
+      "appearances": [
+        {
+          "team": "Fellgor Ravager",
+          "assetName": "Ambush",
+          "side": "face",
+          "imageID": "eb427b5af0060ec8"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "64c7cf0c4eb851618c334e5eed5d79fbf426a886753b1849431d88db0873b028",
+      "imageIDs": [
+        "1e03fe104d8e6d48"
+      ],
+      "appearances": [
+        {
+          "team": "Wrecka Krew",
+          "assetName": "",
+          "side": "back",
+          "imageID": "1e03fe104d8e6d48"
+        },
+        {
+          "team": "Wrecka Krew",
+          "assetName": "Amped Up",
+          "side": "back",
+          "imageID": "1e03fe104d8e6d48"
+        },
+        {
+          "team": "Wrecka Krew",
+          "assetName": "Demolition Job",
+          "side": "back",
+          "imageID": "1e03fe104d8e6d48"
+        },
+        {
+          "team": "Wrecka Krew",
+          "assetName": "Destruction",
+          "side": "back",
+          "imageID": "1e03fe104d8e6d48"
+        },
+        {
+          "team": "Wrecka Krew",
+          "assetName": "Drill Rockets",
+          "side": "back",
+          "imageID": "1e03fe104d8e6d48"
+        },
+        {
+          "team": "Wrecka Krew",
+          "assetName": "Engine Oil",
+          "side": "back",
+          "imageID": "1e03fe104d8e6d48"
+        },
+        {
+          "team": "Wrecka Krew",
+          "assetName": "Extra Armour",
+          "side": "back",
+          "imageID": "1e03fe104d8e6d48"
+        },
+        {
+          "team": "Wrecka Krew",
+          "assetName": "Glyphs",
+          "side": "back",
+          "imageID": "1e03fe104d8e6d48"
+        },
+        {
+          "team": "Wrecka Krew",
+          "assetName": "Just a Scratch",
+          "side": "back",
+          "imageID": "1e03fe104d8e6d48"
+        },
+        {
+          "team": "Wrecka Krew",
+          "assetName": "Kaboom!",
+          "side": "back",
+          "imageID": "1e03fe104d8e6d48"
+        },
+        {
+          "team": "Wrecka Krew",
+          "assetName": "Proppa Scrap",
+          "side": "back",
+          "imageID": "1e03fe104d8e6d48"
+        },
+        {
+          "team": "Wrecka Krew",
+          "assetName": "Tanked Up",
+          "side": "back",
+          "imageID": "1e03fe104d8e6d48"
+        },
+        {
+          "team": "Wrecka Krew",
+          "assetName": "Tuff Gitz",
+          "side": "back",
+          "imageID": "1e03fe104d8e6d48"
+        },
+        {
+          "team": "Wrecka Krew",
+          "assetName": "Waagh!",
+          "side": "back",
+          "imageID": "1e03fe104d8e6d48"
+        },
+        {
+          "team": "Wrecka Krew",
+          "assetName": "Wrecka Rampage",
+          "side": "back",
+          "imageID": "1e03fe104d8e6d48"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "671eeb5e5e00a0c3daa01c2eb563d8f6ae276dc577a0aa56ceb85bb25bbb3b2a",
+      "imageIDs": [
+        "1faf32cac6ab4b02"
+      ],
+      "appearances": [
+        {
+          "team": "Fellgor Ravager",
+          "assetName": "Frenzy",
+          "side": "face",
+          "imageID": "1faf32cac6ab4b02"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "6806d1a671271200ee822c740b702ca772ef4e5ad1640d5b4114434a721c7d73",
+      "imageIDs": [
+        "e0fcd3875afee302"
+      ],
+      "appearances": [
+        {
+          "team": "Gellerpox Infected",
+          "assetName": "Bloatspawn",
+          "side": "back",
+          "imageID": "e0fcd3875afee302"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "68ae4d7e5ef1b2192f58fea1489a8cd85722e7e8cd8927ff736cbb222435256d",
+      "imageIDs": [
+        "db7454abfab83c2e"
+      ],
+      "appearances": [
+        {
+          "team": "Gellerpox Infected",
+          "assetName": "Plagueridden Determination",
+          "side": "face",
+          "imageID": "db7454abfab83c2e"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "69bb2097168b9fdc7734013682f0c2b019b0f258f329b24fe050ff3e869dd68f",
+      "imageIDs": [
+        "c585f7499d2f8198"
+      ],
+      "appearances": [
+        {
+          "team": "Fellgor Ravager",
+          "assetName": "Bloodsense",
+          "side": "face",
+          "imageID": "c585f7499d2f8198"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "6da6c3a014bb8e152d9b02164312ed556c2db1bb10c12b6e7de6529e31cc55ad",
+      "imageIDs": [
+        "6930acb16cd79b3b"
+      ],
+      "appearances": [
+        {
+          "team": "Gellerpox Infected",
+          "assetName": "Lumberghast",
+          "side": "face",
+          "imageID": "6930acb16cd79b3b"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "6dc69c64122c3cd2019c5300068d9633d4844dca9967cb8067a9c3243cb4f0eb",
+      "imageIDs": [
+        "0fee01847e26a51c"
+      ],
+      "appearances": [
+        {
+          "team": "Wrecka Krew",
+          "assetName": "Glyphs",
+          "side": "face",
+          "imageID": "0fee01847e26a51c"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "6e531f6d7a1dd1fa66b93435f6f39df42b03182e692aaab78c7967f560103761",
+      "imageIDs": [
+        "75b140330ff81350"
+      ],
+      "appearances": [
+        {
+          "team": "Fellgor Ravager",
+          "assetName": "Violent Temperament",
+          "side": "face",
+          "imageID": "75b140330ff81350"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "6eb5abaf86ff915cd093f5f36ca03c3c23c43b8c4806015cb7b6f4e05b754d27",
+      "imageIDs": [
+        "748eb247471f4c5c"
+      ],
+      "appearances": [
+        {
+          "team": "Kommandos",
+          "assetName": "Kommando Grot",
+          "side": "face",
+          "imageID": "748eb247471f4c5c"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "6f0a97fc028d260525eddbe621ee1cb16a275297d8a46e818d034e04983ed444",
+      "imageIDs": [
+        "8086a143c12de503"
+      ],
+      "appearances": [
+        {
+          "team": "Kommandos",
+          "assetName": "Dakka! Dakka! Dakka!",
+          "side": "face",
+          "imageID": "8086a143c12de503"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "72dbfe9e5a1a290377d136368af936b0133c8f4e1c226094ab9c26a283385280",
+      "imageIDs": [
+        "7a2d599e4d6b202f"
+      ],
+      "appearances": [
+        {
+          "team": "Wrecka Krew",
+          "assetName": "Amped Up",
+          "side": "face",
+          "imageID": "7a2d599e4d6b202f"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "72f94c1c20a959d266cd9f54e462ca94be410b39e234901dce12da8cf0157ecc",
+      "imageIDs": [
+        "f741feeec58add9e"
+      ],
+      "appearances": [
+        {
+          "team": "Wrecka Krew",
+          "assetName": "Tanked Up",
+          "side": "face",
+          "imageID": "f741feeec58add9e"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "73290363653ae3c21b99212236e09e6e02aec787076545800c4b19f91d4de98c",
+      "imageIDs": [
+        "53cbd71c1c75273a"
+      ],
+      "appearances": [
+        {
+          "team": "Wrecka Krew",
+          "assetName": "Tankbusta Rokkiteer",
+          "side": "face",
+          "imageID": "53cbd71c1c75273a"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "74ca709cd64cbf30e4fd904ea76cecf00a98a0944ca6eb0ef3a39079e74c0780",
+      "imageIDs": [
+        "5083190fafd544d6"
+      ],
+      "appearances": [
+        {
+          "team": "Gellerpox Infected",
+          "assetName": "Glitchling",
+          "side": "face",
+          "imageID": "5083190fafd544d6"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "7814ae1021f3fa8b6e44e7b57632f6c7d9025ea11832948652e5ab1c43f871e7",
+      "imageIDs": [
+        "e9e2f80f9eac2844"
+      ],
+      "appearances": [
+        {
+          "team": "Gellerpox Infected",
+          "assetName": "Blessings of Infection",
+          "side": "face",
+          "imageID": "e9e2f80f9eac2844"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "796826db50e05cdeece8cd83b2aa9c2fd6e4411e06a622550263898f8b84f8cd",
+      "imageIDs": [
+        "8190cecd3bf1fa83"
+      ],
+      "appearances": [
+        {
+          "team": "Gellerpox Infected",
+          "assetName": "Mutant",
+          "side": "face",
+          "imageID": "8190cecd3bf1fa83"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "79e16aad8238a18fb661b0f44d09b5bd939a7147842532ade1e905b6abdd8513",
+      "imageIDs": [
+        "74512716f0e1eceb"
+      ],
+      "appearances": [
+        {
+          "team": "Gellerpox Infected",
+          "assetName": "Revolting Technology",
+          "side": "face",
+          "imageID": "74512716f0e1eceb"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "7a0b38b05771476ce5f67b6da504a58a749727ae0c85997b715437a986e52528",
+      "imageIDs": [
+        "bd1509f8ac981cb2"
+      ],
+      "appearances": [
+        {
+          "team": "Kommandos",
+          "assetName": "Skulk About",
+          "side": "face",
+          "imageID": "bd1509f8ac981cb2"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "7b1c34e3498cfbacce4b6ac3b3ee747f547c1e7ff75f663c5b73740507d03fa3",
+      "imageIDs": [
+        "7a75cc2549749a4c"
+      ],
+      "appearances": [
+        {
+          "team": "Gellerpox Infected",
+          "assetName": "Cursemite",
+          "side": "face",
+          "imageID": "7a75cc2549749a4c"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "7cabb39ca592531619ec39ac051648c551d3dd73e594c9219d46f94309bb04d0",
+      "imageIDs": [
+        "6593976d0ec87875"
+      ],
+      "appearances": [
+        {
+          "team": "Gellerpox Infected",
+          "assetName": "Drawn to the Hum",
+          "side": "face",
+          "imageID": "6593976d0ec87875"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "821aae2217a3b1c537334558608041eccc72a06c64d1904e9e60fae4f72bb684",
+      "imageIDs": [
+        "129dbfbd4c7c95a5"
+      ],
+      "appearances": [
+        {
+          "team": "Wrecka Krew",
+          "assetName": "Tuff Gitz",
+          "side": "face",
+          "imageID": "129dbfbd4c7c95a5"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "839e79c364a541ea3e03e7dea6ea1f3c4aa6e7fb33dcead9418b9eccbacf1ed9",
+      "imageIDs": [
+        "adeee174d3f63c21"
+      ],
+      "appearances": [
+        {
+          "team": "Kommandos",
+          "assetName": "Waaagh!",
+          "side": "face",
+          "imageID": "adeee174d3f63c21"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "85cf6f8dde788c32a7e8d3fae3e7d63a0f91e4053e3c9508d87c6044451e4035",
+      "imageIDs": [
+        "1ea3cc0ee61c7487"
+      ],
+      "appearances": [
+        {
+          "team": "Gellerpox Infected",
+          "assetName": "Fleshscreamer",
+          "side": "face",
+          "imageID": "1ea3cc0ee61c7487"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "8785d5568bb93df17585c156d7110d85caf00f16624ab1c1d811725e8451b57d",
+      "imageIDs": [
+        "2274fea45cd9b543"
+      ],
+      "appearances": [
+        {
+          "team": "Kommandos",
+          "assetName": "Throat Slittas",
+          "side": "face",
+          "imageID": "2274fea45cd9b543"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "8aa97320bbf7682f98bc154cfd08123e3fd6c9e270603187066282f609330396",
+      "imageIDs": [
+        "bd9bd6c51c7385d7"
+      ],
+      "appearances": [
+        {
+          "team": "Fellgor Ravager",
+          "assetName": "Pelting Firepower",
+          "side": "face",
+          "imageID": "bd9bd6c51c7385d7"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "8ca834144e61f690189799765fc5f40bdbb6a060f08a61913914d4de663ec5a7",
+      "imageIDs": [
+        "647dfb2c970f2858"
+      ],
+      "appearances": [
+        {
+          "team": "Gellerpox Infected",
+          "assetName": "Revotingly Resilient",
+          "side": "face",
+          "imageID": "647dfb2c970f2858"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "8f2e2bb2ef0900c98c3626aff6e0f057e21594efa9e51f7ec781886c0fe10cc5",
+      "imageIDs": [
+        "bcd317b95025c973"
+      ],
+      "appearances": [
+        {
+          "team": "Fellgor Ravager",
+          "assetName": "Fellgor Gorehorn",
+          "side": "face",
+          "imageID": "bcd317b95025c973"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "933aa5aac54204b1cfdfc9c454b7dc520cc09152c6a4792efe666f8510c4146e",
+      "imageIDs": [
+        "9cf1b48f807af0f1"
+      ],
+      "appearances": [
+        {
+          "team": "Fellgor Ravager",
+          "assetName": "Fellgor Toxhorn",
+          "side": "face",
+          "imageID": "9cf1b48f807af0f1"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "9370cbd35a729c37668ceab960165e428a43b6a12e7c13a061cb2c0c12662ae9",
+      "imageIDs": [
+        "3876fe7d4edaadb6"
+      ],
+      "appearances": [
+        {
+          "team": "Fellgor Ravager",
+          "assetName": "Fellgor Herd-Goad",
+          "side": "face",
+          "imageID": "3876fe7d4edaadb6"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "96ac0efdb4bf6a2ebd76a68254b9c4290140e4024529e14a118f06abc1483975",
+      "imageIDs": [
+        "412dba5e6a26dc6c"
+      ],
+      "appearances": [
+        {
+          "team": "Kommandos",
+          "assetName": "Kommando Comms Boy",
+          "side": "face",
+          "imageID": "412dba5e6a26dc6c"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "96f8b4cda0122b9fbbdf713ba294e0b866a032d41baffb75b396247bedcc36a1",
+      "imageIDs": [
+        "edc883e79c5e1faa"
+      ],
+      "appearances": [
+        {
+          "team": "Wrecka Krew",
+          "assetName": "Breaka Boy Fighter",
+          "side": "face",
+          "imageID": "edc883e79c5e1faa"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "985b7330cdd4a6851e725caed560ff6092e3c4e7b7b51eb1c05623a2a5a71ac5",
+      "imageIDs": [
+        "feafde4bba8f724b"
+      ],
+      "appearances": [
+        {
+          "team": "Fellgor Ravager",
+          "assetName": "Fellgor Mangler",
+          "side": "face",
+          "imageID": "feafde4bba8f724b"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "9aa1e2928369f63f1ae1910c4d01bec985a0f0ef026d466d74ec958720a69d51",
+      "imageIDs": [
+        "c679d35bfeddb9a4"
+      ],
+      "appearances": [
+        {
+          "team": "Kommandos",
+          "assetName": "Kommando Bomb Squig",
+          "side": "back",
+          "imageID": "c679d35bfeddb9a4"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "9c430614fde27a19a593d34d127ee77815b7b2b23b6ecc60ac5d62463b30d816",
+      "imageIDs": [
+        "31b2ceff3bc7d1a0"
+      ],
+      "appearances": [
+        {
+          "team": "Fellgor Ravager",
+          "assetName": "Frenzy",
+          "side": "back",
+          "imageID": "31b2ceff3bc7d1a0"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "a1c3378bd09b29ea282b137823620468d5d1c6d343da6dd0062c5a3ed8593dbc",
+      "imageIDs": [
+        "978562dc5e576bfb"
+      ],
+      "appearances": [
+        {
+          "team": "Kommandos",
+          "assetName": "Kommando Breacha Boy",
+          "side": "face",
+          "imageID": "978562dc5e576bfb"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "adb94326f2b03ac1450b3c2ef5de6862874020cf9ca0769cdaeec3a7e031ce67",
+      "imageIDs": [
+        "a88af7caf6ab1ffc"
+      ],
+      "appearances": [
+        {
+          "team": "Gellerpox Infected",
+          "assetName": "Techno-Curse",
+          "side": "face",
+          "imageID": "a88af7caf6ab1ffc"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "b5f3252dff7bfb85f00cd4340ba3043dc745e7b9433e0d5d0c5dd74c26a63fe3",
+      "imageIDs": [
+        "60df6541ca6caa4d"
+      ],
+      "appearances": [
+        {
+          "team": "Wrecka Krew",
+          "assetName": "Breaka Boy Krusha",
+          "side": "face",
+          "imageID": "60df6541ca6caa4d"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "b6be78698f77a262f09c2df504f290e25cb368a5d350b40caf08406fef86a96b",
+      "imageIDs": [
+        "83495115eae45817"
+      ],
+      "appearances": [
+        {
+          "team": "Kommandos",
+          "assetName": "",
+          "side": "face",
+          "imageID": "83495115eae45817"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "b9256f1cb765d85fbb1773af4af0a08384c86eaba1a18656c9bb56b534fb2c46",
+      "imageIDs": [
+        "4c7036cb2bfef59f"
+      ],
+      "appearances": [
+        {
+          "team": "Wrecka Krew",
+          "assetName": "Demolition Job",
+          "side": "face",
+          "imageID": "4c7036cb2bfef59f"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "be625439e40abba4e3ca5294a413580f2b94350b16c198b446737058645dbcc9",
+      "imageIDs": [
+        "4201baff56b17b91"
+      ],
+      "appearances": [
+        {
+          "team": "Fellgor Ravager",
+          "assetName": "Animalistic Fury",
+          "side": "face",
+          "imageID": "4201baff56b17b91"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "bfe3366977a6d1d1b3eac861fe712fafcee3866c8ce6f8a4e705309041207486",
+      "imageIDs": [
+        "670e272e1434cd6f"
+      ],
+      "appearances": [
+        {
+          "team": "Wrecka Krew",
+          "assetName": "Just a Scratch",
+          "side": "face",
+          "imageID": "670e272e1434cd6f"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "c661a2552dfc2a7b64f0c485276706d45ebf456b874a1248536e3eb578abbfe5",
+      "imageIDs": [
+        "16b7f7b0200fe0ea"
+      ],
+      "appearances": [
+        {
+          "team": "Fellgor Ravager",
+          "assetName": "Fellgor Shaman",
+          "side": "face",
+          "imageID": "16b7f7b0200fe0ea"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "c6814231cbd4a9c058ff9780c87f99d2c4d35cb191febd3f9c9434bf5ecab0db",
+      "imageIDs": [
+        "b80d4f605f6d77b0"
+      ],
+      "appearances": [
+        {
+          "team": "Kommandos",
+          "assetName": "Kommando Bomb Squig",
+          "side": "face",
+          "imageID": "b80d4f605f6d77b0"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "c69adaabe77f9dee3193aa7598c05553c2b03e7235dcc18fc16406125bf91b15",
+      "imageIDs": [
+        "22407a1a4b86ca8c"
+      ],
+      "appearances": [
+        {
+          "team": "Gellerpox Infected",
+          "assetName": "Polluted Stockpile",
+          "side": "face",
+          "imageID": "22407a1a4b86ca8c"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "cc1985bda4cefabe5ce5ffbdc3e0a8253218ae30b0829f34f2a1a45effffc2ef",
+      "imageIDs": [
+        "a56a5ec34115ec57"
+      ],
+      "appearances": [
+        {
+          "team": "Wrecka Krew",
+          "assetName": "Destruction",
+          "side": "face",
+          "imageID": "a56a5ec34115ec57"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "cd9dd9cda6f5dc2be969633d54b3cdd22e2adcfb5c636483e0b25bf90ce91a95",
+      "imageIDs": [
+        "735221d9d1ce679f"
+      ],
+      "appearances": [
+        {
+          "team": "Fellgor Ravager",
+          "assetName": "Chaos Sigil",
+          "side": "face",
+          "imageID": "735221d9d1ce679f"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "cdb4d42709def223f6855e80c79aca15a1e4e45648840b466a42be4725b9a083",
+      "imageIDs": [
+        "c0cff761de2da62f"
+      ],
+      "appearances": [
+        {
+          "team": "Gellerpox Infected",
+          "assetName": "Plague Bellows",
+          "side": "face",
+          "imageID": "c0cff761de2da62f"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "d1b800811dfd783a4363ce0dc6343cbd02618ae9db0fcf7a94f24de59a37c478",
+      "imageIDs": [
+        "c43d301c2b092878"
+      ],
+      "appearances": [
+        {
+          "team": "Kommandos",
+          "assetName": "Collapsible Stocks",
+          "side": "face",
+          "imageID": "c43d301c2b092878"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "d4b531a9c34fa124fca7cdeb12564e804df4698720db0697d9ca75358fb96b12",
+      "imageIDs": [
+        "e7ff3ebb984b4675"
+      ],
+      "appearances": [
+        {
+          "team": "Kommandos",
+          "assetName": "Shake it Off",
+          "side": "face",
+          "imageID": "e7ff3ebb984b4675"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "d6e6956f6b4e6d858e5e139b81763ad6bc64a1a7fe2b50c97f3ef397adb7d0b6",
+      "imageIDs": [
+        "d19d2c7ccdb11db4"
+      ],
+      "appearances": [
+        {
+          "team": "Wrecka Krew",
+          "assetName": "Drill Rockets",
+          "side": "face",
+          "imageID": "d19d2c7ccdb11db4"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "d70456554a2356d98171ea7e09dab563ee5bb995d611c0b330d1396b906c9c18",
+      "imageIDs": [
+        "8fd5a10e58798df4"
+      ],
+      "appearances": [
+        {
+          "team": "Fellgor Ravager",
+          "assetName": "Fellgor Fluxbray",
+          "side": "face",
+          "imageID": "8fd5a10e58798df4"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "d91f1d454bdd33c3b530acfde4bc2d6b1a3343565892c971108544e4ca1c89f0",
+      "imageIDs": [
+        "2a862505fa1ecbc3"
+      ],
+      "appearances": [
+        {
+          "team": "Gellerpox Infected",
+          "assetName": "Frightening Onslaught",
+          "side": "face",
+          "imageID": "2a862505fa1ecbc3"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "db1a638c0f893c6139e8a1652d17a0ba546fc38eb046a56dee3f451b284907c0",
+      "imageIDs": [
+        "eba6a9041b9cd360"
+      ],
+      "appearances": [
+        {
+          "team": "Kommandos",
+          "assetName": "Kommando Boy",
+          "side": "face",
+          "imageID": "eba6a9041b9cd360"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "db5e98704c9f85474ee8b755e7b22af821c130cd2c0c402c19b7bc3fc0dc62d3",
+      "imageIDs": [
+        "cd0fc692ae590331"
+      ],
+      "appearances": [
+        {
+          "team": "Kommandos",
+          "assetName": "Krump 'Em!",
+          "side": "face",
+          "imageID": "cd0fc692ae590331"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "db99034e399e2d15574cf1e94eb655cb01d454d6ff4184855b7594c669720e0b",
+      "imageIDs": [
+        "9bfcef14a10f295b"
+      ],
+      "appearances": [
+        {
+          "team": "Fellgor Ravager",
+          "assetName": "Gore Marks",
+          "side": "face",
+          "imageID": "9bfcef14a10f295b"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "dd07a00a5df3f10139f77f90e0878497a84b7cd249b02f38b0d630e7cd3e4a23",
+      "imageIDs": [
+        "2385762664489926"
+      ],
+      "appearances": [
+        {
+          "team": "Gellerpox Infected",
+          "assetName": "Barge",
+          "side": "face",
+          "imageID": "2385762664489926"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "ddad6783f3a98429aa8046f68f51e76242477fc3488c393547cb6276ee2a2bac",
+      "imageIDs": [
+        "aa1fdabc0f0cdd11"
+      ],
+      "appearances": [
+        {
+          "team": "Fellgor Ravager",
+          "assetName": "Ruthless Rampage",
+          "side": "face",
+          "imageID": "aa1fdabc0f0cdd11"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "ddf06105dba82c9f7cb357be7b6767b9bf3d2d870fac5bc189b3a12dec212c29",
+      "imageIDs": [
+        "1d7ceba4cd425538"
+      ],
+      "appearances": [
+        {
+          "team": "Fellgor Ravager",
+          "assetName": "Wild Rage",
+          "side": "face",
+          "imageID": "1d7ceba4cd425538"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "e03146c6fbe19e79bce43c01795d3bf2c377060baf3fd32ab531732de26ff98b",
+      "imageIDs": [
+        "bc24e91ee09b2d54"
+      ],
+      "appearances": [
+        {
+          "team": "Gellerpox Infected",
+          "assetName": "Mutated Symptoms",
+          "side": "face",
+          "imageID": "bc24e91ee09b2d54"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "e21084804c2567a4081e0f572ca66847647b0396f09ec210b19e16f31302eeb1",
+      "imageIDs": [
+        "a5eea2ef7817b3be"
+      ],
+      "appearances": [
+        {
+          "team": "Gellerpox Infected",
+          "assetName": "Vulgrar Thrice-Cursed",
+          "side": "face",
+          "imageID": "a5eea2ef7817b3be"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "e531f8d0149f8c035ad5d54957663ae01d4047ae6b1b0059ff2cc3f363974e1f",
+      "imageIDs": [
+        "1e85bf035b09b8ef"
+      ],
+      "appearances": [
+        {
+          "team": "Wrecka Krew",
+          "assetName": "Bomb Squig",
+          "side": "face",
+          "imageID": "1e85bf035b09b8ef"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "ec3651d3779f97dcd116377c6716a1bc12366eebc3a2d1d8e67b47cf3dc122ca",
+      "imageIDs": [
+        "0b88e42079d064a5"
+      ],
+      "appearances": [
+        {
+          "team": "Fellgor Ravager",
+          "assetName": "Fellgor Shaman",
+          "side": "back",
+          "imageID": "0b88e42079d064a5"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "ee07acad04e234b8c9562dc8ad7510b7ffbc78fcd5077512c41fc73334fcdace",
+      "imageIDs": [
+        "b3e4059f4ca03adf"
+      ],
+      "appearances": [
+        {
+          "team": "Gellerpox Infected",
+          "assetName": "Mutoid Vermin",
+          "side": "face",
+          "imageID": "b3e4059f4ca03adf"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "ee52f32dc8f508adf2150fff709bccd3092989b0c978f00c7c6ecf49c7a35605",
+      "imageIDs": [
+        "c98b9d37e908480d"
+      ],
+      "appearances": [
+        {
+          "team": "Kommandos",
+          "assetName": "Kunnin' but Brutal",
+          "side": "face",
+          "imageID": "c98b9d37e908480d"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "ef30b590c9b39e6e309ac91246f23612080a4678c9a5d56b82a825af88b50972",
+      "imageIDs": [
+        "9c16423d8fcb622a"
+      ],
+      "appearances": [
+        {
+          "team": "Gellerpox Infected",
+          "assetName": "Bloatspawn",
+          "side": "face",
+          "imageID": "9c16423d8fcb622a"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "f1a282027ab61e383b8a2887caa1877a2a7ce277f8035f739f9b94fc93870df3",
+      "imageIDs": [
+        "49534d4d1d9c6244"
+      ],
+      "appearances": [
+        {
+          "team": "Fellgor Ravager",
+          "assetName": "War Paint",
+          "side": "face",
+          "imageID": "49534d4d1d9c6244"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "f32b017b9e8b717a1b30e5eb74ebda07fb71033060f033b84493a713e5abfd7e",
+      "imageIDs": [
+        "36cfd82e81c3f61f"
+      ],
+      "appearances": [
+        {
+          "team": "Kommandos",
+          "assetName": "Harpoon",
+          "side": "face",
+          "imageID": "36cfd82e81c3f61f"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "f52174df1cf967d214477246c0610857e26a8f612ad555193fbdb8bcb21cc5f9",
+      "imageIDs": [
+        "2dbdcac93fc94fd2"
+      ],
+      "appearances": [
+        {
+          "team": "Fellgor Ravager",
+          "assetName": "Brass Adoornments",
+          "side": "face",
+          "imageID": "2dbdcac93fc94fd2"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "f711509de124a8279a49ca685e26251abe619d3c9dd7e943eacd5dd591e6e121",
+      "imageIDs": [
+        "135b55f0fb7e5569"
+      ],
+      "appearances": [
+        {
+          "team": "Fellgor Ravager",
+          "assetName": "Fellgow Warrior",
+          "side": "face",
+          "imageID": "135b55f0fb7e5569"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "fd657c82792ca0a250da9b09184ca741e1c2b1503793821229edc2f1aa42d51d",
+      "imageIDs": [
+        "911bb430ed975a77"
+      ],
+      "appearances": [
+        {
+          "team": "Kommandos",
+          "assetName": "Kommando Boss Nob",
+          "side": "face",
+          "imageID": "911bb430ed975a77"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "fe75ed455d830dbddcd96dd84c0da4c78c25319faa6ff7663eb2c82ef98486d0",
+      "imageIDs": [
+        "8ad6ce72dee710e3"
+      ],
+      "appearances": [
+        {
+          "team": "Gellerpox Infected",
+          "assetName": "Mutoid Vermin",
+          "side": "back",
+          "imageID": "8ad6ce72dee710e3"
+        }
+      ]
+    },
+    {
+      "sourceSHA256": "ff347e48cbe4bf8e1f5cf25ec1ec31ff1933161c331c9b43afe221a10adc0109",
+      "imageIDs": [
+        "b208fd52c9224ae9"
+      ],
+      "appearances": [
+        {
+          "team": "Fellgor Ravager",
+          "assetName": "",
+          "side": "back",
+          "imageID": "b208fd52c9224ae9"
+        },
+        {
+          "team": "Fellgor Ravager",
+          "assetName": "Ambush",
+          "side": "back",
+          "imageID": "b208fd52c9224ae9"
+        },
+        {
+          "team": "Fellgor Ravager",
+          "assetName": "Animalistic Fury",
+          "side": "back",
+          "imageID": "b208fd52c9224ae9"
+        },
+        {
+          "team": "Fellgor Ravager",
+          "assetName": "Bloodsense",
+          "side": "back",
+          "imageID": "b208fd52c9224ae9"
+        },
+        {
+          "team": "Fellgor Ravager",
+          "assetName": "Brass Adoornments",
+          "side": "back",
+          "imageID": "b208fd52c9224ae9"
+        },
+        {
+          "team": "Fellgor Ravager",
+          "assetName": "Chaos Sigil",
+          "side": "back",
+          "imageID": "b208fd52c9224ae9"
+        },
+        {
+          "team": "Fellgor Ravager",
+          "assetName": "Gore Marks",
+          "side": "back",
+          "imageID": "b208fd52c9224ae9"
+        },
+        {
+          "team": "Fellgor Ravager",
+          "assetName": "Pelting Firepower",
+          "side": "back",
+          "imageID": "b208fd52c9224ae9"
+        },
+        {
+          "team": "Fellgor Ravager",
+          "assetName": "Reckless Determination",
+          "side": "back",
+          "imageID": "b208fd52c9224ae9"
+        },
+        {
+          "team": "Fellgor Ravager",
+          "assetName": "Ruthless Rampage",
+          "side": "back",
+          "imageID": "b208fd52c9224ae9"
+        },
+        {
+          "team": "Fellgor Ravager",
+          "assetName": "Violent Temperament",
+          "side": "back",
+          "imageID": "b208fd52c9224ae9"
+        },
+        {
+          "team": "Fellgor Ravager",
+          "assetName": "War Paint",
+          "side": "back",
+          "imageID": "b208fd52c9224ae9"
+        },
+        {
+          "team": "Fellgor Ravager",
+          "assetName": "Wild Rage",
+          "side": "back",
+          "imageID": "b208fd52c9224ae9"
+        }
+      ]
+    }
+  ],
+  "excluded": [
+    {
+      "sourceSHA256": "19de97967c7df903a7f07fef821d5ea90c122f501cd9b75615c3ac5f02b2c611",
+      "imageIDs": [
+        "fc2218a692a2f550"
+      ],
+      "appearances": [
+        {
+          "team": "Gellerpox Infected",
+          "assetName": "Barge",
+          "side": "back",
+          "imageID": "fc2218a692a2f550"
+        },
+        {
+          "team": "Gellerpox Infected",
+          "assetName": "Blessings of Infection",
+          "side": "back",
+          "imageID": "fc2218a692a2f550"
+        },
+        {
+          "team": "Gellerpox Infected",
+          "assetName": "Drawn to the Hum",
+          "side": "back",
+          "imageID": "fc2218a692a2f550"
+        },
+        {
+          "team": "Gellerpox Infected",
+          "assetName": "Frightening Onslaught",
+          "side": "back",
+          "imageID": "fc2218a692a2f550"
+        },
+        {
+          "team": "Gellerpox Infected",
+          "assetName": "Mutated Symptoms",
+          "side": "back",
+          "imageID": "fc2218a692a2f550"
+        },
+        {
+          "team": "Gellerpox Infected",
+          "assetName": "Mutoid Vermin",
+          "side": "back",
+          "imageID": "fc2218a692a2f550"
+        },
+        {
+          "team": "Gellerpox Infected",
+          "assetName": "Nightmare Hulks",
+          "side": "back",
+          "imageID": "fc2218a692a2f550"
+        },
+        {
+          "team": "Gellerpox Infected",
+          "assetName": "Plague Bellows",
+          "side": "back",
+          "imageID": "fc2218a692a2f550"
+        },
+        {
+          "team": "Gellerpox Infected",
+          "assetName": "Plagueridden Determination",
+          "side": "back",
+          "imageID": "fc2218a692a2f550"
+        },
+        {
+          "team": "Gellerpox Infected",
+          "assetName": "Polluted Stockpile",
+          "side": "back",
+          "imageID": "fc2218a692a2f550"
+        },
+        {
+          "team": "Gellerpox Infected",
+          "assetName": "Putrescent Demise",
+          "side": "back",
+          "imageID": "fc2218a692a2f550"
+        },
+        {
+          "team": "Gellerpox Infected",
+          "assetName": "Revolting Technology",
+          "side": "back",
+          "imageID": "fc2218a692a2f550"
+        },
+        {
+          "team": "Gellerpox Infected",
+          "assetName": "Revotingly Resilient",
+          "side": "back",
+          "imageID": "fc2218a692a2f550"
+        },
+        {
+          "team": "Gellerpox Infected",
+          "assetName": "Rust Emanations",
+          "side": "back",
+          "imageID": "fc2218a692a2f550"
+        },
+        {
+          "team": "Gellerpox Infected",
+          "assetName": "Techno-Curse",
+          "side": "back",
+          "imageID": "fc2218a692a2f550"
+        }
+      ],
+      "reason": "Pixel-reviewed art-only reverse; no readable rules, flavor or other text."
+    },
+    {
+      "sourceSHA256": "5fd14cd24d5c644c3f7f9092364f63d4f4a4b01fa233400337faa840f06e87c3",
+      "imageIDs": [
+        "42232a40becd54cb"
+      ],
+      "appearances": [
+        {
+          "team": "Wrecka Krew",
+          "assetName": "Bomb Squig",
+          "side": "back",
+          "imageID": "42232a40becd54cb"
+        },
+        {
+          "team": "Wrecka Krew",
+          "assetName": "Boss Nob",
+          "side": "back",
+          "imageID": "42232a40becd54cb"
+        },
+        {
+          "team": "Wrecka Krew",
+          "assetName": "Breaka Boy Demolisha",
+          "side": "back",
+          "imageID": "42232a40becd54cb"
+        },
+        {
+          "team": "Wrecka Krew",
+          "assetName": "Breaka Boy Fighter",
+          "side": "back",
+          "imageID": "42232a40becd54cb"
+        },
+        {
+          "team": "Wrecka Krew",
+          "assetName": "Breaka Boy Krusha",
+          "side": "back",
+          "imageID": "42232a40becd54cb"
+        },
+        {
+          "team": "Wrecka Krew",
+          "assetName": "Tankbusta Gunner",
+          "side": "back",
+          "imageID": "42232a40becd54cb"
+        },
+        {
+          "team": "Wrecka Krew",
+          "assetName": "Tankbusta Rokkiteer",
+          "side": "back",
+          "imageID": "42232a40becd54cb"
+        }
+      ],
+      "reason": "Pixel-reviewed art-only reverse; no readable rules, flavor or other text."
+    },
+    {
+      "sourceSHA256": "b523c812ff93296b50086a3c2a3ddda6d03983138f7b63fae33d92283f85fd57",
+      "imageIDs": [
+        "3c2320e0c88c33a8"
+      ],
+      "appearances": [
+        {
+          "team": "Kommandos",
+          "assetName": "Kommando Boss Nob",
+          "side": "back",
+          "imageID": "3c2320e0c88c33a8"
+        },
+        {
+          "team": "Kommandos",
+          "assetName": "Kommando Boy",
+          "side": "back",
+          "imageID": "3c2320e0c88c33a8"
+        },
+        {
+          "team": "Kommandos",
+          "assetName": "Kommando Breacha Boy",
+          "side": "back",
+          "imageID": "3c2320e0c88c33a8"
+        },
+        {
+          "team": "Kommandos",
+          "assetName": "Kommando Burna Boy",
+          "side": "back",
+          "imageID": "3c2320e0c88c33a8"
+        },
+        {
+          "team": "Kommandos",
+          "assetName": "Kommando Comms Boy",
+          "side": "back",
+          "imageID": "3c2320e0c88c33a8"
+        },
+        {
+          "team": "Kommandos",
+          "assetName": "Kommando Dakka Boy",
+          "side": "back",
+          "imageID": "3c2320e0c88c33a8"
+        },
+        {
+          "team": "Kommandos",
+          "assetName": "Kommando Grot",
+          "side": "back",
+          "imageID": "3c2320e0c88c33a8"
+        },
+        {
+          "team": "Kommandos",
+          "assetName": "Kommando Rokkit Boy",
+          "side": "back",
+          "imageID": "3c2320e0c88c33a8"
+        },
+        {
+          "team": "Kommandos",
+          "assetName": "Kommando Slasha Boy",
+          "side": "back",
+          "imageID": "3c2320e0c88c33a8"
+        },
+        {
+          "team": "Kommandos",
+          "assetName": "Kommando Snipa Boy",
+          "side": "back",
+          "imageID": "3c2320e0c88c33a8"
+        }
+      ],
+      "reason": "Pixel-reviewed art-only reverse; no readable rules, flavor or other text."
+    },
+    {
+      "sourceSHA256": "b9cdee935649ca65370850bc004bc656c1b55aa4a8b79a20ac35f0d4cef4c782",
+      "imageIDs": [
+        "9ef15e678ac42d00"
+      ],
+      "appearances": [
+        {
+          "team": "Gellerpox Infected",
+          "assetName": "Cursemite",
+          "side": "back",
+          "imageID": "9ef15e678ac42d00"
+        },
+        {
+          "team": "Gellerpox Infected",
+          "assetName": "Eyestinger Swarm",
+          "side": "back",
+          "imageID": "9ef15e678ac42d00"
+        },
+        {
+          "team": "Gellerpox Infected",
+          "assetName": "Fleshscreamer",
+          "side": "back",
+          "imageID": "9ef15e678ac42d00"
+        },
+        {
+          "team": "Gellerpox Infected",
+          "assetName": "Glitchling",
+          "side": "back",
+          "imageID": "9ef15e678ac42d00"
+        },
+        {
+          "team": "Gellerpox Infected",
+          "assetName": "Lumberghast",
+          "side": "back",
+          "imageID": "9ef15e678ac42d00"
+        },
+        {
+          "team": "Gellerpox Infected",
+          "assetName": "Mutant",
+          "side": "back",
+          "imageID": "9ef15e678ac42d00"
+        },
+        {
+          "team": "Gellerpox Infected",
+          "assetName": "Sludge-Grub",
+          "side": "back",
+          "imageID": "9ef15e678ac42d00"
+        }
+      ],
+      "reason": "Pixel-reviewed art-only reverse; no readable rules, flavor or other text."
+    },
+    {
+      "sourceSHA256": "ef36231300e759d956318490e97c017d63ea1c0687456b5100ac9c9c7e96bc8d",
+      "imageIDs": [
+        "50c385e8b06a7aa2"
+      ],
+      "appearances": [
+        {
+          "team": "Fellgor Ravager",
+          "assetName": "Fellgor Deathknell",
+          "side": "back",
+          "imageID": "50c385e8b06a7aa2"
+        },
+        {
+          "team": "Fellgor Ravager",
+          "assetName": "Fellgor Fluxbray",
+          "side": "back",
+          "imageID": "50c385e8b06a7aa2"
+        },
+        {
+          "team": "Fellgor Ravager",
+          "assetName": "Fellgor Gnarlscar",
+          "side": "back",
+          "imageID": "50c385e8b06a7aa2"
+        },
+        {
+          "team": "Fellgor Ravager",
+          "assetName": "Fellgor Gorehorn",
+          "side": "back",
+          "imageID": "50c385e8b06a7aa2"
+        },
+        {
+          "team": "Fellgor Ravager",
+          "assetName": "Fellgor Herd-Goad",
+          "side": "back",
+          "imageID": "50c385e8b06a7aa2"
+        },
+        {
+          "team": "Fellgor Ravager",
+          "assetName": "Fellgor Ironhorn",
+          "side": "back",
+          "imageID": "50c385e8b06a7aa2"
+        },
+        {
+          "team": "Fellgor Ravager",
+          "assetName": "Fellgor Mangler",
+          "side": "back",
+          "imageID": "50c385e8b06a7aa2"
+        },
+        {
+          "team": "Fellgor Ravager",
+          "assetName": "Fellgor Toxhorn",
+          "side": "back",
+          "imageID": "50c385e8b06a7aa2"
+        },
+        {
+          "team": "Fellgor Ravager",
+          "assetName": "Fellgor Vandal",
+          "side": "back",
+          "imageID": "50c385e8b06a7aa2"
+        },
+        {
+          "team": "Fellgor Ravager",
+          "assetName": "Fellgow Warrior",
+          "side": "back",
+          "imageID": "50c385e8b06a7aa2"
+        }
+      ],
+      "reason": "Pixel-reviewed art-only reverse; no readable rules, flavor or other text."
+    }
+  ],
+  "counts": {
+    "includedSourceSHA": 109,
+    "excludedSourceSHA": 5,
+    "referencedSourceSHA": 114,
+    "includedImageIDs": 109,
+    "excludedImageIDs": 5,
+    "translatedAppearances": 149,
+    "excludedAppearances": 49,
+    "requiredAppearances": 198
+  }
+}

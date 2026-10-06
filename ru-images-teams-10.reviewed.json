@@ -1,0 +1,1171 @@
+{
+  "03ea42ee04c7d9d7": {
+    "kind": "card",
+    "titleEnglish": "Scarper",
+    "titleRussian": "Шмыг (Scarper)",
+    "categoryEnglish": "RATLINGS · FACTION RULE",
+    "categoryRussian": "РАТЛИНГИ (RATLINGS) · ПРАВИЛО ФРАКЦИИ (FACTION RULE)",
+    "blocks": [
+      {
+        "type": "paragraph",
+        "headingEnglish": "Scarper",
+        "headingRussian": "Шмыг (Scarper)",
+        "english": "Despite their small stature, Ratlings are fleet of foot, using their speed and agility to outpace and evade their foes. After each enemy operative’s activation, before the next operative is activated, you can perform a free Dash action with one friendly RATLING operative (excluding BULLGRYN, OGRYN and SNEAK), but it cannot end that move within 3\" of an enemy operative unless it’s not visible to every enemy operative when it ends that move. Each friendly operative can only do this once per turning point, and cannot do so after the final activation of the turning point. You cannot use this rule after consecutive enemy activations during the same turning point (in other words, after using this rule, you must skip the next opportunity during that turning point before you can use it again).",
+        "russian": "Несмотря на малый рост, ратлинги быстро бегают и благодаря скорости и ловкости опережают врагов и уходят от них. После каждой активации вражеского оперативника, но до активации следующего оперативника, вы можете бесплатно выполнить действие «Рывок» (Dash) одним дружественным оперативником-ратлингом (RATLING), кроме булгрина (BULLGRYN), огрина (OGRYN) и скрытника (SNEAK). Он не может закончить это перемещение в пределах 3 дюймов от врага, если только в конце перемещения не будет видим ни одному вражескому оперативнику. Каждый дружественный оперативник может воспользоваться этим правилом лишь один раз за раунд; после последней активации раунда правило использовать нельзя. Нельзя применять это правило после двух активаций вражеских оперативников подряд в одном раунде: после применения пропустите следующую возможность и только после этого снова сможете его использовать."
+      }
+    ],
+    "verifiedAgainstPixels": true,
+    "weapons": []
+  },
+  "c29439d2a679cf68": {
+    "kind": "card",
+    "titleEnglish": "Ratlings · Card Back",
+    "titleRussian": "Ратлинги · оборот карты (Ratlings · Card Back)",
+    "categoryEnglish": "RATLINGS · CARD BACK",
+    "categoryRussian": "РАТЛИНГИ (RATLINGS) · ОБОРОТ КАРТЫ",
+    "blocks": [
+      {
+        "type": "paragraph",
+        "headingEnglish": "Ratlings",
+        "headingRussian": "Ратлинги (Ratlings)",
+        "english": "ASTRA MILITARUM ABHUMAN SHARPSHOOTERS",
+        "russian": "АБГУМАНЫ-СНАЙПЕРЫ АСТРА МИЛИТАРУМ (ASTRA MILITARUM ABHUMAN SHARPSHOOTERS)"
+      }
+    ],
+    "verifiedAgainstPixels": true,
+    "weapons": []
+  },
+  "39c1572b30eb75ed": {
+    "kind": "card",
+    "titleEnglish": "Stolen Goods",
+    "titleRussian": "Краденое добро (Stolen Goods)",
+    "categoryEnglish": "RATLINGS · FACTION EQUIPMENT",
+    "categoryRussian": "РАТЛИНГИ (RATLINGS) · СНАРЯЖЕНИЕ ОТРЯДА (FACTION EQUIPMENT)",
+    "flavorEnglish": "Ratlings are notoriously light-fingered, capable of seizing intel and equipment from under the noses of their foes.",
+    "flavorRussian": "Ратлинги славятся ловкими руками и способны выхватить сведения и снаряжение прямо у врага из-под носа.",
+    "blocks": [
+      {
+        "type": "paragraph",
+        "headingEnglish": "Stolen Goods",
+        "headingRussian": "Краденое добро (Stolen Goods)",
+        "english": "At the end of the Select Operatives step, roll one D3. If the result is: 1, you lose 1CP. 2, you gain 1CP. 3, your opponent loses 1CP.",
+        "russian": "В конце шага выбора оперативников (Select Operatives) бросьте 1D3. При результате 1 вы теряете 1 командное очко (CP); при 2 получаете 1 CP; при 3 противник теряет 1 CP."
+      }
+    ],
+    "verifiedAgainstPixels": true,
+    "weapons": []
+  },
+  "4ac77b39cc344891": {
+    "kind": "card",
+    "titleEnglish": "Purloined Rations",
+    "titleRussian": "Похищенный паёк (Purloined Rations)",
+    "categoryEnglish": "RATLINGS · FACTION EQUIPMENT",
+    "categoryRussian": "РАТЛИНГИ (RATLINGS) · СНАРЯЖЕНИЕ ОТРЯДА (FACTION EQUIPMENT)",
+    "flavorEnglish": "Ratlings have a well-earned reputation for greed. No field kitchen is safe from their thieving hands. It is not uncommon for a Ratling to settle a rumbling belly with a link of freshly liberated protein reconstitution prior to firing a killing shot.",
+    "flavorRussian": "Ратлинги заслуженно слывут жадными. Их вороватые руки доберутся до любой полевой кухни. Перед смертоносным выстрелом ратлинг нередко утоляет голод только что утащенной порцией белкового пайка.",
+    "blocks": [
+      {
+        "type": "paragraph",
+        "headingEnglish": "Purloined Rations",
+        "headingRussian": "Похищенный паёк (Purloined Rations)",
+        "english": "Once per turning point, when a friendly RATLING operative (excluding BATTLEMUTT, BULLGRYN and OGRYN) is activated, you can use this rule. If you do, until the end of that activation, improve the Hit stat of its rifle (if any) by 1.",
+        "russian": "Один раз за раунд, когда активируется дружественный оперативник-ратлинг (RATLING), кроме боевого пса (BATTLEMUTT), булгрина (BULLGRYN) и огрина (OGRYN), вы можете применить это правило. До конца этой активации улучшите характеристику попадания (Hit) его винтовки (если она у него есть) на 1."
+      }
+    ],
+    "verifiedAgainstPixels": true,
+    "weapons": []
+  },
+  "18245d0d3df71830": {
+    "kind": "card",
+    "titleEnglish": "Lucky Round",
+    "titleRussian": "Счастливый патрон (Lucky Round)",
+    "categoryEnglish": "RATLINGS · FACTION EQUIPMENT",
+    "categoryRussian": "РАТЛИНГИ (RATLINGS) · СНАРЯЖЕНИЕ ОТРЯДА (FACTION EQUIPMENT)",
+    "flavorEnglish": "Superstitious by nature, many Ratlings hold back a lucky round with which to target a large or powerful foe, kill an enemy that’s wronged them, or make a particularly tricky shot.",
+    "flavorRussian": "Многие ратлинги суеверны и приберегают счастливый патрон, чтобы поразить крупного или сильного врага, поквитаться с обидчиком или сделать особенно трудный выстрел.",
+    "blocks": [
+      {
+        "type": "paragraph",
+        "headingEnglish": "Lucky Round",
+        "headingRussian": "Счастливый патрон (Lucky Round)",
+        "english": "Once per turning point, when a friendly RATLING operative is shooting with a rifle and you’ve rolled your attack dice, you can use this rule if you haven’t used the Purloined Rations equipment this activation. If you do, that weapon has the Severe weapon rule until the end of that sequence.",
+        "russian": "Один раз за раунд, когда дружественный оперативник-ратлинг (RATLING) стреляет из винтовки и вы уже бросили кубики атаки, можно применить это правило, если в этой активации вы не использовали снаряжение «Похищенный паёк» (Purloined Rations). До конца этой последовательности выбранное оружие получает свойство «Сокрушительное» (Severe)."
+      }
+    ],
+    "verifiedAgainstPixels": true,
+    "weapons": []
+  },
+  "bf437f2f7e0b2743": {
+    "kind": "card",
+    "titleEnglish": "Improvised Armour",
+    "titleRussian": "Самодельная броня (Improvised Armour)",
+    "categoryEnglish": "RATLINGS · FACTION EQUIPMENT",
+    "categoryRussian": "РАТЛИНГИ (RATLINGS) · СНАРЯЖЕНИЕ ОТРЯДА (FACTION EQUIPMENT)",
+    "flavorEnglish": "Such is the size of Ogryns that precious little standard-issue armour fits their bulky frames. Most are outfitted instead with makeshift plates forged from thick armour and tank tracks ripped from destroyed vehicles.",
+    "flavorRussian": "Огрины так крупны, что стандартная броня им почти не подходит. Большинство вместо неё носит самодельные пластины из толстой брони и гусениц, снятых с уничтоженной техники.",
+    "blocks": [
+      {
+        "type": "paragraph",
+        "headingEnglish": "Improvised Armour",
+        "headingRussian": "Самодельная броня (Improvised Armour)",
+        "english": "Whenever an operative is shooting a friendly RATLING BULLGRYN or friendly RATLING OGRYN operative, defence dice results of 5+ are critical successes.",
+        "russian": "Когда любой оперативник стреляет по дружественному булгрину-ратлингу (RATLING BULLGRYN) или огрину-ратлингу (RATLING OGRYN), результаты 5+ на кубиках защиты считаются критическими успехами."
+      }
+    ],
+    "verifiedAgainstPixels": true,
+    "weapons": []
+  },
+  "2c2a62284c763fb4": {
+    "kind": "card",
+    "titleEnglish": "Ratling Kill Team · Selection",
+    "titleRussian": "Отряд ратлингов (Ratling Kill Team) · состав",
+    "categoryEnglish": "RATLINGS · KILL TEAM",
+    "categoryRussian": "РАТЛИНГИ (RATLINGS) · ОТРЯД (KILL TEAM)",
+    "blocks": [
+      {
+        "type": "paragraph",
+        "headingEnglish": "Archetypes",
+        "headingRussian": "Архетипы (Archetypes)",
+        "english": "Security, Infiltration.",
+        "russian": "Безопасность (Security), проникновение (Infiltration)."
+      },
+      {
+        "type": "paragraph",
+        "headingEnglish": "Operatives",
+        "headingRussian": "Оперативники (Operatives)",
+        "english": "1 RATLING FIXER operative with one of the following options: Battle rifle; fists. Sniper rifle; fists. 10 RATLING operatives selected from the following list: BATTLEMUTT, BULLGRYN*, OGRYN*, BIG SHOT, BOMBER, HARDBIT, RAIDER, SNEAK, SNIPER, SPOTTER, STASHMASTER, VOX-THIEF. BULLGRYN and OGRYN have one option from each of the following: Grenadier gauntlet or power maul; Brute shield or slabshield.",
+        "russian": "1 оперативник-ратлинг фиксёр (RATLING FIXER) с одним из вариантов вооружения: боевой винтовкой (Battle rifle) и кулаками (fists) либо снайперской винтовкой (Sniper rifle) и кулаками. Ещё 10 оперативников-ратлингов (RATLING) выбираются из списка: боевой пёс (BATTLEMUTT), булгрин* (BULLGRYN*), огрин* (OGRYN*), крупный стрелок (BIG SHOT), бомбардир (BOMBER), головорез (HARDBIT), налётчик (RAIDER), скрытник (SNEAK), снайпер (SNIPER), наблюдатель (SPOTTER), кладовщик (STASHMASTER), похититель связи (VOX-THIEF). Для булгрина и огрина выберите по одному варианту из каждой пары: гренадёрская перчатка (Grenadier gauntlet) или силовая булава (Power maul); щит громилы (Brute shield) или плитный щит (Slabshield)."
+      }
+    ],
+    "footerEnglish": "CONTINUES ON OTHER SIDE",
+    "footerRussian": "ПРОДОЛЖЕНИЕ НА ОБОРОТЕ",
+    "verifiedAgainstPixels": true,
+    "weapons": []
+  },
+  "aad284b83598bb7b": {
+    "kind": "card",
+    "titleEnglish": "Ratling Kill Team · Selection · Continuation",
+    "titleRussian": "Отряд ратлингов (Ratling Kill Team) · состав · продолжение",
+    "categoryEnglish": "RATLINGS · KILL TEAM · CONTINUATION",
+    "categoryRussian": "РАТЛИНГИ (RATLINGS) · ОТРЯД · ПРОДОЛЖЕНИЕ",
+    "blocks": [
+      {
+        "type": "paragraph",
+        "headingEnglish": "Selection restrictions",
+        "headingRussian": "Ограничения выбора",
+        "english": "Other than BULLGRYN, OGRYN and SNIPER operatives, your kill team can only include each operative on this list once. You cannot select more than three of these operatives combined. Up to three times, instead of selecting one of these operatives, you can select one RATLING ploy to cost you 0CP for the battle.",
+        "russian": "Кроме булгринов (BULLGRYN), огринов (OGRYN) и снайперов (SNIPER), в отряд можно включить не более одного оперативника каждого типа из списка. В сумме можно выбрать не более трёх булгринов и огринов. До трёх раз вместо выбора одного такого оперативника можно выбрать один приём ратлингов (RATLING ploy), который будет стоить вам 0 командных очков (CP) за бой."
+      },
+      {
+        "type": "paragraph",
+        "headingEnglish": "Rifle",
+        "headingRussian": "Винтовка (Rifle)",
+        "english": "Some RATLING rules refer to a ‘rifle’. This is a ranged weapon that includes ‘rifle’ in its name, e.g. tankstopper rifle, all profiles of a sniper rifle, etc.",
+        "russian": "В некоторых правилах ратлингов используется термин «винтовка» (rifle). Это оружие дальнего боя, в названии которого есть слово rifle: например, винтовка для остановки танков (Tankstopper rifle) или любой профиль снайперской винтовки (Sniper rifle)."
+      }
+    ],
+    "verifiedAgainstPixels": true,
+    "weapons": []
+  },
+  "2aabfb607c181364": {
+    "kind": "card",
+    "titleEnglish": "Survival Instincts",
+    "titleRussian": "Инстинкт самосохранения (Survival Instincts)",
+    "categoryEnglish": "RATLINGS · FIREFIGHT PLOY",
+    "categoryRussian": "РАТЛИНГИ (RATLINGS) · ПРИЁМ ПЕРЕСТРЕЛКИ (FIREFIGHT PLOY)",
+    "flavorEnglish": "Lacking physical strength and fortitude, Ratlings rely upon their reflexes and natural instincts to save themselves from harm.",
+    "flavorRussian": "Не обладая большой силой и выносливостью, ратлинги спасаются от опасности благодаря реакции и природным инстинктам.",
+    "blocks": [
+      {
+        "type": "paragraph",
+        "headingEnglish": "Survival Instincts",
+        "headingRussian": "Инстинкт самосохранения (Survival Instincts)",
+        "english": "Use this firefight ploy when an enemy operative is shooting against or fighting against a friendly RATLING operative (excluding OGRYN or BULLGRYN) and you’re allocating a dice to block. If it’s a normal success, it can block one unresolved critical success; if it’s a critical success, it can block two unresolved successes (normal or critical).",
+        "russian": "Примените этот приём перестрелки, когда вражеский оперативник стреляет по дружественному оперативнику-ратлингу (RATLING) или сражается с ним в ближнем бою, кроме огрина (OGRYN) или булгрина (BULLGRYN), и вы назначаете кубик на блок. Обычный успех может заблокировать один ещё не заблокированный критический успех; критический успех может заблокировать два ещё не заблокированных успеха (обычных или критических)."
+      }
+    ],
+    "verifiedAgainstPixels": true,
+    "weapons": []
+  },
+  "bcf1b9c2b7d1c23a": {
+    "kind": "card",
+    "titleEnglish": "Sharpshot",
+    "titleRussian": "Меткий выстрел (Sharpshot)",
+    "categoryEnglish": "RATLINGS · FIREFIGHT PLOY",
+    "categoryRussian": "РАТЛИНГИ (RATLINGS) · ПРИЁМ ПЕРЕСТРЕЛКИ (FIREFIGHT PLOY)",
+    "flavorEnglish": "Ratlings can pick out enemies in the thick of even the most chaotic battles. Many soldiers have been saved from certain death by their precise fire.",
+    "flavorRussian": "Ратлинги замечают врагов даже в самой хаотичной битве. Их точные выстрелы не раз спасали солдат от неминуемой смерти.",
+    "blocks": [
+      {
+        "type": "paragraph",
+        "headingEnglish": "Sharpshot",
+        "headingRussian": "Меткий выстрел (Sharpshot)",
+        "english": "Use this firefight ploy when a friendly RATLING operative is performing the Shoot action with a rifle and you’re selecting a valid target. Having other friendly RATLING operatives within an enemy operative’s control range doesn’t prevent that enemy operative from being selected.",
+        "russian": "Примените этот приём перестрелки, когда дружественный оперативник-ратлинг (RATLING) выполняет действие «Стрельба» (Shoot) из винтовки и выбирает допустимую цель. Наличие других дружественных ратлингов в дистанции контроля врага не мешает выбрать этого врага целью."
+      }
+    ],
+    "verifiedAgainstPixels": true,
+    "weapons": []
+  },
+  "4f338429f89c8fb8": {
+    "kind": "card",
+    "titleEnglish": "Larcenous",
+    "titleRussian": "Вороватые (Larcenous)",
+    "categoryEnglish": "RATLINGS · FIREFIGHT PLOY",
+    "categoryRussian": "РАТЛИНГИ (RATLINGS) · ПРИЁМ ПЕРЕСТРЕЛКИ (FIREFIGHT PLOY)",
+    "flavorEnglish": "Their diminutive size and gift for stealth makes Ratlings naturally skilled thieves.",
+    "flavorRussian": "Миниатюрный рост и скрытность делают ратлингов прирождёнными ворами.",
+    "blocks": [
+      {
+        "type": "paragraph",
+        "headingEnglish": "Larcenous",
+        "headingRussian": "Вороватые (Larcenous)",
+        "english": "Use this firefight ploy during a friendly RATLING operative’s activation (excluding OGRYN or BULLGRYN). Until the end of that activation, that operative doesn’t have to control a marker to perform the Pick Up Marker or mission actions that usually require this (taking precedence over that action’s conditions — it only needs to contest the marker), and having an enemy operative within its control range doesn’t prevent it from doing so.",
+        "russian": "Примените этот приём перестрелки во время активации дружественного оперативника-ратлинга (RATLING), кроме огрина (OGRYN) и булгрина (BULLGRYN). До конца активации ему не нужно контролировать маркер, чтобы выполнять действия «Поднять маркер» (Pick Up Marker) или действия миссии, которые обычно требуют контроля: достаточно оспаривать маркер. Это условие имеет приоритет над ограничениями самих действий. Наличие вражеского оперативника в дистанции контроля также не мешает выполнять их."
+      }
+    ],
+    "verifiedAgainstPixels": true,
+    "weapons": []
+  },
+  "66f3b04849b20eaf": {
+    "kind": "card",
+    "titleEnglish": "Shoot and Hide",
+    "titleRussian": "Выстрелить и скрыться (Shoot and Hide)",
+    "categoryEnglish": "RATLINGS · FIREFIGHT PLOY",
+    "categoryRussian": "РАТЛИНГИ (RATLINGS) · ПРИЁМ ПЕРЕСТРЕЛКИ (FIREFIGHT PLOY)",
+    "flavorEnglish": "A sniper is vulnerable once their position has been detected, thus Ratling sharpshooters are constantly sneaking away.",
+    "flavorRussian": "После обнаружения снайперская позиция становится уязвимой, поэтому ратлинги-меткие стрелки постоянно меняют укрытие.",
+    "blocks": [
+      {
+        "type": "paragraph",
+        "headingEnglish": "Shoot and Hide",
+        "headingRussian": "Выстрелить и скрыться (Shoot and Hide)",
+        "english": "Use this firefight ploy after a friendly RATLING operative that has an Engage order performs the Shoot action with a rifle. If it’s more than 3\" from enemy operatives, or not visible to every enemy operative, you can change its order to Conceal.",
+        "russian": "Примените этот приём перестрелки после того, как дружественный оперативник-ратлинг (RATLING) с приказом «Бой» (Engage) выполнит действие «Стрельба» (Shoot) из винтовки. Если он находится дальше 3 дюймов от всех вражеских оперативников или не виден каждому из них, вы можете сменить его приказ на «Скрытность» (Conceal)."
+      }
+    ],
+    "verifiedAgainstPixels": true,
+    "weapons": []
+  },
+  "d7cd5bf51744f5ad": {
+    "kind": "card",
+    "titleEnglish": "Sniper Positions",
+    "titleRussian": "Снайперские позиции (Sniper Positions)",
+    "categoryEnglish": "RATLINGS · STRATEGY PLOY",
+    "categoryRussian": "РАТЛИНГИ (RATLINGS) · СТРАТЕГИЧЕСКИЙ ПРИЁМ (STRATEGY PLOY)",
+    "flavorEnglish": "Ratlings spend hours or even days selecting vantage points, ensuring that any position they take affords them effective cover and clear sight lines from which to pick off the advancing foe.",
+    "flavorRussian": "Ратлинги часами, а то и днями выбирают высотные позиции, где укрытие надёжно, а обзор позволяет отстреливать наступающего врага.",
+    "blocks": [
+      {
+        "type": "paragraph",
+        "headingEnglish": "Sniper Positions",
+        "headingRussian": "Снайперские позиции (Sniper Positions)",
+        "english": "Whenever a friendly RATLING operative is more than 6\" from enemy operatives and has Heavy terrain within its control range, the stationary profile of its rifle (if any) has the Silent weapon rule.",
+        "russian": "Когда дружественный оперативник-ратлинг (RATLING) находится дальше 6 дюймов от вражеских оперативников и в его дистанции контроля есть тяжёлый террейн (Heavy terrain), неподвижный профиль его винтовки (если она у него есть) получает свойство «Бесшумное» (Silent)."
+      }
+    ],
+    "verifiedAgainstPixels": true,
+    "weapons": []
+  },
+  "68f0f5deaee9ab9c": {
+    "kind": "card",
+    "titleEnglish": "Crack Shots",
+    "titleRussian": "Отличные стрелки (Crack Shots)",
+    "categoryEnglish": "RATLINGS · STRATEGY PLOY",
+    "categoryRussian": "РАТЛИНГИ (RATLINGS) · СТРАТЕГИЧЕСКИЙ ПРИЁМ (STRATEGY PLOY)",
+    "flavorEnglish": "It is said that a Ratling can put a bullet through an opponent’s eye socket from more than a thousand yards away.",
+    "flavorRussian": "Говорят, ратлинг способен попасть противнику в глазницу с расстояния свыше тысячи ярдов.",
+    "blocks": [
+      {
+        "type": "paragraph",
+        "headingEnglish": "Crack Shots",
+        "headingRussian": "Отличные стрелки (Crack Shots)",
+        "english": "Whenever a friendly RATLING operative is shooting an enemy operative more than 6\" from it, if that friendly operative hasn’t performed the Charge, Fall Back or Reposition action during the activation, or if it’s a counteraction, its rifle (if any) has the Balanced weapon rule. Note that operative isn’t restricted from performing those actions after shooting.",
+        "russian": "Когда дружественный оперативник-ратлинг (RATLING) стреляет по вражескому оперативнику, находящемуся дальше 6 дюймов от него, винтовка стрелка (если она у него есть) получает свойство «Сбалансированное» (Balanced), если в этой активации он не выполнял действия «Атака» (Charge), «Отступление» (Fall Back) или «Перемещение» (Reposition) либо если сейчас выполняется контрдействие. После стрельбы ему не запрещено выполнять эти действия."
+      }
+    ],
+    "verifiedAgainstPixels": true,
+    "weapons": []
+  },
+  "4989c5178d906731": {
+    "kind": "card",
+    "titleEnglish": "Frontline Assault",
+    "titleRussian": "Штурм передовой (Frontline Assault)",
+    "categoryEnglish": "RATLINGS · STRATEGY PLOY",
+    "categoryRussian": "РАТЛИНГИ (RATLINGS) · СТРАТЕГИЧЕСКИЙ ПРИЁМ (STRATEGY PLOY)",
+    "flavorEnglish": "Ogryns are brutish, muscular soldiers who are most effective when deployed as close combat troops.",
+    "flavorRussian": "Огрины — грубая сила Империума, и лучше всего они проявляют себя в ближнем бою.",
+    "blocks": [
+      {
+        "type": "paragraph",
+        "headingEnglish": "Frontline Assault",
+        "headingRussian": "Штурм передовой (Frontline Assault)",
+        "english": "Whenever a friendly RATLING BULLGRYN or friendly RATLING OGRYN operative within your opponent’s territory or within 3\" of an objective marker is shooting, fighting or retaliating, its weapons have the Balanced weapon rule.",
+        "russian": "Когда дружественный булгрин-ратлинг (RATLING BULLGRYN) или огрин-ратлинг (RATLING OGRYN), находящийся на территории противника либо в пределах 3 дюймов от маркера цели, стреляет, сражается в ближнем бою или отвечает ударом, его оружие получает свойство «Сбалансированное» (Balanced)."
+      }
+    ],
+    "verifiedAgainstPixels": true,
+    "weapons": []
+  },
+  "53a5d09dd57b1a70": {
+    "kind": "card",
+    "titleEnglish": "Shifty",
+    "titleRussian": "Юркие (Shifty)",
+    "categoryEnglish": "RATLINGS · STRATEGY PLOY",
+    "categoryRussian": "РАТЛИНГИ (RATLINGS) · СТРАТЕГИЧЕСКИЙ ПРИЁМ (STRATEGY PLOY)",
+    "flavorEnglish": "Small of stature and well used to hiding from larger foes, Ratlings use terrain and shadow to their advantage.",
+    "flavorRussian": "Невысокие ратлинги привыкли прятаться от более крупных врагов и используют в свою пользу террейн и тени.",
+    "blocks": [
+      {
+        "type": "paragraph",
+        "headingEnglish": "Shifty",
+        "headingRussian": "Юркие (Shifty)",
+        "english": "Whenever a friendly RATLING operative (excluding OGRYN or BULLGRYN) has a Conceal order and is in cover, it cannot be selected as a valid target, taking precedence over all other rules (e.g. Seek, Vantage terrain) except being within 2\".",
+        "russian": "Когда дружественный оперативник-ратлинг (RATLING), кроме огрина (OGRYN) и булгрина (BULLGRYN), имеет приказ «Скрытность» (Conceal) и находится в укрытии, его нельзя выбрать допустимой целью. Это правило имеет приоритет над всеми прочими правилами (например, «Поиск цели» (Seek) или террейном с высотной позицией (Vantage terrain)), кроме правила нахождения в пределах 2 дюймов."
+      }
+    ],
+    "verifiedAgainstPixels": true,
+    "weapons": []
+  },
+  "d18826f479cb53f3": {
+    "kind": "card",
+    "titleEnglish": "Ratling Raider",
+    "titleRussian": "Ратлинг-налётчик (Ratling Raider)",
+    "categoryEnglish": "RATLINGS · OPERATIVE · RAIDER",
+    "categoryRussian": "РАТЛИНГИ (RATLINGS) · ОПЕРАТИВНИК · НАЛЁТЧИК (RAIDER)",
+    "stats": {
+      "APL": 2,
+      "Move": "5\"",
+      "Save": "5+",
+      "Wounds": 6
+    },
+    "weapons": [
+      {
+        "type": "R",
+        "english": "Suppressed sniper rifle (mobile)",
+        "russian": "Снайперская винтовка с глушителем (Suppressed sniper rifle; на ходу)",
+        "atk": 4,
+        "hit": "4+",
+        "dmg": "3/4",
+        "wrEnglish": "Silent",
+        "wrRussian": "бесшумное (Silent)"
+      },
+      {
+        "type": "R",
+        "english": "Suppressed sniper rifle (stationary)",
+        "russian": "Снайперская винтовка с глушителем (Suppressed sniper rifle; неподвижно)",
+        "atk": 4,
+        "hit": "3+",
+        "dmg": "3/3",
+        "wrEnglish": "Devastating 1, Heavy, Silent",
+        "wrRussian": "разрушительное 1 (Devastating 1), тяжёлое (Heavy), бесшумное (Silent)"
+      },
+      {
+        "type": "M",
+        "english": "Dagger",
+        "russian": "Кинжал (Dagger)",
+        "atk": 3,
+        "hit": "4+",
+        "dmg": "2/3",
+        "wrEnglish": "",
+        "wrRussian": ""
+      }
+    ],
+    "blocks": [],
+    "footerEnglish": "RULES CONTINUE ON OTHER SIDE · RATLING, IMPERIUM, ASTRA MILITARUM, RAIDER",
+    "footerRussian": "ПРАВИЛА ПРОДОЛЖАЮТСЯ НА ОБОРОТЕ · РАТЛИНГ (RATLING), ИМПЕРИУМ (IMPERIUM), АСТРА МИЛИТАРУМ (ASTRA MILITARUM), НАЛЁТЧИК (RAIDER)",
+    "verifiedAgainstPixels": true
+  },
+  "6545722b8b502917": {
+    "kind": "card",
+    "titleEnglish": "Ratling Raider · Actions",
+    "titleRussian": "Ратлинг-налётчик · действия (Ratling Raider · Actions)",
+    "categoryEnglish": "RATLINGS · OPERATIVE · RAIDER · ACTIONS",
+    "categoryRussian": "РАТЛИНГИ (RATLINGS) · ОПЕРАТИВНИК · НАЛЁТЧИК (RAIDER) · ДЕЙСТВИЯ",
+    "stats": {
+      "APL": 2,
+      "Move": "5\"",
+      "Save": "5+",
+      "Wounds": 6
+    },
+    "blocks": [
+      {
+        "type": "paragraph",
+        "headingEnglish": "Slingshot · 1AP",
+        "headingRussian": "Рогатка · 1 ОД (Slingshot · 1 AP)",
+        "english": "Select a point on a terrain feature; that point must be visible to, within 6\" horizontally of and higher than this operative. Remove this operative from the killzone and set it back up wholly within x+1\" horizontally of that point, not within control range of enemy operatives, and with that point visible to it. X is that point’s height, rounded to the nearest inch (to a maximum of 5\"). This action is treated as a Reposition action. This operative cannot perform this action while within control range of an enemy operative, or during an activation in which it performed the Charge, Fall Back or Shoot action (or vice versa).",
+        "russian": "Выберите точку на элементе террейна: она должна быть видна этому оперативнику, находиться не дальше 6 дюймов от него по горизонтали и выше него. Уберите оперативника из зоны боя и выставьте заново целиком в пределах x+1 дюйма по горизонтали от выбранной точки, вне дистанции контроля вражеских оперативников и так, чтобы точка была ему видна. Значение x равно высоте точки, округлённой до ближайшего целого дюйма (не более 5 дюймов). Это действие считается действием «Перемещение» (Reposition). Оперативник не может выполнять его в дистанции контроля врага или в активацию, в которой он выполнял действие «Атака» (Charge), «Отступление» (Fall Back) или «Стрельба» (Shoot); если он выполнил «Рогатку», в этой активации ему также нельзя выполнять ни одно из этих трёх действий."
+      },
+      {
+        "type": "paragraph",
+        "headingEnglish": "Grappling Hook",
+        "headingRussian": "Крюк-кошка (Grappling Hook)",
+        "english": "Whenever this operative is climbing, treat the vertical distance as 2\" (regardless of how far the operative actually moves vertically).",
+        "russian": "Когда этот оперативник карабкается, считайте вертикальное расстояние равным 2 дюймам независимо от того, насколько далеко по вертикали он фактически переместился."
+      },
+      {
+        "type": "figure",
+        "headingEnglish": "Slingshot diagram",
+        "headingRussian": "Схема действия «Рогатка»",
+        "english": "Slingshot · terrain point 4\" high · within 6\" · wholly within 5\"",
+        "russian": "Пример выбора точки на высоте 4 дюйма, в пределах 6 дюймов по горизонтали от оперативника; повторная расстановка целиком в пределах 5 дюймов от точки.",
+        "fullRULegend": "На схеме показан пример действия «Рогатка» ратлинга-налётчика. Небольшая модель справа — исходное положение оперативника. Выбранная точка находится на поднятом фрагменте террейна на высоте 4 дюйма; пунктирная линия от неё к исходной модели помечена «в пределах 6 дюймов» и показывает горизонтальное расстояние до точки. Модель слева — новое положение оперативника: пунктирная линия от выбранной точки помечена «целиком в пределах 5 дюймов». Это расстояние равно высоте точки x=4 дюйма плюс 1 дюйм, как требует правило. Точка должна быть видна оперативнику и располагаться выше него; после снятия с поля модель выставляется целиком в допустимом месте в указанном радиусе. Пунктирные линии и стрелки иллюстрируют оба измерения и исходное/новое положение модели.",
+        "sourcebox": [
+          486,
+          98,
+          440,
+          186
+        ],
+        "sourceimageid": "6545722b8b502917",
+        "footerEnglish": ""
+      }
+    ],
+    "verifiedAgainstPixels": true,
+    "weapons": []
+  },
+  "4d091f44f0de7d76": {
+    "kind": "card",
+    "titleEnglish": "Ratling Bomber",
+    "titleRussian": "Ратлинг-бомбардир (Ratling Bomber)",
+    "categoryEnglish": "RATLINGS · OPERATIVE · BOMBER",
+    "categoryRussian": "РАТЛИНГИ (RATLINGS) · ОПЕРАТИВНИК · БОМБАРДИР (BOMBER)",
+    "stats": {
+      "APL": 2,
+      "Move": "5\"",
+      "Save": "4+",
+      "Wounds": 6
+    },
+    "weapons": [
+      {
+        "type": "R",
+        "english": "Explosive arsenal",
+        "russian": "Взрывной арсенал (Explosive arsenal)",
+        "atk": 5,
+        "hit": "3+",
+        "dmg": "4/5",
+        "wrEnglish": "Range 3\", Blast 1\", Heavy (Reposition only), Limited 1, Piercing 1, Saturate",
+        "wrRussian": "Дальность 3 дюйма (Range 3\"), Взрыв 1 дюйм (Blast 1\"), тяжёлое (Heavy; только после «Перемещения» (Reposition)), ограниченное 1 (Limited 1), бронебойное 1 (Piercing 1), насыщение огнём (Saturate)"
+      },
+      {
+        "type": "R",
+        "english": "Sniper rifle (mobile)",
+        "russian": "Снайперская винтовка (на ходу)",
+        "atk": 4,
+        "hit": "4+",
+        "dmg": "3/4",
+        "wrEnglish": "",
+        "wrRussian": ""
+      },
+      {
+        "type": "R",
+        "english": "Sniper rifle (stationary)",
+        "russian": "Снайперская винтовка (неподвижно)",
+        "atk": 4,
+        "hit": "3+",
+        "dmg": "3/3",
+        "wrEnglish": "Devastating 3, Heavy",
+        "wrRussian": "разрушительное 3 (Devastating 3), тяжёлое (Heavy)"
+      },
+      {
+        "type": "M",
+        "english": "Bionic arm",
+        "russian": "Бионическая рука (Bionic arm)",
+        "atk": 3,
+        "hit": "5+",
+        "dmg": "3/4",
+        "wrEnglish": "",
+        "wrRussian": ""
+      }
+    ],
+    "blocks": [
+      {
+        "type": "paragraph",
+        "headingEnglish": "Tripwire",
+        "headingRussian": "Растяжка (Tripwire)",
+        "english": "When setting up equipment before the battle, you can set up to two of your Tripwire markers up wholly within your territory and more than 2\" from other markers. The first time that marker is within an enemy operative’s control range, remove that marker, subtract 1 from that operative’s APL stat until the end of its next activation and end its action (if any), even if that action’s effects aren’t fulfilled. If it cannot be placed, move it the minimum amount to do so.",
+        "russian": "При размещении снаряжения перед боем вы можете установить до двух своих маркеров «Растяжка» (Tripwire) целиком на своей территории и дальше 2 дюймов от других маркеров. Когда маркер впервые оказывается в дистанции контроля вражеского оперативника, уберите его, уменьшите лимит очков действий (APL) этого врага на 1 до конца его следующей активации и завершите его действие, если оно выполнялось, даже если эффекты действия ещё не были выполнены. Если маркер нельзя разместить, сдвиньте его на минимальное расстояние, необходимое для размещения."
+      }
+    ],
+    "footerEnglish": "RULES CONTINUE ON OTHER SIDE · RATLING, IMPERIUM, ASTRA MILITARUM, BOMBER",
+    "footerRussian": "ПРАВИЛА ПРОДОЛЖАЮТСЯ НА ОБОРОТЕ · РАТЛИНГ (RATLING), ИМПЕРИУМ (IMPERIUM), АСТРА МИЛИТАРУМ (ASTRA MILITARUM), БОМБАРДИР (BOMBER)",
+    "verifiedAgainstPixels": true
+  },
+  "a91c2b445d77e3da": {
+    "kind": "card",
+    "titleEnglish": "Ratling Bomber · Rules",
+    "titleRussian": "Ратлинг-бомбардир · правила (Ratling Bomber · Rules)",
+    "categoryEnglish": "RATLINGS · OPERATIVE · BOMBER · CONTINUATION",
+    "categoryRussian": "РАТЛИНГИ (RATLINGS) · ОПЕРАТИВНИК · БОМБАРДИР (BOMBER) · ПРОДОЛЖЕНИЕ",
+    "stats": {
+      "APL": 2,
+      "Move": "5\"",
+      "Save": "4+",
+      "Wounds": 6
+    },
+    "blocks": [
+      {
+        "type": "paragraph",
+        "headingEnglish": "Mine",
+        "headingRussian": "Мина (Mine)",
+        "english": "Mines you select from universal equipment inflict 2D3+3 damage instead, and friendly RATLING operatives (excluding OGRYN and BULLGRYN) are ignored for your mines’ effects (i.e. they cannot trigger or take damage from them). This takes precedence over the normal mines rules.",
+        "russian": "Мины, выбранные вами из универсального снаряжения, вместо обычного эффекта наносят 2D3+3 урона. Дружественные оперативники-ратлинги (RATLING), кроме огринов (OGRYN) и булгринов (BULLGRYN), не учитываются при применении эффектов ваших мин: они не могут привести мину в действие и не получают от неё урон. Это правило имеет приоритет над обычными правилами мин."
+      }
+    ],
+    "verifiedAgainstPixels": true,
+    "weapons": []
+  },
+  "b5a6ba262087c396": {
+    "kind": "card",
+    "titleEnglish": "Ogryn",
+    "titleRussian": "Огрин (Ogryn)",
+    "categoryEnglish": "RATLINGS · OPERATIVE · OGRYN",
+    "categoryRussian": "РАТЛИНГИ (RATLINGS) · ОПЕРАТИВНИК · ОГРИН (OGRYN)",
+    "stats": {
+      "APL": 2,
+      "Move": "6\"",
+      "Save": "5+",
+      "Wounds": 16
+    },
+    "weapons": [
+      {
+        "type": "R",
+        "english": "Ripper gun",
+        "russian": "Риппер-пушка (Ripper gun)",
+        "atk": 4,
+        "hit": "3+",
+        "dmg": "4/5",
+        "wrEnglish": "Range 8\", Punishing",
+        "wrRussian": "Дальность 8 дюймов (Range 8\"), карающее (Punishing)"
+      },
+      {
+        "type": "M",
+        "english": "Bayonet",
+        "russian": "Штык (Bayonet)",
+        "atk": 4,
+        "hit": "3+",
+        "dmg": "4/5",
+        "wrEnglish": "",
+        "wrRussian": ""
+      }
+    ],
+    "blocks": [
+      {
+        "type": "paragraph",
+        "headingEnglish": "Bayonet Charge",
+        "headingRussian": "Штыковая атака (Bayonet Charge)",
+        "english": "Whenever this operative finishes moving during the Charge action, you can inflict D3+1 damage on one enemy operative within its control range.",
+        "russian": "Каждый раз, когда этот оперативник завершает перемещение при выполнении действия «Атака» (Charge), вы можете нанести D3+1 урона одному вражескому оперативнику в его дистанции контроля."
+      },
+      {
+        "type": "paragraph",
+        "headingEnglish": "Brute",
+        "headingRussian": "Громила (Brute)",
+        "english": "Whenever your opponent is selecting a valid target, if this operative has a Conceal order, it cannot use Light terrain for cover. While this can allow this operative to be targeted (assuming it’s visible), it doesn’t remove its cover save (if any).",
+        "russian": "Когда противник выбирает допустимую цель, этот оперативник с приказом «Скрытность» (Conceal) не может использовать лёгкий террейн (Light terrain) как укрытие. Поэтому его можно будет выбрать целью, если он видим, но он всё ещё получает положенный ему кубик защиты за укрытие."
+      },
+      {
+        "type": "paragraph",
+        "headingEnglish": "Slow-witted",
+        "headingRussian": "Тугодум (Slow-witted)",
+        "english": "You must spend 1 additional AP for this operative to perform the Pick Up Marker and mission actions (excluding Operate Hatch).",
+        "russian": "Чтобы этот оперативник выполнил действие «Поднять маркер» (Pick Up Marker) или действие миссии (кроме «Управление люком» (Operate Hatch)), потратьте дополнительно 1 ОД."
+      }
+    ],
+    "footerEnglish": "RATLING, IMPERIUM, ASTRA MILITARUM, OGRYN",
+    "footerRussian": "РАТЛИНГ (RATLING), ИМПЕРИУМ (IMPERIUM), АСТРА МИЛИТАРУМ (ASTRA MILITARUM), ОГРИН (OGRYN)",
+    "verifiedAgainstPixels": true
+  },
+  "255d1649fecfcc1a": {
+    "kind": "card",
+    "titleEnglish": "Ratling Big Shot",
+    "titleRussian": "Ратлинг — крупный стрелок (Ratling Big Shot)",
+    "categoryEnglish": "RATLINGS · OPERATIVE · BIG SHOT",
+    "categoryRussian": "РАТЛИНГИ (RATLINGS) · ОПЕРАТИВНИК · КРУПНЫЙ СТРЕЛОК (BIG SHOT)",
+    "stats": {
+      "APL": 2,
+      "Move": "5\"",
+      "Save": "5+",
+      "Wounds": 6
+    },
+    "weapons": [
+      {
+        "type": "R",
+        "english": "Tankstopper rifle (mobile)",
+        "russian": "Винтовка для остановки танков (Tankstopper rifle; на ходу)",
+        "atk": 4,
+        "hit": "3+",
+        "dmg": "4/4",
+        "wrEnglish": "Devastating 1, Heavy (Dash only), Piercing 1",
+        "wrRussian": "разрушительное 1 (Devastating 1), тяжёлое (Heavy; только после «Рывка» (Dash)), бронебойное 1 (Piercing 1)"
+      },
+      {
+        "type": "R",
+        "english": "Tankstopper rifle (stationary)",
+        "russian": "Винтовка для остановки танков (Tankstopper rifle; неподвижно)",
+        "atk": 4,
+        "hit": "2+",
+        "dmg": "4/2",
+        "wrEnglish": "Devastating 4, Heavy, Piercing 1, Severe",
+        "wrRussian": "разрушительное 4 (Devastating 4), тяжёлое (Heavy), бронебойное 1 (Piercing 1), сокрушительное (Severe)"
+      },
+      {
+        "type": "M",
+        "english": "Fists",
+        "russian": "Кулаки (Fists)",
+        "atk": 3,
+        "hit": "5+",
+        "dmg": "1/2",
+        "wrEnglish": "",
+        "wrRussian": ""
+      }
+    ],
+    "blocks": [],
+    "footerEnglish": "RATLING, IMPERIUM, ASTRA MILITARUM, BIG SHOT",
+    "footerRussian": "РАТЛИНГ (RATLING), ИМПЕРИУМ (IMPERIUM), АСТРА МИЛИТАРУМ (ASTRA MILITARUM), КРУПНЫЙ СТРЕЛОК (BIG SHOT)",
+    "verifiedAgainstPixels": true
+  },
+  "5193729b968f8b8a": {
+    "kind": "card",
+    "titleEnglish": "Ratling Hardbit",
+    "titleRussian": "Ратлинг-головорез (Ratling Hardbit)",
+    "categoryEnglish": "RATLINGS · OPERATIVE · HARDBIT",
+    "categoryRussian": "РАТЛИНГИ (RATLINGS) · ОПЕРАТИВНИК · ГОЛОВОРЕЗ (HARDBIT)",
+    "stats": {
+      "APL": 2,
+      "Move": "5\"",
+      "Save": "5+",
+      "Wounds": 6
+    },
+    "weapons": [
+      {
+        "type": "R",
+        "english": "Battle rifle",
+        "russian": "Боевая винтовка (Battle rifle)",
+        "atk": 4,
+        "hit": "3+",
+        "dmg": "3/4",
+        "wrEnglish": "",
+        "wrRussian": ""
+      },
+      {
+        "type": "M",
+        "english": "Combat knife",
+        "russian": "Боевой нож (Combat knife)",
+        "atk": 3,
+        "hit": "3+",
+        "dmg": "3/5",
+        "wrEnglish": "Balanced",
+        "wrRussian": "сбалансированное (Balanced)"
+      }
+    ],
+    "blocks": [
+      {
+        "type": "paragraph",
+        "headingEnglish": "Hunter",
+        "headingRussian": "Охотник (Hunter)",
+        "english": "This operative can perform the Charge action while it has a Conceal order. If it does so during its activation, until the end of that activation, add 1 to the Atk stat of its combat knife and that melee weapon has the Brutal weapon rule.",
+        "russian": "Этот оперативник может выполнять действие «Атака» (Charge), даже имея приказ «Скрытность» (Conceal). Если он делает это в свою активацию, до конца активации увеличьте характеристику атак (Atk) его боевого ножа на 1, а нож получает свойство «Жестокое» (Brutal)."
+      },
+      {
+        "type": "paragraph",
+        "headingEnglish": "Lie in Wait",
+        "headingRussian": "Затаиться в засаде (Lie in Wait)",
+        "english": "Whenever this operative is retaliating while Light or Heavy terrain is within its control range, you resolve the first attack dice (i.e. defender instead of attacker).",
+        "russian": "Когда этот оперативник отвечает ударом, а в его дистанции контроля находится лёгкий или тяжёлый террейн (Light or Heavy terrain), он первым распределяет кубики атаки (то есть первым действует защищающийся, а не атакующий)."
+      }
+    ],
+    "footerEnglish": "RATLING, IMPERIUM, ASTRA MILITARUM, HARDBIT",
+    "footerRussian": "РАТЛИНГ (RATLING), ИМПЕРИУМ (IMPERIUM), АСТРА МИЛИТАРУМ (ASTRA MILITARUM), ГОЛОВОРЕЗ (HARDBIT)",
+    "verifiedAgainstPixels": true
+  },
+  "84927e211c28fe89": {
+    "kind": "card",
+    "titleEnglish": "Ratling Fixer",
+    "titleRussian": "Ратлинг-фиксёр (Ratling Fixer)",
+    "categoryEnglish": "RATLINGS · OPERATIVE · LEADER · FIXER",
+    "categoryRussian": "РАТЛИНГИ (RATLINGS) · ОПЕРАТИВНИК · ЛИДЕР (LEADER) · ФИКСЁР (FIXER)",
+    "stats": {
+      "APL": 2,
+      "Move": "5\"",
+      "Save": "5+",
+      "Wounds": 7
+    },
+    "weapons": [
+      {
+        "type": "R",
+        "english": "Battle rifle",
+        "russian": "Боевая винтовка (Battle rifle)",
+        "atk": 4,
+        "hit": "2+",
+        "dmg": "3/4",
+        "wrEnglish": "",
+        "wrRussian": ""
+      },
+      {
+        "type": "R",
+        "english": "Sniper rifle (mobile)",
+        "russian": "Снайперская винтовка (на ходу)",
+        "atk": 4,
+        "hit": "3+",
+        "dmg": "3/4",
+        "wrEnglish": "",
+        "wrRussian": ""
+      },
+      {
+        "type": "R",
+        "english": "Sniper rifle (stationary)",
+        "russian": "Снайперская винтовка (неподвижно)",
+        "atk": 4,
+        "hit": "2+",
+        "dmg": "3/3",
+        "wrEnglish": "Devastating 3, Heavy",
+        "wrRussian": "разрушительное 3 (Devastating 3), тяжёлое (Heavy)"
+      },
+      {
+        "type": "M",
+        "english": "Fists",
+        "russian": "Кулаки (Fists)",
+        "atk": 3,
+        "hit": "5+",
+        "dmg": "1/2",
+        "wrEnglish": "",
+        "wrRussian": ""
+      }
+    ],
+    "blocks": [
+      {
+        "type": "paragraph",
+        "headingEnglish": "Munitorum Contacts",
+        "headingRussian": "Связи в муниторуме (Munitorum Contacts)",
+        "english": "You can select one additional equipment option.",
+        "russian": "Вы можете выбрать ещё один вариант снаряжения."
+      },
+      {
+        "type": "paragraph",
+        "headingEnglish": "Target Designation · Strategic Gambit",
+        "headingRussian": "Назначить цель · стратегический гамбит (Target Designation · Strategic Gambit)",
+        "english": "Select one enemy operative visible to this operative. Until the end of the turning point, whenever a friendly RATLING operative is shooting that enemy operative with a rifle, that weapon has the Lethal 5+ weapon rule.",
+        "russian": "Выберите вражеского оперативника, видимого этому оперативнику. До конца раунда, когда дружественный оперативник-ратлинг (RATLING) стреляет по нему из винтовки, это оружие получает свойство «Смертоносное 5+» (Lethal 5+)."
+      }
+    ],
+    "footerEnglish": "RATLING, IMPERIUM, ASTRA MILITARUM, LEADER, FIXER",
+    "footerRussian": "РАТЛИНГ (RATLING), ИМПЕРИУМ (IMPERIUM), АСТРА МИЛИТАРУМ (ASTRA MILITARUM), ЛИДЕР (LEADER), ФИКСЁР (FIXER)",
+    "verifiedAgainstPixels": true
+  },
+  "9ace67a24586b09f": {
+    "kind": "card",
+    "titleEnglish": "Ratling Stashmaster",
+    "titleRussian": "Ратлинг-кладовщик (Ratling Stashmaster)",
+    "categoryEnglish": "RATLINGS · OPERATIVE · STASHMASTER",
+    "categoryRussian": "РАТЛИНГИ (RATLINGS) · ОПЕРАТИВНИК · КЛАДОВЩИК (STASHMASTER)",
+    "stats": {
+      "APL": 2,
+      "Move": "5\"",
+      "Save": "5+",
+      "Wounds": 6
+    },
+    "weapons": [
+      {
+        "type": "R",
+        "english": "Sniper rifle (mobile)",
+        "russian": "Снайперская винтовка (на ходу)",
+        "atk": 4,
+        "hit": "4+",
+        "dmg": "3/4",
+        "wrEnglish": "",
+        "wrRussian": ""
+      },
+      {
+        "type": "R",
+        "english": "Sniper rifle (stationary)",
+        "russian": "Снайперская винтовка (неподвижно)",
+        "atk": 4,
+        "hit": "3+",
+        "dmg": "3/3",
+        "wrEnglish": "Devastating 3, Heavy",
+        "wrRussian": "разрушительное 3 (Devastating 3), тяжёлое (Heavy)"
+      },
+      {
+        "type": "M",
+        "english": "Fists",
+        "russian": "Кулаки (Fists)",
+        "atk": 3,
+        "hit": "5+",
+        "dmg": "1/2",
+        "wrEnglish": "",
+        "wrRussian": ""
+      }
+    ],
+    "blocks": [
+      {
+        "type": "paragraph",
+        "headingEnglish": "Light-fingered",
+        "headingRussian": "Ловкие пальцы (Light-fingered)",
+        "english": "Once during each of this operative’s activations, it can perform the Pick Up Marker, Place Marker or a mission action for 1 less AP.",
+        "russian": "Один раз за каждую свою активацию этот оперативник может выполнить действие «Поднять маркер» (Pick Up Marker), «Разместить маркер» (Place Marker) или действие миссии на 1 ОД дешевле."
+      },
+      {
+        "type": "paragraph",
+        "headingEnglish": "Well Stocked",
+        "headingRussian": "Запасливый (Well Stocked)",
+        "english": "If you select an Ammo Cache from universal equipment, you can set up an additional Ammo Cache marker.",
+        "russian": "Если вы выбрали универсальное снаряжение «Запас боеприпасов» (Ammo Cache), вы можете установить дополнительный маркер Ammo Cache."
+      }
+    ],
+    "footerEnglish": "RATLING, IMPERIUM, ASTRA MILITARUM, STASHMASTER",
+    "footerRussian": "РАТЛИНГ (RATLING), ИМПЕРИУМ (IMPERIUM), АСТРА МИЛИТАРУМ (ASTRA MILITARUM), КЛАДОВЩИК (STASHMASTER)",
+    "verifiedAgainstPixels": true
+  },
+  "310293891c8454f5": {
+    "kind": "card",
+    "titleEnglish": "Ratling Vox-Thief",
+    "titleRussian": "Ратлинг-похититель связи (Ratling Vox-Thief)",
+    "categoryEnglish": "RATLINGS · OPERATIVE · VOX-THIEF",
+    "categoryRussian": "РАТЛИНГИ (RATLINGS) · ОПЕРАТИВНИК · ПОХИТИТЕЛЬ СВЯЗИ (VOX-THIEF)",
+    "stats": {
+      "APL": 2,
+      "Move": "5\"",
+      "Save": "5+",
+      "Wounds": 6
+    },
+    "weapons": [
+      {
+        "type": "R",
+        "english": "Sniper rifle (mobile)",
+        "russian": "Снайперская винтовка (на ходу)",
+        "atk": 4,
+        "hit": "4+",
+        "dmg": "3/4",
+        "wrEnglish": "",
+        "wrRussian": ""
+      },
+      {
+        "type": "R",
+        "english": "Sniper rifle (stationary)",
+        "russian": "Снайперская винтовка (неподвижно)",
+        "atk": 4,
+        "hit": "3+",
+        "dmg": "3/3",
+        "wrEnglish": "Devastating 3, Heavy",
+        "wrRussian": "разрушительное 3 (Devastating 3), тяжёлое (Heavy)"
+      },
+      {
+        "type": "M",
+        "english": "Fists",
+        "russian": "Кулаки (Fists)",
+        "atk": 3,
+        "hit": "5+",
+        "dmg": "1/2",
+        "wrEnglish": "",
+        "wrRussian": ""
+      }
+    ],
+    "blocks": [
+      {
+        "type": "paragraph",
+        "headingEnglish": "Intercept Communications · 1AP",
+        "headingRussian": "Перехват связи · 1 ОД (Intercept Communications · 1 AP)",
+        "english": "SUPPORT. Select one other friendly RATLING operative visible to and within 6\" of this operative. Until the end of its next activation, add 1 to that operative’s APL stat. This operative cannot perform this action while within control range of an enemy operative.",
+        "russian": "ПОДДЕРЖКА (SUPPORT). Выберите другого дружественного оперативника-ратлинга (RATLING), видимого этому оперативнику и находящегося в пределах 6 дюймов от него. До конца следующей активации выбранного союзника увеличьте его лимит очков действий (APL) на 1. Этот оперативник не может выполнять действие в дистанции контроля врага."
+      }
+    ],
+    "footerEnglish": "RATLING, IMPERIUM, ASTRA MILITARUM, VOX-THIEF",
+    "footerRussian": "РАТЛИНГ (RATLING), ИМПЕРИУМ (IMPERIUM), АСТРА МИЛИТАРУМ (ASTRA MILITARUM), ПОХИТИТЕЛЬ СВЯЗИ (VOX-THIEF)",
+    "verifiedAgainstPixels": true
+  },
+  "fd5cbd1d9a354a43": {
+    "kind": "card",
+    "titleEnglish": "Ratling Battlemutt",
+    "titleRussian": "Боевой пёс ратлингов (Ratling Battlemutt)",
+    "categoryEnglish": "RATLINGS · OPERATIVE · BATTLEMUTT",
+    "categoryRussian": "РАТЛИНГИ (RATLINGS) · ОПЕРАТИВНИК · БОЕВОЙ ПЁС (BATTLEMUTT)",
+    "stats": {
+      "APL": 2,
+      "Move": "6\"",
+      "Save": "5+",
+      "Wounds": 4
+    },
+    "weapons": [
+      {
+        "type": "M",
+        "english": "Bite",
+        "russian": "Укус (Bite)",
+        "atk": 4,
+        "hit": "3+",
+        "dmg": "2/4",
+        "wrEnglish": "",
+        "wrRussian": ""
+      }
+    ],
+    "blocks": [
+      {
+        "type": "paragraph",
+        "headingEnglish": "Early Warning",
+        "headingRussian": "Раннее предупреждение (Early Warning)",
+        "english": "Once per turning point, after an enemy operative performs an action in which it moves, you can interrupt that activation/counteraction to use this rule. If you do, each friendly RATLING operative (excluding OGRYN and BULLGRYN) within 6\" of this operative and within 2\" of that enemy operative can immediately perform a free Dash or Fall Back action in an order of your choice (choose separately for each), but it cannot move more than 3\" during that action. In either case, each one cannot end that move within 3\" of an enemy operative unless it’s not visible to every enemy operative when it ends that move (if this isn’t possible for an operative, it cannot move).",
+        "russian": "Один раз за раунд, после того как вражеский оперативник выполнит действие с перемещением, вы можете прервать его активацию или контрдействие и применить это правило. Каждый дружественный оперативник-ратлинг (RATLING), кроме огрина (OGRYN) и булгрина (BULLGRYN), находящийся в пределах 6 дюймов от этого боевого пса и в пределах 2 дюймов от переместившегося врага, может немедленно бесплатно выполнить действие «Рывок» (Dash) или «Отступление» (Fall Back); порядок выберите сами, отдельно для каждого оперативника. За это действие он не может переместиться более чем на 3 дюйма. В обоих случаях оперативник не может закончить перемещение в пределах 3 дюймов от врага, если только в конце перемещения не будет видим ни одному вражескому оперативнику. Если это условие невозможно выполнить, оперативник не перемещается."
+      },
+      {
+        "type": "paragraph",
+        "headingEnglish": "Beast",
+        "headingRussian": "Зверь (Beast)",
+        "english": "This operative cannot perform any actions other than Charge, Dash, Fall Back, Fight and Reposition. It cannot use any weapons that aren’t on its datacard.",
+        "russian": "Этот оперативник может выполнять только действия «Атака» (Charge), «Рывок» (Dash), «Отступление» (Fall Back), «Ближний бой» (Fight) и «Перемещение» (Reposition). Он не может использовать оружие, не указанное на его карточке."
+      }
+    ],
+    "footerEnglish": "RATLING, IMPERIUM, ASTRA MILITARUM, BATTLEMUTT",
+    "footerRussian": "РАТЛИНГ (RATLING), ИМПЕРИУМ (IMPERIUM), АСТРА МИЛИТАРУМ (ASTRA MILITARUM), БОЕВОЙ ПЁС (BATTLEMUTT)",
+    "verifiedAgainstPixels": true
+  },
+  "9a54c607de22d818": {
+    "kind": "card",
+    "titleEnglish": "Ratling Sniper",
+    "titleRussian": "Ратлинг-снайпер (Ratling Sniper)",
+    "categoryEnglish": "RATLINGS · OPERATIVE · SNIPER",
+    "categoryRussian": "РАТЛИНГИ (RATLINGS) · ОПЕРАТИВНИК · СНАЙПЕР (SNIPER)",
+    "stats": {
+      "APL": 2,
+      "Move": "5\"",
+      "Save": "5+",
+      "Wounds": 6
+    },
+    "weapons": [
+      {
+        "type": "R",
+        "english": "Sniper rifle (mobile)",
+        "russian": "Снайперская винтовка (на ходу)",
+        "atk": 4,
+        "hit": "3+",
+        "dmg": "3/4",
+        "wrEnglish": "",
+        "wrRussian": ""
+      },
+      {
+        "type": "R",
+        "english": "Sniper rifle (stationary)",
+        "russian": "Снайперская винтовка (неподвижно)",
+        "atk": 4,
+        "hit": "2+",
+        "dmg": "3/3",
+        "wrEnglish": "Devastating 3, Heavy",
+        "wrRussian": "разрушительное 3 (Devastating 3), тяжёлое (Heavy)"
+      },
+      {
+        "type": "M",
+        "english": "Fists",
+        "russian": "Кулаки (Fists)",
+        "atk": 3,
+        "hit": "5+",
+        "dmg": "1/2",
+        "wrEnglish": "",
+        "wrRussian": ""
+      }
+    ],
+    "blocks": [],
+    "footerEnglish": "RATLING, IMPERIUM, ASTRA MILITARUM, SNIPER",
+    "footerRussian": "РАТЛИНГ (RATLING), ИМПЕРИУМ (IMPERIUM), АСТРА МИЛИТАРУМ (ASTRA MILITARUM), СНАЙПЕР (SNIPER)",
+    "verifiedAgainstPixels": true
+  },
+  "ffbac131f8dce06f": {
+    "kind": "card",
+    "titleEnglish": "Ratling Spotter",
+    "titleRussian": "Ратлинг-наблюдатель (Ratling Spotter)",
+    "categoryEnglish": "RATLINGS · OPERATIVE · SPOTTER",
+    "categoryRussian": "РАТЛИНГИ (RATLINGS) · ОПЕРАТИВНИК · НАБЛЮДАТЕЛЬ (SPOTTER)",
+    "stats": {
+      "APL": 2,
+      "Move": "5\"",
+      "Save": "5+",
+      "Wounds": 6
+    },
+    "weapons": [
+      {
+        "type": "R",
+        "english": "Sniper rifle (mobile)",
+        "russian": "Снайперская винтовка (на ходу)",
+        "atk": 4,
+        "hit": "4+",
+        "dmg": "3/4",
+        "wrEnglish": "",
+        "wrRussian": ""
+      },
+      {
+        "type": "R",
+        "english": "Sniper rifle (stationary)",
+        "russian": "Снайперская винтовка (неподвижно)",
+        "atk": 4,
+        "hit": "3+",
+        "dmg": "3/3",
+        "wrEnglish": "Devastating 3, Heavy",
+        "wrRussian": "разрушительное 3 (Devastating 3), тяжёлое (Heavy)"
+      },
+      {
+        "type": "M",
+        "english": "Fists",
+        "russian": "Кулаки (Fists)",
+        "atk": 3,
+        "hit": "5+",
+        "dmg": "1/2",
+        "wrEnglish": "",
+        "wrRussian": ""
+      }
+    ],
+    "blocks": [
+      {
+        "type": "paragraph",
+        "headingEnglish": "Spot · 1AP",
+        "headingRussian": "Навести · 1 ОД (Spot · 1 AP)",
+        "english": "SUPPORT. Select one enemy operative visible to this operative. Once during this turning point, when a friendly RATLING operative within 3\" of this operative is shooting that enemy operative, you can use this effect. If you do: that friendly operative’s ranged weapons have the Seek Light weapon rule; that enemy operative cannot be obscured. This operative cannot perform this action while within control range of an enemy operative.",
+        "russian": "ПОДДЕРЖКА (SUPPORT). Выберите вражеского оперативника, видимого этому наблюдателю. Один раз за раунд, когда дружественный оперативник-ратлинг (RATLING) в пределах 3 дюймов от наблюдателя стреляет по выбранному врагу, можно применить этот эффект: оружие дальнего боя дружественного оперативника получает свойство «Обнаружение в свете» (Seek Light), а враг не может считаться заслонённым (Obscured). Наблюдатель не может выполнять это действие в дистанции контроля врага."
+      }
+    ],
+    "footerEnglish": "RATLING, IMPERIUM, ASTRA MILITARUM, SPOTTER",
+    "footerRussian": "РАТЛИНГ (RATLING), ИМПЕРИУМ (IMPERIUM), АСТРА МИЛИТАРУМ (ASTRA MILITARUM), НАБЛЮДАТЕЛЬ (SPOTTER)",
+    "verifiedAgainstPixels": true
+  },
+  "119a0d81c7da2a05": {
+    "kind": "card",
+    "titleEnglish": "Bullgryn",
+    "titleRussian": "Булгрин (Bullgryn)",
+    "categoryEnglish": "RATLINGS · OPERATIVE · BULLGRYN",
+    "categoryRussian": "РАТЛИНГИ (RATLINGS) · ОПЕРАТИВНИК · БУЛГРИН (BULLGRYN)",
+    "stats": {
+      "APL": 2,
+      "Move": "6\"",
+      "Save": "4+",
+      "Wounds": 16
+    },
+    "weapons": [
+      {
+        "type": "R",
+        "english": "Grenadier gauntlet",
+        "russian": "Гренадёрская перчатка (Grenadier gauntlet)",
+        "atk": 4,
+        "hit": "4+",
+        "dmg": "3/5",
+        "wrEnglish": "Blast 2\"",
+        "wrRussian": "взрыв 2 дюйма (Blast 2\")"
+      },
+      {
+        "type": "M",
+        "english": "Power maul",
+        "russian": "Силовая булава (Power maul)",
+        "atk": 4,
+        "hit": "3+",
+        "dmg": "4/6",
+        "wrEnglish": "Shock",
+        "wrRussian": "потрясение (Shock)"
+      },
+      {
+        "type": "M",
+        "english": "Brute shield",
+        "russian": "Щит громилы (Brute shield)",
+        "atk": 4,
+        "hit": "3+",
+        "dmg": "3/4",
+        "wrEnglish": "",
+        "wrRussian": ""
+      },
+      {
+        "type": "M",
+        "english": "Slabshield",
+        "russian": "Плитный щит (Slabshield)",
+        "atk": 4,
+        "hit": "4+",
+        "dmg": "3/4",
+        "wrEnglish": "",
+        "wrRussian": ""
+      }
+    ],
+    "blocks": [
+      {
+        "type": "paragraph",
+        "headingEnglish": "Shield",
+        "headingRussian": "Щит (Shield)",
+        "english": "If this operative has a slabshield, it has a 3+ Save stat; if it has a brute shield, whenever it’s fighting or retaliating, each of your blocks can be allocated to block two unresolved successes (instead of one).",
+        "russian": "Если у этого оперативника плитный щит (Slabshield), его характеристика спасброска (Save) равна 3+. Если у него щит громилы (Brute shield), когда он сражается в ближнем бою или отвечает ударом, каждый ваш блок может нейтрализовать два ещё не нейтрализованных успеха противника вместо одного."
+      },
+      {
+        "type": "paragraph",
+        "headingEnglish": "Brute",
+        "headingRussian": "Громила (Brute)",
+        "english": "Whenever your opponent is selecting a valid target, if this operative has a Conceal order, it cannot use Light terrain for cover. While this can allow this operative to be targeted (assuming it’s visible), it doesn’t remove its cover save (if any).",
+        "russian": "Когда противник выбирает допустимую цель, этот оперативник с приказом «Скрытность» (Conceal) не может использовать лёгкий террейн (Light terrain) как укрытие. Поэтому его можно будет выбрать целью, если он видим, но он всё ещё получает положенный ему кубик защиты за укрытие."
+      },
+      {
+        "type": "paragraph",
+        "headingEnglish": "Slow-witted",
+        "headingRussian": "Тугодум (Slow-witted)",
+        "english": "You must spend 1 additional AP for this operative to perform the Pick Up Marker and mission actions (excluding Operate Hatch).",
+        "russian": "Чтобы этот оперативник выполнил действие «Поднять маркер» (Pick Up Marker) или действие миссии (кроме «Управление люком» (Operate Hatch)), потратьте дополнительно 1 ОД."
+      }
+    ],
+    "footerEnglish": "RATLING, IMPERIUM, ASTRA MILITARUM, BULLGRYN",
+    "footerRussian": "РАТЛИНГ (RATLING), ИМПЕРИУМ (IMPERIUM), АСТРА МИЛИТАРУМ (ASTRA MILITARUM), БУЛГРИН (BULLGRYN)",
+    "verifiedAgainstPixels": true
+  },
+  "af3660a65b407615": {
+    "kind": "card",
+    "titleEnglish": "Ratling Sneak",
+    "titleRussian": "Ратлинг-скрытник (Ratling Sneak)",
+    "categoryEnglish": "RATLINGS · OPERATIVE · SNEAK",
+    "categoryRussian": "РАТЛИНГИ (RATLINGS) · ОПЕРАТИВНИК · СКРЫТНИК (SNEAK)",
+    "stats": {
+      "APL": 2,
+      "Move": "5\"",
+      "Save": "5+",
+      "Wounds": 6
+    },
+    "weapons": [
+      {
+        "type": "R",
+        "english": "Suppressed sniper rifle (mobile)",
+        "russian": "Снайперская винтовка с глушителем (Suppressed sniper rifle; на ходу)",
+        "atk": 4,
+        "hit": "4+",
+        "dmg": "3/4",
+        "wrEnglish": "Silent",
+        "wrRussian": "бесшумное (Silent)"
+      },
+      {
+        "type": "R",
+        "english": "Suppressed sniper rifle (stationary)",
+        "russian": "Снайперская винтовка с глушителем (Suppressed sniper rifle; неподвижно)",
+        "atk": 4,
+        "hit": "3+",
+        "dmg": "3/3",
+        "wrEnglish": "Devastating 1, Heavy, Silent",
+        "wrRussian": "разрушительное 1 (Devastating 1), тяжёлое (Heavy), бесшумное (Silent)"
+      },
+      {
+        "type": "M",
+        "english": "Fists",
+        "russian": "Кулаки (Fists)",
+        "atk": 3,
+        "hit": "5+",
+        "dmg": "1/2",
+        "wrEnglish": "",
+        "wrRussian": ""
+      }
+    ],
+    "blocks": [
+      {
+        "type": "paragraph",
+        "headingEnglish": "Optics · 1AP",
+        "headingRussian": "Оптика · 1 ОД (Optics · 1 AP)",
+        "english": "Until the start of this operative’s next activation, whenever it’s shooting, enemy operatives cannot be obscured. This operative cannot perform this action while within control range of an enemy operative.",
+        "russian": "До начала следующей активации этого оперативника, когда он стреляет, вражеские оперативники не могут считаться заслонёнными (Obscured). Оперативник не может выполнять это действие в дистанции контроля врага."
+      },
+      {
+        "type": "paragraph",
+        "headingEnglish": "Evade",
+        "headingRussian": "Уклонение (Evade)",
+        "english": "Once per turning point, after an enemy operative performs an action, you can interrupt that activation/counteraction to use this rule. If you do, this operative can immediately perform a free Dash action. Note this operative cannot use the Scarper faction rule (it has this rule instead).",
+        "russian": "Один раз за раунд, после того как вражеский оперативник выполнит действие, вы можете прервать его активацию или контрдействие и применить это правило. Этот оперативник может немедленно бесплатно выполнить действие «Рывок» (Dash). Он не может пользоваться правилом фракции «Шмыг» (Scarper): вместо него у него есть это правило."
+      }
+    ],
+    "footerEnglish": "RATLING, IMPERIUM, ASTRA MILITARUM, SNEAK",
+    "footerRussian": "РАТЛИНГ (RATLING), ИМПЕРИУМ (IMPERIUM), АСТРА МИЛИТАРУМ (ASTRA MILITARUM), СКРЫТНИК (SNEAK)",
+    "verifiedAgainstPixels": true
+  }
+}

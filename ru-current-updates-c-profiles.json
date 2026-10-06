@@ -1,0 +1,425 @@
+[
+  {
+    "id": "fc0740e5d8275174",
+    "expectedTitle": "ARBITES GUNNER",
+    "team": "Exaction Squad",
+    "source": {
+      "officialPdf": "https://assets.warhammer-community.com/eng_17-06_kill_team_team_rules_exaction_squad_online_rules-w6tqairoed-qhpndqu8fq.pdf",
+      "date": "2026-06-17",
+      "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/exaction-squad/",
+      "pdfPages": [
+        3,
+        11
+      ],
+      "checkedOn": "2026-10-05"
+    },
+    "weapons": [
+      {
+        "name": "Grenade launcher",
+        "atk": 5,
+        "dmg": "4/5"
+      }
+    ]
+  },
+  {
+    "id": "927df53a0be9b3a0",
+    "expectedTitle": "Marksman Pathfinder",
+    "team": "Pathfinders",
+    "source": {
+      "officialPdf": "https://assets.warhammer-community.com/eng_pathfinders_online_rules-dj9snutji1-zk16jiuxxe.pdf",
+      "date": "2026-08-26",
+      "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/pathfinders/",
+      "pdfPages": [
+        2,
+        12
+      ],
+      "checkedOn": "2026-10-05"
+    },
+    "weapons": [
+      {
+        "name": "Marksman rail rifle (dart round)",
+        "dmg": "3/3"
+      }
+    ]
+  },
+  {
+    "id": "d07cb513507f922c",
+    "expectedTitle": "Aquilon Precursor",
+    "team": "Tempestus Aquilons",
+    "source": {
+      "officialPdf": "https://assets.warhammer-community.com/eng_tempestus_aquilons_online_rules-ulwuv6xiox-urjoo7nn95.pdf",
+      "date": "2026-08-26",
+      "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/tempestus-aquilons/",
+      "pdfPages": [
+        2,
+        10
+      ],
+      "checkedOn": "2026-10-05"
+    },
+    "weapons": [
+      {
+        "name": "Tempestus dagger",
+        "wrEnglish": "Ceaseless, Lethal 5+",
+        "wrRussian": "«Непрерывное» (Ceaseless); «Смертоносное 5+» (Lethal 5+)"
+      }
+    ]
+  },
+  {
+    "id": "fe255a760ce9128b",
+    "expectedTitle": "Rubric Marine Gunner",
+    "team": "Warpcoven",
+    "source": {
+      "officialPdf": "https://assets.warhammer-community.com/eng_29-04_kt_teamrules_warpcoven-dlvflmyfdc-tqfq81iy7v.pdf",
+      "date": "2026-04-29",
+      "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/warpcoven/",
+      "pdfPages": [
+        2,
+        10
+      ],
+      "checkedOn": "2026-10-05"
+    },
+    "stats": {
+      "Save": "2+"
+    }
+  },
+  {
+    "id": "510f6e591357288f",
+    "expectedTitle": "Rubric Marine Icon Bearer",
+    "team": "Warpcoven",
+    "source": {
+      "officialPdf": "https://assets.warhammer-community.com/eng_29-04_kt_teamrules_warpcoven-dlvflmyfdc-tqfq81iy7v.pdf",
+      "date": "2026-04-29",
+      "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/warpcoven/",
+      "pdfPages": [
+        2,
+        10
+      ],
+      "checkedOn": "2026-10-05"
+    },
+    "stats": {
+      "Save": "2+"
+    }
+  },
+  {
+    "id": "480bc633059c37b3",
+    "expectedTitle": "Rubric Marine Warrior",
+    "team": "Warpcoven",
+    "source": {
+      "officialPdf": "https://assets.warhammer-community.com/eng_29-04_kt_teamrules_warpcoven-dlvflmyfdc-tqfq81iy7v.pdf",
+      "date": "2026-04-29",
+      "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/warpcoven/",
+      "pdfPages": [
+        2,
+        10
+      ],
+      "checkedOn": "2026-10-05"
+    },
+    "stats": {
+      "Save": "2+"
+    }
+  },
+  {
+    "id": "85ea0fd13c789062",
+    "expectedTitle": "Sorcerer of Destiny",
+    "team": "Warpcoven",
+    "source": {
+      "officialPdf": "https://assets.warhammer-community.com/eng_29-04_kt_teamrules_warpcoven-dlvflmyfdc-tqfq81iy7v.pdf",
+      "date": "2026-04-29",
+      "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/warpcoven/",
+      "pdfPages": [
+        1,
+        5,
+        10,
+        11
+      ],
+      "checkedOn": "2026-10-05"
+    },
+    "stats": {
+      "Wounds": 15
+    }
+  },
+  {
+    "id": "60f836ae85fdf353",
+    "expectedTitle": "Sorcerer of Warpfire",
+    "team": "Warpcoven",
+    "source": {
+      "officialPdf": "https://assets.warhammer-community.com/eng_29-04_kt_teamrules_warpcoven-dlvflmyfdc-tqfq81iy7v.pdf",
+      "date": "2026-04-29",
+      "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/warpcoven/",
+      "pdfPages": [
+        1,
+        5,
+        10,
+        11
+      ],
+      "checkedOn": "2026-10-05"
+    },
+    "stats": {
+      "Wounds": 15
+    }
+  },
+  {
+    "id": "3e1bf23d23194c28",
+    "expectedTitle": "Sorcerer of Tempyrion",
+    "team": "Warpcoven",
+    "source": {
+      "officialPdf": "https://assets.warhammer-community.com/eng_29-04_kt_teamrules_warpcoven-dlvflmyfdc-tqfq81iy7v.pdf",
+      "date": "2026-04-29",
+      "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/warpcoven/",
+      "pdfPages": [
+        1,
+        5,
+        10,
+        11
+      ],
+      "checkedOn": "2026-10-05"
+    },
+    "stats": {
+      "Wounds": 15
+    }
+  },
+  {
+    "id": "afa286896ab497d6",
+    "expectedTitle": "Sorcerer of Destiny · Actions",
+    "team": "Warpcoven",
+    "source": {
+      "officialPdf": "https://assets.warhammer-community.com/eng_29-04_kt_teamrules_warpcoven-dlvflmyfdc-tqfq81iy7v.pdf",
+      "date": "2026-04-29",
+      "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/warpcoven/",
+      "pdfPages": [
+        1,
+        5,
+        10,
+        11
+      ],
+      "checkedOn": "2026-10-05"
+    },
+    "stats": {
+      "Wounds": 15
+    }
+  },
+  {
+    "id": "d7d15dde52f6966a",
+    "expectedTitle": "Sorcerer of Warpfire · Actions",
+    "team": "Warpcoven",
+    "source": {
+      "officialPdf": "https://assets.warhammer-community.com/eng_29-04_kt_teamrules_warpcoven-dlvflmyfdc-tqfq81iy7v.pdf",
+      "date": "2026-04-29",
+      "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/warpcoven/",
+      "pdfPages": [
+        1,
+        5,
+        10,
+        11
+      ],
+      "checkedOn": "2026-10-05"
+    },
+    "stats": {
+      "Wounds": 15
+    }
+  },
+  {
+    "id": "f2aa022bed69db95",
+    "expectedTitle": "Sorcerer of Tempyrion · Actions",
+    "team": "Warpcoven",
+    "source": {
+      "officialPdf": "https://assets.warhammer-community.com/eng_29-04_kt_teamrules_warpcoven-dlvflmyfdc-tqfq81iy7v.pdf",
+      "date": "2026-04-29",
+      "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/warpcoven/",
+      "pdfPages": [
+        1,
+        5,
+        10,
+        11
+      ],
+      "checkedOn": "2026-10-05"
+    },
+    "stats": {
+      "Wounds": 15
+    }
+  },
+  {
+    "id": "4d091f44f0de7d76",
+    "expectedTitle": "Ratling Bomber",
+    "team": "Ratlings",
+    "source": {
+      "officialPdf": "https://assets.warhammer-community.com/eng_29-04_kt_teamrules_ratlings-ulbqsnxhjb-jmv6tjlrsi.pdf",
+      "date": "2026-04-29",
+      "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/ratlings/",
+      "pdfPages": [
+        9
+      ],
+      "checkedOn": "2026-10-05"
+    },
+    "weapons": [
+      {
+        "name": "Sniper rifle (mobile)",
+        "hit": "3+"
+      }
+    ]
+  },
+  {
+    "id": "ffbac131f8dce06f",
+    "expectedTitle": "Ratling Spotter",
+    "team": "Ratlings",
+    "source": {
+      "officialPdf": "https://assets.warhammer-community.com/eng_29-04_kt_teamrules_ratlings-ulbqsnxhjb-jmv6tjlrsi.pdf",
+      "date": "2026-04-29",
+      "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/ratlings/",
+      "pdfPages": [
+        9
+      ],
+      "checkedOn": "2026-10-05"
+    },
+    "weapons": [
+      {
+        "name": "Sniper rifle (mobile)",
+        "hit": "3+"
+      }
+    ]
+  },
+  {
+    "id": "9ace67a24586b09f",
+    "expectedTitle": "Ratling Stashmaster",
+    "team": "Ratlings",
+    "source": {
+      "officialPdf": "https://assets.warhammer-community.com/eng_29-04_kt_teamrules_ratlings-ulbqsnxhjb-jmv6tjlrsi.pdf",
+      "date": "2026-04-29",
+      "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/ratlings/",
+      "pdfPages": [
+        9
+      ],
+      "checkedOn": "2026-10-05"
+    },
+    "weapons": [
+      {
+        "name": "Sniper rifle (mobile)",
+        "hit": "3+"
+      }
+    ]
+  },
+  {
+    "id": "310293891c8454f5",
+    "expectedTitle": "Ratling Vox-Thief",
+    "team": "Ratlings",
+    "source": {
+      "officialPdf": "https://assets.warhammer-community.com/eng_29-04_kt_teamrules_ratlings-ulbqsnxhjb-jmv6tjlrsi.pdf",
+      "date": "2026-04-29",
+      "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/ratlings/",
+      "pdfPages": [
+        9
+      ],
+      "checkedOn": "2026-10-05"
+    },
+    "weapons": [
+      {
+        "name": "Sniper rifle (mobile)",
+        "hit": "3+"
+      }
+    ]
+  },
+  {
+    "id": "d18826f479cb53f3",
+    "expectedTitle": "Ratling Raider",
+    "team": "Ratlings",
+    "source": {
+      "officialPdf": "https://assets.warhammer-community.com/eng_29-04_kt_teamrules_ratlings-ulbqsnxhjb-jmv6tjlrsi.pdf",
+      "date": "2026-04-29",
+      "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/ratlings/",
+      "pdfPages": [
+        9
+      ],
+      "checkedOn": "2026-10-05"
+    },
+    "weapons": [
+      {
+        "name": "Suppressed sniper rifle (mobile)",
+        "hit": "3+"
+      }
+    ]
+  },
+  {
+    "id": "af3660a65b407615",
+    "expectedTitle": "Ratling Sneak",
+    "team": "Ratlings",
+    "source": {
+      "officialPdf": "https://assets.warhammer-community.com/eng_29-04_kt_teamrules_ratlings-ulbqsnxhjb-jmv6tjlrsi.pdf",
+      "date": "2026-04-29",
+      "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/ratlings/",
+      "pdfPages": [
+        9
+      ],
+      "checkedOn": "2026-10-05"
+    },
+    "weapons": [
+      {
+        "name": "Suppressed sniper rifle (mobile)",
+        "hit": "3+"
+      }
+    ]
+  },
+  {
+    "id": "d18826f479cb53f3",
+    "expectedTitle": "Ratling Raider",
+    "team": "Ratlings",
+    "source": {
+      "officialPdf": "https://assets.warhammer-community.com/eng_29-04_kt_teamrules_ratlings-ulbqsnxhjb-jmv6tjlrsi.pdf",
+      "date": "2026-04-29",
+      "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/ratlings/",
+      "pdfPages": [
+        10
+      ],
+      "checkedOn": "2026-10-05"
+    },
+    "weapons": [
+      {
+        "name": "Suppressed sniper rifle (stationary)",
+        "wrEnglish": "Devastating 2, Heavy, Silent",
+        "wrRussian": "«Разрушительное 2» (Devastating 2); «Тяжёлое» (Heavy); «Бесшумное» (Silent)"
+      }
+    ]
+  },
+  {
+    "id": "af3660a65b407615",
+    "expectedTitle": "Ratling Sneak",
+    "team": "Ratlings",
+    "source": {
+      "officialPdf": "https://assets.warhammer-community.com/eng_29-04_kt_teamrules_ratlings-ulbqsnxhjb-jmv6tjlrsi.pdf",
+      "date": "2026-04-29",
+      "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/ratlings/",
+      "pdfPages": [
+        10
+      ],
+      "checkedOn": "2026-10-05"
+    },
+    "weapons": [
+      {
+        "name": "Suppressed sniper rifle (stationary)",
+        "wrEnglish": "Devastating 2, Heavy, Silent",
+        "wrRussian": "«Разрушительное 2» (Devastating 2); «Тяжёлое» (Heavy); «Бесшумное» (Silent)"
+      }
+    ]
+  },
+  {
+    "id": "c6b0f537006c5a56",
+    "expectedTitle": "Kasrkin Sergeant",
+    "team": "Kasrkin",
+    "source": {
+      "officialPdf": "https://assets.warhammer-community.com/eng_29-04_kt_teamrules_kasrkin-9s2gsy4iq7-hexyjwjqrx.pdf",
+      "date": "2026-04-29",
+      "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/kasrkin/",
+      "pdfPages": [
+        1,
+        11
+      ],
+      "checkedOn": "2026-10-05"
+    },
+    "weapons": [
+      {
+        "name": "Power weapon",
+        "wrEnglish": "—",
+        "wrRussian": "—"
+      }
+    ]
+  }
+]

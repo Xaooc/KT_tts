@@ -1,0 +1,2151 @@
+[
+  {
+    "id": "1faf32cac6ab4b02",
+    "expectedTitle": "Frenzy",
+    "team": "Fellgor Ravagers",
+    "source": {
+      "officialPdf": "https://assets.warhammer-community.com/eng_fellgor_ravagers_online_rules-98ktzb7tza-d8lud7bdhh.pdf",
+      "date": "2026-08-26",
+      "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/fellgor-ravager/",
+      "checkedOn": "2026-10-05",
+      "evidence": [
+        {
+          "officialPdfPages": [
+            4,
+            8,
+            9
+          ],
+          "note": "p.8 August erratum adds the shooting condition; p.9 previous errata supplies the unique-action and killzone-area wording."
+        },
+        {
+          "wahapediaLines": "125-133",
+          "note": "Current page includes the August shooting condition and previous Frenzy text."
+        }
+      ]
+    },
+    "blocks": [
+      {
+        "heading": "Frenzy",
+        "russian": "Когда дружественный оперативник РАЗОРИТЕЛЕЙ ФЕЛЛГОРА (FELLGOR RAVAGER) без вашего жетона «Безумие» (Frenzy) должен быть выведен из строя во время битвы, он не выводится из строя, а получает один ваш жетон «Безумие». Все оставшиеся кубики атаки сбрасываются (включая ваши, если этот оперативник участвует в ближнем бою или наносит ответный удар). Если у него приказ «Скрытность» (Conceal), замените его на приказ «Бой» (Engage). Пока у дружественного оперативника РАЗОРИТЕЛЕЙ ФЕЛЛГОРА есть ваш жетон «Безумие»: его выводят из строя только в случаях, перечисленных на обороте; у него не может быть приказа «Скрытность»; он считается раненым; он не может выполнять действия «Поднять маркер» (Pick Up Marker) и миссионные действия (кроме «Управлять люком» (Operate Hatch)); он не может выполнять уникальные действия, кроме «Размашистого удара» (Sweeping Blow); при определении контроля над маркерами и областями зоны боя считайте его характеристику APL равной 1. Это правило имеет приоритет над любыми изменениями характеристик.",
+        "english": "Whenever a friendly FELLGOR RAVAGER operative that doesn't have one of your Frenzy tokens would be incapacitated during the battle, it's not incapacitated and it gains one of your Frenzy tokens. All remaining attack dice are discarded (including yours if this operative is fighting or retaliating). If it has a Conceal order, change it to Engage. Whenever a friendly FELLGOR RAVAGER operative has one of your Frenzy tokens: It's only incapacitated as detailed overleaf. It cannot have a Conceal order. It's injured. It cannot perform the Pick Up Marker or mission actions (excluding Operate Hatch). It cannot perform unique actions except Sweeping Blow. For the purpose of determining control of markers and areas of the killzone, treat its APL stat as 1. This takes precedence over any stat changes.",
+        "proseTitles": [
+          "Frenzy"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "31b2ceff3bc7d1a0",
+    "expectedTitle": "Frenzy · reverse",
+    "team": "Fellgor Ravagers",
+    "source": {
+      "officialPdf": "https://assets.warhammer-community.com/eng_fellgor_ravagers_online_rules-98ktzb7tza-d8lud7bdhh.pdf",
+      "date": "2026-08-26",
+      "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/fellgor-ravager/",
+      "checkedOn": "2026-10-05",
+      "evidence": [
+        {
+          "officialPdfPages": [
+            4,
+            8,
+            9
+          ],
+          "note": "p.8 August erratum adds the shooting condition; p.9 previous errata supplies the unique-action and killzone-area wording."
+        },
+        {
+          "wahapediaLines": "125-133",
+          "note": "Current page includes the August shooting condition and previous Frenzy text."
+        }
+      ]
+    },
+    "blocks": [
+      {
+        "heading": "Incapacitation while Frenzied",
+        "russian": "Дружественный оперативник РАЗОРИТЕЛЕЙ ФЕЛЛГОРА (FELLGOR RAVAGER) с вашим жетоном «Безумие» (Frenzy) выводится из строя при любом из следующих условий: заканчивается его активация или контрдействие; вражеский оперативник сражается против него или отвечает на его удар и противник наносит критический удар; вражеский оперативник сражается против него или отвечает на его удар и противник наносит ему второй удар обычным успехом (удары могут быть нанесены в рамках двух разных действий Fight); вражеский оперативник стреляет по нему и наносит критический урон (Critical Dmg); заканчивается битва (разрешите это до любых условий победы, проверяемых в конце битвы). Для начисления победных очков (VP), например за операцию на убийство, и для правил отряда, требующих вывода из строя (например, «Расплата за боль» (Power From Pain) Отродий Архонта (Hand of the Archon) или «Мутация» (Mutation) Культа Хаоса), противник считает оперативника РАЗОРИТЕЛЕЙ ФЕЛЛГОРА выведенным из строя в момент получения им вашего жетона «Безумие», а не в момент, когда он был бы выведен из строя по обычным правилам.\nДополнительное условие: вражеский оперативник выполняет «Стрельбу» (Shoot) по нему и наносит ему обычный урон (Normal Dmg) двумя или более кубиками атаки.",
+        "english": "A friendly FELLGOR RAVAGER operative that has one of your Frenzy tokens is incapacitated when one of the following is met: its activation or counteraction ends; an enemy operative is fighting against or retaliating against it and your opponent strikes with a critical success; an enemy operative is fighting against or retaliating against it and your opponent strikes it for a second time with a normal success (this can be strikes from two different Fight actions); an enemy operative is shooting it and Critical Dmg is inflicted on it; the battle ends (resolve this before any victory conditions that resolve at the end of the battle). Your opponent treats a FELLGOR RAVAGER operative as being incapacitated (instead of when it would be incapacitated normally) when it gains one of your Frenzy tokens for the purposes of scoring VPs (e.g. kill op) and faction rules that require it to be incapacitated (e.g. HAND OF THE ARCHON Power From Pain, CHAOS CULT Mutation, etc.). An additional condition: an enemy operative performs Shoot against it and inflicts Normal Dmg with two or more attack dice.",
+        "proseTitles": [
+          "Incapacitation while Frenzied"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "eb427b5af0060ec8",
+    "expectedTitle": "Ambush",
+    "team": "Fellgor Ravagers",
+    "source": {
+      "officialPdf": "https://assets.warhammer-community.com/eng_fellgor_ravagers_online_rules-98ktzb7tza-d8lud7bdhh.pdf",
+      "date": "2026-08-26",
+      "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/fellgor-ravager/",
+      "checkedOn": "2026-10-05",
+      "evidence": [
+        {
+          "officialPdfPages": [
+            5,
+            9
+          ],
+          "note": "Previous errata p.9 changes the second sentence."
+        },
+        {
+          "wahapediaLines": "143-146",
+          "note": "Wahapedia body still shows only the normal-to-critical option; official PDF erratum is the newer wording."
+        }
+      ]
+    },
+    "blocks": [
+      {
+        "heading": "Rule",
+        "russian": "Когда активируется дружественный оперативник РАЗОРИТЕЛЕЙ ФЕЛЛГОРА (FELLGOR RAVAGER), если его приказ меняется со «Скрытности» (Conceal) на «Бой» (Engage), в эту активацию он действует из засады. Когда такой оперативник участвует в ближнем бою, вы можете сохранить один обычный успех как критический. Оперативник с вашим жетоном «Безумие» (Frenzy) не может действовать из засады.",
+        "english": "Whenever a friendly FELLGOR RAVAGER operative is activated, if its order is changed from Conceal to Engage, it's ambushing for that activation. Whenever a friendly FELLGOR RAVAGER operative that's ambushing is fighting, you can retain one of your normal successes as a critical success instead. Note that an operative that has one of your Frenzy tokens cannot ambush.",
+        "proseTitles": [
+          "Rule"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "3876fe7d4edaadb6",
+    "expectedTitle": "Fellgor Herd-Goad",
+    "team": "Fellgor Ravagers",
+    "source": {
+      "officialPdf": "https://assets.warhammer-community.com/eng_fellgor_ravagers_online_rules-98ktzb7tza-d8lud7bdhh.pdf",
+      "date": "2026-08-26",
+      "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/fellgor-ravager/",
+      "checkedOn": "2026-10-05",
+      "evidence": [
+        {
+          "officialPdfPages": [
+            2,
+            8
+          ],
+          "note": "August erratum p.8 deletes the keyword."
+        }
+      ]
+    },
+    "blocks": [
+      {
+        "heading": "Incite Fury (1AP) · SUPPORT",
+        "russian": "Выберите другого дружественного оперативника РАЗОРИТЕЛЕЙ ФЕЛЛГОРА (FELLGOR RAVAGER), кроме ШАМАНА (SHAMAN) и ЖЕЛЕЗНОРОГА (IRONHORN), который виден этому оперативнику и находится в пределах 3 дюймов от него. До конца следующей активации выбранного оперативника увеличьте его APL на 1. Этот оперативник не может выполнить это действие в дистанции контроля вражеского оперативника.",
+        "english": "Select one other friendly FELLGOR RAVAGER operative (excluding SHAMAN or IRONHORN) visible to and within 3\" of this operative. Until the end of that operative's next activation, add 1 to its APL stat. This operative cannot perform this action while within control range of an enemy operative.",
+        "proseTitles": [
+          "Incite Fury"
+        ],
+        "newHeadingEnglish": "Incite Fury (1AP)",
+        "headingRussian": "Разжечь ярость · 1 AP (Incite Fury)"
+      }
+    ]
+  },
+  {
+    "id": "feafde4bba8f724b",
+    "expectedTitle": "Fellgor Mangler",
+    "team": "Fellgor Ravagers",
+    "source": {
+      "officialPdf": "https://assets.warhammer-community.com/eng_fellgor_ravagers_online_rules-98ktzb7tza-d8lud7bdhh.pdf",
+      "date": "2026-08-26",
+      "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/fellgor-ravager/",
+      "checkedOn": "2026-10-05",
+      "evidence": [
+        {
+          "officialPdfPages": [
+            2,
+            8
+          ],
+          "note": "August erratum p.8 changes the stat."
+        },
+        {
+          "wahapediaLines": "337-340",
+          "note": "Current Datacard lists Hit 4+."
+        }
+      ]
+    },
+    "weapons": [
+      {
+        "name": "Vicious claws",
+        "hit": "4+"
+      }
+    ]
+  },
+  {
+    "id": "958820ee7325ece4",
+    "expectedTitle": "Fellgor Ironhorn",
+    "team": "Fellgor Ravagers",
+    "source": {
+      "officialPdf": "https://assets.warhammer-community.com/eng_fellgor_ravagers_online_rules-98ktzb7tza-d8lud7bdhh.pdf",
+      "date": "2026-08-26",
+      "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/fellgor-ravager/",
+      "checkedOn": "2026-10-05",
+      "evidence": [
+        {
+          "officialPdfPages": [
+            1,
+            9
+          ],
+          "note": "Previous erratum p.9 changes the opening line."
+        },
+        {
+          "wahapediaLines": "218-220",
+          "note": "Current Datacard shows the no-Frenzy-token condition."
+        }
+      ]
+    },
+    "blocks": [
+      {
+        "heading": "Call the Attack · STRATEGIC GAMBIT",
+        "russian": "Выберите одного дружественного оперативника РАЗОРИТЕЛЕЙ ФЕЛЛГОРА (FELLGOR RAVAGER), видимого этому оперативнику и находящегося в пределах 6 дюймов от него. Выбранный оперативник и каждый другой дружественный оперативник РАЗОРИТЕЛЕЙ ФЕЛЛГОРА, видимый выбранному оперативнику и находящийся в пределах 2 дюймов от него, могут немедленно выполнить бесплатное действие «Рывок» (Dash) в выбранном вами порядке.\nЭтот стратегический гамбит можно применять только если у этого оперативника нет вашего жетона «Безумие» (Frenzy).",
+        "english": "Select one friendly FELLGOR RAVAGER operative visible to and within 6\" of this operative. That selected operative, and each other friendly FELLGOR RAVAGER operative visible to and within 2\" of it, can immediately perform a free Dash action in an order of your choice. This STRATEGIC GAMBIT can only be used if this operative does not have one of your Frenzy tokens.",
+        "proseTitles": [
+          "Call the Attack"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "e9c4af5df0622e84",
+    "expectedTitle": "Fellgor Deathknell",
+    "team": "Fellgor Ravagers",
+    "source": {
+      "officialPdf": "https://assets.warhammer-community.com/eng_fellgor_ravagers_online_rules-98ktzb7tza-d8lud7bdhh.pdf",
+      "date": "2026-08-26",
+      "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/fellgor-ravager/",
+      "checkedOn": "2026-10-05",
+      "evidence": [
+        {
+          "officialPdfPages": [
+            1,
+            8
+          ]
+        },
+        {
+          "wahapediaLines": "237-242",
+          "note": "Current body says Save +1 only."
+        }
+      ]
+    },
+    "blocks": [
+      {
+        "heading": "Gong Knell (1AP)",
+        "russian": "До начала следующей активации этого оперативника или до его вывода из строя (в зависимости от того, что наступит раньше), когда любой оперативник стреляет по нему, улучшите его характеристику «Защита» (Save) на 1.",
+        "english": "Until the start of this operative's next activation or until this operative is incapacitated (whichever comes first), whenever an operative is shooting this operative, improve this operative's Save stat by 1.",
+        "proseTitles": [
+          "Gong Knell"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "31b2ceff3bc7d1a0",
+    "expectedTitle": "Frenzy · reverse",
+    "team": "Fellgor Ravagers",
+    "source": {
+      "officialPdf": "https://assets.warhammer-community.com/eng_fellgor_ravagers_online_rules-98ktzb7tza-d8lud7bdhh.pdf",
+      "date": "2026-08-26",
+      "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/fellgor-ravager/",
+      "checkedOn": "2026-10-05",
+      "evidence": [
+        {
+          "officialPdfPages": [
+            8
+          ],
+          "note": "Rules Commentary August ’26."
+        }
+      ]
+    },
+    "blocks": [
+      {
+        "heading": "Rules Commentary",
+        "russian": "Критический успех с DMG 0 не может вывести из строя оперативника с жетоном «Безумие» (Frenzy): критический урон должен быть нанесён.",
+        "english": "A critical success with Critical Dmg 0 cannot incapacitate a Frenzied operative.",
+        "proseTitles": [
+          "Rules Commentary"
+        ],
+        "append": true,
+        "headingRussian": "Разъяснение правил (Rules Commentary)"
+      }
+    ]
+  },
+  {
+    "id": "008a2b364f7e3c33",
+    "expectedTitle": "Goremonger Aspirant",
+    "team": "Goremongers",
+    "source": {
+      "officialPdf": "https://assets.warhammer-community.com/eng_goremongers_online_rules-9ba5skdxij-r0u7lafcas.pdf",
+      "date": "2026-08-26",
+      "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/goremonger/",
+      "checkedOn": "2026-10-05",
+      "evidence": [
+        {
+          "officialPdfPages": [
+            1,
+            10,
+            11
+          ],
+          "note": "August erratum p.10 supersedes the earlier activation-limited wording on p.11."
+        },
+        {
+          "wahapediaLines": "270",
+          "note": "Current Books entry has once per turning point."
+        }
+      ]
+    },
+    "blocks": [
+      {
+        "heading": "Obsessive Bloodlust",
+        "russian": "Один раз за раунд, когда этот оперативник завершает действие «Ближний бой» (Fight), если он больше не находится в дистанции контроля вражеских оперативников, он может немедленно бесплатно выполнить действие «Атака» (Charge), даже если уже выполнял его в эту активацию. При этом он не может переместиться дальше чем на 2 дюйма. Это не мешает ему позже в той же активации выполнять Charge, «Рывок» (Dash) или «Перемещение» (Reposition).",
+        "english": "Once per turning point, whenever this operative ends the Fight action, if it’s no longer within control range of enemy operatives, it can immediately perform a free Charge action (even if it’s already performed the Charge action during that activation), but it cannot move more than 2\" during that action. Doing so doesn’t prevent it from performing the Charge, Dash or Reposition action afterwards during that activation.",
+        "proseTitles": [
+          "Obsessive Bloodlust"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "5a80b2ad0e6fa847",
+    "expectedTitle": "Goremonger Impaler",
+    "team": "Goremongers",
+    "source": {
+      "officialPdf": "https://assets.warhammer-community.com/eng_goremongers_online_rules-9ba5skdxij-r0u7lafcas.pdf",
+      "date": "2026-08-26",
+      "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/goremonger/",
+      "checkedOn": "2026-10-05",
+      "evidence": [
+        {
+          "officialPdfPages": [
+            1,
+            2,
+            10
+          ],
+          "note": "August erratum p.10 changes weapon rules and adds Gore-fuel."
+        },
+        {
+          "wahapediaLines": "310-314",
+          "note": "Current action text."
+        }
+      ]
+    },
+    "blocks": [
+      {
+        "heading": "Drag",
+        "russian": "Когда этот оперативник стреляет из этого оружия, в начале шага разрешения кубиков атаки, до нанесения урона, можно переместить цель на расстояние до x дюймов. X равен общему числу успешных неблокированных кубиков атаки, умноженному на 2. Переместите цель как можно ближе к этому оперативнику, выбрав любое допустимое расстояние x. Перемещение должно проходить по одной или нескольким прямым линиям; каждый отрезок округляется вверх до целого дюйма. Если во время перемещения цель падает, не учитывайте вертикальное расстояние.\nКогда этот оперативник стреляет из этого оружия, на шаге разрешения кубиков атаки после применения правила Drag (если вы решили его применить) можно сбросить любые успешные неблокированные кубики атаки. Иными словами, вы можете не наносить урон любым их количеством.",
+        "english": "Whenever this operative is shooting with this weapon, at the start of the Resolve Attack Dice step (before inflicting damage), you can move the target up to x\". X is your total number of successful unblocked attack dice, multiplied by 2. The target must be moved to a location it can be placed as close as possible to this operative, determined by the x\" you choose to use. The move must be done in one or more straight-line increments, and increments are always rounded up to the nearest inch. Whenever the target is dropping during that move, ignore the vertical distance. Whenever this operative is shooting with this weapon, in the Resolve Attack Dice step, after resolving the Drag weapon rule (if you choose to), you can discard any of your successful unblocked attack dice. In other words, you can choose not to inflict damage with any number of them.",
+        "proseTitles": [
+          "Drag"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "5a80b2ad0e6fa847",
+    "expectedTitle": "Goremonger Impaler",
+    "team": "Goremongers",
+    "source": {
+      "officialPdf": "https://assets.warhammer-community.com/eng_goremongers_online_rules-9ba5skdxij-r0u7lafcas.pdf",
+      "date": "2026-08-26",
+      "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/goremonger/",
+      "checkedOn": "2026-10-05",
+      "evidence": [
+        {
+          "officialPdfPages": [
+            1,
+            2,
+            10
+          ],
+          "note": "August erratum p.10 changes weapon rules and adds Gore-fuel."
+        },
+        {
+          "wahapediaLines": "310-314",
+          "note": "Current action text."
+        }
+      ]
+    },
+    "deleteBlocks": [
+      "Prey"
+    ],
+    "weapons": [
+      {
+        "name": "Fleshskewer (ranged)",
+        "atk": 4,
+        "hit": "3+",
+        "dmg": "4/5",
+        "wrEnglish": "Range 8\", Piercing Crits 1, Stun, Drag*",
+        "wrRussian": "Дальность 8\" (Range 8\"), Бронебойное при критических успехах 1 (Piercing Crits 1), Оглушение (Stun), Притягивание (Drag)*"
+      }
+    ]
+  },
+  {
+    "id": "5a80b2ad0e6fa847",
+    "expectedTitle": "Goremonger Impaler",
+    "team": "Goremongers",
+    "source": {
+      "officialPdf": "https://assets.warhammer-community.com/eng_goremongers_online_rules-9ba5skdxij-r0u7lafcas.pdf",
+      "date": "2026-08-26",
+      "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/goremonger/",
+      "checkedOn": "2026-10-05",
+      "evidence": [
+        {
+          "officialPdfPages": [
+            1,
+            2,
+            10
+          ],
+          "note": "August erratum p.10 changes weapon rules and adds Gore-fuel."
+        },
+        {
+          "wahapediaLines": "310-314",
+          "note": "Current action text."
+        }
+      ]
+    },
+    "blocks": [
+      {
+        "heading": "Gore-fuel · 1AP",
+        "russian": "Уменьшите уровень резервуара крови (GORE TANK) этого оперативника. Все профили его Плотесквера (Fleshskewer) получают «Сокрушительное» (Severe) до первого использования одного из этих профилей. Нельзя выполнять это действие в дистанции контроля врага либо с пустым резервуаром крови.",
+        "english": "Decrease this operative’s GORE TANK. All profiles of its fleshskewer have Severe until it uses one of those profiles. This operative cannot perform this action while within enemy control range or if its GORE TANK is empty.",
+        "proseTitles": [
+          "Gore-fuel"
+        ],
+        "append": true,
+        "headingRussian": "Кровавое топливо · 1 AP (Gore-fuel)"
+      }
+    ]
+  },
+  {
+    "id": "7257d2131dc313d9",
+    "expectedTitle": "Wrist Chains",
+    "team": "Goremongers",
+    "source": {
+      "officialPdf": "https://assets.warhammer-community.com/eng_goremongers_online_rules-9ba5skdxij-r0u7lafcas.pdf",
+      "date": "2026-08-26",
+      "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/goremonger/",
+      "checkedOn": "2026-10-05",
+      "evidence": [
+        {
+          "officialPdfPages": [
+            6,
+            9,
+            10
+          ],
+          "note": "August erratum p.10 adds this to the rule."
+        }
+      ]
+    },
+    "blocks": [
+      {
+        "heading": "Rule",
+        "russian": "Один раз за раунд (Turning Point), когда дружественный оперативник Кровопускателей выполняет действие «Стрельба» (Shoot) и выбирает дальнобойное оружие, примените это правило. До конца действия перечисленное оружие ближнего боя считается дальнобойным оружием с правилом «Дальность 2 дюйма»: цепной меч (chainblade), цепная глефа (chainglaive), тяжёлый цепной топор (great chainaxe; игнорируйте его правило «Жестокое» (Brutal)) и костоломы (pickrippers).\nЕсли это оружие получило «Сбалансированное» (Balanced) или «Неумолимое» (Relentless) от «Усиленного насилия» (Enhanced Violence), оно сохраняет эти правила, когда считается стрелковым.",
+        "english": "Once per turning point, when a friendly GOREMONGER operative performs the Shoot action and you’re selecting a ranged weapon, you can use this rule. If you do, until the end of that action, the following melee weapons are treated as ranged weapons with the Range 2\" weapon rule: chainblade, chainglaive, great chainaxe (ignore its Brutal weapon rule), pickrippers. If it gained Balanced or Relentless from Enhanced Violence, it has those rules while treated as a ranged weapon.",
+        "proseTitles": [
+          "Rule"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "179a145ff332418a",
+    "expectedTitle": "Rejuvenate",
+    "team": "Goremongers",
+    "source": {
+      "officialPdf": "https://assets.warhammer-community.com/eng_goremongers_online_rules-9ba5skdxij-r0u7lafcas.pdf",
+      "date": "2026-08-26",
+      "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/goremonger/",
+      "checkedOn": "2026-10-05",
+      "evidence": [
+        {
+          "officialPdfPages": [
+            5,
+            11
+          ],
+          "note": "Previous errata p.11."
+        },
+        {
+          "wahapediaLines": "132-135",
+          "note": "Current value is D3+1."
+        }
+      ]
+    },
+    "blocks": [
+      {
+        "heading": "EFFECT",
+        "russian": "Этот оперативник восстанавливает D3+1 потерянных ран.",
+        "english": "That operative regains D3+1 lost wounds.",
+        "proseTitles": [
+          "EFFECT"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "5eedbfe2bcf9a1fb",
+    "expectedTitle": "Rake",
+    "team": "Goremongers",
+    "source": {
+      "officialPdf": "https://assets.warhammer-community.com/eng_goremongers_online_rules-9ba5skdxij-r0u7lafcas.pdf",
+      "date": "2026-08-26",
+      "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/goremonger/",
+      "checkedOn": "2026-10-05",
+      "evidence": [
+        {
+          "officialPdfPages": [
+            5,
+            11
+          ],
+          "note": "Previous errata p.11."
+        }
+      ]
+    },
+    "blocks": [
+      {
+        "heading": "WHEN",
+        "russian": "Когда дружественный оперативник Кровопускателей выполняет действие «Атака» (Charge).\nТолько в свою активацию.",
+        "english": "When a friendly GOREMONGER operative performs the Charge action. Only during its activation.",
+        "proseTitles": [
+          "WHEN"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "830eab39174815f7",
+    "expectedTitle": "Gory Tenacity",
+    "team": "Goremongers",
+    "source": {
+      "officialPdf": "https://assets.warhammer-community.com/eng_goremongers_online_rules-9ba5skdxij-r0u7lafcas.pdf",
+      "date": "2026-08-26",
+      "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/goremonger/",
+      "checkedOn": "2026-10-05",
+      "evidence": [
+        {
+          "officialPdfPages": [
+            7,
+            11
+          ],
+          "note": "Previous errata p.11."
+        }
+      ]
+    },
+    "blocks": [
+      {
+        "heading": "Rule",
+        "russian": "Когда дружественный оперативник Кровопускателей сражается или отвечает ударом, при первом попадании противника по нему в этой последовательности уменьшите нанесённый урон вдвое (округляя вверх, минимум до 2).",
+        "english": "Whenever a friendly GOREMONGER operative is fighting or retaliating, the first time your opponent strikes it during that sequence, halve the damage inflicted (rounding up, to a minimum of 2).",
+        "proseTitles": [
+          "Rule"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "61bdfe67318fcb0d",
+    "expectedTitle": "Goremonger Stalker",
+    "team": "Goremongers",
+    "source": {
+      "officialPdf": "https://assets.warhammer-community.com/eng_goremongers_online_rules-9ba5skdxij-r0u7lafcas.pdf",
+      "date": "2026-08-26",
+      "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/goremonger/",
+      "checkedOn": "2026-10-05",
+      "evidence": [
+        {
+          "officialPdfPages": [
+            3,
+            11
+          ],
+          "note": "Previous errata p.11."
+        },
+        {
+          "wahapediaLines": "372-374",
+          "note": "Wahapedia body still omits the height condition; use official erratum."
+        }
+      ]
+    },
+    "blocks": [
+      {
+        "heading": "Rooftop Stalker",
+        "russian": "Когда этот оперативник сражается в активацию, в которой спрыгнул с высоты (Vantage), находящейся хотя бы на 2 дюйма выше пола зоны боя, либо сражается с врагом на такой высоте, его оружие ближнего боя получает «Неумолимое» (Relentless).",
+        "english": "Whenever this operative is fighting during an activation in which it dropped from Vantage terrain at least 2\" above the killzone floor, or is fighting an enemy operative on Vantage terrain at least 2\" above the killzone floor, its melee weapons have Relentless.",
+        "proseTitles": [
+          "Rooftop Stalker"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "5de17a416821a63e",
+    "expectedTitle": "Goremonger Blood Herald",
+    "team": "Goremongers",
+    "source": {
+      "officialPdf": "https://assets.warhammer-community.com/eng_goremongers_online_rules-9ba5skdxij-r0u7lafcas.pdf",
+      "date": "2026-08-26",
+      "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/goremonger/",
+      "checkedOn": "2026-10-05",
+      "evidence": [
+        {
+          "officialPdfPages": [
+            1,
+            11
+          ],
+          "note": "Previous errata p.11."
+        },
+        {
+          "wahapediaLines": "253",
+          "note": "Current page includes timing."
+        }
+      ]
+    },
+    "blocks": [
+      {
+        "heading": "Khorne’s Favour",
+        "russian": "Один раз во время каждой активации этого оперативника до или после выполнения им действия, если его резервуар крови (Gore Tank) пуст, можно повысить его уровень.",
+        "english": "Once during each of this operative’s activations, before or after it performs an action, if its GORE TANK is empty, you can increase its GORE TANK.",
+        "proseTitles": [
+          "Khorne’s Favour"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "5de17a416821a63e",
+    "expectedTitle": "Goremonger Blood Herald",
+    "team": "Goremongers",
+    "source": {
+      "officialPdf": "https://assets.warhammer-community.com/eng_goremongers_online_rules-9ba5skdxij-r0u7lafcas.pdf",
+      "date": "2026-08-26",
+      "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/goremonger/",
+      "checkedOn": "2026-10-05",
+      "evidence": [
+        {
+          "officialPdfPages": [
+            1,
+            11
+          ],
+          "note": "Previous errata p.11."
+        },
+        {
+          "wahapediaLines": "254",
+          "note": "Current page specifies Normal Dmg."
+        }
+      ]
+    },
+    "blocks": [
+      {
+        "heading": "Impending Apotheosis",
+        "russian": "Один раз за бой, когда кубик атаки наносит этому оперативнику обычный урон (Normal Dmg), вы можете проигнорировать этот урон.",
+        "english": "Once per battle, when an attack dice inflicts Normal Dmg on this operative, you can ignore that inflicted damage.",
+        "proseTitles": [
+          "Impending Apotheosis"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "d153c4ebd4f9e852",
+    "expectedTitle": "Goremonger Inciter (reverse)",
+    "team": "Goremongers",
+    "source": {
+      "officialPdf": "https://assets.warhammer-community.com/eng_goremongers_online_rules-9ba5skdxij-r0u7lafcas.pdf",
+      "date": "2026-08-26",
+      "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/goremonger/",
+      "checkedOn": "2026-10-05",
+      "evidence": [
+        {
+          "officialPdfPages": [
+            2,
+            11
+          ],
+          "note": "Previous errata p.11 limits the second paragraph’s first sentence."
+        },
+        {
+          "wahapediaLines": "335-336",
+          "note": "Current page contains the dual-autopistol restriction."
+        }
+      ]
+    },
+    "blocks": [
+      {
+        "heading": "Bleeding",
+        "russian": "Когда этот оперативник наносит урон врагу любым из профилей своих парных автопистолетов (Dual autopistols), но не выводит его из строя, враг получает один ваш жетон «Кровотечение» (Bleeding), если у него ещё нет такого жетона. Во время активации или контрдействия дружественного оперативника Кровопускателей, до или после выполнения им действия, если он находится в пределах 8 дюймов от врага с вашим жетоном «Кровотечение», можно снять этот жетон и повысить уровень резервуара крови (Gore Tank) этого дружественного оперативника.",
+        "english": "Whenever this operative inflicts damage on an enemy operative with either profile of its dual autopistols but doesn’t incapacitate it, that enemy operative gains one of your Bleeding tokens (if it doesn’t already have one). During a friendly GOREMONGER operative’s activation or counteraction, before or after it performs an action, if it’s within 8\" of an enemy operative that has one of your Bleeding tokens, you can remove that token and increase that friendly operative’s GORE TANK.",
+        "proseTitles": [
+          "Bleeding"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "008a2b364f7e3c33",
+    "expectedTitle": "Goremonger Aspirant",
+    "team": "Goremongers",
+    "source": {
+      "officialPdf": "https://assets.warhammer-community.com/eng_goremongers_online_rules-9ba5skdxij-r0u7lafcas.pdf",
+      "date": "2026-08-26",
+      "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/goremonger/",
+      "checkedOn": "2026-10-05",
+      "evidence": [
+        {
+          "officialPdfPages": [
+            11
+          ],
+          "note": "Previous Rules Commentary in the current PDF."
+        },
+        {
+          "wahapedia": "Current Goremonger FAQ section",
+          "note": "FAQ is not a team-edition or Classified status marker."
+        }
+      ]
+    },
+    "blocks": [
+      {
+        "heading": "Rules Commentary",
+        "russian": "Для «Усиленного насилия» (Enhanced Violence) проверяйте, полон ли резервуар крови (GORE TANK), после уменьшения его уровня для применяемой при действии сангвавиты (Sanguavitae).",
+        "english": "For Enhanced Violence, check whether the GORE TANK is full after decreasing it for the Sanguavitae used for the action.",
+        "proseTitles": [
+          "Rules Commentary"
+        ],
+        "append": true,
+        "headingRussian": "Разъяснение правил (Rules Commentary)"
+      }
+    ]
+  },
+  {
+    "id": "4f7229a631152b96",
+    "expectedTitle": "Vespid Stingwings",
+    "team": "Vespid Stingwings",
+    "source": {
+      "officialPdf": "https://assets.warhammer-community.com/eng_vespid_stingwings_online_rules-im3is77cs2-gtnx7xocbs.pdf",
+      "date": "2026-08-26",
+      "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/vespid-stingwings/",
+      "checkedOn": "2026-10-05",
+      "evidence": [
+        {
+          "officialPdfPages": [
+            4,
+            10
+          ],
+          "note": "Previous errata p.10."
+        },
+        {
+          "wahapediaLines": "70-78",
+          "note": "Current selection includes 9 additional."
+        }
+      ]
+    },
+    "blocks": [
+      {
+        "heading": "Archetype and operatives",
+        "russian": "АРХЕТИП: РАЗВЕДКА (RECON), ПОИСК И УНИЧТОЖЕНИЕ (SEEK & DESTROY). 1 оперативник Веспидов-жалоносцев — Вождь роя (STRAIN LEADER). 1 оперативник Веспидов-жалоносцев — Дрон-наблюдатель (OVERSIGHT DRONE). Ещё 9 оперативников выберите из списка: Длинножало (LONGSTING), Теневой веспид (SHADESTRAIN), Небесный взрыв (SKYBLAST), Страж роя (SWARMGUARD), Воин (WARRIOR). В отряд можно включить не более одного оперативника каждого типа из списка, кроме Воинов.",
+        "english": "ARCHETYPE: RECON, SEEK & DESTROY. 1 VESPID STINGWING STRAIN LEADER operative. 1 VESPID STINGWING OVERSIGHT DRONE operative. 9 VESPID STINGWING operatives selected from: LONGSTING, SHADESTRAIN, SKYBLAST, SWARMGUARD, WARRIOR. Other than WARRIOR operatives, your kill team can include each operative on this list only once.",
+        "proseTitles": [
+          "Archetype and operatives"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "5543b574af87f8f9",
+    "expectedTitle": "Aerial Agility",
+    "team": "Vespid Stingwings",
+    "source": {
+      "officialPdf": "https://assets.warhammer-community.com/eng_vespid_stingwings_online_rules-im3is77cs2-gtnx7xocbs.pdf",
+      "date": "2026-08-26",
+      "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/vespid-stingwings/",
+      "checkedOn": "2026-10-05",
+      "evidence": [
+        {
+          "officialPdfPages": [
+            5,
+            9
+          ],
+          "note": "August erratum p.9."
+        },
+        {
+          "wahapediaLines": "127-130",
+          "note": "Current page contains the interrupting and Normal Dmg terms."
+        }
+      ]
+    },
+    "blocks": [
+      {
+        "heading": "Rule",
+        "russian": "Когда вражеский оперативник стреляет по дружественному веспиду-жалоносцу во время контрдействия (Counteract) или прерывания или в активацию, в которой стрелявший перемещался либо был выставлен в зоне боя, бросайте 1D6 всякий раз, когда кубик атаки нанёс бы обычный урон (Normal Dmg). На 5+ предотвратите этот урон. За одну последовательность стрельбы можно предотвратить урон не более чем от одного кубика атаки.",
+        "english": "Whenever an operative is shooting a friendly VESPID STINGWING operative while counteracting or interrupting, or during an activation in which that shooting operative moved or was set up, roll one D6 whenever an attack dice would inflict Normal Dmg. On a 5+, ignore that inflicted damage. A maximum of one attack die can be ignored per shooting sequence.",
+        "proseTitles": [
+          "Rule"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "c1991806d011da96",
+    "expectedTitle": "Vespid Strain Leader",
+    "team": "Vespid Stingwings",
+    "source": {
+      "officialPdf": "https://assets.warhammer-community.com/eng_vespid_stingwings_online_rules-im3is77cs2-gtnx7xocbs.pdf",
+      "date": "2026-08-26",
+      "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/vespid-stingwings/",
+      "checkedOn": "2026-10-05",
+      "evidence": [
+        {
+          "officialPdfPages": [
+            1,
+            9
+          ],
+          "note": "August erratum p.9 replaces the rule."
+        },
+        {
+          "wahapediaLines": "200-202",
+          "note": "Current card includes both options and normal point-cost warning."
+        }
+      ]
+    },
+    "blocks": [
+      {
+        "heading": "Communion Helm",
+        "russian": "Один раз в каждую свою активацию выберите один вариант:\n• Потратить 1 очко Сопряжения (Communion) бесплатно.\n• Потратить 1 очко Сопряжения и выбрать другого дружественного Веспида-жалоносца (VESPID STINGWING) в пределах 3 дюймов: он немедленно бесплатно выполняет миссионное действие стоимостью 1 AP. Выбранный оперативник всё равно должен потратить требуемое для него очко Сопряжения; нельзя проигнорировать эту стоимость «Стимулятором конвергенции» (Convergence Stimulant).",
+        "english": "Once during each activation select either: spend 1 Communion point for free; or spend 1 Communion point and select another friendly VESPID STINGWING within 3\" to immediately perform a free 1AP mission action. That selected operative must still spend the normal Communion point and Convergence Stimulant cannot ignore that cost.",
+        "proseTitles": [
+          "Communion Helm"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "d2ecfb207988cca1",
+    "expectedTitle": "Sting",
+    "team": "Vespid Stingwings",
+    "source": {
+      "officialPdf": "https://assets.warhammer-community.com/eng_vespid_stingwings_online_rules-im3is77cs2-gtnx7xocbs.pdf",
+      "date": "2026-08-26",
+      "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/vespid-stingwings/",
+      "checkedOn": "2026-10-05",
+      "evidence": [
+        {
+          "officialPdfPages": [
+            2,
+            10
+          ],
+          "note": "Previous errata p.10 changes the ploy to this text."
+        },
+        {
+          "wahapediaLines": "137-140",
+          "note": "Current page includes Hit +1."
+        }
+      ]
+    },
+    "blocks": [
+      {
+        "heading": "Rule",
+        "russian": "Когти дружественных оперативников Веспидов-жалоносцев получают правила оружия «Смертоносное 5+» (Lethal 5+) и «Потрясение» (Shock).\nТакже улучшите HIT этих когтей на 1.",
+        "english": "Friendly VESPID STINGWING operatives' claws have the Lethal 5+ and Shock weapon rules. Also improve the Hit stat of those claws by 1.",
+        "proseTitles": [
+          "Rule"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "f50933d73f2d39ce",
+    "expectedTitle": "Vespid Swarmguard",
+    "team": "Vespid Stingwings",
+    "source": {
+      "officialPdf": "https://assets.warhammer-community.com/eng_vespid_stingwings_online_rules-im3is77cs2-gtnx7xocbs.pdf",
+      "date": "2026-08-26",
+      "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/vespid-stingwings/",
+      "checkedOn": "2026-10-05",
+      "evidence": [
+        {
+          "officialPdfPages": [
+            2,
+            10
+          ],
+          "note": "Previous errata p.10 adds the action and changes the weapon rule."
+        },
+        {
+          "wahapediaLines": "300-307",
+          "note": "Current weapon rule and action."
+        }
+      ]
+    },
+    "blocks": [
+      {
+        "heading": "Skytorch",
+        "russian": "Это оружие можно использовать только во время «Атаки небесным факелом» (Skytorch Assault). Не выбирайте допустимую цель: вместо этого стреляйте по каждому оперативнику в полосе огня, кроме оперативников, полностью находящихся под террейном высотной позиции (Vantage terrain); по выбранным таким образом оперативникам нельзя получить спасбросок за укрытие, и они не считаются заслонёнными. Проводите отдельные последовательности бросков по каждому оперативнику, от самого дальнего к ближайшему. Полоса огня — область между нынешним и предыдущим положением оперативника. Чтобы определить её, перед перемещением можно временно положить под оперативника круглый маркер «Небесный факел» диаметром 28 мм. Значение «Поток 0 дюймов» запрещает выбирать вторичные цели вне полосы огня, но для остальных правил оружие сохраняет «Поток» (Torrent), например для правила «Тесная крепость» (Condensed Stronghold) зоны боя «Волкус» (Killzone: Volkus) из основной книги Kill Team.",
+        "english": "An operative can only use this weapon during the Skytorch Assault action. If it does, do not select a valid target. Instead, shoot against each operative within its torch zone, excluding operatives wholly underneath Vantage terrain; those operatives are not in cover or obscured. Roll each sequence separately from the furthest operative to the closest. The torch zone is the area between the operative’s current and previous location. A 28mm round Skytorch marker can be temporarily placed underneath this operative before it moves to help determine this. Torrent 0 inches means you cannot select secondary targets outside its torch zone, but this weapon still has the Torrent weapon rule for all other rules purposes, e.g. the Condensed Stronghold rule (see Killzone: Volkus, Kill Team Core Book).",
+        "proseTitles": [
+          "Skytorch"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "f50933d73f2d39ce",
+    "expectedTitle": "Vespid Swarmguard",
+    "team": "Vespid Stingwings",
+    "source": {
+      "officialPdf": "https://assets.warhammer-community.com/eng_vespid_stingwings_online_rules-im3is77cs2-gtnx7xocbs.pdf",
+      "date": "2026-08-26",
+      "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/vespid-stingwings/",
+      "checkedOn": "2026-10-05",
+      "evidence": [
+        {
+          "officialPdfPages": [
+            2,
+            10
+          ],
+          "note": "Previous errata p.10 adds the action and changes the weapon rule."
+        },
+        {
+          "wahapediaLines": "300-307",
+          "note": "Current weapon rule and action."
+        }
+      ]
+    },
+    "blocks": [
+      {
+        "heading": "Skytorch Assault · 2AP",
+        "russian": "Выполните бесплатно «Перемещение» (Reposition). Во время него обязательно используйте Полёт (FLY) и увеличьте MOVE на 2 дюйма. Затем выполните бесплатно «Стрельбу» (Shoot), используя только профиль Небесного факела (Skytorch). Нельзя выполнять это действие с приказом «Скрытность» (Conceal) либо в дистанции контроля врага.",
+        "english": "Perform a free Reposition action; you must use FLY and add 2\" to Move for that action. Then perform a free Shoot action using only the skytorch profile. This operative cannot perform this action while it has a Conceal order or while within enemy control range.",
+        "proseTitles": [
+          "Skytorch Assault"
+        ],
+        "append": true,
+        "headingRussian": "Атака небесным факелом · 2 AP (Skytorch Assault)"
+      }
+    ]
+  },
+  {
+    "id": "8d23ed299263bc32",
+    "expectedTitle": "Communion",
+    "team": "Vespid Stingwings",
+    "source": {
+      "officialPdf": "https://assets.warhammer-community.com/eng_vespid_stingwings_online_rules-im3is77cs2-gtnx7xocbs.pdf",
+      "date": "2026-08-26",
+      "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/vespid-stingwings/",
+      "checkedOn": "2026-10-05",
+      "evidence": [
+        {
+          "officialPdfPages": [
+            10
+          ],
+          "note": "Previous errata p.10 adds ‘excluding DRONE’."
+        },
+        {
+          "wahapediaLines": "105-108",
+          "note": "Current page contains the Drone exclusion and Operate Hatch exclusion."
+        }
+      ]
+    },
+    "blocks": [
+      {
+        "heading": "Communion restrictions",
+        "russian": "1. Выполняя действие «Стрельба» (Shoot), дружественный оперативник Веспидов-жалоносцев может выбрать целью только ближайшего вражеского оперативника в пределах 8 дюймов. Не учитывайте врагов в дистанции контроля других дружественных оперативников Веспидов-жалоносцев. Этого ограничения можно избежать, потратив 1 очко Сопряжения (Communion). Для оружия с правилами «Взрыв» (Blast) и «Поток» (Torrent) так выбирается только первая цель. 2. Выполняя действие «Атака» (Charge), дружественный оперативник Веспидов-жалоносцев, кроме Дрона (DRONE), должен закончить его в дистанции контроля ближайшего доступного врага, если не потратить 1 очко Сопряжения. 3. Чтобы выполнить действие «Поднять маркер» (Pick Up Marker) или миссионное действие дружественным веспидом-жалоносцем, потратьте 1 очко Сопряжения; это не относится к действию «Открыть люк» (Operate Hatch). 4. Когда дружественный оперативник Веспидов-жалоносцев стреляет, можно потратить 1 очко Сопряжения (не больше одного) и перебросить один кубик атаки.",
+        "english": "1. Whenever a friendly VESPID STINGWING operative performs the Shoot action, it can only target the closest enemy operative within 8 inches of it (excluding enemy operatives within control range of other friendly VESPID STINGWING operatives) unless you spend 1 Communion point. For weapons with the Blast and Torrent weapon rules, only the first target must be selected in this way. 2. Whenever a friendly VESPID STINGWING operative (excluding DRONE) performs the Charge action, it must end the action within control range of the closest enemy operative it can unless you spend 1 Communion point. 3. Whenever you would perform the Pick Up Marker or a mission action (excluding Operate Hatch) with a friendly VESPID STINGWING operative, you must also spend 1 Communion point to do so. 4. Whenever a friendly VESPID STINGWING operative is shooting, you can spend 1 (and only 1) Communion point to re-roll one of your attack dice.",
+        "proseTitles": [
+          "Communion restrictions"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "7d02f6c1baab8125",
+    "expectedTitle": "Living Metal",
+    "team": "Hierotek Circle",
+    "source": {
+      "officialPdf": "https://assets.warhammer-community.com/eng_hierotek_circle_online_rules-df98wqycag-bek3q27dqk.pdf",
+      "date": "2026-08-26",
+      "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/hierotek-circle/",
+      "checkedOn": "2026-10-05",
+      "evidence": [
+        {
+          "officialPdfPages": [
+            7,
+            11
+          ],
+          "note": "August erratum p.11 changes the timing."
+        },
+        {
+          "wahapediaLines": "165-169",
+          "note": "Current rule has before-all-other-faction-rules timing."
+        }
+      ]
+    },
+    "blocks": [
+      {
+        "heading": "Living Metal",
+        "russian": "На шаге подготовки (Ready step) каждой стратегической фазы (Strategy phase), перед разрешением всех остальных правил фракции на этом шаге, включая Протоколы реанимации (Reanimation Protocols), каждый дружественный оперативник Круга Иеротек восстанавливает до D3+1 утраченных ран. Бросок для каждого оперативника выполняется отдельно.",
+        "english": "In the Ready step of each Strategy phase, before all other faction rules in that step (e.g. Reanimation Protocols), each friendly HIEROTEK CIRCLE operative regains up to D3+1 lost wounds (roll separately for each).",
+        "proseTitles": [
+          "Living Metal"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "e3851dbc90b87609",
+    "expectedTitle": "Chronomancer Actions",
+    "team": "Hierotek Circle",
+    "source": {
+      "officialPdf": "https://assets.warhammer-community.com/eng_hierotek_circle_online_rules-df98wqycag-bek3q27dqk.pdf",
+      "date": "2026-08-26",
+      "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/hierotek-circle/",
+      "checkedOn": "2026-10-05",
+      "evidence": [
+        {
+          "officialPdfPages": [
+            1,
+            11
+          ],
+          "note": "August erratum p.11 changes placement; full current action body has the 4\"/-2\" effect."
+        },
+        {
+          "wahapediaLines": "264-266",
+          "note": "Current placement and effect."
+        }
+      ]
+    },
+    "blocks": [
+      {
+        "heading": "Countertemporal Nanomine",
+        "russian": "1 AP. Разместите маркер Наномины противовременного поля (Countertemporal Nanomine) в пределах 8 дюймов от этого оперативника: маркер должен быть видим ему либо находиться на высоте (Vantage) видимого ему элемента террейна. Пока враг в пределах 4 дюймов от маркера, уменьшите его MOVE на 2 дюйма. Удалите маркер при начале следующей активации этого оперативника, его выведении из строя либо повторном выполнении действия дружественным оперативником, что наступит раньше. Нельзя выполнять в дистанции контроля врага.",
+        "english": "1AP. Place the Countertemporal Nanomine marker visible to and within 8\" of this operative, or within 8\" of it and on Vantage terrain of a terrain feature visible to it. Enemy operatives within 4\" of the marker have 2\" subtracted from Move. Remove it at the start of this operative’s next activation, its incapacitation or this action being performed again by a friendly operative, whichever comes first. Cannot perform within enemy control range.",
+        "proseTitles": [
+          "Countertemporal Nanomine"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "cc67c65088d632b7",
+    "expectedTitle": "Chronomancer Actions — Interstitial Command and Timesplinter",
+    "team": "Hierotek Circle",
+    "source": {
+      "officialPdf": "https://assets.warhammer-community.com/eng_hierotek_circle_online_rules-df98wqycag-bek3q27dqk.pdf",
+      "date": "2026-08-26",
+      "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/hierotek-circle/",
+      "checkedOn": "2026-10-05",
+      "evidence": [
+        {
+          "officialPdfPages": [
+            1,
+            12
+          ],
+          "note": "Previous errata p.12 changes range/Comms/timing; August erratum p.11 deletes SUPPORT."
+        },
+        {
+          "wahapediaLines": "260-263",
+          "note": "Current full Waha page includes 5\", Comms note, and conditions."
+        }
+      ]
+    },
+    "blocks": [
+      {
+        "heading": "Timesplinter",
+        "russian": "1 AP. Выберите использованного (Expended) дружественного оперативника Круга Иеротек (HIEROTEK CIRCLE), видимого этому оперативнику и в пределах 5 дюймов от него. Уберите выбранного оперативника из зоны боя и выставьте заново в допустимом месте, видимом этому оперативнику и в пределах 5 дюймов от него по горизонтали. «Средство связи» (Comms Device) влияет только на первую дистанцию. Нельзя выполнять в дистанции контроля врага, в первом раунде либо если дружественный оперативник уже выполнял это действие в этом раунде.",
+        "english": "1AP. Select one expended friendly HIEROTEK CIRCLE operative visible to and within 5\" of this operative. Remove it and set it up in a legal location visible to and within 5\" horizontally of this operative. Comms Device affects only the first distance. Cannot perform within enemy control range, during the first turning point or if a friendly operative has already performed this action during this turning point.",
+        "proseTitles": [
+          "Timesplinter"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "0afc2316bf68f135",
+    "expectedTitle": "Magnification Conduits",
+    "team": "Hierotek Circle",
+    "source": {
+      "officialPdf": "https://assets.warhammer-community.com/eng_hierotek_circle_online_rules-df98wqycag-bek3q27dqk.pdf",
+      "date": "2026-08-26",
+      "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/hierotek-circle/",
+      "checkedOn": "2026-10-05",
+      "evidence": [
+        {
+          "officialPdfPages": [
+            9,
+            11
+          ],
+          "note": "August erratum p.11 changes the second sentence."
+        },
+        {
+          "wahapediaLines": "219-222",
+          "note": "Current equipment rule."
+        }
+      ]
+    },
+    "blocks": [
+      {
+        "heading": "Magnification Conduits",
+        "russian": "Раз за раунд, когда дружественный Подмастерье (APPRENTEK) или Криптек (CRYPTEK) Круга Иеротек выполняет Стрельбу (Shoot), можно выбрать другого дружественного оперативника Круга Иеротек, кроме Плазмацита (PLASMACYTE). Он должен иметь приказ «Бой» (Engage), быть видим стрелку и не находиться в дистанции контроля врагов. До конца действия выбранный боец может считаться активным оперативником для правила «Увеличение» (Magnify).",
+        "english": "Once per turning point, when a friendly HIEROTEK CIRCLE APPRENTEK or CRYPTEK performs Shoot, select one other friendly HIEROTEK CIRCLE operative (excluding PLASMACYTE) with an Engage order, not within control range of enemy operatives and visible to that operative. Until the action ends, that other operative can be treated as active for the Magnify weapon rule.",
+        "proseTitles": [
+          "Magnification Conduits"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "e3851dbc90b87609",
+    "expectedTitle": "Chronomancer Actions",
+    "team": "Hierotek Circle",
+    "source": {
+      "officialPdf": "https://assets.warhammer-community.com/eng_hierotek_circle_online_rules-df98wqycag-bek3q27dqk.pdf",
+      "date": "2026-08-26",
+      "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/hierotek-circle/",
+      "checkedOn": "2026-10-05",
+      "evidence": [
+        {
+          "officialPdfPages": [
+            1,
+            12
+          ],
+          "note": "Visually interpret p.12 strike-through: fight/retaliate text is deleted; p.1 body says shooting only."
+        },
+        {
+          "wahapediaSnapshot": "inventory/current-team-rules/hierotek-circle-web-full.txt",
+          "note": "Current body agrees: shooting only."
+        }
+      ]
+    },
+    "blocks": [
+      {
+        "heading": "Chronometron",
+        "russian": "1 AP, Поддержка (SUPPORT). Выберите дружественного оперативника Круга Иеротек, видимого этому оперативнику и находящегося в пределах 6 дюймов. До следующей активации этого оперативника, его выведения из строя или повторного выполнения действия дружественным оперативником (что наступит раньше) уменьшайте на 1 число атак (Atk) оружия, когда любой оперативник стреляет по выбранному бойцу. Нельзя выполнять в зоне контроля врага.",
+        "english": "1AP, SUPPORT. Select one friendly HIEROTEK CIRCLE operative visible to and within 6\" of this operative. Until this operative’s next activation, its incapacitation, or this action being performed again by a friendly operative (whichever comes first), subtract 1 from the Atk stat of weapons whenever an operative shoots against that selected operative. Cannot perform within enemy control range.",
+        "proseTitles": [
+          "Chronometron"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "cc67c65088d632b7",
+    "expectedTitle": "Chronomancer Actions — Interstitial Command and Timesplinter",
+    "team": "Hierotek Circle",
+    "source": {
+      "officialPdf": "https://assets.warhammer-community.com/eng_hierotek_circle_online_rules-df98wqycag-bek3q27dqk.pdf",
+      "date": "2026-08-26",
+      "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/hierotek-circle/",
+      "checkedOn": "2026-10-05",
+      "evidence": [
+        {
+          "officialPdfPages": [
+            1,
+            2,
+            4,
+            12
+          ],
+          "note": "Previous errata p.12 adds movement/setup and counteracting restrictions; Despotek action exception is on p.12."
+        },
+        {
+          "wahapediaLines": "256-259",
+          "note": "Current general Interstitial Command body."
+        }
+      ]
+    },
+    "blocks": [
+      {
+        "heading": "Interstitial Command",
+        "russian": "1 AP, ПОДДЕРЖКА (SUPPORT). Выберите другого дружественного оперативника Круга Иеротек (HIEROTEK CIRCLE), кроме Подмастерья (APPRENTEK) и Криптека (CRYPTEK). Он должен быть видим этому оперативнику и в пределах 6 дюймов от него; либо видим дружественному Деспотеку (DESPOTEK) и в пределах 6 дюймов от него, при этом Деспотек видим этому оперативнику. Выбранный оперативник немедленно бесплатно выполняет действие стоимостью 1 AP, перемещаясь либо выставляясь заново не дальше чем на 2 дюйма. Нельзя выбрать действие, уже выполненное выбранным оперативником в этом раунде; он также не может повторить выбранное действие в этом раунде. Нельзя выполнять это действие в дистанции контроля врага либо во время контрдействия (Counteract).",
+        "english": "1AP, SUPPORT. Select another friendly HIEROTEK CIRCLE operative excluding APPRENTEK and CRYPTEK visible to and within 6\" of this operative, or visible to and within 6\" of a friendly DESPOTEK that is visible to this operative. The selected operative can immediately perform a free 1AP action, but cannot move or be removed and set up more than 2\", perform an action it has already performed during this turning point, or perform that action again during this turning point. This operative cannot perform this action within enemy control range or while counteracting.",
+        "proseTitles": [
+          "Interstitial Command"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "aad24bdd4f289b34",
+    "expectedTitle": "Psychomancer Actions — Interstitial Command and Harbinger of Despair",
+    "team": "Hierotek Circle",
+    "source": {
+      "officialPdf": "https://assets.warhammer-community.com/eng_hierotek_circle_online_rules-df98wqycag-bek3q27dqk.pdf",
+      "date": "2026-08-26",
+      "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/hierotek-circle/",
+      "checkedOn": "2026-10-05",
+      "evidence": [
+        {
+          "officialPdfPages": [
+            1,
+            2,
+            4,
+            12
+          ],
+          "note": "Previous errata p.12 adds movement/setup and counteracting restrictions; Despotek action exception is on p.12."
+        },
+        {
+          "wahapediaLines": "256-259",
+          "note": "Current general Interstitial Command body."
+        }
+      ]
+    },
+    "blocks": [
+      {
+        "heading": "Interstitial Command",
+        "russian": "1 AP, ПОДДЕРЖКА (SUPPORT). Выберите другого дружественного оперативника Круга Иеротек (HIEROTEK CIRCLE), кроме Подмастерья (APPRENTEK) и Криптека (CRYPTEK). Он должен быть видим этому оперативнику и в пределах 6 дюймов от него; либо видим дружественному Деспотеку (DESPOTEK) и в пределах 6 дюймов от него, при этом Деспотек видим этому оперативнику. Выбранный оперативник немедленно бесплатно выполняет действие стоимостью 1 AP, перемещаясь либо выставляясь заново не дальше чем на 2 дюйма. Нельзя выбрать действие, уже выполненное выбранным оперативником в этом раунде; он также не может повторить выбранное действие в этом раунде. Нельзя выполнять это действие в дистанции контроля врага либо во время контрдействия (Counteract).",
+        "english": "1AP, SUPPORT. Select another friendly HIEROTEK CIRCLE operative excluding APPRENTEK and CRYPTEK visible to and within 6\" of this operative, or visible to and within 6\" of a friendly DESPOTEK that is visible to this operative. The selected operative can immediately perform a free 1AP action, but cannot move or be removed and set up more than 2\", perform an action it has already performed during this turning point, or perform that action again during this turning point. This operative cannot perform this action within enemy control range or while counteracting.",
+        "proseTitles": [
+          "Interstitial Command"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "6c5ea89a573d5c72",
+    "expectedTitle": "Technomancer Actions",
+    "team": "Hierotek Circle",
+    "source": {
+      "officialPdf": "https://assets.warhammer-community.com/eng_hierotek_circle_online_rules-df98wqycag-bek3q27dqk.pdf",
+      "date": "2026-08-26",
+      "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/hierotek-circle/",
+      "checkedOn": "2026-10-05",
+      "evidence": [
+        {
+          "officialPdfPages": [
+            1,
+            2,
+            4,
+            12
+          ],
+          "note": "Previous errata p.12 adds movement/setup and counteracting restrictions; Despotek action exception is on p.12."
+        },
+        {
+          "wahapediaLines": "256-259",
+          "note": "Current general Interstitial Command body."
+        }
+      ]
+    },
+    "blocks": [
+      {
+        "heading": "Interstitial Command",
+        "russian": "1 AP, ПОДДЕРЖКА (SUPPORT). Выберите другого дружественного оперативника Круга Иеротек (HIEROTEK CIRCLE), кроме Подмастерья (APPRENTEK) и Криптека (CRYPTEK). Он должен быть видим этому оперативнику и в пределах 6 дюймов от него; либо видим дружественному Деспотеку (DESPOTEK) и в пределах 6 дюймов от него, при этом Деспотек видим этому оперативнику. Выбранный оперативник немедленно бесплатно выполняет действие стоимостью 1 AP, перемещаясь либо выставляясь заново не дальше чем на 2 дюйма. Нельзя выбрать действие, уже выполненное выбранным оперативником в этом раунде; он также не может повторить выбранное действие в этом раунде. Нельзя выполнять это действие в дистанции контроля врага либо во время контрдействия (Counteract).",
+        "english": "1AP, SUPPORT. Select another friendly HIEROTEK CIRCLE operative excluding APPRENTEK and CRYPTEK visible to and within 6\" of this operative, or visible to and within 6\" of a friendly DESPOTEK that is visible to this operative. The selected operative can immediately perform a free 1AP action, but cannot move or be removed and set up more than 2\", perform an action it has already performed during this turning point, or perform that action again during this turning point. This operative cannot perform this action within enemy control range or while counteracting.",
+        "proseTitles": [
+          "Interstitial Command"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "fffb0948d21cd1a7",
+    "expectedTitle": "Technomancer Actions (reverse)",
+    "team": "Hierotek Circle",
+    "source": {
+      "officialPdf": "https://assets.warhammer-community.com/eng_hierotek_circle_online_rules-df98wqycag-bek3q27dqk.pdf",
+      "date": "2026-08-26",
+      "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/hierotek-circle/",
+      "checkedOn": "2026-10-05",
+      "evidence": [
+        {
+          "officialPdfPages": [
+            1,
+            2,
+            4,
+            12
+          ],
+          "note": "Previous errata p.12 adds movement/setup and counteracting restrictions; Despotek action exception is on p.12."
+        },
+        {
+          "wahapediaLines": "256-259",
+          "note": "Current general Interstitial Command body."
+        }
+      ]
+    },
+    "blocks": [
+      {
+        "heading": "Interstitial Command",
+        "russian": "1 AP, ПОДДЕРЖКА (SUPPORT). Выберите другого дружественного оперативника Круга Иеротек (HIEROTEK CIRCLE), кроме Подмастерья (APPRENTEK) и Криптека (CRYPTEK). Он должен быть видим этому оперативнику и в пределах 6 дюймов от него; либо видим дружественному Деспотеку (DESPOTEK) и в пределах 6 дюймов от него, при этом Деспотек видим этому оперативнику. Выбранный оперативник немедленно бесплатно выполняет действие стоимостью 1 AP, перемещаясь либо выставляясь заново не дальше чем на 2 дюйма. Нельзя выбрать действие, уже выполненное выбранным оперативником в этом раунде; он также не может повторить выбранное действие в этом раунде. Нельзя выполнять это действие в дистанции контроля врага либо во время контрдействия (Counteract).",
+        "english": "1AP, SUPPORT. Select another friendly HIEROTEK CIRCLE operative excluding APPRENTEK and CRYPTEK visible to and within 6\" of this operative, or visible to and within 6\" of a friendly DESPOTEK that is visible to this operative. The selected operative can immediately perform a free 1AP action, but cannot move or be removed and set up more than 2\", perform an action it has already performed during this turning point, or perform that action again during this turning point. This operative cannot perform this action within enemy control range or while counteracting.",
+        "proseTitles": [
+          "Interstitial Command"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "93f9bd78cd76e0bc",
+    "expectedTitle": "Immortal Despotek — Interstitial Command",
+    "team": "Hierotek Circle",
+    "source": {
+      "officialPdf": "https://assets.warhammer-community.com/eng_hierotek_circle_online_rules-df98wqycag-bek3q27dqk.pdf",
+      "date": "2026-08-26",
+      "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/hierotek-circle/",
+      "checkedOn": "2026-10-05",
+      "evidence": [
+        {
+          "officialPdfPages": [
+            1,
+            2,
+            4,
+            12
+          ],
+          "note": "Previous errata p.12 adds movement/setup and counteracting restrictions; Despotek action exception is on p.12."
+        },
+        {
+          "wahapediaLines": "256-259",
+          "note": "Current general Interstitial Command body."
+        }
+      ]
+    },
+    "blocks": [
+      {
+        "heading": "Interstitial Command",
+        "russian": "1 AP, ПОДДЕРЖКА (SUPPORT). Выберите другого дружественного оперативника Круга Иеротек (HIEROTEK CIRCLE), кроме Подмастерья (APPRENTEK) и Криптека (CRYPTEK). Он должен быть видим этому оперативнику и в пределах 6 дюймов от него; либо видим дружественному Деспотеку (DESPOTEK) и в пределах 6 дюймов от него, при этом Деспотек видим этому оперативнику. Выбранный оперативник немедленно бесплатно выполняет действие стоимостью 1 AP, кроме «Ускорения» (Accelerate), перемещаясь либо выставляясь заново не дальше чем на 2 дюйма. Нельзя выбрать действие, уже выполненное выбранным оперативником в этом раунде; он также не может повторить выбранное действие в этом раунде. Нельзя выполнять это действие в дистанции контроля врага либо во время контрдействия (Counteract).",
+        "english": "1AP, SUPPORT. Select another friendly HIEROTEK CIRCLE operative excluding APPRENTEK and CRYPTEK visible to and within 6\" of this operative, or visible to and within 6\" of a friendly DESPOTEK that is visible to this operative. The selected operative can immediately perform a free 1AP action (excluding Accelerate), but cannot move or be removed and set up more than 2\", perform an action it has already performed during this turning point, or perform that action again during this turning point. This operative cannot perform this action within enemy control range or while counteracting.",
+        "proseTitles": [
+          "Interstitial Command"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "d944e170d3b6c460",
+    "expectedTitle": "Plasmacyte Accelerator",
+    "team": "Hierotek Circle",
+    "source": {
+      "officialPdf": "https://assets.warhammer-community.com/eng_hierotek_circle_online_rules-df98wqycag-bek3q27dqk.pdf",
+      "date": "2026-08-26",
+      "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/hierotek-circle/",
+      "checkedOn": "2026-10-05",
+      "evidence": [
+        {
+          "officialPdfPages": [
+            3,
+            12
+          ],
+          "note": "Previous errata p.12."
+        },
+        {
+          "wahapediaLines": "353-356",
+          "note": "Current Accelerator rule shows the 2\" exception; same Scuttler wording applies to Reanimator."
+        }
+      ]
+    },
+    "blocks": [
+      {
+        "heading": "Scuttler",
+        "russian": "Если у оперативника приказ Скрытность и он в укрытии, его нельзя выбрать допустимой целью, кроме выбора цели в пределах 2 дюймов; это правило имеет приоритет над другими, например террейном с высотной позицией. Он выполняет Отступление (Fall Back) на 1 AP дешевле. Он не может использовать оружие, отсутствующее на карточке, или выполнять уникальные действия, кроме «Ускорения» (Accelerate).",
+        "english": "With a Conceal order and in cover, this operative cannot be selected as a valid target except being within 2\", taking precedence over other rules such as Vantage terrain. It can perform Fall Back for 1 less AP. It cannot use weapons not on its datacard or perform unique actions other than Accelerate.",
+        "proseTitles": [
+          "Scuttler"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "b162a13873437e41",
+    "expectedTitle": "Plasmacyte Reanimator",
+    "team": "Hierotek Circle",
+    "source": {
+      "officialPdf": "https://assets.warhammer-community.com/eng_hierotek_circle_online_rules-df98wqycag-bek3q27dqk.pdf",
+      "date": "2026-08-26",
+      "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/hierotek-circle/",
+      "checkedOn": "2026-10-05",
+      "evidence": [
+        {
+          "officialPdfPages": [
+            3,
+            12
+          ],
+          "note": "Previous errata p.12."
+        },
+        {
+          "wahapediaLines": "353-356",
+          "note": "Current Accelerator rule shows the 2\" exception; same Scuttler wording applies to Reanimator."
+        }
+      ]
+    },
+    "blocks": [
+      {
+        "heading": "Scuttler",
+        "russian": "Если у оперативника приказ Скрытность и он в укрытии, его нельзя выбрать допустимой целью, кроме выбора цели в пределах 2 дюймов; это правило имеет приоритет над другими, например террейном с высотной позицией. Он выполняет Отступление (Fall Back) на 1 AP дешевле. Он не может использовать оружие, отсутствующее на карточке, или выполнять уникальные действия, кроме «Реанимации» (Reanimate).",
+        "english": "With a Conceal order and in cover, this operative cannot be selected as a valid target except being within 2\", taking precedence over other rules such as Vantage terrain. It can perform Fall Back for 1 less AP. It cannot use weapons not on its datacard or perform unique actions other than Reanimate.",
+        "proseTitles": [
+          "Scuttler"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "814543083a874bf9",
+    "expectedTitle": "Reanimated Function",
+    "team": "Hierotek Circle",
+    "source": {
+      "officialPdf": "https://assets.warhammer-community.com/eng_hierotek_circle_online_rules-df98wqycag-bek3q27dqk.pdf",
+      "date": "2026-08-26",
+      "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/hierotek-circle/",
+      "checkedOn": "2026-10-05",
+      "evidence": [
+        {
+          "officialPdfPages": [
+            9,
+            12
+          ],
+          "note": "Previous errata p.12 adds the exception."
+        }
+      ]
+    },
+    "blocks": [
+      {
+        "heading": "Reanimated Function",
+        "russian": "Примените при определении контроля над маркером. Выберите свой маркер Реанимации. До начала следующего раунда при определении контроля над любым маркером считайте выбранный маркер Реанимации дружественным оперативником Круга Иеротек с лимитом AP (APL), равным 1.\nДля операции «Мученики» (Martyrs) из Approved Ops 2025 эта уловка не имеет эффекта.",
+        "english": "Use when determining control of a marker. Select one of your Reanimation markers. Until the start of the next turning point, whenever determining control of any marker, treat that Reanimation marker as a friendly HIEROTEK CIRCLE operative with APL 1. For Martyrs (Approved Ops 2025), this ploy has no effect.",
+        "proseTitles": [
+          "Reanimated Function"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "fffb0948d21cd1a7",
+    "expectedTitle": "Technomancer Actions (reverse)",
+    "team": "Hierotek Circle",
+    "source": {
+      "officialPdf": "https://assets.warhammer-community.com/eng_hierotek_circle_online_rules-df98wqycag-bek3q27dqk.pdf",
+      "date": "2026-08-26",
+      "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/hierotek-circle/",
+      "checkedOn": "2026-10-05",
+      "evidence": [
+        {
+          "officialPdfPages": [
+            2,
+            12
+          ],
+          "note": "Previous errata p.12."
+        }
+      ]
+    },
+    "blocks": [
+      {
+        "heading": "Canoptek Repair",
+        "russian": "1 AP, Поддержка (SUPPORT). Выберите дружественного оперативника Круга Иеротек, видимого этому оперативнику и находящегося в пределах 6 дюймов: он восстанавливает до 2D3 утраченных ран. Нельзя выполнять в зоне контроля врага или если дружественный оперативник уже выполнял это действие в текущем раунде.",
+        "english": "1AP, SUPPORT. Select one friendly HIEROTEK CIRCLE operative visible to and within 6\" of this operative to regain up to 2D3 lost wounds. Cannot perform within enemy control range, or if a friendly operative has already performed this action this turning point.",
+        "proseTitles": [
+          "Canoptek Repair"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "fffb0948d21cd1a7",
+    "expectedTitle": "Technomancer Actions (reverse)",
+    "team": "Hierotek Circle",
+    "source": {
+      "officialPdf": "https://assets.warhammer-community.com/eng_hierotek_circle_online_rules-df98wqycag-bek3q27dqk.pdf",
+      "date": "2026-08-26",
+      "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/hierotek-circle/",
+      "checkedOn": "2026-10-05",
+      "evidence": [
+        {
+          "officialPdfPages": [
+            3,
+            12
+          ],
+          "note": "Previous errata p.12 adds this note."
+        }
+      ]
+    },
+    "blocks": [
+      {
+        "heading": "Augment Weapon · 1AP · SUPPORT",
+        "russian": "Выберите дружественного оперативника Круга Иеротек (HIEROTEK CIRCLE), видимого этому оперативнику и в пределах 6 дюймов от него. Выберите одно оружие на карточке союзника и два правила для него: «Смертоносное 5+» (Lethal 5+), «Рассечение» (Rending), «Насыщение» (Saturate), «Сокрушительное» (Severe). Они действуют до начала следующей активации этого оперативника, его выведения из строя либо повторного выполнения действия дружественным оперативником, что наступит раньше. Для Посоха света (Staff of light) и Чародейского проводника (Arcane conduit) выберите только один профиль: стрелковый либо ближнего боя. Нельзя выполнять в дистанции контроля врага.",
+        "english": "SUPPORT. Select one friendly HIEROTEK CIRCLE operative visible to and within 6\" of this operative. Until the start of this operative’s next activation, its incapacitation or this action being performed again by a friendly operative (whichever comes first), select two rules from Lethal 5+, Rending, Saturate and Severe for one weapon from the selected operative’s datacard. For a staff of light or arcane conduit select either its ranged or melee profile only. Cannot perform within enemy control range.",
+        "proseTitles": [
+          "Augment Weapon"
+        ],
+        "append": true,
+        "headingRussian": "Усилить оружие · 1 AP · ПОДДЕРЖКА (Augment Weapon)"
+      }
+    ]
+  },
+  {
+    "id": "fb966be5691bc43d",
+    "expectedTitle": "Voidscarred Shade Runner",
+    "team": "Corsair Voidscarred",
+    "source": {
+      "officialPdf": "https://assets.warhammer-community.com/eng_28-01_kill_team_team_rules_corsair_voidscarred-3war9i1i61-vjohvdpcb9.pdf",
+      "date": "2026-01-28",
+      "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/corsair-voidscarred/",
+      "checkedOn": "2026-10-05",
+      "evidence": [
+        {
+          "officialPdfPages": [
+            10
+          ],
+          "note": "Same-activation Dash restriction visibly struck through on p.10."
+        },
+        {
+          "wahapediaSnapshot": "inventory/current-team-rules/corsair-voidscarred-web-full.txt",
+          "ruleLocator": "Blink Pack, L329–330"
+        }
+      ]
+    },
+    "blocks": [
+      {
+        "heading": "Blink Pack",
+        "russian": "При Атаке, Отступлении или Перемещении этот оперативник может совершить скачок через варп: уберите его и выставьте целиком в пределах 7 дюймов по горизонтали от исходного места (в Гэллоударке расстояние измеряется сквозь стены). Место должно быть допустимым; кроме Атаки, нельзя выставлять бойца в зоне контроля врага.",
+        "english": "When performing Charge, Fall Back or Reposition, this operative can warp-jump: remove it and set it up wholly within 7\" horizontally of its original location (measure through walls in Gallowdark). It must be set up in a legal location and, except when charging, cannot be within enemy control range.",
+        "proseTitles": [
+          "Blink Pack"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "2c381b14cbbb9ee9",
+    "expectedTitle": "Voidscarred Kurnite Hunter",
+    "team": "Corsair Voidscarred",
+    "source": {
+      "officialPdf": "https://assets.warhammer-community.com/eng_28-01_kill_team_team_rules_corsair_voidscarred-3war9i1i61-vjohvdpcb9.pdf",
+      "date": "2026-01-28",
+      "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/corsair-voidscarred/",
+      "checkedOn": "2026-10-05",
+      "evidence": [
+        {
+          "officialPdfPages": [
+            2
+          ],
+          "note": "Current official pack/update log; strike-throughs interpreted visually."
+        },
+        {
+          "wahapediaSnapshot": "inventory/current-team-rules/corsair-voidscarred-web-full.txt",
+          "ruleLocator": "Erudite Hunter, L311–312"
+        }
+      ]
+    },
+    "blocks": [
+      {
+        "heading": "Erudite Hunter",
+        "russian": "Стратегический манёвр: выберите вражеского оперативника в пределах 9 дюймов. Раз за раунд после того, как он выполнит действие, во время которого он перемещается, прервите его и бесплатно выполните Перемещение (Reposition), завершив его не дальше от врага, чем начали, или Атаку (Charge), завершив её в зоне контроля цели. При необходимости можно сменить приказ. В тесном бою (Close Quarters) игнорируйте стены (Wall), сравнивая дистанцию до и после перемещения.",
+        "english": "Strategic Gambit: select one enemy operative within 9\". Once per turning point, after it performs an action in which it moves, interrupt it and perform a free Reposition (it cannot end farther from that enemy) or free Charge (it must end in control range); its order can be changed. In Close Quarters, ignore Wall terrain when determining whether it ends further away.",
+        "proseTitles": [
+          "Erudite Hunter"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "112062af91b8119f",
+    "expectedTitle": "In Midnight Clad",
+    "team": "Nemesis Claw",
+    "source": {
+      "officialPdf": "https://assets.warhammer-community.com/eng_17-06_kill_team_team_rules_nemesis_claw_online_rules-oyryxud2oc-jylng5bujl.pdf",
+      "date": "2026-06-17",
+      "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/nemesis-claw/",
+      "checkedOn": "2026-10-05",
+      "evidence": [
+        {
+          "officialPdfPages": [
+            10
+          ],
+          "note": "Current June 2026 official PDF and appended errata; crossed-out wording is deleted."
+        },
+        {
+          "wahapediaSnapshot": "inventory/current-team-rules/nemesis-claw-web-full.txt",
+          "ruleLocator": "In Midnight Clad update p.10"
+        }
+      ]
+    },
+    "blocks": [
+      {
+        "heading": "In Midnight Clad",
+        "russian": "Когда враг стреляет по дружественному оперативнику Когтя возмездия (NEMESIS CLAW), союзник считается заслонённым (Obscured), если выполнены оба условия:\n• Он дальше 8 дюймов от видимых ему врагов.\n• Он в пределах 1 дюйма от тяжёлого террейна (Heavy), расположенного не ниже него, либо часть его подставки находится под высотой (Vantage).",
+        "english": "Whenever an enemy shoots a friendly NEMESIS CLAW operative, it is obscured if both apply: it is more than 8\" from enemy operatives visible to it; it is within 1\" of Heavy terrain that is not lower than it, or any part of its base is underneath Vantage terrain.",
+        "proseTitles": [
+          "In Midnight Clad"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "4958830bbbf14c54",
+    "expectedTitle": "Night Lord Fearmonger — Poison Objective",
+    "team": "Nemesis Claw",
+    "source": {
+      "officialPdf": "https://assets.warhammer-community.com/eng_17-06_kill_team_team_rules_nemesis_claw_online_rules-oyryxud2oc-jylng5bujl.pdf",
+      "date": "2026-06-17",
+      "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/nemesis-claw/",
+      "checkedOn": "2026-10-05",
+      "evidence": [
+        {
+          "officialPdfPages": [
+            9
+          ],
+          "note": "Current June 2026 official PDF and appended errata; crossed-out wording is deleted."
+        },
+        {
+          "wahapediaSnapshot": "inventory/current-team-rules/nemesis-claw-web-full.txt",
+          "ruleLocator": "Poison Objective update p.9"
+        }
+      ]
+    },
+    "blocks": [
+      {
+        "heading": "Poison Objective",
+        "russian": "1 AP. Выберите маркер цели, который контролирует этот оперативник: он получает один ваш жетон Террохимикатов. Маркер не может находиться в зоне контроля врага или уже иметь ваш жетон Террохимикатов. В первый раз, когда вражеский оперативник без вашего жетона оспаривает этот маркер, тот получает жетон, а затем получает 2D3 урона (если это произошло во время действия, урон наносится в конце действия). Нельзя выполнять в зоне контроля врага.",
+        "english": "1AP. Select an objective marker this operative controls to gain one of your Terrorchem tokens. It cannot be within enemy control range or already have one of your Terrorchem tokens. The first time an enemy operative that does not have one of your Terrorchem tokens contests that objective marker, that operative gains one, then suffers 2D3 damage (at the end of the action if this occurs during an action). Cannot perform within enemy control range.",
+        "proseTitles": [
+          "Poison Objective"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "31084992503c1fff",
+    "expectedTitle": "Night Lord Fearmonger",
+    "team": "Nemesis Claw",
+    "source": {
+      "officialPdf": "https://assets.warhammer-community.com/eng_17-06_kill_team_team_rules_nemesis_claw_online_rules-oyryxud2oc-jylng5bujl.pdf",
+      "date": "2026-06-17",
+      "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/nemesis-claw/",
+      "checkedOn": "2026-10-05",
+      "evidence": [
+        {
+          "officialPdfPages": [
+            9,
+            10,
+            13
+          ],
+          "note": "Current June 2026 official PDF and appended errata; crossed-out wording is deleted."
+        },
+        {
+          "wahapediaSnapshot": "inventory/current-team-rules/nemesis-claw-web-full.txt",
+          "ruleLocator": "Terrorchem update p.9–10 and p.13"
+        }
+      ]
+    },
+    "blocks": [
+      {
+        "heading": "Terrorchem*",
+        "russian": "На шаге разрешения кубиков атаки (Resolve Attack Dice), если критическими успехами нанесён урон, включая урон от «Опустошительного» (Devastating), цель оружия получает ваш жетон Террохимикатов (Terrorchem), если у неё его ещё нет. При каждой активации оперативника с вашим жетоном Террохимикатов нанесите ему D3 урона.",
+        "english": "In the Resolve Attack Dice step, if critical successes inflict damage (including Devastating damage), the operative this weapon is used against gains one of your Terrorchem tokens if it does not already have one. Whenever an operative with one of your Terrorchem tokens is activated, inflict D3 damage on it.",
+        "proseTitles": [
+          "Terrorchem*"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "015ca59735651150",
+    "expectedTitle": "Night Lord Visionary — Prescience and Premonition",
+    "team": "Nemesis Claw",
+    "source": {
+      "officialPdf": "https://assets.warhammer-community.com/eng_17-06_kill_team_team_rules_nemesis_claw_online_rules-oyryxud2oc-jylng5bujl.pdf",
+      "date": "2026-06-17",
+      "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/nemesis-claw/",
+      "checkedOn": "2026-10-05",
+      "evidence": [
+        {
+          "officialPdfPages": [
+            11
+          ],
+          "note": "Current June 2026 official PDF and appended errata; crossed-out wording is deleted."
+        },
+        {
+          "wahapediaSnapshot": "inventory/current-team-rules/nemesis-claw-web-full.txt",
+          "ruleLocator": "Prescience update p.11"
+        }
+      ]
+    },
+    "blocks": [
+      {
+        "heading": "Prescience",
+        "russian": "На шаге подготовки каждой фазы стратегии получите D3 очка Предвидения. Во время фазы перестрелки их можно тратить так (каждое правило не более одного раза за раунд): Предчувствие — когда наступает ваша очередь активировать дружественного оперативника, потратьте 1 очко, чтобы пропустить эту активацию; Предзнаменование — когда кубик атаки наносит этому оперативнику обычный урон, потратьте 1 очко, чтобы игнорировать этот урон. Нельзя получать или тратить очки Предвидения, если этот оперативник выведен из строя.\nВ конце каждого раунда сбросьте все оставшиеся очки Предвидения (Prescience).",
+        "english": "In the Ready step of each Strategy phase, gain D3 Prescience points. During the Firefight phase, you can spend them as follows (each rule no more than once per turning point): Foreboding — whenever it is your turn to activate a friendly operative, spend 1 point to skip that activation; Portent — whenever an attack die inflicts Normal damage on this operative, spend 1 point to ignore that damage. You cannot gain or spend Prescience points if this operative is incapacitated. Discard all remaining Prescience points at the end of each turning point.",
+        "proseTitles": [
+          "Prescience"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "369895f2b81d61c4",
+    "expectedTitle": "Death to the False Emperor",
+    "team": "Nemesis Claw",
+    "source": {
+      "officialPdf": "https://assets.warhammer-community.com/eng_17-06_kill_team_team_rules_nemesis_claw_online_rules-oyryxud2oc-jylng5bujl.pdf",
+      "date": "2026-06-17",
+      "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/nemesis-claw/",
+      "checkedOn": "2026-10-05",
+      "evidence": [
+        {
+          "officialPdfPages": [
+            10
+          ],
+          "note": "Current June 2026 official PDF and appended errata; crossed-out wording is deleted."
+        },
+        {
+          "wahapediaSnapshot": "inventory/current-team-rules/nemesis-claw-web-full.txt",
+          "ruleLocator": "Death to the False Emperor update p.10"
+        }
+      ]
+    },
+    "blocks": [
+      {
+        "heading": "Death to the False Emperor",
+        "russian": "Примените, когда дружественный оперативник Когтя возмездия стреляет по оперативнику с ключевым словом «ИМПЕРИУМ» (IMPERIUM), сражается с ним или отвечает на его удар. До конца последовательности его оружие получает свойство «Неумолимое без устали» (Ceaseless); если у врага также есть ключевое слово «Адептус Астартес» (ADEPTUS ASTARTES), вместо этого оружие получает «Неумолимое» (Relentless).\nПрименяйте эту уловку после броска кубиков атаки дружественного оперативника.",
+        "english": "Use when a friendly NEMESIS CLAW operative shoots against, fights against or retaliates against an operative with the IMPERIUM keyword. Its weapons have Ceaseless until the sequence ends; if the enemy also has ADEPTUS ASTARTES, they have Relentless instead. Use this ploy after rolling the friendly operative’s attack dice.",
+        "proseTitles": [
+          "Death to the False Emperor"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "fa2eb5c7c83ae2f9",
+    "expectedTitle": "Preysight",
+    "team": "Nemesis Claw",
+    "source": {
+      "officialPdf": "https://assets.warhammer-community.com/eng_17-06_kill_team_team_rules_nemesis_claw_online_rules-oyryxud2oc-jylng5bujl.pdf",
+      "date": "2026-06-17",
+      "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/nemesis-claw/",
+      "checkedOn": "2026-10-05",
+      "evidence": [
+        {
+          "officialPdfPages": [
+            10
+          ],
+          "note": "Current June 2026 official PDF and appended errata; crossed-out wording is deleted."
+        },
+        {
+          "wahapediaSnapshot": "inventory/current-team-rules/nemesis-claw-web-full.txt",
+          "ruleLocator": "Preysight update p.10"
+        }
+      ]
+    },
+    "blocks": [
+      {
+        "heading": "Preysight",
+        "russian": "Когда дружественный оперативник Когтя возмездия (NEMESIS CLAW) выполняет «Стрельбу» (Shoot), можно применить это правило. До конца действия его стрелковое оружие получает «Дальность 6 дюймов» (Range 6\") и «Обнаружение в лёгком укрытии» (Seek Light).",
+        "english": "Whenever a friendly NEMESIS CLAW operative performs Shoot, you can use this rule. Until the end of the action its ranged weapons have Range 6\" and Seek Light.",
+        "proseTitles": [
+          "Preysight"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "fa0ab8893c45e820",
+    "expectedTitle": "Return to Darkness",
+    "team": "Nemesis Claw",
+    "source": {
+      "officialPdf": "https://assets.warhammer-community.com/eng_17-06_kill_team_team_rules_nemesis_claw_online_rules-oyryxud2oc-jylng5bujl.pdf",
+      "date": "2026-06-17",
+      "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/nemesis-claw/",
+      "checkedOn": "2026-10-05",
+      "evidence": [
+        {
+          "officialPdfPages": [
+            10
+          ],
+          "note": "Current June 2026 official PDF and appended errata; crossed-out wording is deleted."
+        },
+        {
+          "wahapediaSnapshot": "inventory/current-team-rules/nemesis-claw-web-full.txt",
+          "ruleLocator": "Return to Darkness update p.10"
+        }
+      ]
+    },
+    "blocks": [
+      {
+        "heading": "Return to Darkness",
+        "russian": "Один дружественный оперативник Когтя возмездия немедленно может бесплатно выполнить Отступление (Fall Back) или Перемещение (Reposition), но должен завершить движение так, чтобы в его зоне контроля находился тяжёлый террейн либо часть подставки оказалась под террейном с высотной позицией. Он не может завершить движение ближе к вражеским оперативникам.\nЗа это действие нельзя переместиться дальше 4 дюймов. В тесном бою (Close Quarters) игнорируйте стены (Wall), сравнивая дистанции до врагов.",
+        "english": "One friendly NEMESIS CLAW operative can immediately perform a free Fall Back or Reposition, but must end with Heavy terrain within its control range or any part of its base underneath Vantage terrain. It cannot end closer to enemy operatives. It cannot move more than 4\" during that action. In Close Quarters, ignore Wall terrain when comparing distances to enemy operatives.",
+        "proseTitles": [
+          "Return to Darkness"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "2235ca994aca9176",
+    "expectedTitle": "Vox Scream",
+    "team": "Nemesis Claw",
+    "source": {
+      "officialPdf": "https://assets.warhammer-community.com/eng_17-06_kill_team_team_rules_nemesis_claw_online_rules-oyryxud2oc-jylng5bujl.pdf",
+      "date": "2026-06-17",
+      "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/nemesis-claw/",
+      "checkedOn": "2026-10-05",
+      "evidence": [
+        {
+          "officialPdfPages": [
+            10
+          ],
+          "note": "“1 additional CP per previous use” is magenta strike-through/deleted."
+        },
+        {
+          "wahapediaSnapshot": "inventory/current-team-rules/nemesis-claw-web-full.txt",
+          "ruleLocator": "Vox Scream update p.10"
+        }
+      ]
+    },
+    "blocks": [
+      {
+        "heading": "Vox Scream",
+        "russian": "Примените, когда противник собирается активировать врага, видимого дружественному оперативнику Когтя возмездия (NEMESIS CLAW). Бросьте D6: если результат выше APL врага, противник не может активировать его в эту активацию. Если результат равен APL или ниже, уловка не применяется: верните потраченные CP; нельзя снова применять её в этом раунде. Если нет других врагов, которых можно активировать, уловка не имеет эффекта.",
+        "english": "Use when your opponent would activate an enemy visible to a friendly NEMESIS CLAW operative. Roll D6: if higher than the enemy’s APL it cannot activate during this activation. If equal or lower, do not use the ploy, refund the CP and do not use it again during this turning point. If no other enemy operative is eligible, the ploy has no effect.",
+        "proseTitles": [
+          "Vox Scream"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "2993363088d2c6d5",
+    "expectedTitle": "Chain Snare",
+    "team": "Nemesis Claw",
+    "source": {
+      "officialPdf": "https://assets.warhammer-community.com/eng_17-06_kill_team_team_rules_nemesis_claw_online_rules-oyryxud2oc-jylng5bujl.pdf",
+      "date": "2026-06-17",
+      "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/nemesis-claw/",
+      "checkedOn": "2026-10-05",
+      "evidence": [
+        {
+          "officialPdfPages": [
+            10
+          ],
+          "note": "Current June 2026 official PDF and appended errata; crossed-out wording is deleted."
+        },
+        {
+          "wahapediaSnapshot": "inventory/current-team-rules/nemesis-claw-web-full.txt",
+          "ruleLocator": "Chain Snare update p.10"
+        }
+      ]
+    },
+    "blocks": [
+      {
+        "heading": "Chain Snare",
+        "russian": "Когда вражеский оперативник собирается выполнить Отступление (Fall Back), находясь в зоне контроля дружественного бойца Когтя возмездия, и в зоне контроля этого бойца нет других врагов, примените это правило. Бросьте два D6 либо один D6, если у врага характеристика ран выше, чем у дружественного оперативника. При результате 4+ враг не может выполнить это действие в данной активации или контрдействии; AP не тратятся.\nЕсли выпал хотя бы один результат 4+, в этом раунде больше нельзя применять это правило.",
+        "english": "Whenever an enemy operative would perform Fall Back while within control range of a friendly NEMESIS CLAW operative, if no other enemies are within that friendly operative’s control range, you can use this rule. Roll two D6, or one D6 if the enemy has a higher Wounds stat than the friendly operative. If any result is 4+, the enemy cannot perform that action during that activation or counteraction (no AP are spent). If any result is 4+, you cannot use this rule again during this turning point.",
+        "proseTitles": [
+          "Chain Snare"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "c15b5ce0268ed326",
+    "expectedTitle": "Oversight Drone",
+    "team": "Vespid Stingwings",
+    "source": {
+      "officialPdf": "https://assets.warhammer-community.com/eng_vespid_stingwings_online_rules-im3is77cs2-gtnx7xocbs.pdf",
+      "date": "2026-08-26",
+      "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/vespid-stingwings/",
+      "checkedOn": "2026-10-05",
+      "evidence": [
+        {
+          "officialPdfPages": [
+            10
+          ],
+          "note": "Shooter-visibility clause is visibly struck through on p.10."
+        },
+        {
+          "wahapediaSnapshot": "inventory/current-team-rules/vespid-stingwings-web-full.txt",
+          "ruleLocator": "Aerial Guidance update p.10"
+        }
+      ]
+    },
+    "blocks": [
+      {
+        "heading": "Aerial Guidance (1AP)",
+        "russian": "ПОДДЕРЖКА (SUPPORT). До начала следующей активации этого оперативника, когда другой дружественный оперативник Веспидов-жалоносцев, находящийся в пределах 6 дюймов от него, стреляет по врагу, видимому этому оперативнику, дальнобойное оружие союзника получает правила «Смертоносное 5+» (Lethal 5+) и «Насыщение огнём» (Saturate). Эффект не действует, пока этот оперативник находится в дистанции контроля врага. Это действие нельзя выполнять в дистанции контроля врага.",
+        "english": "SUPPORT. Until the start of this operative’s next activation, whenever another friendly VESPID STINGWING operative within 6 inches of this operative shoots an enemy visible to this operative, that friendly operative’s ranged weapons have Lethal 5+ and Saturate. This has no effect while this operative is within control range of an enemy operative. This action cannot be performed within control range of an enemy operative.",
+        "proseTitles": [
+          "Aerial Guidance"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "14edb1452bda9d0e",
+    "expectedTitle": "Vespid Longsting",
+    "team": "Vespid Stingwings",
+    "source": {
+      "officialPdf": "https://assets.warhammer-community.com/eng_vespid_stingwings_online_rules-im3is77cs2-gtnx7xocbs.pdf",
+      "date": "2026-08-26",
+      "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/vespid-stingwings/",
+      "checkedOn": "2026-10-05",
+      "evidence": [
+        {
+          "officialPdfPages": [
+            10
+          ],
+          "note": "Current official pack/update log; strike-throughs interpreted visually."
+        },
+        {
+          "wahapediaSnapshot": "inventory/current-team-rules/vespid-stingwings-web-full.txt",
+          "ruleLocator": "Neutron Fragment update p.10"
+        }
+      ]
+    },
+    "blocks": [
+      {
+        "heading": "Neutron Fragment",
+        "russian": "Если цель не выведена из строя, но вы разрешили хотя бы один кубик атаки, она получает один ваш жетон «Нейтронный осколок» (Neutron Fragment). При активации оперативника нанесите ему D3 урона за каждый такой жетон у него.",
+        "english": "If the target is not incapacitated but you resolve any attack dice, the target gains one of your Neutron Fragment tokens. Whenever an operative with your Neutron Fragment tokens is activated, inflict D3 damage on it for each token it has.",
+        "proseTitles": [
+          "Neutron Fragment"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "129635b7ad8ca109",
+    "expectedTitle": "Whipcord Emergence",
+    "team": "Raveners",
+    "source": {
+      "officialPdf": "https://assets.warhammer-community.com/eng_raveners_online_rules-8vfeyxgbks-nf6lxfcbfw.pdf",
+      "date": "2026-08-26",
+      "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/raveners/",
+      "checkedOn": "2026-10-05",
+      "evidence": [
+        {
+          "officialPdfPages": [
+            8
+          ],
+          "note": "Current August 2026 official PDF/update log; visual strike-throughs excluded from effective text."
+        },
+        {
+          "wahapediaSnapshot": "inventory/current-team-rules/raveners-web-full.txt",
+          "ruleLocator": "Whipcord Emergence p.8"
+        }
+      ]
+    },
+    "blocks": [
+      {
+        "heading": "Rule",
+        "russian": "Когда вражеский оперативник стреляет по дружественному равенеру, если тот в этом раунде выполнял действие «Зарыться» (Burrow), можно перебросить один защитный кубик; если равенер находится на вашем туннеле (TUNNEL), выберите одно значение результата и перебросьте все свои кубики защиты с этим результатом.",
+        "english": "Whenever an operative is shooting a friendly RAVENER operative: if that friendly operative has performed the Burrow action during that turning point, you can re-roll one of your defence dice; if that friendly operative is on your TUNNEL, select one result face and re-roll your defence dice showing that result.",
+        "proseTitles": [
+          "Rule"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "7ce06c9406cbc98a",
+    "expectedTitle": "Tunnel",
+    "team": "Raveners",
+    "source": {
+      "officialPdf": "https://assets.warhammer-community.com/eng_raveners_online_rules-8vfeyxgbks-nf6lxfcbfw.pdf",
+      "date": "2026-08-26",
+      "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/raveners/",
+      "checkedOn": "2026-10-05",
+      "evidence": [
+        {
+          "officialPdfPages": [
+            9
+          ],
+          "note": "Current August 2026 official PDF/update log; visual strike-throughs excluded from effective text."
+        },
+        {
+          "wahapediaSnapshot": "inventory/current-team-rules/raveners-web-full.txt",
+          "ruleLocator": "Tunnel update p.9"
+        }
+      ]
+    },
+    "blocks": [
+      {
+        "heading": "Rule",
+        "russian": "В конце шага выставления оперативников (Set Up Operatives) разместите на полу зоны боевых действий маркер туннеля № 0: он должен целиком находиться в вашей зоне высадки и касаться края зоны боевых действий. В качестве стратегического манёвра (Strategic Gambit) в каждом из первых четырёх раундов размещайте следующий по номеру маркер целиком в пределах 5 дюймов от предыдущего. В тесном бою (Close Quarters) туннель (TUNNEL) и дистанции между его маркерами можно измерять сквозь стены (Wall). Так образуются последовательно пронумерованные маркеры 0–4. После размещения пяти маркеров больше не размещайте их, даже если битва длится дольше четырёх раундов. Продолжение на обороте.",
+        "english": "At the end of the Set Up Operatives step, place your Tunnel marker numbered 0 on the killzone floor, wholly within your drop zone and touching your killzone edge. As a STRATEGIC GAMBIT in the first four turning points, place your next numbered Tunnel marker on the floor wholly within 5″ of the preceding marker (in Close Quarters, your TUNNEL and distances between its markers can be measured through Wall terrain). This creates sequential markers 0–4. Once you have placed five Tunnel markers, place no more, even if the battle lasts more than four turning points. Continues on reverse.",
+        "proseTitles": [
+          "Rule"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "7e85a5d7fa6952fd",
+    "expectedTitle": "Burrow",
+    "team": "Raveners",
+    "source": {
+      "officialPdf": "https://assets.warhammer-community.com/eng_raveners_online_rules-8vfeyxgbks-nf6lxfcbfw.pdf",
+      "date": "2026-08-26",
+      "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/raveners/",
+      "checkedOn": "2026-10-05",
+      "evidence": [
+        {
+          "officialPdfPages": [
+            9
+          ],
+          "note": "Current August 2026 official PDF/update log; visual strike-throughs excluded from effective text."
+        },
+        {
+          "wahapediaSnapshot": "inventory/current-team-rules/raveners-web-full.txt",
+          "ruleLocator": "Burrow update p.9"
+        }
+      ]
+    },
+    "blocks": [
+      {
+        "heading": "Burrow (1AP)",
+        "russian": "Дружественные равенеры могут выполнять это особое действие. Если оперативник находится под землёй, разместите его на вашем туннеле (TUNNEL) в доступном месте: он больше не считается подземным и может быть выставлен в зоне контроля врага. До конца активации/контратаки уменьшите его характеристику перемещения (Move) на 2 дюйма. Иначе, если он находится в зоне боевых действий на вашем туннеле, удалите его из зоны; теперь он под землёй. Оперативник не может выполнять это действие, неся маркер.\nНельзя выполнять действие, если оперативник не находится под землёй либо на вашем туннеле (TUNNEL).",
+        "english": "Friendly RAVENER operatives can perform this unique action. If this operative is underground, set it up on your TUNNEL in a location it can be placed (it’s no longer underground and can be set up within control range of enemy operatives). Until the end of the activation/counteraction, subtract 2″ from its Move stat. Alternatively, if this operative is in the killzone and on your TUNNEL, remove it from the killzone; it is now underground. An operative cannot perform this action while carrying a marker. Cannot perform this action unless this operative is underground or on your TUNNEL.",
+        "proseTitles": [
+          "Burrow"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "b7a06da132cee3ef",
+    "expectedTitle": "Ravener Tremorscythe",
+    "team": "Raveners",
+    "source": {
+      "officialPdf": "https://assets.warhammer-community.com/eng_raveners_online_rules-8vfeyxgbks-nf6lxfcbfw.pdf",
+      "date": "2026-08-26",
+      "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/raveners/",
+      "checkedOn": "2026-10-05",
+      "evidence": [
+        {
+          "officialPdfPages": [
+            9
+          ],
+          "note": "Current August 2026 official PDF/update log; visual strike-throughs excluded from effective text."
+        },
+        {
+          "wahapediaSnapshot": "inventory/current-team-rules/raveners-web-full.txt",
+          "ruleLocator": "Subterranean Ambush update p.9"
+        }
+      ]
+    },
+    "blocks": [
+      {
+        "heading": "Subterranean Ambush",
+        "russian": "Раз за раунд в фазе перестрелки (Firefight) после того, как вражеский оперативник выполняет действие с перемещением более чем на 2 дюйма и заканчивает его в пределах 2 дюймов от вашего туннеля (TUNNEL), если этот оперативник находится под землёй и готов либо ещё не контратаковал в этом раунде, вы можете прервать ход игры и применить это правило. Активируйте этого оперативника или контратакуйте им, как уместно; во время этой активации/контратаки он должен сражаться в ближнем бою или стрелять по тому врагу и не может выбирать других врагов, пока этого не сделает. Если это невозможно, активация/контратака отменяется, а правило не считается использованным. После завершения продолжите активацию/контратаку врага, если это возможно и уместно.",
+        "english": "Once per turning point during the Firefight phase, after an enemy operative performs an action in which it moves more than 2″ and ends within 2″ of your TUNNEL, if this operative is underground and is either ready or hasn’t counteracted during this turning point, you can interrupt to use this rule. If you do, activate or counteract with this operative (as appropriate), but during that activation/counteraction it must fight against or shoot against that enemy operative, and cannot do so against any other enemy operatives until it does. If this isn’t possible, this operative’s activation/counteraction is cancelled and this rule hasn’t been used. After completing this operative’s activation/counteraction, continue that enemy operative’s activation/counteraction if possible and relevant.",
+        "proseTitles": [
+          "Subterranean Ambush"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "4a30376f0f8b8147",
+    "expectedTitle": "Ravener Venomspitter",
+    "team": "Raveners",
+    "source": {
+      "officialPdf": "https://assets.warhammer-community.com/eng_raveners_online_rules-8vfeyxgbks-nf6lxfcbfw.pdf",
+      "date": "2026-08-26",
+      "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/raveners/",
+      "checkedOn": "2026-10-05",
+      "evidence": [
+        {
+          "officialPdfPages": [
+            9
+          ],
+          "note": "Current August 2026 official PDF/update log; visual strike-throughs excluded from effective text."
+        },
+        {
+          "wahapediaSnapshot": "inventory/current-team-rules/raveners-web-full.txt",
+          "ruleLocator": "Distend Dorsal Sac update p.9"
+        }
+      ]
+    },
+    "blocks": [
+      {
+        "heading": "Distend Dorsal Sac (1AP)",
+        "russian": "До тех пор, пока оперативник не выстрелит из ядовитого болта либо не выполнит действие «Зарыться» (Burrow) либо не выполнит это действие повторно (что наступит раньше), все профили ядовитого болта получают правило «Смертоносное 5+» (Lethal 5+), их характеристика атак (Atk) увеличивается на 1, а правило дальности 8 дюймов (Range 8″) отменяется.",
+        "english": "Until this operative has shot with its venom bolt or until it performs the Burrow action or until it performs this action again (whichever comes first), all profiles of its venom bolt have the Lethal 5+ weapon rule, have 1 added to their Atk stat and the Range 8″ weapon rule removed.",
+        "proseTitles": [
+          "Distend Dorsal Sac"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "6af4c9facd15adb1",
+    "expectedTitle": "Writhe Out of Sight",
+    "team": "Raveners",
+    "source": {
+      "officialPdf": "https://assets.warhammer-community.com/eng_raveners_online_rules-8vfeyxgbks-nf6lxfcbfw.pdf",
+      "date": "2026-08-26",
+      "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/raveners/",
+      "checkedOn": "2026-10-05",
+      "evidence": [
+        {
+          "officialPdfPages": [
+            9
+          ],
+          "note": "Current August 2026 official PDF/update log; visual strike-throughs excluded from effective text."
+        },
+        {
+          "wahapediaSnapshot": "inventory/current-team-rules/raveners-web-full.txt",
+          "ruleLocator": "Writhe Out of Sight update p.9"
+        }
+      ]
+    },
+    "blocks": [
+      {
+        "heading": "Rule",
+        "russian": "Выберите дружественного равенера (RAVENER), находящегося в зоне боя. Он может немедленно бесплатно выполнить действие «Зарыться» (Burrow). Если он находится в пределах 2 дюймов от вашего туннеля (TUNNEL), перед этим он может бесплатно выполнить действие «Отступление» (Fall Back) или «Перемещение» (Reposition).",
+        "english": "Select one friendly RAVENER operative in the killzone. That operative can immediately perform a free Burrow action. If it’s within 2″ of your TUNNEL, it can immediately perform a free Fall Back or Reposition action before it does so.",
+        "proseTitles": [
+          "Rule"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "b17872d2cdc2f544",
+    "expectedTitle": "Ravener Felltalon",
+    "team": "Raveners",
+    "source": {
+      "officialPdf": "https://assets.warhammer-community.com/eng_raveners_online_rules-8vfeyxgbks-nf6lxfcbfw.pdf",
+      "date": "2026-08-26",
+      "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/raveners/",
+      "checkedOn": "2026-10-05",
+      "evidence": [
+        {
+          "officialPdfPages": [
+            8
+          ],
+          "note": "Current August 2026 official PDF/update log; visual strike-throughs excluded from effective text."
+        },
+        {
+          "wahapediaSnapshot": "inventory/current-team-rules/raveners-web-full.txt",
+          "ruleLocator": "Felltalon action block / Toxic Lunge, official p.8"
+        }
+      ]
+    },
+    "blocks": [
+      {
+        "heading": "Toxic Lunge (1AP)",
+        "russian": "Выберите видимого вражеского оперативника в пределах 2 дюймов от этого оперативника. Если этот оперативник находится под землёй, вместо этого выберите врага на вашем туннеле (TUNNEL). Нанесите цели D3+2 урона; она получает ваш жетон яда (Poison token), если у неё его ещё нет. Оперативник может выполнять это действие, находясь под землёй; это правило имеет приоритет над обычными правилами «Зарыться» (Burrow). Если враг находится в дистанции контроля этого оперативника, нельзя выбрать врага вне этой дистанции.",
+        "english": "Select one enemy operative visible to and within 2″ of this operative. Alternatively, if this operative is underground, select one enemy operative on your TUNNEL. Inflict D3+2 damage on that enemy operative and it gains one of your Poison tokens (if it doesn’t already have one). This operative can perform this action while underground (this takes precedence over the normal Burrow rules). If an enemy is within this operative’s control range, you cannot select one outside it.",
+        "proseTitles": [
+          "Toxic Lunge"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "8cd9ba5ec84a201f",
+    "expectedTitle": "Ravener Prime",
+    "team": "Raveners",
+    "source": {
+      "officialPdf": "https://assets.warhammer-community.com/eng_raveners_online_rules-8vfeyxgbks-nf6lxfcbfw.pdf",
+      "date": "2026-08-26",
+      "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/raveners/",
+      "checkedOn": "2026-10-05",
+      "evidence": [
+        {
+          "officialPdfPages": [
+            9
+          ],
+          "note": "Current August 2026 official PDF/update log; visual strike-throughs excluded from effective text."
+        },
+        {
+          "wahapediaSnapshot": "inventory/current-team-rules/raveners-web-full.txt",
+          "ruleLocator": "Synaptic Link update p.9"
+        }
+      ]
+    },
+    "blocks": [
+      {
+        "heading": "Synaptic Link (Strategic Gambit)",
+        "russian": "Стратегический манёвр (Strategic Gambit), если этот оперативник не выведен из строя. Бросьте D6 и сравните результат с номером текущего раунда: если результат как минимум вдвое больше, получите 1 CP; если он меньше номера раунда, нанесите этому оперативнику урон, равный результату; в остальных случаях ничего не происходит.",
+        "english": "STRATEGIC GAMBIT if this operative isn’t incapacitated. Roll one D6 and compare the result to the number of the current turning point: at least twice as high, gain 1CP; less than the turning point number, inflict damage equal to the result; any other result has no effect.",
+        "proseTitles": [
+          "Synaptic Link"
+        ]
+      }
+    ]
+  }
+]

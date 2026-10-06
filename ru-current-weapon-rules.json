@@ -1,0 +1,245 @@
+{
+  "Accurate": {
+    "russian": "Точное x (Accurate x): можно сохранить до x кубиков атаки как обычные успехи, не бросая их. Если оружие получает Accurate x несколько раз, можно считать это одним Accurate 2; это имеет приоритет над обычными правилами x.",
+    "english": "You can retain up to x attack dice as normal successes without rolling them. If a weapon has more than one instance of Accurate x, you can treat it as one instance of Accurate 2 instead (this takes precedence over x rules ).",
+    "source": {
+      "snapshotPath": "inventory/current-team-rules/battleclade-web-full.txt",
+      "url": "https://wahapedia.ru/kill-team3/kill-teams/battleclade/",
+      "headingLine": "L463",
+      "bodyLine": "L465"
+    }
+  },
+  "Balanced": {
+    "russian": "Сбалансированное (Balanced): можно перебросить один свой кубик атаки.",
+    "english": "You can re-roll one of your attack dice.",
+    "source": {
+      "snapshotPath": "inventory/current-team-rules/angels-of-death-web-full.txt",
+      "url": "https://wahapedia.ru/kill-team3/kill-teams/angel-of-death/",
+      "headingLine": "L451",
+      "bodyLine": "L453"
+    }
+  },
+  "Blast": {
+    "russian": "Взрыв x (Blast x): выбранная цель — основная. После стрельбы по ней стреляйте этим оружием по каждой вторичной цели в выбранном порядке; каждую последовательность бросков разыгрывайте отдельно. Вторичные цели — другие оперативники, видимые основной цели и в пределах x от неё, например Blast 2″. Они считаются допустимыми целями независимо от приказа «Скрытность» (Conceal). Если основная цель находилась в укрытии (Cover) и/или была заслонена (Obscured), соответствующее состояние применяется и к вторичным целям.",
+    "english": "The target you select is the primary target. After shooting the primary target, shoot with this weapon against each secondary target in an order of your choice (roll each sequence separately). Secondary targets are other operatives visible to and within x of the primary target, e.g. Blast 2\" (they are all valid targets , regardless of a Conceal order). Secondary targets are in cover and obscured if the primary target was.",
+    "source": {
+      "snapshotPath": "inventory/current-team-rules/angels-of-death-web-full.txt",
+      "url": "https://wahapedia.ru/kill-team3/kill-teams/angel-of-death/",
+      "headingLine": "L657",
+      "bodyLine": "L658"
+    }
+  },
+  "Brutal": {
+    "russian": "Жестокое (Brutal): противник может блокировать (Block) только критическими успехами.",
+    "english": "Your opponent can only block with critical successes.",
+    "source": {
+      "snapshotPath": "inventory/current-team-rules/angels-of-death-web-full.txt",
+      "url": "https://wahapedia.ru/kill-team3/kill-teams/angel-of-death/",
+      "headingLine": "L527",
+      "bodyLine": "L529"
+    }
+  },
+  "Ceaseless": {
+    "russian": "Непрерывное (Ceaseless): выберите одно значение результата; можно перебросить любые свои кубики атаки с этим результатом, например результаты 2.",
+    "english": "You can re-roll any of your attack dice results of one result (e.g. results of 2).",
+    "source": {
+      "snapshotPath": "inventory/current-team-rules/blades-of-khaine-web-full.txt",
+      "url": "https://wahapedia.ru/kill-team3/kill-teams/blades-of-khaine/",
+      "headingLine": "L576",
+      "bodyLine": "L578"
+    }
+  },
+  "Devastating": {
+    "russian": "Опустошительное x (Devastating x): каждый сохранённый критический успех немедленно наносит x урона оперативнику, против которого используется оружие. Если правило начинается с дистанции, например 1″ Devastating x, нанесите x урона этому оперативнику и каждому другому оперативнику, видимому ему и в пределах указанной дистанции от него. Этот успех не сбрасывают: его можно применить позднее в последовательности.",
+    "english": "Each retained critical success immediately inflicts x damage on the operative this weapon is being used against, e.g. Devastating 3. If the rule starts with a distance (e.g. 1\" Devastating x), inflict x damage on that operative and each other operative visible to and within that distance of it. Note that success isn’t discarded after doing so — it can still be resolved later in the sequence.",
+    "source": {
+      "snapshotPath": "inventory/current-team-rules/angels-of-death-web-full.txt",
+      "url": "https://wahapedia.ru/kill-team3/kill-teams/angel-of-death/",
+      "headingLine": "L696",
+      "bodyLine": "L697"
+    }
+  },
+  "Heavy": {
+    "russian": "Тяжёлое (Heavy): нельзя использовать это оружие в активацию или контрдействие, в которых оперативник перемещался; нельзя перемещаться в активацию или контрдействие, в которых он использовал это оружие. В записи Heavy (x only), где x — действие перемещения, разрешено только указанное перемещение, например Heavy (Dash only). Это правило не препятствует действию «Дозор» (Guard).",
+    "english": "An operative cannot use this weapon in an activation or counteraction in which it moved, and it cannot move in an activation or counteraction in which it used this weapon. If the rule is Heavy (x only), where x is a move action, only that move is allowed, e.g. Heavy (Dash only). This weapon rule has no effect on preventing the Guard action.",
+    "source": {
+      "snapshotPath": "inventory/current-team-rules/angels-of-death-web-full.txt",
+      "url": "https://wahapedia.ru/kill-team3/kill-teams/angel-of-death/",
+      "headingLine": "L639",
+      "bodyLine": "L641"
+    }
+  },
+  "Hot": {
+    "russian": "Перегрев (Hot): после использования оружия бросьте D6. Если результат меньше HIT оружия, нанесите оперативнику урон, равный удвоенному результату. Даже если оружие применялось несколько раз в одном действии, например с Blast, бросьте только один D6.",
+    "english": "After an operative uses this weapon, roll one D6. If the result is less than the weapon’s Hit stat, inflict damage on that operative equal to the result multiplied by two. If it’s used multiple times in one action (e.g. Blast ), still only roll one D6.",
+    "source": {
+      "snapshotPath": "inventory/current-team-rules/angels-of-death-web-full.txt",
+      "url": "https://wahapedia.ru/kill-team3/kill-teams/angel-of-death/",
+      "headingLine": "L520",
+      "bodyLine": "L522"
+    }
+  },
+  "Lethal": {
+    "russian": "Смертоносное x+ (Lethal x+): ваши успешные результаты x или выше считаются критическими успехами, например Lethal 5+.",
+    "english": "Your successes equal to or greater than x are critical successes, e.g. Lethal 5+.",
+    "source": {
+      "snapshotPath": "inventory/current-team-rules/angels-of-death-web-full.txt",
+      "url": "https://wahapedia.ru/kill-team3/kill-teams/angel-of-death/",
+      "headingLine": "L524",
+      "bodyLine": "L525"
+    }
+  },
+  "Limited": {
+    "russian": "Ограниченное x (Limited x): после x применений оружия за бой оперативник больше не имеет его. Несколько применений в одном действии, например с Blast, считаются одним применением.",
+    "english": "After an operative uses this weapon a number of times in the battle equal to x, they no longer have it. If it’s used multiple times in one action (e.g. Blast ), treat this as one use.",
+    "source": {
+      "snapshotPath": "inventory/current-team-rules/blooded-web-full.txt",
+      "url": "https://wahapedia.ru/kill-team3/kill-teams/blooded/",
+      "headingLine": "L642",
+      "bodyLine": "L643"
+    }
+  },
+  "Piercing": {
+    "russian": "Бронебойное x (Piercing x): защищающийся берёт на x кубиков защиты меньше, например Piercing 1. В записи Piercing Crits x эффект действует только если вы сохранили хотя бы один критический успех.",
+    "english": "The defender collects x less defence dice, e.g. Piercing 1. If the rule is Piercing Crits x, this only comes into effect if you retain any critical successes.",
+    "source": {
+      "snapshotPath": "inventory/current-team-rules/angels-of-death-web-full.txt",
+      "url": "https://wahapedia.ru/kill-team3/kill-teams/angel-of-death/",
+      "headingLine": "L516",
+      "bodyLine": "L518"
+    }
+  },
+  "Piercing Crits": {
+    "russian": "Бронебойное при критических успехах x (Piercing Crits x): защищающийся берёт на x кубиков защиты меньше, только если вы сохранили хотя бы один критический успех.",
+    "english": "The defender collects x less defence dice, e.g. Piercing 1. If the rule is Piercing Crits x, this only comes into effect if you retain any critical successes.",
+    "source": {
+      "snapshotPath": "inventory/current-team-rules/angels-of-death-web-full.txt",
+      "url": "https://wahapedia.ru/kill-team3/kill-teams/angel-of-death/",
+      "headingLine": "L516",
+      "bodyLine": "L518"
+    }
+  },
+  "Punishing": {
+    "russian": "Карающее (Punishing): если вы сохранили хотя бы один критический успех, можно сохранить один провал как обычный успех вместо его сброса.",
+    "english": "If you retain any critical successes, you can retain one of your fails as a normal success instead of discarding it.",
+    "source": {
+      "snapshotPath": "inventory/current-team-rules/corsair-voidscarred-web-full.txt",
+      "url": "https://wahapedia.ru/kill-team3/kill-teams/corsair-voidscarred/",
+      "headingLine": "L453",
+      "bodyLine": "L454"
+    }
+  },
+  "Range": {
+    "russian": "Дальность x (Range x): допустимыми целями (Valid Targets) могут быть только оперативники в пределах x от активного оперативника, например Range 9″.",
+    "english": "Only operatives within x of the active operative can be valid targets , e.g. Range 9\".",
+    "source": {
+      "snapshotPath": "inventory/current-team-rules/angels-of-death-web-full.txt",
+      "url": "https://wahapedia.ru/kill-team3/kill-teams/angel-of-death/",
+      "headingLine": "L513",
+      "bodyLine": "L515"
+    }
+  },
+  "Relentless": {
+    "russian": "Неумолимое (Relentless): можно перебросить любые свои кубики атаки.",
+    "english": "You can re-roll any of your attack dice.",
+    "source": {
+      "snapshotPath": "inventory/current-team-rules/blooded-web-full.txt",
+      "url": "https://wahapedia.ru/kill-team3/kill-teams/blooded/",
+      "headingLine": "L675",
+      "bodyLine": "L677"
+    }
+  },
+  "Rending": {
+    "russian": "Рассечение (Rending): если вы сохранили хотя бы один критический успех, можно сохранить один свой обычный успех как критический.",
+    "english": "If you retain any critical successes, you can retain one of your normal successes as a Critical success instead.",
+    "source": {
+      "snapshotPath": "inventory/current-team-rules/angels-of-death-web-full.txt",
+      "url": "https://wahapedia.ru/kill-team3/kill-teams/angel-of-death/",
+      "headingLine": "L403",
+      "bodyLine": "L405"
+    }
+  },
+  "Saturate": {
+    "russian": "Насыщение (Saturate): защищающийся не может сохранять защитные успехи за укрытие (Cover Saves).",
+    "english": "The defender cannot retain cover saves .",
+    "source": {
+      "snapshotPath": "inventory/current-team-rules/angels-of-death-web-full.txt",
+      "url": "https://wahapedia.ru/kill-team3/kill-teams/angel-of-death/",
+      "headingLine": "L432",
+      "bodyLine": "L434"
+    }
+  },
+  "Seek": {
+    "russian": "Обнаружение (Seek): при выборе допустимой цели оперативники не могут использовать террейн для укрытия (Cover). Seek Light действует только на лёгкий террейн (Light). Это может позволить выбрать видимого оперативника целью, но не отменяет его защитный успех за укрытие (Cover Save), если он есть.",
+    "english": "When selecting a valid target , operatives cannot use terrain for cover . If the rule is Seek Light, operatives cannot use Light terrain for cover. Whilst this can allow such operatives to be targeted (assuming they’re visible ), it doesn’t remove their cover save (if any).",
+    "source": {
+      "snapshotPath": "inventory/current-team-rules/angels-of-death-web-full.txt",
+      "url": "https://wahapedia.ru/kill-team3/kill-teams/angel-of-death/",
+      "headingLine": "L689",
+      "bodyLine": "L690"
+    }
+  },
+  "Severe": {
+    "russian": "Сокрушительное (Severe): если вы не сохранили ни одного критического успеха, можно изменить один обычный успех на критический. Devastating и Piercing Crits при этом действуют, а Punishing и Rending — нет.",
+    "english": "If you don’t retain any critical successes, you can change one of your normal successes to a critical success. The Devastating and Piercing Crits weapon rules still take effect, but Punishing and Rending don’t.",
+    "source": {
+      "snapshotPath": "inventory/current-team-rules/battleclade-web-full.txt",
+      "url": "https://wahapedia.ru/kill-team3/kill-teams/battleclade/",
+      "headingLine": "L518",
+      "bodyLine": "L519"
+    }
+  },
+  "Shock": {
+    "russian": "Потрясение (Shock): при первом ударе (Strike) критическим успехом в каждой последовательности также сбросьте один ещё не применённый обычный успех противника; если обычных нет — один критический.",
+    "english": "The first time you strike with a critical success in each sequence, also discard one of your opponent’s unresolved normal successes (or a critical success if there are none).",
+    "source": {
+      "snapshotPath": "inventory/current-team-rules/angels-of-death-web-full.txt",
+      "url": "https://wahapedia.ru/kill-team3/kill-teams/angel-of-death/",
+      "headingLine": "L407",
+      "bodyLine": "L408"
+    }
+  },
+  "Silent": {
+    "russian": "Бесшумное (Silent): оперативник может выполнять «Стрельбу» (Shoot) этим оружием с приказом «Скрытность» (Conceal).",
+    "english": "An operative can perform the Shoot action with this weapon while it has a Conceal order.",
+    "source": {
+      "snapshotPath": "inventory/current-team-rules/angels-of-death-web-full.txt",
+      "url": "https://wahapedia.ru/kill-team3/kill-teams/angel-of-death/",
+      "headingLine": "L692",
+      "bodyLine": "L694"
+    }
+  },
+  "Stun": {
+    "russian": "Оглушение (Stun): если вы сохранили хотя бы один критический успех, уменьшите APL оперативника, против которого используется оружие, на 1 до конца его следующей активации.",
+    "english": "If you retain any critical successes, subtract 1 from the APL stat of the operative this weapon is being used against until the end of its next activation.",
+    "source": {
+      "snapshotPath": "inventory/current-team-rules/angels-of-death-web-full.txt",
+      "url": "https://wahapedia.ru/kill-team3/kill-teams/angel-of-death/",
+      "headingLine": "L619",
+      "bodyLine": "L620"
+    }
+  },
+  "Torrent": {
+    "russian": "Поток x (Torrent x): выберите допустимую основную цель по обычным правилам. Затем выберите любое число других допустимых вторичных целей в пределах x от первой, но вне дистанции контроля дружественных оперативников, например Torrent 2″. Стреляйте этим оружием по всем выбранным целям в выбранном порядке; каждую последовательность бросков разыгрывайте отдельно.",
+    "english": "Select a valid target as normal as the primary target, then select any number of other valid targets within x of the first valid target, but not within control range of friendly operatives, as secondary targets, e.g. Torrent 2\". Shoot with this weapon against all of them in an order of your choice (roll each sequence separately).",
+    "source": {
+      "snapshotPath": "inventory/current-team-rules/angels-of-death-web-full.txt",
+      "url": "https://wahapedia.ru/kill-team3/kill-teams/angel-of-death/",
+      "headingLine": "L615",
+      "bodyLine": "L617"
+    }
+  },
+  "Seek Light": {
+    "russian": "Обнаружение (Seek): при выборе допустимой цели оперативники не могут использовать террейн для укрытия (Cover). Seek Light действует только на лёгкий террейн (Light). Это может позволить выбрать видимого оперативника целью, но не отменяет его защитный успех за укрытие (Cover Save), если он есть.",
+    "english": "When selecting a valid target , operatives cannot use terrain for cover . If the rule is Seek Light, operatives cannot use Light terrain for cover. Whilst this can allow such operatives to be targeted (assuming they’re visible ), it doesn’t remove their cover save (if any).",
+    "source": {
+      "snapshotPath": "inventory/current-team-rules/angels-of-death-web-full.txt",
+      "url": "https://wahapedia.ru/kill-team3/kill-teams/angel-of-death/",
+      "headingLine": "L689",
+      "bodyLine": "L690"
+    }
+  },
+  "PSYCHIC": {
+    "russian": "ПСИХИЧЕСКОЕ (PSYCHIC): метка психического оружия или действия. Дополнительные взаимодействия указаны в правилах соответствующего отряда."
+  }
+}

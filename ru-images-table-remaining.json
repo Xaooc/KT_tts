@@ -1,0 +1,3492 @@
+{
+  "f2d45d7d07d9c1e4": {
+    "kind": "atlas",
+    "columns": 5,
+    "rows": 2,
+    "tiles": {
+      "0": {
+        "kind": "card",
+        "titleEnglish": "1. Secure",
+        "titleRussian": "1. Закрепление (1. Secure)",
+        "categoryRussian": "Критическая операция (Crit Op)",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "headingEnglish": "Secure 1AP",
+            "headingRussian": "Закрепить — 1 AP",
+            "russian": "Один маркер цели, контролируемый активным оперативником, закрепляется за вашим отрядом, пока вражеский отряд не закрепит его за собой.\nЭто действие нельзя выполнять в первом раунде или в дистанции контроля вражеского оперативника."
+          },
+          {
+            "type": "paragraph",
+            "headingEnglish": "Victory Points",
+            "headingRussian": "Победные очки (VP)",
+            "russian": "В конце каждого раунда после первого:\n• Если хотя бы один маркер цели закреплён за вашим отрядом, получите 1 VP.\n• Если за вашим отрядом закреплено больше маркеров целей, чем за отрядом противника, получите ещё 1 VP."
+          }
+        ],
+        "verifiedAgainstPixels": true
+      },
+      "1": {
+        "kind": "card",
+        "titleEnglish": "2. Loot",
+        "titleRussian": "2. Сбор трофеев (2. Loot)",
+        "categoryRussian": "Критическая операция (Crit Op)",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "headingEnglish": "Loot 1AP",
+            "headingRussian": "Собрать трофеи — 1 AP",
+            "russian": "Один маркер цели, контролируемый активным оперативником, разграблен.\nЭто действие нельзя выполнять в первом раунде, в дистанции контроля вражеского оперативника или если с этого маркера уже собирали трофеи в этом раунде."
+          },
+          {
+            "type": "paragraph",
+            "headingEnglish": "Victory Points",
+            "headingRussian": "Победные очки (VP)",
+            "russian": "Каждый раз, когда дружественный оперативник выполняет действие «Собрать трофеи» (Loot), получите 1 VP, но не более 2 VP за раунд."
+          }
+        ],
+        "verifiedAgainstPixels": true
+      },
+      "2": {
+        "kind": "card",
+        "titleEnglish": "3. Transmission",
+        "titleRussian": "3. Передача сигнала (3. Transmission)",
+        "categoryRussian": "Критическая операция (Crit Op)",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "headingEnglish": "Initiate Transmission 1AP",
+            "headingRussian": "Начать передачу — 1 AP",
+            "russian": "Один маркер цели, контролируемый активным оперативником, передаёт сигнал до начала следующего раунда.\nЭто действие нельзя выполнять в первом раунде или в дистанции контроля вражеского оперативника."
+          },
+          {
+            "type": "paragraph",
+            "headingEnglish": "Victory Points",
+            "headingRussian": "Победные очки (VP)",
+            "russian": "В конце каждого раунда после первого:\n• Если дружественные оперативники контролируют хотя бы один передающий сигнал маркер цели, получите 1 VP.\n• Если дружественные оперативники контролируют больше передающих сигнал маркеров целей, чем вражеские, получите ещё 1 VP."
+          }
+        ],
+        "verifiedAgainstPixels": true
+      },
+      "3": {
+        "kind": "card",
+        "titleEnglish": "4. Upload",
+        "titleRussian": "4. Загрузка данных (4. Upload)",
+        "categoryRussian": "Критическая операция (Crit Op)",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "headingEnglish": "Upload 1AP",
+            "headingRussian": "Загрузить данные — 1 AP",
+            "russian": "Удалите все очки загрузки (Upload points) противника, если они есть, с одного маркера цели, контролируемого активным оперативником.\nЗатем этот маркер получает 1 ваше очко загрузки, если он ещё не получал ваше очко загрузки в этом раунде и вы ещё не начисляли VP за него. Используйте кубик как счётчик ваших очков загрузки на маркере.\nЭто действие нельзя выполнять в первом раунде или в дистанции контроля вражеского оперативника."
+          },
+          {
+            "type": "paragraph",
+            "headingEnglish": "Victory Points",
+            "headingRussian": "Победные очки (VP)",
+            "russian": "В конце каждого раунда после первого вы можете начислить VP за любые маркеры целей, на которых есть хотя бы 1 ваше очко загрузки. За каждый выбранный маркер удалите с него все ваши очки загрузки и получите столько же VP. За каждый маркер можно начислить VP лишь один раз за бой. Дружественным оперативникам не требуется контролировать маркер для начисления VP."
+          }
+        ],
+        "verifiedAgainstPixels": true
+      },
+      "4": {
+        "kind": "card",
+        "titleEnglish": "5. Intel",
+        "titleRussian": "5. Разведданные (5. Intel)",
+        "categoryRussian": "Критическая операция (Crit Op)",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "headingEnglish": "Compile Intel 1AP",
+            "headingRussian": "Собрать разведданные — 1 AP",
+            "russian": "Один маркер цели, контролируемый активным оперативником, получает 1 очко разведданных (Intel point). Используйте кубик как счётчик этих очков.\nЭто действие нельзя выполнять в первом раунде, в дистанции контроля вражеского оперативника или если этот маркер уже получал очко разведданных в этом раунде."
+          },
+          {
+            "type": "paragraph",
+            "headingEnglish": "Additional Rules",
+            "headingRussian": "Дополнительные правила",
+            "russian": "В каждом раунде после первого действие «Поднять маркер» (Pick Up Marker) можно выполнять с маркером цели, на котором есть хотя бы 1 очко разведданных. После выполнения этого действия маркер больше не может получать очки разведданных."
+          },
+          {
+            "type": "paragraph",
+            "headingEnglish": "Victory Points",
+            "headingRussian": "Победные очки (VP)",
+            "russian": "В конце четвёртого раунда за каждый маркер цели, контролируемый дружественными оперативниками, получите число VP, равное его очкам разведданных, то есть 0–3 VP."
+          }
+        ],
+        "verifiedAgainstPixels": true
+      },
+      "5": {
+        "kind": "card",
+        "titleEnglish": "6. Extraction",
+        "titleRussian": "6. Эвакуация (6. Extraction)",
+        "categoryRussian": "Критическая операция (Crit Op)",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "headingEnglish": "Search 1AP",
+            "headingRussian": "Обыскать — 1 AP",
+            "russian": "Один маркер цели, контролируемый активным оперативником, обыскан. Если это последний ещё не обысканный маркер цели, он становится маркером цели эвакуации (extraction objective marker).\nЭто действие нельзя выполнять в первом раунде, в дистанции контроля вражеского оперативника или если этот маркер уже был обыскан."
+          },
+          {
+            "type": "paragraph",
+            "headingEnglish": "Additional Rules",
+            "headingRussian": "Дополнительные правила",
+            "russian": "С маркером цели эвакуации можно выполнять действие «Поднять маркер» (Pick Up Marker). Пока оперативник переносит его, ухудшите характеристику HIT его оружия на 1; оперативника нельзя убрать и снова выставить более чем в 6 дюймах от прежней позиции, и он не может выполнять действия «Атака» (Charge) или «Рывок» (Dash)."
+          },
+          {
+            "type": "paragraph",
+            "headingEnglish": "Victory Points",
+            "headingRussian": "Победные очки (VP)",
+            "russian": "Каждый раз, когда дружественный оперативник выполняет действие «Обыскать» (Search), получите 1 VP, если это первый или третий обысканный маркер цели, либо 2 VP, если это второй.\nВ конце каждого раунда после первого, если дружественные оперативники контролируют маркер цели эвакуации, получите 1 VP, а в четвёртом раунде — 2 VP вместо 1."
+          }
+        ],
+        "verifiedAgainstPixels": true
+      },
+      "6": {
+        "kind": "card",
+        "titleEnglish": "7. Sabotage",
+        "titleRussian": "7. Саботаж (7. Sabotage)",
+        "categoryRussian": "Критическая операция (Crit Op)",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "headingEnglish": "Sabotage 1AP",
+            "headingRussian": "Провести саботаж — 1 AP",
+            "russian": "Если активный оперативник контролирует маркер цели, целиком находящийся на территории противника, на этом маркере проведён саботаж.\nЭто действие нельзя выполнять в первом раунде, в дистанции контроля вражеского оперативника или если на этом маркере уже проводили саботаж в этом раунде."
+          },
+          {
+            "type": "paragraph",
+            "headingEnglish": "Victory Points",
+            "headingRussian": "Победные очки (VP)",
+            "russian": "Каждый раз, когда дружественный оперативник выполняет действие «Провести саботаж» (Sabotage), получите 1 VP.\nВ конце каждого раунда после первого получите по 1 VP за каждый из следующих маркеров, контролируемых дружественными оперативниками:\n• Маркер цели целиком на вашей территории, если в этом раунде на нём не проводили саботаж.\n• Маркер цели на центральной линии.\nЗа эту операцию нельзя получить более 2 VP за раунд."
+          }
+        ],
+        "verifiedAgainstPixels": true
+      },
+      "7": {
+        "kind": "card",
+        "titleEnglish": "8. Power Surge",
+        "titleRussian": "8. Энергетический всплеск (8. Power Surge)",
+        "categoryRussian": "Критическая операция (Crit Op)",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "headingEnglish": "Reroute Power 1AP",
+            "headingRussian": "Перенаправить энергию — 1 AP",
+            "russian": "Один активированный всплеском маркер цели, контролируемый активным оперативником, перенаправлен.\nЭто действие нельзя выполнять в первом раунде, в дистанции контроля вражеского оперативника или если этот маркер уже был перенаправлен."
+          },
+          {
+            "type": "paragraph",
+            "headingEnglish": "Additional Rules",
+            "headingRussian": "Дополнительные правила",
+            "russian": "Как стратегический манёвр (Strategic Gambit) в каждом раунде после первого один игрок выбирает маркер цели, активированный всплеском до начала следующего раунда. Нельзя выбрать ранее активированный всплеском маркер. Первым выбирает игрок без инициативы; в последующих раундах игроки чередуются."
+          },
+          {
+            "type": "paragraph",
+            "headingEnglish": "Victory Points",
+            "headingRussian": "Победные очки (VP)",
+            "russian": "Каждый раз, когда дружественный оперативник выполняет действие «Перенаправить энергию» (Reroute Power), получите 1 VP.\nВ конце каждого раунда после первого:\n• Если дружественные оперативники контролируют активированный всплеском маркер цели, получите 1 VP.\n• Если дружественные оперативники контролируют больше маркеров целей, чем вражеские, получите 1 VP.\nЗа эту операцию нельзя получить более 2 VP за раунд."
+          }
+        ],
+        "verifiedAgainstPixels": true
+      },
+      "8": {
+        "kind": "card",
+        "titleEnglish": "9. Coordinates",
+        "titleRussian": "9. Координаты (9. Coordinates)",
+        "categoryRussian": "Критическая операция (Crit Op)",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "headingEnglish": "Input Coordinates 1AP",
+            "headingRussian": "Ввести координаты — 1 AP",
+            "russian": "Один маркер цели, контролируемый активным оперативником, получает 1 ваше очко цели (Objective point). Используйте кубики как счётчики ваших очков цели на маркере.\nЭто действие нельзя выполнять в первом раунде, в дистанции контроля вражеского оперативника или если этот маркер уже получал ваше очко цели в этом раунде."
+          },
+          {
+            "type": "paragraph",
+            "headingEnglish": "Victory Points",
+            "headingRussian": "Победные очки (VP)",
+            "russian": "В конце четвёртого раунда:\n• За каждый маркер цели, на котором есть хотя бы 1 ваше очко цели, получите 1 VP, либо 2 VP, если этот маркер целиком находится на территории противника.\n• За каждый маркер цели, на котором ваших очков цели больше, чем очков противника, получите ещё 1 VP."
+          }
+        ],
+        "verifiedAgainstPixels": true
+      }
+    },
+    "blankTiles": [
+      9
+    ],
+    "verifiedAgainstPixels": true
+  },
+  "cae978d9a7e65fc8": {
+    "kind": "atlas",
+    "columns": 2,
+    "rows": 2,
+    "tiles": {
+      "0": {
+        "kind": "card",
+        "titleEnglish": "1. Equip",
+        "titleRussian": "1. Снаряжение (1. Equip)",
+        "categoryRussian": "Шаг разведки (Scouting Step)",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "headingEnglish": "Additional Rules",
+            "headingRussian": "Дополнительные правила",
+            "russian": "Выберите один дополнительный вариант снаряжения, который вы ещё не выбирали. При определении инициативы «Снаряжение» (Equip) побеждает «Приём» (Ploy)."
+          }
+        ],
+        "verifiedAgainstPixels": true
+      },
+      "1": {
+        "kind": "card",
+        "titleEnglish": "2. Ploy",
+        "titleRussian": "2. Приём (2. Ploy)",
+        "categoryRussian": "Шаг разведки (Scouting Step)",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "headingEnglish": "Additional Rules",
+            "headingRussian": "Дополнительные правила",
+            "russian": "В первой фазе стратегии вы можете применить один стратегический приём (Strategy Ploy) за 0 CP. При определении инициативы «Приём» (Ploy) побеждает «Перемещение» (Reposition)."
+          }
+        ],
+        "verifiedAgainstPixels": true
+      },
+      "2": {
+        "kind": "card",
+        "titleEnglish": "3. Reposition",
+        "titleRussian": "3. Перемещение (3. Reposition)",
+        "categoryRussian": "Шаг разведки (Scouting Step)",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "headingEnglish": "Additional Rules",
+            "headingRussian": "Дополнительные правила",
+            "russian": "Выполните бесплатное действие «Перемещение» (Reposition) одним дружественным оперативником, целиком находящимся в вашей зоне высадки. Он должен закончить это действие целиком в пределах 3 дюймов от вашей зоны высадки. При определении инициативы «Перемещение» (Reposition) побеждает «Снаряжение» (Equip)."
+          }
+        ],
+        "verifiedAgainstPixels": true
+      }
+    },
+    "blankTiles": [
+      3
+    ],
+    "verifiedAgainstPixels": true
+  },
+  "f6a4267fb958d248": {
+    "kind": "card",
+    "titleEnglish": "+1/-1 to your initiative roll",
+    "titleRussian": "+1/-1 к броску инициативы (+1/-1 to your initiative roll)",
+    "categoryRussian": "Инициатива (Initiative)",
+    "blocks": [
+      {
+        "type": "paragraph",
+        "headingEnglish": "Additional Rules",
+        "headingRussian": "Дополнительные правила",
+        "russian": "Передайте эту карту игроку, проигравшему бросок инициативы в первом раунде. Он может использовать её один раз в одной из последующих фаз стратегии."
+      }
+    ],
+    "verifiedAgainstPixels": true
+  },
+  "ff45a2ff5ff392c5": {
+    "kind": "card",
+    "titleEnglish": "+2/-2 to your initiative roll",
+    "titleRussian": "+2/-2 к броску инициативы (+2/-2 to your initiative roll)",
+    "categoryRussian": "Инициатива (Initiative)",
+    "blocks": [
+      {
+        "type": "paragraph",
+        "headingEnglish": "Additional Rules",
+        "headingRussian": "Дополнительные правила",
+        "russian": "Передайте эту карту игроку, проигравшему бросок инициативы во втором раунде. Он может использовать её один раз в одной из последующих фаз стратегии."
+      }
+    ],
+    "verifiedAgainstPixels": true
+  },
+  "1d04721c13800030": {
+    "kind": "card",
+    "titleEnglish": "+3/-3 to your initiative roll",
+    "titleRussian": "+3/-3 к броску инициативы (+3/-3 to your initiative roll)",
+    "categoryRussian": "Инициатива (Initiative)",
+    "blocks": [
+      {
+        "type": "paragraph",
+        "headingEnglish": "Additional Rules",
+        "headingRussian": "Дополнительные правила",
+        "russian": "Передайте эту карту игроку, проигравшему бросок инициативы в третьем раунде. Он может использовать её один раз в одной из последующих фаз стратегии."
+      }
+    ],
+    "verifiedAgainstPixels": true
+  },
+  "d2e02a7e79eff3be": {
+    "kind": "card",
+    "titleEnglish": "Re-roll your initiative roll",
+    "titleRussian": "Перебросьте инициативу (Re-roll your initiative roll)",
+    "categoryRussian": "Инициатива (Initiative)",
+    "blocks": [
+      {
+        "type": "paragraph",
+        "headingEnglish": "Additional Rules",
+        "headingRussian": "Дополнительные правила",
+        "russian": "Передайте эту карту игроку, у которого не было инициативы при подготовке боя, то есть который не выбирал зоны высадки. Он может использовать её один раз в одной из последующих фаз стратегии."
+      }
+    ],
+    "verifiedAgainstPixels": true
+  },
+  "43117b29791bbb9e": {
+    "kind": "atlas",
+    "columns": 5,
+    "rows": 4,
+    "tiles": {
+      "0": {
+        "kind": "card",
+        "titleEnglish": "+1 APL for Control",
+        "titleRussian": "+1 APL при контроле (+1 APL for Control)",
+        "categoryRussian": "Карта рвения (Zeal) · Blood and Zeal",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "headingEnglish": "Additional Rules",
+            "headingRussian": "Дополнительные правила",
+            "russian": "Примените эту карту рвения (Zeal) во время активации или контратаки дружественного оперативника либо в конце раунда. Выберите один маркер цели, оспариваемый дружественными оперативниками. До начала следующего раунда при определении контроля над ним считайте суммарный APL дружественных оперативников, оспаривающих его, на 1 выше, если хотя бы один дружественный оперативник оспаривает этот маркер. Нельзя применять карту, если дружественные оперативники не оспаривают ни одного маркера цели."
+          }
+        ],
+        "verifiedAgainstPixels": true
+      },
+      "1": {
+        "kind": "card",
+        "titleEnglish": "-D3 Damage Shot",
+        "titleRussian": "−D3 урона при стрельбе (-D3 Damage Shot)",
+        "categoryRussian": "Карта рвения (Zeal) · Blood and Zeal",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "headingEnglish": "Additional Rules",
+            "headingRussian": "Дополнительные правила",
+            "russian": "Примените эту карту рвения (Zeal), когда враг стреляет по дружественному оперативнику и один из атакующих кубиков противника наносит урон. Игнорируйте D3 единиц этого урона."
+          }
+        ],
+        "verifiedAgainstPixels": true
+      },
+      "2": {
+        "kind": "card",
+        "titleEnglish": "-D3 Damage Strike",
+        "titleRussian": "−D3 урона при ударе (-D3 Damage Strike)",
+        "categoryRussian": "Карта рвения (Zeal) · Blood and Zeal",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "headingEnglish": "Additional Rules",
+            "headingRussian": "Дополнительные правила",
+            "russian": "Примените эту карту рвения (Zeal), когда враг сражается или наносит ответные удары дружественному оперативнику и один из атакующих кубиков противника наносит урон. Игнорируйте D3 единиц этого урона."
+          }
+        ],
+        "verifiedAgainstPixels": true
+      },
+      "3": {
+        "kind": "card",
+        "titleEnglish": "Max Success Defence",
+        "titleRussian": "Все кубики защиты успешны (Max Success Defence)",
+        "categoryRussian": "Карта рвения (Zeal) · Blood and Zeal",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "headingEnglish": "Additional Rules",
+            "headingRussian": "Дополнительные правила",
+            "russian": "Примените эту карту рвения (Zeal), когда враг стреляет по дружественному оперативнику, на шаге броска защитных кубиков (Roll Defence Dice). Сохраните все ваши защитные кубики как обычные успехи, не бросая их."
+          }
+        ],
+        "verifiedAgainstPixels": true
+      },
+      "4": {
+        "kind": "card",
+        "titleEnglish": "Revive onto 1 Wound",
+        "titleRussian": "Выжить с 1 раной (Revive onto 1 Wound)",
+        "categoryRussian": "Карта рвения (Zeal) · Blood and Zeal",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "headingEnglish": "Additional Rules",
+            "headingRussian": "Дополнительные правила",
+            "russian": "Примените эту карту рвения (Zeal), когда дружественный оперативник должен быть выведен из строя. Он не выведен из строя, у него остаётся 1 рана, и до конца этого действия его нельзя вывести из строя. Сбросьте все оставшиеся атакующие кубики, включая ваши, если этот оперативник сражается или наносит ответные удары. Затем он может бесплатно выполнить «Рывок» (Dash) или «Отступление» (Fall Back); при отступлении он не может переместиться более чем на 3 дюйма. Это разрешено, даже если он уже выполнял действие, запрещающее «Рывок» или «Отступление»."
+          }
+        ],
+        "verifiedAgainstPixels": true
+      },
+      "5": {
+        "kind": "card",
+        "titleEnglish": "Free Action",
+        "titleRussian": "Бесплатное действие (Free Action)",
+        "categoryRussian": "Карта рвения (Zeal) · Blood and Zeal",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "headingEnglish": "Additional Rules",
+            "headingRussian": "Дополнительные правила",
+            "russian": "Примените эту карту рвения (Zeal) во время активации дружественного оперативника, до или после его действия. Он немедленно бесплатно выполняет одно действие стоимостью 1 AP."
+          }
+        ],
+        "verifiedAgainstPixels": true
+      },
+      "6": {
+        "kind": "card",
+        "titleEnglish": "Ignore Weapon Rule",
+        "titleRussian": "Отключить правило оружия (Ignore Weapon Rule)",
+        "categoryRussian": "Карта рвения (Zeal) · Blood and Zeal",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "headingEnglish": "Additional Rules",
+            "headingRussian": "Дополнительные правила",
+            "russian": "Примените эту карту рвения (Zeal), когда дружественный оперативник выбран целью стрельбы или противником в ближнем бою и противник уже выбрал оружие своего оперативника. Выберите одно правило этого оружия, кроме «Дальность X» (Range X). Оружие теряет выбранное правило до конца этой последовательности. Нельзя применять карту, если у этого оружия нет правил, которые можно выбрать."
+          }
+        ],
+        "verifiedAgainstPixels": true
+      },
+      "7": {
+        "kind": "card",
+        "titleEnglish": "Critical Defence",
+        "titleRussian": "Критический успех защиты (Critical Defence)",
+        "categoryRussian": "Карта рвения (Zeal) · Blood and Zeal",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "headingEnglish": "Additional Rules",
+            "headingRussian": "Дополнительные правила",
+            "russian": "Примените эту карту рвения (Zeal), когда враг стреляет по дружественному оперативнику, на шаге броска защитных кубиков (Roll Defence Dice). Сохраните один ваш обычный успех как критический. Нельзя применять карту, если у вас нет обычных успехов."
+          }
+        ],
+        "verifiedAgainstPixels": true
+      },
+      "8": {
+        "kind": "card",
+        "titleEnglish": "Heal 3D3",
+        "titleRussian": "Восстановить 3D3 ран (Heal 3D3)",
+        "categoryRussian": "Карта рвения (Zeal) · Blood and Zeal",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "headingEnglish": "Additional Rules",
+            "headingRussian": "Дополнительные правила",
+            "russian": "Примените эту карту рвения (Zeal) во время активации или контратаки дружественного оперативника, до или после его действия. Он восстанавливает 3D3 потерянных ран. Нельзя применять карту, если у него нет потерянных ран."
+          }
+        ],
+        "verifiedAgainstPixels": true
+      },
+      "9": {
+        "kind": "card",
+        "titleEnglish": "Gain 1CP",
+        "titleRussian": "Получить 1 CP (Gain 1CP)",
+        "categoryRussian": "Карта рвения (Zeal) · Blood and Zeal",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "headingEnglish": "Additional Rules",
+            "headingRussian": "Дополнительные правила",
+            "russian": "Примените эту карту рвения (Zeal) в любой момент боя. Получите 1 CP."
+          }
+        ],
+        "verifiedAgainstPixels": true
+      },
+      "10": {
+        "kind": "card",
+        "titleEnglish": "Double Block (Fight)",
+        "titleRussian": "Двойной блок в ближнем бою (Double Block (Fight))",
+        "categoryRussian": "Карта рвения (Zeal) · Blood and Zeal",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "headingEnglish": "Additional Rules",
+            "headingRussian": "Дополнительные правила",
+            "russian": "Примените эту карту рвения (Zeal), когда дружественный оперативник сражается или наносит ответные удары и вы блокируете успехом. Этим успехом можно заблокировать один, как обычно, или два ещё не разрешённых успеха противника. Нельзя применять карту, если у противника нет кубиков, которые можно заблокировать."
+          }
+        ],
+        "verifiedAgainstPixels": true
+      },
+      "11": {
+        "kind": "card",
+        "titleEnglish": "Obscured",
+        "titleRussian": "Заслонённость (Obscured)",
+        "categoryRussian": "Карта рвения (Zeal) · Blood and Zeal",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "headingEnglish": "Additional Rules",
+            "headingRussian": "Дополнительные правила",
+            "russian": "Примените эту карту рвения (Zeal), когда враг выполняет «Стрельбу» (Shoot) и противник выбирает целью дружественного оперативника более чем в 6 дюймах от стрелка. До конца этого действия дружественный оперативник считается заслонённым (Obscured). Это имеет приоритет над всеми правилами, запрещающими считать его заслонённым."
+          }
+        ],
+        "verifiedAgainstPixels": true
+      },
+      "12": {
+        "kind": "card",
+        "titleEnglish": "Free Ending Action",
+        "titleRussian": "Бесплатное действие в конце фазы (Free Ending Action)",
+        "categoryRussian": "Карта рвения (Zeal) · Blood and Zeal",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "headingEnglish": "Additional Rules",
+            "headingRussian": "Дополнительные правила",
+            "russian": "Примените эту карту рвения (Zeal) в конце фазы перестрелки. Один дружественный оперативник немедленно бесплатно выполняет одно действие, но не может переместиться более чем на 2 дюйма. Для этого вы можете сменить его приказ."
+          }
+        ],
+        "verifiedAgainstPixels": true
+      },
+      "13": {
+        "kind": "card",
+        "titleEnglish": "Use or Change Ploy",
+        "titleRussian": "Применить или сменить приём (Use or Change Ploy)",
+        "categoryRussian": "Карта рвения (Zeal) · Blood and Zeal",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "headingEnglish": "Additional Rules",
+            "headingRussian": "Дополнительные правила",
+            "russian": "Примените эту карту рвения (Zeal) в фазе перестрелки, до или после действия оперативника. Немедленно выполните одно из следующего:\n• Примените стратегический приём (Strategy Ploy), несмотря на текущую фазу, оплатив его обычную стоимость в CP.\n• Замените стратегический приём, применённый вами в этом раунде, другим. Правила прежнего приёма больше не действуют. Если новый приём дороже, доплатите разницу в CP.\nНельзя применять карту, если ни один вариант не выполним."
+          }
+        ],
+        "verifiedAgainstPixels": true
+      },
+      "14": {
+        "kind": "card",
+        "titleEnglish": "Reveal Opponent's Cards",
+        "titleRussian": "Раскрыть карты противника (Reveal Opponent's Cards)",
+        "categoryRussian": "Карта рвения (Zeal) · Blood and Zeal",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "headingEnglish": "Additional Rules",
+            "headingRussian": "Дополнительные правила",
+            "russian": "Примените эту карту рвения (Zeal) во время активации или контратаки дружественного либо вражеского оперативника, до или после его действия. Противник должен раскрыть все карты на своей руке. Нельзя применять карту, если у противника нет карт на руке."
+          }
+        ],
+        "verifiedAgainstPixels": true
+      },
+      "15": {
+        "kind": "card",
+        "titleEnglish": "Re-roll Defence Dice",
+        "titleRussian": "Перебросить защитные кубики (Re-roll Defence Dice)",
+        "categoryRussian": "Карта рвения (Zeal) · Blood and Zeal",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "headingEnglish": "Additional Rules",
+            "headingRussian": "Дополнительные правила",
+            "russian": "Примените эту карту рвения (Zeal), когда враг стреляет по дружественному оперативнику, после броска ваших защитных кубиков. Перебросьте любые из них. Нельзя применять карту, если вы не можете перебросить ни одного защитного кубика."
+          }
+        ],
+        "verifiedAgainstPixels": true
+      }
+    },
+    "blankTiles": [
+      16,
+      17,
+      18,
+      19
+    ],
+    "verifiedAgainstPixels": true
+  },
+  "25a034b953e80af9": {
+    "kind": "atlas",
+    "columns": 5,
+    "rows": 4,
+    "tiles": {
+      "0": {
+        "kind": "card",
+        "titleEnglish": "+D3 Damage Shot",
+        "titleRussian": "+D3 урона при стрельбе (+D3 Damage Shot)",
+        "categoryRussian": "Карта крови (Blood) · Blood and Zeal",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "headingEnglish": "Additional Rules",
+            "headingRussian": "Дополнительные правила",
+            "russian": "Примените эту карту крови (Blood), когда дружественный оперативник стреляет, на шаге разрешения атакующих кубиков (Resolve Attack Dice), когда один из ваших атакующих кубиков наносит урон. Нанесите D3 дополнительного урона."
+          }
+        ],
+        "verifiedAgainstPixels": true
+      },
+      "1": {
+        "kind": "card",
+        "titleEnglish": "+D3 Damage Strike",
+        "titleRussian": "+D3 урона при ударе (+D3 Damage Strike)",
+        "categoryRussian": "Карта крови (Blood) · Blood and Zeal",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "headingEnglish": "Additional Rules",
+            "headingRussian": "Дополнительные правила",
+            "russian": "Примените эту карту крови (Blood), когда дружественный оперативник сражается, на шаге разрешения атакующих кубиков (Resolve Attack Dice), когда один из ваших атакующих кубиков наносит урон. Нанесите D3 дополнительного урона."
+          }
+        ],
+        "verifiedAgainstPixels": true
+      },
+      "2": {
+        "kind": "card",
+        "titleEnglish": "+1\" Move",
+        "titleRussian": "+1 дюйм к MOVE (+1\" Move)",
+        "categoryRussian": "Карта крови (Blood) · Blood and Zeal",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "headingEnglish": "Additional Rules",
+            "headingRussian": "Дополнительные правила",
+            "russian": "Примените эту карту крови (Blood), когда дружественный оперативник выполняет «Атаку» (Charge) или «Перемещение» (Reposition). До конца этого действия увеличьте его MOVE на 1 дюйм. Это не суммируется с другими положительными изменениями его MOVE."
+          }
+        ],
+        "verifiedAgainstPixels": true
+      },
+      "3": {
+        "kind": "card",
+        "titleEnglish": "Critical Attack",
+        "titleRussian": "Критический успех атаки (Critical Attack)",
+        "categoryRussian": "Карта крови (Blood) · Blood and Zeal",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "headingEnglish": "Additional Rules",
+            "headingRussian": "Дополнительные правила",
+            "russian": "Примените эту карту крови (Blood), когда дружественный оперативник стреляет или сражается, на шаге броска атакующих кубиков (Roll Attack Dice). Сохраните один ваш обычный успех как критический. Нельзя применять карту, если у вас нет обычных успехов."
+          }
+        ],
+        "verifiedAgainstPixels": true
+      },
+      "4": {
+        "kind": "card",
+        "titleEnglish": "Re-roll Attack Dice",
+        "titleRussian": "Перебросить атакующие кубики (Re-roll Attack Dice)",
+        "categoryRussian": "Карта крови (Blood) · Blood and Zeal",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "headingEnglish": "Additional Rules",
+            "headingRussian": "Дополнительные правила",
+            "russian": "Примените эту карту крови (Blood), когда дружественный оперативник стреляет или сражается, после броска ваших атакующих кубиков. Перебросьте любые из них. Нельзя применять карту, если вы не можете перебросить ни одного атакующего кубика."
+          }
+        ],
+        "verifiedAgainstPixels": true
+      },
+      "5": {
+        "kind": "card",
+        "titleEnglish": "Action on Incapacitation",
+        "titleRussian": "Действие перед гибелью (Action on Incapacitation)",
+        "categoryRussian": "Карта крови (Blood) · Blood and Zeal",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "headingEnglish": "Additional Rules",
+            "headingRussian": "Дополнительные правила",
+            "russian": "Примените эту карту крови (Blood), когда готовый дружественный оперативник выведен из строя. Перед удалением из зоны боя он может бесплатно выполнить одно действие, кроме «Ближнего боя» (Fight); для этого вы можете сменить его приказ. Затем он выведен из строя как обычно."
+          }
+        ],
+        "verifiedAgainstPixels": true
+      },
+      "6": {
+        "kind": "card",
+        "titleEnglish": "Double Fight/Shoot",
+        "titleRussian": "Повторить бой или стрельбу (Double Fight/Shoot)",
+        "categoryRussian": "Карта крови (Blood) · Blood and Zeal",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "headingEnglish": "Additional Rules",
+            "headingRussian": "Дополнительные правила",
+            "russian": "Примените эту карту крови (Blood) во время активации или контратаки дружественного оперативника, после того как он выполнил «Ближний бой» (Fight) или «Стрельбу» (Shoot). Он немедленно выполняет то же действие снова. Это имеет приоритет над ограничениями действий. Если у оперативника есть правило фракции «Астартес» (Astartes), второе действие бесплатно."
+          }
+        ],
+        "verifiedAgainstPixels": true
+      },
+      "7": {
+        "kind": "card",
+        "titleEnglish": "Take Initiative",
+        "titleRussian": "Захватить инициативу (Take Initiative)",
+        "categoryRussian": "Карта крови (Blood) · Blood and Zeal",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "headingEnglish": "Additional Rules",
+            "headingRussian": "Дополнительные правила",
+            "russian": "Примените эту карту крови (Blood) в начале шага инициативы (Initiative) фазы стратегии. Инициатива автоматически у вас: не проводите состязательный бросок."
+          }
+        ],
+        "verifiedAgainstPixels": true
+      },
+      "8": {
+        "kind": "card",
+        "titleEnglish": "Max Success Attack",
+        "titleRussian": "Все кубики атаки успешны (Max Success Attack)",
+        "categoryRussian": "Карта крови (Blood) · Blood and Zeal",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "headingEnglish": "Additional Rules",
+            "headingRussian": "Дополнительные правила",
+            "russian": "Примените эту карту крови (Blood), когда дружественный оперативник стреляет или сражается, на шаге броска атакующих кубиков (Roll Attack Dice). Сохраните все ваши атакующие кубики как обычные успехи, не бросая их."
+          }
+        ],
+        "verifiedAgainstPixels": true
+      },
+      "9": {
+        "kind": "card",
+        "titleEnglish": "Free Starting Action",
+        "titleRussian": "Бесплатное действие в начале фазы (Free Starting Action)",
+        "categoryRussian": "Карта крови (Blood) · Blood and Zeal",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "headingEnglish": "Additional Rules",
+            "headingRussian": "Дополнительные правила",
+            "russian": "Примените эту карту крови (Blood) в начале фазы перестрелки. Один дружественный оперативник немедленно бесплатно выполняет одно действие, но не может переместиться более чем на 2 дюйма. Для этого вы можете сменить его приказ."
+          }
+        ],
+        "verifiedAgainstPixels": true
+      },
+      "10": {
+        "kind": "card",
+        "titleEnglish": "Cancel Block (Fight)",
+        "titleRussian": "Отменить блок в ближнем бою (Cancel Block (Fight))",
+        "categoryRussian": "Карта крови (Blood) · Blood and Zeal",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "headingEnglish": "Additional Rules",
+            "headingRussian": "Дополнительные правила",
+            "russian": "Примените эту карту крови (Blood), когда дружественный оперативник сражается и противник выбирает успех для блока. Сбросьте этот успех: блок не происходит, но противник всё равно считается разрешившим этот атакующий кубик."
+          }
+        ],
+        "verifiedAgainstPixels": true
+      },
+      "11": {
+        "kind": "card",
+        "titleEnglish": "Shock and Stun",
+        "titleRussian": "Шок и оглушение (Shock and Stun)",
+        "categoryRussian": "Карта крови (Blood) · Blood and Zeal",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "headingEnglish": "Additional Rules",
+            "headingRussian": "Дополнительные правила",
+            "russian": "Примените эту карту крови (Blood), когда дружественный оперативник стреляет или сражается, в конце шага броска атакующих кубиков (Roll Attack Dice), если вы сохранили хотя бы один критический успех. До конца этой последовательности оружие оперативника получает правила «Шок» (Shock) и «Оглушение» (Stun)."
+          }
+        ],
+        "verifiedAgainstPixels": true
+      },
+      "12": {
+        "kind": "card",
+        "titleEnglish": "Use or Reuse Ploy",
+        "titleRussian": "Применить или повторить приём (Use or Reuse Ploy)",
+        "categoryRussian": "Карта крови (Blood) · Blood and Zeal",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "headingEnglish": "Additional Rules",
+            "headingRussian": "Дополнительные правила",
+            "russian": "Примените эту карту крови (Blood) в фазе перестрелки. Немедленно выполните одно из следующего:\n• Примените приём перестрелки (Firefight Ploy) со скидкой 1 CP, до минимума 0 CP.\n• Примените приём перестрелки во второй раз в этом раунде. Это имеет приоритет над ограничением «раз за раунд»; оплатите его обычную стоимость в CP.\nНельзя применять карту, если ни один вариант не выполним."
+          }
+        ],
+        "verifiedAgainstPixels": true
+      },
+      "13": {
+        "kind": "card",
+        "titleEnglish": "Steal Card",
+        "titleRussian": "Украсть карту (Steal Card)",
+        "categoryRussian": "Карта крови (Blood) · Blood and Zeal",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "headingEnglish": "Additional Rules",
+            "headingRussian": "Дополнительные правила",
+            "russian": "Примените эту карту крови (Blood) во время активации или контратаки дружественного оперативника, до или после его действия. Возьмите одну карту из руки противника. Нельзя применять карту, если у противника нет карт на руке."
+          }
+        ],
+        "verifiedAgainstPixels": true
+      },
+      "14": {
+        "kind": "card",
+        "titleEnglish": "Prevent Mission Action",
+        "titleRussian": "Помешать действию миссии (Prevent Mission Action)",
+        "categoryRussian": "Карта крови (Blood) · Blood and Zeal",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "headingEnglish": "Additional Rules",
+            "headingRussian": "Дополнительные правила",
+            "russian": "Примените эту карту крови (Blood), когда вражеский оперативник выполняет действие миссии на маркере цели, оспариваемом дружественными оперативниками. Противник должен потратить ещё 1 AP на это действие; если он этого не делает, уже потраченные AP не возвращаются.\nДо начала следующего раунда, пока дружественные оперативники оспаривают этот маркер, противник должен тратить ещё 1 AP на действия миссии вражескими оперативниками на нём.\nЭто не суммируется с другими правилами, требующими дополнительные AP для действий миссии."
+          }
+        ],
+        "verifiedAgainstPixels": true
+      },
+      "15": {
+        "kind": "card",
+        "titleEnglish": "Return Discarded Card",
+        "titleRussian": "Вернуть сброшенную карту (Return Discarded Card)",
+        "categoryRussian": "Карта крови (Blood) · Blood and Zeal",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "headingEnglish": "Additional Rules",
+            "headingRussian": "Дополнительные правила",
+            "russian": "Примените эту карту крови (Blood) во время активации или контратаки дружественного оперативника, до или после его действия. Замешайте одну из сброшенных карт противника обратно в её колоду. Нельзя применять карту, если у противника нет сброшенных карт."
+          }
+        ],
+        "verifiedAgainstPixels": true
+      }
+    },
+    "blankTiles": [
+      16,
+      17,
+      18,
+      19
+    ],
+    "verifiedAgainstPixels": true
+  },
+  "c45cc9ffe62c7cc7": {
+    "kind": "atlas",
+    "columns": 5,
+    "rows": 3,
+    "tiles": {
+      "0": {
+        "kind": "card",
+        "titleEnglish": "Spore Miasma",
+        "titleRussian": "Споровая завеса (Spore Miasma)",
+        "categoryRussian": "Карта события (Event Card) · Typhon",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "headingEnglish": "Additional Rules",
+            "headingRussian": "Дополнительные правила",
+            "russian": "Когда оперативник стреляет по оперативнику более чем в 8 дюймах от него, бросьте один дополнительный защитный кубик."
+          }
+        ],
+        "verifiedAgainstPixels": true,
+        "flavorRussian": "Густая взвесь микроскопических спор тиранидов заполняет зону боя, скрывая затаившихся врагов."
+      },
+      "1": {
+        "kind": "card",
+        "titleEnglish": "Sentient Barbs",
+        "titleRussian": "Живые шипы (Sentient Barbs)",
+        "categoryRussian": "Карта события (Event Card) · Typhon",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "headingEnglish": "Additional Rules",
+            "headingRussian": "Дополнительные правила",
+            "russian": "Когда оперативник игрока перемещается в пределах 1 дюйма от элемента террейна «Заражение тиранидов» (Tyranid Infestation), бросьте D6: на 3+ нанесите ему 1 урон. За каждую активацию бросайте только один раз для каждого элемента террейна."
+          }
+        ],
+        "verifiedAgainstPixels": true,
+        "flavorRussian": "Ядовитые шипы вырастают из органических наростов и тянутся к незваным гостям, чуя новые источники биоматерии."
+      },
+      "2": {
+        "kind": "card",
+        "titleEnglish": "Birthing Sac",
+        "titleRussian": "Родильный мешок (Birthing Sac)",
+        "categoryRussian": "Карта события (Event Card) · Typhon",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "headingEnglish": "Additional Rules",
+            "headingRussian": "Дополнительные правила",
+            "russian": "Выставьте одного готового неигрового оперативника (NPO) с приказом «Скрытность» (Conceal) как можно ближе к случайно выбранному элементу террейна «Гестационный мешок» (Gestation Sac, S).\nЕсли это невозможно, например достигнут лимит NPO, вытяните другую карту события."
+          }
+        ],
+        "verifiedAgainstPixels": true,
+        "flavorRussian": "Сквозь слои мембран наружу пробиваются новые агрессивные биоформы, рождённые защищать наросты ксеносов."
+      },
+      "3": {
+        "kind": "card",
+        "titleEnglish": "Voracious",
+        "titleRussian": "Ненасытность (Voracious)",
+        "categoryRussian": "Карта события (Event Card) · Typhon",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "headingEnglish": "Additional Rules",
+            "headingRussian": "Дополнительные правила",
+            "russian": "Оружие неигровых оперативников (NPO) получает правило «Смертоносное 5+» (Lethal 5+)."
+          }
+        ],
+        "verifiedAgainstPixels": true,
+        "flavorRussian": "Хищные биоформы повинуются повелению пожрать свою добычу."
+      },
+      "4": {
+        "kind": "card",
+        "titleEnglish": "Ripper Swarm",
+        "titleRussian": "Рой пожирателей (Ripper Swarm)",
+        "categoryRussian": "Карта события (Event Card) · Typhon",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "headingEnglish": "Additional Rules",
+            "headingRussian": "Дополнительные правила",
+            "russian": "Если в зоне боя нет NPO «Рой пожирателей» (Ripper Swarm), выставьте одного готового с приказом «Скрытность» (Conceal) в допустимом месте: в Joint Ops — целиком на территории NPO; в Adversary Ops — в дистанции контроля случайного маркера цели. Если возможно, также разместите его в дистанции контроля оперативника игрока.\nЕсли в зоне боя уже есть раненый NPO «Рой пожирателей», он восстанавливает все потерянные раны.\nЕсли ни один вариант не выполним, вытяните другую карту события."
+          }
+        ],
+        "verifiedAgainstPixels": true,
+        "flavorRussian": "Клубок ненасытных змеевидных тварей обрушивается на ничего не подозревающую добычу, чтобы поглотить её биомассу."
+      },
+      "5": {
+        "kind": "card",
+        "titleEnglish": "Feed",
+        "titleRussian": "Пожирание (Feed)",
+        "categoryRussian": "Карта события (Event Card) · Typhon",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "headingEnglish": "Additional Rules",
+            "headingRussian": "Дополнительные правила",
+            "russian": "D3 неигровых оперативников (NPO) немедленно бесплатно выполняют «Ближний бой» (Fight). Если ни один не может этого сделать, вытяните другую карту события."
+          }
+        ],
+        "verifiedAgainstPixels": true,
+        "flavorRussian": "Синаптический приказ разжигает голод подвижных защитников наростов и гонит их пожирать всё на пути."
+      },
+      "6": {
+        "kind": "card",
+        "titleEnglish": "Overrun",
+        "titleRussian": "Натиск (Overrun)",
+        "categoryRussian": "Карта события (Event Card) · Typhon",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "headingEnglish": "Additional Rules",
+            "headingRussian": "Дополнительные правила",
+            "russian": "Каждый неигровой оперативник (NPO) немедленно бесплатно выполняет «Атаку» (Charge) на расстояние до 3 дюймов; для этого можно сменить его приказ. Каждый NPO, который не может этого сделать, вместо этого может немедленно бесплатно выполнить «Рывок» (Dash)."
+          }
+        ],
+        "verifiedAgainstPixels": true,
+        "flavorRussian": "Синаптическое повеление Разума Улья бросает тиранидские биоформы на добычу в неудержимом приступе агрессии."
+      },
+      "7": {
+        "kind": "card",
+        "titleEnglish": "Lurk",
+        "titleRussian": "Затаиться (Lurk)",
+        "categoryRussian": "Карта события (Event Card) · Typhon",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "headingEnglish": "Additional Rules",
+            "headingRussian": "Дополнительные правила",
+            "russian": "Когда оперативник игрока стреляет по NPO, перебросьте один защитный кубик NPO, если это ему выгодно.\nКогда игрок должен нанести удар (Strike) по NPO, бросьте D6: на 5+ он должен вместо этого выполнить блок (Block). Если блок невозможен, например успех обычный, а у NPO остались только критические успехи, удар не имеет эффекта."
+          }
+        ],
+        "verifiedAgainstPixels": true,
+        "flavorRussian": "Ксеносы инстинктивно уходят от обнаружения и прячутся в тенях, ожидая удобного момента для удара."
+      },
+      "8": {
+        "kind": "card",
+        "titleEnglish": "Synaptic Backlash",
+        "titleRussian": "Синаптический откат (Synaptic Backlash)",
+        "categoryRussian": "Карта события (Event Card) · Typhon",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "headingEnglish": "Additional Rules",
+            "headingRussian": "Дополнительные правила",
+            "russian": "Выберите одного оперативника игрока и бросьте D6:\n• Если результат выше его APL, уменьшите его APL на 1.\n• Если результат равен его APL или ниже, выберите другого оперативника игрока и повторите процесс.\nЭто не действует на оперативников игроков, которые препятствуют любым психическим правилам (PSYCHIC), например психическим действиям."
+          }
+        ],
+        "verifiedAgainstPixels": true,
+        "flavorRussian": "Треск нейронных помех пронзает мозг тех, кто осмелился бросить вызов воле Разума Улья."
+      },
+      "9": {
+        "kind": "card",
+        "titleEnglish": "Birthing Sac",
+        "titleRussian": "Родильный мешок (Birthing Sac)",
+        "categoryRussian": "Карта события (Event Card) · Typhon",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "headingEnglish": "Additional Rules",
+            "headingRussian": "Дополнительные правила",
+            "russian": "Выставьте одного готового неигрового оперативника (NPO) с приказом «Скрытность» (Conceal) как можно ближе к случайно выбранному элементу террейна «Гестационный мешок» (Gestation Sac, S).\nЕсли это невозможно, например достигнут лимит NPO, вытяните другую карту события."
+          }
+        ],
+        "verifiedAgainstPixels": true,
+        "flavorRussian": "Сквозь слои мембран наружу пробиваются новые агрессивные биоформы, рождённые защищать наросты ксеносов."
+      }
+    },
+    "blankTiles": [
+      10,
+      11,
+      12,
+      13,
+      14
+    ],
+    "verifiedAgainstPixels": true
+  },
+  "ddbda0e2ab98ed4a": {
+    "kind": "atlas",
+    "columns": 6,
+    "rows": 3,
+    "tiles": {
+      "0": {
+        "kind": "card",
+        "titleEnglish": "Dark of the Tomb",
+        "titleRussian": "Мрак гробницы (Dark of the Tomb)",
+        "categoryRussian": "Карта события (Event Card) · Мир-гробница (Tomb World)",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "headingEnglish": "Additional Rules",
+            "headingRussian": "Дополнительные правила",
+            "russian": "Когда оперативник игрока стреляет по оперативнику более чем в 8 дюймах от него, атакующие кубики нельзя перебрасывать."
+          }
+        ],
+        "verifiedAgainstPixels": true,
+        "flavorRussian": "Могильный сумрак внезапно сгущается. Неестественная тьма застилает зрение и приборы, словно сама смерть подступает ближе."
+      },
+      "1": {
+        "kind": "card",
+        "titleEnglish": "The Maze Reforms",
+        "titleRussian": "Лабиринт меняется (The Maze Reforms)",
+        "categoryRussian": "Карта события (Event Card) · Мир-гробница (Tomb World)",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "headingEnglish": "Additional Rules",
+            "headingRussian": "Дополнительные правила",
+            "russian": "Закройте одну случайную открытую точку пролома (Breach Point) и D3 случайных открытых люка (Hatchway). Это имеет приоритет над обычными правилами точек пролома.\nЕсли ни одну точку или люк нельзя закрыть, вытяните другую карту события."
+          }
+        ],
+        "verifiedAgainstPixels": true,
+        "flavorRussian": "По проходам пробегает древняя энергия. Открытые порталы запечатываются, разрывы стен затягиваются: протоколы гробницы отсекают пути отхода захватчиков."
+      },
+      "2": {
+        "kind": "card",
+        "titleEnglish": "Awakened Warrior",
+        "titleRussian": "Пробудившийся воин (Awakened Warrior)",
+        "categoryRussian": "Карта события (Event Card) · Мир-гробница (Tomb World)",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "headingEnglish": "Additional Rules",
+            "headingRussian": "Дополнительные правила",
+            "russian": "Выставьте готового NPO «Воин-некрон» (Necron Warrior) с приказом «Скрытность» (Conceal) так, чтобы в его дистанции контроля был элемент террейна со встроенной моделью воина-некрона: торец стены или соответствующая сторона A2.\nЕсли это невозможно, например достигнут лимит NPO, вытяните другую карту события."
+          }
+        ],
+        "verifiedAgainstPixels": true,
+        "flavorRussian": "Спящие воины, лишённые собственных стазисных склепов, стоят вдоль проходов гробницы, готовые пробудиться и стать безмолвными палачами."
+      },
+      "3": {
+        "kind": "card",
+        "titleEnglish": "Stirrings of Horror",
+        "titleRussian": "Пробуждение ужаса (Stirrings of Horror)",
+        "categoryRussian": "Карта события (Event Card) · Мир-гробница (Tomb World)",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "headingEnglish": "Additional Rules",
+            "headingRussian": "Дополнительные правила",
+            "russian": "Увеличьте текущий уровень угрозы (Threat Level) на 1. Если он уже равен 15 или вы играете в Adversary Ops, вместо этого выставьте ещё одного NPO в качестве подкрепления в этой фазе стратегии."
+          }
+        ],
+        "verifiedAgainstPixels": true,
+        "flavorRussian": "Присутствие захватчиков потревожило повреждённое сознание главной программы. Зловещий разум направляет больше энергии ближайшим стражам."
+      },
+      "4": {
+        "kind": "card",
+        "titleEnglish": "A Chittering Drone",
+        "titleRussian": "Стрекочущий гул (A Chittering Drone)",
+        "categoryRussian": "Карта события (Event Card) · Мир-гробница (Tomb World)",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "headingEnglish": "Additional Rules",
+            "headingRussian": "Дополнительные правила",
+            "russian": "Если в зоне боя нет NPO «Рой каноптековых скарабеев» (Canoptek Scarab Swarm), выставьте одного готового с приказом «Скрытность» (Conceal) в допустимом месте:\n• В Joint Ops — с точкой доступа случайного люка (Hatchway Access Point) в его дистанции контроля и целиком на территории NPO.\n• В Adversary Ops — со случайным маркером цели в его дистанции контроля.\nЕсли это невозможно, выставьте его как можно ближе. Если возможно, разместите его в дистанции контроля оперативника игрока.\nЕсли в зоне боя уже есть раненый NPO «Рой каноптековых скарабеев», он восстанавливает все потерянные раны.\nЕсли ни один вариант не выполним, вытяните другую карту события."
+          }
+        ],
+        "verifiedAgainstPixels": true,
+        "flavorRussian": "Шорох щёлкающих челюстей предвещает появление роя конструкций."
+      },
+      "5": {
+        "kind": "card",
+        "titleEnglish": "My Will Be Done",
+        "titleRussian": "Да исполнится моя воля (My Will Be Done)",
+        "categoryRussian": "Карта события (Event Card) · Мир-гробница (Tomb World)",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "headingEnglish": "Additional Rules",
+            "headingRussian": "Дополнительные правила",
+            "russian": "Когда NPO находится в той же комнате, что и элемент террейна «Саркофаг» (Sarcophagus, C1), его оружие получает правило «Точное 1» (Accurate 1)."
+          }
+        ],
+        "verifiedAgainstPixels": true,
+        "flavorRussian": "Даже во сне высокомерные некронские вельможи способны навязывать подданным свою волю."
+      },
+      "6": {
+        "kind": "card",
+        "titleEnglish": "Living Metal Flux",
+        "titleRussian": "Всплеск живого металла (Living Metal Flux)",
+        "categoryRussian": "Карта события (Event Card) · Мир-гробница (Tomb World)",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "headingEnglish": "Additional Rules",
+            "headingRussian": "Дополнительные правила",
+            "russian": "Все NPO немедленно восстанавливают до D3+2 потерянных ран. Бросайте отдельно за каждого.\nЕсли ни один NPO не может восстановить раны, вытяните другую карту события."
+          }
+        ],
+        "verifiedAgainstPixels": true,
+        "flavorRussian": "Полуразумный металл тел стражей стремительно перестраивается, затягивая самые тяжёлые повреждения."
+      },
+      "7": {
+        "kind": "card",
+        "titleEnglish": "Countertemporal Shifting",
+        "titleRussian": "Временное смещение (Countertemporal Shifting)",
+        "categoryRussian": "Карта события (Event Card) · Мир-гробница (Tomb World)",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "headingEnglish": "Additional Rules",
+            "headingRussian": "Дополнительные правила",
+            "russian": "Каждый раз, когда атакующий кубик наносит NPO 3 урона или больше, бросьте D6: на 5+ уменьшите этот нанесённый урон на 1."
+          }
+        ],
+        "verifiedAgainstPixels": true,
+        "flavorRussian": "Системы, искажающие причинность, оживают. Тела слуг гробницы мерцают в соседних временных линиях, ускользая от тяжёлых ударов."
+      },
+      "8": {
+        "kind": "card",
+        "titleEnglish": "Awakened Warrior",
+        "titleRussian": "Пробудившийся воин (Awakened Warrior)",
+        "categoryRussian": "Карта события (Event Card) · Мир-гробница (Tomb World)",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "headingEnglish": "Additional Rules",
+            "headingRussian": "Дополнительные правила",
+            "russian": "Выставьте готового NPO «Воин-некрон» (Necron Warrior) с приказом «Скрытность» (Conceal) так, чтобы в его дистанции контроля был элемент террейна со встроенной моделью воина-некрона: торец стены или соответствующая сторона A2.\nЕсли это невозможно, например достигнут лимит NPO, вытяните другую карту события."
+          }
+        ],
+        "verifiedAgainstPixels": true,
+        "flavorRussian": "Спящие воины, лишённые собственных стазисных склепов, стоят вдоль проходов гробницы, готовые пробудиться и стать безмолвными палачами."
+      },
+      "9": {
+        "kind": "card",
+        "titleEnglish": "Reanimation Protocols",
+        "titleRussian": "Протоколы реанимации (Reanimation Protocols)",
+        "categoryRussian": "Карта события (Event Card) · Мир-гробница (Tomb World)",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "headingEnglish": "Additional Rules",
+            "headingRussian": "Дополнительные правила",
+            "russian": "Когда каждый NPO впервые в этом раунде должен быть выведен из строя, бросьте D6: на 4+ он вместо этого реанимирован (Reanimated). При реанимации:\n• У него остаётся 1 рана, и до конца действия его нельзя вывести из строя.\n• Сбросьте все оставшиеся атакующие кубики, включая ваши, если этот NPO сражается или наносит ответные удары.\n• Если NPO был готовым (Ready), сделайте его использованным (Expended).\n• Уменьшите его APL на 1 до конца следующей активации."
+          }
+        ],
+        "verifiedAgainstPixels": true,
+        "flavorRussian": "Призрачные сигналы запускают системы гробницы, снова и снова возвращающие некронов с грани уничтожения."
+      },
+      "10": {
+        "kind": "card",
+        "titleEnglish": "Transdimensional Relocation",
+        "titleRussian": "Межпространственное перемещение (Transdimensional Relocation)",
+        "categoryRussian": "Карта события (Event Card) · Мир-гробница (Tomb World)",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "headingEnglish": "Additional Rules",
+            "headingRussian": "Дополнительные правила",
+            "russian": "Случайно выберите двух оперативников игроков; в Adversary Ops — одну пару из каждого отряда. Уберите обоих из зоны боя и выставьте каждого на прежнее место другого: поменяйте их позициями.\nПовторите этот процесс ещё два раза, если возможно.\nЕсли в зоне боя у какого-либо отряда есть только один оперативник игрока, вытяните другую карту события."
+          }
+        ],
+        "verifiedAgainstPixels": true,
+        "flavorRussian": "Защитные системы гробницы расплетают и заново ткут реальность, рассеивая захватчиков по тёмным закоулкам."
+      },
+      "11": {
+        "kind": "card",
+        "titleEnglish": "Subjugation Glyphs",
+        "titleRussian": "Глифы подчинения (Subjugation Glyphs)",
+        "categoryRussian": "Карта события (Event Card) · Мир-гробница (Tomb World)",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "headingEnglish": "Additional Rules",
+            "headingRussian": "Дополнительные правила",
+            "russian": "Случайно выберите одного оперативника игрока и бросьте D6:\n• Если результат выше его APL, уменьшите его APL на 1.\n• Если результат равен его APL или ниже, случайно выберите другого оперативника игрока и повторите процесс. В Adversary Ops следующий случайный выбор делается противником среди его оперативников; игроки чередуются, пока APL одного оперативника не уменьшится или бросок не будет сделан за всех оперативников игроков."
+          }
+        ],
+        "verifiedAgainstPixels": true,
+        "flavorRussian": "Призрачная энергия складывается в древние знаки на стенах. Волны устрашающего превосходства хозяев склепа подтачивают волю незваных гостей."
+      },
+      "12": {
+        "kind": "card",
+        "titleEnglish": "Enforcer of the Phaerons",
+        "titleRussian": "Исполнитель воли фаэронов (Enforcer of the Phaerons)",
+        "categoryRussian": "Карта события (Event Card) · Мир-гробница (Tomb World)",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "headingEnglish": "Additional Rules",
+            "headingRussian": "Дополнительные правила",
+            "russian": "Когда NPO находится в той же комнате, что и NPO «Королевский страж» (Royal Warden), его оружие получает правило «Непрерывное» (Ceaseless).\nЕсли в зоне боя нет NPO «Королевский страж», вытяните другую карту события."
+          }
+        ],
+        "verifiedAgainstPixels": true,
+        "flavorRussian": "Королевские стражи обладают инициативой, недоступной низшим некронам. Они проводят волю правителей, направляя подчинённых с убийственной точностью."
+      },
+      "13": {
+        "kind": "card",
+        "titleEnglish": "Flesh Hunger",
+        "titleRussian": "Жажда плоти (Flesh Hunger)",
+        "categoryRussian": "Карта события (Event Card) · Мир-гробница (Tomb World)",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "headingEnglish": "Additional Rules",
+            "headingRussian": "Дополнительные правила",
+            "russian": "Если в зоне боя нет NPO «Свежеватель» (Flayed One), выставьте одного готового с приказом «Скрытность» (Conceal) в допустимом месте:\n• В Joint Ops — с точкой доступа случайного люка в его дистанции контроля и целиком на территории NPO.\n• В Adversary Ops — со случайным маркером цели в его дистанции контроля.\nЕсли это невозможно, выставьте его как можно ближе. Если возможно, разместите его в дистанции контроля оперативника игрока.\nЕсли в зоне боя уже есть один или несколько NPO «Свежеватель», выберите одного: он немедленно бесплатно выполняет «Атаку» (Charge) или «Перемещение» (Reposition) к ближайшему оперативнику игрока.\nЕсли ни один вариант не выполним, вытяните другую карту события."
+          }
+        ],
+        "verifiedAgainstPixels": true,
+        "flavorRussian": "Свежие жертвы манят Свежевателей, как запах крови манит хищника. Они вырываются из тёмных ниш и пространственных разрывов, бросаясь на добычу."
+      },
+      "14": {
+        "kind": "card",
+        "titleEnglish": "Rewards of Annihilation",
+        "titleRussian": "Награда за уничтожение (Rewards of Annihilation)",
+        "categoryRussian": "Карта события (Event Card) · Мир-гробница (Tomb World)",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "headingEnglish": "Additional Rules",
+            "headingRussian": "Дополнительные правила",
+            "russian": "Когда NPO «Скорпех-разрушитель» (Skorpekh Destroyer) или «Хексмарк-разрушитель» (Hexmark Destroyer) выводит из строя оперативника игрока, этот NPO восстанавливает до D3 потерянных ран; если характеристика WOUNDS жертвы была 12 или больше, вместо этого — до 2D3 потерянных ран."
+          }
+        ],
+        "verifiedAgainstPixels": true,
+        "flavorRussian": "Каждое убийство пробуждает в разрушителе остатки мрачного удовлетворения и запускает скрытые резервы энергии, позволяя продолжать бойню."
+      }
+    },
+    "blankTiles": [
+      15,
+      16,
+      17
+    ],
+    "verifiedAgainstPixels": true
+  },
+  "8101b6935e4810dd": {
+    "kind": "atlas",
+    "columns": 6,
+    "rows": 3,
+    "tiles": {
+      "0": {
+        "kind": "card",
+        "titleEnglish": "Rout",
+        "titleRussian": "Разгром (Rout)",
+        "categoryRussian": "Многопользовательская тактическая задача (Multiplayer Tac Op) · Найти и уничтожить (Seek & Destroy)",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "headingEnglish": "Reveal",
+            "headingRussian": "Раскрытие",
+            "russian": "Когда впервые получаете VP за эту задачу."
+          },
+          {
+            "type": "paragraph",
+            "headingEnglish": "Victory Points",
+            "headingRussian": "Победные очки (VP)",
+            "russian": "Каждый раз, когда дружественный оперативник выводит из строя вражеского оперативника, если этот дружественный оперативник находится в пределах 8 дюймов от зоны высадки противника, получите 1 VP. Если это условие выполнено и характеристика WOUNDS жертвы была 12 или больше, вместо этого получите 2 VP.\nЗа эту задачу нельзя получить более 2 VP за раунд."
+          }
+        ],
+        "verifiedAgainstPixels": true
+      },
+      "1": {
+        "kind": "card",
+        "titleEnglish": "Dominate",
+        "titleRussian": "Господство (Dominate)",
+        "categoryRussian": "Многопользовательская тактическая задача (Multiplayer Tac Op) · Найти и уничтожить (Seek & Destroy)",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "headingEnglish": "Reveal",
+            "headingRussian": "Раскрытие",
+            "russian": "Когда дружественный оперативник впервые выводит из строя вражеского оперативника."
+          },
+          {
+            "type": "paragraph",
+            "headingEnglish": "Additional Rules",
+            "headingRussian": "Дополнительные правила",
+            "russian": "Каждый раз, когда дружественный оперативник выводит из строя вражеского оперативника, этот дружественный оперативник получает один ваш жетон господства (Dominate)."
+          },
+          {
+            "type": "paragraph",
+            "headingEnglish": "Victory Points",
+            "headingRussian": "Победные очки (VP)",
+            "russian": "В конце третьего и четвёртого раундов можно снять жетоны господства с дружественных оперативников, которые не выведены из строя. За каждый снятый жетон получите 1 VP.\nЗа эту задачу нельзя получить более 3 VP за раунд."
+          }
+        ],
+        "verifiedAgainstPixels": true
+      },
+      "2": {
+        "kind": "card",
+        "titleEnglish": "Sweep & Clear",
+        "titleRussian": "Зачистка (Sweep & Clear)",
+        "categoryRussian": "Многопользовательская тактическая задача (Multiplayer Tac Op) · Найти и уничтожить (Seek & Destroy)",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "headingEnglish": "Reveal",
+            "headingRussian": "Раскрытие",
+            "russian": "Когда враг впервые выведен из строя, оспаривая маркер цели, либо когда дружественный оперативник впервые выполняет действие «Зачистить» (Clear) — что наступит раньше."
+          },
+          {
+            "type": "paragraph",
+            "headingEnglish": "Additional Rules",
+            "headingRussian": "Дополнительные правила",
+            "russian": "Когда враг, оспаривающий маркер цели, выведен из строя, этот маркер получает один ваш жетон «Прочёсано» (Swept), если такого жетона на нём ещё нет. Жетон остаётся до шага подготовки (Ready) следующей фазы стратегии."
+          },
+          {
+            "type": "paragraph",
+            "headingEnglish": "Clear 1AP",
+            "headingRussian": "Зачистить — 1 AP",
+            "russian": "Маркер цели, контролируемый активным оперативником, зачищен до конца раунда.\nЭто действие нельзя выполнять в первом раунде или в дистанции контроля вражеского оперативника."
+          },
+          {
+            "type": "paragraph",
+            "headingEnglish": "Victory Points",
+            "headingRussian": "Победные очки (VP)",
+            "russian": "В конце каждого раунда после первого, если дружественные оперативники контролируют хотя бы один маркер цели с вашим жетоном «Прочёсано», получите 1 VP. Если это условие выполнено и хотя бы один из этих маркеров также зачищен, вместо этого получите 2 VP.\nЗа эту задачу нельзя получить более 2 VP за раунд."
+          }
+        ],
+        "verifiedAgainstPixels": true
+      },
+      "3": {
+        "kind": "card",
+        "titleEnglish": "Envoy",
+        "titleRussian": "Посланник (Envoy)",
+        "categoryRussian": "Многопользовательская тактическая задача (Multiplayer Tac Op) · Охрана (Security)",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "headingEnglish": "Reveal",
+            "headingRussian": "Раскрытие",
+            "russian": "Когда впервые выбираете посланника."
+          },
+          {
+            "type": "paragraph",
+            "headingEnglish": "Additional Rules",
+            "headingRussian": "Дополнительные правила",
+            "russian": "Как стратегический манёвр (Strategic Gambit) в каждом раунде после первого выберите одного дружественного оперативника своим посланником до шага подготовки (Ready) следующей фазы стратегии. Нельзя выбирать оперативника, выбранного в одном из предыдущих раундов."
+          },
+          {
+            "type": "paragraph",
+            "headingEnglish": "Victory Points",
+            "headingRussian": "Победные очки (VP)",
+            "russian": "В конце каждого раунда после первого, если ваш посланник находится более чем в 8 дюймах от вашей зоны высадки, целиком в пределах 8 дюймов от центра стола и вне дистанции контроля врагов, получите 1 VP. Если все условия выполнены и посланник не терял раны в этом раунде, вместо этого получите 2 VP."
+          }
+        ],
+        "verifiedAgainstPixels": true
+      },
+      "5": {
+        "kind": "card",
+        "titleEnglish": "Plant Banner",
+        "titleRussian": "Установить знамя (Plant Banner)",
+        "categoryRussian": "Многопользовательская тактическая задача (Multiplayer Tac Op) · Охрана (Security)",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "headingEnglish": "Reveal",
+            "headingRussian": "Раскрытие",
+            "russian": "Когда выполняете действие «Установить знамя» (Plant Banner)."
+          },
+          {
+            "type": "paragraph",
+            "headingEnglish": "Plant Banner 1AP",
+            "headingRussian": "Установить знамя — 1 AP",
+            "russian": "Разместите ваш маркер миссии «Знамя» (Banner) в дистанции контроля активного оперативника, более чем в 8 дюймах от вашей зоны высадки и целиком в пределах 8 дюймов от центра стола. С этим маркером можно выполнять действие «Поднять маркер» (Pick Up Marker).\nЭто действие нельзя выполнять в первом раунде, в дистанции контроля вражеского оперативника или если дружественный оперативник уже выполнял это действие в этом бою."
+          },
+          {
+            "type": "paragraph",
+            "headingEnglish": "Victory Points",
+            "headingRussian": "Победные очки (VP)",
+            "russian": "В конце каждого раунда после первого, если ваш маркер «Знамя» целиком находится на территории противника и дружественные оперативники контролируют его, получите 1 VP. Если это условие выполнено и враги его не оспаривают, вместо этого получите 2 VP. Для начисления VP маркер должен находиться в зоне боя: его нельзя переносить."
+          }
+        ],
+        "verifiedAgainstPixels": true
+      },
+      "6": {
+        "kind": "card",
+        "titleEnglish": "Flank",
+        "titleRussian": "Фланг (Flank)",
+        "categoryRussian": "Многопользовательская тактическая задача (Multiplayer Tac Op) · Разведка (Recon)",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "headingEnglish": "Reveal",
+            "headingRussian": "Раскрытие",
+            "russian": "Как стратегический манёвр (Strategic Gambit)."
+          },
+          {
+            "type": "paragraph",
+            "headingEnglish": "Additional Rules",
+            "headingRussian": "Дополнительные правила",
+            "russian": "Флангом позиции противника считается область целиком в пределах 9 дюймов от края зоны боя и в пределах 12 дюймов от любой вражеской зоны высадки. Фланги могут оспаривать все оперативники, дружественные и вражеские. Дружественные оперативники контролируют фланг, если сумма APL оспаривающих его дружественных оперативников больше соответствующей суммы любого отдельного вражеского отряда. Разные вражеские отряды считают свои суммы APL отдельно."
+          },
+          {
+            "type": "paragraph",
+            "headingEnglish": "Victory Points",
+            "headingRussian": "Победные очки (VP)",
+            "russian": "После раскрытия задачи в конце каждого раунда после первого получите 1 VP за каждый фланг, контролируемый дружественными оперативниками. Если они также контролировали этот фланг в конце предыдущего раунда, кроме первого, вместо этого получите 2 VP.\nЗа эту задачу нельзя получить более 2 VP за раунд."
+          }
+        ],
+        "verifiedAgainstPixels": true
+      },
+      "11": {
+        "kind": "card",
+        "titleEnglish": "Plant Devices",
+        "titleRussian": "Установить устройства (Plant Devices)",
+        "categoryRussian": "Многопользовательская тактическая задача (Multiplayer Tac Op) · Проникновение (Infiltration)",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "headingEnglish": "Reveal",
+            "headingRussian": "Раскрытие",
+            "russian": "Когда дружественный оперативник впервые выполняет действие «Установить устройство» (Plant Device)."
+          },
+          {
+            "type": "paragraph",
+            "headingEnglish": "Plant Device 1AP",
+            "headingRussian": "Установить устройство — 1 AP",
+            "russian": "Один маркер цели, контролируемый активным оперативником, получает один ваш жетон устройства (Device).\nЭто действие нельзя выполнять в первом раунде, в дистанции контроля вражеского оперативника или если на этом маркере уже есть ваш жетон устройства."
+          },
+          {
+            "type": "paragraph",
+            "headingEnglish": "Victory Points",
+            "headingRussian": "Победные очки (VP)",
+            "russian": "В конце каждого раунда после первого:\n• Если хотя бы на 3 маркерах целей есть ваши жетоны устройств, получите 1 VP.\n• За каждый другой маркер цели, оспариваемый вражескими оперативниками и содержащий ваш жетон устройства, получите 1 VP.\nЗа эту задачу нельзя получить более 2 VP за раунд."
+          }
+        ],
+        "verifiedAgainstPixels": true
+      },
+      "4": {
+        "kind": "card",
+        "titleEnglish": "Martyrs",
+        "titleRussian": "Мученики",
+        "categoryRussian": "Многопользовательская тактическая задача (tac op) · охрана (security)",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "headingEnglish": "Reveal",
+            "headingRussian": "Раскрытие",
+            "russian": "Когда дружественный оперативник впервые выведен из строя, оспаривая маркер цели."
+          },
+          {
+            "type": "paragraph",
+            "headingEnglish": "Additional Rules",
+            "headingRussian": "Дополнительные правила",
+            "russian": "Каждый раз, когда дружественный оперативник выведен из строя, оспаривая маркер цели, этот маркер получает один ваш жетон «Мученик» (Martyr)."
+          },
+          {
+            "type": "paragraph",
+            "headingEnglish": "Victory Points",
+            "headingRussian": "Победные очки (VP)",
+            "russian": "В конце каждого раунда после первого, если дружественные оперативники оспаривают маркер цели с одним или несколькими вашими жетонами «Мученик», можно снять любые из этих жетонов. За каждый снятый таким образом жетон получите 1 VP. Если дружественные оперативники также контролируют этот маркер, вместо этого получите 2 VP за каждый снятый жетон.\nЗа эту задачу нельзя получить более 2 VP за раунд."
+          }
+        ],
+        "verifiedAgainstPixels": true
+      },
+      "7": {
+        "kind": "card",
+        "titleEnglish": "Retrieval",
+        "titleRussian": "Извлечение",
+        "categoryRussian": "Многопользовательская тактическая задача (tac op) · разведка (recon)",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "headingEnglish": "Reveal",
+            "headingRussian": "Раскрытие",
+            "russian": "Когда впервые получаете VP за эту задачу."
+          },
+          {
+            "type": "paragraph",
+            "headingEnglish": "Retrieve 1AP",
+            "headingRussian": "Извлечь — 1 AP",
+            "russian": "Если активный оперативник контролирует маркер цели, который дружественные оперативники ещё не обыскивали, этот оперативник получает один ваш маркер миссии «Извлечение» (Retrieval) и переносит его. Этот маркер цели теперь считается обысканным дружественными оперативниками. Дружественные оперативники могут выполнять действие «Поднять маркер» (Pick Up Marker) с вашими маркерами «Извлечение».\nОперативник не может выполнить это действие в первом раунде, находясь в дистанции контроля вражеского оперативника."
+          },
+          {
+            "type": "paragraph",
+            "headingEnglish": "Victory Points",
+            "headingRussian": "Победные очки (VP)",
+            "russian": "Когда каждый маркер цели впервые обыскан дружественными оперативниками, получите 1 VP.\nВ конце боя получите 1 VP за каждый ваш маркер «Извлечение», переносимый дружественными оперативниками."
+          }
+        ],
+        "verifiedAgainstPixels": true
+      },
+      "8": {
+        "kind": "card",
+        "titleEnglish": "Scout Enemy Movement",
+        "titleRussian": "Разведать перемещения врага",
+        "categoryRussian": "Многопользовательская тактическая задача (tac op) · разведка (recon)",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "headingEnglish": "Reveal",
+            "headingRussian": "Раскрытие",
+            "russian": "Когда дружественный оперативник впервые выполняет действие «Разведать» (Scout)."
+          },
+          {
+            "type": "paragraph",
+            "headingEnglish": "Scout 1AP",
+            "headingRussian": "Разведать — 1 AP",
+            "russian": "Выберите одного готового (Ready) вражеского оперативника, видимого активному оперативнику и находящегося более чем в 6 дюймах от него. Этот враг считается наблюдаемым до шага подготовки (Ready) следующей фазы стратегии.\nОперативник не может выполнить это действие с приказом «Бой» (Engage), в первом раунде либо находясь в дистанции контроля вражеского оперативника."
+          },
+          {
+            "type": "paragraph",
+            "headingEnglish": "Victory Points",
+            "headingRussian": "Победные очки (VP)",
+            "russian": "В конце каждого раунда после первого получите 1 VP за каждого наблюдаемого вражеского оперативника, видимого дружественным оперативникам. Это может быть любой дружественный оперативник; он не обязан быть тем, кто выполнил действие «Разведать».\nЗа эту задачу нельзя получить более 2 VP за раунд."
+          }
+        ],
+        "verifiedAgainstPixels": true
+      },
+      "9": {
+        "kind": "card",
+        "titleEnglish": "Track Enemy",
+        "titleRussian": "Следить за врагом",
+        "categoryRussian": "Многопользовательская тактическая задача (tac op) · проникновение (infiltration)",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "headingEnglish": "Reveal",
+            "headingRussian": "Раскрытие",
+            "russian": "Когда впервые получаете VP за эту задачу."
+          },
+          {
+            "type": "paragraph",
+            "headingEnglish": "Additional Rules",
+            "headingRussian": "Дополнительные правила",
+            "russian": "За вражеским оперативником ведётся слежка, если он является допустимой целью для дружественного оперативника в пределах 6 дюймов от него. У этого дружественного оперативника должен быть приказ «Скрытность» (Conceal); он не должен быть допустимой целью для врага, за которым пытается следить, и не должен находиться в дистанции контроля вражеских оперативников."
+          },
+          {
+            "type": "paragraph",
+            "headingEnglish": "Victory Points",
+            "headingRussian": "Победные очки (VP)",
+            "russian": "В конце каждого раунда после первого:\n• если ведётся слежка за одним вражеским оперативником, получите 1 VP, а в четвёртом раунде — 2 VP вместо 1;\n• если ведётся слежка за двумя или более вражескими оперативниками, получите 2 VP.\nЗа эту задачу нельзя получить более 2 VP за раунд."
+          }
+        ],
+        "verifiedAgainstPixels": true
+      },
+      "10": {
+        "kind": "card",
+        "titleEnglish": "Steal Intelligence",
+        "titleRussian": "Похитить разведданные",
+        "categoryRussian": "Многопользовательская тактическая задача (tac op) · проникновение (infiltration)",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "headingEnglish": "Reveal",
+            "headingRussian": "Раскрытие",
+            "russian": "Когда вражеский оперативник впервые выведен из строя."
+          },
+          {
+            "type": "paragraph",
+            "headingEnglish": "Additional Rules",
+            "headingRussian": "Дополнительные правила",
+            "russian": "Каждый раз, когда вражеский оперативник выведен из строя, перед удалением его из зоны боя поместите один ваш маркер миссии «Разведданные» (Intelligence) в его дистанции контроля.\nДружественные оперативники могут выполнять действие «Поднять маркер» (Pick Up Marker) с вашими маркерами «Разведданные». При проверке условий этого действия не учитывайте первый маркер «Разведданные», переносимый активным оперативником. Таким образом, каждый дружественный оперативник может переносить до двух маркеров «Разведданные» либо один такой маркер и один другой маркер."
+          },
+          {
+            "type": "paragraph",
+            "headingEnglish": "Victory Points",
+            "headingRussian": "Победные очки (VP)",
+            "russian": "В конце каждого раунда после первого, если какие-либо дружественные оперативники переносят хотя бы один ваш маркер «Разведданные», получите 1 VP.\nВ конце боя получите 1 VP за каждый ваш маркер «Разведданные», переносимый дружественными оперативниками."
+          }
+        ],
+        "verifiedAgainstPixels": true
+      },
+      "12": {
+        "kind": "card",
+        "titleEnglish": "Elimination Op",
+        "titleRussian": "Операция уничтожения (Elimination Op)",
+        "categoryRussian": "Основная операция (Primary Op)",
+        "blocks": [],
+        "verifiedAgainstPixels": true
+      },
+      "13": {
+        "kind": "card",
+        "titleEnglish": "Crit Op",
+        "titleRussian": "Критическая операция (Crit Op)",
+        "categoryRussian": "Основная операция (Primary Op)",
+        "blocks": [],
+        "verifiedAgainstPixels": true
+      },
+      "14": {
+        "kind": "card",
+        "titleEnglish": "Tac Op",
+        "titleRussian": "Тактическая задача (Tac Op)",
+        "categoryRussian": "Основная операция (Primary Op)",
+        "blocks": [],
+        "verifiedAgainstPixels": true
+      }
+    },
+    "blankTiles": [
+      15,
+      16,
+      17
+    ],
+    "verifiedAgainstPixels": true
+  },
+  "ae14a87579169e96": {
+    "kind": "atlas",
+    "columns": 6,
+    "rows": 3,
+    "tiles": {
+      "0": {
+        "kind": "card",
+        "titleEnglish": "1. Secure",
+        "titleRussian": "1. Закрепление (1. Secure)",
+        "categoryRussian": "Многопользовательская критическая операция (Multiplayer Crit Op)",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "headingEnglish": "Secure 1AP",
+            "headingRussian": "Закрепить — 1 AP",
+            "russian": "Один маркер цели, контролируемый активным оперативником, закрепляется за вашим отрядом, пока вражеский отряд не закрепит его за собой.\nЭто действие нельзя выполнять в первом раунде или в дистанции контроля вражеского оперативника."
+          },
+          {
+            "type": "paragraph",
+            "headingEnglish": "Victory Points",
+            "headingRussian": "Победные очки (VP)",
+            "russian": "В конце каждого раунда после первого получите по 1 VP за каждый маркер цели, закреплённый за вашим отрядом, но не более 3 VP за раунд."
+          }
+        ],
+        "verifiedAgainstPixels": true
+      },
+      "1": {
+        "kind": "card",
+        "titleEnglish": "2. Loot",
+        "titleRussian": "2. Сбор трофеев (2. Loot)",
+        "categoryRussian": "Многопользовательская критическая операция (Multiplayer Crit Op)",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "headingEnglish": "Loot 1AP",
+            "headingRussian": "Собрать трофеи — 1 AP",
+            "russian": "Один маркер цели, контролируемый активным оперативником, разграблен.\nЭто действие нельзя выполнять в первом раунде, в дистанции контроля вражеского оперативника или если с этого маркера уже собирали трофеи в этом раунде."
+          },
+          {
+            "type": "paragraph",
+            "headingEnglish": "Victory Points",
+            "headingRussian": "Победные очки (VP)",
+            "russian": "Каждый раз, когда дружественный оперативник выполняет действие «Собрать трофеи» (Loot), получите 1 VP, но не более 3 VP за раунд."
+          }
+        ],
+        "verifiedAgainstPixels": true
+      },
+      "2": {
+        "kind": "card",
+        "titleEnglish": "3. Transmission",
+        "titleRussian": "3. Передача сигнала (3. Transmission)",
+        "categoryRussian": "Многопользовательская критическая операция (Multiplayer Crit Op)",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "headingEnglish": "Initiate Transmission 1AP",
+            "headingRussian": "Начать передачу — 1 AP",
+            "russian": "Один маркер цели, контролируемый активным оперативником, передаёт сигнал до начала следующего раунда.\nЭто действие нельзя выполнять в первом раунде или в дистанции контроля вражеского оперативника."
+          },
+          {
+            "type": "paragraph",
+            "headingEnglish": "Victory Points",
+            "headingRussian": "Победные очки (VP)",
+            "russian": "В конце каждого раунда после первого получите по 1 VP за каждый передающий сигнал маркер цели, контролируемый дружественными оперативниками, но не более 3 VP за раунд."
+          }
+        ],
+        "verifiedAgainstPixels": true
+      }
+    },
+    "blankTiles": [
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17
+    ],
+    "verifiedAgainstPixels": true
+  },
+  "152520de9279a459": {
+    "kind": "atlas",
+    "columns": 5,
+    "rows": 3,
+    "tiles": {
+      "0": {
+        "kind": "card",
+        "titleEnglish": "Confirm Kill",
+        "titleRussian": "Подтвердить уничтожение (Confirm Kill)",
+        "categoryRussian": "Тактическая задача (Tac Op) · Разведка (Recon) · версия исходной колоды",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "headingEnglish": "Reveal",
+            "headingRussian": "Раскрытие",
+            "russian": "Когда враг впервые выведен из строя."
+          },
+          {
+            "type": "paragraph",
+            "headingEnglish": "Additional Rules",
+            "headingRussian": "Дополнительные правила",
+            "russian": "Когда вражеский оперативник выведен из строя, перед его удалением из зоны боя разместите один ваш маркер миссии «Подтверждённое уничтожение» (Confirm Kill) в его дистанции контроля."
+          },
+          {
+            "type": "paragraph",
+            "headingEnglish": "Victory Points",
+            "headingRussian": "Победные очки (VP)",
+            "russian": "В конце каждого раунда после первого, если дружественный оперативник контролирует один из ваших маркеров «Подтверждённое уничтожение», враги не оспаривают этот маркер и в дистанции контроля этого дружественного оперативника нет врагов, вы можете удалить маркер и получить 1 VP. Если маркер был размещён за оперативника с WOUNDS 12 или больше, вместо этого получите 2 VP.\nЗа эту задачу нельзя получить более 2 VP за раунд."
+          }
+        ],
+        "verifiedAgainstPixels": true
+      },
+      "1": {
+        "kind": "card",
+        "titleEnglish": "Recover Items",
+        "titleRussian": "Забрать предметы (Recover Items)",
+        "categoryRussian": "Тактическая задача (Tac Op) · Разведка (Recon) · версия исходной колоды",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "headingEnglish": "Reveal",
+            "headingRussian": "Раскрытие",
+            "russian": "В начале шага выставления оперативников (Set Up Operatives), до выставления оборудования."
+          },
+          {
+            "type": "paragraph",
+            "headingEnglish": "Additional Rules",
+            "headingRussian": "Дополнительные правила",
+            "russian": "При раскрытии задачи противник размещает один ваш маркер миссии «Предмет» (Item) на центральной линии и один в пределах 2 дюймов от вашей территории. Третий маркер вы размещаете более чем в 6 дюймах от вашей территории. Каждый маркер должен быть более чем в 2 дюймах от других маркеров, включая маркеры других миссий. Ваши оперативники могут выполнять действие «Поднять маркер» (Pick Up Marker) с вашими маркерами предметов после первого раунда."
+          },
+          {
+            "type": "paragraph",
+            "headingEnglish": "Victory Points",
+            "headingRussian": "Победные очки (VP)",
+            "russian": "В конце четвёртого раунда получите по 2 VP за каждый ваш маркер предмета, с которым ранее выполнялось действие «Поднять маркер» и который контролируют дружественные оперативники. Маркер не обязательно переносить в этот момент, но дружественный оперативник должен был переносить его хотя бы раз за бой."
+          }
+        ],
+        "verifiedAgainstPixels": true
+      },
+      "2": {
+        "kind": "card",
+        "titleEnglish": "Plant Beacons",
+        "titleRussian": "Установить маяки (Plant Beacons)",
+        "categoryRussian": "Тактическая задача (Tac Op) · Разведка (Recon) · версия исходной колоды",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "headingEnglish": "Reveal",
+            "headingRussian": "Раскрытие",
+            "russian": "Когда дружественный оперативник впервые выполняет действие «Установить маяк» (Plant Beacon)."
+          },
+          {
+            "type": "paragraph",
+            "headingEnglish": "Plant Beacon 1AP",
+            "headingRussian": "Установить маяк — 1 AP",
+            "russian": "Разместите один ваш маркер миссии «Маяк» (Beacon):\n• В дистанции контроля активного оперативника.\n• Более чем в 4 дюймах от вашей зоны высадки.\n• Более чем в 6 дюймах от других ваших маркеров маяков.\n• Ни одна его часть не должна быть под террейном «Высота» (Vantage).\nЭто действие нельзя выполнять в первом раунде, в дистанции контроля врага или во время активации, в которой оперативника выставили в зону боя."
+          },
+          {
+            "type": "paragraph",
+            "headingEnglish": "Victory Points",
+            "headingRussian": "Победные очки (VP)",
+            "russian": "Раз за каждый раунд после первого, когда один из ваших маяков размещён целиком на вашей территории, получите 1 VP.\nРаз за каждый раунд после первого, когда один из ваших маяков размещён целиком на территории противника, получите 1 VP."
+          }
+        ],
+        "verifiedAgainstPixels": true
+      },
+      "3": {
+        "kind": "card",
+        "titleEnglish": "Overrun",
+        "titleRussian": "Прорыв (Overrun)",
+        "categoryRussian": "Тактическая задача (Tac Op) · Найти и уничтожить (Seek & Destroy) · версия исходной колоды",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "headingEnglish": "Reveal",
+            "headingRussian": "Раскрытие",
+            "russian": "Когда впервые получаете VP за эту задачу."
+          },
+          {
+            "type": "paragraph",
+            "headingEnglish": "Victory Points",
+            "headingRussian": "Победные очки (VP)",
+            "russian": "Раз за каждый раунд после первого, если дружественный оперативник выводит из строя врага и в этот момент целиком находится на территории противника, получите 1 VP.\nВ конце каждого раунда после первого, если суммарный APL дружественных оперативников, выполнивших указанное условие в этом раунде, независимо от начисления первого VP, и всё ещё целиком находящихся на территории противника, равен 3 или больше, получите 1 VP."
+          }
+        ],
+        "verifiedAgainstPixels": true
+      },
+      "4": {
+        "kind": "card",
+        "titleEnglish": "Storm Objectives",
+        "titleRussian": "Штурм целей (Storm Objectives)",
+        "categoryRussian": "Тактическая задача (Tac Op) · Найти и уничтожить (Seek & Destroy) · версия исходной колоды",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "headingEnglish": "Reveal",
+            "headingRussian": "Раскрытие",
+            "russian": "Когда впервые получаете VP за эту задачу."
+          },
+          {
+            "type": "paragraph",
+            "headingEnglish": "Additional Rules",
+            "headingRussian": "Дополнительные правила",
+            "russian": "В конце каждой активации дружественного оперативника, если он контролирует маркер цели, который враги контролировали в начале этой активации либо который целиком находится на территории противника, и враги его не оспаривают, дружественные оперативники штурмом взяли этот маркер на этот раунд."
+          },
+          {
+            "type": "paragraph",
+            "headingEnglish": "Victory Points",
+            "headingRussian": "Победные очки (VP)",
+            "russian": "Раз за каждый раунд после первого, если дружественные оперативники штурмом взяли маркер цели в этом раунде, получите 1 VP.\nВ конце каждого раунда после первого, если дружественные оперативники контролируют маркер цели, взятый ими штурмом в этом раунде, получите 1 VP."
+          }
+        ],
+        "verifiedAgainstPixels": true
+      },
+      "5": {
+        "kind": "card",
+        "titleEnglish": "Champion",
+        "titleRussian": "Чемпион (Champion)",
+        "categoryRussian": "Тактическая задача (Tac Op) · Найти и уничтожить (Seek & Destroy) · версия исходной колоды",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "headingEnglish": "Reveal",
+            "headingRussian": "Раскрытие",
+            "russian": "Когда впервые выбираете чемпиона."
+          },
+          {
+            "type": "paragraph",
+            "headingEnglish": "Additional Rules",
+            "headingRussian": "Дополнительные правила",
+            "russian": "Как стратегический манёвр (Strategic Gambit) в каждом раунде после первого вы можете выбрать одного дружественного оперативника своим чемпионом на этот раунд."
+          },
+          {
+            "type": "paragraph",
+            "headingEnglish": "Victory Points",
+            "headingRussian": "Победные очки (VP)",
+            "russian": "В каждом раунде после первого, когда ваш чемпион выводит из строя врага, получите 1 VP; если характеристика WOUNDS врага была 12 или больше, вместо этого получите 2 VP. В любом случае за эту задачу нельзя получить более 2 VP за раунд."
+          }
+        ],
+        "verifiedAgainstPixels": true
+      },
+      "6": {
+        "kind": "card",
+        "titleEnglish": "Contain",
+        "titleRussian": "Сдерживание (Contain)",
+        "categoryRussian": "Тактическая задача (Tac Op) · Охрана (Security) · версия исходной колоды",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "headingEnglish": "Reveal",
+            "headingRussian": "Раскрытие",
+            "russian": "Когда впервые получаете VP за эту задачу."
+          },
+          {
+            "type": "paragraph",
+            "headingEnglish": "Victory Points",
+            "headingRussian": "Победные очки (VP)",
+            "russian": "В конце каждого раунда после первого:\n• Если нет вражеских оперативников, целиком находящихся на вашей территории, получите 1 VP.\n• Если нет вражеских оперативников в пределах 6 дюймов от вашей зоны высадки, получите 1 VP."
+          }
+        ],
+        "verifiedAgainstPixels": true
+      },
+      "7": {
+        "kind": "card",
+        "titleEnglish": "Take Ground",
+        "titleRussian": "Занять позиции (Take Ground)",
+        "categoryRussian": "Тактическая задача (Tac Op) · Охрана (Security) · версия исходной колоды",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "headingEnglish": "Reveal",
+            "headingRussian": "Раскрытие",
+            "russian": "Когда впервые получаете VP за эту задачу."
+          },
+          {
+            "type": "paragraph",
+            "headingEnglish": "Victory Points",
+            "headingRussian": "Победные очки (VP)",
+            "russian": "В конце каждого раунда после первого:\n• В зоне боя «Волкус» (Killzone: Volkus), если дружественные оперативники контролируют хотя бы одно укрепление (Stronghold) на территории противника, получите 2 VP. За каждый контролируемый ими разрушенный элемент террейна (Ruin), большой или малый, на территории противника получите 1 VP.\n• В зоне боя «Галлоударк» (Killzone: Gallowdark) за каждую контролируемую дружественными оперативниками точку доступа на центральной линии либо на территории противника получите 1 VP.\n• В любой другой зоне боя за каждый контролируемый дружественными оперативниками элемент тяжёлого террейна (Heavy) на территории противника получите 1 VP.\nЗа эту задачу нельзя получить более 2 VP за раунд."
+          },
+          {
+            "type": "paragraph",
+            "headingEnglish": "Additional Rules",
+            "headingRussian": "Дополнительные правила",
+            "russian": "Оперативник оспаривает укрепление, если целиком находится внутри него. Все прочие элементы террейна он оспаривает в своей дистанции контроля либо находясь под их террейном «Высота» (Vantage). Дружественные оперативники контролируют элемент, если сумма APL оспаривающих его дружественных оперативников больше соответствующей суммы врагов."
+          }
+        ],
+        "verifiedAgainstPixels": true
+      },
+      "8": {
+        "kind": "card",
+        "titleEnglish": "Secure Centre",
+        "titleRussian": "Закрепиться в центре (Secure Centre)",
+        "categoryRussian": "Тактическая задача (Tac Op) · Охрана (Security) · версия исходной колоды",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "headingEnglish": "Reveal",
+            "headingRussian": "Раскрытие",
+            "russian": "Когда впервые получаете VP за эту задачу."
+          },
+          {
+            "type": "paragraph",
+            "headingEnglish": "Victory Points",
+            "headingRussian": "Победные очки (VP)",
+            "russian": "В конце каждого раунда после первого:\n• Если суммарный APL дружественных оперативников в пределах 3 дюймов от центра зоны боя больше соответствующей суммы врагов, получите 1 VP.\n• Если суммарный APL дружественных оперативников на центральной линии и более чем в 3 дюймах от центра зоны боя больше соответствующей суммы врагов, получите 1 VP."
+          }
+        ],
+        "verifiedAgainstPixels": true
+      },
+      "9": {
+        "kind": "card",
+        "titleEnglish": "Surveillance",
+        "titleRussian": "Наблюдение (Surveillance)",
+        "categoryRussian": "Тактическая задача (Tac Op) · Проникновение (Infiltration) · версия исходной колоды",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "headingEnglish": "Reveal",
+            "headingRussian": "Раскрытие",
+            "russian": "Когда дружественный оперативник впервые выполняет действие «Наблюдение» (Surveillance)."
+          },
+          {
+            "type": "paragraph",
+            "headingEnglish": "Surveillance 1AP",
+            "headingRussian": "Наблюдение — 1 AP",
+            "russian": "Активный оперативник провёл наблюдение.\nОперативник не может выполнить это действие с приказом «Бой» (Engage). Он должен целиком находиться на территории противника, и для него должен быть хотя бы один вражеский оперативник, являющийся допустимой целью.\nЭто действие нельзя выполнять в первом раунде или в дистанции контроля врага."
+          },
+          {
+            "type": "paragraph",
+            "headingEnglish": "Victory Points",
+            "headingRussian": "Победные очки (VP)",
+            "russian": "Раз за каждый раунд после первого, если дружественный оперативник выполняет действие «Наблюдение», получите 1 VP.\nВ конце каждого раунда после первого, если дружественный оперативник выполнял «Наблюдение» в этом раунде, находится в зоне боя и имеет приказ «Скрытность» (Conceal), получите 1 VP."
+          }
+        ],
+        "verifiedAgainstPixels": true
+      },
+      "10": {
+        "kind": "card",
+        "titleEnglish": "Implant",
+        "titleRussian": "Имплант (Implant)",
+        "categoryRussian": "Тактическая задача (Tac Op) · Проникновение (Infiltration) · версия исходной колоды",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "headingEnglish": "Reveal",
+            "headingRussian": "Раскрытие",
+            "russian": "Когда впервые получаете VP за эту задачу."
+          },
+          {
+            "type": "paragraph",
+            "headingEnglish": "Additional Rules",
+            "headingRussian": "Дополнительные правила",
+            "russian": "Когда дружественный оперативник сражается и вы должны разрешить атакующий кубик, вместо удара или блока вы можете имплантировать вражеского оперативника; затем сбросьте этот кубик.\nКогда дружественный оперативник стреляет по врагу в пределах 6 дюймов и вы должны разрешить атакующий кубик, вместо нанесения урона этим кубиком вы можете имплантировать врага.\nКаждый оперативник может быть имплантирован только один раз; имплантация запрещена в первом раунде."
+          },
+          {
+            "type": "paragraph",
+            "headingEnglish": "Victory Points",
+            "headingRussian": "Победные очки (VP)",
+            "russian": "Раз за каждый раунд после первого, если вы имплантировали врага, получите 1 VP.\nВ конце каждого раунда после первого, если хотя бы один имплантированный враг находится в зоне боя, получите 1 VP."
+          }
+        ],
+        "verifiedAgainstPixels": true
+      },
+      "11": {
+        "kind": "card",
+        "titleEnglish": "Wiretap",
+        "titleRussian": "Прослушка (Wiretap)",
+        "categoryRussian": "Тактическая задача (Tac Op) · Проникновение (Infiltration) · версия исходной колоды",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "headingEnglish": "Reveal",
+            "headingRussian": "Раскрытие",
+            "russian": "Когда дружественный оперативник впервые выполняет действие «Прослушка» (Wiretap)."
+          },
+          {
+            "type": "paragraph",
+            "headingEnglish": "Wiretap 1AP",
+            "headingRussian": "Прослушка — 1 AP",
+            "russian": "Разместите один ваш маркер миссии «Прослушка» (Wiretap) в дистанции контроля активного оперативника. На шаге подготовки (Ready) следующей фазы стратегии удалите его.\nЭто действие нельзя выполнять в первом раунде, в дистанции контроля врага, во время активации, в которой оперативника выставили в зону боя, или если дружественный оперативник уже выполнял его в этом раунде."
+          },
+          {
+            "type": "paragraph",
+            "headingEnglish": "Victory Points",
+            "headingRussian": "Победные очки (VP)",
+            "russian": "Раз за каждый раунд после первого, когда враг начинает или заканчивает действие в пределах 2 дюймов от вашего маркера прослушки, получите 1 VP.\nВ конце каждого раунда после первого, если враг с приказом «Бой» (Engage) находится в пределах 2 дюймов от вашего маркера прослушки, получите 1 VP."
+          }
+        ],
+        "verifiedAgainstPixels": true
+      }
+    },
+    "blankTiles": [
+      12,
+      13,
+      14
+    ],
+    "verifiedAgainstPixels": true
+  },
+  "e81736f01ab46d09": {
+    "kind": "card",
+    "titleEnglish": "Elimination Op",
+    "titleRussian": "Операция уничтожения (Elimination Op)",
+    "categoryRussian": "Многопользовательские операции (Multiplayer Ops)",
+    "blocks": [
+      {
+        "type": "paragraph",
+        "headingEnglish": "Additional Rules",
+        "headingRussian": "Дополнительные правила",
+        "russian": "Считайте врагов, которых дружественные оперативники выводят из строя в каждом раунде. Враг с WOUNDS 12 или больше считается за двух. Не учитывайте врагов, выведенных из строя по другой причине, например из-за правила оружия «Перегрев» (Hot)."
+      },
+      {
+        "type": "paragraph",
+        "headingEnglish": "Victory Points",
+        "headingRussian": "Победные очки (VP)",
+        "russian": "В конце каждого раунда после первого ранжируйте игроков, выводивших врагов из строя в этом раунде, по их числу: награда указана в таблице.\nПри равенстве игроки делят более высокое место. Например, если из четырёх игроков двое делят второе место, оба получают награду за второе, а последний занимает четвёртое место."
+      },
+      {
+        "type": "table",
+        "headingEnglish": "Ranking",
+        "headingRussian": "Место и награда",
+        "columnsRussian": [
+          "Место",
+          "VP"
+        ],
+        "rowsRussian": [
+          [
+            "1-е",
+            "2"
+          ],
+          [
+            "2-е",
+            "1"
+          ],
+          [
+            "3-е",
+            "0"
+          ],
+          [
+            "4-е",
+            "0"
+          ]
+        ]
+      }
+    ],
+    "verifiedAgainstPixels": true
+  },
+  "9897d43ef6c586c5": {
+    "kind": "card",
+    "titleEnglish": "Kill Op",
+    "titleRussian": "Операция ликвидации (Kill Op)",
+    "categoryRussian": "Основная операция (Primary Op)",
+    "blocks": [
+      {
+        "type": "paragraph",
+        "headingEnglish": "Additional Rules",
+        "headingRussian": "Дополнительные правила",
+        "russian": "Вы начинаете без ранга уничтожения (Kill grade). По мере выведения врагов из строя ваш ранг растёт до 5.\nИспользуйте строку таблицы, соответствующую числу врагов в начале боя: она показывает, сколько из них нужно вывести из строя для каждого ранга."
+      },
+      {
+        "type": "paragraph",
+        "headingEnglish": "Victory Points",
+        "headingRussian": "Победные очки (VP)",
+        "russian": "Каждый раз, когда вы достигаете нового ранга уничтожения, получите 1 VP.\nВ конце четвёртого раунда, если ваш ранг выше ранга противника, получите 1 VP."
+      },
+      {
+        "type": "table",
+        "headingEnglish": "Kill Grades",
+        "headingRussian": "Ранг уничтожения",
+        "columnsRussian": [
+          "Врагов в начале",
+          "1",
+          "2",
+          "3",
+          "4",
+          "5"
+        ],
+        "rowsRussian": [
+          [
+            "5",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"
+          ],
+          [
+            "6",
+            "1",
+            "2",
+            "4",
+            "5",
+            "6"
+          ],
+          [
+            "7",
+            "1",
+            "3",
+            "4",
+            "6",
+            "7"
+          ],
+          [
+            "8",
+            "2",
+            "3",
+            "5",
+            "6",
+            "8"
+          ],
+          [
+            "9",
+            "2",
+            "4",
+            "5",
+            "7",
+            "9"
+          ],
+          [
+            "10",
+            "2",
+            "4",
+            "6",
+            "8",
+            "10"
+          ],
+          [
+            "11",
+            "2",
+            "4",
+            "7",
+            "9",
+            "11"
+          ],
+          [
+            "12",
+            "2",
+            "5",
+            "7",
+            "10",
+            "12"
+          ],
+          [
+            "13",
+            "3",
+            "5",
+            "8",
+            "10",
+            "13"
+          ],
+          [
+            "14",
+            "3",
+            "6",
+            "8",
+            "11",
+            "14"
+          ]
+        ]
+      }
+    ],
+    "verifiedAgainstPixels": true
+  },
+  "da743a7a6d9c663f": {
+    "kind": "card",
+    "titleEnglish": "Mission Pack Rules: Multiplayer Ops",
+    "titleRussian": "Правила миссий: многопользовательские операции (Mission Pack Rules: Multiplayer Ops)",
+    "categoryRussian": "Пакет миссий (Mission Pack)",
+    "blocks": [
+      {
+        "type": "paragraph",
+        "headingEnglish": "Player Order",
+        "headingRussian": "Порядок игроков",
+        "russian": "Вместо определения инициативы устанавливайте порядок игроков: каждый бросает D6. Самый высокий результат даёт первое место, следующий — второе и так далее. При равенстве соответствующие игроки перебрасывают, пока не определят порядок между собой.\nКогда правила требуют начинать с игрока с инициативой, действуйте в этом порядке. Например, выбирайте зоны высадки, выставляйте отряды и активируйте оперативников в фазе перестрелки по порядку игроков, начиная с первого.\nДля напоминания используйте индикатор инициативы на табло (scoreboard). Он автоматически сбрасывается при нажатии «Конец раунда» (Round End)."
+      },
+      {
+        "type": "paragraph",
+        "headingEnglish": "Operations",
+        "headingRussian": "Операции",
+        "russian": "Игроки получают VP за несколько операций в зависимости от выбранного набора правил:\n• Операция уничтожения (Elimination Op) — особая механика Multiplayer Ops, заменяющая обычную операцию ликвидации (Kill Op).\n• Критическая операция (Crit Op) — аналогична миссиям других режимов. Выберите её в подменю «Выбор миссии» (Select Mission).\n• Тактическая задача (Tac Op) — доступна только в расширенном наборе правил (Expanded). Это авторские миссии из Approved Ops 2025, адаптированные для нескольких игроков.\nБой заканчивается после четырёх раундов; побеждает игрок с наибольшим числом VP."
+      },
+      {
+        "type": "paragraph",
+        "headingEnglish": "Rules Changes",
+        "headingRussian": "Изменения правил",
+        "russian": "В оригинальных карточках Crit Op и Tac Op красным выделены изменения относительно других режимов. В русском комплекте многопользовательские карточки подписаны «Многопользовательская».\nЕсли правило упоминает территорию противника, считайте ею область более чем в 9 дюймах от вашей зоны развёртывания. Рекомендуется согласовать это с остальными игроками, чтобы правильно применить все механики."
+      },
+      {
+        "type": "paragraph",
+        "headingEnglish": "Elimination Op",
+        "headingRussian": "Операция уничтожения",
+        "russian": "Считайте врагов, которых дружественные оперативники выводят из строя в каждом раунде. Враг с WOUNDS 12 или больше считается за двух. Не учитывайте врагов, выведенных из строя по другой причине, например из-за правила оружия «Перегрев» (Hot).\nВ конце каждого раунда после первого ранжируйте игроков, выводивших врагов из строя в этом раунде, по их числу: награда указана в таблице.\nПри равенстве игроки делят более высокое место. Например, если из четырёх игроков двое делят второе место, оба получают награду за второе, а последний занимает четвёртое место."
+      },
+      {
+        "type": "table",
+        "headingEnglish": "Ranking",
+        "headingRussian": "Место и награда",
+        "columnsRussian": [
+          "Место",
+          "VP"
+        ],
+        "rowsRussian": [
+          [
+            "1-е",
+            "2"
+          ],
+          [
+            "2-е",
+            "1"
+          ],
+          [
+            "3-е",
+            "0"
+          ],
+          [
+            "4-е",
+            "0"
+          ]
+        ]
+      }
+    ],
+    "verifiedAgainstPixels": true
+  },
+  "9b3906349fdd0d91": {
+    "kind": "card",
+    "titleEnglish": "Nemesis Ops Mission Pack",
+    "titleRussian": "Пакет миссий Nemesis Ops (Nemesis Ops Mission Pack)",
+    "categoryRussian": "Справочник миссий (Mission Reference)",
+    "blocks": [
+      {
+        "type": "paragraph",
+        "headingEnglish": "Nemesis Ops",
+        "headingRussian": "Операции «Немезида» (Nemesis Ops)",
+        "russian": "Пакет миссий для боя игрока против игрока (PvP): оба используют оперативника «Немезида» (NEMESIS). Могучие противники сражаются друг с другом при поддержке обычных оперативников своих отрядов. Выбор стратегии позволяет влиять на миссию каждого боя."
+      },
+      {
+        "type": "paragraph",
+        "headingEnglish": "Missions",
+        "headingRussian": "Выбор миссии",
+        "russian": "Четыре миссии описаны на страницах 48–55 книги. Перед первым боем каждый игрок кладёт карту стратегии рубашкой вверх либо скрывает в руке кубик с номером стратегии. Затем оба одновременно раскрывают выбор. Миссия определяется по таблице. Термины «наступающий», «удерживающий» и «маневрирующий» игрок на картах миссий обозначают игроков, выбравших соответствующую стратегию."
+      },
+      {
+        "type": "table",
+        "headingEnglish": "Strategy and Mission",
+        "headingRussian": "Стратегии и миссия",
+        "columnsRussian": [
+          "Стратегии игроков",
+          "Миссия"
+        ],
+        "rowsRussian": [
+          [
+            "Наступление 1 + Удержание 2",
+            "04. Прорыв обороны"
+          ],
+          [
+            "Удержание 2 + Манёвр 3",
+            "02. Фланговый удар"
+          ],
+          [
+            "Манёвр 3 + Наступление 1",
+            "03. Контратака"
+          ],
+          [
+            "Одинаковые стратегии",
+            "01. Захват территории"
+          ]
+        ]
+      },
+      {
+        "type": "paragraph",
+        "headingEnglish": "Campaign",
+        "headingRussian": "Кампания",
+        "russian": "Можно объединить бои в кампанию. Для каждого следующего боя повторяйте выбор миссии, но проигравший предыдущий бой сначала выбирает и раскрывает свою стратегию. Победитель может учитывать этот выбор, но не может выбрать стратегию, которая повторит предыдущую миссию. Кампанию выигрывает первый игрок, победивший в трёх боях."
+      },
+      {
+        "type": "paragraph",
+        "headingEnglish": "Kill Team Selection",
+        "headingRussian": "Состав отряда",
+        "russian": "Каждый игрок выбирает один отряд и создаёт оперативника NEMESIS по страницам 14–20 книги. Его принадлежность (Allegiance), например IMPERIUM или CHAOS, должна совпадать с принадлежностью отряда. Остальной состав сокращается по таблице: строка — обычное начальное число оперативников отряда без NEMESIS, столбец — размер NEMESIS. Если оперативник занимает несколько мест, например Магус «Братьев выводка» (Brood Brothers MAGUS) считается за двух, или два психических фамильяра (PSYCHIC FAMILIAR) вместе занимают одно место, учитывайте это и здесь."
+      },
+      {
+        "type": "table",
+        "headingEnglish": "Reduced Team Size",
+        "headingRussian": "Оперативники поддержки",
+        "columnsRussian": [
+          "Обычный состав",
+          "Малый",
+          "Средний",
+          "Большой"
+        ],
+        "rowsRussian": [
+          [
+            "5",
+            "4",
+            "3",
+            "2"
+          ],
+          [
+            "6",
+            "4",
+            "3",
+            "2"
+          ],
+          [
+            "7",
+            "5",
+            "4",
+            "2"
+          ],
+          [
+            "8",
+            "5",
+            "4",
+            "3"
+          ],
+          [
+            "9",
+            "6",
+            "5",
+            "3"
+          ],
+          [
+            "10",
+            "7",
+            "5",
+            "3"
+          ],
+          [
+            "11",
+            "7",
+            "6",
+            "4"
+          ],
+          [
+            "12",
+            "8",
+            "6",
+            "4"
+          ],
+          [
+            "13",
+            "9",
+            "7",
+            "4"
+          ],
+          [
+            "14",
+            "9",
+            "7",
+            "5"
+          ]
+        ]
+      },
+      {
+        "type": "paragraph",
+        "headingEnglish": "Example",
+        "headingRussian": "Пример",
+        "russian": "При малом NEMESIS и обычном составе из 10 оперативников можно взять ещё 7 оперативников. Они должны соблюдать обычные ограничения оружия и оперативников, но игрок сам выбирает, кого из трёх исключить: например, можно не брать обязательного обычно лидера (LEADER)."
+      },
+      {
+        "type": "paragraph",
+        "headingEnglish": "Nemesis Activation",
+        "headingRussian": "Активация NEMESIS",
+        "russian": "Каждый игрок обязан активировать своего NEMESIS дважды за раунд. Вторая активация разрешена только после того, как все остальные дружественные оперативники стали использованными (Expended). NEMESIS не может переместиться более чем на 12 дюймов за раунд; суммарно на него нельзя потратить более 5 AP за раунд."
+      },
+      {
+        "type": "paragraph",
+        "headingEnglish": "1. Set Up the Battle",
+        "headingRussian": "1. Подготовить бой",
+        "russian": "Каждый игрок выбирает отряд. Определите миссию по выбранным стратегиям: проигравший предыдущий бой выбирает и раскрывает первым, победитель не может повторить предыдущую миссию.\nВ миссиях 1–3 проведите состязательный бросок: победитель выбирает, у кого инициатива. В миссии 04 «Прорыв обороны» инициатива у наступающего игрока.\nРаспределите зоны высадки, выставьте террейн и маркеры целей по карте миссии. Карты используют Волкус (Volkus), но можно аналогично выставить другую зону боя. В некоторых миссиях правила предлагают альтернативную расстановку террейна и целей."
+      },
+      {
+        "type": "paragraph",
+        "headingEnglish": "2. Select Operatives",
+        "headingRussian": "2. Выбрать оперативников",
+        "russian": "Каждый игрок создаёт NEMESIS той же принадлежности, что и отряд. Затем тайно выбирает оставшихся оперативников с учётом правил отряда и ограничений размера NEMESIS на странице 46; оба одновременно раскрывают состав.\nКаждый тайно выбирает до четырёх вариантов оборудования: один вариант нельзя выбирать более одного раза на игрока. Одновременно раскройте выбор. Каждый игрок получает 2 CP."
+      },
+      {
+        "type": "paragraph",
+        "headingEnglish": "3. Set Up Operatives",
+        "headingRussian": "3. Выставить оперативников",
+        "russian": "Начиная с игрока с инициативой, по очереди выставляйте оборудование, размещаемое до боя: лестницы и прочее. Выставляйте по одному предмету за раз, а не целый вариант оборудования.\nНачиная с игрока с инициативой, каждый выставляет NEMESIS. Затем по очереди выставляйте по половине остальных своих оперативников, округляя вверх. Оперативник должен целиком находиться в своей зоне высадки с приказом «Скрытность» (Conceal). Если NEMESIS слишком велик, чтобы целиком поместиться в зоне высадки, выставьте его основанием вплотную к своему краю зоны боя."
+      },
+      {
+        "type": "paragraph",
+        "headingEnglish": "4. Play the Battle",
+        "headingRussian": "4. Провести бой",
+        "russian": "В первом раунде проведите состязательный бросок: победитель определяет, у кого инициатива. При равенстве это решает игрок, у которого не было инициативы во время подготовки."
+      },
+      {
+        "type": "paragraph",
+        "headingEnglish": "5. End the Battle",
+        "headingRussian": "5. Завершить бой",
+        "russian": "Бой завершается после четырёх раундов. Правило миссии 4 может продлить бой за пределы четырёх раундов. Если у одного игрока в зоне боя не осталось оперативников, а бой ещё не завершился, второй игрок доигрывает оставшиеся раунды. Побеждает игрок с наибольшим числом VP; при равенстве — ничья."
+      }
+    ],
+    "verifiedAgainstPixels": true,
+    "referenceSheet": true
+  },
+  "3883340f1ad26de7": {
+    "kind": "card",
+    "titleEnglish": "1. Advance Strategy",
+    "titleRussian": "1. Стратегия наступления (1. Advance Strategy)",
+    "categoryRussian": "Стратегия Nemesis Ops (Strategy)",
+    "blocks": [
+      {
+        "type": "table",
+        "headingEnglish": "Strategy and Mission",
+        "headingRussian": "Стратегии и миссия",
+        "columnsRussian": [
+          "Стратегии игроков",
+          "Миссия"
+        ],
+        "rowsRussian": [
+          [
+            "Наступление 1 + Удержание 2",
+            "04. Прорыв обороны"
+          ],
+          [
+            "Удержание 2 + Манёвр 3",
+            "02. Фланговый удар"
+          ],
+          [
+            "Манёвр 3 + Наступление 1",
+            "03. Контратака"
+          ],
+          [
+            "Одинаковые стратегии",
+            "01. Захват территории"
+          ]
+        ]
+      }
+    ],
+    "verifiedAgainstPixels": true
+  },
+  "58684387344eeb36": {
+    "kind": "card",
+    "titleEnglish": "2. Hold Strategy",
+    "titleRussian": "2. Стратегия удержания (2. Hold Strategy)",
+    "categoryRussian": "Стратегия Nemesis Ops (Strategy)",
+    "blocks": [
+      {
+        "type": "table",
+        "headingEnglish": "Strategy and Mission",
+        "headingRussian": "Стратегии и миссия",
+        "columnsRussian": [
+          "Стратегии игроков",
+          "Миссия"
+        ],
+        "rowsRussian": [
+          [
+            "Наступление 1 + Удержание 2",
+            "04. Прорыв обороны"
+          ],
+          [
+            "Удержание 2 + Манёвр 3",
+            "02. Фланговый удар"
+          ],
+          [
+            "Манёвр 3 + Наступление 1",
+            "03. Контратака"
+          ],
+          [
+            "Одинаковые стратегии",
+            "01. Захват территории"
+          ]
+        ]
+      }
+    ],
+    "verifiedAgainstPixels": true
+  },
+  "e5168fb818cf9df9": {
+    "kind": "card",
+    "titleEnglish": "3. Manoeuvre Strategy",
+    "titleRussian": "3. Стратегия манёвра (3. Manoeuvre Strategy)",
+    "categoryRussian": "Стратегия Nemesis Ops (Strategy)",
+    "blocks": [
+      {
+        "type": "table",
+        "headingEnglish": "Strategy and Mission",
+        "headingRussian": "Стратегии и миссия",
+        "columnsRussian": [
+          "Стратегии игроков",
+          "Миссия"
+        ],
+        "rowsRussian": [
+          [
+            "Наступление 1 + Удержание 2",
+            "04. Прорыв обороны"
+          ],
+          [
+            "Удержание 2 + Манёвр 3",
+            "02. Фланговый удар"
+          ],
+          [
+            "Манёвр 3 + Наступление 1",
+            "03. Контратака"
+          ],
+          [
+            "Одинаковые стратегии",
+            "01. Захват территории"
+          ]
+        ]
+      }
+    ],
+    "verifiedAgainstPixels": true
+  },
+  "a3514837cbb1f46b": {
+    "kind": "card",
+    "titleEnglish": "Nemesis Operative Builder",
+    "titleRussian": "Конструктор оперативника NEMESIS (Nemesis Operative Builder)",
+    "categoryRussian": "Карточка для заполнения (Operative Builder)",
+    "blocks": [
+      {
+        "type": "table",
+        "headingEnglish": "Stats",
+        "headingRussian": "Характеристики",
+        "columnsRussian": [
+          "SIZE",
+          "CONTROL",
+          "MOVE",
+          "SAVE",
+          "WOUNDS"
+        ],
+        "rowsRussian": [
+          [
+            "—",
+            "—",
+            "—",
+            "—",
+            "—"
+          ]
+        ]
+      },
+      {
+        "type": "table",
+        "headingEnglish": "Weapons",
+        "headingRussian": "Оружие",
+        "columnsRussian": [
+          "Оружие",
+          "ATK",
+          "HIT",
+          "DMG",
+          "WR"
+        ],
+        "rowsRussian": [
+          [
+            "\n\n",
+            "—",
+            "—",
+            "—",
+            "—"
+          ],
+          [
+            "\n\n",
+            "—",
+            "—",
+            "—",
+            "—"
+          ],
+          [
+            "\n\n",
+            "—",
+            "—",
+            "—",
+            "—"
+          ],
+          [
+            "\n\n",
+            "—",
+            "—",
+            "—",
+            "—"
+          ]
+        ]
+      },
+      {
+        "type": "table",
+        "headingEnglish": "Traits",
+        "headingRussian": "Особенности",
+        "columnsRussian": [
+          "Особенность принадлежности (Allegiance)",
+          "Особенности NEMESIS"
+        ],
+        "rowsRussian": [
+          [
+            "\n\n\n",
+            "\n\n\n"
+          ]
+        ]
+      },
+      {
+        "type": "paragraph",
+        "headingEnglish": "Extra Defence",
+        "headingRussian": "Дополнительная защита",
+        "russian": "Когда другой оперативник стреляет по этому оперативнику, возьмите и бросьте один дополнительный защитный кубик, если этот оперативник не травмирован (Injured)."
+      },
+      {
+        "type": "paragraph",
+        "headingEnglish": "Bulky",
+        "headingRussian": "Громоздкий",
+        "russian": "Этого оперативника нельзя размещать на террейне «Высота» (Vantage) выше 2 дюймов над полом зоны боя.\nКогда он должен выполнить действие «Ближний бой» (Fight), до конца действия дистанцию контроля можно изменить на 1 дюйм по горизонтали и 4 дюйма по вертикали."
+      },
+      {
+        "type": "paragraph",
+        "headingEnglish": "Towering Size",
+        "headingRussian": "Исполинский размер",
+        "russian": "В фазе перестрелки при определении приказа этого оперативника нельзя выбрать «Скрытность» (Conceal).\nЭтот оперативник не может получать укрытие (Cover) или заслонение (Obscured) от лёгкого террейна (Light), частей террейна ниже 3 дюймов либо террейна, не находящегося целиком между ним и атакующим.\nКогда другой оперативник выполняет «Стрельбу» (Shoot), нахождение этого оперативника в дистанции контроля других оперативников не мешает выбирать его допустимой целью. То есть по нему можно стрелять, даже если он находится в дистанции контроля дружественных оперативников.\nОн может проходить сквозь части террейна ниже 2 дюймов. Он не может проходить через террейн «Доступный» (Accessible), кроме люков, если тот не ниже 2 дюймов.\nКогда он заканчивает перемещение в элементе террейна ниже 2 дюймов, временно уберите этот элемент и верните, когда оперативник покинет его место. Если это террейн оборудования, вместо этого уберите его из боя."
+      },
+      {
+        "type": "table",
+        "headingEnglish": "NPO Behaviour",
+        "headingRussian": "Поведение неигрового оперативника (NPO)",
+        "columnsRussian": [
+          "Поведение NPO"
+        ],
+        "rowsRussian": [
+          [
+            "\n\n\n"
+          ]
+        ]
+      }
+    ],
+    "verifiedAgainstPixels": true,
+    "referenceSheet": true,
+    "layoutColumns": 2,
+    "splitBodyParagraphs": true
+  },
+  "0766d946b2f983e2": {
+    "kind": "card",
+    "titleEnglish": "Killzone: Nightmare",
+    "titleRussian": "Зона боя «Кошмар» (Killzone: Nightmare)",
+    "categoryRussian": "Правила террейна · версия исходного дополнения",
+    "blocks": [
+      {
+        "type": "paragraph",
+        "headingEnglish": "Killzone: Nightmare",
+        "headingRussian": "Кошмар (Nightmare)",
+        "russian": "Дополнение к зоне боя «Бета-Децима» (Bheta-Decima). Здесь возвышается генераторный узел (Generatorum Hub), существенно влияющий на бой. Это крупный детализированный элемент террейна; правила его частей приведены отдельно."
+      },
+      {
+        "type": "paragraph",
+        "headingEnglish": "Generatorum Hub",
+        "headingRussian": "Генераторный узел",
+        "russian": "Все части этого элемента террейна имеют особенность «Тяжёлый» (Heavy). У него два уровня; второй выделен жёлтым. Оба уровня имеют особенность «Высота» (Vantage Point).\nДистанция взаимодействия (Engagement Range) между оперативниками, находящимися на высотах этого элемента террейна, определяется по горизонтали."
+      },
+      {
+        "type": "figure",
+        "sourceimageid": "0766d946b2f983e2",
+        "sourceBox": [
+          0.04,
+          0.265,
+          0.98,
+          0.66
+        ],
+        "illustrationOnly": true,
+        "captionRussian": "Жёлтые контуры: второй уровень и высоты генераторного узла.",
+        "maxHeight": 400,
+        "labelOverlays": []
+      },
+      {
+        "type": "column-break"
+      },
+      {
+        "type": "paragraph",
+        "headingEnglish": "First Level",
+        "headingRussian": "Первый уровень",
+        "russian": "Первый уровень и небольшие выступающие края, выделенные зелёным, считаются одной поверхностью: игнорируйте небольшую разницу высот. Оперативников можно размещать на этих краях, но нельзя использовать их как укрытие (Cover)."
+      },
+      {
+        "type": "figure",
+        "sourceimageid": "0766d946b2f983e2",
+        "sourceBox": [
+          0.03,
+          0.686,
+          0.65,
+          0.95
+        ],
+        "illustrationOnly": true,
+        "captionRussian": "Зелёная область: первый уровень и выступающие края.",
+        "maxHeight": 280,
+        "labelOverlays": []
+      }
+    ],
+    "verifiedAgainstPixels": true,
+    "referenceSheet": true,
+    "referenceWidth": 1000,
+    "layoutColumns": 2,
+    "splitBodyParagraphs": true
+  },
+  "6566df6428416efe": {
+    "kind": "card",
+    "titleEnglish": "Generatorum Hub: Climbing, Dropping and Sides",
+    "titleRussian": "Генераторный узел: подъём, спуск и стороны (Generatorum Hub: Climbing, Dropping and Sides)",
+    "categoryRussian": "Правила террейна · версия исходного дополнения",
+    "blocks": [
+      {
+        "type": "paragraph",
+        "headingEnglish": "Climbing and Dropping",
+        "headingRussian": "Подъём и спуск",
+        "russian": "Чтобы подняться на каждый уровень, оперативник проходит 2 дюйма по вертикали (круг ○ в оригинале).\nПри спуске на один уровень высота меньше 2 дюймов, поэтому её игнорируют. При спуске на два уровня, с верхнего на пол зоны боя, оперативник проходит 2 дюйма по вертикали.\nОперативников нельзя выставлять на ступенях или заканчивать на них перемещение. Однако вертикальное расстояние, пройденное по ступеням, игнорируется."
+      },
+      {
+        "type": "figure",
+        "sourceimageid": "6566df6428416efe",
+        "sourceBox": [
+          0.1,
+          0.02,
+          0.385,
+          0.229
+        ],
+        "illustrationOnly": true,
+        "captionRussian": "Ступени (Steps).",
+        "maxHeight": 280,
+        "labelOverlays": []
+      },
+      {
+        "type": "column-break"
+      },
+      {
+        "type": "paragraph",
+        "headingEnglish": "Sides",
+        "headingRussian": "Боковые стороны",
+        "russian": "Чтобы быстрее и единообразно определять укрытие у детализированных боковых сторон, используйте следующее правило. Оперативники на полу зоны боя могут получать укрытие от округлённых углов, рисунок 1. Части между округлёнными углами — небольшие выступы по бокам, рисунок 2 — укрытия не дают."
+      },
+      {
+        "type": "figure",
+        "sourceimageid": "6566df6428416efe",
+        "sourceBox": [
+          0.36,
+          0.676,
+          0.67,
+          0.96
+        ],
+        "illustrationOnly": true,
+        "captionRussian": "Рисунок 1: цель в укрытии.",
+        "maxHeight": 350,
+        "labelOverlays": [
+          {
+            "box": [
+              0.025,
+              0.03,
+              0.43,
+              0.22
+            ],
+            "russian": "1. Цель в укрытии"
+          }
+        ]
+      },
+      {
+        "type": "figure",
+        "sourceimageid": "6566df6428416efe",
+        "sourceBox": [
+          0.69,
+          0.676,
+          0.96,
+          0.96
+        ],
+        "illustrationOnly": true,
+        "captionRussian": "Рисунок 2: цель без укрытия.",
+        "maxHeight": 350,
+        "labelOverlays": [
+          {
+            "box": [
+              0.025,
+              0.03,
+              0.45,
+              0.22
+            ],
+            "russian": "2. Цель без укрытия"
+          }
+        ]
+      }
+    ],
+    "verifiedAgainstPixels": true,
+    "referenceSheet": true,
+    "referenceWidth": 1000,
+    "layoutColumns": 2,
+    "splitBodyParagraphs": true
+  },
+  "69c784a6fab93df8": {
+    "kind": "card",
+    "titleEnglish": "Descent Killzone Rules",
+    "titleRussian": "Правила многоуровневой зоны боя (Descent Killzone Rules)",
+    "categoryRussian": "Правила зоны боя (Killzone Rules)",
+    "blocks": [
+      {
+        "type": "paragraph",
+        "headingEnglish": "Entryway Markers",
+        "headingRussian": "Маркеры перехода (Entryway)",
+        "russian": "Оба уровня используют парные маркеры перехода с одинаковыми номерами: 1, 2 и 3."
+      },
+      {
+        "type": "paragraph",
+        "headingEnglish": "Climbing Entryway Markers",
+        "headingRussian": "Перемещение через переход",
+        "russian": "Если маркер перехода находится в дистанции контроля дружественного оперативника, за 3 дюйма перемещения он может подняться по нему. Уберите оперативника из зоны боя и снова выставьте в допустимом месте так, чтобы одноимённый маркер в другой зоне боя находился в его дистанции контроля; если это невозможно — как можно ближе к нему. Его нельзя выставить в дистанции контроля врага, если выполняемое действие не разрешает это, как, например, «Атака» (Charge).\nПосле выставления можно продолжать движение, если осталась дистанция и действие это разрешает. При проверке ограничений расстояния на повторное выставление, например для переносчика реликвии в миссии Adversary Ops 3 «Пробуждение» (Awakening), такой переход считается перемещением на 3 дюйма."
+      },
+      {
+        "type": "paragraph",
+        "headingEnglish": "Shooting from Entryway Markers",
+        "headingRussian": "Стрельба через переход",
+        "russian": "Когда дружественный оперативник выполняет «Стрельбу» (Shoot), если маркер перехода находится в его дистанции контроля, вместо обычного выбора допустимой цели можно выбрать врага, в чьей дистанции контроля находится маркер с тем же номером в другой зоне боя. Игнорируйте правило оружия «Дальность X» (Range X). На эту последовательность цель не может получать укрытие (Cover) или заслонение (Obscured). По-прежнему нельзя выбирать врага, в чьей дистанции контроля находятся дружественные оперативники.\nЕсли цель находится в зоне боя с правилами тесного боя (Close Quarters), например Галлоударк (Gallowdark), применяйте дополнительное правило «Плотная среда» (Condensed Environment), даже если стреляющий оперативник находится в другой зоне боя."
+      },
+      {
+        "type": "paragraph",
+        "headingEnglish": "Relocation Rules",
+        "headingRussian": "Правила повторного выставления",
+        "russian": "Некоторые правила фракций убирают оперативника и снова выставляют его, например «Полёт» (FLY) или «Путь теней» (SHADOW PASSAGE) Мандрейков (MANDRAKE). В многоуровневой зоне боя они не позволяют выставить оперативника на другом уровне: применять их можно внутри верхней или нижней зоны, но нельзя переходить между ними."
+      },
+      {
+        "type": "paragraph",
+        "headingEnglish": "Faction Markers",
+        "headingRussian": "Маркеры отрядов",
+        "russian": "Маркеры десантирования (Drop) «Темпестус Аквилон» (TEMPESTUS AQUILON) и туннелей (Tunnel) Равенеров (RAVENER) нельзя размещать в разных зонах боя: выберите верхнюю либо нижнюю. В миссии Adversary Ops 1 «В глубины» (Into the Depths) маркеры в нижней зоне размещать нельзя.\nУ «Круга каноптеков» (CANOPTEK CIRCLE) учитывайте, где размещаете маркеры обелисков-узлов (OBELISK NODE) и где это разрешает карта миссии: матрицу обелисков-узлов (OBELISK NODE MATRIX) можно создавать только с маркерами в той же зоне боя."
+      },
+      {
+        "type": "paragraph",
+        "headingEnglish": "Guard",
+        "headingRussian": "Охрана",
+        "russian": "Если оперативник на охране (On Guard) телепортируется в другую зону боя через телепортационную площадку, страница 57 книги, он перестаёт находиться на охране."
+      }
+    ],
+    "verifiedAgainstPixels": true,
+    "referenceSheet": true,
+    "layoutColumns": 2,
+    "splitBodyParagraphs": true
+  },
+  "4c74f0a4c8a507d5": {
+    "kind": "card",
+    "titleEnglish": "Fronteris Terrain",
+    "titleRussian": "Террейн «Фронтерис» (Fronteris Terrain)",
+    "categoryRussian": "Справочник террейна (Terrain Reference)",
+    "blocks": [
+      {
+        "type": "paragraph",
+        "headingEnglish": "Auspex Shrine",
+        "headingRussian": "Святилище ауспекса",
+        "russian": "Святилище ауспекса (Auspex Shrine) — тяжёлый террейн (Heavy). Зелёная часть — лёгкий террейн (Light), жёлтая — незначимый (Insignificant)."
+      },
+      {
+        "type": "figure",
+        "sourceimageid": "4c74f0a4c8a507d5",
+        "sourceBox": [
+          0.028,
+          0.07,
+          0.27,
+          0.594
+        ],
+        "illustrationOnly": true,
+        "captionRussian": "Зелёная и жёлтая области обозначены на исходной модели.",
+        "maxHeight": 330,
+        "labelOverlays": [
+          {
+            "box": [
+              0,
+              0.69,
+              0.27,
+              0.1
+            ],
+            "russian": "Лёгкий",
+            "background": "#ffffff",
+            "foreground": "#191b1c"
+          },
+          {
+            "box": [
+              0.73,
+              0.69,
+              0.27,
+              0.12
+            ],
+            "russian": "Незначимый",
+            "background": "#ffffff",
+            "foreground": "#191b1c"
+          }
+        ]
+      },
+      {
+        "type": "column-break"
+      },
+      {
+        "type": "paragraph",
+        "headingEnglish": "Landing Pad",
+        "headingRussian": "Посадочная платформа",
+        "russian": "Посадочная платформа Фронтерис (Fronteris Landing Pad) — тяжёлый террейн (Heavy). Красная верхняя поверхность — высота (Vantage). Ступени — лёгкий террейн (Light), поручни — незначимый (Insignificant). Подъём по ступеням стоит 1 дюйм перемещения; заканчивать на ступенях перемещение нельзя."
+      },
+      {
+        "type": "figure",
+        "sourceimageid": "4c74f0a4c8a507d5",
+        "sourceBox": [
+          0.283,
+          0.105,
+          0.746,
+          0.405
+        ],
+        "illustrationOnly": true,
+        "captionRussian": "Красная поверхность: высота посадочной платформы.",
+        "maxHeight": 330,
+        "labelOverlays": []
+      },
+      {
+        "type": "column-break"
+      },
+      {
+        "type": "paragraph",
+        "headingEnglish": "STC Hab-Bunker",
+        "headingRussian": "Жилой бункер STC",
+        "russian": "Жилой бункер STC (STC Hab-Bunker) — тяжёлый террейн (Heavy). Красная крыша — высота (Vantage)."
+      },
+      {
+        "type": "figure",
+        "sourceimageid": "4c74f0a4c8a507d5",
+        "sourceBox": [
+          0.291,
+          0.451,
+          0.74,
+          0.796
+        ],
+        "illustrationOnly": true,
+        "captionRussian": "Красная поверхность: высота бункера.",
+        "maxHeight": 330,
+        "labelOverlays": []
+      }
+    ],
+    "verifiedAgainstPixels": true,
+    "referenceSheet": true,
+    "layoutColumns": 3
+  },
+  "31d4e8c4534fe4cd": {
+    "kind": "card",
+    "titleEnglish": "Fronteris Terrain: Vox-Antenna, Stockade and Door",
+    "titleRussian": "Фронтерис: вокс-антенна, частокол и дверь (Fronteris Terrain: Vox-Antenna, Stockade and Door)",
+    "categoryRussian": "Справочник террейна (Terrain Reference)",
+    "blocks": [
+      {
+        "type": "paragraph",
+        "headingEnglish": "Vox-Antenna",
+        "headingRussian": "Вокс-антенна",
+        "russian": "Вокс-антенна (Vox-Antenna) — тяжёлый террейн (Heavy). Красная площадка — высота (Vantage); к ней ведёт лестница (Ladder)."
+      },
+      {
+        "type": "figure",
+        "sourceimageid": "31d4e8c4534fe4cd",
+        "sourceBox": [
+          0.004,
+          0.042,
+          0.163,
+          0.75
+        ],
+        "illustrationOnly": true,
+        "captionRussian": "Вокс-антенна: красная площадка и лестница справа.",
+        "maxHeight": 330,
+        "labelOverlays": [
+          {
+            "box": [
+              0.5,
+              0.43,
+              0.5,
+              0.11
+            ],
+            "russian": "Лестница",
+            "background": "#ffffff",
+            "foreground": "#191b1c"
+          },
+          {
+            "box": [
+              0.53,
+              0.72,
+              0.47,
+              0.1
+            ],
+            "russian": "Высота",
+            "background": "#ffffff",
+            "foreground": "#191b1c"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "headingEnglish": "Exposed",
+        "headingRussian": "Открытая позиция — необязательное правило",
+        "russian": "Оперативники на высоте вокс-антенны считаются допустимыми целями независимо от приказа: приказ «Скрытность» (Conceal) не защищает их от выбора целью стрельбы и подобных действий."
+      },
+      {
+        "type": "column-break"
+      },
+      {
+        "type": "paragraph",
+        "headingEnglish": "Fronteris Stockade",
+        "headingRussian": "Частокол Фронтерис",
+        "russian": "Частокол Фронтерис (Fronteris Stockade) — тяжёлый террейн (Heavy). Ворота имеют особенность «Доступный» (Accessible)."
+      },
+      {
+        "type": "figure",
+        "sourceimageid": "31d4e8c4534fe4cd",
+        "sourceBox": [
+          0.31,
+          0.52,
+          0.529,
+          0.654
+        ],
+        "illustrationOnly": true,
+        "captionRussian": "Ворота частокола: доступный участок.",
+        "maxHeight": 330,
+        "labelOverlays": []
+      },
+      {
+        "type": "column-break"
+      },
+      {
+        "type": "paragraph",
+        "headingEnglish": "Hab-Bunker Door",
+        "headingRussian": "Дверь жилого бункера STC",
+        "russian": "Дверь жилого бункера STC (STC Hab-Bunker Door), выделенная красным, имеет особенность «Доступный» (Accessible)."
+      },
+      {
+        "type": "figure",
+        "sourceimageid": "31d4e8c4534fe4cd",
+        "sourceBox": [
+          0.628,
+          0.008,
+          0.994,
+          0.414
+        ],
+        "illustrationOnly": true,
+        "captionRussian": "Красная дверь: доступный участок бункера.",
+        "maxHeight": 330,
+        "labelOverlays": []
+      }
+    ],
+    "verifiedAgainstPixels": true,
+    "referenceSheet": true,
+    "layoutColumns": 3
+  },
+  "4db4e96d850d43f6": {
+    "kind": "atlas",
+    "columns": 3,
+    "rows": 3,
+    "tiles": {
+      "0": {
+        "kind": "card",
+        "titleEnglish": "Crit Op",
+        "titleRussian": "Критическая операция (Crit Op)",
+        "categoryRussian": "Основная операция (Primary Op)",
+        "blocks": [],
+        "verifiedAgainstPixels": true
+      },
+      "1": {
+        "kind": "card",
+        "titleEnglish": "Crit Op",
+        "titleRussian": "Критическая операция (Crit Op)",
+        "categoryRussian": "Основная операция (Primary Op)",
+        "blocks": [],
+        "verifiedAgainstPixels": true
+      },
+      "2": {
+        "kind": "card",
+        "titleEnglish": "Tac Op",
+        "titleRussian": "Тактическая задача (Tac Op)",
+        "categoryRussian": "Основная операция (Primary Op)",
+        "blocks": [],
+        "verifiedAgainstPixels": true
+      },
+      "3": {
+        "kind": "card",
+        "titleEnglish": "Tac Op",
+        "titleRussian": "Тактическая задача (Tac Op)",
+        "categoryRussian": "Основная операция (Primary Op)",
+        "blocks": [],
+        "verifiedAgainstPixels": true
+      },
+      "4": {
+        "kind": "card",
+        "titleEnglish": "Kill Op",
+        "titleRussian": "Операция ликвидации (Kill Op)",
+        "categoryRussian": "Основная операция (Primary Op)",
+        "blocks": [],
+        "verifiedAgainstPixels": true
+      },
+      "5": {
+        "kind": "card",
+        "titleEnglish": "Kill Op",
+        "titleRussian": "Операция ликвидации (Kill Op)",
+        "categoryRussian": "Основная операция (Primary Op)",
+        "blocks": [],
+        "verifiedAgainstPixels": true
+      },
+      "8": {
+        "kind": "card",
+        "titleEnglish": "Primary Op",
+        "titleRussian": "Основная операция (Primary Op)",
+        "categoryRussian": "Основная операция (Primary Op)",
+        "blocks": [],
+        "verifiedAgainstPixels": true
+      }
+    },
+    "blankTiles": [
+      6,
+      7
+    ],
+    "verifiedAgainstPixels": true
+  },
+  "6c3e0bdd6323ca69": {
+    "kind": "card",
+    "titleEnglish": "Tac Op",
+    "titleRussian": "Тактическая задача (Tac Op)",
+    "categoryRussian": "Рубашка карты",
+    "blocks": [],
+    "verifiedAgainstPixels": true,
+    "categoryEnglish": "CARD BACK",
+    "decorativeSource": true
+  },
+  "c0cbec36e6a4a9dc": {
+    "kind": "card",
+    "titleEnglish": "Tac Op",
+    "titleRussian": "Тактическая задача (Tac Op)",
+    "categoryRussian": "Рубашка карты",
+    "blocks": [],
+    "verifiedAgainstPixels": true,
+    "categoryEnglish": "CARD BACK",
+    "decorativeSource": true
+  },
+  "88c439bf9d1f4a22": {
+    "kind": "card",
+    "titleEnglish": "Crit Op",
+    "titleRussian": "Критическая операция (Crit Op)",
+    "categoryRussian": "Рубашка карты",
+    "blocks": [],
+    "verifiedAgainstPixels": true,
+    "categoryEnglish": "CARD BACK",
+    "decorativeSource": true
+  },
+  "5c8fd36eee2b1655": {
+    "kind": "card",
+    "titleEnglish": "Crit Op",
+    "titleRussian": "Критическая операция (Crit Op)",
+    "categoryRussian": "Рубашка карты",
+    "blocks": [],
+    "verifiedAgainstPixels": true,
+    "categoryEnglish": "CARD BACK",
+    "decorativeSource": true
+  },
+  "1f5c52d8b3cfc9a1": {
+    "kind": "card",
+    "titleEnglish": "Crit Op",
+    "titleRussian": "Критическая операция (Crit Op)",
+    "categoryRussian": "Рубашка карты",
+    "blocks": [],
+    "verifiedAgainstPixels": true,
+    "categoryEnglish": "CARD BACK",
+    "decorativeSource": true
+  },
+  "ca44810dd66deb82": {
+    "kind": "card",
+    "titleEnglish": "Primary Op",
+    "titleRussian": "Основная операция (Primary Op)",
+    "categoryRussian": "Рубашка карты",
+    "blocks": [],
+    "verifiedAgainstPixels": true,
+    "categoryEnglish": "CARD BACK",
+    "decorativeSource": true
+  },
+  "6fed5b71cd5f6ba4": {
+    "kind": "atlas",
+    "columns": 6,
+    "rows": 3,
+    "tiles": {
+      "0": {
+        "kind": "card",
+        "titleEnglish": "Tac Op",
+        "titleRussian": "Тактическая задача (Tac Op)",
+        "categoryRussian": "Рубашка карты",
+        "blocks": [],
+        "verifiedAgainstPixels": true,
+        "categoryEnglish": "CARD BACK",
+        "decorativeSource": true,
+        "decorativeSourceBox": [
+          0.0,
+          0.0,
+          0.16666666666666666,
+          0.3333333333333333
+        ]
+      },
+      "1": {
+        "kind": "card",
+        "titleEnglish": "Tac Op",
+        "titleRussian": "Тактическая задача (Tac Op)",
+        "categoryRussian": "Рубашка карты",
+        "blocks": [],
+        "verifiedAgainstPixels": true,
+        "categoryEnglish": "CARD BACK",
+        "decorativeSource": true,
+        "decorativeSourceBox": [
+          0.16666666666666666,
+          0.0,
+          0.3333333333333333,
+          0.3333333333333333
+        ]
+      },
+      "2": {
+        "kind": "card",
+        "titleEnglish": "Tac Op",
+        "titleRussian": "Тактическая задача (Tac Op)",
+        "categoryRussian": "Рубашка карты",
+        "blocks": [],
+        "verifiedAgainstPixels": true,
+        "categoryEnglish": "CARD BACK",
+        "decorativeSource": true,
+        "decorativeSourceBox": [
+          0.3333333333333333,
+          0.0,
+          0.5,
+          0.3333333333333333
+        ]
+      },
+      "3": {
+        "kind": "card",
+        "titleEnglish": "Tac Op",
+        "titleRussian": "Тактическая задача (Tac Op)",
+        "categoryRussian": "Рубашка карты",
+        "blocks": [],
+        "verifiedAgainstPixels": true,
+        "categoryEnglish": "CARD BACK",
+        "decorativeSource": true,
+        "decorativeSourceBox": [
+          0.5,
+          0.0,
+          0.6666666666666666,
+          0.3333333333333333
+        ]
+      },
+      "4": {
+        "kind": "card",
+        "titleEnglish": "Tac Op",
+        "titleRussian": "Тактическая задача (Tac Op)",
+        "categoryRussian": "Рубашка карты",
+        "blocks": [],
+        "verifiedAgainstPixels": true,
+        "categoryEnglish": "CARD BACK",
+        "decorativeSource": true,
+        "decorativeSourceBox": [
+          0.6666666666666666,
+          0.0,
+          0.8333333333333334,
+          0.3333333333333333
+        ]
+      },
+      "5": {
+        "kind": "card",
+        "titleEnglish": "Tac Op",
+        "titleRussian": "Тактическая задача (Tac Op)",
+        "categoryRussian": "Рубашка карты",
+        "blocks": [],
+        "verifiedAgainstPixels": true,
+        "categoryEnglish": "CARD BACK",
+        "decorativeSource": true,
+        "decorativeSourceBox": [
+          0.8333333333333334,
+          0.0,
+          1.0,
+          0.3333333333333333
+        ]
+      },
+      "6": {
+        "kind": "card",
+        "titleEnglish": "Tac Op",
+        "titleRussian": "Тактическая задача (Tac Op)",
+        "categoryRussian": "Рубашка карты",
+        "blocks": [],
+        "verifiedAgainstPixels": true,
+        "categoryEnglish": "CARD BACK",
+        "decorativeSource": true,
+        "decorativeSourceBox": [
+          0.0,
+          0.3333333333333333,
+          0.16666666666666666,
+          0.6666666666666666
+        ]
+      },
+      "7": {
+        "kind": "card",
+        "titleEnglish": "Tac Op",
+        "titleRussian": "Тактическая задача (Tac Op)",
+        "categoryRussian": "Рубашка карты",
+        "blocks": [],
+        "verifiedAgainstPixels": true,
+        "categoryEnglish": "CARD BACK",
+        "decorativeSource": true,
+        "decorativeSourceBox": [
+          0.16666666666666666,
+          0.3333333333333333,
+          0.3333333333333333,
+          0.6666666666666666
+        ]
+      },
+      "8": {
+        "kind": "card",
+        "titleEnglish": "Tac Op",
+        "titleRussian": "Тактическая задача (Tac Op)",
+        "categoryRussian": "Рубашка карты",
+        "blocks": [],
+        "verifiedAgainstPixels": true,
+        "categoryEnglish": "CARD BACK",
+        "decorativeSource": true,
+        "decorativeSourceBox": [
+          0.3333333333333333,
+          0.3333333333333333,
+          0.5,
+          0.6666666666666666
+        ]
+      },
+      "9": {
+        "kind": "card",
+        "titleEnglish": "Tac Op",
+        "titleRussian": "Тактическая задача (Tac Op)",
+        "categoryRussian": "Рубашка карты",
+        "blocks": [],
+        "verifiedAgainstPixels": true,
+        "categoryEnglish": "CARD BACK",
+        "decorativeSource": true,
+        "decorativeSourceBox": [
+          0.5,
+          0.3333333333333333,
+          0.6666666666666666,
+          0.6666666666666666
+        ]
+      },
+      "10": {
+        "kind": "card",
+        "titleEnglish": "Tac Op",
+        "titleRussian": "Тактическая задача (Tac Op)",
+        "categoryRussian": "Рубашка карты",
+        "blocks": [],
+        "verifiedAgainstPixels": true,
+        "categoryEnglish": "CARD BACK",
+        "decorativeSource": true,
+        "decorativeSourceBox": [
+          0.6666666666666666,
+          0.3333333333333333,
+          0.8333333333333334,
+          0.6666666666666666
+        ]
+      },
+      "11": {
+        "kind": "card",
+        "titleEnglish": "Tac Op",
+        "titleRussian": "Тактическая задача (Tac Op)",
+        "categoryRussian": "Рубашка карты",
+        "blocks": [],
+        "verifiedAgainstPixels": true,
+        "categoryEnglish": "CARD BACK",
+        "decorativeSource": true,
+        "decorativeSourceBox": [
+          0.8333333333333334,
+          0.3333333333333333,
+          1.0,
+          0.6666666666666666
+        ]
+      },
+      "12": {
+        "kind": "card",
+        "titleEnglish": "Primary Op",
+        "titleRussian": "Основная операция (Primary Op)",
+        "categoryRussian": "Рубашка карты",
+        "blocks": [],
+        "verifiedAgainstPixels": true,
+        "categoryEnglish": "CARD BACK",
+        "decorativeSource": true,
+        "decorativeSourceBox": [
+          0.0,
+          0.6666666666666666,
+          0.16666666666666666,
+          1.0
+        ]
+      },
+      "13": {
+        "kind": "card",
+        "titleEnglish": "Primary Op",
+        "titleRussian": "Основная операция (Primary Op)",
+        "categoryRussian": "Рубашка карты",
+        "blocks": [],
+        "verifiedAgainstPixels": true,
+        "categoryEnglish": "CARD BACK",
+        "decorativeSource": true,
+        "decorativeSourceBox": [
+          0.16666666666666666,
+          0.6666666666666666,
+          0.3333333333333333,
+          1.0
+        ]
+      },
+      "14": {
+        "kind": "card",
+        "titleEnglish": "Primary Op",
+        "titleRussian": "Основная операция (Primary Op)",
+        "categoryRussian": "Рубашка карты",
+        "blocks": [],
+        "verifiedAgainstPixels": true,
+        "categoryEnglish": "CARD BACK",
+        "decorativeSource": true,
+        "decorativeSourceBox": [
+          0.3333333333333333,
+          0.6666666666666666,
+          0.5,
+          1.0
+        ]
+      }
+    },
+    "blankTiles": [
+      15,
+      16,
+      17
+    ],
+    "verifiedAgainstPixels": true
+  },
+  "fc2218a692a2f550": {
+    "kind": "card",
+    "titleEnglish": "Gellerpox Infected",
+    "titleRussian": "Заражённые геллероспой (Gellerpox Infected)",
+    "categoryRussian": "Название отряда",
+    "blocks": [],
+    "verifiedAgainstPixels": true,
+    "categoryEnglish": "FACTION TITLE",
+    "decorativeSource": true,
+    "paperBack": true,
+    "footerRussian": "Искажённые варпом слуги Нургла"
+  },
+  "f151d74cbeb2711b": {
+    "kind": "card",
+    "titleEnglish": "Blooded",
+    "titleRussian": "Кровавые (Blooded)",
+    "categoryRussian": "Название отряда",
+    "blocks": [],
+    "verifiedAgainstPixels": true,
+    "categoryEnglish": "FACTION TITLE",
+    "decorativeSource": true,
+    "paperBack": true,
+    "footerRussian": "Гвардейцы-ренегаты, поклоняющиеся Хаосу"
+  },
+  "ebabda8a73aba502": {
+    "kind": "card",
+    "titleEnglish": "Blades of Khaine",
+    "titleRussian": "Клинки Кхейна (Blades of Khaine)",
+    "categoryRussian": "Название отряда",
+    "blocks": [],
+    "verifiedAgainstPixels": true,
+    "categoryEnglish": "FACTION TITLE",
+    "decorativeSource": true,
+    "paperBack": true,
+    "footerRussian": "Аспектные воины аэльдари"
+  }
+}

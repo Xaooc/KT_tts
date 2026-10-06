@@ -1,0 +1,774 @@
+{
+  "02236cd1de991b9e": {
+    "titleEnglish": "Kill Team Lite Rules",
+    "titleRussian": "Kill Team — краткие правила",
+    "pages": [
+      {
+        "sourcePage": 1,
+        "english": "Kill Team is a tactical combat miniatures game set in the grim dark future of the 41st Millennium. Two rival teams of highly \ntrained operatives battle and complete objectives to achieve victory. The rules presented here are simplified from those \nfound in the Kill Team Core Book. They are intended for introductory, fast or easy play. A game is normally played with a \nmission from a mission pack, but you can play without one to learn the basic mechanics of the game. Some terms will be \nhighlighted in orange, these are explained in more detail in their corresponding section of the Lite Rules. Rules for kill teams \nare available for free online at warhammer-community.com or on Warhammer 40,000 Kill Team: The App.\nSET UP\nEach player selects a kill team and gathers their Citadel miniatures (operatives) for \nthose teams, alongside their free online rules, a killzone – 30\" x 22\" game board (unless \notherwise specified) and terrain – a measuring device in inches, 10 six-sided dice (D6), \ntokens and markers.\nSet up the killzone, then randomly determine one player to have initiative. The player \nwith initiative selects a drop zone from the mission map. If you're not playing a mission, \nthe player with initiative selects one edge of the killzone to be theirs; the opposite edge is \ntheir opponent's. Each player’s drop zone is within 3\" of their killzone edge.\nStarting with the player with initiative, players alternate setting up one third of their kill \nteam (rounding up). When a player sets up an operative, it must be wholly within their \ndrop zone and be given a Conceal order (place the corresponding token next to it).\nEngage Order\nAn operative with an Engage order can perform actions as \nnormal and counteract.\nA battle includes four turning points (unless specified otherwise). Each turning point \nincludes a Strategy and Firefight phase.\nSTRATEGY PHASE\nEach player rolls one D6: whoever rolls highest decides who has initiative; if it’s a tie, \nthe player who doesn’t currently have initiative decides. Players start the battle with \n2CP each to spend on ploys. In the first Strategy phase, they each gain 1CP. In each \nStrategy phase after the first, the player with initiative gains 1CP, while the player \nwithout gains 2CP.  Ploys cost 1CP each.\nEach player readies all friendly operatives (order token ready side up). Starting \nwith the player who has initiative, players alternate using a STRATEGIC GAMBIT \nor passing, until each player passes in succession. Every strategy ploy is also a \nSTRATEGIC GAMBIT. Each player cannot use each STRATEGIC GAMBIT more than \nonce per turning point.\nFIREFIGHT PHASE\nThe players alternate activating ready friendly operatives, starting with the player \nwho has initiative. Whenever an operative activates, first select its order (Engage or \nConceal). It then performs actions, and is known as the active operative while doing so. \nEach action costs AP, and you cannot spend more AP during an operative’s activation \nthan its APL. Unless otherwise specified, an operative cannot perform the same action \nmore than once during its activation. When the operative has finished performing \nactions, it’s expended (order token expended side up). When all operatives are \nexpended, the turning point ends.\nPlayers can spend their CP on firefight ploys in this phase, including the Command \nRe-roll firefight ploy (below). Ploys cost 1CP each and, other than Command Re-roll, \neach player cannot use each ploy more than once per turning point.\nCOMMAND RE-ROLL\nUse this firefight ploy after rolling your attack or defence dice. You can re-roll one of \nthose dice.\nLITE RULES\nBEGIN THE BATTLE\nReady Expended\nConceal Order\nAn operative with a Conceal order is not a valid target while \nin cover, but it cannot perform Shoot or Charge actions. Ready Expended\nACTIONS\nREPOSITION 1AP\n   Move the operative no more than its Move stat to a location it can be placed. It can’t \nmove within control range of enemy operatives.\n  An operative cannot perform this action while within control range of an enemy \noperative, or during the same activation as the Charge or Fall Back action.\nDASH 1AP\n  Move like a Reposition, except the operative cannot move more than 3\" or climb.\n  An operative cannot perform this action while within control range of an enemy \noperative, or during the same activation as the Charge action.\nFALL BACK 2AP\n  Move like a Reposition, except the operative can move within control range of an \nenemy operative, but cannot finish the move there.\n  An operative cannot perform this action unless an enemy operative is within its \ncontrol range. It cannot perform this action during the same activation as the \nReposition or Charge action.\nCHARGE 1AP\n  Move like a Reposition, except the operative can move an additional 2\". It can move \nwithin control range of an enemy operative, and must finish the move there. If it \nmoves within control range of an enemy operative that no other friendly operatives \nare within control range of, it cannot leave that operative’s control range.\n  An operative cannot perform this action while it has a Conceal order, if it's already \nwithin control range of an enemy operative, or during the same activation as the \nReposition, Dash or Fall Back action.\nSHOOT 1AP\n  Shoot with the operative, as explained on the following page.\n  An operative cannot perform this action while it has a Conceal order, or while within \ncontrol range of an enemy operative.\nFIGHT 1AP\n  Fight with the operative, as explained on the following page.\n  An operative cannot perform this action unless an enemy operative is within its \ncontrol range.\n© Copyright Games Workshop Limited 2024\nHave all your operatives been activated? \nCOUNTERACT\nIf all your operatives are expended but your opponent’s aren’t, when you would activate \na ready friendly operative, one expended friendly operative with an Engage order can \ncounteract to perform a 1AP action for free. Each operative can only counteract once \nper turning point, and cannot move more than 2\" while doing so.\n",
+        "blocks": [
+          {
+            "type": "heading",
+            "russian": "KILL TEAM — КРАТКИЕ ПРАВИЛА (LITE RULES)"
+          },
+          {
+            "type": "paragraph",
+            "russian": "Перевод PDF, поставляемой с этим модом. Это упрощённые правила из основной книги, предназначенные для знакомства с игрой и быстрых партий. Они не заменяют полные правила и последующие обновления. Сохранена редакция исходного файла. © Games Workshop Limited 2024. Неофициальный русский перевод."
+          },
+          {
+            "type": "paragraph",
+            "russian": "Kill Team — тактическая игра с миниатюрами в мрачном будущем 41-го тысячелетия. Два отряда подготовленных оперативников сражаются и выполняют задачи ради победы. Обычно бой проходит по миссии из набора миссий, но для изучения основных механик можно играть без неё. В исходной PDF некоторые термины выделены оранжевым: они подробнее объясняются в соответствующих разделах кратких правил. Правила отрядов бесплатно доступны на warhammer-community.com и в приложении Warhammer 40,000 Kill Team."
+          },
+          {
+            "type": "heading",
+            "russian": "ПОДГОТОВКА"
+          },
+          {
+            "type": "paragraph",
+            "russian": "Каждый игрок выбирает отряд и готовит его миниатюры Citadel — оперативников (Operatives), бесплатные правила отряда, зону боя (Killzone): поле 30 × 22 дюйма, если не указано иное, и террейн. Также нужны измеритель расстояний в дюймах, 10 шестигранных кубиков (D6), жетоны и маркеры."
+          },
+          {
+            "type": "paragraph",
+            "russian": "Подготовьте зону боя и случайным образом определите игрока с инициативой. Он выбирает зону высадки (Drop Zone) на карте миссии. Если играете без миссии, он выбирает свой край поля; противоположный становится краем противника. Зона высадки каждого игрока находится в пределах 3 дюймов от его края."
+          },
+          {
+            "type": "paragraph",
+            "russian": "Начиная с игрока с инициативой, игроки по очереди выставляют по одной трети своего отряда, округляя вверх. Каждый оперативник должен целиком находиться в своей зоне высадки и получить приказ «Скрытность» (Conceal): положите рядом соответствующий жетон."
+          },
+          {
+            "type": "heading",
+            "russian": "НАЧАЛО БОЯ"
+          },
+          {
+            "type": "paragraph",
+            "russian": "Бой длится четыре раунда (Turning Points), если не указано иное. Каждый раунд состоит из стратегической фазы (Strategy Phase) и фазы перестрелки (Firefight Phase)."
+          },
+          {
+            "type": "paragraph",
+            "russian": "Приказ «Бой» (Engage): оперативник выполняет действия по обычным правилам и может совершать контрдействие.\nПриказ «Скрытность»: оперативник в укрытии не является допустимой целью, но не может выполнять действия «Стрельба» и «Атака».\nЖетон приказа также показывает состояние: готов (Ready) или использован (Expended)."
+          },
+          {
+            "type": "heading",
+            "russian": "СТРАТЕГИЧЕСКАЯ ФАЗА"
+          },
+          {
+            "type": "paragraph",
+            "russian": "Каждый игрок бросает D6. Игрок с более высоким результатом решает, кому достанется инициатива. При ничьей решает игрок, у которого сейчас нет инициативы."
+          },
+          {
+            "type": "paragraph",
+            "russian": "В начале боя у каждого игрока есть 2 командных очка (Command Points, CP) для приёмов (Ploys). В первой стратегической фазе каждый получает ещё 1 CP. В последующих стратегических фазах игрок с инициативой получает 1 CP, а игрок без инициативы — 2 CP. Каждый приём стоит 1 CP."
+          },
+          {
+            "type": "paragraph",
+            "russian": "Каждый игрок подготавливает всех своих оперативников: переворачивает жетоны приказов стороной «готов» вверх. Начиная с игрока с инициативой, игроки по очереди применяют стратегический гамбит (Strategic Gambit) либо пасуют, пока оба не спасуют подряд. Каждый стратегический приём (Strategy Ploy) также является стратегическим гамбитом. Каждый игрок может применить каждый стратегический гамбит не более одного раза за раунд."
+          },
+          {
+            "type": "heading",
+            "russian": "ФАЗА ПЕРЕСТРЕЛКИ"
+          },
+          {
+            "type": "paragraph",
+            "russian": "Игроки по очереди активируют готовых своих оперативников, начиная с игрока с инициативой. В начале активации выберите приказ: «Бой» или «Скрытность». Затем оперативник выполняет действия; в это время он называется активным оперативником."
+          },
+          {
+            "type": "paragraph",
+            "russian": "Каждое действие стоит очки действий (Action Points, AP; далее ОД). За активацию нельзя потратить больше ОД, чем лимит очков действий (Action Point Limit, APL) оперативника. Если не указано иное, за одну активацию нельзя выполнять одно и то же действие более одного раза. Закончив действия, оперативник становится использованным: переверните жетон соответствующей стороной вверх. Когда все оперативники использованы, раунд заканчивается."
+          },
+          {
+            "type": "paragraph",
+            "russian": "В этой фазе игроки могут тратить CP на приёмы перестрелки (Firefight Ploys), включая «Командный переброс» ниже. Каждый приём стоит 1 CP. Кроме «Командного переброса», каждый игрок может применять каждый приём не более одного раза за раунд."
+          },
+          {
+            "type": "heading",
+            "russian": "Командный переброс (Command Re-roll)"
+          },
+          {
+            "type": "paragraph",
+            "russian": "Примените этот приём перестрелки после броска своих кубиков атаки или защиты. Вы можете перебросить один из этих кубиков."
+          },
+          {
+            "type": "heading",
+            "russian": "Все ваши оперативники уже активированы? Контрдействие (Counteract)"
+          },
+          {
+            "type": "paragraph",
+            "russian": "Если все ваши оперативники использованы, а у противника ещё остались готовые, вместо активации готового своего оперативника один использованный свой оперативник с приказом «Бой» может совершить контрдействие: бесплатно выполнить действие стоимостью 1 AP. Каждый оперативник может совершить контрдействие только один раз за раунд и при этом не может переместиться более чем на 2 дюйма."
+          },
+          {
+            "type": "heading",
+            "russian": "ДЕЙСТВИЯ"
+          },
+          {
+            "type": "heading",
+            "russian": "Перемещение (Reposition) — 1 AP"
+          },
+          {
+            "type": "paragraph",
+            "russian": "Переместите оперативника на расстояние не более его характеристики перемещения (Move) в место, где модель можно разместить. Он не может входить в дистанцию контроля вражеских оперативников.\nНельзя выполнять это действие в пределах дистанции контроля вражеского оперативника или в ту же активацию, что и «Атаку» либо «Отступление»."
+          },
+          {
+            "type": "heading",
+            "russian": "Рывок (Dash) — 1 AP"
+          },
+          {
+            "type": "paragraph",
+            "russian": "Перемещайтесь как при «Перемещении», но не более чем на 3 дюйма и без подъёма на террейн.\nНельзя выполнять это действие в пределах дистанции контроля вражеского оперативника или в ту же активацию, что и «Атаку»."
+          },
+          {
+            "type": "heading",
+            "russian": "Отступление (Fall Back) — 2 AP"
+          },
+          {
+            "type": "paragraph",
+            "russian": "Перемещайтесь как при «Перемещении», но можно проходить в пределах дистанции контроля врага. Заканчивать перемещение там нельзя.\nЭто действие доступно только при наличии врага в дистанции контроля. Нельзя выполнять его в ту же активацию, что и «Перемещение» либо «Атаку»."
+          },
+          {
+            "type": "heading",
+            "russian": "Атака (Charge) — 1 AP"
+          },
+          {
+            "type": "paragraph",
+            "russian": "Перемещайтесь как при «Перемещении», но можете пройти на 2 дюйма больше. Можно входить в дистанцию контроля вражеского оперативника; закончить перемещение необходимо в ней. Если вы вошли в дистанцию контроля врага, рядом с которым нет других ваших оперативников в дистанции контроля, выйти из дистанции контроля этого врага нельзя.\nНельзя выполнять это действие с приказом «Скрытность», уже находясь в дистанции контроля врага, или в ту же активацию, что и «Перемещение», «Рывок» либо «Отступление»."
+          },
+          {
+            "type": "heading",
+            "russian": "Стрельба (Shoot) — 1 AP"
+          },
+          {
+            "type": "paragraph",
+            "russian": "Проведите стрельбу по процедуре ниже.\nНельзя выполнять это действие с приказом «Скрытность» или в дистанции контроля врага."
+          },
+          {
+            "type": "heading",
+            "russian": "Ближний бой (Fight) — 1 AP"
+          },
+          {
+            "type": "paragraph",
+            "russian": "Проведите ближний бой по процедуре ниже.\nДля этого действия враг должен находиться в дистанции контроля."
+          }
+        ]
+      },
+      {
+        "sourcePage": 2,
+        "english": "Active \noperative\nTERRAIN\nTarget operative \nin cover\n1\"\n2\"\nTERRAIN\nTarget operative \nnot in cover\n1\"\n2\" Active \noperative\nVALID TARGET\nSome rules, most commonly shooting, will require you to determine a valid \ntarget for an operative.\nIf the intended target has an Engage order, it’s a valid target if \nit’s visible to the operative.\nIf the intended target has a Conceal order, it’s a valid target if \nit’s visible to the operative and not in cover.\nCOVER\nCover is determined from one operative to another. An operative is in cover if \nthere's intervening terrain within its control range. However, it cannot be in \ncover while within 2\" of the other operative – it’s too close to hide.\nDAMAGE\nOperatives have a Wounds stat – the number of wounds they have. Damage \ninflicted reduces their wounds accordingly.\nOperatives with fewer that their starting wounds are wounded. Operatives \nwith fewer than half of their starting wounds are injured: subtract 2\" from \ntheir Move stat and worsen the Hit stat of their weapons by 1. Operatives with \nwounds of 0 or less are incapacitated and removed.\nVISIBLE\nFor something to be visible, the operative must be able to see it (look from \nbehind the operative and see if you can draw an unobstructed straight line \nfrom its head to any part of what it's trying to see – excluding bases).\nSHOOT\nThe player whose operative is performing the action is the attacker. The player \ncontrolling the target is the defender. When rolling attack/defence dice, results \nof 6 are always successes and are critical; all other successes are normal; \nresults of 1 are always a fail.\n1.  Attacker selects one of their operative’s ranged weapons.\n2.  Attacker selects an enemy operative that's a valid target for the active \noperative and has no friendly operatives within its control range.\n3.  Attacker rolls attack dice – a number of D6 equal to the selected \nweapon’s Atk stat. Each result that equals or beats the weapon’s Hit stat is \nretained as a success. Each that doesn’t is discarded as a fail.\n4.  Defender rolls defence dice – three D6. Each result that equals or beats \nthe target’s Save stat is retained as a success. Each that doesn’t is \ndiscarded as a fail. If the target is in cover, the Defender can retain one of \ntheir defence dice as a normal success without rolling it.\n5.  Defender resolves successful defence dice, allocating them to block \nsuccessful attack dice.\n •  A normal success can block a normal success.\n • Two normal successes can block a critical success.\n • A critical success can block a normal success or a critical success.\n6.  Attacker resolves each unblocked attack dice (if any) to inflict damage on \nthe target.\n •  A normal success inflicts damage equal to the weapon's Normal Dmg \nstat (first value of Dmg stat).\n •  A critical success inflicts damage equal to the weapon's Critical Dmg \nstat (second value of Dmg stat).\nFIGHT\nThe player whose operative is performing the action is the attacker. The player \ncontrolling the target is the defender. When rolling attack dice, results of 6 are \nalways successes and are critical; all other successes are normal; results of 1 \nare always a fail.\n1.  Attacker selects an enemy operative within the active operative's control \nrange to fight against. That enemy operative will retaliate.\n2. Both players select one of their operative's melee weapons.\n3.   Both players roll attack dice - a number of D6 equal to their selected \nweapon's Atk stat respectively. Each result that equals or beats their \nweapon's Hit stat is retained as a success. Each that doesn't is discarded \nas a fail.\n4.  Starting with the attacker, players alternate resolving their successful \nunblocked attack dice (or all remaining if their opponent has none). To \nresolve a dice, they must strike or block:\n •  Strike: Inflict damage on the enemy operative. A normal success inflicts \ndamage equal to the weapon's Normal Dmg stat (first value of Dmg \nstat). A critical success inflicts damage equal to the weapon's Critical \nDmg stat (second value of Dmg stat).\n •  Block: Allocate this dice to block one of your opponent’s unresolved \nsuccesses. A normal success can block a normal success. A critical \nsuccess can block a normal or critical success. \n© Copyright Games Workshop Limited 2024\nCONTROL RANGE \nSomething is within an operative's control range if it's visible to and within 1\" of that \noperative. Control range between operatives is mutual, therefore operatives are within \neach other’s control range even if the above is only true for one of them.\n",
+        "blocks": [
+          {
+            "type": "heading",
+            "russian": "ДИСТАНЦИЯ КОНТРОЛЯ (CONTROL RANGE)"
+          },
+          {
+            "type": "paragraph",
+            "russian": "Объект находится в дистанции контроля оперативника, если виден ему и расположен в пределах 1 дюйма от него. Между оперативниками дистанция контроля взаимна: они находятся в дистанции контроля друг друга, даже если условия выполняются только для одного из них."
+          },
+          {
+            "type": "heading",
+            "russian": "ВИДИМОСТЬ (VISIBLE)"
+          },
+          {
+            "type": "paragraph",
+            "russian": "Чтобы объект считался видимым, оперативник должен видеть его. Посмотрите из-за оперативника и проверьте, можно ли провести непрерывную прямую линию от его головы до любой части объекта, который он пытается увидеть. Базы не учитываются."
+          },
+          {
+            "type": "heading",
+            "russian": "ДОПУСТИМАЯ ЦЕЛЬ (VALID TARGET)"
+          },
+          {
+            "type": "paragraph",
+            "russian": "Некоторые правила, чаще всего стрельба, требуют определить допустимую цель.\nЦель с приказом «Бой» допустима, если видна оперативнику.\nЦель с приказом «Скрытность» допустима, если видна оперативнику и не находится в укрытии."
+          },
+          {
+            "type": "heading",
+            "russian": "УКРЫТИЕ (COVER)"
+          },
+          {
+            "type": "paragraph",
+            "russian": "Укрытие определяется относительно другого оперативника. Оперативник находится в укрытии, если между ними есть террейн в его дистанции контроля. Однако в пределах 2 дюймов от другого оперативника укрытия быть не может: они слишком близко, чтобы спрятаться."
+          },
+          {
+            "type": "heading",
+            "russian": "УРОН (DAMAGE)"
+          },
+          {
+            "type": "paragraph",
+            "russian": "Характеристика ран (Wounds) показывает количество ран оперативника. Полученный урон соответственно уменьшает это количество.\nОперативник с меньшим количеством ран, чем в начале, считается раненым (Wounded). С менее чем половиной начальных ран он тяжело ранен (Injured): уменьшите Move на 2 дюйма и ухудшите попадание (Hit) его оружия на 1. При 0 ран или меньше оперативник выведен из строя (Incapacitated) и убирается с поля."
+          },
+          {
+            "type": "heading",
+            "russian": "СТРЕЛЬБА"
+          },
+          {
+            "type": "paragraph",
+            "russian": "Игрок активного оперативника — атакующий, игрок цели — защищающийся. На кубиках атаки и защиты результат 6 всегда успешен и считается критическим успехом. Все остальные успешные результаты — обычные успехи. Результат 1 всегда является провалом."
+          },
+          {
+            "type": "paragraph",
+            "russian": "1. Атакующий выбирает одно оружие дальнего боя своего оперативника."
+          },
+          {
+            "type": "paragraph",
+            "russian": "2. Атакующий выбирает врага, который является допустимой целью для активного оперативника и в дистанции контроля которого нет оперативников атакующего."
+          },
+          {
+            "type": "paragraph",
+            "russian": "3. Атакующий бросает столько D6, сколько указано в числе атак (Atk) оружия. Каждый результат, равный Hit оружия или выше, сохраняется как успех. Остальные кубики отбрасываются как провалы."
+          },
+          {
+            "type": "paragraph",
+            "russian": "4. Защищающийся бросает три D6 защиты. Каждый результат, равный спасброску (Save) цели или выше, сохраняется как успех. Остальные кубики отбрасываются. Если цель в укрытии, защищающийся может сохранить один кубик защиты как обычный успех, не бросая его."
+          },
+          {
+            "type": "paragraph",
+            "russian": "5. Защищающийся распределяет успешные кубики защиты, чтобы блокировать успешные кубики атаки:\n   • обычный успех блокирует обычный успех;\n   • два обычных успеха блокируют критический успех;\n   • критический успех блокирует обычный или критический успех."
+          },
+          {
+            "type": "paragraph",
+            "russian": "6. Атакующий применяет каждый незаблокированный кубик атаки и наносит урон цели:\n   • обычный успех наносит обычный урон (Normal Dmg): первое значение характеристики Dmg;\n   • критический успех наносит критический урон (Critical Dmg): второе значение Dmg."
+          },
+          {
+            "type": "heading",
+            "russian": "БЛИЖНИЙ БОЙ"
+          },
+          {
+            "type": "paragraph",
+            "russian": "Игрок активного оперативника — атакующий, игрок цели — защищающийся. На кубиках атаки результат 6 всегда успешен и критический; остальные успехи — обычные; 1 всегда провал."
+          },
+          {
+            "type": "paragraph",
+            "russian": "1. Атакующий выбирает врага в дистанции контроля активного оперативника. Этот враг будет отвечать в ближнем бою."
+          },
+          {
+            "type": "paragraph",
+            "russian": "2. Оба игрока выбирают по одному оружию ближнего боя своих оперативников."
+          },
+          {
+            "type": "paragraph",
+            "russian": "3. Каждый бросает столько D6 атаки, сколько указано в Atk выбранного оружия. Результаты, равные Hit оружия или выше, сохраняются как успехи. Остальные отбрасываются как провалы."
+          },
+          {
+            "type": "paragraph",
+            "russian": "4. Начиная с атакующего, игроки по очереди применяют свои успешные незаблокированные кубики атаки. Если у противника кубиков не осталось, игрок применяет все свои оставшиеся. Каждый кубик используется для удара или блока:\n   • удар (Strike): нанесите врагу урон. Обычный успех наносит первое значение Dmg, критический — второе;\n   • блок (Block): этим кубиком заблокируйте один ещё не применённый успех противника. Обычный успех блокирует обычный; критический блокирует обычный либо критический."
+          }
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "english": "WEAPON RULES\nAccurate x: You can retain up to x attack dice as normal successes \nwithout rolling them. If a weapon has more than one instance of \nAccurate x, you can treat it as one instance of Accurate 2 instead \n(this takes precedence over x rules above).\nBalanced: You can re-roll one of your attack dice.\nBlast x: The target you select is the primary target. After shooting \nthe primary target, shoot with this weapon against each secondary \ntarget in an order of your choice (roll each sequence separately). \nSecondary targets are other operatives visible to and within x of the \nprimary target, e.g. Blast 2\" (they are all valid targets, regardless \nof a Conceal order). Secondary targets are in cover and obscured if \nthe primary target was.\nBrutal: Your opponent can only block with critical successes.\nCeaseless: You can re-roll any of your attack dice results of one \nresult (e.g. results of 2).\nDevastating x: Each retained critical success immediately inflicts \nx damage on the operative this weapon is being used against, \ne.g. Devastating 3. If the rule starts with a distance (e.g. 1\" \nDevastating x), inflict x damage on that operative and each other \noperative visible to and within that distance of it. Note that success \nisn’t discarded after doing so – it can still be resolved later in \nthe sequence.\nHeavy: An operative cannot use this weapon in an activation \nor counteraction in which it moved, and it cannot move in an \nactivation or counteraction in which it used this weapon. If the \nrule is Heavy (x only), where x is a move action, only that move is \nallowed, e.g. Heavy (Dash only). This weapon rule has no effect on \npreventing the Guard action.\nHot: After an operative uses this weapon, roll one D6: if the result \nis less than the weapon’s Hit stat, inflict damage on that operative \nequal to the result multiplied by two. If it’s used multiple times in \none action (e.g. Blast), still only roll one D6.\nLethal x+: Your successes equal to or greater than x are critical \nsuccesses, e.g. Lethal 5+.\nLimited x: After an operative uses this weapon a number of times \nin the battle equal to x, they no longer have it. If it’s used multiple \ntimes in one action (e.g. Blast), treat this as one use.\nPiercing x: The defender collects x less defence dice, e.g. \nPiercing 1. If the rule is Piercing Crits x, this only comes into effect if \nyou retain any critical successes.\nPunishing: If you retain any critical successes, you can retain one of \nyour fails as a normal success instead of discarding it.\nRange x: Only operatives within x of the active operative can be \nvalid targets, e.g. Range 9\".\nRelentless: You can re-roll any of your attack dice.\nRending: If you retain any critical successes, you can retain one of \nyour normal successes as a critical success instead.\nSaturate: The defender cannot retain cover saves.\nSeek: When selecting a valid target, operatives with a Conceal order \ncannot use terrain for cover. If the rule is Seek Light, they cannot \nuse Light terrain for cover. While this can allow operatives to be \ntargeted (assuming they’re visible), it doesn’t remove their cover \nsave (if any).\nSevere: If you don’t retain any critical successes, you can change \none of your normal successes to a critical success. The Devastating \nand Piercing Crits weapon rules still take effect, but Punishing and \nRending don’t.\nShock: The first time you strike with a critical success in each \nsequence, also discard one of your opponent’s unresolved normal \nsuccesses (or one of their critical successes if there are none).\nSilent: An operative can perform the Shoot action with this weapon \nwhile it has a Conceal order.\nStun: If you retain any critical successes, subtract 1 from the APL \nstat of the operative this weapon is being used against until the end \nof its next activation.\nTorrent x: Select a valid target as normal as the primary \ntarget, then select any number of other valid targets within x \nof the first valid target, but not within control range of friendly \noperatives, as secondary targets, e.g. Torrent 2\". Shoot with this \nweapon against all of them in an order of your choice (roll each \nsequence separately).\n© Copyright Games Workshop Limited 2024",
+        "blocks": [
+          {
+            "type": "heading",
+            "russian": "ПРАВИЛА ОРУЖИЯ (WEAPON RULES)"
+          },
+          {
+            "type": "heading",
+            "russian": "Точное x (Accurate x)"
+          },
+          {
+            "type": "paragraph",
+            "russian": "Вы можете сохранить до x кубиков атаки как обычные успехи, не бросая их. Если у оружия несколько экземпляров Accurate x, вместо них можно считать, что у него один экземпляр Accurate 2. Это имеет приоритет над приведёнными выше правилами x."
+          },
+          {
+            "type": "heading",
+            "russian": "Сбалансированное (Balanced)"
+          },
+          {
+            "type": "paragraph",
+            "russian": "Вы можете перебросить один кубик атаки."
+          },
+          {
+            "type": "heading",
+            "russian": "Взрыв x (Blast x)"
+          },
+          {
+            "type": "paragraph",
+            "russian": "Выбранная цель — основная. После стрельбы по ней стреляйте этим оружием по каждой вторичной цели в выбранном порядке, отдельно проводя каждую последовательность бросков. Вторичные цели — другие оперативники, видимые основной цели и находящиеся в пределах x от неё, например Blast 2 дюйма. Они все допустимы независимо от приказа «Скрытность». Если основная цель была в укрытии и/или заслонена (Obscured), вторичные цели считаются в тех же соответствующих состояниях."
+          },
+          {
+            "type": "heading",
+            "russian": "Жестокое (Brutal)"
+          },
+          {
+            "type": "paragraph",
+            "russian": "Противник может блокировать только критическими успехами."
+          },
+          {
+            "type": "heading",
+            "russian": "Непрерывное (Ceaseless)"
+          },
+          {
+            "type": "paragraph",
+            "russian": "Вы можете перебросить любые свои кубики атаки с одним выбранным результатом, например все результаты 2."
+          },
+          {
+            "type": "heading",
+            "russian": "Разрушительное x (Devastating x)"
+          },
+          {
+            "type": "paragraph",
+            "russian": "Каждый сохранённый критический успех немедленно наносит x урона оперативнику, против которого используется оружие, например Devastating 3. Если правило начинается с расстояния, например «1 дюйм Devastating x», нанесите x урона этому оперативнику и каждому другому оперативнику, видимому ему и находящемуся в пределах указанного расстояния. Этот успех не отбрасывается: позднее в последовательности его всё ещё можно применить."
+          },
+          {
+            "type": "heading",
+            "russian": "Тяжёлое (Heavy)"
+          },
+          {
+            "type": "paragraph",
+            "russian": "Оперативник не может использовать оружие в активацию или контрдействие, в которых перемещался. Он также не может перемещаться в активацию или контрдействие, в которых использовал это оружие. Если указано Heavy (x only), где x — действие перемещения, разрешено только оно, например Heavy (Dash only). Это правило оружия не препятствует действию «Дозор» (Guard)."
+          },
+          {
+            "type": "heading",
+            "russian": "Перегрев (Hot)"
+          },
+          {
+            "type": "paragraph",
+            "russian": "После использования оружия бросьте D6. Если результат меньше Hit оружия, оперативник получает урон, равный удвоенному результату броска. Даже если оружие использовано несколько раз в одном действии, например с Blast, бросьте только один D6."
+          },
+          {
+            "type": "heading",
+            "russian": "Смертоносное x+ (Lethal x+)"
+          },
+          {
+            "type": "paragraph",
+            "russian": "Ваши успешные результаты x или выше становятся критическими, например Lethal 5+."
+          },
+          {
+            "type": "heading",
+            "russian": "Ограниченное x (Limited x)"
+          },
+          {
+            "type": "paragraph",
+            "russian": "После x применений оружия в течение боя оперативник больше не имеет этого оружия. Несколько применений в одном действии, например с Blast, считаются одним применением."
+          },
+          {
+            "type": "heading",
+            "russian": "Бронебойное x (Piercing x)"
+          },
+          {
+            "type": "paragraph",
+            "russian": "Защищающийся берёт на x кубиков защиты меньше, например Piercing 1. Если указано Piercing Crits x, правило действует только при наличии у вас сохранённых критических успехов."
+          },
+          {
+            "type": "heading",
+            "russian": "Карающее (Punishing)"
+          },
+          {
+            "type": "paragraph",
+            "russian": "Если у вас есть сохранённые критические успехи, вы можете сохранить один провал как обычный успех вместо того, чтобы отбросить его."
+          },
+          {
+            "type": "heading",
+            "russian": "Дальность x (Range x)"
+          },
+          {
+            "type": "paragraph",
+            "russian": "Допустимыми целями могут быть только оперативники в пределах x от активного оперативника, например Range 9 дюймов."
+          },
+          {
+            "type": "heading",
+            "russian": "Неумолимое (Relentless)"
+          },
+          {
+            "type": "paragraph",
+            "russian": "Вы можете перебросить любые свои кубики атаки."
+          },
+          {
+            "type": "heading",
+            "russian": "Раздирающее (Rending)"
+          },
+          {
+            "type": "paragraph",
+            "russian": "Если у вас есть сохранённые критические успехи, вы можете сохранить один обычный успех как критический."
+          },
+          {
+            "type": "heading",
+            "russian": "Насыщение огнём (Saturate)"
+          },
+          {
+            "type": "paragraph",
+            "russian": "Защищающийся не может сохранять кубики защиты за укрытие без броска."
+          },
+          {
+            "type": "heading",
+            "russian": "Поиск цели (Seek)"
+          },
+          {
+            "type": "paragraph",
+            "russian": "При выборе допустимой цели оперативники с приказом «Скрытность» не могут использовать террейн как укрытие. Если указано Seek Light, они не могут использовать для укрытия лёгкий террейн (Light). Это может позволить выбрать их целью, если они видимы, но не лишает их кубика защиты за укрытие, если он положен."
+          },
+          {
+            "type": "heading",
+            "russian": "Сокрушительное (Severe)"
+          },
+          {
+            "type": "paragraph",
+            "russian": "Если у вас нет сохранённых критических успехов, можно изменить один обычный успех на критический. Devastating и Piercing Crits при этом срабатывают, а Punishing и Rending — нет."
+          },
+          {
+            "type": "heading",
+            "russian": "Потрясение (Shock)"
+          },
+          {
+            "type": "paragraph",
+            "russian": "Когда в каждой последовательности вы впервые наносите удар критическим успехом, также отбросьте один ещё не применённый обычный успех противника; если обычных нет — один критический."
+          },
+          {
+            "type": "heading",
+            "russian": "Бесшумное (Silent)"
+          },
+          {
+            "type": "paragraph",
+            "russian": "Оперативник может выполнять «Стрельбу» этим оружием с приказом «Скрытность»."
+          },
+          {
+            "type": "heading",
+            "russian": "Оглушение (Stun)"
+          },
+          {
+            "type": "paragraph",
+            "russian": "Если у вас есть сохранённые критические успехи, уменьшите APL оперативника, против которого используется оружие, на 1 до конца его следующей активации."
+          },
+          {
+            "type": "heading",
+            "russian": "Поток x (Torrent x)"
+          },
+          {
+            "type": "paragraph",
+            "russian": "Выберите допустимую основную цель по обычным правилам. Затем выберите любое количество других допустимых целей в пределах x от первой, например Torrent 2 дюйма; они не должны находиться в дистанции контроля ваших оперативников. Это вторичные цели. Стреляйте этим оружием по всем выбранным целям в любом порядке, отдельно проводя каждую последовательность бросков."
+          }
+        ]
+      }
+    ]
+  },
+  "cad5d0b5bd72d52d": {
+    "titleEnglish": "The Killzone Mod User Manual",
+    "titleRussian": "The Killzone Mod — руководство",
+    "pages": [
+      {
+        "sourcePage": 1,
+        "english": "GSPublisherVersion 0.2.100.100\nBASE TABLE: THE KILLZONE MOD\nUSER MANUAL\n",
+        "blocks": [
+          {
+            "type": "heading",
+            "russian": "THE KILLZONE MOD — РУКОВОДСТВО"
+          },
+          {
+            "type": "paragraph",
+            "russian": "Перевод десятистраничного руководства из мода. Номера разделов сохранены. Снимки интерфейса из исходника сопровождаются русскими пояснениями; английские названия помогают найти команду в оригинальном интерфейсе."
+          }
+        ]
+      },
+      {
+        "sourcePage": 2,
+        "english": "GSPublisherVersion 0.2.100.100\nCONTENTS\nGetting started\nUseful common TTS controls\nBASE TABLE: The START HERE menu\nBASE TABLE: The player dashboards\nBASE TABLE: The Scoreboard\nOPERATIVE MODELS: The KTUI Extender + Tools\nOPERATIVE MODELS: The operative UI and tools\nOPERATIVE MODELS: In-game Datasheet\n2\n3\n4\n5\n6\n7\n8\n9\n1Contents",
+        "blocks": [
+          {
+            "type": "heading",
+            "russian": "СОДЕРЖАНИЕ"
+          },
+          {
+            "type": "paragraph",
+            "russian": "2. Начало работы\n3. Полезные команды Tabletop Simulator\n4. Меню START HERE\n5. Панели игроков\n6. Табло счёта\n7. KTUI Extender + Tools\n8. Интерфейс и инструменты оперативников\n9. Карта данных в игре"
+          }
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "english": "GSPublisherVersion 0.2.100.100\nGETTING STARTED\nWHAT IS THIS MOD?\nThis is a base table mod for the skirmish table miniature wargame Kill \nTeam by Games Workshop which is set in the grim darkness of the \nWarhammer 40,000 universe. This TTS mod provides the means to setup \nthe board and start playing as soon as possible. However, players are \nexpected to manually load in their team models and assets.\nWHERE TO LEARN THE RULES\nThere are several ways of learning the rules for Kill Team:\n►Find a teacher - the absolute best way to learn the game is to find a \nperson to teach you, as they will be able to guide you through numerous \nnuances of this complex game.\nYou can easily find online communities of Kill Team players, many of \nwhom will gladly teach you the game. Some of the most popular \nresources can be found below this manual in a form of discord QR codes.\n►Unofficial online tutorials and resources - there are many different \nYoutube channels, some of which are Kill Team-dedicated, where you \ncould watch a visual explanation of the rules. There are also different \nlist-building and rules referencing sites like KTDash and KTServitor.\n►Core Rules Book - an official physical book that contains all rules \nrequired to play the base game.\n►Official Downloadable Resources - all team-specific rules are freely \navailable online on the official Warhammer Community site as well as all \nthe current balance changes and patches. You could also use a Lite \nRules book found on the site and in this mod.\n►Kill Team App - the official app is free and contains the same rules \nthat are available on the WarCom site.\nIt is strongly recommended to seek out a Kill Team online community to \nlearn the game and get to play online matches.\n2Getting started",
+        "blocks": [
+          {
+            "type": "heading",
+            "russian": "2. НАЧАЛО РАБОТЫ"
+          },
+          {
+            "type": "heading",
+            "russian": "Что это за мод?"
+          },
+          {
+            "type": "paragraph",
+            "russian": "Это базовый игровой стол для Kill Team от Games Workshop — игры небольших отрядов с миниатюрами во вселенной Warhammer 40,000. Мод помогает быстро подготовить поле и начать игру. Модели своей команды и её материалы игроки загружают вручную."
+          },
+          {
+            "type": "heading",
+            "russian": "Где изучить правила?"
+          },
+          {
+            "type": "paragraph",
+            "russian": "• Найдите человека, который объяснит игру: он поможет разобраться в многочисленных нюансах. В сообществах Kill Team есть игроки, готовые обучать новичков. QR-коды некоторых Discord-сообществ находятся на столе под руководством.\n• Неофициальные обучающие материалы: видеоканалы YouTube, в том числе посвящённые Kill Team, а также сайты для составления отрядов и справки по правилам, например KTDash и KTServitor.\n• Основная книга правил (Core Rules Book): официальная печатная книга с правилами базовой игры.\n• Официальные материалы для скачивания: правила всех отрядов, изменения баланса и исправления на сайте Warhammer Community. Краткие правила (Lite Rules) есть на сайте и в моде.\n• Приложение Kill Team: бесплатное официальное приложение с теми же правилами, что опубликованы на сайте Warhammer Community.\nАвтор руководства рекомендует присоединиться к сообществу Kill Team, чтобы освоить игру и находить соперников для сетевых партий."
+          }
+        ]
+      },
+      {
+        "sourcePage": 4,
+        "english": "GSPublisherVersion 0.2.100.100\nUSEFUL COMMON TTS CONTROLS\n►Distance measurement to cursor or \nheld object is displayed by holding Tab. \nMost game object in the mod always \ndisplay the distance by default.\n►Clicking Tab pings the cursor \nlocation to all players.\n►Press the number keys while \nholding several objects to organize \nthem neatly in rows.\n►Holding Left+Right mouse \nbuttons while carrying objects will \nlower them  as much as possible \nand ignore some collisions. Useful \nfor precise positioning.\n►The distance can be \nmeasured in 3D or 2D. Toggled \nhere in the TTS HUD.\n►Right-click on any object to bring \nup the context menu.\nOther than the usual TTS controls like \nlocking, changing tint, etc some \nobjects will have unique context \nmenu options. Notably the operative \nmodels will have additional tools and \nsettings in their context menu, more \non that in the \"Operative Model \nControls\" section\n►Press P to change \nperspective. This way you can \nselect between the 3rd person, \n1st person and Top Down views.\n3Useful common TTS controls",
+        "blocks": [
+          {
+            "type": "heading",
+            "russian": "3. ПОЛЕЗНЫЕ КОМАНДЫ TABLETOP SIMULATOR"
+          },
+          {
+            "type": "paragraph",
+            "russian": "• Удерживайте Tab, чтобы измерять расстояние до курсора или удерживаемого объекта. Большинство игровых объектов этого мода показывает расстояние постоянно.\n• Короткое нажатие Tab отмечает положение курсора для всех игроков.\n• Удерживая несколько объектов, нажимайте цифровые клавиши, чтобы аккуратно расположить их рядами.\n• При переносе объектов удерживайте обе кнопки мыши: объекты опускаются как можно ниже и игнорируют некоторые столкновения. Это помогает точному размещению.\n• В интерфейсе TTS можно переключать измерение расстояний между 3D и 2D.\n• Правый щелчок открывает контекстное меню объекта. Помимо стандартных команд блокировки, окраски и прочих, у объектов могут быть свои команды. У моделей оперативников есть дополнительные инструменты и настройки, описанные ниже.\n• Клавиша P переключает камеру: от третьего лица, от первого лица и вид сверху."
+          },
+          {
+            "type": "source-images",
+            "captionsRussian": [
+              "Измерение расстояния: удерживайте Tab.",
+              "Отметка курсора: нажмите Tab.",
+              "Размещение объектов рядами: цифровые клавиши.",
+              "Перенос объектов ниже: обе кнопки мыши.",
+              "Режим измерения: 2D / 3D.",
+              "Контекстное меню: правая кнопка мыши.",
+              "Режим камеры: P; на снимке включён вид сверху."
+            ],
+            "russian": "Иллюстрации из исходного руководства."
+          },
+          {
+            "type": "paragraph",
+            "russian": "Обозначения на снимках: Heavy Rubble — тяжёлые обломки; This is Heavy terrain — это тяжёлый террейн. Custom — настройка; Toggles — переключатели; Tags — теги; Save Object — сохранить объект; Color Tint — оттенок; Physics — физика; Flip — перевернуть; Rotate — повернуть; Scale — масштаб; Scripting — скрипты; Clone — клонировать; Copy — копировать; Delete — удалить. Inch — дюймы; Auto — автоматически; Edge — измерение от края; No Log — без записи. Top down camera activated — включён вид сверху."
+          }
+        ]
+      },
+      {
+        "sourcePage": 5,
+        "english": "GSPublisherVersion 0.2.100.100\nBASE TABLE\nTHE START HERE MENU\nThis menu provides a simple step-by-step process of setting up the \nboard, loading the terrain, required mission and Ops cards, etc.\nJust follow the menu items as more are revealed with each selection \nand the game will be set up in no time.\n►START HERE menu as seen at the beginning of the game\n►Fully expanded START HERE menu after setting up the game ►Cancel Last Selection \nbutton, found in the \nSTART HERE header\n►The mission selection \ninterface\nIn order to prevent errors, please always cancel out the previous \nselection if you ever change your mind. For that you can use the red \n\"Cancel\" buttons or the \"Cancel Last Selection\" button that will \nautomatically cancel selected menu options one by one.\nDepending on the selected gamemode, the menu will load different UI \nitems. Sometimes a gamemode requires the players to select a mission, \nwhich in turn will display the mission selection UI.\nHere you can:\n►Select a specific mission by number\n►Select a random mission\n►After pressing CONFIRM SELECTION the selected mission card will be \ncopied to the scoreboard area for reference.\nWhen selecting the map, there will also sometimes be a button to \nrandomize the selection.\n►Random Map button\n4BASE TABLE: The START HERE menu",
+        "blocks": [
+          {
+            "type": "heading",
+            "russian": "4. МЕНЮ START HERE — ПОДГОТОВКА ИГРЫ"
+          },
+          {
+            "type": "paragraph",
+            "russian": "Меню «Начните здесь» (START HERE) проводит вас через подготовку поля, загрузку террейна, миссий и карт задач. После каждого выбора появляются следующие пункты: последовательно пройдите их, чтобы подготовить игру."
+          },
+          {
+            "type": "paragraph",
+            "russian": "Если передумали, сначала отмените предыдущий выбор, чтобы избежать ошибок. Для этого используйте красные кнопки Cancel либо «Отменить последний выбор» (Cancel Last Selection). Последняя команда отменяет выбранные пункты меню по одному."
+          },
+          {
+            "type": "paragraph",
+            "russian": "В разных режимах меню загружает разные элементы. Если режим требует выбора миссии, открывается соответствующий интерфейс. Можно выбрать миссию по номеру или случайно. Кнопка «Подтвердить выбор» (CONFIRM SELECTION) копирует карту миссии к табло счёта для справки.\nПри выборе игровой карты иногда доступна кнопка случайного выбора (Random Map)."
+          },
+          {
+            "type": "source-images",
+            "captionsRussian": [
+              "Меню «Начните здесь» в начале игры.",
+              "Меню после настройки поля.",
+              "«Отменить последний выбор» находится в заголовке меню.",
+              "Выбор миссии: по номеру или случайно; затем «Подтвердить выбор».",
+              "Кнопка случайной карты."
+            ],
+            "russian": "Иллюстрации из исходного руководства."
+          },
+          {
+            "type": "paragraph",
+            "russian": "Обозначения на снимках: START HERE — начните здесь; GAME MODE — режим игры; SELECT KILLZONE — выбор зоны боя; SELECT MISSION — выбор миссии; MISSION PACK — набор миссий; CONFIRM SELECTION — подтвердить выбор; CANCEL — отменить; CANCEL LAST SELECTION — отменить последний выбор; RANDOM MAP — случайная карта."
+          }
+        ]
+      },
+      {
+        "sourcePage": 6,
+        "english": "GSPublisherVersion 0.2.100.100\nBASE TABLE\nTHE PLAYER DASHBOARDS\n►Full setup of a red player dashboard\nEach player has their own dashboard to setup their cards, select \nPrimary/Tac Ops, load in the operative models, etc.\nPRIMARY/TAC OP\nIf the selected gamemode requires the Ops cards, they will be placed \nautomatically in the HIDDEN AREA, invisible to all other players. Select \nyou Primary and Tac Op cards and drag them to their slots in the \nScoreboard area to confirm your selection. Copies of these cards will be \ncreated in the OPS SELECTION area for reference.\nThe Universal Equipment tab contains all the cards and models you need \nto use the equipment. It is hidden by default, to display it simply press \nthe SHOW button.\nUNIVERSAL EQUIPMENT\nThis section contains slots for faction rules, ploy cards and other. The \nploy cards placed here can be marked as ACTIVE by clicking the button. \nThis is automatically reset after pressing the Round End button in the \nscoreboard area. The cards in OPS SELECTION area are placed \nautomatically when you slot in the Ops cards in the scoreboard menu.\nKILL TEAM LOADOUT\nThis is just a free space for the players to place their models, cards and \nother assets.\nSETUP AREA\n5BASE TABLE: The player dashboards",
+        "blocks": [
+          {
+            "type": "heading",
+            "russian": "5. ПАНЕЛИ ИГРОКОВ"
+          },
+          {
+            "type": "paragraph",
+            "russian": "У каждого игрока есть панель для карт, выбора приоритетных и тактических задач (Primary/Tac Ops), загрузки моделей и других материалов."
+          },
+          {
+            "type": "heading",
+            "russian": "Приоритетная и тактическая задачи"
+          },
+          {
+            "type": "paragraph",
+            "russian": "Если режим использует карты задач, они автоматически помещаются в скрытую область (HIDDEN AREA), которую другие игроки не видят. Выберите свои карты Primary Op и Tac Op и перетащите их в ячейки рядом с табло счёта, чтобы подтвердить выбор. Копии появятся в области выбранных задач (OPS SELECTION) для справки."
+          },
+          {
+            "type": "heading",
+            "russian": "Универсальное снаряжение (Universal Equipment)"
+          },
+          {
+            "type": "paragraph",
+            "russian": "Эта вкладка содержит нужные карты и модели снаряжения. По умолчанию она скрыта; кнопка «Показать» (SHOW) открывает её."
+          },
+          {
+            "type": "heading",
+            "russian": "Материалы отряда (Kill Team Loadout)"
+          },
+          {
+            "type": "paragraph",
+            "russian": "Здесь находятся ячейки для правил фракции, карт приёмов (Ploys) и других материалов. Нажатием кнопки карту приёма можно отметить как активную. После кнопки «Конец раунда» эта отметка сбрасывается. Карты в OPS SELECTION появляются автоматически после помещения карт задач в ячейки табло."
+          },
+          {
+            "type": "heading",
+            "russian": "Область подготовки (Setup Area)"
+          },
+          {
+            "type": "paragraph",
+            "russian": "Свободное место для моделей, карт и прочих материалов игроков."
+          },
+          {
+            "type": "source-images",
+            "captionsRussian": [
+              "Панель красного игрока: слева задачи и скрытая область, далее универсальное снаряжение, материалы отряда и область подготовки."
+            ],
+            "russian": "Иллюстрации из исходного руководства."
+          },
+          {
+            "type": "paragraph",
+            "russian": "Обозначения на снимках: PRIMARY / TAC OP — приоритетная / тактическая задача; HIDDEN AREA — скрытая область; UNIVERSAL EQUIPMENT — универсальное снаряжение; SHOW — показать; KILL TEAM LOADOUT — материалы отряда; EQUIPMENT — снаряжение; STRATEGY PLOYS — стратегические приёмы; OPS SELECTION — выбранные задачи; FACTION RULES — правила фракции; FIREFIGHT PLOYS — приёмы перестрелки; SETUP AREA — область подготовки."
+          }
+        ]
+      },
+      {
+        "sourcePage": 7,
+        "english": "GSPublisherVersion 0.2.100.100\nBASE TABLE\nTHE SCOREBOARD\nThe Scoreboard Tile contains many tools that players are going to use during the game:\n► 1. Casualties - place the incapacitated operatives here to track the Kill Op and to \nsee which turning point was the bloodiest.\n► 2. Op Selection - these are the slots for players to place their selected Primary \nand Tac Op cards. The selection is displayed in the scoreboard UI, copies are sent \nto the player dashboard and the cards are automatically flipped and locked in \nplace; they are reveled though the scoreboard UI.\n► 3. The Scoreboard UI - this is an interactive scoreboard that players use to track \nand manage their scored VP, initiative and hidden Op selections.\n► 4. Kill Op and Crit Op - reference cards, placed automatically\n► 5. Reset Ops button - under the scoreboard UI there is this button that refreshes \nthe Primary/Tac Op cards if the scoreboard is being displayed incorrectly (usually \nafter a Ctrl+Z or loading a save)\n► 6. Game record buttons - press the HELP button for a short guide on this \nfunctionality.\n► 7. Board control buttons - buttons to rotate the selected board, toggle the \noverlay grid on it and to rise or lower the deployment/player territory lines \n(barriers).\n► 8. Timer - the Timer allows to track the game time, hover over it for the in-game \ntutorial.\n► 9. Tokens - these tokens can be used as separate objects or dragged over the \noperatives to be attached to them as UI elements. The range of the circle tokens \ncan be adjusted by pressing the number keys on your keyboard while hovering over \nthe token.\n► 10. Round End button - the Round End button saves all operatives' positions, \nrefreshes the active ploys and readies all operative models.\n► 11. Dice Roller tile - press a small square button directly above ROLL to see a \nshort tutorial on how to use this tool.\n► 12. Custom Dice Tiles - place your custom dice on these square tiles and they \nwill be used by the dice roller tool instead of the default ones.\n►The Scoreboard tile. It may look different for some \ngamemodes but general functionality stays the same\n1 \n2 \n3 \n4 4 \n 5  6 \n 8 \n 7  7 \n9 \n10 \n11  12 11 \n6BASE TABLE: The Scoreboard",
+        "blocks": [
+          {
+            "type": "heading",
+            "russian": "6. ТАБЛО СЧЁТА (SCOREBOARD)"
+          },
+          {
+            "type": "paragraph",
+            "russian": "Планшет табло включает инструменты для игры. Цифры соответствуют иллюстрации ниже:\n1. Потери (Casualties): помещайте сюда выведенных из строя оперативников, чтобы учитывать задачу на уничтожение (Kill Op) и видеть потери по раундам.\n2. Выбор задач (Op Selection): ячейки для выбранных карт Primary Op и Tac Op. Выбор отображается в интерфейсе табло, копии уходят на панель игрока, а карты автоматически переворачиваются рубашкой вверх и блокируются. Раскрываются они через интерфейс табло.\n3. Интерфейс табло: учёт победных очков (Victory Points, VP), инициативы и скрытого выбора задач.\n4. Kill Op и Crit Op: справочные карты, размещаемые автоматически.\n5. «Сброс задач» (Reset Ops): кнопка под интерфейсом обновляет карты Primary/Tac Op при ошибках отображения, обычно после Ctrl+Z или загрузки сохранения.\n6. Кнопки записи игры: кнопка «Помощь» (HELP) открывает краткую инструкцию.\n7. Управление полем: поворот поля, включение сетки, поднятие и опускание линий зон высадки и территорий — границ (Barriers).\n8. Часы (Timer): учёт времени игры. Наведите курсор для инструкции.\n9. Жетоны (Tokens): используйте как отдельные объекты или перетаскивайте на оперативников, чтобы прикрепить значок к их интерфейсу. Наведите курсор на круглый жетон и нажимайте цифровые клавиши для изменения радиуса.\n10. «Конец раунда» (Round End): сохраняет позиции всех оперативников, сбрасывает активные приёмы и подготавливает все модели оперативников.\n11. Бросатель кубиков (Dice Roller): маленькая квадратная кнопка над ROLL открывает краткую инструкцию.\n12. Планшеты пользовательских кубиков (Custom Dice Tiles): положите на них свои кубики, и бросатель будет использовать их вместо стандартных.\nВ разных режимах внешний вид планшета может отличаться, но основные функции сохраняются."
+          },
+          {
+            "type": "source-images",
+            "captionsRussian": [
+              "Табло счёта. Номера 1–12 соответствуют перечню элементов в этом разделе."
+            ],
+            "russian": "Иллюстрации из исходного руководства."
+          },
+          {
+            "type": "paragraph",
+            "russian": "Обозначения на снимках: SCOREBOARD — табло счёта; CASUALTIES — потери; OP SELECTION — выбранные задачи; RED / BLUE — красный / синий игрок; CRIT OP — основная задача миссии; KILL OP — задача на уничтожение; RESET OPS — сброс задач; HELP — помощь; ROLL — бросок кубиков; VP — победные очки; CP — командные очки."
+          }
+        ]
+      },
+      {
+        "sourcePage": 8,
+        "english": "GSPublisherVersion 0.2.100.100\nOPERATIVE MODELS\nTHE KTUI EXTENDER + TOOLS\nOperative models and cards are NOT included in this mod. You will have to find them \nseparately, save them and then load them in. Check the Steam Workshop and ask \naround the online communities for the latest scripted models and updated cards (you \nmay even find interesting custom models and proxies). In other words, this mods relies \non the active TTS Kill Team modder community to provide the models with the current \nstats and rules. However, despite not having the models included in here, this mod \ncontains useful scripting for them that further improves the TTS gameplay experience \nand provides handy tools for the players. In order to update your models to the latest \nKillzone Mod script, use the KTUI Extender + Tools board.\nIT IS STRONGLY RECOMMENDED TO ALWAYS USE THE KTUI EXTENDER BEFORE THE \nGAME.\nTo script the models simply put them on the KTUI Extender + Tools board and press the \ngreen button \"Extend UI\". And that's it! Your models are ready and updated to the latest \nscript.\n►The KTUI Extender + Tools Board as seen in-game\nHere is the full description of the KTUI Extender Board \nfunctionality, as well as the additional tools nearby:\n► 1. The main Extender board. Place the models you \nwish to script here.\n► 2. The \"Extend KTUI\" button. Press to apply script \nto the models.\n► 3. The \"Fix display issues\" button. Refreshes the \nmodels' UI. Useful if icons fail to load.\n► 4. \"Table Controls\" buttons. These buttons control \nALL OPERATIVE MODELS in the game. Most \ncommonly used to save and load positions of all \noperatives.\n► 5. \"Mat Controls\". These control only the operatives \non the Extender board. Useful for quickly setting up \nthe entire team to be the same order or to remove all \ntoken icons from the operatives.\n► 6. Script modules. These objects contain portions \nof the scripting. No interaction required.\n► 7. Injection detector. Detects objects infected by \nviruses. Requires no interaction from the user. \nHowever, if it DOES sound an alarm - seek help \nonline.\n► 8. Additional objective marker objects.\n► 9. 3D Range Tool. Creates a visible bubble of set \nradius around a selected operative or other object.\n► 10. Command Nodes. Used for scripting custom \nmodels with Kill Team stats. Check the built-in \ntutorial to see how it works.\n► 11. Old LOS tools. Mostly obsolete, but sometimes \nstill used by veteran players.\n1 \n2 \n3 \n4 \n5 \n6 \n7 \n8 \n9 \n10 \n11 \n7OPERATIVE MODELS: The KTUI Extender + Tools",
+        "blocks": [
+          {
+            "type": "heading",
+            "russian": "7. KTUI EXTENDER + TOOLS — РАСШИРИТЕЛЬ ИНТЕРФЕЙСА"
+          },
+          {
+            "type": "paragraph",
+            "russian": "Модели и карты отрядов не входят в базовую поставку этого мода. Найдите их отдельно, сохраните и загрузите на стол. Проверяйте Steam Workshop и спрашивайте в сообществах о свежих моделях со скриптами и обновлённых картах; там же можно найти собственные модели и заменители. Актуальные характеристики и правила моделей зависят от материалов сообщества моддеров TTS Kill Team."
+          },
+          {
+            "type": "paragraph",
+            "russian": "Сам стол содержит полезные скрипты и инструменты для этих моделей. Для обновления моделей до скрипта Killzone Mod используйте планшет KTUI Extender + Tools. Автор настоятельно рекомендует применять его перед каждой игрой."
+          },
+          {
+            "type": "paragraph",
+            "russian": "Положите модели на планшет и нажмите зелёную кнопку «Расширить KT UI» (Extend UI / Extend KTUI). Модели получат обновлённый скрипт."
+          },
+          {
+            "type": "paragraph",
+            "russian": "Элементы на иллюстрации ниже:\n1. Основной планшет: сюда ставятся модели, которым нужно добавить скрипт.\n2. Extend KTUI: применяет скрипт к моделям.\n3. «Исправить отображение» (Fix display issues): обновляет интерфейс моделей, например при незагрузившихся значках.\n4. Управление столом (Table Controls): команды для всех оперативников в игре. Чаще всего нужны для сохранения и восстановления позиций.\n5. Управление моделями на планшете (Mat Controls): команды только для оперативников на планшете. Можно сразу задать всей команде один приказ или убрать все прикреплённые значки жетонов.\n6. Модули скриптов: содержат части кода; взаимодействовать с ними не требуется.\n7. Детектор внедрений (Injection detector): обнаруживает заражённые объекты. Обычно работает автоматически. Если он подал сигнал, автор рекомендует обратиться за помощью в сообщество.\n8. Дополнительные маркеры целей.\n9. Измерение дальности в 3D (3D Range Tool): создаёт видимую сферу заданного радиуса вокруг оперативника или другого объекта.\n10. Командные узлы (Command Nodes): добавляют характеристики Kill Team собственным моделям. Инструкция встроена в объект.\n11. Старые инструменты линии видимости (LOS): в основном устарели, но некоторые опытные игроки ими пользуются."
+          },
+          {
+            "type": "source-images",
+            "captionsRussian": [
+              "Планшет расширителя интерфейса и инструменты. Номера 1–11 соответствуют перечню элементов в этом разделе."
+            ],
+            "russian": "Иллюстрации из исходного руководства."
+          },
+          {
+            "type": "paragraph",
+            "russian": "Обозначения на снимках: KTUI EXTENDER + TOOLS — расширитель интерфейса Kill Team и инструменты; EXTEND UI / EXTEND KTUI — расширить интерфейс; FIX DISPLAY ISSUES — исправить отображение; TABLE CONTROLS — управление всем столом; MAT CONTROLS — управление моделями на планшете; SAVE PLACE — сохранить позиции; LOAD PLACE — восстановить позиции; READY — подготовить; ENGAGE — приказ «Бой»; CONCEAL — приказ «Скрытность»; CLEAR TOKENS — убрать жетоны; COMMAND NODE — командный узел; 3D RANGE TOOL — измеритель дальности в 3D; LOS — линия видимости."
+          }
+        ]
+      },
+      {
+        "sourcePage": 9,
+        "english": "GSPublisherVersion 0.2.100.100\nOPERATIVE MODELS\nTHE OPERATIVE UI AND TOOLS\nAfter scripting the operative models with the KTUI Extender, you should \nsee this UI floating over their heads. It includes:\n► 1. HP Bar. Left/right click it to reduce/add wounds to the \noperative.\n► 2. The current order icon. Left click to toggle Ready/Expended, \nright click - to toggle Engage/Conceal (note that when a Guard/\nGuard (Concealed) token is attached to an operative, the order \ntoken will change accordingly.\n► 3. Injure icon. Appears when the wound count goes below half.\n► 4. Attached token icon. Created by dragging a token over the \noperative model. Removed by right clicking.\n► 5. Counter token icon. Some tokens might create a counter near \ntheir icons. Left/Right click to increase/decrease this number.\n►Operative model UI\nRight click an operative model to \nbring up its context menu. Here you \ncan access some additional tools:\n► Save/Load place - same as the \nbuttons seen at the Extender board, \nbut applied only to this selected \noperative. Most commonly used to \nsave the position before moving the \nmodel to allow a quick \"Undo\" if a \nplayer changes their mind. Also \nuseful for tracking mid-turning point \nor counteraction moves.\n► Movement - creates a movement \ntemplate tool. Useful for precise \nmovement where each fraction of an \ninch counts. Hover over it for short \ninstructions.\n► Targeting Lines - creates a line of \nsight/targeting tool. Great for \ndetermining cover and/or obscure \nwhile shooting. Hover over it for short \ninstructions.\n► Update stats - for advanced users \nand modders. Updates the model's \nstats using values from the object's \ndescription.\n► Change UI position - cycles \nthrough several preset positions of \nthe overhead UI. Useful for big and \ntall models that might be clipping \nthrough the UI.\n►Context menu\n►Movement tool\n►Targeting Lines Tool\n1 2 \n4 5 5 \n3 \n8OPERATIVE MODELS: The operative UI and tools",
+        "blocks": [
+          {
+            "type": "heading",
+            "russian": "8. ИНТЕРФЕЙС И ИНСТРУМЕНТЫ ОПЕРАТИВНИКОВ"
+          },
+          {
+            "type": "paragraph",
+            "russian": "После KTUI Extender над моделями появляется интерфейс:\n1. Полоса ран (HP Bar). Левая/правая кнопка мыши уменьшает/увеличивает количество ран.\n2. Значок текущего приказа. Левая кнопка переключает состояние «готов/использован» (Ready/Expended), правая — «Бой/Скрытность» (Engage/Conceal). Если на модель прикреплён жетон «Дозор» (Guard) или «Дозор в скрытности» (Guard Concealed), значок приказа меняется соответствующим образом.\n3. Значок тяжёлого ранения: появляется при количестве ран меньше половины начального.\n4. Значок прикреплённого жетона: создаётся при перетаскивании жетона на модель. Правый щелчок удаляет его.\n5. Счётчик жетона: у некоторых жетонов рядом со значком появляется число. Левая/правая кнопка увеличивает/уменьшает его."
+          },
+          {
+            "type": "paragraph",
+            "russian": "Правый щелчок на модели открывает дополнительные инструменты:\n• «Сохранить/восстановить позицию» (Save/Load place): как команды планшета Extender, но только для выбранного оперативника. Обычно позицию сохраняют перед перемещением, чтобы быстро отменить его. Это также помогает отслеживать перемещения внутри раунда и при контрдействии.\n• «Измерить перемещение» (Movement): создаёт шаблон для точного движения. Краткая инструкция появляется при наведении курсора.\n• «Линии прицеливания» (Targeting Lines): инструмент линии видимости и выбора цели для определения укрытия и заслонения при стрельбе. Краткая инструкция появляется при наведении.\n• «Обновить характеристики» (Update stats): команда для опытных пользователей и моддеров. Считывает характеристики модели из описания объекта.\n• «Переместить интерфейс» (Change UI position): переключает несколько позиций панели над моделью. Полезно для крупных или высоких моделей, перекрывающих интерфейс."
+          },
+          {
+            "type": "source-images",
+            "captionsRussian": [
+              "Панель над оперативником: 1 — раны, 2 — приказ, 3 — тяжёлое ранение, 4 — прикреплённый жетон, 5 — счётчик.",
+              "Контекстное меню оперативника.",
+              "Шаблон перемещения.",
+              "Инструмент линий прицеливания."
+            ],
+            "russian": "Иллюстрации из исходного руководства."
+          },
+          {
+            "type": "paragraph",
+            "russian": "Обозначения на снимках: Save place — сохранить позицию; Load place — восстановить позицию; Movement — шаблон перемещения; Targeting Lines — линии прицеливания; Update stats — обновить характеристики; Change UI position — переместить интерфейс; HP — оставшиеся раны; Ready — готов; Expended — использован; Engage — «Бой»; Conceal — «Скрытность»; Guard — «Дозор»; Guard (Concealed) — «Дозор в скрытности». Подсказка шаблона перемещения: наведите курсор и нажимайте 1–6, чтобы менять расстояние; 8 — отменить последний отрезок; 9 — подтвердить отрезок; 0 — закончить и переместить модель. Max 2 дюйма — максимальное расстояние 2 дюйма."
+          }
+        ]
+      },
+      {
+        "sourcePage": 10,
+        "english": "GSPublisherVersion 0.2.100.100\nOPERATIVE MODELS\nIN-GAME DATASHEET\nThis mod features an in-game Unit Datasheet functionality that displays \nstats and rules in a format similar to the operative datacards. This \nfeature gathers data from the stats scripted within the hidden values of \nthe operative models. Please note that this data relies on operative \nmodels being updated with the latest New Recruit stats through a \nCommand Node object. \n► To display the Unit Datasheet, simply press R while hovering over an \noperative or while having one selected. \n► The weapon tabs are interactable - left click them to spawn a \nnumber of dice required to make attacks with the weapon. Right \nclick the weapon tab and the spawned dice are also rolled \nautomatically.\n9OPERATIVE MODELS: In-game Datasheet",
+        "blocks": [
+          {
+            "type": "heading",
+            "russian": "9. КАРТА ДАННЫХ В ИГРЕ (IN-GAME DATASHEET)"
+          },
+          {
+            "type": "paragraph",
+            "russian": "Мод показывает характеристики и правила в формате, похожем на карту данных оперативника. Данные берутся из скрытых значений, записанных в модели. Для актуальности модели должны быть обновлены последними характеристиками New Recruit через командный узел."
+          },
+          {
+            "type": "paragraph",
+            "russian": "Наведите курсор на оперативника или выберите его и нажмите R, чтобы открыть карту данных.\nВкладки оружия интерактивны: левый щелчок создаёт нужное количество кубиков атаки; правый щелчок также автоматически бросает созданные кубики."
+          },
+          {
+            "type": "source-images",
+            "captionsRussian": [
+              "Пример карты данных в интерфейсе. Полный перевод текста примера приведён ниже."
+            ],
+            "russian": "Иллюстрации из исходного руководства."
+          },
+          {
+            "type": "heading",
+            "russian": "ПРИМЕР КАРТЫ НА ИЛЛЮСТРАЦИИ"
+          },
+          {
+            "type": "paragraph",
+            "russian": "Дуэлянт со звёздным штормом (Voidscarred Starstorm Duellist). APL: 2; перемещение (Move): 7 дюймов; спасбросок (Save): 4+; раны (Wounds): 8."
+          },
+          {
+            "type": "paragraph",
+            "russian": "Кулаки (Fists): 3 атаки, попадание 3+, урон 2/3, дополнительных правил нет.\nФузионный пистолет (Fusion pistol): 4 атаки, попадание 3+, урон 5/3; дальность (Range) 3 дюйма, разрушительное (Devastating) 3, бронебойное (Piercing). Значение Piercing на исходном снимке обрезано.\nСюрикенный пистолет (Shuriken pistol): 4 атаки, попадание 3+, урон 3/4; дальность 8 дюймов, раздирающее (Rending)."
+          },
+          {
+            "type": "heading",
+            "russian": "Быстрый спуск (Quick on the Trigger)"
+          },
+          {
+            "type": "paragraph",
+            "russian": "Этот оперативник может выполнять действие «Стрельба» (Shoot), находясь в дистанции контроля вражеского оперативника. В таком случае допустимой целью может быть только враг в дистанции контроля исполнителя. Это также можно делать с приказом «Скрытность» (Conceal)."
+          },
+          {
+            "type": "heading",
+            "russian": "Пистолетный шквал (Pistol Barrage) — 1 AP"
+          },
+          {
+            "type": "paragraph",
+            "russian": "Выполните два бесплатных действия «Стрельба» этим оперативником. Это имеет приоритет над ограничениями действий. Для одного действия выберите его фузионный пистолет, для другого — сюрикенный; порядок произвольный."
+          }
+        ]
+      }
+    ]
+  }
+}

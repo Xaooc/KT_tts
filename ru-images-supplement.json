@@ -1,0 +1,1523 @@
+{
+  "b4c77704334e8617": {
+    "kind": "card",
+    "titleEnglish": "Battleclade Kill Team",
+    "titleRussian": "Отряд Боевой клады (Battleclade Kill Team)",
+    "categoryEnglish": "BATTLECLADE · KILL TEAM",
+    "categoryRussian": "БОЕВАЯ КЛАДА (BATTLECLADE) · ОТРЯД",
+    "blocks": [
+      {
+        "type": "paragraph",
+        "headingEnglish": "Archetypes",
+        "headingRussian": "Архетипы (Archetypes)",
+        "english": "Infiltration, Recon.",
+        "russian": "Проникновение (Infiltration), Разведка (Recon).",
+        "currentRuleSource": {
+          "officialPdf": "https://assets.warhammer-community.com/eng_battleclade_online_rules-crotgv4bz2-4lvylnxlku.pdf",
+          "date": "2026-08-26",
+          "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/battleclade/",
+          "checkedOn": "2026-10-05"
+        }
+      },
+      {
+        "type": "paragraph",
+        "headingEnglish": "Operatives",
+        "headingRussian": "Оперативники (Operatives)",
+        "english": "1 BATTLECLADE TECHNOARCHEOLOGIST operative. 1 BATTLECLADE SERVITOR UNDERSEER operative. 8 operatives selected from AUTO-PROXY SERVITOR; BREACHER SERVITOR; COMBAT SERVITOR with one option (Servo-claw and incendine igniter; Servo-claw and meltagun; Servo-claw and phosphor blaster); GUN SERVITOR with heavy arc rifle and augmetic claw; GUN SERVITOR with heavy bolter and augmetic claw; or TECHNOMEDIC SERVITOR. Other than COMBAT SERVITOR operatives, include each operative on this list only once. Include no more than one COMBAT SERVITOR with meltagun and no more than three COMBAT SERVITORS with incendine igniter.",
+        "russian": "1 Техноархеолог (TECHNOARCHEOLOGIST).\n1 Сервитор-поднадзиратель (SERVITOR UNDERSEER).\nЕщё 8 оперативников: Автопрокси-сервитор (AUTO-PROXY SERVITOR); Сервитор-проломщик (BREACHER SERVITOR); Боевой сервитор (COMBAT SERVITOR) с сервоклешнёй и инцендиновым воспламенителем, мелтаганом либо фосфорным бластером; Стрелковый сервитор (GUN SERVITOR) с аугметической клешнёй и тяжёлой дуговой винтовкой либо тяжёлым болтером; Сервитор-техномедик (TECHNOMEDIC SERVITOR).",
+        "currentRuleSource": {
+          "officialPdf": "https://assets.warhammer-community.com/eng_battleclade_online_rules-crotgv4bz2-4lvylnxlku.pdf",
+          "date": "2026-08-26",
+          "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/battleclade/",
+          "checkedOn": "2026-10-05"
+        }
+      },
+      {
+        "type": "paragraph",
+        "headingEnglish": "Selection restrictions",
+        "headingRussian": "Ограничения состава (Selection restrictions)",
+        "english": "Other than COMBAT SERVITOR operatives each option can only be included once. Up to one COMBAT SERVITOR with meltagun and up to three with incendine igniter.",
+        "russian": "Каждый вариант из списка можно включить лишь один раз, кроме Боевых сервиторов (COMBAT SERVITOR). Можно выбрать не больше одного Боевого сервитора с мелтаганом и не больше трёх с инцендиновыми воспламенителями.",
+        "currentRuleSource": {
+          "officialPdf": "https://assets.warhammer-community.com/eng_battleclade_online_rules-crotgv4bz2-4lvylnxlku.pdf",
+          "date": "2026-08-26",
+          "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/battleclade/",
+          "checkedOn": "2026-10-05"
+        }
+      }
+    ],
+    "verifiedAgainstPixels": true,
+    "generatedSupplement": true,
+    "currentRuleSources": [
+      {
+        "officialPdf": "https://assets.warhammer-community.com/eng_battleclade_online_rules-crotgv4bz2-4lvylnxlku.pdf",
+        "date": "2026-08-26",
+        "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/battleclade/",
+        "checkedOn": "2026-10-05"
+      }
+    ]
+  },
+  "1caa55baed2639e7": {
+    "kind": "card",
+    "titleEnglish": "Noospheric Network",
+    "titleRussian": "Ноосферическая сеть (Noospheric Network)",
+    "categoryEnglish": "BATTLECLADE · FACTION RULE",
+    "categoryRussian": "БОЕВАЯ КЛАДА (BATTLECLADE) · ПРАВИЛО ФРАКЦИИ",
+    "blocks": [
+      {
+        "type": "paragraph",
+        "headingEnglish": "Transfer Power",
+        "headingRussian": "Передача энергии (Transfer Power)",
+        "english": "Once during each friendly BATTLECLADE SERVITOR’s activation, before or after an action, spend 1AP to TRANSFER POWER. After that activation NETWORK COUNTERACT with one other friendly SERVITOR before your opponent activates.",
+        "russian": "Один раз в активацию каждого дружественного Сервитора Боевой клады (BATTLECLADE SERVITOR), до или после выполнения им действия, можно потратить 1 AP на передачу энергии (TRANSFER POWER). После той активации один другой дружественный Сервитор выполняет Сетевое контрдействие (NETWORK COUNTERACT) до активации противника.",
+        "currentRuleSource": {
+          "officialPdf": "https://assets.warhammer-community.com/eng_battleclade_online_rules-crotgv4bz2-4lvylnxlku.pdf",
+          "date": "2026-08-26",
+          "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/battleclade/",
+          "checkedOn": "2026-10-05"
+        }
+      },
+      {
+        "type": "paragraph",
+        "headingEnglish": "Network Counteract",
+        "headingRussian": "Сетевое контрдействие (Network Counteract)",
+        "english": "Whenever you NETWORK COUNTERACT first select the order, then perform a free 1AP action with movement capped at 2\". The opponent then activates normally. APL less than 2 prevents TRANSFER POWER and NETWORK COUNTERACT. It is a counteraction but does not require expended or Engage; a ready operative can activate later. It cannot NETWORK COUNTERACT again or counteract in the same turning point.",
+        "russian": "Сначала выберите приказ оперативника. Затем он бесплатно выполняет действие стоимостью 1 AP, перемещаясь во время него не дальше 2 дюймов. После этого противник активирует оперативника как обычно.\nОперативник с APL меньше 2 не может передавать энергию или выполнять Сетевое контрдействие. NETWORK COUNTERACT считается контрдействием, но для него не требуется состояние «Использован» (Expended) или приказ «Бой» (Engage). Готовый (Ready) оперативник после этого может активироваться обычным образом в том же раунде. Выполнив NETWORK COUNTERACT, оперативник в этом раунде больше не может выполнить его или обычное контрдействие.",
+        "currentRuleSource": {
+          "officialPdf": "https://assets.warhammer-community.com/eng_battleclade_online_rules-crotgv4bz2-4lvylnxlku.pdf",
+          "date": "2026-08-26",
+          "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/battleclade/",
+          "checkedOn": "2026-10-05"
+        }
+      }
+    ],
+    "verifiedAgainstPixels": true,
+    "generatedSupplement": true,
+    "currentRuleSources": [
+      {
+        "officialPdf": "https://assets.warhammer-community.com/eng_battleclade_online_rules-crotgv4bz2-4lvylnxlku.pdf",
+        "date": "2026-08-26",
+        "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/battleclade/",
+        "checkedOn": "2026-10-05"
+      }
+    ]
+  },
+  "01b45fe60e21aa56": {
+    "kind": "card",
+    "titleEnglish": "Noospheric Possession",
+    "titleRussian": "Ноосферическая одержимость (Noospheric Possession)",
+    "categoryEnglish": "BATTLECLADE · STRATEGY PLOY",
+    "categoryRussian": "БОЕВАЯ КЛАДА (BATTLECLADE) · СТРАТЕГИЧЕСКАЯ УЛОВКА",
+    "blocks": [
+      {
+        "type": "paragraph",
+        "headingEnglish": "Noospheric Possession",
+        "headingRussian": "Ноосферическая одержимость (Noospheric Possession)",
+        "english": "SUPPORT. Whenever a friendly BATTLECLADE SERVITOR operative is within 6\" of a friendly BATTLECLADE AUTO-PROXY or BATTLECLADE SERVITOR UNDERSEER operative, that friendly SERVITOR operative’s weapons have the Accurate 1 weapon rule. For the purposes of the Comms Device universal equipment, the operative the distance is being determined from must control your Comms Device marker to add 3\" to its distance requirement for this rule.",
+        "russian": "ПОДДЕРЖКА (SUPPORT). Пока дружественный Сервитор Боевой клады (BATTLECLADE SERVITOR) находится в пределах 6 дюймов от дружественного Автопрокси (AUTO-PROXY) или Сервитора-поднадзирателя (SERVITOR UNDERSEER), его оружие получает «Точное 1» (Accurate 1). Чтобы «Средство связи» (Comms Device) добавило 3 дюйма к этой дистанции, оперативник, от которого она измеряется, должен контролировать ваш маркер средства связи.",
+        "currentRuleSource": {
+          "officialPdf": "https://assets.warhammer-community.com/eng_battleclade_online_rules-crotgv4bz2-4lvylnxlku.pdf",
+          "date": "2026-08-26",
+          "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/battleclade/",
+          "checkedOn": "2026-10-05"
+        }
+      }
+    ],
+    "verifiedAgainstPixels": true,
+    "generatedSupplement": true,
+    "currentRuleSources": [
+      {
+        "officialPdf": "https://assets.warhammer-community.com/eng_battleclade_online_rules-crotgv4bz2-4lvylnxlku.pdf",
+        "date": "2026-08-26",
+        "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/battleclade/",
+        "checkedOn": "2026-10-05"
+      }
+    ]
+  },
+  "0dfc469dae997f2b": {
+    "kind": "card",
+    "titleEnglish": "Duty of Reclamation",
+    "titleRussian": "Долг возвращения (Duty of Reclamation)",
+    "categoryEnglish": "BATTLECLADE · STRATEGY PLOY",
+    "categoryRussian": "БОЕВАЯ КЛАДА (BATTLECLADE) · СТРАТЕГИЧЕСКАЯ УЛОВКА",
+    "blocks": [
+      {
+        "type": "paragraph",
+        "headingEnglish": "Duty of Reclamation",
+        "headingRussian": "Долг возвращения (Duty of Reclamation)",
+        "english": "Once per action, you can use the Command Re-roll firefight ploy for 0CP if the attack or defence dice was rolled for a friendly BATTLECLADE operative that contests an objective marker or one of your mission markers.",
+        "russian": "Один раз за действие можно применить «Командный переброс» (Command Re-roll) за 0 CP, если кубик атаки или защиты был брошен за дружественного оперативника Боевой клады (BATTLECLADE), оспаривающего маркер цели либо один из ваших маркеров миссии.",
+        "currentRuleSource": {
+          "officialPdf": "https://assets.warhammer-community.com/eng_battleclade_online_rules-crotgv4bz2-4lvylnxlku.pdf",
+          "date": "2026-08-26",
+          "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/battleclade/",
+          "checkedOn": "2026-10-05"
+        }
+      }
+    ],
+    "verifiedAgainstPixels": true,
+    "generatedSupplement": true,
+    "currentRuleSources": [
+      {
+        "officialPdf": "https://assets.warhammer-community.com/eng_battleclade_online_rules-crotgv4bz2-4lvylnxlku.pdf",
+        "date": "2026-08-26",
+        "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/battleclade/",
+        "checkedOn": "2026-10-05"
+      }
+    ]
+  },
+  "c6aefffd6f46fa9e": {
+    "kind": "card",
+    "titleEnglish": "Incantation of the Iron Soul",
+    "titleRussian": "Заклинание железной души (Incantation of the Iron Soul)",
+    "categoryEnglish": "BATTLECLADE · STRATEGY PLOY",
+    "categoryRussian": "БОЕВАЯ КЛАДА (BATTLECLADE) · СТРАТЕГИЧЕСКАЯ УЛОВКА",
+    "blocks": [
+      {
+        "type": "paragraph",
+        "headingEnglish": "Incantation of the Iron Soul",
+        "headingRussian": "Заклинание железной души (Incantation of the Iron Soul)",
+        "english": "Whenever an attack dice inflicts damage of 3 or more on a friendly BATTLECLADE operative, roll one D6: on a 4+, subtract 1 from that inflicted damage.",
+        "russian": "Каждый раз, когда кубик атаки наносит дружественному оперативнику Боевой клады (BATTLECLADE) 3 или больше урона, бросьте D6. На 4+ уменьшите нанесённый этим кубиком урон на 1.",
+        "currentRuleSource": {
+          "officialPdf": "https://assets.warhammer-community.com/eng_battleclade_online_rules-crotgv4bz2-4lvylnxlku.pdf",
+          "date": "2026-08-26",
+          "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/battleclade/",
+          "checkedOn": "2026-10-05"
+        }
+      }
+    ],
+    "verifiedAgainstPixels": true,
+    "generatedSupplement": true,
+    "currentRuleSources": [
+      {
+        "officialPdf": "https://assets.warhammer-community.com/eng_battleclade_online_rules-crotgv4bz2-4lvylnxlku.pdf",
+        "date": "2026-08-26",
+        "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/battleclade/",
+        "checkedOn": "2026-10-05"
+      }
+    ]
+  },
+  "4de3c9798e2375bc": {
+    "kind": "card",
+    "titleEnglish": "Prioritised Acquisition",
+    "titleRussian": "Приоритетное приобретение (Prioritised Acquisition)",
+    "categoryEnglish": "BATTLECLADE · STRATEGY PLOY",
+    "categoryRussian": "БОЕВАЯ КЛАДА (BATTLECLADE) · СТРАТЕГИЧЕСКАЯ УЛОВКА",
+    "blocks": [
+      {
+        "type": "paragraph",
+        "headingEnglish": "Prioritised Acquisition",
+        "headingRussian": "Приоритетное приобретение (Prioritised Acquisition)",
+        "english": "Select one objective marker or one of your mission markers. Whenever determining control of that marker, treat the total APL stat of friendly BATTLECLADE operatives that contest it as 1 higher if at least one friendly BATTLECLADE operative contests that marker. Note this isn’t a change to the APL stat, so any changes are cumulative with this. Whenever a friendly BATTLECLADE operative is within 3\" of that marker, add 1 to the Atk stat of its melee weapons (to a maximum of 4).",
+        "russian": "Выберите маркер цели либо один из ваших маркеров миссии. При определении контроля над ним считайте суммарный APL оспаривающих его дружественных оперативников Боевой клады (BATTLECLADE) на 1 выше, если хотя бы один такой оперативник оспаривает маркер. Это не изменение характеристики APL: другие изменения складываются с ним. Пока дружественный оперативник Боевой клады в пределах 3 дюймов от маркера, увеличьте ATK его оружия ближнего боя на 1, максимум до 4.",
+        "currentRuleSource": {
+          "officialPdf": "https://assets.warhammer-community.com/eng_battleclade_online_rules-crotgv4bz2-4lvylnxlku.pdf",
+          "date": "2026-08-26",
+          "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/battleclade/",
+          "checkedOn": "2026-10-05"
+        }
+      }
+    ],
+    "verifiedAgainstPixels": true,
+    "generatedSupplement": true,
+    "currentRuleSources": [
+      {
+        "officialPdf": "https://assets.warhammer-community.com/eng_battleclade_online_rules-crotgv4bz2-4lvylnxlku.pdf",
+        "date": "2026-08-26",
+        "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/battleclade/",
+        "checkedOn": "2026-10-05"
+      }
+    ]
+  },
+  "23b88661a9d882a7": {
+    "kind": "card",
+    "titleEnglish": "System Exorcism",
+    "titleRussian": "Изгнание из системы (System Exorcism)",
+    "categoryEnglish": "BATTLECLADE · FIREFIGHT PLOY",
+    "categoryRussian": "БОЕВАЯ КЛАДА (BATTLECLADE) · УЛОВКА ПЕРЕСТРЕЛКИ",
+    "blocks": [
+      {
+        "type": "paragraph",
+        "headingEnglish": "System Exorcism",
+        "headingRussian": "Изгнание из системы (System Exorcism)",
+        "english": "Use this firefight ploy when you would activate a friendly BATTLECLADE operative. Remove one rules effect or stat change your opponent has applied to it (e.g. Poison token, -1APL, cannot be activated or perform actions, etc.), then activate it. This ploy cannot allow it to regain lost wounds, ignore the effects of being injured, or remove mission pack rules.",
+        "russian": "Примените эту уловку, когда собираетесь активировать дружественного оперативника Боевой клады (BATTLECLADE). Уберите один эффект правил либо изменение характеристики, которое противник применил к нему: например жетон яда (Poison), −1 APL или запрет активации либо действий. Затем активируйте оперативника. Уловка не позволяет восстанавливать потерянные раны, игнорировать ранение (Injured) или убирать правила набора миссий.",
+        "currentRuleSource": {
+          "officialPdf": "https://assets.warhammer-community.com/eng_battleclade_online_rules-crotgv4bz2-4lvylnxlku.pdf",
+          "date": "2026-08-26",
+          "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/battleclade/",
+          "checkedOn": "2026-10-05"
+        }
+      }
+    ],
+    "verifiedAgainstPixels": true,
+    "generatedSupplement": true,
+    "currentRuleSources": [
+      {
+        "officialPdf": "https://assets.warhammer-community.com/eng_battleclade_online_rules-crotgv4bz2-4lvylnxlku.pdf",
+        "date": "2026-08-26",
+        "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/battleclade/",
+        "checkedOn": "2026-10-05"
+      }
+    ]
+  },
+  "77005c0d41055c09": {
+    "kind": "card",
+    "titleEnglish": "Remote Access",
+    "titleRussian": "Удалённый доступ (Remote Access)",
+    "categoryEnglish": "BATTLECLADE · FIREFIGHT PLOY",
+    "categoryRussian": "БОЕВАЯ КЛАДА (BATTLECLADE) · УЛОВКА ПЕРЕСТРЕЛКИ",
+    "blocks": [
+      {
+        "type": "paragraph",
+        "headingEnglish": "Remote Access",
+        "headingRussian": "Удалённый доступ (Remote Access)",
+        "english": "Use this firefight ploy during a friendly BATTLECLADE TECH-PRIEST operative’s activation. Once during that activation, you can use one of the following rules: (1) That operative doesn’t require a marker to be within its control range to perform a mission action that usually requires this (this takes precedence over that action’s conditions). Instead, the marker must be within 4\" of it and no enemy operatives can contest that marker. However, you can ignore enemy operatives within control range of other friendly BATTLECLADE operatives when determining this. (2) That operative doesn’t require a hatchway’s access point to be within its control range to perform an Operate Hatch action. Instead, that access point must be within 4\" of it.",
+        "russian": "Примените эту уловку в активацию дружественного Техножреца Боевой клады (BATTLECLADE TECH-PRIEST). Один раз в ту активацию используйте один вариант:\n• Для миссионного действия, обычно требующего маркера в дистанции контроля оперативника, вместо этого достаточно маркера в пределах 4 дюймов от него. Маркер не должен оспариваться врагами; при проверке игнорируйте врагов в дистанции контроля других дружественных оперативников Боевой клады. Это правило имеет приоритет над условиями действия.\n• Для «Управлять люком» (Operate Hatch) точка доступа может находиться в пределах 4 дюймов от оперативника вместо его дистанции контроля.",
+        "currentRuleSource": {
+          "officialPdf": "https://assets.warhammer-community.com/eng_battleclade_online_rules-crotgv4bz2-4lvylnxlku.pdf",
+          "date": "2026-08-26",
+          "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/battleclade/",
+          "checkedOn": "2026-10-05"
+        }
+      }
+    ],
+    "verifiedAgainstPixels": true,
+    "generatedSupplement": true,
+    "currentRuleSources": [
+      {
+        "officialPdf": "https://assets.warhammer-community.com/eng_battleclade_online_rules-crotgv4bz2-4lvylnxlku.pdf",
+        "date": "2026-08-26",
+        "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/battleclade/",
+        "checkedOn": "2026-10-05"
+      }
+    ]
+  },
+  "ca77e13e0a494863": {
+    "kind": "card",
+    "titleEnglish": "Auto-Ferric Supplication",
+    "titleRussian": "Автоферрическая молитва (Auto-Ferric Supplication)",
+    "categoryEnglish": "BATTLECLADE · FIREFIGHT PLOY",
+    "categoryRussian": "БОЕВАЯ КЛАДА (BATTLECLADE) · УЛОВКА ПЕРЕСТРЕЛКИ",
+    "blocks": [
+      {
+        "type": "paragraph",
+        "headingEnglish": "Auto-Ferric Supplication",
+        "headingRussian": "Автоферрическая молитва (Auto-Ferric Supplication)",
+        "english": "Use this firefight ploy when an operative is shooting a friendly BATTLECLADE TECH-PRIEST operative, at the start of the Roll Attack Dice step. Until the end of the sequence, ignore the Piercing weapon rule.",
+        "russian": "Примените эту уловку, когда оперативник стреляет по дружественному Техножрецу Боевой клады (BATTLECLADE TECH-PRIEST), в начале шага броска кубиков атаки (Roll Attack Dice). До конца последовательности игнорируйте правило «Бронебойное» (Piercing).",
+        "currentRuleSource": {
+          "officialPdf": "https://assets.warhammer-community.com/eng_battleclade_online_rules-crotgv4bz2-4lvylnxlku.pdf",
+          "date": "2026-08-26",
+          "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/battleclade/",
+          "checkedOn": "2026-10-05"
+        }
+      }
+    ],
+    "verifiedAgainstPixels": true,
+    "generatedSupplement": true,
+    "currentRuleSources": [
+      {
+        "officialPdf": "https://assets.warhammer-community.com/eng_battleclade_online_rules-crotgv4bz2-4lvylnxlku.pdf",
+        "date": "2026-08-26",
+        "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/battleclade/",
+        "checkedOn": "2026-10-05"
+      }
+    ]
+  },
+  "c9c426d501a7b871": {
+    "kind": "card",
+    "titleEnglish": "Servile Surrogacy",
+    "titleRussian": "Сервильное замещение (Servile Surrogacy)",
+    "categoryEnglish": "BATTLECLADE · FIREFIGHT PLOY",
+    "categoryRussian": "БОЕВАЯ КЛАДА (BATTLECLADE) · УЛОВКА ПЕРЕСТРЕЛКИ",
+    "blocks": [
+      {
+        "type": "paragraph",
+        "headingEnglish": "Servile Surrogacy",
+        "headingRussian": "Сервильное замещение (Servile Surrogacy)",
+        "english": "Use this firefight ploy when a friendly BATTLECLADE TECH-PRIEST operative is selected as the valid target of a Shoot action or to fight against during the Fight action. Select one friendly BATTLECLADE SERVITOR operative visible to and within 3\" of that first friendly operative to become the valid target or to be fought against (as appropriate) instead, even if it wouldn’t normally be valid for this. If it’s the Fight action, treat that SERVITOR operative as being within the fighting operative’s control range for the duration of that action. If it’s the Shoot action, that SERVITOR operative is only in cover or obscured if the original target was. This ploy has no effect if it’s the Shoot action and the ranged weapon has the Blast or Torrent weapon rule.",
+        "russian": "Примените эту уловку, когда дружественный Техножрец Боевой клады (BATTLECLADE TECH-PRIEST) выбран допустимой целью «Стрельбы» (Shoot) либо противником для «Ближнего боя» (Fight). Выберите дружественного Сервитора Боевой клады (BATTLECLADE SERVITOR), видимого техножрецу и в пределах 3 дюймов от него. Сервитор становится целью либо противником для боя вместо техножреца, даже если обычно такой выбор недопустим. При Fight считайте сервитора находящимся в дистанции контроля сражающегося оперативника до конца действия. При Shoot сервитор получает укрытие (Cover) и заслонение (Obscured), только если их имела исходная цель. Уловка не действует при Shoot оружием с «Взрывом» (Blast) или «Потоком» (Torrent).",
+        "currentRuleSource": {
+          "officialPdf": "https://assets.warhammer-community.com/eng_battleclade_online_rules-crotgv4bz2-4lvylnxlku.pdf",
+          "date": "2026-08-26",
+          "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/battleclade/",
+          "checkedOn": "2026-10-05"
+        }
+      }
+    ],
+    "verifiedAgainstPixels": true,
+    "generatedSupplement": true,
+    "currentRuleSources": [
+      {
+        "officialPdf": "https://assets.warhammer-community.com/eng_battleclade_online_rules-crotgv4bz2-4lvylnxlku.pdf",
+        "date": "2026-08-26",
+        "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/battleclade/",
+        "checkedOn": "2026-10-05"
+      }
+    ]
+  },
+  "efa222401fa9519c": {
+    "kind": "card",
+    "titleEnglish": "Covert Guises",
+    "titleRussian": "Скрытые обличья (Covert Guises)",
+    "categoryEnglish": "BATTLECLADE · FACTION EQUIPMENT",
+    "categoryRussian": "БОЕВАЯ КЛАДА (BATTLECLADE) · СНАРЯЖЕНИЕ ФРАКЦИИ",
+    "blocks": [
+      {
+        "type": "paragraph",
+        "headingEnglish": "Covert Guises",
+        "headingRussian": "Скрытые обличья (Covert Guises)",
+        "english": "After revealing this equipment option, roll one D3. As a STRATEGIC GAMBIT in the first turning point, a number of friendly BATTLECLADE operatives equal to the result that are wholly within your drop zone can immediately perform a free Reposition action, but must end that move wholly within 3\" of your drop zone. Your TECHNOARCHEOLOGIST operative cannot perform more than one Reposition action in the Strategy phase of the first turning point (i.e. as a result of the Seeker of Divine Arcana rule as well).",
+        "russian": "После раскрытия этого варианта снаряжения бросьте D3. В качестве стратегического гамбита (STRATEGIC GAMBIT) в первом раунде число дружественных оперативников Боевой клады (BATTLECLADE), равное результату броска, может немедленно бесплатно выполнить «Перемещение» (Reposition), если они целиком в вашей зоне высадки. Каждый должен закончить перемещение целиком в пределах 3 дюймов от зоны высадки. Ваш Техноархеолог (TECHNOARCHEOLOGIST) не может выполнить больше одного Reposition в фазе стратегии первого раунда, включая «Искателя священных тайн» (Seeker of Divine Arcana).",
+        "currentRuleSource": {
+          "officialPdf": "https://assets.warhammer-community.com/eng_battleclade_online_rules-crotgv4bz2-4lvylnxlku.pdf",
+          "date": "2026-08-26",
+          "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/battleclade/",
+          "checkedOn": "2026-10-05"
+        }
+      }
+    ],
+    "verifiedAgainstPixels": true,
+    "generatedSupplement": true,
+    "currentRuleSources": [
+      {
+        "officialPdf": "https://assets.warhammer-community.com/eng_battleclade_online_rules-crotgv4bz2-4lvylnxlku.pdf",
+        "date": "2026-08-26",
+        "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/battleclade/",
+        "checkedOn": "2026-10-05"
+      }
+    ]
+  },
+  "201f8b3f8c0606f4": {
+    "kind": "card",
+    "titleEnglish": "Electromantic Capacitors",
+    "titleRussian": "Электромантические конденсаторы (Electromantic Capacitors)",
+    "categoryEnglish": "BATTLECLADE · FACTION EQUIPMENT",
+    "categoryRussian": "БОЕВАЯ КЛАДА (BATTLECLADE) · СНАРЯЖЕНИЕ ФРАКЦИИ",
+    "blocks": [
+      {
+        "type": "paragraph",
+        "headingEnglish": "Electromantic Capacitors",
+        "headingRussian": "Электромантические конденсаторы (Electromantic Capacitors)",
+        "english": "Friendly BATTLECLADE operatives’ melee weapons have the Shock weapon rule. Whenever a friendly BATTLECLADE operative is retaliating, its melee weapons also have the Severe weapon rule.",
+        "russian": "Оружие ближнего боя дружественных оперативников Боевой клады (BATTLECLADE) получает «Потрясение» (Shock). Когда дружественный оперативник Боевой клады отвечает в ближнем бою, его оружие ближнего боя также получает «Сокрушительное» (Severe).",
+        "currentRuleSource": {
+          "officialPdf": "https://assets.warhammer-community.com/eng_battleclade_online_rules-crotgv4bz2-4lvylnxlku.pdf",
+          "date": "2026-08-26",
+          "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/battleclade/",
+          "checkedOn": "2026-10-05"
+        }
+      }
+    ],
+    "verifiedAgainstPixels": true,
+    "generatedSupplement": true,
+    "currentRuleSources": [
+      {
+        "officialPdf": "https://assets.warhammer-community.com/eng_battleclade_online_rules-crotgv4bz2-4lvylnxlku.pdf",
+        "date": "2026-08-26",
+        "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/battleclade/",
+        "checkedOn": "2026-10-05"
+      }
+    ]
+  },
+  "a1c75d54c5a3102a": {
+    "kind": "card",
+    "titleEnglish": "Concealed Apparatus",
+    "titleRussian": "Скрытое вооружение (Concealed Apparatus)",
+    "categoryEnglish": "BATTLECLADE · FACTION EQUIPMENT",
+    "categoryRussian": "БОЕВАЯ КЛАДА (BATTLECLADE) · СНАРЯЖЕНИЕ ФРАКЦИИ",
+    "blocks": [
+      {
+        "type": "paragraph",
+        "headingEnglish": "Concealed Apparatus",
+        "headingRussian": "Скрытое вооружение (Concealed Apparatus)",
+        "english": "Once per battle, one COMBAT SERVITOR or GUN SERVITOR operative can use another weapon option on its datacard it didn’t select for the battle.",
+        "russian": "Один раз за бой один Боевой сервитор (COMBAT SERVITOR) либо Стрелковый сервитор (GUN SERVITOR) может использовать другой вариант оружия на своей карточке, который он не выбрал для боя.",
+        "currentRuleSource": {
+          "officialPdf": "https://assets.warhammer-community.com/eng_battleclade_online_rules-crotgv4bz2-4lvylnxlku.pdf",
+          "date": "2026-08-26",
+          "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/battleclade/",
+          "checkedOn": "2026-10-05"
+        }
+      }
+    ],
+    "verifiedAgainstPixels": true,
+    "generatedSupplement": true,
+    "currentRuleSources": [
+      {
+        "officialPdf": "https://assets.warhammer-community.com/eng_battleclade_online_rules-crotgv4bz2-4lvylnxlku.pdf",
+        "date": "2026-08-26",
+        "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/battleclade/",
+        "checkedOn": "2026-10-05"
+      }
+    ]
+  },
+  "202b89d026f56e02": {
+    "kind": "card",
+    "titleEnglish": "Neurocyclic Reserve Cells",
+    "titleRussian": "Нейроциклические резервные элементы (Neurocyclic Reserve Cells)",
+    "categoryEnglish": "BATTLECLADE · FACTION EQUIPMENT",
+    "categoryRussian": "БОЕВАЯ КЛАДА (BATTLECLADE) · СНАРЯЖЕНИЕ ФРАКЦИИ",
+    "blocks": [
+      {
+        "type": "paragraph",
+        "headingEnglish": "Neurocyclic Reserve Cells",
+        "headingRussian": "Нейроциклические резервные элементы (Neurocyclic Reserve Cells)",
+        "english": "Once per turning point, whenever you TRANSFER POWER, you can use this rule. If you do, you can TRANSFER POWER for 0AP (this takes precedence over the normal Noospheric Network rules).",
+        "russian": "Один раз за раунд при передаче энергии (TRANSFER POWER) можно применить это правило, чтобы передать энергию за 0 AP. Это имеет приоритет над обычными правилами Ноосферической сети (Noospheric Network).",
+        "currentRuleSource": {
+          "officialPdf": "https://assets.warhammer-community.com/eng_battleclade_online_rules-crotgv4bz2-4lvylnxlku.pdf",
+          "date": "2026-08-26",
+          "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/battleclade/",
+          "checkedOn": "2026-10-05"
+        }
+      }
+    ],
+    "verifiedAgainstPixels": true,
+    "generatedSupplement": true,
+    "currentRuleSources": [
+      {
+        "officialPdf": "https://assets.warhammer-community.com/eng_battleclade_online_rules-crotgv4bz2-4lvylnxlku.pdf",
+        "date": "2026-08-26",
+        "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/battleclade/",
+        "checkedOn": "2026-10-05"
+      }
+    ]
+  },
+  "1c4576f433d4781b": {
+    "kind": "card",
+    "titleEnglish": "Battleclade Technoarcheologist",
+    "titleRussian": "Техноархеолог (Battleclade Technoarcheologist)",
+    "categoryEnglish": "BATTLECLADE · OPERATIVE",
+    "categoryRussian": "БОЕВАЯ КЛАДА (BATTLECLADE) · ОПЕРАТИВНИК",
+    "blocks": [
+      {
+        "type": "paragraph",
+        "headingEnglish": "Seeker of Divine Arcana",
+        "headingRussian": "Искатель священных тайн (Seeker of Divine Arcana)",
+        "english": "You can immediately change this operative’s order and/or it can immediately perform a free Omniscanner, Fall Back, Place Marker, Pick Up Marker, Reposition or mission action. If it’s the Fall Back or Reposition action and this operative isn’t carrying a marker, it must end that move either within your drop zone (if this isn’t possible, then as close as possible to it), or with an objective marker or one of your mission markers within its control range.",
+        "russian": "СТРАТЕГИЧЕСКИЙ ГАМБИТ (STRATEGIC GAMBIT). Немедленно измените приказ этого оперативника и/или бесплатно выполните им «Омнисканер» (Omniscanner), «Отступление» (Fall Back), «Положить маркер» (Place Marker), «Поднять маркер» (Pick Up Marker), «Перемещение» (Reposition) либо миссионное действие. При Fall Back или Reposition, если он не несёт маркер, он должен закончить перемещение в вашей зоне высадки — если невозможно, как можно ближе к ней — либо с маркером цели или одним вашим маркером миссии в своей дистанции контроля.",
+        "currentRuleSource": {
+          "officialPdf": "https://assets.warhammer-community.com/eng_battleclade_online_rules-crotgv4bz2-4lvylnxlku.pdf",
+          "date": "2026-08-26",
+          "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/battleclade/",
+          "checkedOn": "2026-10-05"
+        }
+      },
+      {
+        "type": "paragraph",
+        "headingEnglish": "Omniscanner · 1 AP",
+        "headingRussian": "Омнисканер · 1 AP (Omniscanner)",
+        "english": "Select one enemy operative visible to or within 8\" of this operative to gain one of your Omniscanner tokens. Whenever a friendly BATTLECLADE operative is shooting against, fighting against or retaliating against an enemy operative that has one of your Omniscanner tokens, that friendly operative’s weapons have the Ceaseless weapon rule. This operative cannot perform this action while within control range of an enemy operative.",
+        "russian": "Выберите врага, видимого этому оперативнику либо находящегося в пределах 8 дюймов от него: враг получает ваш жетон Омнисканера (Omniscanner). Когда дружественный оперативник Боевой клады (BATTLECLADE) стреляет по врагу с вашим жетоном Омнисканера, сражается с ним либо отвечает ему в ближнем бою, его оружие получает «Непрерывное» (Ceaseless). Нельзя выполнять это действие в дистанции контроля врага.",
+        "currentRuleSource": {
+          "officialPdf": "https://assets.warhammer-community.com/eng_battleclade_online_rules-crotgv4bz2-4lvylnxlku.pdf",
+          "date": "2026-08-26",
+          "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/battleclade/",
+          "checkedOn": "2026-10-05"
+        }
+      }
+    ],
+    "verifiedAgainstPixels": true,
+    "generatedSupplement": true,
+    "currentRuleSources": [
+      {
+        "officialPdf": "https://assets.warhammer-community.com/eng_battleclade_online_rules-crotgv4bz2-4lvylnxlku.pdf",
+        "date": "2026-08-26",
+        "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/battleclade/",
+        "checkedOn": "2026-10-05"
+      }
+    ],
+    "stats": {
+      "APL": 3,
+      "Move": "6\"",
+      "Save": "3+",
+      "Wounds": 9
+    },
+    "weapons": [
+      {
+        "type": "R",
+        "english": "Eradication pistol",
+        "russian": "Пистолет искоренения",
+        "atk": 4,
+        "hit": "3+",
+        "dmg": "4/2",
+        "wrEnglish": "Range 8\", 1\" Devastating 3, Lethal 5+",
+        "wrRussian": "Дальность 8\" (Range 8\"), 1\" Опустошительное 3 (1\" Devastating 3), Смертоносное 5+ (Lethal 5+)"
+      },
+      {
+        "type": "M",
+        "english": "Servo-arc claw",
+        "russian": "Серводужная клешня",
+        "atk": 4,
+        "hit": "3+",
+        "dmg": "3/4",
+        "wrEnglish": "Severe, Shock",
+        "wrRussian": "Сокрушительное (Severe), Потрясение (Shock)"
+      }
+    ],
+    "footerEnglish": "BATTLECLADE, IMPERIUM, ADEPTUS MECHANICUS, TECH-PRIEST, LEADER, TECHNOARCHEOLOGIST; 32mm",
+    "footerRussian": "Боевая клада (BATTLECLADE), Империум (IMPERIUM), Адептус Механикус (ADEPTUS MECHANICUS), Техножрец (TECH-PRIEST), Лидер (LEADER), Техноархеолог (TECHNOARCHEOLOGIST) · 32 мм"
+  },
+  "0aa260c3594a9fda": {
+    "kind": "card",
+    "titleEnglish": "Battleclade Auto-Proxy Servitor",
+    "titleRussian": "Автопрокси-сервитор (Battleclade Auto-Proxy Servitor)",
+    "categoryEnglish": "BATTLECLADE · OPERATIVE",
+    "categoryRussian": "БОЕВАЯ КЛАДА (BATTLECLADE) · ОПЕРАТИВНИК",
+    "blocks": [
+      {
+        "type": "paragraph",
+        "headingEnglish": "Achillan Eye",
+        "headingRussian": "Ахилланское око (Achillan Eye)",
+        "english": "Whenever a friendly BATTLECLADE operative is shooting an enemy operative visible to this operative, that friendly operative’s ranged weapons have the Saturate weapon rule. This rule has no effect if this operative is within control range of an enemy operative.",
+        "russian": "Когда дружественный оперативник Боевой клады (BATTLECLADE) стреляет по врагу, видимому этому оперативнику, стрелковое оружие союзника получает «Насыщение» (Saturate). Это правило не действует, пока этот оперативник находится в дистанции контроля врага.",
+        "currentRuleSource": {
+          "officialPdf": "https://assets.warhammer-community.com/eng_battleclade_online_rules-crotgv4bz2-4lvylnxlku.pdf",
+          "date": "2026-08-26",
+          "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/battleclade/",
+          "checkedOn": "2026-10-05"
+        }
+      },
+      {
+        "type": "paragraph",
+        "headingEnglish": "Gaze of the Omnissiah · 1 AP",
+        "headingRussian": "Взор Омниссии · 1 AP (Gaze of the Omnissiah)",
+        "english": "Select one enemy operative visible to this operative. Until the end of the turning point, whenever a friendly BATTLECLADE operative is shooting that enemy operative, you can use this effect. If you do, that friendly operative’s ranged weapons have the Seek Light weapon rule and that enemy operative cannot be obscured. This operative cannot perform this action while within control range of an enemy operative.",
+        "russian": "Выберите врага, видимого этому оперативнику. До конца раунда каждый раз, когда дружественный оперативник Боевой клады (BATTLECLADE) стреляет по выбранному врагу, можно применить этот эффект: стрелковое оружие союзника получает «Обнаружение в лёгком укрытии» (Seek Light), а враг не может считаться заслонённым (Obscured). Нельзя выполнять это действие в дистанции контроля врага.",
+        "currentRuleSource": {
+          "officialPdf": "https://assets.warhammer-community.com/eng_battleclade_online_rules-crotgv4bz2-4lvylnxlku.pdf",
+          "date": "2026-08-26",
+          "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/battleclade/",
+          "checkedOn": "2026-10-05"
+        }
+      }
+    ],
+    "verifiedAgainstPixels": true,
+    "generatedSupplement": true,
+    "currentRuleSources": [
+      {
+        "officialPdf": "https://assets.warhammer-community.com/eng_battleclade_online_rules-crotgv4bz2-4lvylnxlku.pdf",
+        "date": "2026-08-26",
+        "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/battleclade/",
+        "checkedOn": "2026-10-05"
+      }
+    ],
+    "stats": {
+      "APL": 2,
+      "Move": "5\"",
+      "Save": "4+",
+      "Wounds": 8
+    },
+    "weapons": [
+      {
+        "type": "M",
+        "english": "Taser goad",
+        "russian": "Тазерное стрекало",
+        "atk": 4,
+        "hit": "4+",
+        "dmg": "3/4",
+        "wrEnglish": "Lethal 5+, Shock",
+        "wrRussian": "Смертоносное 5+ (Lethal 5+), Потрясение (Shock)"
+      }
+    ],
+    "footerEnglish": "BATTLECLADE, IMPERIUM, ADEPTUS MECHANICUS, AUTO-PROXY, SERVITOR; 25mm",
+    "footerRussian": "Боевая клада (BATTLECLADE), Империум (IMPERIUM), Адептус Механикус (ADEPTUS MECHANICUS), Автопрокси (AUTO-PROXY), Сервитор (SERVITOR) · 25 мм"
+  },
+  "5b90f62729ca2872": {
+    "kind": "card",
+    "titleEnglish": "Battleclade Breacher Servitor",
+    "titleRussian": "Сервитор-проломщик (Battleclade Breacher Servitor)",
+    "categoryEnglish": "BATTLECLADE · OPERATIVE",
+    "categoryRussian": "БОЕВАЯ КЛАДА (BATTLECLADE) · ОПЕРАТИВНИК",
+    "blocks": [
+      {
+        "type": "paragraph",
+        "headingEnglish": "Breach · 1 AP",
+        "headingRussian": "Пролом · 1 AP (Breach)",
+        "english": "Place one of your Breach markers within this operative’s control range as close as possible to a terrain feature within control range of it. Whenever an operative is within 1\" of that marker, it treats parts of that terrain feature that are no more than 1\" thick as Accessible terrain. This operative cannot perform this action while within control range of an enemy operative, or if a terrain feature isn’t within its control range.",
+        "russian": "Разместите один из своих маркеров Пролома (Breach) в дистанции контроля этого оперативника как можно ближе к элементу террейна в его дистанции контроля. Пока любой оперативник в пределах 1 дюйма от маркера, он считает части этого элемента террейна толщиной не больше 1 дюйма доступными (Accessible). Нельзя выполнять действие в дистанции контроля врага либо если в дистанции контроля этого оперативника нет террейна.",
+        "currentRuleSource": {
+          "officialPdf": "https://assets.warhammer-community.com/eng_battleclade_online_rules-crotgv4bz2-4lvylnxlku.pdf",
+          "date": "2026-08-26",
+          "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/battleclade/",
+          "checkedOn": "2026-10-05"
+        }
+      }
+    ],
+    "verifiedAgainstPixels": true,
+    "generatedSupplement": true,
+    "currentRuleSources": [
+      {
+        "officialPdf": "https://assets.warhammer-community.com/eng_battleclade_online_rules-crotgv4bz2-4lvylnxlku.pdf",
+        "date": "2026-08-26",
+        "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/battleclade/",
+        "checkedOn": "2026-10-05"
+      }
+    ],
+    "stats": {
+      "APL": 2,
+      "Move": "5\"",
+      "Save": "4+",
+      "Wounds": 8
+    },
+    "weapons": [
+      {
+        "type": "R",
+        "english": "Lascutter (close range)",
+        "russian": "Лазрезак — в упор",
+        "atk": 4,
+        "hit": "3+",
+        "dmg": "4/5",
+        "wrEnglish": "Range 2\", Lethal 5+, Piercing 2",
+        "wrRussian": "Дальность 2\" (Range 2\"), Смертоносное 5+ (Lethal 5+), Бронебойное 2 (Piercing 2)"
+      },
+      {
+        "type": "R",
+        "english": "Lascutter (short range)",
+        "russian": "Лазрезак — короткая дистанция",
+        "atk": 4,
+        "hit": "3+",
+        "dmg": "4/5",
+        "wrEnglish": "Range 6\", Lethal 5+",
+        "wrRussian": "Дальность 6\" (Range 6\"), Смертоносное 5+ (Lethal 5+)"
+      },
+      {
+        "type": "M",
+        "english": "Hydraulic pincer & lascutter",
+        "russian": "Гидравлические клещи и лазрезак",
+        "atk": 4,
+        "hit": "4+",
+        "dmg": "4/6",
+        "wrEnglish": "Lethal 5+",
+        "wrRussian": "Смертоносное 5+ (Lethal 5+)"
+      }
+    ],
+    "footerEnglish": "BATTLECLADE, IMPERIUM, ADEPTUS MECHANICUS, BREACHER, SERVITOR; 25mm",
+    "footerRussian": "Боевая клада (BATTLECLADE), Империум (IMPERIUM), Адептус Механикус (ADEPTUS MECHANICUS), Проломщик (BREACHER), Сервитор (SERVITOR) · 25 мм"
+  },
+  "cc98c81616b32195": {
+    "kind": "card",
+    "titleEnglish": "Battleclade Combat Servitor",
+    "titleRussian": "Боевой сервитор (Battleclade Combat Servitor)",
+    "categoryEnglish": "BATTLECLADE · OPERATIVE",
+    "categoryRussian": "БОЕВАЯ КЛАДА (BATTLECLADE) · ОПЕРАТИВНИК",
+    "blocks": [],
+    "verifiedAgainstPixels": true,
+    "generatedSupplement": true,
+    "currentRuleSources": [
+      {
+        "officialPdf": "https://assets.warhammer-community.com/eng_battleclade_online_rules-crotgv4bz2-4lvylnxlku.pdf",
+        "date": "2026-08-26",
+        "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/battleclade/",
+        "checkedOn": "2026-10-05"
+      }
+    ],
+    "stats": {
+      "APL": 2,
+      "Move": "5\"",
+      "Save": "4+",
+      "Wounds": 8
+    },
+    "weapons": [
+      {
+        "type": "R",
+        "english": "Incendine igniter",
+        "russian": "Инцендиновый воспламенитель",
+        "atk": 4,
+        "hit": "2+",
+        "dmg": "4/4",
+        "wrEnglish": "Range 6\", Saturate, Torrent 1\"",
+        "wrRussian": "Дальность 6\" (Range 6\"), Насыщение (Saturate), Поток 1\" (Torrent 1\")"
+      },
+      {
+        "type": "R",
+        "english": "Meltagun",
+        "russian": "Мелтаган",
+        "atk": 4,
+        "hit": "4+",
+        "dmg": "6/3",
+        "wrEnglish": "Range 6\", Devastating 4, Piercing 2",
+        "wrRussian": "Дальность 6\" (Range 6\"), Опустошительное 4 (Devastating 4), Бронебойное 2 (Piercing 2)"
+      },
+      {
+        "type": "R",
+        "english": "Phosphor blaster",
+        "russian": "Фосфорный бластер",
+        "atk": 4,
+        "hit": "4+",
+        "dmg": "3/4",
+        "wrEnglish": "Blast 1\", Severe",
+        "wrRussian": "Взрыв 1\" (Blast 1\"), Сокрушительное (Severe)"
+      },
+      {
+        "type": "M",
+        "english": "Servo-claw",
+        "russian": "Сервоклешня",
+        "atk": 3,
+        "hit": "4+",
+        "dmg": "3/4",
+        "wrEnglish": "",
+        "wrRussian": "—"
+      }
+    ],
+    "footerEnglish": "BATTLECLADE, IMPERIUM, ADEPTUS MECHANICUS, COMBAT, SERVITOR; 25mm",
+    "footerRussian": "Боевая клада (BATTLECLADE), Империум (IMPERIUM), Адептус Механикус (ADEPTUS MECHANICUS), Боевой (COMBAT), Сервитор (SERVITOR) · 25 мм"
+  },
+  "7adf351ba4d05429": {
+    "kind": "card",
+    "titleEnglish": "Battleclade Gun Servitor",
+    "titleRussian": "Стрелковый сервитор (Battleclade Gun Servitor)",
+    "categoryEnglish": "BATTLECLADE · OPERATIVE",
+    "categoryRussian": "БОЕВАЯ КЛАДА (BATTLECLADE) · ОПЕРАТИВНИК",
+    "blocks": [],
+    "verifiedAgainstPixels": true,
+    "generatedSupplement": true,
+    "currentRuleSources": [
+      {
+        "officialPdf": "https://assets.warhammer-community.com/eng_battleclade_online_rules-crotgv4bz2-4lvylnxlku.pdf",
+        "date": "2026-08-26",
+        "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/battleclade/",
+        "checkedOn": "2026-10-05"
+      }
+    ],
+    "stats": {
+      "APL": 2,
+      "Move": "5\"",
+      "Save": "4+",
+      "Wounds": 11
+    },
+    "weapons": [
+      {
+        "type": "R",
+        "english": "Heavy arc rifle",
+        "russian": "Тяжёлая дуговая винтовка",
+        "atk": 5,
+        "hit": "4+",
+        "dmg": "4/6",
+        "wrEnglish": "Heavy (Dash only), Piercing 1, Stun",
+        "wrRussian": "Тяжёлое (только Dash) (Heavy (Dash only)), Бронебойное 1 (Piercing 1), Оглушение (Stun)"
+      },
+      {
+        "type": "R",
+        "english": "Heavy bolter (focused)",
+        "russian": "Тяжёлый болтер — прицельный огонь",
+        "atk": 5,
+        "hit": "4+",
+        "dmg": "4/5",
+        "wrEnglish": "Heavy (Dash only), Piercing Crits 1",
+        "wrRussian": "Тяжёлое (только Dash) (Heavy (Dash only)), Бронебойное при критических успехах 1 (Piercing Crits 1)"
+      },
+      {
+        "type": "R",
+        "english": "Heavy bolter (sweeping)",
+        "russian": "Тяжёлый болтер — веерный огонь",
+        "atk": 4,
+        "hit": "4+",
+        "dmg": "4/5",
+        "wrEnglish": "Heavy (Dash only), Piercing Crits 1, Torrent 1\"",
+        "wrRussian": "Тяжёлое (только Dash) (Heavy (Dash only)), Бронебойное при критических успехах 1 (Piercing Crits 1), Поток 1\" (Torrent 1\")"
+      },
+      {
+        "type": "M",
+        "english": "Augmetic claw",
+        "russian": "Аугметическая клешня",
+        "atk": 3,
+        "hit": "4+",
+        "dmg": "4/5",
+        "wrEnglish": "Brutal",
+        "wrRussian": "Жестокое (Brutal)"
+      }
+    ],
+    "footerEnglish": "BATTLECLADE, IMPERIUM, ADEPTUS MECHANICUS, GUN, SERVITOR; 32mm",
+    "footerRussian": "Боевая клада (BATTLECLADE), Империум (IMPERIUM), Адептус Механикус (ADEPTUS MECHANICUS), Стрелковый (GUN), Сервитор (SERVITOR) · 32 мм"
+  },
+  "e1a109e5c71bc636": {
+    "kind": "card",
+    "titleEnglish": "Battleclade Servitor Underseer",
+    "titleRussian": "Сервитор-поднадзиратель (Battleclade Servitor Underseer)",
+    "categoryEnglish": "BATTLECLADE · OPERATIVE",
+    "categoryRussian": "БОЕВАЯ КЛАДА (BATTLECLADE) · ОПЕРАТИВНИК",
+    "blocks": [
+      {
+        "type": "paragraph",
+        "headingEnglish": "Datacoronal Accumulator · 1 AP",
+        "headingRussian": "Датакорональный накопитель · 1 AP (Datacoronal Accumulator)",
+        "english": "Determine the friendly BATTLECLADE operatives within 6\" of this operative and/or a friendly BATTLECLADE AUTO-PROXY operative, then roll one D3. If the result is equal to or less than the number of objective markers those friendly operatives contest, you gain 1CP. For the purposes of the Comms Device universal equipment, the operative the distance is being determined from must control your Comms Device marker to add 3\" to its distance requirement for this rule. This operative cannot perform this action while within control range of an enemy operative.",
+        "russian": "ПОДДЕРЖКА (SUPPORT). Определите дружественных оперативников Боевой клады (BATTLECLADE) в пределах 6 дюймов от этого оперативника и/или дружественного Автопрокси (AUTO-PROXY), затем бросьте D3. Если результат не превышает число маркеров целей, которые оспаривают эти союзники, получите 1 CP. Чтобы «Средство связи» (Comms Device) добавило 3 дюйма к требуемой дистанции, оперативник, от которого она измеряется, должен контролировать ваш маркер средства связи. Нельзя выполнять действие в дистанции контроля врага.",
+        "currentRuleSource": {
+          "officialPdf": "https://assets.warhammer-community.com/eng_battleclade_online_rules-crotgv4bz2-4lvylnxlku.pdf",
+          "date": "2026-08-26",
+          "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/battleclade/",
+          "checkedOn": "2026-10-05"
+        }
+      },
+      {
+        "type": "paragraph",
+        "headingEnglish": "Network Override · 1 AP",
+        "headingRussian": "Переопределение сети · 1 AP (Network Override)",
+        "english": "Select one friendly BATTLECLADE SERVITOR operative within 6\" of either this operative or a friendly BATTLECLADE AUTO-PROXY operative to immediately NETWORK COUNTERACT (you don’t have to TRANSFER POWER to do so) or perform a free Dash action. Continue this operative’s activation after doing so. For the purposes of the Comms Device universal equipment, the operative the distance is being determined from must control that marker. This operative can perform this action twice during its activation, but it must select a different friendly operative each time and it cannot perform this action while within control range of an enemy operative.",
+        "russian": "ПОДДЕРЖКА (SUPPORT). Выберите дружественного Сервитора Боевой клады (BATTLECLADE SERVITOR) в пределах 6 дюймов от этого оперативника либо дружественного Автопрокси (AUTO-PROXY). Он немедленно выполняет Сетевое контрдействие (NETWORK COUNTERACT) без передачи энергии (TRANSFER POWER) либо бесплатно выполняет «Рывок» (Dash). Затем продолжите активацию этого оперативника. Чтобы «Средство связи» (Comms Device) увеличивало дистанцию, оперативник, от которого она измеряется, должен контролировать его маркер. Это действие можно выполнить дважды за активацию, выбирая каждый раз другого союзника. Нельзя выполнять его в дистанции контроля врага.",
+        "currentRuleSource": {
+          "officialPdf": "https://assets.warhammer-community.com/eng_battleclade_online_rules-crotgv4bz2-4lvylnxlku.pdf",
+          "date": "2026-08-26",
+          "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/battleclade/",
+          "checkedOn": "2026-10-05"
+        }
+      }
+    ],
+    "verifiedAgainstPixels": true,
+    "generatedSupplement": true,
+    "currentRuleSources": [
+      {
+        "officialPdf": "https://assets.warhammer-community.com/eng_battleclade_online_rules-crotgv4bz2-4lvylnxlku.pdf",
+        "date": "2026-08-26",
+        "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/battleclade/",
+        "checkedOn": "2026-10-05"
+      }
+    ],
+    "stats": {
+      "APL": 3,
+      "Move": "6\"",
+      "Save": "3+",
+      "Wounds": 9
+    },
+    "weapons": [
+      {
+        "type": "R",
+        "english": "Master-crafted radium pistol",
+        "russian": "Мастерский радиевый пистолет",
+        "atk": 4,
+        "hit": "3+",
+        "dmg": "2/4",
+        "wrEnglish": "Range 8\", Balanced, Rending",
+        "wrRussian": "Дальность 8\" (Range 8\"), Сбалансированное (Balanced), Рассечение (Rending)"
+      },
+      {
+        "type": "M",
+        "english": "Dataspikes",
+        "russian": "Датаиглы",
+        "atk": 3,
+        "hit": "5+",
+        "dmg": "2/3",
+        "wrEnglish": "",
+        "wrRussian": "—"
+      }
+    ],
+    "footerEnglish": "BATTLECLADE, IMPERIUM, ADEPTUS MECHANICUS, TECH-PRIEST, SERVITOR UNDERSEER; 32mm",
+    "footerRussian": "Боевая клада (BATTLECLADE), Империум (IMPERIUM), Адептус Механикус (ADEPTUS MECHANICUS), Техножрец (TECH-PRIEST), Поднадзиратель сервиторов (SERVITOR UNDERSEER) · 32 мм"
+  },
+  "5e20e95be8ba91db": {
+    "kind": "card",
+    "titleEnglish": "Battleclade Technomedic Servitor",
+    "titleRussian": "Сервитор-техномедик (Battleclade Technomedic Servitor)",
+    "categoryEnglish": "BATTLECLADE · OPERATIVE",
+    "categoryRussian": "БОЕВАЯ КЛАДА (BATTLECLADE) · ОПЕРАТИВНИК",
+    "blocks": [
+      {
+        "type": "paragraph",
+        "headingEnglish": "Mechanosuture Array",
+        "headingRussian": "Механошовная система (Mechanosuture Array)",
+        "english": "Once per turning point, when another friendly BATTLECLADE operative would be incapacitated while visible to and within 3\" of this operative, you can use this rule, providing neither this nor that operative is within control range of an enemy operative. If you do, that friendly operative isn’t incapacitated, has 1 wound remaining and cannot be incapacitated for the remainder of the action. After that action, that friendly operative can immediately perform a free Dash action, but must end that move within this operative’s control range. If this rule was used during that friendly operative’s activation, that activation ends. You cannot use this rule if this operative is incapacitated, or if it’s a Shoot action and this operative would be a primary or secondary target.",
+        "russian": "Один раз за раунд, когда другой дружественный оперативник Боевой клады (BATTLECLADE), видимый этому оперативнику и в пределах 3 дюймов от него, должен быть выведен из строя, можно применить это правило, если ни один из них не находится в дистанции контроля врага. Союзник не выводится из строя: у него остаётся 1 рана и его нельзя вывести из строя до конца текущего действия. После действия он может немедленно бесплатно выполнить «Рывок» (Dash), закончив его в дистанции контроля этого оперативника. Если правило применено в активацию спасённого союзника, она заканчивается. Нельзя применять правило, если этот оперативник выведен из строя либо если это «Стрельба» (Shoot), при которой он станет основной или вторичной целью.",
+        "currentRuleSource": {
+          "officialPdf": "https://assets.warhammer-community.com/eng_battleclade_online_rules-crotgv4bz2-4lvylnxlku.pdf",
+          "date": "2026-08-26",
+          "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/battleclade/",
+          "checkedOn": "2026-10-05"
+        }
+      },
+      {
+        "type": "paragraph",
+        "headingEnglish": "Expedient Repair · 1 AP",
+        "headingRussian": "Срочный ремонт · 1 AP (Expedient Repair)",
+        "english": "Select one friendly BATTLECLADE operative within this operative’s control range to regain up to D3+3 lost wounds. It cannot be an operative that the Mechanosuture Array rule was used on during this turning point. This operative cannot perform this action while within control range of an enemy operative.",
+        "russian": "Выберите дружественного оперативника Боевой клады (BATTLECLADE) в дистанции контроля этого оперативника: он восстанавливает до D3+3 потерянных ран. Нельзя выбрать оперативника, к которому в этом раунде применялась «Механошовная система» (Mechanosuture Array). Нельзя выполнять это действие в дистанции контроля врага.",
+        "currentRuleSource": {
+          "officialPdf": "https://assets.warhammer-community.com/eng_battleclade_online_rules-crotgv4bz2-4lvylnxlku.pdf",
+          "date": "2026-08-26",
+          "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/battleclade/",
+          "checkedOn": "2026-10-05"
+        }
+      }
+    ],
+    "verifiedAgainstPixels": true,
+    "generatedSupplement": true,
+    "currentRuleSources": [
+      {
+        "officialPdf": "https://assets.warhammer-community.com/eng_battleclade_online_rules-crotgv4bz2-4lvylnxlku.pdf",
+        "date": "2026-08-26",
+        "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/battleclade/",
+        "checkedOn": "2026-10-05"
+      }
+    ],
+    "stats": {
+      "APL": 2,
+      "Move": "5\"",
+      "Save": "4+",
+      "Wounds": 8
+    },
+    "weapons": [
+      {
+        "type": "M",
+        "english": "Servo-chirurgic claw",
+        "russian": "Сервохирургическая клешня",
+        "atk": 4,
+        "hit": "4+",
+        "dmg": "3/4",
+        "wrEnglish": "Rending",
+        "wrRussian": "Рассечение (Rending)"
+      }
+    ],
+    "footerEnglish": "BATTLECLADE, IMPERIUM, ADEPTUS MECHANICUS, MEDIC, TECHNOMEDIC, SERVITOR; 25mm",
+    "footerRussian": "Боевая клада (BATTLECLADE), Империум (IMPERIUM), Адептус Механикус (ADEPTUS MECHANICUS), Медик (MEDIC), Техномедик (TECHNOMEDIC), Сервитор (SERVITOR) · 25 мм"
+  },
+  "34ccd20bbe80445f": {
+    "kind": "card",
+    "titleEnglish": "Battleclade Rules Commentary 1",
+    "titleRussian": "Боевая клада · разъяснения 1 (Battleclade Rules Commentary 1)",
+    "categoryEnglish": "BATTLECLADE · RULES COMMENTARY",
+    "categoryRussian": "БОЕВАЯ КЛАДА (BATTLECLADE) · РАЗЪЯСНЕНИЯ ПРАВИЛ",
+    "blocks": [
+      {
+        "type": "paragraph",
+        "headingEnglish": "System Exorcism: interruption",
+        "headingRussian": "Изгнание из системы: прерывания (System Exorcism: interruption)",
+        "english": "If an opponent uses a rule that would cancel or interrupt when I would activate an operative, can System Exorcism stop it? Yes. It can be used anywhere within the 'would activate' resolution order, including before interrupt effects or after firefight ploys; it takes precedence over those rules, and the player with initiative decides.",
+        "russian": "Можно ли остановить правилом «Изгнание из системы» (System Exorcism) запрет или прерывание активации? Да. Уловка применяется в любой момент разрешения «собираетесь активировать», включая момент до прерывания либо после уловок перестрелки; она имеет приоритет над такими правилами, и решение принимает игрок с инициативой.",
+        "currentRuleSource": {
+          "officialPdf": "https://assets.warhammer-community.com/eng_battleclade_online_rules-crotgv4bz2-4lvylnxlku.pdf",
+          "date": "2026-08-26",
+          "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/battleclade/",
+          "checkedOn": "2026-10-05"
+        }
+      },
+      {
+        "type": "paragraph",
+        "headingEnglish": "Remote Access: placing markers",
+        "headingRussian": "Удалённый доступ: размещение маркеров (Remote Access: placing markers)",
+        "english": "Does the Remote Access firefight ploy allow the friendly TECH-PRIEST operative to place a marker within 4\" rather than within its control range? No.",
+        "russian": "Позволяет ли «Удалённый доступ» (Remote Access) РАЗМЕСТИТЬ маркер в пределах 4 дюймов вместо своей дистанции контроля? Нет.",
+        "currentRuleSource": {
+          "officialPdf": "https://assets.warhammer-community.com/eng_battleclade_online_rules-crotgv4bz2-4lvylnxlku.pdf",
+          "date": "2026-08-26",
+          "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/battleclade/",
+          "checkedOn": "2026-10-05"
+        }
+      },
+      {
+        "type": "paragraph",
+        "headingEnglish": "Network Counteract: no ready enemies",
+        "headingRussian": "Сетевое контрдействие: нет готовых врагов (Network Counteract: no ready enemies)",
+        "english": "Can NETWORK COUNTERACT if the opponent has no ready operatives remaining to activate? Yes.",
+        "russian": "Можно ли выполнять NETWORK COUNTERACT, если у противника не осталось готовых оперативников для активации? Да.",
+        "currentRuleSource": {
+          "officialPdf": "https://assets.warhammer-community.com/eng_battleclade_online_rules-crotgv4bz2-4lvylnxlku.pdf",
+          "date": "2026-08-26",
+          "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/battleclade/",
+          "checkedOn": "2026-10-05"
+        }
+      }
+    ],
+    "verifiedAgainstPixels": true,
+    "generatedSupplement": true,
+    "currentRuleSources": [
+      {
+        "officialPdf": "https://assets.warhammer-community.com/eng_battleclade_online_rules-crotgv4bz2-4lvylnxlku.pdf",
+        "date": "2026-08-26",
+        "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/battleclade/",
+        "checkedOn": "2026-10-05"
+      }
+    ]
+  },
+  "a98526bef6ac8ef1": {
+    "kind": "card",
+    "titleEnglish": "Battleclade Rules Commentary 2",
+    "titleRussian": "Боевая клада · разъяснения 2 (Battleclade Rules Commentary 2)",
+    "categoryEnglish": "BATTLECLADE · RULES COMMENTARY",
+    "categoryRussian": "БОЕВАЯ КЛАДА (BATTLECLADE) · РАЗЪЯСНЕНИЯ ПРАВИЛ",
+    "blocks": [
+      {
+        "type": "paragraph",
+        "headingEnglish": "Network Counteract and Guard",
+        "headingRussian": "Сетевое контрдействие и дозор (Network Counteract and Guard)",
+        "english": "Can an operative that counteracted via Noospheric Network go on guard later in the turning point during its activation? No.",
+        "russian": "Может ли оперативник, выполнивший контрдействие по Ноосферической сети, позже в этом раунде в свою активацию встать на «Дозор» (Guard)? Нет.",
+        "currentRuleSource": {
+          "officialPdf": "https://assets.warhammer-community.com/eng_battleclade_online_rules-crotgv4bz2-4lvylnxlku.pdf",
+          "date": "2026-08-26",
+          "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/battleclade/",
+          "checkedOn": "2026-10-05"
+        }
+      },
+      {
+        "type": "paragraph",
+        "headingEnglish": "System Exorcism: area effects",
+        "headingRussian": "Изгнание из системы: области (System Exorcism: area effects)",
+        "english": "How does System Exorcism interact with rules that only apply while an operative is in a specific area? System Exorcism has no effect in those scenarios.",
+        "russian": "Как «Изгнание из системы» действует на эффекты, применяющиеся только пока оперативник находится в определённой области, например «Газовый обстрел» (Gas Bombardment)? В таких случаях уловка не имеет эффекта.",
+        "currentRuleSource": {
+          "officialPdf": "https://assets.warhammer-community.com/eng_battleclade_online_rules-crotgv4bz2-4lvylnxlku.pdf",
+          "date": "2026-08-26",
+          "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/battleclade/",
+          "checkedOn": "2026-10-05"
+        }
+      },
+      {
+        "type": "paragraph",
+        "headingEnglish": "System Exorcism: repeated tokens",
+        "headingRussian": "Изгнание из системы: повторные жетоны (System Exorcism: repeated tokens)",
+        "english": "When System Exorcism removes an effect with multiple identical tokens, remove all or one? All of those tokens.",
+        "russian": "Если эффект допускает несколько одинаковых жетонов на оперативнике, «Изгнание из системы» убирает один из них или все? Все жетоны этого эффекта.",
+        "currentRuleSource": {
+          "officialPdf": "https://assets.warhammer-community.com/eng_battleclade_online_rules-crotgv4bz2-4lvylnxlku.pdf",
+          "date": "2026-08-26",
+          "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/battleclade/",
+          "checkedOn": "2026-10-05"
+        }
+      }
+    ],
+    "verifiedAgainstPixels": true,
+    "generatedSupplement": true,
+    "currentRuleSources": [
+      {
+        "officialPdf": "https://assets.warhammer-community.com/eng_battleclade_online_rules-crotgv4bz2-4lvylnxlku.pdf",
+        "date": "2026-08-26",
+        "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/battleclade/",
+        "checkedOn": "2026-10-05"
+      }
+    ]
+  },
+  "c7e587e2c7e4c585": {
+    "kind": "card",
+    "titleEnglish": "Battleclade Marker and Token Guide",
+    "titleRussian": "Боевая клада · жетоны и маркеры (Battleclade Marker and Token Guide)",
+    "categoryEnglish": "BATTLECLADE · TOKEN GUIDE",
+    "categoryRussian": "БОЕВАЯ КЛАДА (BATTLECLADE) · ЖЕТОНЫ И МАРКЕРЫ",
+    "blocks": [
+      {
+        "type": "paragraph",
+        "headingEnglish": "Markers and tokens",
+        "headingRussian": "Маркеры и жетоны (Markers and tokens)",
+        "english": "Omniscanner token; Prioritised Acquisition token; Gaze of the Omnissiah token; Mechanosuture Array token; Network Counteract token; Breach marker",
+        "russian": "Омнисканер (Omniscanner) · Приоритетное приобретение (Prioritised Acquisition) · Взор Омниссии (Gaze of the Omnissiah) · Механошовная система (Mechanosuture Array) · Сетевое контрдействие (Network Counteract) · Пролом (Breach).",
+        "currentRuleSource": {
+          "officialPdf": "https://assets.warhammer-community.com/eng_battleclade_online_rules-crotgv4bz2-4lvylnxlku.pdf",
+          "date": "2026-08-26",
+          "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/battleclade/",
+          "checkedOn": "2026-10-05"
+        }
+      }
+    ],
+    "verifiedAgainstPixels": true,
+    "generatedSupplement": true,
+    "currentRuleSources": [
+      {
+        "officialPdf": "https://assets.warhammer-community.com/eng_battleclade_online_rules-crotgv4bz2-4lvylnxlku.pdf",
+        "date": "2026-08-26",
+        "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/battleclade/",
+        "checkedOn": "2026-10-05"
+      }
+    ]
+  },
+  "97cc42df9697a982": {
+    "kind": "card",
+    "titleEnglish": "Sanctifiers Rules Commentary 1",
+    "titleRussian": "Освятители · разъяснения 1 (Sanctifiers Rules Commentary 1)",
+    "categoryEnglish": "SANCTIFIERS · RULES COMMENTARY",
+    "categoryRussian": "ОСВЯТИТЕЛИ (SANCTIFIERS) · РАЗЪЯСНЕНИЯ ПРАВИЛ",
+    "blocks": [
+      {
+        "type": "paragraph",
+        "headingEnglish": "Rules commentary 1",
+        "headingRussian": "Разъяснение 1 (Rules commentary 1)",
+        "english": "Q: Some rules require an operative to shoot or fight against a specific operative or its activation is cancelled (e.g. MANDRAKE DIRGEMAW Haunting Focus, EXACTION SQUAD Execution Order). If my opponent uses such a rule and I cancel that Shoot or Fight action with my SANCTIFIER CONFESSOR operative’s Commanding Declamation rule, what happens?\nA: Do not cancel that enemy operative’s activation. It can continue to perform actions other than the prevented one as normal.",
+        "russian": "Если правило требует стрелять или сражаться с определённым оперативником, иначе активация отменяется, и «Властное провозглашение» (Commanding Declamation) Исповедника (CONFESSOR) отменило это действие, активацию врага не отменяйте. Он может выполнять другие действия как обычно.",
+        "currentRuleSource": {
+          "officialPdf": "https://assets.warhammer-community.com/eng_25-02_kt_teamrules_sanctifiers-3vpsecfbfe-vclbyfaed7.pdf",
+          "date": "2026-02-25",
+          "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/sanctifiers/",
+          "checkedOn": "2026-10-05"
+        }
+      },
+      {
+        "type": "paragraph",
+        "headingEnglish": "Rules commentary 2",
+        "headingRussian": "Разъяснение 2 (Rules commentary 2)",
+        "english": "Q: If the CONFESSOR operative’s Commanding Declamation rule prevents an enemy operative on guard from performing the Shoot or Fight action, does that enemy operative remain on guard?\nA: Yes, assuming all other conditions of remaining on guard are still met.",
+        "russian": "Если «Властное провозглашение» (Commanding Declamation) отменяет «Стрельбу» (Shoot) или «Ближний бой» (Fight) оперативника на «Дозоре» (Guard), он остаётся на дозоре, если соблюдены остальные условия.",
+        "currentRuleSource": {
+          "officialPdf": "https://assets.warhammer-community.com/eng_25-02_kt_teamrules_sanctifiers-3vpsecfbfe-vclbyfaed7.pdf",
+          "date": "2026-02-25",
+          "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/sanctifiers/",
+          "checkedOn": "2026-10-05"
+        }
+      }
+    ],
+    "verifiedAgainstPixels": true,
+    "generatedSupplement": true,
+    "currentRuleSources": [
+      {
+        "officialPdf": "https://assets.warhammer-community.com/eng_25-02_kt_teamrules_sanctifiers-3vpsecfbfe-vclbyfaed7.pdf",
+        "date": "2026-02-25",
+        "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/sanctifiers/",
+        "checkedOn": "2026-10-05"
+      }
+    ]
+  },
+  "055e8198e7a4615c": {
+    "kind": "card",
+    "titleEnglish": "Sanctifiers Rules Commentary 2",
+    "titleRussian": "Освятители · разъяснения 2 (Sanctifiers Rules Commentary 2)",
+    "categoryEnglish": "SANCTIFIERS · RULES COMMENTARY",
+    "categoryRussian": "ОСВЯТИТЕЛИ (SANCTIFIERS) · РАЗЪЯСНЕНИЯ ПРАВИЛ",
+    "blocks": [
+      {
+        "type": "paragraph",
+        "headingEnglish": "Rules commentary 3",
+        "headingRussian": "Разъяснение 3 (Rules commentary 3)",
+        "english": "Q: If my opponent uses a firefight ploy that requires an operative to perform a Shoot or Fight action (e.g. HERNKYN YAEGIR Stalwart Defence) and I cancel that action with my SANCTIFIER CONFESSOR operative’s Commanding Declamation rule, is the CP refunded?\nA: No. Similarly, any rules with a restricted number of uses (e.g. CORSAIR VOIDSCARRED FELARCH One Step Ahead) that are prevented would still be considered used.",
+        "russian": "Если «Властное провозглашение» (Commanding Declamation) отменяет действие, требуемое уловкой перестрелки, потраченные CP не возвращаются. Правила с ограниченным числом применений, например «На шаг впереди» (One Step Ahead), также считаются использованными.",
+        "currentRuleSource": {
+          "officialPdf": "https://assets.warhammer-community.com/eng_25-02_kt_teamrules_sanctifiers-3vpsecfbfe-vclbyfaed7.pdf",
+          "date": "2026-02-25",
+          "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/sanctifiers/",
+          "checkedOn": "2026-10-05"
+        }
+      },
+      {
+        "type": "paragraph",
+        "headingEnglish": "Rules commentary 4",
+        "headingRussian": "Разъяснение 4 (Rules commentary 4)",
+        "english": "Q: If I use the SANCTIFIER CONFESSOR’s Commanding Declamation rule to cancel a Fight or Shoot action that my opponent attempted to perform as a result of their operative being on guard, can my opponent then choose to use the other action instead during that interruption?\nA: Yes.",
+        "russian": "Если Исповедник отменил «Ближний бой» (Fight) или «Стрельбу» (Shoot), выбранные врагом при прерывании по «Дозору» (Guard), противник может выбрать другое из этих действий в том же прерывании.",
+        "currentRuleSource": {
+          "officialPdf": "https://assets.warhammer-community.com/eng_25-02_kt_teamrules_sanctifiers-3vpsecfbfe-vclbyfaed7.pdf",
+          "date": "2026-02-25",
+          "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/sanctifiers/",
+          "checkedOn": "2026-10-05"
+        }
+      }
+    ],
+    "verifiedAgainstPixels": true,
+    "generatedSupplement": true,
+    "currentRuleSources": [
+      {
+        "officialPdf": "https://assets.warhammer-community.com/eng_25-02_kt_teamrules_sanctifiers-3vpsecfbfe-vclbyfaed7.pdf",
+        "date": "2026-02-25",
+        "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/sanctifiers/",
+        "checkedOn": "2026-10-05"
+      }
+    ]
+  },
+  "29c1aa30dcd94874": {
+    "kind": "card",
+    "titleEnglish": "Exaction Squad Rules Commentary 1",
+    "titleRussian": "Отряд взыскания · разъяснения 1 (Exaction Squad Rules Commentary 1)",
+    "categoryEnglish": "EXACTION SQUAD · RULES COMMENTARY",
+    "categoryRussian": "ОТРЯД ВЗЫСКАНИЯ (EXACTION SQUAD) · РАЗЪЯСНЕНИЯ ПРАВИЛ",
+    "blocks": [
+      {
+        "type": "paragraph",
+        "headingEnglish": "Rules commentary 1",
+        "headingRussian": "Разъяснение 1 (Rules commentary 1)",
+        "english": "Q: When using the Marked for Justice STRATEGIC GAMBIT, if my mark is incapacitated while shooting multiple operatives during an action (e.g. as a result of the Blast or Torrent weapon rules), when do I select a new operative to be my mark?\nA: At the end of that action, after incapacitated operatives are removed.",
+        "russian": "Если ваша отмеченная цель (Mark) выведена из строя во время действия с несколькими стрелковыми последовательностями, например «Взрыв» (Blast) или «Поток» (Torrent), новую цель по гамбиту «Отмечен для правосудия» (Marked for Justice) выбирают в конце действия, после удаления выведенных из строя оперативников.",
+        "currentRuleSource": {
+          "officialPdf": "https://assets.warhammer-community.com/eng_17-06_kill_team_team_rules_exaction_squad_online_rules-w6tqairoed-qhpndqu8fq.pdf",
+          "date": "2026-06-17",
+          "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/exaction-squad/",
+          "checkedOn": "2026-10-05"
+        }
+      },
+      {
+        "type": "paragraph",
+        "headingEnglish": "Rules commentary 2",
+        "headingRussian": "Разъяснение 2 (Rules commentary 2)",
+        "english": "Q: If a friendly operative attempts to shoot or fight against the specified enemy operative in the Execution Order firefight ploy, but is prevented from doing so by an opponent’s rule (e.g. SANCTIFIER CONFESSOR Commanding Declamation, NOVITIATE Blinding Aura), is that friendly operative’s activation still cancelled?\nA: No. Continue its activation as though the requirements of the Execution Order firefight ploy have been fulfilled.",
+        "russian": "Если оперативник пытается стрелять или сражаться с врагом, указанным в «Приказе о казни» (Execution Order), но правило противника запрещает это действие, активация не отменяется. Продолжайте её так, будто условия уловки выполнены.",
+        "currentRuleSource": {
+          "officialPdf": "https://assets.warhammer-community.com/eng_17-06_kill_team_team_rules_exaction_squad_online_rules-w6tqairoed-qhpndqu8fq.pdf",
+          "date": "2026-06-17",
+          "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/exaction-squad/",
+          "checkedOn": "2026-10-05"
+        }
+      }
+    ],
+    "verifiedAgainstPixels": true,
+    "generatedSupplement": true,
+    "currentRuleSources": [
+      {
+        "officialPdf": "https://assets.warhammer-community.com/eng_17-06_kill_team_team_rules_exaction_squad_online_rules-w6tqairoed-qhpndqu8fq.pdf",
+        "date": "2026-06-17",
+        "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/exaction-squad/",
+        "checkedOn": "2026-10-05"
+      }
+    ]
+  },
+  "8cf80e45fcb2992c": {
+    "kind": "card",
+    "titleEnglish": "Exaction Squad Rules Commentary 2",
+    "titleRussian": "Отряд взыскания · разъяснения 2 (Exaction Squad Rules Commentary 2)",
+    "categoryEnglish": "EXACTION SQUAD · RULES COMMENTARY",
+    "categoryRussian": "ОТРЯД ВЗЫСКАНИЯ (EXACTION SQUAD) · РАЗЪЯСНЕНИЯ ПРАВИЛ",
+    "blocks": [
+      {
+        "type": "paragraph",
+        "headingEnglish": "Rules commentary 3",
+        "headingRussian": "Разъяснение 3 (Rules commentary 3)",
+        "english": "Q: When using the Guilt Reveals Itself strategy ploy, if my opponent has a rule that says it cannot be selected as a valid target, taking precedence over all other rules except being within 2″ (e.g. HERNKYN YAEGIR In Position), does this increase the 2″ distance exception to 4″?\nA: Yes.",
+        "russian": "«Вина выдаёт себя» (Guilt Reveals Itself) увеличивает исключение с 2 до 4 дюймов и для правил, запрещающих выбор допустимой целью и имеющих приоритет над всеми правилами, кроме нахождения в пределах 2 дюймов, например «На позиции» (In Position).",
+        "currentRuleSource": {
+          "officialPdf": "https://assets.warhammer-community.com/eng_17-06_kill_team_team_rules_exaction_squad_online_rules-w6tqairoed-qhpndqu8fq.pdf",
+          "date": "2026-06-17",
+          "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/exaction-squad/",
+          "checkedOn": "2026-10-05"
+        }
+      },
+      {
+        "type": "paragraph",
+        "headingEnglish": "Rules commentary 4",
+        "headingRussian": "Разъяснение 4 (Rules commentary 4)",
+        "english": "Q: My LEASHMASTER and R-VR CYBER-MASTIFF operatives are activating simultaneously as a result of the Handler rule. Can I use the Brutal Backup firefight ploy to select one of those operatives that has already performed a Fight action during that activation to fight again?\nA: No.",
+        "russian": "При одновременной активации Поводыря (LEASHMASTER) и R-VR Кибер-мастифа (CYBER-MASTIFF) по «Дрессировщику» (Handler) нельзя с помощью «Жестокой поддержки» (Brutal Backup) повторно выполнить «Ближний бой» (Fight) оперативником, уже выполнившим его в эту активацию.",
+        "currentRuleSource": {
+          "officialPdf": "https://assets.warhammer-community.com/eng_17-06_kill_team_team_rules_exaction_squad_online_rules-w6tqairoed-qhpndqu8fq.pdf",
+          "date": "2026-06-17",
+          "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/exaction-squad/",
+          "checkedOn": "2026-10-05"
+        }
+      }
+    ],
+    "verifiedAgainstPixels": true,
+    "generatedSupplement": true,
+    "currentRuleSources": [
+      {
+        "officialPdf": "https://assets.warhammer-community.com/eng_17-06_kill_team_team_rules_exaction_squad_online_rules-w6tqairoed-qhpndqu8fq.pdf",
+        "date": "2026-06-17",
+        "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/exaction-squad/",
+        "checkedOn": "2026-10-05"
+      }
+    ]
+  },
+  "5138e4d619666a7a": {
+    "kind": "card",
+    "titleEnglish": "Warpcoven Rules Commentary 1",
+    "titleRussian": "Варп-ковен · разъяснения 1 (Warpcoven Rules Commentary 1)",
+    "categoryEnglish": "WARPCOVEN · RULES COMMENTARY",
+    "categoryRussian": "ВАРП-КОВЕН (WARPCOVEN) · РАЗЪЯСНЕНИЯ ПРАВИЛ",
+    "blocks": [
+      {
+        "type": "paragraph",
+        "headingEnglish": "Rules commentary 1",
+        "headingRussian": "Разъяснение 1 (Rules commentary 1)",
+        "english": "Q: For the Psychic Cabal firefight ploy, does the SORCERER operative also gain any benefits the other SORCERER operative has from the BOONS OF TZEENTCH faction rule (e.g. Twist of Fate)?\nA: No.",
+        "russian": "«Психический кабал» (Psychic Cabal) не передаёт Колдуну (SORCERER) преимущества «Даров Тзинча» (Boons of Tzeentch), имеющихся у выбранного другого Колдуна, например «Искажения судьбы» (Twist of Fate).",
+        "currentRuleSource": {
+          "officialPdf": "https://assets.warhammer-community.com/eng_29-04_kt_teamrules_warpcoven-dlvflmyfdc-tqfq81iy7v.pdf",
+          "date": "2026-04-29",
+          "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/warpcoven/",
+          "checkedOn": "2026-10-05"
+        }
+      },
+      {
+        "type": "paragraph",
+        "headingEnglish": "Rules commentary 2",
+        "headingRussian": "Разъяснение 2 (Rules commentary 2)",
+        "english": "Q: If a friendly operative selected for the Temporal Flux rule is activated within, or ends its activation within, an area in which it cannot use PSYCHIC additional rules (e.g. Null Rod), can that operative be removed and set back up as a result of the Temporal Flux rule?\nA: No to both.",
+        "russian": "Выбранного для «Временного потока» (Temporal Flux) оперативника нельзя убрать и выставить заново, если он активируется либо заканчивает активацию в области, запрещающей дополнительные правила ПСИХИЧЕСКОЕ (PSYCHIC), например «Нуль-жезл» (Null Rod).",
+        "currentRuleSource": {
+          "officialPdf": "https://assets.warhammer-community.com/eng_29-04_kt_teamrules_warpcoven-dlvflmyfdc-tqfq81iy7v.pdf",
+          "date": "2026-04-29",
+          "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/warpcoven/",
+          "checkedOn": "2026-10-05"
+        }
+      }
+    ],
+    "verifiedAgainstPixels": true,
+    "generatedSupplement": true,
+    "currentRuleSources": [
+      {
+        "officialPdf": "https://assets.warhammer-community.com/eng_29-04_kt_teamrules_warpcoven-dlvflmyfdc-tqfq81iy7v.pdf",
+        "date": "2026-04-29",
+        "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/warpcoven/",
+        "checkedOn": "2026-10-05"
+      }
+    ]
+  },
+  "1f9b87c99c2093ea": {
+    "kind": "card",
+    "titleEnglish": "Ratlings Rules Commentary 1",
+    "titleRussian": "Ратлинги · разъяснения 1 (Ratlings Rules Commentary 1)",
+    "categoryEnglish": "RATLINGS · RULES COMMENTARY",
+    "categoryRussian": "РАТЛИНГИ (RATLINGS) · РАЗЪЯСНЕНИЯ ПРАВИЛ",
+    "blocks": [
+      {
+        "type": "paragraph",
+        "headingEnglish": "Rules commentary 1",
+        "headingRussian": "Разъяснение 1 (Rules commentary 1)",
+        "english": "Q: If an operative performs an action in which it moves or is set up outside of the Firefight phase, can a RATLING BATTLEMUTT still interrupt with its Early Warning rule?\nA: Yes.",
+        "russian": "Боевой пёс (BATTLEMUTT) может применить «Раннее предупреждение» (Early Warning), даже если враг переместился или был выставлен заново вне фазы перестрелки (Firefight).",
+        "currentRuleSource": {
+          "officialPdf": "https://assets.warhammer-community.com/eng_29-04_kt_teamrules_ratlings-ulbqsnxhjb-jmv6tjlrsi.pdf",
+          "date": "2026-04-29",
+          "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/ratlings/",
+          "checkedOn": "2026-10-05"
+        }
+      },
+      {
+        "type": "paragraph",
+        "headingEnglish": "Rules commentary 2",
+        "headingRussian": "Разъяснение 2 (Rules commentary 2)",
+        "english": "Q: Can you clarify what the Team Selection page means when saying “Up to three times, instead of selecting one of these operatives, you can select one RATLING ploy to cost you 0CP for the battle” in reference to BULLGRYN and OGRYN operatives?\nA: A RATLING kill team always consists of one RATLING FIXER and ten additional operatives. Up to three of those additional operatives can be BULLGRYN or OGRYN. For each of those three that is not, you select a different RATLING operative and one ploy to cost you 0CP for the battle.",
+        "russian": "Отряд Ратлингов (RATLING) всегда состоит из одного Решалы (FIXER) и десяти других оперативников. До трёх из этих десяти могут быть Булгринами (BULLGRYN) или Огринами (OGRYN). За каждый из трёх вариантов, в котором вы не выбираете Булгрина либо Огрина, выберите другого оперативника Ратлингов и одну уловку, которая будет стоить вам 0 CP весь бой.",
+        "currentRuleSource": {
+          "officialPdf": "https://assets.warhammer-community.com/eng_29-04_kt_teamrules_ratlings-ulbqsnxhjb-jmv6tjlrsi.pdf",
+          "date": "2026-04-29",
+          "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/ratlings/",
+          "checkedOn": "2026-10-05"
+        }
+      }
+    ],
+    "verifiedAgainstPixels": true,
+    "generatedSupplement": true,
+    "currentRuleSources": [
+      {
+        "officialPdf": "https://assets.warhammer-community.com/eng_29-04_kt_teamrules_ratlings-ulbqsnxhjb-jmv6tjlrsi.pdf",
+        "date": "2026-04-29",
+        "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/ratlings/",
+        "checkedOn": "2026-10-05"
+      }
+    ]
+  },
+  "a707fa127bcb0840": {
+    "kind": "card",
+    "titleEnglish": "Warpcoven Kill Team",
+    "titleRussian": "Отряд Варп-ковена (Warpcoven Kill Team)",
+    "categoryEnglish": "WARPCOVEN · KILL TEAM",
+    "categoryRussian": "ВАРП-КОВЕН (WARPCOVEN) · ОТРЯД",
+    "blocks": [
+      {
+        "type": "paragraph",
+        "headingEnglish": "Rule",
+        "headingRussian": "Правило (Rule)",
+        "english": "5 WARPCOVEN operatives selected from the following list:\n• SORCERER OF DESTINY¹\n• SORCERER OF TEMPYRION¹\n• SORCERER OF WARPFIRE¹\n• RUBRIC MARINE GUNNER with one of the following options:\n  ○ Warpflamer; fists\n  ○ Soulreaper cannon²; fists\n• RUBRIC MARINE ICON BEARER\n• RUBRIC MARINE WARRIOR\n• TZAANGOR CHAMPION³ with one of the following options:\n  ○ Greataxe\n  ○ Greatblade\n• TZAANGOR HORN BEARER³\n• TZAANGOR ICON BEARER³\n• TZAANGOR WARRIOR³ with one of the following options:\n  ○ Tzaangor blades\n  ○ Tzaangor blade & shield\n  ○ Autopistol; chainsword\n¹ With force stave, PSYCHIC weapons on their datacard and one of the following options:\n• Inferno bolt pistol\n• Prosperine khopesh\n• Warpflame pistol²\n² Your kill team can only include up to one warpflame pistol and up to one soulreaper cannon.\n³ These operatives count as half a selection each, meaning you can select both of them and it’s treated as one selection in total.",
+        "russian": "Архетипы: Охрана (Security), Разведка (Recon).\nВыберите 5 вариантов из списка: Колдун судьбы (SORCERER OF DESTINY), Колдун Темпириона (SORCERER OF TEMPYRION), Колдун варп-пламени (SORCERER OF WARPFIRE); Стрелок Рубрик-десантников (RUBRIC MARINE GUNNER) с варп-огнемётом и кулаками либо пушкой «Жнец душ» и кулаками; Знаменосец Рубрик-десантников (RUBRIC MARINE ICON BEARER); Воин Рубрик-десантников (RUBRIC MARINE WARRIOR); Чемпион Цаангоров (TZAANGOR CHAMPION) с двуручным топором либо двуручным клинком; Горнист Цаангоров (TZAANGOR HORN BEARER); Знаменосец Цаангоров (TZAANGOR ICON BEARER); Воин Цаангоров (TZAANGOR WARRIOR) с клинками, клинком и щитом либо автопистолетом и цепным мечом.\nКаждый Цаангор считается половиной варианта выбора: два Цаангора занимают один вариант.\nКаждый Колдун вооружён силовым посохом, PSYCHIC-оружием своей карточки и одним из вариантов: инферно болт-пистолет, просперинский хопеш либо пистолет варп-пламени. В отряде может быть не больше одного пистолета варп-пламени (Warpflame pistol) и не больше одной пушки «Жнец душ» (Soulreaper cannon).",
+        "currentRuleSource": {
+          "officialPdf": "https://assets.warhammer-community.com/eng_29-04_kt_teamrules_warpcoven-dlvflmyfdc-tqfq81iy7v.pdf",
+          "date": "2026-04-29",
+          "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/warpcoven/",
+          "checkedOn": "2026-10-05"
+        }
+      }
+    ],
+    "verifiedAgainstPixels": true,
+    "generatedSupplement": true,
+    "currentRuleSources": [
+      {
+        "officialPdf": "https://assets.warhammer-community.com/eng_29-04_kt_teamrules_warpcoven-dlvflmyfdc-tqfq81iy7v.pdf",
+        "date": "2026-04-29",
+        "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/warpcoven/",
+        "checkedOn": "2026-10-05"
+      }
+    ]
+  },
+  "3f3ef74e563f5f80": {
+    "kind": "card",
+    "titleEnglish": "Plague Marines Kill Team",
+    "titleRussian": "Отряд Чумных десантников (Plague Marines Kill Team)",
+    "categoryEnglish": "PLAGUE MARINES · KILL TEAM",
+    "categoryRussian": "ЧУМНЫЕ ДЕСАНТНИКИ (PLAGUE MARINES) · ОТРЯД",
+    "blocks": [
+      {
+        "type": "paragraph",
+        "headingEnglish": "Rule",
+        "headingRussian": "Правило (Rule)",
+        "english": "1 PLAGUE MARINE CHAMPION; 5 PLAGUE MARINE operatives from BOMBARDIER, FIGHTER, HEAVY GUNNER, ICON BEARER, MALIGNANT PLAGUECASTER, WARRIOR. Each operative on this list once. Seek & Destroy / Security.",
+        "russian": "Архетипы: Найти и уничтожить (Seek & Destroy), Охрана (Security).\n1 Чемпион Чумных десантников (PLAGUE MARINE CHAMPION).\nЕщё 5 Чумных десантников: Бомбардир (BOMBARDIER), Боец (FIGHTER), Тяжёлый стрелок (HEAVY GUNNER), Знаменосец (ICON BEARER), Злокозненный чумной колдун (MALIGNANT PLAGUECASTER), Воин (WARRIOR).\nКаждого оперативника из этого списка можно включить только один раз.",
+        "currentRuleSource": {
+          "officialPdf": "https://assets.warhammer-community.com/eng_plague_marines_online_rules-wqjvit50wj-jvekzllwdl.pdf",
+          "date": "2026-08-26",
+          "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/plague-marines/",
+          "checkedOn": "2026-10-05"
+        }
+      }
+    ],
+    "verifiedAgainstPixels": true,
+    "generatedSupplement": true,
+    "currentRuleSources": [
+      {
+        "officialPdf": "https://assets.warhammer-community.com/eng_plague_marines_online_rules-wqjvit50wj-jvekzllwdl.pdf",
+        "date": "2026-08-26",
+        "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/plague-marines/",
+        "checkedOn": "2026-10-05"
+      }
+    ]
+  },
+  "524dd20e3f11b361": {
+    "kind": "card",
+    "titleEnglish": "Tactical Vox-link",
+    "titleRussian": "Тактическая вокс-связь (Tactical Vox-link)",
+    "categoryEnglish": "SCOUT SQUAD · FACTION EQUIPMENT",
+    "categoryRussian": "ОТРЯД РАЗВЕДЧИКОВ (SCOUT SQUAD) · СНАРЯЖЕНИЕ ФРАКЦИИ",
+    "blocks": [
+      {
+        "type": "paragraph",
+        "headingEnglish": "Rule",
+        "headingRussian": "Правило (Rule)",
+        "english": "The Scout Sergeant maintains a constant vox-link with the aspirants in his charge, directing their aggression with deadly precision. Once per turning point, you can use the Astartes Training or Emboldened Aspirant firefight ploy for 0CP if a friendly SERGEANT operative is in the killzone.",
+        "russian": "Сержант разведчиков поддерживает постоянную вокс-связь с вверенными ему неофитами и с безупречной точностью направляет их атаки.\nОдин раз за раунд можно применить уловку перестрелки «Подготовка Астартес» (Astartes Training) либо «Воодушевлённый неофит» (Emboldened Aspirant) за 0 CP, если дружественный Сержант (SERGEANT) находится в зоне боя.",
+        "currentRuleSource": {
+          "officialPdf": "https://assets.warhammer-community.com/eng_29-04_kt_teamrules_scout_squad-gsh9kmjzgi-cx2xtxmp8b.pdf",
+          "date": "2026-04-29",
+          "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/scout-squad/",
+          "checkedOn": "2026-10-05"
+        }
+      }
+    ],
+    "verifiedAgainstPixels": true,
+    "generatedSupplement": true,
+    "currentRuleSources": [
+      {
+        "officialPdf": "https://assets.warhammer-community.com/eng_29-04_kt_teamrules_scout_squad-gsh9kmjzgi-cx2xtxmp8b.pdf",
+        "date": "2026-04-29",
+        "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/scout-squad/",
+        "checkedOn": "2026-10-05"
+      }
+    ]
+  },
+  "68dcb3d4af235419": {
+    "kind": "card",
+    "titleEnglish": "The Curtain Falls Rules Commentary",
+    "titleRussian": "Занавес падает · разъяснение (The Curtain Falls Rules Commentary)",
+    "categoryEnglish": "VOID-DANCER TROUPE · RULES COMMENTARY",
+    "categoryRussian": "ТРУППА ТАНЦОРОВ ПУСТОТЫ (VOID-DANCER TROUPE) · РАЗЪЯСНЕНИЯ ПРАВИЛ",
+    "blocks": [
+      {
+        "type": "paragraph",
+        "headingEnglish": "Rule",
+        "headingRussian": "Правило (Rule)",
+        "english": "Q: When using The Curtain Falls firefight ploy, if the free Fall Back action is prevented (e.g. MANDRAKES Chain Snares), is the spent CP refunded? A: No. If Luck of the Laughing God was used, that firefight ploy counts as being used for that rule as well.",
+        "russian": "Если бесплатное «Отступление» (Fall Back) по уловке «Занавес падает» (The Curtain Falls) запрещено, например «Цепными силками» (Chain Snares), потраченные CP не возвращаются. Если вы использовали «Удачу Смеющегося бога» (Luck of the Laughing God), эта уловка перестрелки также считается использованной для того правила.",
+        "currentRuleSource": {
+          "officialPdf": "https://assets.warhammer-community.com/eng_17-06_kill_team_team_rules_void-dancer_troupe_online_rules-ee8qymqvq4-w24lgiuhhz.pdf",
+          "date": "2026-06-17",
+          "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/void-dancer-troupe/",
+          "checkedOn": "2026-10-05"
+        }
+      }
+    ],
+    "verifiedAgainstPixels": true,
+    "generatedSupplement": true,
+    "currentRuleSources": [
+      {
+        "officialPdf": "https://assets.warhammer-community.com/eng_17-06_kill_team_team_rules_void-dancer_troupe_online_rules-ee8qymqvq4-w24lgiuhhz.pdf",
+        "date": "2026-06-17",
+        "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/void-dancer-troupe/",
+        "checkedOn": "2026-10-05"
+      }
+    ]
+  }
+}

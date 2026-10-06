@@ -1,0 +1,30 @@
+[
+  {
+    "id": "84927e211c28fe89",
+    "expectedTitle": "Ratling Fixer",
+    "team": "Ratlings",
+    "source": {
+      "sourceTeam": "Ratlings",
+      "date": "2026-04-29",
+      "officialPdf": "https://assets.warhammer-community.com/eng_29-04_kt_teamrules_ratlings-ulbqsnxhjb-jmv6tjlrsi.pdf",
+      "pdfPages": [
+        1,
+        10
+      ],
+      "wahapedia": "https://wahapedia.ru/kill-team3/kill-teams/ratlings/",
+      "snapshotLineNumbers": [
+        227
+      ]
+    },
+    "blocks": [
+      {
+        "heading": "Target Designation · Strategic Gambit",
+        "english": "STRATEGIC GAMBIT. Select one enemy operative. Until the end of the turning point, whenever a friendly RATLING operative is shooting that enemy operative with a rifle, that weapon has the Lethal 5+ weapon rule.",
+        "russian": "СТРАТЕГИЧЕСКИЙ ГАМБИТ (STRATEGIC GAMBIT). Выберите одного вражеского оперативника. До конца раунда, когда дружественный оперативник Ратлингов (RATLING) стреляет по выбранному врагу из винтовки, это оружие получает «Смертоносное 5+» (Lethal 5+).",
+        "proseTitles": [
+          "Target Designation"
+        ]
+      }
+    ]
+  }
+]
