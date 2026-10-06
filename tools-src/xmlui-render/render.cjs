@@ -71,8 +71,17 @@ function nodeHtml(n, assets, index, parentBox = { x: 0, y: 0 }) {
   const kids = n.children.map((c, i) => nodeHtml(c, assets, `${index}-${i}`, b)).join('');
   const bg = color(a.color, 'transparent');
   if (tag === 'Text') {
-    const overflow = String(a.horizontalOverflow || 'Overflow').toLowerCase() === 'wrap' ? 'normal' : 'pre';
-    return `<div ${common} class="text-node" style="${base}${shadow}${outline}font: ${a.fontStyle === 'Bold' ? 'bold ' : ''}${Number(a.fontSize) || 14}px Arial,sans-serif;color:${color(a.color, '#323232')};text-align:${align(a.alignment)};white-space:${overflow};overflow:${a.verticalOverflow === 'Truncate' ? 'hidden' : 'visible'};line-height:normal">${rich(n.text)}</div>`;
+    const overflow = String(a.horizontalOverflow || 'Overflow').toLowerCase() === 'wrap' ? 'pre-wrap' : 'pre';
+    const alignment = a.alignment || 'MiddleCenter';
+    const style = `${base}${shadow}${outline}` + [
+      `display:flex;flex-direction:column;align-items:${horizontalAlign(alignment)}`,
+      `justify-content:${verticalAlign(alignment)}`,
+      `font:${a.fontStyle === 'Bold' ? 'bold ' : ''}${Number(a.fontSize) || 14}px Arial,sans-serif`,
+      `color:${color(a.color, '#323232')};text-align:${align(alignment)}`,
+      `white-space:${overflow};overflow:${a.verticalOverflow === 'Truncate' ? 'hidden' : 'visible'}`,
+      'line-height:normal'
+    ].join(';');
+    return `<div ${common} class="text-node" style="${style}">${rich(n.text)}</div>`;
   }
   if (tag === 'Image') {
     let src = a.image && assets[a.image];
@@ -89,7 +98,14 @@ function nodeHtml(n, assets, index, parentBox = { x: 0, y: 0 }) {
   if (tag === 'Button' || tag === 'ToggleButton') {
     const disabled = String(a.interactable).toLowerCase() === 'false';
     const c = String(a.colors || '#dddddd|#eeeeee|#cccccc|#888888').split('|');
-    return `<button ${common} ${disabled ? 'disabled' : ''} style="${base}${shadow}${outline}border:0;background:${color(disabled ? c[3] : c[0], '#dddddd')};color:${color(a.textColor, '#222222')};font:${a.fontStyle === 'Bold' ? 'bold ' : ''}${Number(a.fontSize) || 14}px Arial,sans-serif;overflow:hidden">${rich(n.text)}</button>`;
+    const buttonBorder = a.outline ? outline : 'border:0;';
+    const style = `${base}${shadow}${buttonBorder}` + [
+      `background:${color(disabled ? c[3] : c[0], '#dddddd')}`,
+      `color:${color(a.textColor, '#222222')}`,
+      `font:${a.fontStyle === 'Bold' ? 'bold ' : ''}${Number(a.fontSize) || 14}px Arial,sans-serif`,
+      'overflow:hidden'
+    ].join(';');
+    return `<button ${common} ${disabled ? 'disabled' : ''} style="${style}">${rich(n.text)}</button>`;
   }
   if (tag === 'InputField') return `<div ${common} style="${base}background:${color((a.colors || '#ffffff').split('|')[0], '#fff')};color:${color(a.textColor, '#222')};font: ${Number(a.fontSize) || 14}px Arial,sans-serif;padding:4px;overflow:hidden">${esc(a.text || a.placeholder || '')}</div>`;
   if (tag === 'Dropdown') {
@@ -107,6 +123,8 @@ function nodeHtml(n, assets, index, parentBox = { x: 0, y: 0 }) {
 }
 function tupleBorder(v) { const a = String(v || '1 1').split(/[ ,]+/).map(Number); return Math.max(...a.filter(Number.isFinite), 1); }
 function align(v) { return /Right$/.test(v || '') ? 'right' : /Center$/.test(v || '') ? 'center' : 'left'; }
+function horizontalAlign(v) { return /Right$/.test(v || '') ? 'flex-end' : /Center$/.test(v || '') ? 'center' : 'flex-start'; }
+function verticalAlign(v) { return /^Lower/.test(v || '') ? 'flex-end' : /^Middle/.test(v || '') ? 'center' : 'flex-start'; }
 function htmlFor(tree, name, assets = {}) {
   const body = tree.map((n, i) => nodeHtml(n, assets, `${i}`)).join('');
   return `<!doctype html><meta charset="utf-8"><style>*{box-sizing:border-box}html,body{margin:0;width:1920px;height:1080px;font-family:Arial,sans-serif;background:#30343a;overflow:hidden}main{position:relative;width:1920px;height:1080px;overflow:hidden;background:#20252b}button{padding:0}main>div,main>button{}</style><main data-scene="${esc(name)}">${body}</main>`;

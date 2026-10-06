@@ -74,19 +74,43 @@ function visible(a, player) {
 function layout(nodes, options = {}) {
   const defaults = resolveDefaults(nodes), player = options.player || '', autosize = options.textAutosize !== false;
   const output = [];
+  const canvas = { x: 0, y: 0, width: 1920, height: 1080 };
+  function preferred(node, axis, available) {
+    const a = attributes(node, defaults), key = axis === 'x' ? 'Width' : 'Height';
+    if (a[`preferred${key}`] != null) return num(a[`preferred${key}`], available, 0);
+    const children = entries(node.children).filter(k => k && k.tag && visible(attributes(k, defaults), player) &&
+      String(attributes(k, defaults).ignoreLayout).toLowerCase() !== 'true');
+    if (node.tag === 'HorizontalLayout' || node.tag === 'VerticalLayout') {
+      const horizontal = node.tag === 'HorizontalLayout', same = (axis === 'x') === horizontal;
+      const [l, r, t, b] = tuple(a.padding, 4);
+      const pad = axis === 'x' ? l + r : t + b;
+      if (same) return pad + children.reduce((sum, child) => sum + preferred(child, axis, available), 0) +
+        Math.max(0, children.length - 1) * num(a.spacing, available, 0);
+      return pad + Math.max(0, ...children.map(child => preferred(child, axis, available)));
+    }
+    if (node.tag === 'Text') {
+      if (axis === 'x') return Math.max(0, ...String(a.text ?? node.value ?? '').split('\n')
+        .map(s => s.length * num(a.fontSize, available, 14) * .55));
+      const fs = num(a.fontSize, available, 14), width = Math.max(1, num(a.preferredWidth, available, available));
+      const chars = Math.max(1, Math.floor(width / (fs * .55)));
+      return String(a.text ?? node.value ?? '').split('\n')
+        .reduce((sum, line) => sum + Math.max(1, Math.ceil(line.length / chars)), 0) * fs * 1.2;
+    }
+    return 0;
+  }
   function make(node, parent, parentBox, forcedBox) {
     if (!node || typeof node !== 'object') return null;
     const a = attributes(node, defaults), kids = entries(node.children).filter(k => k && k.tag);
     if (!visible(a, player) || node.tag === 'Defaults') return null;
-    const root = !parent;
-    const w = forcedBox ? forcedBox.width : root ? num(a.width, 1920, 1920) : num(a.width, parentBox.width, parentBox.width);
-    const h = forcedBox ? forcedBox.height : root ? num(a.height, 1080, 1080) : num(a.height, parentBox.height, parentBox.height);
-    let x = forcedBox ? forcedBox.x : 0, y = forcedBox ? forcedBox.y : 0;
-    if (!forcedBox && !root) {
-      const [ax, ay] = anchors[a.rectAlignment] || [.5, .5], [ox, oy] = tuple(a.offsetXY, 2);
+    const w = forcedBox ? forcedBox.width : num(a.width, parentBox.width, parentBox.width);
+    const h = forcedBox ? forcedBox.height : num(a.height, parentBox.height, parentBox.height);
+    let x = forcedBox ? forcedBox.x : parentBox.x, y = forcedBox ? forcedBox.y : parentBox.y;
+    if (!forcedBox) {
+      const [ax, ay] = anchors[a.rectAlignment || (!parent ? 'UpperLeft' : '')] || [.5, .5], [ox, oy] = tuple(a.offsetXY, 2);
       const [px, py] = tuple(a.pivot, 2, .5);
-      x = parentBox.x + ax * parentBox.width + ox - px * w;
-      y = parentBox.y + ay * parentBox.height - oy - py * h;
+      const edgeAligned = !parent || String(a.ignoreLayout).toLowerCase() === 'true';
+      x = edgeAligned ? parentBox.x + ax * (parentBox.width - w) + ox : parentBox.x + ax * parentBox.width + ox - px * w;
+      y = edgeAligned ? parentBox.y + ay * (parentBox.height - h) - oy : parentBox.y + ay * parentBox.height - oy - py * h;
     }
     let box = { x, y, width: w, height: h };
     if (/ScrollView/.test(node.tag) && options.expandScroll && kids[0]) {
@@ -107,48 +131,44 @@ function layout(nodes, options = {}) {
       const horizontal = node.tag === 'HorizontalLayout', mainSize = horizontal ? inner.width : inner.height;
       const visibleKids = kids.filter(k => visible(attributes(k, defaults), player) && String(attributes(k, defaults).ignoreLayout).toLowerCase() !== 'true');
       const gap = num(a.spacing, mainSize, 0), spacing = gap * Math.max(0, visibleKids.length - 1);
-      const main = visibleKids.map(k => { const c = attributes(k, defaults); const isText = k.tag === 'Text' && autosize;
-        let pref = num(c[horizontal ? 'preferredWidth' : 'preferredHeight'], mainSize, NaN);
-        if (!Number.isFinite(pref)) {
-          pref = num(c[horizontal ? 'width' : 'height'], mainSize, 0);
-          if (!pref && isText && !horizontal) {
-            const fs = num(c.fontSize, mainSize, 14), width = num(c.width, inner.width, inner.width);
-            const chars = Math.max(1, Math.floor(width / (fs * .55)));
-            const lines = String(k.text ?? c.text ?? '').split('\n').reduce((sum, line) => sum + Math.max(1, Math.ceil(line.length / chars)), 0);
-            pref = lines * fs * 1.25;
-          }
-        }
-        return { min: num(c[horizontal ? 'minWidth' : 'minHeight'], mainSize, 0), pref, flex: num(c[horizontal ? 'flexibleWidth' : 'flexibleHeight'], mainSize, 0), attr: c };
+      const main = visibleKids.map(k => {
+        const c = attributes(k, defaults), axis = horizontal ? 'x' : 'y';
+        const pref = preferred(k, axis, mainSize);
+        return {
+          min: num(c[horizontal ? 'minWidth' : 'minHeight'], mainSize, 0), pref,
+          flex: num(c[horizontal ? 'flexibleWidth' : 'flexibleHeight'], mainSize, 0), attr: c, node: k
+        };
       });
-      let usedMin = main.reduce((s, c) => s + c.min, spacing);
-      let preferred = main.map(c => Math.max(c.min, c.pref));
-      let preferredExtra = Math.max(0, mainSize - usedMin);
-      let sizes = main.map(c => c.min);
-      for (let i = 0; i < main.length; i++) {
-        const delta = preferred[i] - sizes[i], share = Math.min(delta, preferredExtra / Math.max(1, main.length - i));
-        sizes[i] += share; preferredExtra -= share;
-      }
-      const extra = Math.max(0, mainSize - sizes.reduce((s, v) => s + v, spacing));
+      const available = Math.max(0, mainSize - spacing), totalPref = main.reduce((s, c) => s + Math.max(c.min, c.pref), 0);
       const force = String(a[horizontal ? 'childForceExpandWidth' : 'childForceExpandHeight'] ?? 'true') !== 'false';
-      const weight = c => c.flex || (force ? 1 : 0);
-      const flexTotal = main.reduce((s, c) => s + weight(c), 0);
+      const flexTotal = main.reduce((s, c) => s + c.flex, 0);
+      const sizes = main.map(c => {
+        if (totalPref > available) {
+          const minTotal = main.reduce((s, item) => s + item.min, 0);
+          const t = Math.max(0, Math.min(1, (available - minTotal) / Math.max(1e-9, totalPref - minTotal)));
+          return c.min + (Math.max(c.min, c.pref) - c.min) * t;
+        }
+        return Math.max(c.min, c.pref);
+      });
+      const extra = Math.max(0, available - sizes.reduce((s, v) => s + v, 0));
       let cursor = horizontal ? inner.x : inner.y;
       main.forEach((c, i) => {
-        const share = flexTotal ? extra * weight(c) / flexTotal : 0;
+        let share = flexTotal ? extra * c.flex / flexTotal : 0;
+        if (!flexTotal && (!totalPref || force)) share = extra / Math.max(1, main.length);
         const mainLen = sizes[i] + share;
         let crossH = horizontal ? inner.height : mainLen, crossW = horizontal ? mainLen : inner.width;
         const crossForce = String(a[horizontal ? 'childForceExpandHeight' : 'childForceExpandWidth'] ?? 'true') !== 'false';
         if (!crossForce) {
-          const pref = num(c.attr[horizontal ? 'preferredHeight' : 'preferredWidth'], horizontal ? inner.height : inner.width,
-            num(c.attr[horizontal ? 'height' : 'width'], horizontal ? inner.height : inner.width, horizontal ? inner.height : inner.width));
+          const pref = preferred(c.node, horizontal ? 'y' : 'x', horizontal ? inner.height : inner.width);
           if (horizontal) crossH = pref; else crossW = pref;
+          if (horizontal) crossH = Math.min(inner.height, crossH); else crossW = Math.min(inner.width, crossW);
         }
         const align = String(a.childAlignment || 'UpperLeft');
         const [cx, cy] = anchors[align] || [0, 0];
         const childBox = horizontal
           ? { x: cursor, y: inner.y + (inner.height - crossH) * cy, width: mainLen, height: crossH }
           : { x: inner.x + (inner.width - crossW) * cx, y: cursor, width: crossW, height: mainLen };
-        const child = make(visibleKids[i], result, inner, childBox); if (child) result.children.push(child);
+        const child = make(c.node, result, inner, childBox); if (child) result.children.push(child);
         cursor += mainLen + gap;
       });
       for (const k of kids) {
@@ -189,15 +209,15 @@ function layout(nodes, options = {}) {
         const horizontalScroll = node.tag.startsWith('Horizontal');
         const child = make(k, result, inner, scroll ? {
           x: inner.x, y: inner.y,
-          width: horizontalScroll ? num(childA.preferredWidth || childA.width, inner.width, inner.width) : inner.width,
-          height: horizontalScroll ? inner.height : num(childA.preferredHeight || childA.height, inner.height, inner.height)
+          width: num(childA.preferredWidth || childA.width, inner.width, inner.width),
+          height: num(childA.preferredHeight || childA.height, inner.height, inner.height)
         } : undefined);
         if (child) result.children.push(child);
       }
     }
     return result;
   }
-  for (const node of entries(nodes)) { const n = make(node, null, { x: 0, y: 0, width: 1920, height: 1080 }); if (n) output.push(n); }
+  for (const node of entries(nodes)) { const n = make(node, null, canvas); if (n) output.push(n); }
   return output;
 }
 
