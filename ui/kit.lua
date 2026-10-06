@@ -143,9 +143,26 @@ end
 ------------------------------------------------------------------------------------------------------------------------
 -- Node helpers
 ------------------------------------------------------------------------------------------------------------------------
+-- Children lists are often built with optional entries ({a, cond and b or nil, c}); ipairs/# would stop at the hole.
+local function compact(list)
+    if not list then return {} end
+    local keys = {}
+    for key in pairs(list) do if type(key) == "number" then keys[#keys + 1] = key end end
+    table.sort(keys)
+    local out = {}
+    for _, key in ipairs(keys) do if list[key] then out[#out + 1] = list[key] end end
+    return out
+end
+KT.compact = compact
+
+local NO_RAYCAST = { Panel = true, Image = true, Text = true, HorizontalLayout = true, VerticalLayout = true, GridLayout = true }
+
 local function node(tag, attrs, children, value)
     local n = { tag = tag, attributes = attrs or {} }
-    if children and #children > 0 then n.children = children end
+    -- Decorative elements never swallow clicks meant for a Button underneath (Unity Images are raycast targets).
+    if NO_RAYCAST[tag] and n.attributes.raycastTarget == nil then n.attributes.raycastTarget = "false" end
+    children = compact(children)
+    if #children > 0 then n.children = children end
     if value then n.value = value end
     return n
 end
@@ -162,7 +179,8 @@ local function pad(p)
 end
 
 local function spacer(h, w)
-    return node("Panel", { preferredHeight = num(h or 0), preferredWidth = w and num(w) or nil, color = KT.c.clear })
+    return node("Panel", { preferredHeight = num(h or 0), preferredWidth = w and num(w) or nil, color = KT.c.clear,
+        raycastTarget = "false" })
 end
 KT.spacer = spacer
 
@@ -200,10 +218,10 @@ function KT.section(label, w, count)
         kids[#kids + 1] = node("Text", { text = ct, fontSize = num(KT.fs.xs), fontStyle = "Bold", color = KT.c.dim,
             alignment = "MiddleLeft", preferredWidth = num(KT.textWidth(ct, KT.fs.xs, true) + 8), raycastTarget = "false" })
     end
-    kids[#kids + 1] = node("Panel", { flexibleWidth = "1", preferredHeight = "18", color = KT.c.clear }, {
+    kids[#kids + 1] = node("Panel", { flexibleWidth = "1", preferredHeight = "18", color = KT.c.clear, raycastTarget = "false" }, {
         node("Image", { height = "1", width = "100%", color = KT.c.line, raycastTarget = "false" }),
     })
-    return node("HorizontalLayout", { preferredHeight = "20", preferredWidth = num(w), spacing = "0",
+    return node("HorizontalLayout", { preferredHeight = "20", preferredWidth = num(w), spacing = "0", raycastTarget = "false",
         childForceExpandWidth = "false", childForceExpandHeight = "true", childAlignment = "MiddleLeft" }, kids)
 end
 
@@ -215,13 +233,8 @@ function KT.vstack(children, o)
     o = o or {}
     local p, gap = pad(o.pad), o.gap or 0
     local h = p[3] + p[4]
-    local kept = {}
-    for _, c in ipairs(children) do
-        if c then
-            kept[#kept + 1] = c
-            h = h + prefH(c)
-        end
-    end
+    local kept = compact(children)
+    for _, c in ipairs(kept) do h = h + prefH(c) end
     h = h + math.max(0, #kept - 1) * gap
     if o.minH then h = math.max(h, o.minH) end
     if o.h then h = o.h end
@@ -232,6 +245,7 @@ function KT.vstack(children, o)
         childAlignment = o.align or "UpperLeft", color = o.bg or KT.c.clear,
         outline = o.outline, outlineSize = o.outline and "1 1" or nil, active = o.active == false and "false" or nil,
         flexibleWidth = o.flex and num(o.flex) or nil, tooltip = o.tooltip,
+        raycastTarget = (o.raycast or o.tooltip) and "true" or "false",
     }, kept)
 end
 
@@ -240,8 +254,7 @@ function KT.hstack(children, o)
     o = o or {}
     local p, gap = pad(o.pad), o.gap or 0
     local h = o.h
-    local kept = {}
-    for _, c in ipairs(children) do if c then kept[#kept + 1] = c end end
+    local kept = compact(children)
     if not h then
         h = 0
         for _, c in ipairs(kept) do h = math.max(h, prefH(c)) end
@@ -253,7 +266,7 @@ function KT.hstack(children, o)
         childForceExpandWidth = "false", childForceExpandHeight = o.stretch == false and "false" or "true",
         childAlignment = o.align or "MiddleLeft", color = o.bg or KT.c.clear,
         outline = o.outline, outlineSize = o.outline and "1 1" or nil, active = o.active == false and "false" or nil,
-        flexibleWidth = o.flex and num(o.flex) or nil,
+        flexibleWidth = o.flex and num(o.flex) or nil, raycastTarget = o.raycast and "true" or "false",
     }, kept)
 end
 
@@ -339,7 +352,7 @@ function KT.chip(label, kind, o)
     return node("Panel", {
         id = o.id, color = cs[1], preferredWidth = num(w), preferredHeight = num(h),
         outline = kind == "mute" and KT.c.line or nil, outlineSize = kind == "mute" and "1 1" or nil,
-        tooltip = o.tooltip,
+        tooltip = o.tooltip, raycastTarget = o.tooltip and "true" or "false",
     }, {
         node("Text", { id = o.id and (o.id .. "_t") or nil, text = text, fontSize = num(size), fontStyle = "Bold",
             color = cs[2], alignment = "MiddleCenter", raycastTarget = "false" }),
@@ -370,7 +383,7 @@ function KT.bar(value, max, o)
     local w, h = o.w or 200, o.h or 6
     local fill = KT.barFill(value, max, w)
     return node("HorizontalLayout", {
-        id = o.id, preferredHeight = num(h), preferredWidth = num(w), spacing = "0",
+        id = o.id, preferredHeight = num(h), preferredWidth = num(w), spacing = "0", raycastTarget = "false",
         childForceExpandWidth = "false", childForceExpandHeight = "true", color = KT.c.bg,
     }, {
         node("Image", { id = o.id and (o.id .. "_fill") or nil, preferredWidth = fill.preferredWidth, color = fill.color,

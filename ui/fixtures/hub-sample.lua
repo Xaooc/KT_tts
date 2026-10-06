@@ -87,7 +87,7 @@ end
 
 function HubSample.turnPhase()
     local vm = base("turn")
-    vm.status = { eyebrow = "РАУНД 3 / 4 · ГАМБИТЫ", sides = status.sides }
+    vm.status = { eyebrow = "РАУНД 3 / 4 · СТРАТЕГИЯ · ГАМБИТЫ", sides = status.sides }
     vm.turn = { mode = "phase", title = "Стратегические гамбиты",
         text = "Игроки по очереди применяют стратегические уловки или пасуют. Два паса подряд начинают перестрелку.",
         buttons = { { cmd = "tab", arg = "ploys", label = "Выбрать стратегическую уловку", kind = "primary" },
@@ -102,7 +102,7 @@ function HubSample.setup()
     vm.status = { eyebrow = "ПОМОЩНИК НЕ ЗАПУЩЕН", sides = {
         { name = "Круг Иеротек", colorKey = "Red", cp = 3, vp = 0 }, { name = "Ангелы смерти", colorKey = "Blue", cp = 3, vp = 0 } } }
     vm.turn = { mode = "setup", isHost = true, round = 1, phaseIndex = 1,
-        phaseLabels = { "Инициатива (начало раунда)", "Подготовка", "Гамбиты", "Перестрелка", "Подсчёт очков" },
+        phaseLabels = { "Стратегия · инициатива", "Стратегия · готовность", "Стратегия · гамбиты", "Перестрелка", "Конец раунда · подсчёт очков" },
         turnLabels = { "Красный", "Синий" }, turnIndex = 1 }
     vm.foot = { { cmd = "start", label = "Начать партию", kind = "primary", flex = true } }
     return vm
@@ -119,7 +119,9 @@ function HubSample.ploys()
     local vm = base("ploys")
     vm.ploys = { seg = "fire", note = "Сейчас ход соперника: ответные уловки доступны.", items = {
         { key = "p1", name = "Живая молния", english = "Living Lightning", cost = 1, open = true, usable = true,
-            body = livingLightning, terms = { { "t1", "Бессмертный" }, { "t2", "Взрыв" }, { "t3", "Беспощадное" } }, expiry = "action" },
+            body = livingLightning, terms = { { "t1", "Бессмертный" }, { "t2", "Взрыв" }, { "t3", "Беспощадное" } }, expiry = "action",
+            needsTarget = true, targetGuid = "a3", targets = { { guid = "a3", name = "Страж-бессмертный" },
+                { guid = "a4", name = "Страж-бессмертный" }, { guid = "a6", name = "Плазмацит-реаниматор", state = "down" } } },
         { key = "p2", name = "Контроль корой", english = "Cortical Control", cost = 1 },
         { key = "p3", name = "Повторно активированная функция", english = "Reanimated Function", cost = 1 },
         { key = "p4", name = "Межпространственная засада", english = "Dimensional Ambush", cost = 1, used = true },
@@ -221,7 +223,7 @@ function HubSample.datasheet()
         abilities = {
             { title = "Живой металл", english = "Living Metal",
                 body = "В шаге «Готовность» каждого раунда этот оперативник восстанавливает 2 потерянных WND." },
-            { title = "Неумирающие", english = "Undying",
+            { title = "Неумирающие",
                 body = "Когда оперативник выведен из строя, поставьте маркер Реанимации на его месте." },
             { title = "Межпространственное командование", english = "Interstitial Command", cost = "1 AP",
                 body = "ПОДДЕРЖКА. Выберите другого дружественного оперативника Круга Иеротек, видимого этому оперативнику. "

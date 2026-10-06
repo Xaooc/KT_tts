@@ -179,7 +179,7 @@ function D.view(vm)
         offsetXY = "-" .. D.geo.right .. " 0", width = tostring(w), height = tostring(total),
         color = c.bg, outline = c.line, outlineSize = "1 1", shadow = "#000000B0", shadowDistance = "0 -12",
         childForceExpandWidth = "true", childForceExpandHeight = "false", spacing = "0", allowDragging = "true",
-        returnToOriginalPositionWhenReleased = "false",
+        returnToOriginalPositionWhenReleased = "false", raycastTarget = "true",
     }, {
         head, bodyNode,
         KT.node("Image", { preferredHeight = "1", color = c.line, raycastTarget = "false" }),

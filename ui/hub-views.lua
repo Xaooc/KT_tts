@@ -464,8 +464,20 @@ local function ployRow(color, p, w)
             p.expiry, { prefix = H.id(color, "ployexpiry") .. ":", w = iw, h = 30 })
     end
     if p.needsTarget then
-        list[#list + 1] = KT.text(p.targetName and ("Цель: " .. p.targetName) or "Цель: выбранный в «Ходе» оперативник",
-            { w = iw, size = fs.s, color = c.muted })
+        list[#list + 1] = KT.text(p.targetGuid and "Цель" or "Выберите цель уловки", { w = iw, size = fs.xs, bold = true,
+            color = p.targetGuid and c.muted or c.accentHi })
+        local rows, row = {}, {}
+        for _, t in ipairs(p.targets or {}) do
+            local on = t.guid == p.targetGuid
+            row[#row + 1] = btn(color, "ploytarget", t.guid, t.name, { kind = on and "rowOn" or "row", h = 32, size = 12, flex = 1,
+                bold = on, enabled = t.state ~= "down" })
+            if #row == 2 then rows[#rows + 1] = KT.hstack(row, { h = 32, gap = 6 }); row = {} end
+        end
+        if #row > 0 then
+            row[#row + 1] = KT.node("Panel", { flexibleWidth = "1", color = c.clear })
+            rows[#rows + 1] = KT.hstack(row, { h = 32, gap = 6 })
+        end
+        if #rows > 0 then list[#list + 1] = KT.vstack(rows, { w = iw, gap = 6 }) end
     end
     local apply = btn(color, "useploy", p.key, p.usable and ("Применить  −" .. tostring(p.cost or 1) .. " CP") or (p.reason or "Сейчас нельзя"),
         { kind = "primary", h = 40, flex = 1, enabled = p.usable })
@@ -531,8 +543,10 @@ function H.viewEnemy(vm, w)
             list[#list + 1] = KT.empty("Модели соперника не найдены", "Они появятся, когда соперник выставит отряд на стол.", w)
         end
     elseif e.seg == "ploys" then
+        if not e.ploys or #e.ploys == 0 then
+            list[#list + 1] = KT.empty("Уловки неизвестны", "Отряд соперника ещё не определён: он выбирает его в своей вкладке «Отряд».", w)
+        end
         for _, p in ipairs(e.ploys or {}) do
-            p.usable = false
             if p.open then
                 list[#list + 1] = KT.vstack({
                     KT.hstack({
@@ -561,6 +575,9 @@ function H.viewEnemy(vm, w)
             end
         end
     else
+        if not e.rules or #e.rules == 0 then
+            list[#list + 1] = KT.empty("Правила недоступны", "Справочник отряда соперника появится, когда известен его отряд.", w)
+        end
         for _, r in ipairs(e.rules or {}) do
             list[#list + 1] = KT.card({
                 KT.text(r.title, { w = w - 24, size = 15, bold = true }),
@@ -778,6 +795,7 @@ local function termPopover(color, t)
     box.attributes.offsetXY = "-26 -120"
     box.attributes.shadow = "#000000CC"
     box.attributes.shadowDistance = "0 -10"
+    box.attributes.raycastTarget = "true"
     return box
 end
 
@@ -881,7 +899,7 @@ local function toast(vm, w)
             t.body and KT.text(t.body, { w = tw, size = 12, color = c.muted }) or nil,
         }, { gap = 2, flex = 1 }),
         t.undo ~= false and btn(vm.color, "undo", nil, "Отменить", { w = 90, h = 30, size = 13 }) or nil,
-    }, { gap = 10, pad = { 12, 12, 10, 10 }, bg = c.rail, outline = c.accent, align = "MiddleLeft", stretch = false })
+    }, { gap = 10, pad = { 12, 12, 10, 10 }, bg = c.rail, outline = c.accent, align = "MiddleLeft", stretch = false, raycast = true })
     local h = KT.prefH(box)
     return KT.node("Panel", { id = H.id(vm.color, "toast"), ignoreLayout = "true", rectAlignment = "LowerLeft", width = tostring(w - 24),
         height = tostring(h), offsetXY = "12 " .. tostring(G.foot + 10), color = c.clear, showAnimation = "FadeIn",
@@ -896,7 +914,7 @@ function H.dock(vm)
     local rootId = "khDock_" .. color
     if vm.state == "hidden" then
         return KT.node("Panel", { id = rootId, visibility = color, rectAlignment = "UpperLeft", offsetXY = G.x .. " -" .. G.y,
-            width = "64", height = "40", color = c.rail, outline = c.line, outlineSize = "1 1" }, {
+            width = "64", height = "40", color = c.rail, outline = c.line, outlineSize = "1 1", raycastTarget = "true" }, {
             btn(color, "expand", nil, "KT", { kind = "tab", h = 40, size = 15 }),
         })
     end
@@ -932,6 +950,6 @@ function H.dock(vm)
         id = rootId, visibility = color, rectAlignment = "UpperLeft", offsetXY = G.x .. " -" .. G.y,
         width = tostring(width), height = tostring(G.h), color = c.bg, outline = c.line, outlineSize = "1 1",
         shadow = "#000000B0", shadowDistance = "0 -12", childForceExpandWidth = "false", childForceExpandHeight = "true",
-        spacing = "0", allowDragging = "false",
+        spacing = "0", allowDragging = "false", raycastTarget = "true",
     }, kids)
 end
