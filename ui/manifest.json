@@ -3,6 +3,7 @@
     "ui/kit.lua",
     "ui/rich.lua",
     "ui/datasheet-view.lua",
+    "ui/data-rosters.lua",
     "ui/ref-service.lua",
     "ui/datasheet.lua"
   ],

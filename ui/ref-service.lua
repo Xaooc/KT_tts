@@ -547,6 +547,7 @@ local function query(p)
         ctx = buildContext(p.color, object.getTable("state") or {}, object)
     end
     local teamKey = p.team and key(p.team) or ctx and ctx.team
+        or tostring(p.key or ""):match("^roster:([^:]+):") or tostring(p.key or ""):match("^team:([^:]+):")
     local team, scope, items = ruReferenceTeams[teamKey], p.scope or (ctx and "model" or "terms"), {}
     local function push(e) items[#items + 1] = e end
     if scope == "terms" then
@@ -608,7 +609,8 @@ local function query(p)
     local selected
     if p.key then for _, e in ipairs(items) do if e.key == p.key then selected = e; break end end
     elseif matched[1] then selected = matched[1].entry end
-    if selected then result.article = article(selected, team) end
+    if selected then result.article = article(selected, team)
+    elseif p.key then result.article = ruRefBookItem({team = teamKey, key = p.key}) end
     return result
 end
 
@@ -641,10 +643,13 @@ end
 
 local teamBookCache = {}
 local teamBookSections = {
+    {key = "roster", title = "Состав отряда"},
     {key = "rules", title = "Правила отряда"},
+    {key = "units", title = "Оперативники"},
     {key = "strat", title = "Стратегические уловки"},
     {key = "fire", title = "Уловки перестрелки"},
     {key = "eq", title = "Снаряжение"},
+    {key = "faq", title = "FAQ и уточнения"},
 }
 local function bookItem(entry, universal, cost)
     local title = splitTitle(ruDisplayName(entry.title or ""))
@@ -667,13 +672,26 @@ local function teamBook(p)
         byKey[section.key] = out
     end
     local seen = {}
-    local function add(sectionKey, entry, isUniversal, cost)
+    local function add(sectionKey, entry, isUniversal, cost, group)
         local identity = tostring(entry.english or "") .. "\n" .. tostring(entry.body or entry.text or "")
         if seen[identity] then return end
         seen[identity] = true
         local item = bookItem(entry, isUniversal, cost)
-        if item.title == "" then return end
+        if item.title == "" or item.body == "" then return end
+        item.group = group
+        if sectionKey == "rules" then item.title = ruReplace(item.title, " — ", ": ") end
         byKey[sectionKey].items[#byKey[sectionKey].items + 1] = item
+    end
+    local roster, rosterIds = (RuRosters or {})[teamKey], {}
+    for _, source in ipairs(roster and roster.sources or {}) do
+        local index = source:match("^library:entries%[(%d+)%]$")
+        local entry = index and team.entries[tonumber(index) + 1]
+        local cardId = source:match("^card:(.+)$")
+        if entry then rosterIds[entry.id] = true end
+        if cardId then rosterIds[cardId] = true end
+    end
+    for i, block in ipairs(roster and roster.blocks or {}) do
+        add("roster", {key = "roster:" .. teamKey .. ":" .. i, title = block.title, body = block.body})
     end
     for _, source in ipairs(team.entries or {}) do
         local id = "team:" .. teamKey .. ":" .. source.id
@@ -683,10 +701,23 @@ local function teamBook(p)
             if category == "team" then
                 local srcTitle, srcEnglish = display(source.title)
                 local teamTitle, teamEnglish = display(team.label)
-                local teamNameOnly = fold(plain(srcTitle)) == fold(plain(teamTitle))
+                local sameName = fold(plain(srcTitle)) == fold(plain(teamTitle))
                     or fold(plain(source.english)) == fold(plain(teamEnglish))
-                    or fold(plain(srcTitle)) == fold("Название отряда")
-                if not teamNameOnly and entry.body ~= "" then add("rules", entry, false) end
+                local nameBody = fold(ruTrim(plain(entry.body)))
+                local teamNameOnly = fold(plain(srcTitle)) == fold("Название отряда")
+                    or sameName and (nameBody == fold(plain(srcTitle)) or nameBody == fold(plain(team.label)))
+                if not rosterIds[source.id] and not teamNameOnly and entry.body ~= "" then
+                    local dash = srcTitle:find(" — ", 1, true)
+                    local continuation = dash and fold(srcTitle:sub(dash + #" — ")):find("продолжение", 1, true)
+                    if dash and not continuation then
+                        local group = splitTitle(ruTrim(srcTitle:sub(1, dash - 1)))
+                        if group == "Действия психоманта" then group = "Психомант"
+                        elseif group == "Действия хрономанта" then group = "Хрономант" end
+                        add("units", entry, false, nil, group)
+                    else
+                        add("rules", entry, false)
+                    end
+                end
             elseif category == "ploy" then
                 local sectionKey = source.ployType == "strategy" and "strat"
                     or source.ployType == "firefight" and "fire"
@@ -698,7 +729,6 @@ local function teamBook(p)
             elseif category == "equipment" then
                 add("eq", entry, false)
             elseif category == "faq" then
-                byKey.faq = byKey.faq or {key = "faq", title = "FAQ и уточнения", items = {}}
                 add("faq", entry, false)
             end
         end
@@ -714,13 +744,28 @@ local function teamBook(p)
         end)
     end
     local sections = {}
-    for _, section in ipairs(teamBookSections) do sections[#sections + 1] = byKey[section.key] end
-    if byKey.faq then sections[#sections + 1] = byKey.faq end
+    for _, section in ipairs(teamBookSections) do
+        if #byKey[section.key].items > 0 then sections[#sections + 1] = byKey[section.key] end
+    end
     local result = {team = teamKey, title = title, english = english, sections = sections}
     teamBookCache[teamKey] = copy(result)
     return result
 end
 function ruRefTeamBook(p) return safe(teamBook, p, {sections = {}}) end
+function ruRefBookItem(p)
+    local ok, result = pcall(function()
+        local book = teamBook(p or {})
+        for _, section in ipairs(book.sections) do
+            for _, item in ipairs(section.items) do
+                if item.key == p.key then
+                    return {label = KT.upper(section.title), team = book.title, title = item.title,
+                        english = item.english, cost = item.cost, body = item.body, terms = copy(item.terms)}
+                end
+            end
+        end
+    end)
+    return ok and result or nil
+end
 
 local legacyPloys = {}
 function ruLoadPloys(saved)

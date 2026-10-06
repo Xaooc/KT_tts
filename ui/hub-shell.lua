@@ -620,6 +620,77 @@ local function enemyPlayer(p)
     end
     local index=playerNumber[p.color];return index and seats()[index==1 and 2 or 1] or nil
 end
+local codexLabels={roster="Состав",rules="Правила",units="Оперативники",strat="Стратегия",
+    fire="Перестрелка",eq="Снаряжение",faq="FAQ"}
+local function codexVM(p,v)
+    local side=v.codexSide=="enemy" and "enemy" or "mine"
+    local opponent=enemyPlayer(p)
+    local enemyKey=opponent and team(opponent) or nil
+    local hasEnemy=opponent~=nil and RuAssistantTeams[enemyKey]~=nil
+    if side=="enemy" and not hasEnemy then side="mine" end
+    local ownKey=team(p)
+    local key=side=="enemy" and enemyKey or ownKey
+    local book=RuAssistantTeams[key] and teamBook(key) or nil
+    local out={side=side,hasEnemy=hasEnemy,scopes={},results={},count=0,query=v.codexQuery or "",
+        colorKey=side=="enemy" and opponent.color or p.color}
+    local sectionByKey={};local firstSection=nil
+    for _,section in ipairs(book and book.sections or {}) do
+        firstSection=firstSection or section.key
+        sectionByKey[section.key]=section
+        local label=codexLabels[section.key] or section.title
+        local scope={section.key,label,key=section.key,shortLabel=label}
+        if section.key~="roster" then
+            scope[3]=#(section.items or {})
+            scope.count=#(section.items or {})
+        end
+        out.scopes[#out.scopes+1]=scope
+    end
+    out.title=book and book.title or teamLabel(key)
+    out.english=book and book.english
+    if not book then
+        out.emptyHint="Выберите отряд во вкладке «Отряд»"
+    else
+        local sectionKey=v.codexSection
+        if not sectionByKey[sectionKey] then sectionKey=sectionByKey.roster and "roster" or firstSection end
+        out.scope=sectionKey
+        local section=sectionByKey[sectionKey]
+        local query=fold(out.query)
+        out.listTitle=query~="" and "Найдено" or section and section.title or "Найдено"
+        for _,source in ipairs(book.sections or {}) do
+            if query~="" or source.key==sectionKey then
+                for _,item in ipairs(source.items or {}) do
+                    local haystack=fold(tostring(item.title or "").." "..tostring(item.english or "")..
+                        " "..KT.stripTags(tostring(item.body or "")))
+                    if query=="" or haystack:find(query,1,true) then
+                        out.results[#out.results+1]={key=item.key,title=item.title,english=item.english,
+                            on=item.key==v.codexItem}
+                    end
+                end
+            end
+        end
+        out.count=#out.results
+        local itemKey=v.codexItem
+        if not itemKey then itemKey=out.results[1] and out.results[1].key end
+        if itemKey then
+            local article=refCall("ruRefBookItem",{team=key,key=itemKey})
+            if not article then
+                for _,source in ipairs(book.sections or {}) do
+                    for _,item in ipairs(source.items or {}) do
+                        if item.key==itemKey then
+                            article={label=KT.upper(source.title or source.key),team=book.title,title=item.title,
+                                english=item.english,cost=item.cost,body=item.body,terms=item.terms}
+                            break
+                        end
+                    end
+                    if article then break end
+                end
+            end
+            out.article=article
+        end
+    end
+    if v.codexTerm then out.term=refCall("ruRefTerm",{key=v.codexTerm}) end
+    return out
+end
 local function enemyVM(p,v)
     local enemy=enemyPlayer(p);if not enemy then return {} end
     local index=playerNumber[enemy.color];local key=team(enemy);local units={}
@@ -720,7 +791,8 @@ function ruHubBuildVM(color)
         if v.state=="open" then vm.enemy=enemyVM(p,v) else vm.enemy={} end
         vm.foot={{cmd="enemyref",label="Открыть отряд в справочнике",flex=true}}
     elseif vm.tab=="log" then vm.log=logVM(v)
-    elseif vm.tab=="ref" then vm.ref=refVM(p,v) end
+    elseif vm.tab=="ref" then vm.ref=refVM(p,v)
+    elseif vm.tab=="codex" then vm.codex=codexVM(p,v) end
     return vm
 end
 -- Rule bodies (body) come from the bundled rules library and keep their rich text; everything a player can edit
@@ -976,8 +1048,9 @@ function ruHubClick(p,value,id)
         if not validTab(arg) or spectator(p) and arg~="ref" then return false end;openTab(v,arg)
     elseif cmd=="collapse" then v.state="rail"
     elseif cmd=="expand" then openTab(v,v.tab)
-    elseif cmd=="term" then v.tab="ref";v.termKey=arg;v.state="open"
-    elseif cmd=="termclose" then v.termKey=nil
+    elseif cmd=="term" then
+        if v.tab=="codex" then v.codexTerm=arg else v.tab="ref";v.termKey=arg;v.state="open" end
+    elseif cmd=="termclose" then v.termKey=nil;v.codexTerm=nil
     elseif cmd=="setupround" then if integer(tonumber(arg),1,rules.scoring.maxRounds) then v.setup.round=tonumber(arg) end
     elseif cmd=="setupphase" then if phases[tonumber(arg)] then v.setup.phaseIndex=tonumber(arg) end
     elseif cmd=="setupturn" then if seats()[tonumber(arg)] then v.setup.turnIndex=tonumber(arg) end
@@ -1027,6 +1100,18 @@ function ruHubClick(p,value,id)
         while query:sub(1,1)==" " do query=query:sub(2) end
         while query:sub(-1)==" " do query=query:sub(1,-2) end
         v.teamQuery=query:sub(1,60)
+    elseif cmd=="codexside" then
+        if arg=="mine" or arg=="enemy" then
+            v.codexSide=arg;v.codexSection=nil;v.codexItem=nil;v.codexQuery=""
+        end
+    elseif cmd=="codexsec" then
+        v.codexSection=arg;v.codexItem=nil;v.codexQuery=""
+    elseif cmd=="codexopen" then v.codexItem=arg
+    elseif cmd=="codexsearch" then
+        local query=tostring(value or "")
+        while query:sub(1,1)==" " do query=query:sub(2) end
+        while query:sub(-1)==" " do query=query:sub(1,-2) end
+        v.codexQuery=query:sub(1,60)
     elseif cmd=="enroll" or cmd=="enrollall" then ok,msg=enroll(p,cmd=="enrollall")
     elseif cmd=="team" then
         if not RuAssistantTeams[arg] then return false end

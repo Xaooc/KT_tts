@@ -1,6 +1,23 @@
 // Read-only installed-data fixture, exercised in Fengari and emitted for native MoonSharp verification.
 const fs = require('fs');
 const assert = require('node:assert/strict');
+const {generate, normalize: normalizeRoster, serialize} = require('./build-rosters.cjs');
+const rosterLibrary = JSON.parse(fs.readFileSync('output/reference-hud-library.json', 'utf8'));
+const reviewedCards = JSON.parse(fs.readFileSync('ru-images-all-reviewed.json', 'utf8'));
+const rosterData = generate(rosterLibrary, reviewedCards);
+const rosterIds = Object.fromEntries(Object.entries(rosterData).map(([team, roster]) => [team,
+  roster.sources.map(source => {
+    const index = source.match(/^library:entries\[(\d+)\]$/);
+    return index ? rosterLibrary.teams[team].entries[Number(index[1])].id : source.slice('card:'.length);
+  }),
+]));
+assert.equal(fs.readFileSync('ui/data-rosters.lua', 'utf8'), serialize(rosterData), 'Roster output must be deterministic/current');
+assert.equal(normalizeRoster('Оперативники:\n• Воин (WARRIOR) с\nвинтовкой.\n• Стрелок (GUNNER).\nPage 2'),
+  'Оперативники:\n\n- Воин (WARRIOR) с винтовкой.\n\n- Стрелок (GUNNER).');
+assert(normalizeRoster('Из списка: юнит C.A.T. (C.A.T. UNIT)*; гейст-череп (GHEISTSKULL)*.').includes('(C.A.T. UNIT)'));
+const incompleteLibrary = {...rosterLibrary, teams: {...rosterLibrary.teams}};
+delete incompleteLibrary.teams.angelsofdeath;
+assert.throws(() => generate(incompleteLibrary, reviewedCards), /Expected all 41 library teams/);
 const { lua, lauxlib, lualib, to_luastring, to_jsstring } = require('./tools/node_modules/fengari');
 const tts = 'C:/Users/PC/Documents/My Games/Tabletop Simulator';
 const installed = JSON.parse(fs.readFileSync(tts + '/Mods/Workshop/3573927734_RU.json', 'utf8'));
@@ -171,6 +188,7 @@ local function articleKeys(a)
         for _, trait in ipairs(w.traits) do check(type(trait) == "string" and trait ~= "", "Article trait must be a label") end
     end
 end
+local rosterSourceIds = ${lit(rosterIds)}
 for teamKey, team in pairs(ruReferenceTeams) do
     teams = teams + 1
     for _, scope in ipairs({"team", "ploy", "eq", "faq"}) do
@@ -193,14 +211,39 @@ for teamKey, team in pairs(ruReferenceTeams) do
     check(#rules == ruRefQuery({team = teamKey, scope = "team"}).count, "Team rule API differs")
     for _, rule in ipairs(rules) do resolve(rule.terms, true); resolve({rule}) end
     local book, sectionByKey, bookKeys = ruRefTeamBook({team = teamKey}), {}, {}
+    local order, lastSection = {roster = 1, rules = 2, units = 3, strat = 4, fire = 5, eq = 6, faq = 7}, 0
     for _, section in ipairs(book.sections) do
+        check(order[section.key] > lastSection and #section.items > 0, "Book section ordering/empty section: " .. teamKey)
+        lastSection = order[section.key]
         sectionByKey[section.key] = section
         local sectionKeys = {}
-        for _, item in ipairs(section.items) do
+        for i, item in ipairs(section.items) do
             check(item.title ~= "" and item.body ~= "", "Incomplete team book item: " .. teamKey .. "/" .. item.key)
             check(not sectionKeys[item.key] and not bookKeys[item.key], "Duplicate team book key: " .. teamKey .. "/" .. item.key)
             sectionKeys[item.key], bookKeys[item.key] = true, true
             resolve(item.terms)
+            if section.key == "rules" then
+                check(not item.title:find(" — ", 1, true), "Operative title in faction rules: " .. item.key)
+            elseif section.key == "units" then
+                check(item.title:find(" — ", 1, true) and item.group and item.group ~= "", "Missing operative group: " .. item.key)
+                check(item.key:sub(1, 5) == "team:", "Existing operative key changed: " .. item.key)
+            elseif section.key == "roster" then
+                check(#KT.chars(item.body) > 80, "Short roster body: " .. item.key)
+                check(item.key == "roster:" .. teamKey .. ":" .. i, "Roster key changed: " .. item.key)
+                check(ruRefQuery({key = item.key}).article.body == item.body, "Roster key needs an explicit team: " .. item.key)
+            end
+            if section.key == "rules" or section.key == "units" then
+                for _, id in ipairs(rosterSourceIds[teamKey]) do
+                    check(item.key ~= "team:" .. teamKey .. ":" .. id, "Roster repeated outside roster section: " .. item.key)
+                end
+            end
+            local opened = ruRefBookItem({team = teamKey, key = item.key})
+            check(opened and opened.body == item.body and opened.title == item.title and opened.body ~= "",
+                "Book item does not open: " .. item.key)
+            check(opened.label == KT.upper(section.title) and opened.team == book.title and type(opened.terms) == "table",
+                "Incomplete book article VM: " .. item.key)
+            local queried = ruRefQuery({team = teamKey, key = item.key}).article
+            check(queried and queried.body ~= "", "Query cannot open book key: " .. item.key)
         end
     end
     local libraryPloys = ruRefQuery({team = teamKey, scope = "ploy"}).count
@@ -208,11 +251,26 @@ for teamKey, team in pairs(ruReferenceTeams) do
         + #(sectionByKey.fire and sectionByKey.fire.items or {}) == libraryPloys, "Team book ploy coverage: " .. teamKey)
     check(sectionByKey.rules and sectionByKey.eq and sectionByKey.strat and sectionByKey.fire,
         "Missing team book section: " .. teamKey)
+    check(sectionByKey.roster and #sectionByKey.roster.items > 0, "Missing team roster: " .. teamKey)
+    local rosterText = ""
+    for _, item in ipairs(sectionByKey.roster.items) do rosterText = rosterText .. item.body end
+    if teamKey == "hierotekcircle" then
+        check(rosterText:find("Хрономант", 1, true) and rosterText:find("Психомант", 1, true)
+            and rosterText:find("Техномант", 1, true), "Missing Cryptek choices")
+    elseif teamKey == "warpcoven" then
+        check(rosterText:find("Каждый Цаангор считается половиной варианта выбора", 1, true), "Missing Tzaangor half picks")
+    end
 end
 check(teams == 41, "Expected 41 teams")
 check(ploys == 328, "Expected 328 readable ploys")
 local unknownBook = ruRefTeamBook({team = "missing-team"})
 check(type(unknownBook.sections) == "table" and #unknownBook.sections == 0, "Unknown team book")
+check(ruRefBookItem({team = "missing-team", key = "missing"}) == nil, "Unknown team book item")
+check(ruRefBookItem({team = "hierotekcircle", key = "missing"}) == nil, "Unknown book key")
+check(ruRefBookItem(false) == nil and ruRefBookItem("invalid") == nil, "Book item API must not throw")
+local detachedBook = ruRefTeamBook({team = "hierotekcircle"})
+detachedBook.sections[1].items[1].body = "changed"
+check(ruRefBookItem({team = "hierotekcircle", key = "roster:hierotekcircle:1"}).body ~= "changed", "Mutable book cache leaked")
 local examples = {}
 for _, teamKey in ipairs({"hierotekcircle", "broodbrothers", "legionary"}) do
     local book, counts = ruRefTeamBook({team = teamKey}), {}
@@ -442,7 +500,7 @@ ruLoadPloys(saved)
 return checks .. " assertions; " .. teams .. " teams; " .. ploys .. " ploys; " .. profiles .. " profiles; "
     .. bodyCount .. " full bodies; 3 datasheet scenes; books " .. table.concat(examples, ", ")
 `;
-const modules = ['ui/kit.lua', 'ui/rich.lua', 'ui/datasheet-view.lua', 'ui/ref-service.lua', 'ui/datasheet.lua'];
+const modules = ['ui/kit.lua', 'ui/rich.lua', 'ui/datasheet-view.lua', 'ui/data-rosters.lua', 'ui/ref-service.lua', 'ui/datasheet.lua'];
 const script = [driver, original, data, ...modules.map(file => fs.readFileSync(file, 'utf8')), cases].join('\n');
 fs.mkdirSync('tmp', {recursive: true});
 fs.mkdirSync('output', {recursive: true});

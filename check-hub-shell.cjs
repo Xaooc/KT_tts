@@ -163,11 +163,30 @@ end,call=function(fn,params)
     if fn=='ruRefTermsIn' then return {{'devastating','Убойное'}} end
     if fn=='ruRefTerm' then return {title='Убойное',english='Devastating',body='Полное определение'} end
     if fn=='ruRefTeamRules' then return {{key='rule',title='Правило отряда',body='Текст',terms={}}} end
-    if fn=='ruRefTeamBook' and params.team=='hierotekcircle' then
-        return {team='hierotekcircle',title='Круг Иеротек',english='Hierotek Circle',sections={
-            {key='rules',title='Правила отряда',items={{key='r1',title='Протоколы',body='<b>Эффект</b> Текст правила',terms={}}}},
-            {key='strat',title='Стратегические уловки',items={{key='s1',title='Наступление',cost='1 CP',body='Текст',terms={}}}},
-            {key='eq',title='Снаряжение',items={{key='e1',title='Граната',body='Текст',terms={},universal=true}}}}}
+    if fn=='ruRefTeamBook' then
+        if params.team=='hierotekcircle' then
+            return {team='hierotekcircle',title='Круг Иеротек',english='Hierotek Circle',sections={
+                {key='roster',title='Состав отряда',items={{key='roster1',title='Бессмертные',english='Immortals',
+                    body='Основной состав'}}},
+                {key='rules',title='Правила отряда',items={{key='r1',title='Протоколы',
+                    body='<b>Эффект</b> Текст правил',terms={}}}},
+                {key='units',title='Оперативники',items={{key='unit1',title='Техномансер',english='Technomancer',
+                    group='Лидер',body='Лечение'}}},
+                {key='strat',title='Стратегические уловки',items={{key='s1',title='Резонансный протокол',
+                    english='Resonant Protocol',cost='1 CP',body='Текст'}}}}}
+        elseif params.team=='chaoscult' then
+            return {team='chaoscult',title='Культ Хаоса',english='Chaos Cult',
+                sections={
+                {key='roster',title='Состав отряда',items={{key='chaos1',title='Фанатики'}}}}}
+        end
+    end
+    if fn=='ruRefBookItem' then
+        local labels={roster1='Состав отряда',r1='Правила отряда',unit1='Оперативники',
+            s1='Стратегические уловки',chaos1='Состав отряда'}
+        local titles={roster1='Бессмертные',r1='Протоколы',unit1='Техномансер',
+            s1='Резонансный протокол',chaos1='Фанатики'}
+        return {label=labels[params.key],team=params.team=='hierotekcircle' and 'Круг Иеротек' or 'Культ Хаоса',
+            title=titles[params.key],body='Статья '..params.key}
     end
     if fn=='ruRefQuery' then
         if params.scope=='ploy' then
@@ -429,7 +448,7 @@ check(findNode(mounted('Red'),'kh:Red:enemyunit:devote_injury').attributes.text=
     'Injured enemy row omitted effective stats')
 check(#vm().enemy.ploys>0 and vm().enemy.team=='chaoscult','Enemy ploys')
 PreviewHubShellScenes.enemy={copy(mounted('Red'))}
-success(Player.Red,'enemyseg','rules');check(vm().enemy.rules[1].title=='Правило отряда')
+success(Player.Red,'enemyseg','rules');check(vm().enemy.book.sections[1].items[1].title=='Фанатики','Enemy team book')
 success(Player.Red,'enemyunit','devote');check(vm().ref.article.title=='Модель devote')
 check(refCalls[#refCalls].params.guid=='devote' and refCalls[#refCalls].params.scope=='model')
 success(Player.Red,'tab','log');check(#vm().log.groups==1 and #vm().log.groups[1].entries>0,'Journal grouping')
@@ -439,21 +458,60 @@ success(Player.Red,'logseg','score')
 check(vm().log.score.rows[1].rvp==1 and vm().log.score.rows[2].rvp==1,'Per-round VP')
 check(vm().log.score.total.rvp==5 and vm().status.sides[1].vp==5,'Grand total excludes a source')
 PreviewHubShellScenes.log={copy(mounted('Red'))}
--- Team book: squad view switch, rules open by default, toggles, per-team cache.
+-- Squad now links to the Codex; the legacy view command remains harmless.
 do
     success(Player.Red,'tab','squad');check(vm().squad.view=='models','Squad view must default to models')
-    local before=#refCalls
     success(Player.Red,'squadview','book')
-    local book=vm().squad.book
-    check(vm().squad.view=='book' and book and #book.sections==3,'Team book missing')
-    check(book.sections[1].items[1].open==true and book.sections[2].items[1].open==false,'Default open state')
-    check(vm().foot[1].note~=nil,'Book foot note')
-    success(Player.Red,'bookitem','s1');check(vm().squad.book.sections[2].items[1].open==true,'Book item did not open')
-    success(Player.Red,'bookitem','r1');check(vm().squad.book.sections[1].items[1].open==false,'Rules item did not close')
-    local calls=0;for i=before+1,#refCalls do if refCalls[i].fn=='ruRefTeamBook' then calls=calls+1 end end
+    check(findNode(mounted('Red'),'kh:Red:tab:codex')~=nil,'Squad Codex button missing')
+    success(Player.Red,'squadview','models');check(vm().squad.view=='models','Legacy squad view command')
+end
+do
+    success(Player.Red,'tab','codex')
+    local codex=vm().codex
+    check(codex and codex.scope=='roster' and #codex.scopes==4,'Codex tab/scopes missing')
+    check(codex.scopes[1].key=='roster' and codex.scopes[1].count==nil
+        and codex.scopes[2].key=='rules' and codex.scopes[2].count==1,'Codex scope counts')
+    check(codex.results[1].key=='roster1' and codex.article.title=='Бессмертные','Codex default roster/article')
+    local calls=0;for i=1,#refCalls do
+        if refCalls[i].fn=='ruRefTeamBook' and refCalls[i].params.team=='hierotekcircle' then calls=calls+1 end
+    end
     check(calls==1,'Team book must be cached per team, calls='..calls)
-    check(findNode(mounted('Red'),'kh:Red:bookitem:r1')~=nil,'Closed book item button missing')
-    success(Player.Red,'squadview','models');check(vm().squad.view=='models' and vm().squad.book==nil)
+    success(Player.Red,'codexsec','rules')
+    check(vm().codex.scope=='rules' and vm().codex.results[1].key=='r1' and vm().codex.article.title=='Протоколы',
+        'Codex section selection/reset')
+    success(Player.Red,'codexopen','unit1')
+    check(vm().codex.article.title=='Техномансер' and vm().codex.results[1].on==false,
+        'Codex open selection')
+    success(Player.Red,'codexsearch',nil,'Рез')
+    check(vm().codex.listTitle=='Найдено' and #vm().codex.results==1 and vm().codex.results[1].key=='s1',
+        'Cyrillic search across sections')
+    success(Player.Red,'codexsearch',nil,'')
+    check(vm().codex.query=='' and vm().codex.scope=='rules' and vm().codex.results[1].key=='r1',
+        'Codex search clear')
+    success(Player.Red,'codexside','enemy')
+    check(vm().codex.side=='enemy' and vm().codex.title=='Культ Хаоса' and vm().codex.colorKey=='Blue',
+        'Enemy team codex')
+    success(Player.Red,'codexside','mine')
+    success(Player.Red,'term','devastating')
+    check(vm().tab=='codex' and vm().codex.term.title=='Убойное','Codex term popover')
+    success(Player.Red,'termclose')
+    check(not vm().codex.term and RuHub.seats.Red.termKey==nil,'Term close on Codex/reference')
+    local oldSteam=Player.Red.steam_id
+    local redEngine=RuAssistantEngine and RuAssistantEngine.state.players['seat:1']
+    local oldTeam=redEngine and redEngine.team
+    if redEngine then redEngine.team='' end
+    Player.Red.steam_id='no-team-seat';RuHub.marks.Red.team=''
+    for _,id in ipairs({'immort','despot'}) do
+        local st=models[id].getTable('state');st.owner='unseated';models[id].setTable('state',st)
+    end
+    success(Player.Red,'tab','codex')
+    check(vm().codex.emptyHint=='Выберите отряд во вкладке «Отряд»' and #vm().codex.results==0,
+        'Codex no-team hint: '..tostring(vm().codex.emptyHint)..' results='..#vm().codex.results..' team='..tostring(vm().codex.title))
+    Player.Red.steam_id=oldSteam;RuHub.marks.Red.team='hierotekcircle'
+    if redEngine then redEngine.team=oldTeam end
+    for _,id in ipairs({'immort','despot'}) do
+        local st=models[id].getTable('state');st.owner='red-id';models[id].setTable('state',st)
+    end
 end
 success(Player.Red,'tab','turn')
 local timeout=RuHub.seats.Red.toastTimer;local writes=realWrites
