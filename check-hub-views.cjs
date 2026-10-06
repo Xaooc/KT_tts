@@ -9,8 +9,10 @@ const src = [
   'self={getGUID=function() return "efa3fe" end}',
   fs.readFileSync('ui/kit.lua', 'utf8'),
   fs.readFileSync('ui/hub-views.lua', 'utf8'),
+  fs.readFileSync('ui/datasheet-view.lua', 'utf8'),
   fs.readFileSync('ui/fixtures/hub-sample.lua', 'utf8'),
   'PreviewHubScenes=HubSample.all()',
+  'PreviewHubScenes.datasheet={HubSample.datasheet()}',
   'local n=0 for _ in pairs(PreviewHubScenes) do n=n+1 end',
   'return tostring(n).." hub scenes"',
 ].join('\n');

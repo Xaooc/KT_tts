@@ -364,24 +364,24 @@ function KT.chips(list, w, gap)
     return KT.vstack(rows, { gap = gap, w = w, stretch = false })
 end
 
--- Wound / progress bar. Fill width is patchable via id.."_fill" (attribute width).
+-- Wound / progress bar built from layout only: [fill | rest]. Patch id.."_fill" with KT.barFill(...).
 function KT.bar(value, max, o)
     o = o or {}
     local w, h = o.w or 200, o.h or 6
-    local pct = (max and max > 0) and math.max(0, math.min(1, value / max)) or 0
-    local color = o.color or (pct <= 0.34 and KT.c.hurt or pct <= 0.67 and KT.c.warn or KT.c.ok)
-    return node("Panel", {
-        id = o.id, preferredHeight = num(h), preferredWidth = o.flex and nil or num(w), flexibleWidth = o.flex and "1" or nil,
-        color = KT.c.bg, outline = KT.c.line, outlineSize = "1 1",
+    local fill = KT.barFill(value, max, w)
+    return node("HorizontalLayout", {
+        id = o.id, preferredHeight = num(h), preferredWidth = num(w), spacing = "0",
+        childForceExpandWidth = "false", childForceExpandHeight = "true", color = KT.c.bg,
     }, {
-        node("Image", { id = o.id and (o.id .. "_fill") or nil, rectAlignment = "MiddleLeft", width = num(math.floor(w * pct)),
-            height = "100%", color = color, raycastTarget = "false" }),
+        node("Image", { id = o.id and (o.id .. "_fill") or nil, preferredWidth = fill.preferredWidth, color = fill.color,
+            raycastTarget = "false" }),
+        node("Image", { flexibleWidth = "1", color = KT.c.bg, raycastTarget = "false" }),
     })
 end
 function KT.barFill(value, max, w)
-    local pct = (max and max > 0) and math.max(0, math.min(1, value / max)) or 0
+    local pct = (max and max > 0) and math.max(0, math.min(1, (value or 0) / max)) or 0
     return {
-        width = num(math.floor(w * pct)),
+        preferredWidth = num(math.floor(w * pct)),
         color = pct <= 0.34 and KT.c.hurt or pct <= 0.67 and KT.c.warn or KT.c.ok,
     }
 end
@@ -440,7 +440,7 @@ function KT.stat(iconName, label, value, o)
         top,
         node("Text", { id = o.id, text = str(value), fontSize = num(o.size or 18), fontStyle = "Bold", color = KT.c.fg,
             alignment = "MiddleCenter", preferredHeight = num((o.size or 18) + 6), raycastTarget = "false" }),
-    }, { pad = { 4, 4, 7, 6 }, gap = 3, bg = KT.c.s1, flex = 1, align = "MiddleCenter" })
+    }, { pad = { 4, 4, 7, 6 }, gap = 3, bg = KT.c.s1, w = o.w, flex = (not o.w) and 1 or nil, align = "MiddleCenter" })
 end
 
 -- Pips for AP: n total, used spent.

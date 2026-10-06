@@ -7,7 +7,7 @@ local c, fs = KT.c, KT.fs
 
 H.geo = {
     x = 12, y = 52, h = 760, rail = 64, panel = 388, wide = 900,
-    head = 98, foot = 64, pad = 16, scrollbar = 10,
+    head = 112, foot = 64, pad = 16, scrollbar = 10,
 }
 local G = H.geo
 
@@ -30,28 +30,23 @@ end
 local function side(s, w, color, idx)
     local turn = s.turn == true
     local base = H.id(color, "side", idx)
-    local nameW = w - 3 - 8 - 8 - 34 - 34 - 12
-    local kids = {
+    local iw = w - 4 - 8 - 8
+    local flagW = turn and 34 or 0
+    local nameRow = KT.hstack({
+        KT.node("Text", { id = base .. "_name", text = s.name or "—", fontSize = "12", fontStyle = "Bold", color = c.fg,
+            alignment = "MiddleLeft", preferredWidth = tostring(iw - flagW), horizontalOverflow = "Wrap",
+            verticalOverflow = "Truncate", raycastTarget = "false" }),
+        turn and KT.chip("ХОД", "acc", { size = 9, h = 15 }) or nil,
+    }, { h = 16, gap = 4 })
+    local nums = KT.node("Text", { id = base .. "_score",
+        text = tostring(s.cp or 0) .. " <size=10><color=" .. c.muted .. ">CP</color></size>   " .. tostring(s.vp or 0)
+            .. " <size=10><color=" .. c.muted .. ">VP</color></size>",
+        fontSize = "14", fontStyle = "Bold", color = c.fg, alignment = "MiddleLeft", preferredHeight = "18", raycastTarget = "false" })
+    return KT.hstack({
         KT.stripe(c[s.colorKey] or c.muted, 4),
-        KT.node("Text", { id = base .. "_name", text = s.name or "—", fontSize = "13", fontStyle = "Bold", color = c.fg,
-            alignment = "MiddleLeft", preferredWidth = tostring(nameW), horizontalOverflow = "Overflow", raycastTarget = "false" }),
-        KT.node("Text", { id = base .. "_cp", text = tostring(s.cp or 0) .. " <size=10><color=" .. c.muted .. ">CP</color></size>",
-            fontSize = "13", fontStyle = "Bold", color = c.fg, alignment = "MiddleRight", preferredWidth = "34", raycastTarget = "false" }),
-        KT.node("Text", { id = base .. "_vp", text = tostring(s.vp or 0) .. " <size=10><color=" .. c.muted .. ">VP</color></size>",
-            fontSize = "13", fontStyle = "Bold", color = c.fg, alignment = "MiddleRight", preferredWidth = "34", raycastTarget = "false" }),
-    }
-    local row = KT.hstack(kids, { h = 32, gap = 6, pad = { 0, 8, 0, 0 }, bg = turn and c.accentLo or c.s1,
-        outline = turn and c.accent or c.line, id = base, flex = 1 })
-    if not turn then return row end
-    -- "ХОД" flag sits on the top edge of the active side.
-    return KT.node("Panel", { preferredHeight = "32", flexibleWidth = "1", color = c.clear }, {
-        row,
-        KT.node("Panel", { ignoreLayout = "true", rectAlignment = "UpperRight", width = "30", height = "13",
-            offsetXY = "-6 7", color = c.accent }, {
-            KT.node("Text", { text = "ХОД", fontSize = "9", fontStyle = "Bold", color = c.onAccent, alignment = "MiddleCenter",
-                raycastTarget = "false" }),
-        }),
-    })
+        KT.vstack({ nameRow, nums }, { gap = 2, w = iw, pad = { 0, 0, 5, 5 } }),
+    }, { h = 46, gap = 8, pad = { 0, 8, 0, 0 }, bg = turn and c.accentLo or c.s1, outline = turn and c.accent or c.line,
+        id = base, w = w })
 end
 
 function H.head(vm, w)
@@ -66,7 +61,7 @@ function H.head(vm, w)
     for i, s in ipairs(st.sides or {}) do sides[#sides + 1] = side(s, (iw - 6) / 2, vm.color, i) end
     return KT.vstack({
         top,
-        #sides > 0 and KT.hstack(sides, { h = 32, gap = 6 }) or nil,
+        #sides > 0 and KT.hstack(sides, { h = 46, gap = 6 }) or nil,
     }, { w = w, pad = { G.pad, G.pad, 14, 12 }, gap = 10, bg = c.bg, h = G.head })
 end
 
@@ -169,15 +164,15 @@ local function actionTile(color, a)
     return KT.node("Panel", { preferredHeight = "44", flexibleWidth = "1", color = c.clear }, {
         KT.node("Button", { id = H.id(color, "action", a.key), onClick = enabled and KT.clickTarget() or nil,
             interactable = enabled and "true" or "false", text = "",
-            colors = c.s1 .. "|" .. c.s3 .. "|" .. c.s3 .. "|" .. c.s1, outline = c.line, outlineSize = "1 1",
-            tooltip = a.tip, tooltipPosition = a.tip and "Right" or nil }),
+            colors = c.s2 .. "|" .. c.s3 .. "|" .. "#343C44" .. "|" .. c.s1, outline = c.line, outlineSize = "1 1",
+            tooltip = a.tip or (done and "Выполнено в этой активации" or nil), tooltipPosition = "Right" }),
         KT.hstack({
+            KT.stripe(done and c.ok or c.clear, 3),
             KT.node("Text", { text = a.label, fontSize = "13", fontStyle = "Bold", alignment = "MiddleLeft",
                 color = enabled and c.fg or c.muted, flexibleWidth = "1", raycastTarget = "false" }),
-            done and KT.chip("ВЫПОЛНЕНО", "ok", { size = 9 }) or nil,
             KT.node("Text", { text = cost, fontSize = "11", fontStyle = "Bold", alignment = "MiddleRight",
                 color = costColor, preferredWidth = "40", raycastTarget = "false" }),
-        }, { h = 44, gap = 6, pad = { 10, 10, 0, 0 } }),
+        }, { h = 44, gap = 8, pad = { 0, 10, 0, 0 } }),
     })
 end
 
@@ -199,13 +194,13 @@ end
 local function unitCard(color, t, w)
     local u = t.unit
     local iw = w - 24
-    local chipsW = 170
+    local sw = math.floor((iw - 3) / 4)
     local stats = KT.hstack({
-        KT.stat("APL", "APL", u.apl, { id = H.id(color, "stat", "apl") }),
-        KT.stat("MOVE", "MOVE", u.move),
-        KT.stat("SAVE", "SAVE", u.save),
+        KT.stat("APL", "APL", u.apl, { id = H.id(color, "stat", "apl"), w = sw }),
+        KT.stat("MOVE", "MOVE", u.move, { w = sw }),
+        KT.stat("SAVE", "SAVE", u.save, { w = sw }),
         KT.stat("WOUNDS", "WND", tostring(u.wounds) .. "<size=13><color=" .. c.muted .. ">/" .. tostring(u.maxWounds) .. "</color></size>",
-            { id = H.id(color, "stat", "wnd") }),
+            { id = H.id(color, "stat", "wnd"), w = iw - 3 - sw * 3 }),
     }, { h = 52, gap = 1, bg = c.line, outline = c.line })
     local apRow = KT.hstack({
         KT.node("Text", { text = "AP", fontSize = "12", fontStyle = "Bold", color = c.muted, preferredWidth = "22",
@@ -215,13 +210,11 @@ local function unitCard(color, t, w)
             fontSize = "13", fontStyle = "Bold", color = c.fg, alignment = "MiddleRight", flexibleWidth = "1", raycastTarget = "false" }),
     }, { h = 18, gap = 10 })
     return KT.card({
-        KT.hstack({
-            KT.vstack({
-                KT.text(u.name, { w = iw - chipsW - 10, size = fs.xl, bold = true }),
-                u.english and KT.text(u.english, { w = iw - chipsW - 10, size = fs.s, color = c.muted }) or nil,
-            }, { gap = 2, flex = 1 }),
-            KT.vstack({ unitChips(u, chipsW) }, { w = chipsW, align = "UpperRight", stretch = false }),
-        }, { gap = 10, stretch = false, align = "UpperLeft" }),
+        KT.vstack({
+            KT.text(u.name, { w = iw, size = fs.xl, bold = true }),
+            u.english and KT.text(u.english, { w = iw, size = fs.s, color = c.muted }) or nil,
+        }, { gap = 2, w = iw }),
+        unitChips(u, iw),
         stats,
         KT.bar(u.wounds, u.maxWounds, { w = iw, h = 6, id = H.id(color, "wndbar") }),
         apRow,

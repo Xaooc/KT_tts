@@ -16,23 +16,21 @@ function args(argv) {
 }
 const esc = v => String(v ?? '').replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
 const px = n => `${Math.max(0, n)}px`;
-async function measureText(nodes, browser) {
+async function measureText(nodes, tree, browser) {
   const requests = [];
-  function visit(list, parentWidth = 1920, inLayout = false) {
-    for (const n of list) {
+  function visit(list, laidOut, inLayout = false) {
+    for (let i = 0; i < list.length; i++) {
+      const n = list[i], box = laidOut[i]?.box;
       const a = n.attributes || {}, isLayout = /^(Horizontal|Vertical)Layout$/.test(n.tag);
-      const widthValue = String(a.width || parentWidth);
-      const width = widthValue.endsWith('%') ? parentWidth * (parseFloat(widthValue) || 0) / 100 : Number.parseFloat(widthValue) || parentWidth;
-      if (n.tag === 'Text' && inLayout && !Number.isFinite(Number(a.preferredHeight))) {
+      if (n.tag === 'Text' && inLayout && a.preferredHeight == null && box) {
         requests.push({ node: n, text: String(a.text ?? n.value ?? ''), fontSize: Number(a.fontSize) || 14,
-          bold: a.fontStyle === 'Bold', width: a.width ? width : parentWidth,
+          bold: a.fontStyle === 'Bold', width: box.width,
           wrap: String(a.horizontalOverflow || 'Overflow').toLowerCase() === 'wrap' });
       }
-      const childWidth = isLayout || n.tag === 'Panel' ? width : parentWidth;
-      visit(entries(n.children), childWidth, isLayout);
+      visit(entries(n.children), laidOut[i]?.children || [], isLayout || inLayout && n.tag === 'Panel');
     }
   }
-  visit(nodes);
+  visit(nodes, tree);
   if (!requests.length) return;
   const page = await browser.newPage();
   try {
@@ -79,6 +77,13 @@ function nodeHtml(n, assets, index, parentBox = { x: 0, y: 0 }) {
   if (tag === 'Image') {
     let src = a.image && assets[a.image];
     if (src && !/^(?:https?:|data:|file:)/i.test(src)) src = pathToFileURL(path.resolve(src)).href;
+    if (src) {
+      // Unity Image colour tints the sprite (multiply); white or no colour means the sprite as-is.
+      const tint = a.color && !/^#?f{6}(?:f{2})?$/i.test(String(a.color).replace('#','')) && String(a.color).toLowerCase() !== 'white' ? color(a.color, '#ffffff') : '';
+      const size = a.preserveAspect === 'true' ? 'contain' : '100% 100%';
+      const fill = tint ? `background:${tint};-webkit-mask:url('${esc(src)}') center/${size} no-repeat;mask:url('${esc(src)}') center/${size} no-repeat;` : `background-image:url('${esc(src)}');background-size:${size};background-repeat:no-repeat;background-position:center;`;
+      return `<div ${common} style="${base}${shadow}${outline}${fill}"></div>`;
+    }
     return `<div ${common} style="${base}${shadow}${outline}background:${bg};${src ? `background-image:url('${esc(src)}');background-size:${a.preserveAspect === 'true' ? 'contain' : '100% 100%'};background-repeat:no-repeat;background-position:center;` : ''}"></div>`;
   }
   if (tag === 'Button' || tag === 'ToggleButton') {
@@ -98,7 +103,7 @@ function nodeHtml(n, assets, index, parentBox = { x: 0, y: 0 }) {
   }
   const scroll = /ScrollView/.test(tag);
   const overflow = scroll ? (tag.startsWith('Vertical') ? 'overflow-y:auto;overflow-x:hidden;' : 'overflow-x:auto;overflow-y:hidden;') : '';
-  return `<div ${common} style="${base}${shadow}${outline}${overflow}${tag === 'Panel' ? `background:${bg};` : ''}">${kids}</div>`;
+  return `<div ${common} style="${base}${shadow}${outline}${overflow}background:${bg};">${kids}</div>`;
 }
 function tupleBorder(v) { const a = String(v || '1 1').split(/[ ,]+/).map(Number); return Math.max(...a.filter(Number.isFinite), 1); }
 function align(v) { return /Right$/.test(v || '') ? 'right' : /Center$/.test(v || '') ? 'center' : 'left'; }
@@ -139,8 +144,11 @@ async function main() {
   try {
     for (const [sceneName, raw] of Object.entries(scenes)) {
       const roots = entries(raw), noautoRoots = JSON.parse(JSON.stringify(roots));
-      if (opt.textAutosize !== 'off') await measureText(roots, browser);
-      const tree = layout(roots, { player: opt.player, expandScroll: !!opt['expand-scroll'], textAutosize: opt.textAutosize !== 'off' });
+      let tree = layout(roots, { player: opt.player, expandScroll: !!opt['expand-scroll'], textAutosize: opt.textAutosize !== 'off' });
+      if (opt.textAutosize !== 'off') {
+        await measureText(roots, tree, browser);
+        tree = layout(roots, { player: opt.player, expandScroll: !!opt['expand-scroll'], textAutosize: true });
+      }
       const page = await browser.newPage({ viewport: { width: 1920, height: 1080 }, deviceScaleFactor: 1 });
       const doc = htmlFor(tree, sceneName, assetMap);
       fs.writeFileSync(path.join(out, `${sceneName}.html`), doc);
@@ -186,4 +194,5 @@ async function main() {
 }
 function count(nodes) { return nodes.reduce((s, n) => s + 1 + count(n.children || []), 0); }
 function cssEscape(s) { return String(s).replace(/[^\w-]/g, '\\$&'); }
-main().catch(e => { console.error(e); process.exitCode = 1; });
+module.exports = { htmlFor };
+if (require.main === module) main().catch(e => { console.error(e); process.exitCode = 1; });

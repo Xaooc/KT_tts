@@ -1,0 +1,14 @@
+{
+  "efa3fe": [
+    "ui/kit.lua",
+    "ui/datasheet-view.lua",
+    "ui/ref-service.lua",
+    "ui/datasheet.lua"
+  ],
+  "339b7f": [
+    "ui/font-metrics.lua",
+    "ui/kit.lua",
+    "ui/hub-views.lua",
+    "ui/hub-shell.lua"
+  ]
+}

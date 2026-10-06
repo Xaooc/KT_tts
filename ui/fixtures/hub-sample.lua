@@ -208,3 +208,25 @@ function HubSample.all()
     end
     return out
 end
+
+function HubSample.datasheet()
+    return KT.ds.view({
+        color = "Red", name = "Страж-бессмертный", english = "Immortal Guardian", team = "Круг Иеротек",
+        apl = 2, move = "5\"", save = "3+", wounds = 10,
+        weapons = {
+            { index = 1, kind = "ranged", name = "Карабин Теслы", a = 4, bs = "3+", d = "5/2",
+                traits = { { label = "Взрыв 2\"", key = "blast" }, { label = "Беспощадное", key = "relentless" } } },
+            { index = 2, kind = "melee", name = "Штык", a = 3, bs = "3+", d = "3/4" },
+        },
+        abilities = {
+            { title = "Живой металл", english = "Living Metal",
+                body = "В шаге «Готовность» каждого раунда этот оперативник восстанавливает 2 потерянных WND." },
+            { title = "Неумирающие", english = "Undying",
+                body = "Когда оперативник выведен из строя, поставьте маркер Реанимации на его месте." },
+            { title = "Межпространственное командование", english = "Interstitial Command", cost = "1 AP",
+                body = "ПОДДЕРЖКА. Выберите другого дружественного оперативника Круга Иеротек, видимого этому оперативнику. "
+                    .. "До конца раунда при активации он может выполнить одно дополнительное действие «Перемещение» без затрат AP. "
+                    .. "Это действие нельзя выполнять, пока оперативник находится в зоне контроля врага." },
+        },
+    })
+end
