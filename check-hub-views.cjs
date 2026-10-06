@@ -16,6 +16,7 @@ const src = [
   'PreviewHubScenes.datasheet={HubSample.datasheet()}',
   'PreviewHubScenes.rich={HubSample.rich()}',
   'PreviewHubScenes.book={KT.hub.dock(HubSample.book())}',
+  'PreviewHubScenes.codex={KT.hub.dock(HubSample.codex())}',
   'local n=0 for _ in pairs(PreviewHubScenes) do n=n+1 end',
   'return tostring(n).." hub scenes"',
 ].join('\n');

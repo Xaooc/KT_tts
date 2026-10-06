@@ -472,12 +472,7 @@ function H.viewSquad(vm, w)
         if shown == 0 then list[#list + 1] = KT.empty("Отряд не найден", "Попробуйте часть названия.", w) end
         return KT.vstack(list, { w = w, gap = 8 })
     end
-    list[#list + 1] = KT.seg({ { "models", "Модели" }, { "book", "Правила отряда" } }, s.view or "models",
-        { prefix = H.id(color, "squadview") .. ":", w = w, h = 34 })
-    if s.view == "book" then
-        list[#list + 1] = H.teamBook(color, s.book, w, "bookitem")
-        return KT.vstack(list, { w = w, gap = 10 })
-    end
+    list[#list + 1] = btn(color, "tab", "codex", "Правила и уловки отряда — Кодекс ›", { kind = "secondary", h = 34, size = 13 })
     list[#list + 1] = KT.seg({ { "all", "Все" }, { "ready", "Готовы" }, { "hurt", "Травмированы" } }, s.seg or "all",
         { prefix = H.id(color, "squadseg") .. ":", w = w })
     if s.units and #s.units > 0 then
@@ -763,12 +758,17 @@ end
 ------------------------------------------------------------------------------------------------------------------------
 local LIST_W = 320
 
-local function refList(color, r, h)
+-- cmd = { scope, open, search, placeholder, list (scroll id suffix), top = extra nodes above the scopes }
+local REF_CMD = { scope = "refscope", open = "refopen", search = "refsearch", placeholder = "Поиск по правилам…", list = "reflist" }
+
+local function refList(color, r, h, cmd)
+    cmd = cmd or REF_CMD
     local w = LIST_W - G.scrollbar - 28
     local scopes, row = {}, {}
     for _, s in ipairs(r.scopes or {}) do
         local on = s[1] == r.scope
-        row[#row + 1] = btn(color, "refscope", s[1], s[2], { kind = on and "rowOn" or "row", h = 30, size = 12, flex = 1 })
+        local label = s[3] and (s[2] .. "  " .. tostring(s[3])) or s[2]
+        row[#row + 1] = btn(color, cmd.scope, s[1], label, { kind = on and "rowOn" or "row", h = 30, size = 12, flex = 1 })
         if #row == 3 then scopes[#scopes + 1] = KT.hstack(row, { h = 30, gap = 4 }); row = {} end
     end
     if #row > 0 then
@@ -782,7 +782,7 @@ local function refList(color, r, h)
             it.english and KT.text(it.english, { w = w - 20, size = fs.xs, color = c.muted }) or nil,
         }, { pad = { 10, 10, 9, 9 }, gap = 3 })
         items[#items + 1] = KT.node("Panel", { preferredHeight = tostring(KT.prefH(inside)), color = c.clear }, {
-            KT.node("Button", { id = H.id(color, "refopen", it.key), onClick = KT.clickTarget(), text = "",
+            KT.node("Button", { id = H.id(color, cmd.open, it.key), onClick = KT.clickTarget(), text = "",
                 colors = it.on and (c.s3 .. "|" .. c.s3 .. "|" .. c.s3 .. "|" .. c.s3) or (c.s1 .. "|" .. c.s2 .. "|" .. c.s3 .. "|" .. c.s1) }),
             it.on and KT.node("Image", { ignoreLayout = "true", rectAlignment = "MiddleLeft", width = "3", height = "100%",
                 color = c.accent, raycastTarget = "false" }) or nil,
@@ -790,13 +790,15 @@ local function refList(color, r, h)
         })
     end
     if #items == 0 then items[1] = KT.text(r.emptyHint or "Ничего не найдено. Попробуйте часть слова.", { w = w, size = fs.s, color = c.dim }) end
+    local top = cmd.top and cmd.top(w) or nil
     local content = KT.vstack({
+        top,
         KT.vstack(scopes, { w = w, gap = 4 }),
-        KT.search(H.id(color, "refsearch"), r.query, "Поиск по правилам…", { w = w }),
-        KT.section("Найдено", w, r.count or #(r.results or {})),
+        KT.search(H.id(color, cmd.search), r.query, cmd.placeholder, { w = w }),
+        KT.section(r.listTitle or "Найдено", w, r.count or #(r.results or {})),
         KT.vstack(items, { w = w, gap = 2 }),
     }, { w = w + G.scrollbar, pad = { 14, 4, 14, 14 }, gap = 10 })
-    return KT.scroll(content, { w = LIST_W, h = h, id = H.id(color, "reflistscroll") })
+    return KT.scroll(content, { w = LIST_W, h = h, id = H.id(color, cmd.list .. "scroll") })
 end
 
 local function weaponTable(color, weapons, w)
@@ -826,7 +828,7 @@ local function weaponTable(color, weapons, w)
     return KT.vstack(rows, { w = w, gap = 1, bg = c.line })
 end
 
-local function refArticle(color, r, w, h)
+local function refArticle(color, r, w, h, scrollName)
     local a = r.article
     local iw = w - G.scrollbar - 52
     local list = {}
@@ -863,7 +865,7 @@ local function refArticle(color, r, w, h)
         end
     end
     local content = KT.vstack(list, { w = iw + G.scrollbar, pad = { 26, 26, 20, 20 }, gap = 14 })
-    return KT.scroll(content, { w = w, h = h, id = H.id(color, "refartscroll") })
+    return KT.scroll(content, { w = w, h = h, id = H.id(color, (scrollName or "refart") .. "scroll") })
 end
 
 local function termPopover(color, t)
@@ -892,6 +894,44 @@ local function termPopover(color, t)
 end
 
 -- Reference occupies the whole body area (no footer). Returns a fixed-size panel.
+------------------------------------------------------------------------------------------------------------------------
+-- Tab: Кодекс (team codex, wide two-pane): everything about one team, split into sections, one item at a time.
+-- vm.codex = { side = "mine"|"enemy", hasEnemy, title, english, colorKey, scopes = {{key,label,count}}, scope,
+--   query, results = {{key,title,english,on}}, count, listTitle, article = <same as ref article>|nil, term, emptyHint }
+------------------------------------------------------------------------------------------------------------------------
+function H.viewCodex(vm, w, h)
+    local x = vm.codex or {}
+    local color = vm.color
+    local cmd = { scope = "codexsec", open = "codexopen", search = "codexsearch", placeholder = "Поиск по отряду…",
+        list = "codexlist" }
+    cmd.top = function(lw)
+        local list = {}
+        if x.hasEnemy then
+            list[#list + 1] = KT.seg({ { "mine", "Мой отряд" }, { "enemy", "Соперник" } }, x.side or "mine",
+                { prefix = H.id(color, "codexside") .. ":", w = lw, h = 32 })
+        end
+        list[#list + 1] = KT.hstack({
+            KT.stripe(c[x.colorKey] or c.accent, 4),
+            KT.vstack({
+                KT.text(x.title or "Отряд не выбран", { w = lw - 14, size = 17, bold = true }),
+                x.english and KT.text(x.english, { w = lw - 14, size = fs.s, color = c.muted }) or nil,
+            }, { gap = 2, w = lw - 14 }),
+        }, { gap = 10, stretch = true, align = "UpperLeft" })
+        return KT.vstack(list, { w = lw, gap = 10 })
+    end
+    local r = { scopes = x.scopes, scope = x.scope, query = x.query, results = x.results, count = x.count,
+        listTitle = x.listTitle, emptyHint = x.emptyHint, article = x.article }
+    local kids = {
+        KT.hstack({
+            refList(color, r, h, cmd),
+            KT.node("Image", { preferredWidth = "1", color = c.line, raycastTarget = "false" }),
+            refArticle(color, r, w - LIST_W - 1, h, "codexart"),
+        }, { h = h }),
+    }
+    if x.term then kids[#kids + 1] = termPopover(color, x.term) end
+    return KT.node("Panel", { preferredHeight = tostring(h), preferredWidth = tostring(w), color = c.clear }, kids)
+end
+
 function H.viewReference(vm, w, h)
     local r = vm.ref or {}
     local color = vm.color
@@ -916,6 +956,7 @@ H.TABS = {
     { key = "squad", label = "Отряд", icon = "WOUNDS" },
     { key = "ploys", label = "Уловки", glyph = "CP" },
     { key = "enemy", label = "Враг", icon = "RANGED" },
+    { key = "codex", label = "Кодекс", glyph = "§" },
     { key = "ref", label = "Справка", glyph = "?" },
     { key = "log", label = "Журнал", glyph = "≡" },
 }
@@ -1014,14 +1055,14 @@ function H.dock(vm)
         })
     end
     local open = vm.state == "open"
-    local wide = open and vm.tab == "ref"
+    local wide = open and (vm.tab == "ref" or vm.tab == "codex")
     local panelW = wide and G.wide or G.panel
     local kids = { rail(vm) }
     if open then
         local bodyH = G.h - G.head - (wide and 0 or G.foot)
         local body
         if wide then
-            body = H.viewReference(vm, panelW, bodyH)
+            body = vm.tab == "codex" and H.viewCodex(vm, panelW, bodyH) or H.viewReference(vm, panelW, bodyH)
         else
             local view = VIEWS[vm.tab] or H.viewTurn
             local content = view(vm, inner(panelW))
