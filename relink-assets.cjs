@@ -69,10 +69,15 @@ async function checkURLs(urls, count) {
   const results = [];
   for (const url of selected) {
     try {
-      const response = await fetch(url, {method: 'HEAD', signal: AbortSignal.timeout(8000)});
+      const response = await fetch(url, {method: 'HEAD', signal: AbortSignal.timeout(20000)});
       results.push({url, status: response.status, ok: response.status >= 200 && response.status < 400});
     } catch (error) {
-      results.push({url, error: error.message, ok: false});
+      // Node fetch ignores HTTPS_PROXY; curl honours the system proxy, so use it as the second opinion.
+      const curl = require('child_process').spawnSync('curl', ['-s', '-o', process.platform === 'win32' ? 'NUL' : '/dev/null',
+        '-I', '-w', '%{http_code}', '--max-time', '60', url], {encoding: 'utf8'});
+      const status = Number(curl.stdout);
+      if (status) results.push({url, status, ok: status >= 200 && status < 400, via: 'curl'});
+      else results.push({url, error: error.message, ok: false});
     }
   }
   return results;
@@ -121,6 +126,10 @@ async function relink(options) {
     }
     replacementsCount += strings(original).reduce((total, value) => total + replacements.reduce((count, [ref]) =>
       count + value.split(ref).length - 1, 0), 0);
+    // TTS lists saves by SaveName: mark the online copy so it is not confused with the local one.
+    if (typeof linked.SaveName === 'string' && linked.SaveName && !linked.SaveName.endsWith(' (онлайн)')) {
+      linked.SaveName += ' (онлайн)';
+    }
     fs.writeFileSync(path.join(outDir, input.output), JSON.stringify(linked, null, 2) + '\n', 'utf8');
     files.push({source: input.key, output: input.output, localRefsRemain: local.length});
   }
