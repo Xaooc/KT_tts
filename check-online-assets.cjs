@@ -78,3 +78,16 @@ test('online install copies preserve conflicting files and use a hash suffix', t
   assert.equal(fs.readFileSync(destination,'utf8'),'user content');
   assert.equal(fs.readFileSync(installed.path,'utf8'),'new content');
 });
+
+test('embedPack places the team bag on a free spot and refuses GUID clashes', () => {
+  const {embedPack} = require('./relink-assets.cjs');
+  const t = (x, z) => ({posX: x, posY: 1, posZ: z, rotX: 0, rotY: 0, rotZ: 0, scaleX: 1, scaleY: 1, scaleZ: 1});
+  const save = {ObjectStates: [{GUID: 'aaa111', Transform: t(10, 10)}]};
+  const pack = {ObjectStates: [{GUID: 'bag001', Nickname: 'Bag', Transform: t(11, 10), ContainedObjects: [{GUID: 'in0001'}]}]};
+  const placed = embedPack(save, pack);
+  assert.equal(save.ObjectStates.length, 2);
+  assert.ok(Math.hypot(placed[0].x - 10, placed[0].z - 10) >= 5, 'bag must not overlap the existing object');
+  assert.ok(save.ObjectStates[1].Transform.posY >= 3.4);
+  const clash = {ObjectStates: [{GUID: 'x', ContainedObjects: [{GUID: 'aaa111'}]}]};
+  assert.throws(() => embedPack({ObjectStates: [{GUID: 'aaa111', Transform: t(0, 0)}]}, clash), /GUID clash/);
+});

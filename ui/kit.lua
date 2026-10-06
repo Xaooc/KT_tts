@@ -182,6 +182,10 @@ local function node(tag, attrs, children, value)
     local n = { tag = tag, attributes = clean }
     -- Decorative elements never swallow clicks meant for a Button underneath (Unity Images are raycast targets).
     if NO_RAYCAST[tag] and n.attributes.raycastTarget == nil then n.attributes.raycastTarget = "false" end
+    -- In TTS, free space in a layout group goes to children with any flexible size (some elements get one
+    -- implicitly), even with childForceExpand off. Sized elements therefore opt out explicitly.
+    if n.attributes.preferredHeight ~= nil and n.attributes.flexibleHeight == nil then n.attributes.flexibleHeight = "0" end
+    if n.attributes.preferredWidth ~= nil and n.attributes.flexibleWidth == nil then n.attributes.flexibleWidth = "0" end
     children = compact(children)
     if #children > 0 then n.children = children end
     if value then n.value = value end
@@ -258,6 +262,10 @@ function KT.vstack(children, o)
     for _, c in ipairs(kept) do h = h + prefH(c) end
     h = h + math.max(0, #kept - 1) * gap
     if o.minH then h = math.max(h, o.minH) end
+    if o.h and o.h > h then
+        -- Absorb the leftover height so no child gets stretched.
+        kept[#kept + 1] = node("Panel", { preferredHeight = "0", flexibleHeight = "1", color = KT.c.clear })
+    end
     if o.h then h = o.h end
     return node("VerticalLayout", {
         id = o.id, preferredHeight = num(h), preferredWidth = o.w and num(o.w) or nil,

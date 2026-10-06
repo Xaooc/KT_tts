@@ -7,7 +7,8 @@ local H = KT.hub
 local c, fs = KT.c, KT.fs
 
 H.geo = {
-    x = 12, y = 128, h = 760, rail = 64, panel = 388, wide = 900,  -- y: below the chess stopwatch (UpperLeft 430,0 180x120)
+    -- x clears TTS's own tool palette on the left edge; y sits below the chess stopwatch (UpperLeft 430,0 180x120).
+    x = 64, y = 128, h = 760, rail = 64, panel = 388, wide = 900,
     head = 112, foot = 64, pad = 16, scrollbar = 10,
 }
 local G = H.geo
@@ -392,6 +393,53 @@ function H.viewTurn(vm, w)
 end
 
 ------------------------------------------------------------------------------------------------------------------------
+-- Team book: everything about one team in one place (rules, ploys, equipment, FAQ).
+-- book = { title, english, sections = { {key, title, items = { {key, title, english, cost, body, terms, open, universal} }} } }
+-- cmd: click command for items ("bookitem" for own team, "enemybookitem" for the opponent).
+------------------------------------------------------------------------------------------------------------------------
+local function bookItem(color, cmd, it, w)
+    local costW = it.cost and 56 or 0
+    local textW = w - 24 - costW - (costW > 0 and 10 or 0)
+    local chipsList = {}
+    if it.universal then chipsList[#chipsList + 1] = { "ОБЩЕЕ СНАРЯЖЕНИЕ", "mute" } end
+    local head = KT.hstack({
+        KT.vstack({
+            KT.text(it.title, { w = textW, size = fs.m, bold = true }),
+            it.english and KT.text(it.english, { w = textW, size = fs.s, color = c.muted }) or nil,
+            #chipsList > 0 and KT.chips(chipsList, textW) or nil,
+        }, { gap = 3, w = textW }),
+        it.cost and KT.vstack({ (KT.chip(it.cost, "cost", { size = 12, h = 24 })) }, { w = costW, align = "UpperRight", stretch = false }) or nil,
+    }, { gap = 10, stretch = false, align = "UpperLeft" })
+    if not it.open then
+        local inside = KT.vstack({ head }, { pad = 12 })
+        return KT.node("Panel", { preferredHeight = tostring(KT.prefH(inside)), color = c.clear }, {
+            KT.node("Button", { id = H.id(color, cmd, it.key), onClick = KT.clickTarget(), text = "",
+                colors = c.s2 .. "|" .. c.s3 .. "|" .. c.s3 .. "|" .. c.s2, outline = c.line, outlineSize = "1 1" }),
+            inside,
+        })
+    end
+    return KT.vstack({
+        head,
+        H.ruleBlock(color, it.body, it.terms, w - 24, nil, it.title),
+        btn(color, cmd, it.key, "Свернуть", { kind = "ghost", h = 26, size = 12 }),
+    }, { w = w, pad = 12, gap = 10, bg = c.s2, outline = c.accent })
+end
+
+function H.teamBook(color, book, w, cmd)
+    local list = {}
+    if not book or not book.sections or #book.sections == 0 then
+        return KT.empty("Отряд не выбран", "Выберите отряд, и здесь появятся его правила, уловки и снаряжение.", w)
+    end
+    for _, sec in ipairs(book.sections) do
+        if sec.items and #sec.items > 0 then
+            list[#list + 1] = KT.section(sec.title, w, #sec.items)
+            for _, it in ipairs(sec.items) do list[#list + 1] = bookItem(color, cmd or "bookitem", it, w) end
+        end
+    end
+    return KT.vstack(list, { w = w, gap = 8 })
+end
+
+------------------------------------------------------------------------------------------------------------------------
 -- Tab: Отряд (squad)
 -- vm.squad = { team, summary, seg="all|ready|hurt", canEnroll, teamOptions={{key,label}}|nil (team picker when unset),
 --              units={unit...}, emptyHint }
@@ -410,9 +458,24 @@ function H.viewSquad(vm, w)
     }
     if s.teamOptions then
         list[#list + 1] = KT.section("Выберите свой отряд", w)
+        list[#list + 1] = KT.search(H.id(color, "teamsearch"), s.teamQuery, "Найти отряд: по-русски или по-английски", { w = w })
+        local query = KT.fold and KT.fold(s.teamQuery or "") or (s.teamQuery or ""):lower()
+        local shown = 0
         for _, opt in ipairs(s.teamOptions) do
-            list[#list + 1] = btn(color, "team", opt[1], opt[2], { kind = "row", h = 34, size = 13, align = "MiddleLeft" })
+            local label = tostring(opt[2] or "")
+            local hay = KT.fold and KT.fold(label .. " " .. tostring(opt[1])) or label:lower()
+            if query == "" or hay:find(query, 1, true) then
+                shown = shown + 1
+                list[#list + 1] = btn(color, "team", opt[1], label, { kind = "row", h = 34, size = 13, align = "MiddleLeft" })
+            end
         end
+        if shown == 0 then list[#list + 1] = KT.empty("Отряд не найден", "Попробуйте часть названия.", w) end
+        return KT.vstack(list, { w = w, gap = 8 })
+    end
+    list[#list + 1] = KT.seg({ { "models", "Модели" }, { "book", "Правила отряда" } }, s.view or "models",
+        { prefix = H.id(color, "squadview") .. ":", w = w, h = 34 })
+    if s.view == "book" then
+        list[#list + 1] = H.teamBook(color, s.book, w, "bookitem")
         return KT.vstack(list, { w = w, gap = 10 })
     end
     list[#list + 1] = KT.seg({ { "all", "Все" }, { "ready", "Готовы" }, { "hurt", "Травмированы" } }, s.seg or "all",
@@ -598,6 +661,8 @@ function H.viewEnemy(vm, w)
                 })
             end
         end
+    elseif e.book then
+        list[#list + 1] = H.teamBook(color, e.book, w, "enemybookitem")
     else
         if not e.rules or #e.rules == 0 then
             list[#list + 1] = KT.empty("Правила недоступны", "Справочник отряда соперника появится, когда известен его отряд.", w)
@@ -940,7 +1005,9 @@ function H.dock(vm)
     local color = vm.color
     local rootId = "khDock_" .. color
     if vm.state == "hidden" then
-        return KT.node("Panel", { id = rootId, visibility = color, rectAlignment = "UpperLeft", offsetXY = G.x .. " -" .. G.y,
+        local dock = vm.dock or {}
+        return KT.node("Panel", { id = rootId, visibility = color, rectAlignment = "UpperLeft",
+            offsetXY = tostring(dock.x or G.x) .. " -" .. tostring(dock.y or G.y),
             width = "64", height = "40", color = c.rail, outline = c.line, outlineSize = "1 1", raycastTarget = "true" }, {
             btn(color, "expand", nil, "KT", { kind = "tab", h = 40, size = 15 }),
         })
@@ -973,11 +1040,15 @@ function H.dock(vm)
         kids[#kids + 1] = panel
     end
     local width = G.rail + (open and (1 + panelW) or 0)
+    local dock = vm.dock or {}
     return KT.node("HorizontalLayout", {
-        id = rootId, visibility = color, rectAlignment = "UpperLeft", offsetXY = G.x .. " -" .. G.y,
+        id = rootId, visibility = color, rectAlignment = "UpperLeft",
+        offsetXY = tostring(dock.x or G.x) .. " -" .. tostring(dock.y or G.y),
+        allowDragging = "true", restrictDraggingToParentBounds = "true", returnToOriginalPositionWhenReleased = "false",
+        onEndDrag = KT.clickTarget():gsub("/[%w_]+$", "/ruHubDragEnd"),
         width = tostring(width), height = tostring(G.h), color = c.bg, outline = c.line, outlineSize = "1 1",
         shadow = "#000000B0", shadowDistance = "0 -12", childForceExpandWidth = "false", childForceExpandHeight = "true",
-        spacing = "0", allowDragging = "false", raycastTarget = "true",
+        spacing = "0", raycastTarget = "true",
     }, kids)
 end
 end

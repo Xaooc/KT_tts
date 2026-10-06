@@ -19,6 +19,7 @@ function parseArgs(argv) {
     else if (argv[i] === '--out-dir') options.outDir = argv[++i];
     else if (argv[i] === '--check-urls') options.checkUrls = Number(argv[++i]);
     else if (argv[i] === '--install') options.install = true;
+    else if (argv[i] === '--embed-pack') options.embedPack = true;
     else if (argv[i] === '--tts-dir') {
       const dir=resolveTtsDir({dir:argv[++i]});
       options.ttsDir=dir;
@@ -96,6 +97,35 @@ function installCopy(source,destination){
   return {path:target,sha256:digest};
 }
 
+// Put the team pack's objects on the table of the save: same GUIDs (refuse on any clash), placed at the nearest
+// spot to the pack's own saved position where no table object lies within 5 units, dropped from above the table.
+function embedPack(save, pack) {
+  const guids = new Set();
+  const walk = (o, visit) => { visit(o); (o.ContainedObjects || []).forEach(c => walk(c, visit)); Object.values(o.States || {}).forEach(c => walk(c, visit)); };
+  save.ObjectStates.forEach(o => walk(o, x => guids.add(x.GUID)));
+  pack.ObjectStates.forEach(o => walk(o, x => { if (guids.has(x.GUID)) throw new Error(`GUID clash while embedding pack: ${x.GUID}`); }));
+  const occupied = save.ObjectStates.filter(o => o.Transform).map(o => [o.Transform.posX, o.Transform.posZ]);
+  const free = (x, z) => occupied.every(([ox, oz]) => Math.hypot(ox - x, oz - z) >= 5);
+  const placed = [];
+  for (const original of pack.ObjectStates) {
+    const o = JSON.parse(JSON.stringify(original));
+    const t = o.Transform || (o.Transform = {posX: 0, posY: 3, posZ: 0, rotX: 0, rotY: 0, rotZ: 0, scaleX: 1, scaleY: 1, scaleZ: 1});
+    let spot = [t.posX, t.posZ];
+    search: for (let r = 0; r <= 60; r += 4) {
+      for (let a = 0; a < 360; a += 30) {
+        const x = t.posX + r * Math.cos(a * Math.PI / 180), z = t.posZ + r * Math.sin(a * Math.PI / 180);
+        if (free(x, z)) { spot = [x, z]; break search; }
+        if (r === 0) break;
+      }
+    }
+    t.posX = Math.round(spot[0] * 1000) / 1000; t.posZ = Math.round(spot[1] * 1000) / 1000; t.posY = Math.max(t.posY || 0, 3.4);
+    occupied.push(spot);
+    save.ObjectStates.push(o);
+    placed.push({guid: o.GUID, nickname: o.Nickname, x: t.posX, z: t.posZ});
+  }
+  return placed;
+}
+
 async function relink(options) {
   const manifestPath = path.resolve('output/online-assets/manifest.json');
   if (!fs.existsSync(manifestPath)) throw new Error(`Asset manifest not found: ${manifestPath}; run export-assets.cjs first.`);
@@ -132,6 +162,14 @@ async function relink(options) {
     }
     fs.writeFileSync(path.join(outDir, input.output), JSON.stringify(linked, null, 2) + '\n', 'utf8');
     files.push({source: input.key, output: input.output, localRefsRemain: local.length});
+  }
+  if (options.embedPack) {
+    const savePath = path.join(outDir, 'KT24-The-Killzone-RU-online.json');
+    const save = JSON.parse(fs.readFileSync(savePath, 'utf8'));
+    const pack = JSON.parse(fs.readFileSync(path.join(outDir, 'KT41-RU-online.json'), 'utf8'));
+    const placed = embedPack(save, pack);
+    fs.writeFileSync(savePath, JSON.stringify(save, null, 2) + '\n', 'utf8');
+    files.push({source: 'pack-on-table', output: path.basename(savePath), placed});
   }
   const urlChecks = options.checkUrls ? await checkURLs([...urls], options.checkUrls) : [];
   const urlFailures=urlChecks.filter(result=>!result.ok);
@@ -175,4 +213,4 @@ if (require.main === module) {
   })();
 }
 
-module.exports = {encodeRelative, parseArgs, relink, replaceStrings, checkURLs, installCopy};
+module.exports = {encodeRelative, parseArgs, relink, replaceStrings, checkURLs, installCopy, embedPack};
