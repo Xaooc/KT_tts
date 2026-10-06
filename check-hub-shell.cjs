@@ -162,6 +162,12 @@ local function vm(color) return RuHub.vms[color or 'Red'] end
 local function mounted(color)
     for i,key in ipairs(RuUi.keys) do if RuUi.owners[key]=='hub:'..color then return RuUi.roots[i] end end
 end
+local function findNode(n,id)
+    if n.attributes.id==id then return n end
+    for _,child in ipairs(n.children or {}) do
+        local found=findNode(child,id);if found then return found end
+    end
+end
 local function allIds(n,seen)
     seen=seen or {};check(n.attributes.id~=nil,'Anonymous dock node')
     check(not seen[n.attributes.id],'Duplicate id '..n.attributes.id);seen[n.attributes.id]=true
@@ -186,6 +192,7 @@ end
 check(mounts['hub:defaults']==1,'Defaults mounted repeatedly')
 check(vm('Grey').turn.mode=='spectator' and #vm('Grey').tabs==1 and vm('Grey').tabs[1].key=='ref')
 success(Player.Red,'tab','turn');check(vm().turn.mode=='setup' and vm().turn.isHost)
+check(vm().turn.phaseLabels[1]=='Стратегия · инициатива' and vm().turn.phaseLabels[5]=='Конец раунда · подсчёт очков','Setup phase labels')
 PreviewHubShellScenes.setup={copy(mounted('Red'))}
 success(Player.Red,'setupround','2');success(Player.Red,'setupphase','4');success(Player.Red,'setupturn','2')
 check(vm().turn.round==2 and vm().turn.phaseIndex==4 and vm().turn.turnIndex==2,'Setup fields')
@@ -193,18 +200,32 @@ check(not click(Player.Blue,'start'),'Non-host start')
 success(Player.Red,'setupround','1');success(Player.Red,'setupturn','1')
 scoring[1].initiative[1]=true
 success(Player.Red,'start');check(RuAssistantEngine.state.phase=='firefight')
+check(vm().status.eyebrow=='РАУНД 1 / 4 · ПЕРЕСТРЕЛКА','KT3 phase eyebrow')
 check(vm().turn.mode=='idle' and vm('Blue').turn.mode=='idle','Seats not activation-ready')
 check(next(RuAssistantEngine.state.units)==nil,'Start enrolled reserves')
 success(Player.Red,'enrollall');success(Player.Blue,'enroll')
 check(RuAssistantEngine.state.units.immort and RuAssistantEngine.state.units.despot)
 check(not RuAssistantEngine.state.units.reserve,'Bag reserve enrolled')
 check(RuAssistantEngine.state.players['red-id'].team=='hierotekcircle')
+do
+    local s=RuAssistantEngine.state
+    s.turnOwner='red-id';s.units.immort.ready=false;s.units.immort.counteracted=true
+    s.units.despot.ready=false;s.units.despot.counteracted=false;s.units.devote.ready=true
+    s.revision=s.revision+1;ruHubRenderAll();flush()
+    check(#vm().turn.counter==1 and vm().turn.counter[1].guid=='despot','Counteracted operative offered counteract')
+    check(findNode(mounted('Red'),'kh:Red:counter:despot').attributes.tooltip~=nil,'Counteract tooltip')
+    s.units.immort.ready=true;s.units.immort.counteracted=false;s.units.despot.ready=true
+    s.revision=s.revision+1;ruHubRenderAll();flush()
+end
 success(Player.Red,'select','immort');check(highlights.immort[1]=='Red' and highlights.immort[2]==3)
 success(Player.Red,'begin','immort');check(vm().turn.mode=='activation' and vm().turn.apLeft==2)
 check(vm().turn.unit.move=='5"' and vm().turn.unit.save=='3+','Native model stats')
 check(vm().turn.weapons[1].a==4 and vm().turn.weapons[1].bs=='3+' and vm().turn.weapons[1].d=='5/2','Native weapon stats')
 success(Player.Red,'action','reposition')
 check(vm().turn.apLeft==1 and vm().toast.undo and vm().toast.body:find('−1 AP',1,true),'Action/AP/toast')
+local invalid=click(Player.Red,'action','invalid-action')
+check(not invalid and vm().toast.undo==false,'Engine error toast offered undo')
+check(vm('Blue').turn.mode=='enemy','Other seat did not rerender for activation revision')
 PreviewHubShellScenes.turn={copy(mounted('Red'))}
 local redMounts=mounts['hub:Red'];local patchBefore=patchCalls
 ruHubRender('Red');ruHubRender('Red');flush()
@@ -221,10 +242,29 @@ local ok=click(Player.Red,'action','reposition');check(not ok,'Cost confirmation
 success(Player.Red,'advrepeat');success(Player.Red,'advcost','0');success(Player.Red,'action','reposition')
 check(RuAssistantEngine.state.activation.performed.reposition==2,'Repeat exception missing')
 success(Player.Red,'aplimit','3');check(vm().turn.apTotal==3)
-success(Player.Red,'tab','ploys');success(Player.Red,'ployseg','fire');success(Player.Red,'ploy','reroll')
+success(Player.Red,'tab','ploys');success(Player.Red,'ployseg','fire')
+do
+    local rule=RuAssistantCatalog.ploys.reroll
+    local activation=RuAssistantEngine.state.activation
+    RuAssistantEngine.state.activation=nil
+    rule.target='operative';RuHub.seats.Red.selected=nil;RuHub.seats.Red.ployTarget=nil
+    success(Player.Red,'ploy','reroll')
+    local targeted
+    for _,item in ipairs(vm().ploys.items) do if item.key=='reroll' then targeted=item end end
+    check(targeted.needsTarget and #targeted.targets==2 and not targeted.usable and targeted.reason=='Выберите цель',
+        'Target ploy default/availability: '..tostring(targeted.needsTarget)..'/'..tostring(targeted.targets and #targeted.targets)..'/'
+            ..tostring(targeted.usable)..'/'..tostring(targeted.reason))
+    success(Player.Red,'ploytarget','despot')
+    for _,item in ipairs(vm().ploys.items) do if item.key=='reroll' then targeted=item end end
+    check(targeted.targetGuid=='despot' and targeted.usable,'Ploy target selection')
+    RuHub.seats.Red.openPloy=nil;rule.target=nil
+    RuAssistantEngine.state.activation=activation
+end
+success(Player.Red,'ploy','reroll')
 local cp=scoring[1].command;success(Player.Red,'useploy','reroll')
 check(scoring[1].command==cp-1 and RuAssistantEngine.state.players['red-id'].cp==cp-1,'CP adapter commit')
 check(vm().status.sides[1].cp==cp-1,'Status CP stale')
+check(vm('Blue').status.sides[1].cp==cp-1,'Other seat status did not rerender after CP change')
 success(Player.Red,'undo');check(scoring[1].command==cp,'Undo CP')
 local generic=${lit(generic)}
 success(Player.Red,'ploy',generic);success(Player.Red,'ploycost','+');success(Player.Red,'ployexpiry','round')

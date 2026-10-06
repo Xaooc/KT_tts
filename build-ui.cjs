@@ -251,7 +251,7 @@ function loadSources(options){
       for(const listed of manifest[guid]){
         assert(typeof listed==='string','Invalid manifest filename');
         const relative=listed.replace(/^ui\//,'');
-        assert(/^(?:(?:hub|view|datasheet)-[\w-]+|kit)\.lua$/.test(relative),'Unsupported hub module: '+listed);
+        assert(/^[\w-]+\.lua$/.test(relative)&&!/^(?:composer|shim)\.lua$/.test(relative),'Unsupported hub module: '+listed);
         const name=relative.slice(0,-4);assert(!seen.has(name),'Duplicate manifest module: '+listed);seen.add(name);
         const moduleFile=path.join(root,'ui',relative);
         if(!fs.existsSync(moduleFile)){missingModules.push({guid,file:listed});continue;}
