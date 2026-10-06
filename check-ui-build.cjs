@@ -4,6 +4,8 @@ const {replaceBlock,markerParts,isGlobalUIWriter,rewriteGlobalUI,cutHudLegacy,cu
 const {resolveTtsDir,ttsCandidates,ttsTargets}=require('./tts-paths.cjs');
 const {targets:installTargets,hash}=require('./build-ui.cjs');
 const {selectTargets}=require('./install-ui.cjs');
+const {existingTargetHashes,defaultBuildSource,readBuildSource}=require('./build-ui.cjs');
+const {rollback}=require('./install-ui.cjs');
 
 test('TTS path resolution honors CLI, environment, and existing Documents fallbacks',()=>{
   const home='C:/Users/example',paths=ttsCandidates(home);
@@ -22,6 +24,49 @@ test('installer selects only targets unchanged from their recorded source baseli
   assert(selected.eligible.some(entry=>entry.target===entries[0].target));
   for(const entry of selected.eligible)assert.equal(entry.expected,source);
   for(const entry of selected.skipped)assert.match(entry.reason,/changed since build|differs from the build source/);
+});
+
+test('build hashes existing targets only and gives a clear missing source error',()=>{
+  const fs=require('node:fs'),os=require('node:os'),path=require('node:path');
+  const dir=fs.mkdtempSync(path.join(os.tmpdir(),'kt-ui-build-'));
+  try{
+    const source=path.join(dir,'source.json'),missing=path.join(dir,'missing.json');
+    fs.writeFileSync(source,'{}');
+    const hashes=existingTargetHashes([source,missing]);
+    assert.deepEqual(hashes,[{target:source,sha256:hash(fs.readFileSync(source))}]);
+    assert.equal(defaultBuildSource([missing,source]),source);
+    assert.throws(()=>readBuildSource(missing),error=>error.message==='Missing build source: '+missing);
+    const previous=installTargets.slice();installTargets.splice(0,installTargets.length,source,missing);
+    try{
+      const selected=selectTargets({sourceSHA256:hash(fs.readFileSync(source)),targetHashes:hashes},'both');
+      assert.deepEqual(selected.eligible.map(entry=>entry.target),[source]);
+      assert.equal(selected.skipped.length,1);assert.match(selected.skipped[0].reason,/Target does not exist/);
+    }finally{installTargets.splice(0,installTargets.length,...previous);}
+  }finally{fs.rmSync(dir,{recursive:true,force:true});}
+});
+
+test('partial rollback keeps remaining target installed and supports a later rollback',()=>{
+  const fs=require('node:fs'),os=require('node:os'),path=require('node:path');
+  const dir=fs.mkdtempSync(path.join(os.tmpdir(),'kt-ui-rollback-')),previous=installTargets.slice();
+  try{
+    const workshop=path.join(dir,'workshop.json'),save=path.join(dir,'save.json');
+    const rollbackFile=path.join(dir,'rollback.json'),reportPath=path.join(dir,'report.json');
+    const original=Buffer.from('{"old":true}'),candidate=Buffer.from('{"new":true}');
+    fs.writeFileSync(rollbackFile,original);fs.writeFileSync(workshop,candidate);fs.writeFileSync(save,candidate);
+    const candidateSHA=hash(candidate),sourceSHA=hash(original);
+    fs.writeFileSync(reportPath,JSON.stringify({status:'installed',candidateSHA256:candidateSHA,sourceSHA256:sourceSHA,
+      rollback:rollbackFile,rollbackSHA256:sourceSHA,files:[
+        {destination:workshop,sha256:candidateSHA,state:'installed'},
+        {destination:save,sha256:candidateSHA,state:'installed'},
+      ]}));
+    installTargets.splice(0,installTargets.length,workshop,save);
+    const first=rollback({target:'save',reportPath});
+    assert.equal(first.status,'installed');assert.equal(first.files[0].state,'installed');
+    assert.equal(first.files[1].state,'rolled-back');assert.equal(hash(fs.readFileSync(save)),sourceSHA);
+    const second=rollback({target:'workshop',reportPath});
+    assert.equal(second.status,'rolled-back');assert(second.files.every(file=>file.state==='rolled-back'));
+    assert.equal(hash(fs.readFileSync(workshop)),sourceSHA);
+  }finally{installTargets.splice(0,installTargets.length,...previous);fs.rmSync(dir,{recursive:true,force:true});}
 });
 
 const sources={composer:'function ruCompose() end',shim:'local UI = Global.UI'};

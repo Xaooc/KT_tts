@@ -237,6 +237,14 @@ function serializeSave(save,format){
   return format.bom+text+format.trailing;
 }
 
+function existingTargetHashes(files=targets){
+  return files.filter(target=>fs.existsSync(target)).map(target=>({target,sha256:hash(fs.readFileSync(target))}));
+}
+function defaultBuildSource(files=targets){return files.find(target=>fs.existsSync(target))||files[0];}
+function readBuildSource(file){
+  assert(fs.existsSync(file),'Missing build source: '+file);return fs.readFileSync(file);
+}
+
 function loadSources(options){
   const readLua=(file,label)=>{
     assert(fs.existsSync(file),'Missing '+label+' Lua source: '+file);return fs.readFileSync(file,'utf8').replace(/^\uFEFF/,'');
@@ -278,13 +286,13 @@ function cli(argv){
   assert(['platform','hub'].includes(options.mode),'Mode must be platform or hub');
   if(options.ttsDir){const resolved=ttsTargets(resolveTtsDir({dir:options.ttsDir}));targets.splice(0,targets.length,...resolved);
   }else if(!targets.length)targets.push(...ttsTargets(resolveTtsDir()));
-  if(!sourceExplicit)options.source=targets[0];
+  if(!sourceExplicit)options.source=defaultBuildSource();
   options.source=path.resolve(options.source);options.out=path.resolve(options.out);
   assert(options.out.toLowerCase()!==options.source.toLowerCase(),'Candidate must not overwrite its source');
   const installedOut=targets.some(target=>path.resolve(target).toLowerCase()===options.out.toLowerCase());
   assert(!installedOut,'Candidate cannot overwrite installed files');
-  const targetHashes=targets.map(target=>({target,sha256:hash(fs.readFileSync(target))}));
-  const {sources,missingModules}=loadSources(options),bytes=fs.readFileSync(options.source),text=bytes.toString('utf8');
+  const targetHashes=existingTargetHashes();
+  const {sources,missingModules}=loadSources(options),bytes=readBuildSource(options.source),text=bytes.toString('utf8');
   const source=JSON.parse(text.replace(/^\uFEFF/,'')),format=detectFormatting(text,source),result=buildSave(source,sources);
   const candidateBytes=Buffer.from(serializeSave(result.candidate,format));
   if(options.verifyIdempotent){
@@ -302,5 +310,7 @@ function cli(argv){
 }
 
 module.exports={replaceBlock,markerParts,isGlobalUIWriter,rewriteGlobalUI,cutHudLegacy,cutScoreboardLegacy,
-  walkObjects,atPath,assertOnlyScriptsChanged,buildSave,detectFormatting,serializeSave,anchors,runtimeAnchor,targets,hash};
+  walkObjects,atPath,assertOnlyScriptsChanged,buildSave,detectFormatting,serializeSave,existingTargetHashes,defaultBuildSource,
+  readBuildSource,
+  anchors,runtimeAnchor,targets,hash};
 if(require.main===module){try{cli(process.argv.slice(2));}catch(error){console.error(error.message);process.exitCode=1;}}

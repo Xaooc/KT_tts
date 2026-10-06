@@ -169,7 +169,7 @@ local function click(p,cmd,arg,value)
     local ok,msg=ruHubClick(p,value,KT.hub.id(p.color,cmd,arg));flush();return ok,msg
 end
 local function success(p,cmd,arg,value)
-    local ok,msg=click(p,cmd,arg,value);check(ok,msg or cmd);return msg
+    local ok,msg=click(p,cmd,arg,value);check(ok,cmd..': '..tostring(msg));return msg
 end
 local function vm(color) return RuHub.vms[color or 'Red'] end
 local function mounted(color)
@@ -182,7 +182,8 @@ local function findNode(n,id)
     end
 end
 local function allIds(n,seen)
-    seen=seen or {};check(n.attributes.id~=nil,'Anonymous dock node')
+    check(n~=nil,'Missing dock node')
+    seen=seen or {};check(n.attributes and n.attributes.id~=nil,'Anonymous dock node')
     check(not seen[n.attributes.id],'Duplicate id '..n.attributes.id);seen[n.attributes.id]=true
     for _,child in ipairs(n.children or {}) do allIds(child,seen) end
 end
@@ -243,11 +244,14 @@ do
     check(vm().turn.unit.injured and vm().turn.unit.move=='3"','Injured Move at 4/10 wounds')
     check(vm().turn.weapons[1].bs=='4+' and vm().turn.unit.apl==2 and vm().turn.apTotal==2,
         'Injured Hit/APL/AP budget')
+    check(vm().turn.injuryNote and vm().turn.weapons[1].tip==vm().turn.injuryNote,
+        'Injury override note missing from activation and weapon')
     local weapon=RuAssistantEngine.state.units.immort.weapons[1];weapon.bs='6+'
     ruHubRender('Red');flush();check(vm().turn.weapons[1].bs=='6+','Injured Hit cap');weapon.bs='3+'
     success(Player.Red,'tab','squad')
     check(vm().squad.units[1].injured and vm().squad.units[1].move=='3"'
-        and vm().squad.units[1].weapons[1].bs=='4+','Injured squad values')
+        and vm().squad.units[1].weapons[1].bs=='4+' and vm().squad.units[1].injuryNote,
+        'Injured squad values/note')
     check(findNode(mounted('Red'),'kh:Red:select:immort_injury').attributes.text=='MOVE 3" · BS/WS 4+',
         'Injured squad row omitted effective stats')
     success(Player.Red,'tab','turn');st.wounds=5;models.immort.setTable('state',st)
@@ -300,6 +304,16 @@ success(Player.Red,'tab','turn')
 check(findNode(mounted('Red'),'kh:Red:opentab:ploys')~=nil,'Footer shortcut shares rail tab id')
 success(Player.Red,'opentab','ploys')
 check(vm().ploys.seg=='fire','Foot ploys command did not choose firefight');success(Player.Red,'ployseg','fire')
+do
+    local s=RuAssistantEngine.state;local activation=s.activation;s.activation=nil;s.phase='gambit';success(Player.Red,'tab','turn')
+    success(Player.Red,'tab','ploys');check(vm().ploys.seg=='strat','Gambit auto segment')
+    s.phase='firefight';ruHubRenderAll();flush();check(vm().ploys.seg=='fire','Open tab did not follow phase')
+    success(Player.Red,'ployseg','strat');s.phase='gambit';ruHubRenderAll();flush()
+    check(vm().ploys.seg=='strat','Manual segment did not remain selected')
+    success(Player.Red,'tab','turn');success(Player.Red,'tab','ploys')
+    check(vm().ploys.seg=='strat','Re-enter did not reset auto segment')
+    s.phase='firefight';s.activation=activation;ruHubRenderAll();flush();check(vm().ploys.seg=='fire','Re-entered tab missed firefight')
+end
 do
     local rule=RuAssistantCatalog.ploys.reroll
     local activation=RuAssistantEngine.state.activation
@@ -432,20 +446,26 @@ do
     local migration={seats={Red={team='hierotekcircle',used={[generic]=true},pinned={['command-reroll']=true},round=1}}}
     refLoaded=nil;legacy={seats={}};onLoad('');flush()
     local id=RuHub.migration
-    check(id and conditions[id] and conditions[id].timeout==10,'Migration did not wait for readiness with timeout')
+    check(id and timers[id] and timers[id].seconds==2,'Migration did not poll readiness every two seconds')
     legacy=migration;flush();check(not RuHub.marks.Red.used[generic],'Migration ran before reference readiness')
-    refThrows=true;flush();check(conditions[id]~=nil,'Readiness exception escaped pcall');refThrows=false
-    refLoaded=true;flush()
+    refThrows=true;timers[id].fn();id=RuHub.migration
+    check(timers[id]~=nil,'Readiness exception escaped pcall');refThrows=false
+    for _=1,6 do timers[RuHub.migration].fn() end
+    check(RuHub.migration~=nil and RuHub.migrationPending,'Migration stopped after the old 10 second timeout')
+    refLoaded=true;timers[RuHub.migration].fn();flush()
     check(RuHub.marks.Red.used[generic] and RuHub.marks.Red.pinned.reroll,'Hub-first legacy migration lost marks')
     legacy={seats={}};flush();check(RuHub.marks.Red.used[generic],'Migration repeated after completion')
     refLoaded=nil;onLoad('');flush()
     legacy={seats={Red={team='hierotekcircle',used={[generic]=true},pinned={['command-reroll']=true},round=2}}}
-    refLoaded=true;flush()
+    refLoaded=true;timers[RuHub.migration].fn();flush()
     check(not RuHub.marks.Red.used[generic] and RuHub.marks.Red.pinned.reroll,'Delayed migration revived another round usage')
-    refAvailable=false;onLoad('');flush();id=RuHub.migration
-    check(conditions[id]~=nil,'Absent reference HUD did not wait')
-    conditions[id].onTimeout();conditions[id]=nil;check(not RuHub.migration,'Migration timeout did not stop waiting')
-    refAvailable=true;refLoaded=true
+    refAvailable=false;refLoaded=nil;onLoad('');flush();id=RuHub.migration
+    check(timers[id]~=nil,'Absent reference HUD did not wait')
+    for _=1,6 do timers[RuHub.migration].fn() end
+    check(RuHub.migration~=nil,'Absent reference HUD stopped before the five minute cap')
+    Wait.stop(RuHub.migration);RuHub.migration=nil
+    refAvailable=true;refLoaded=true;ruHubOpen({color='Red',tab='turn'});flush()
+    check(not RuHub.migrationPending,'Opening hub did not retry pending migration')
 end
 -- A restored Steam-ID engine keeps its original authority and physical ownership.
 do
@@ -473,7 +493,7 @@ do
     Player.Red=shared;Player.Blue=copy(shared);Player.Blue.color='Blue'
     local function switch(color)
         local previous=shared.color;Player[previous]=copy(shared)
-        shared.color=color;Player[color]=shared
+        Player[previous].seated=false;shared.color=color;shared.seated=true;Player[color]=shared
     end
     for _,id in ipairs({'immort','despot','devote'}) do
         local st=models[id].getTable('state');st.owner='shared-id';st.ready=true;st.order='Engage'
@@ -492,12 +512,17 @@ do
     success(shared,'team','hierotekcircle');switch('Blue');success(shared,'team','hierotekcircle')
     accepted,message=click(shared,'enrollall')
     check(not accepted and message:find('рамкой',1,true),'Same-team hot-seat enrollall did not require selection')
-    switch('Red');shared.getSelectedObjects=function() return {models.immort} end;success(shared,'enroll')
-    check(RuAssistantEngine.state.units.immort.owner=='seat:1','Box enrollment failed with shared Steam ID/same teams')
-    local cult=models.devote.getTable('state');cult.info.ktRuTeam=nil;cult.info.categories={'Chaos Cult'}
-    models.devote.setTable('state',cult);switch('Blue')
     success(shared,'team','chaoscult');success(shared,'enrollall')
-    switch('Red');success(shared,'enrollall')
+    check(not RuAssistantEngine.state.units.immort and RuAssistantEngine.state.units.devote.owner=='seat:2',
+        'Hot-seat Blue enrollall included the unseated Red seat team')
+    check(Player.Red.seated==false and RuHub.seatSteam[1]=='shared-id' and RuHub.seatSteam[2]=='shared-id',
+        'Hot-seat identity depended on current seating')
+    switch('Red');shared.getSelectedObjects=function() return {models.immort,models.devote} end
+    local selectedOk,selectedMessage=click(shared,'enroll')
+    check(selectedOk and selectedMessage:find('Пропущено моделей другого отряда: 1',1,true),
+        'Selected hot-seat enrollment omitted skipped-team count')
+    check(RuAssistantEngine.state.units.immort.owner=='seat:1','Box enrollment failed with shared Steam ID/same teams')
+    success(shared,'enrollall')
     check(RuAssistantEngine.state.units.immort.owner=='seat:1' and RuAssistantEngine.state.units.devote.owner=='seat:2',
         'Hot-seat team enrollment mixed sides')
     check(models.immort.getTable('state').owner=='shared-id' and models.devote.getTable('state').owner=='shared-id',
@@ -524,6 +549,7 @@ do
     check(RuAssistantEngine.state.round==2 and RuAssistantEngine.state.initiative=='seat:2','Hot-seat second TP/initiative')
     local hotSaved=onSave();onLoad(hotSaved);flush()
     check(RuAssistantEngine and RuAssistantEngine.state.units.devote.owner=='seat:2','Hot-seat restore failed')
+    check(RuHub.seatSteam[1]=='shared-id' and RuHub.seatSteam[2]=='shared-id','Hot-seat seat identities were not persisted')
     -- Saved engine text is escaped only in the display copy, leaving dispatch identifiers intact.
     local engine=RuAssistantEngine
     engine.state.phase='firefight';engine.state.turnOwner='seat:1';engine.state.initiative='seat:1'
@@ -539,11 +565,16 @@ do
             and not text:find('<b>Gun',1,true) and not text:find('<i>Until removed',1,true),'Unescaped saved UI text')
         for _,child in ipairs(n.children or {}) do noInjectedText(child) end
     end
+    Player.Red.seated=true;Player.Blue.seated=true;ruHubRenderAll();flush()
     noInjectedText(mounted('Red'));noInjectedText(mounted('Blue'))
     check(RuAssistantEngine.state.units.immort.name=='<size=99>Saved','Escaping changed saved engine text')
+    check(mounted('Red')~=nil,'Red hub missing after restoring both hot-seat seats')
+    check(mounted('Blue')~=nil,'Blue hub missing after restoring both hot-seat seats')
     allIds(mounted('Red'));allIds(mounted('Blue'))
     success(shared,'tab','log');success(shared,'logseg','score');noInjectedText(mounted('Red'))
-    switch('Blue');success(shared,'tab','log');success(shared,'logseg','score');noInjectedText(mounted('Blue'))
+    switch('Blue');success(shared,'tab','log');success(shared,'logseg','score')
+    noInjectedText(mounted('Blue'))
+    Player.Red.seated=true;Player.Blue.seated=true;ruHubRenderAll();flush()
     extraModels={}
 end
 -- Recover an externally unmounted dock in the very next poll, even before the real UI flushes.

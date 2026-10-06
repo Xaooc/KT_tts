@@ -96,7 +96,9 @@ local function unitChips(u, w)
     if o then list[#list + 1] = { o[1], o[2] } end
     local s = STATE[u.state]
     if s then list[#list + 1] = { s[1], s[2] } end
-    if u.injured and u.state ~= "down" then list[#list + 1] = { "РАНЕН", "hurt" } end
+    if u.injured and u.state ~= "down" then
+        list[#list + 1] = { "ТРАВМИРОВАН", "hurt", { tooltip = u.injuryNote or "Травмирован: −2\" к движению, −1 к попаданию" } }
+    end
     return KT.chips(list, w)
 end
 
@@ -234,6 +236,7 @@ local function unitCard(color, t, w)
         unitChips(u, iw),
         stats,
         KT.bar(u.wounds, u.maxWounds, { w = iw, h = 6, id = H.id(color, "wndbar") }),
+        t.injuryNote and KT.text(t.injuryNote, { w = iw, size = fs.s, color = c.hurt }) or nil,
         apRow,
     }, { w = w })
 end
@@ -411,7 +414,7 @@ function H.viewSquad(vm, w)
         end
         return KT.vstack(list, { w = w, gap = 10 })
     end
-    list[#list + 1] = KT.seg({ { "all", "Все" }, { "ready", "Готовы" }, { "hurt", "Ранены" } }, s.seg or "all",
+    list[#list + 1] = KT.seg({ { "all", "Все" }, { "ready", "Готовы" }, { "hurt", "Травмированы" } }, s.seg or "all",
         { prefix = H.id(color, "squadseg") .. ":", w = w })
     if s.units and #s.units > 0 then
         for _, u in ipairs(s.units) do

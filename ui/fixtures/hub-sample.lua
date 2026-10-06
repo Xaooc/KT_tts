@@ -15,6 +15,7 @@ local squad = {
     { guid = "a3", name = "Страж-бессмертный", wounds = 7, maxWounds = 10, order = "Engage", state = "active" },
     { guid = "a4", name = "Страж-бессмертный", wounds = 10, maxWounds = 10, order = "Engage", state = "ready", canActivate = true },
     { guid = "a5", name = "Метчик смерти", wounds = 3, maxWounds = 10, order = "Conceal", state = "ready", injured = true,
+        injuryNote = "Травмирован: −2\" к движению, −1 к попаданию. Правило отряда может отменить.",
         canActivate = true },
     { guid = "a6", name = "Плазмацит-реаниматор", wounds = 0, maxWounds = 5, order = "Conceal", state = "down" },
     { guid = "a7", name = "Подмастерье", wounds = 8, maxWounds = 8, order = "Engage", state = "used" },

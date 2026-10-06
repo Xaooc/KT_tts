@@ -1,7 +1,7 @@
 -- Scoreboard hub: seat-local UI and engine identities, synchronous board/engine commits.
 RuAssistantEngine=nil
 RuAssistantSerial=0
-RuHub={seats={},marks={},cpByRound={},trees={},vms={},pending={}}
+RuHub={seats={},marks={},cpByRound={},trees={},vms={},pending={},seatSteam={}}
 KT.handler="ruHubClick"
 local phases={"initiative","ready","gambit","firefight","scoring"}
 local phaseLabels={"Стратегия · инициатива","Стратегия · готовность","Стратегия · гамбиты","Перестрелка","Конец раунда · подсчёт очков"}
@@ -56,8 +56,18 @@ local function seats()
     end
     return out
 end
+local function seatPlayer(index)
+    local p=seats()[index];if p then return p end
+    if RuHub.seatSteam[1]~=nil and RuHub.seatSteam[1]==RuHub.seatSteam[2] then
+        for color,seatIndex in pairs(playerNumber or {}) do if seatIndex==index and Player[color] then return Player[color] end end
+    end
+end
 local function hotSeat()
-    local seated=seats();return seated[1] and seated[2] and steam(seated[1])==steam(seated[2]) or false
+    return RuHub.seatSteam[1]~=nil and RuHub.seatSteam[2]~=nil and RuHub.seatSteam[1]==RuHub.seatSteam[2]
+end
+local function rememberSeatSteam()
+    RuHub.seatSteam=type(RuHub.seatSteam)=="table" and RuHub.seatSteam or {}
+    for index,p in pairs(seats()) do if not RuHub.seatSteam[index] then RuHub.seatSteam[index]=steam(p) end end
 end
 local function colors()
     local found={}
@@ -292,6 +302,7 @@ local function start(p)
         maxRounds=rules.scoring.maxRounds,phase=phase,initiative=ini,turnOwner=turn,gambitOwner=phase=="gambit" and turn or nil,
         cpAlreadyGrantedRound=requested=="initiative" and r>1 and r-1 or r,players=owners,
         opponents={[first]=second,[second]=first},units={}},RuAssistantCatalog)
+    RuHub.seatSteam={[1]=steam(seated[1]),[2]=steam(seated[2])}
     for _,player in ipairs(seated) do seat(player.color).state="open";seat(player.color).tab="turn" end
     captureCP(r);return true,"Партия подключена. Добавьте выставленные модели во вкладке «Отряд»"
 end
@@ -305,20 +316,32 @@ local function enroll(p,all)
             return false,'Выделите модели рамкой и нажмите «+ Добавить выделенные»: выберите разные отряды для мест'
         end
     end
-    local objects=all and getAllObjects() or p.getSelectedObjects();local n=0
+    local objects=all and getAllObjects() or p.getSelectedObjects();local n,skipped=0,0
     for _,obj in ipairs(objects) do
         local u=objectUnit(obj,{[steam(p)]=true});local enrolled=u and s.units[u.id]
+        local allowed=true
+        if u and not all and hotSeat() then
+            local seatTeam=s.players[own].team
+            if not RuAssistantTeams[seatTeam] then seatTeam=marks(p).team end
+            allowed=not RuAssistantTeams[seatTeam] or u.team==seatTeam
+        end
         if u and (not enrolled or enrolled.owner==own and enrolled.unavailable)
-            and (not all or not hotSeat() or u.team==chosen) then
+            and (not all or not hotSeat() or u.team==chosen) and allowed then
             u.modelOwner=u.owner;u.owner=own
             local keep={};for _,effect in ipairs(s.effects) do if effect.target~=u.id then keep[#keep+1]=effect end end
             s.effects=keep;s.units[u.id]=u;n=n+1
             if RuAssistantTeams[u.team] then s.players[u.owner].team=u.team;marks(p).team=u.team end
             seat(p.color).selected=seat(p.color).selected or u.id
+        elseif u and not all and hotSeat() and not allowed then
+            skipped=skipped+1
         end
     end
-    if n==0 then return false,"Новых моделей с вашим владельцем и характеристиками не найдено" end
-    s.revision=s.revision+1;clearUndo();ruAssistantSyncModels();return true,"Добавлено моделей: "..n
+    if n==0 then
+        if skipped>0 then return false,"Пропущено моделей другого отряда: "..skipped end
+        return false,"Новых моделей с вашим владельцем и характеристиками не найдено"
+    end
+    s.revision=s.revision+1;clearUndo();ruAssistantSyncModels()
+    return true,"Добавлено моделей: "..n..(skipped>0 and ". Пропущено моделей другого отряда: "..skipped or "")
 end
 local function preview(p,event)
     if not authority(p) then return false,"Партия не подключена к вашему месту" end
@@ -349,11 +372,12 @@ local function unitVM(u,p)
     else out.state=active and "active" or u.ready and "ready" or "used" end
     out.injured=u.wounds>0 and u.wounds<math.ceil(u.maxWounds/2)
     if out.injured then
+        out.injuryNote='Травмирован: −2" к движению, −1 к попаданию. Правило отряда может отменить.'
         local move=tonumber(tostring(u.move):match("[%d.]+"))
         if move then out.move=tostring(math.max(0,move-2))..'"' end
         for _,w in ipairs(out.weapons or {}) do
             local hit=tonumber(tostring(w.bs):match("%d+"))
-            if hit then w.bs=tostring(math.min(6,hit+1)).."+" end
+            if hit then w.bs=tostring(math.min(6,hit+1)).."+";w.tip=out.injuryNote end
         end
     end
     out.canActivate=s and s.phase=="firefight" and not s.activation and s.turnOwner==owner(p)
@@ -400,12 +424,13 @@ local function turnVM(p,v,units)
             action=a.pending and a.pending.name,foot={{cmd="tab",arg="ploys",label="Уловки",flex=true}}}
     elseif a then
         local u=s.units[a.unit];v.selected=a.unit;t.mode="activation";t.unit=unitVM(u,p)
+        t.injuryNote=t.unit.injuryNote
         t.unit.apl=RuAssistantCore.apl(s,u.id);t.apTotal=a.ap;t.apLeft=math.max(0,a.ap-a.spent)
         t.orderLocked=a.mode=="counteract" or next(a.performed)~=nil or a.pending~=nil
         t.counteract=a.mode=="counteract";t.unavailable=u.wounds<=0 or u.unavailable
         t.advanced=copy(v.advanced);t.advanced.apLimit=a.ap;t.weapons={};t.actions={};t.effects={}
         for i,w in ipairs(t.unit.weapons or {}) do
-            v.weapon=v.weapon or w.key;local wp=copy(w);wp.selected=w.key==v.weapon;wp.tip=w.rules;t.weapons[i]=wp
+            v.weapon=v.weapon or w.key;local wp=copy(w);wp.selected=w.key==v.weapon;wp.tip=w.tip or w.rules;t.weapons[i]=wp
         end
         if a.pending then t.pending={label=a.pending.name,weapon=a.pending.weapon} end
         for _,key in ipairs({"reposition","dash","charge","shoot","fight","fallback","mission"}) do
@@ -535,6 +560,10 @@ local function ploysVM(p,v,enemy)
     return out
 end
 local function enemyPlayer(p)
+    local s=state();local own=s and s.players[owner(p)]
+    if hotSeat() and own then
+        local other=s.players[s.opponents[own.id]];return other and Player[other.color] or nil
+    end
     local index=playerNumber[p.color];return index and seats()[index==1 and 2 or 1] or nil
 end
 local function enemyVM(p,v)
@@ -641,6 +670,7 @@ end
 local displayFields={name=true,english=true,title=true,text=true,label=true,sub=true,who=true,unitName=true,
     action=true,turnOwnerName=true,targetName=true,tip=true,reason=true,expiryLabel=true,hint=true,note=true,
     footNote=true,summary=true,move=true,save=true,bs=true,a=true,d=true,team=true,expiry=true,weapon=true,
+    injuryNote=true,
     cost=true,traits=true,emptyHint=true,emptyTitle=true,waiting=true,delta=true}
 local function escapeDisplay(value,field)
     if type(value)=="string" then return displayFields[field] and KT.esc(value) or value end
@@ -708,6 +738,11 @@ local function diff(a,b,patches)
 end
 local function renderNow(color)
     if RuHub.destroyed then return end
+    local v=seat(color);local s=state()
+    if v.tab=="ploys" and v.ployAuto then
+        local desired=s and (s.phase=="firefight" or s.phase=="activation" or s.activation~=nil) and "fire" or "strat"
+        if v.ploySeg~=desired then v.ploySeg=desired end
+    end
     local vm=ruHubBuildVM(color);if not vm then return end
     local display=escapeDisplay(vm)
     -- Footer/phase shortcuts share a destination with rail tabs, but must have distinct XmlUI ids.
@@ -747,6 +782,7 @@ local function renderNow(color)
 end
 function ruHubRender(color)
     if RuHub.destroyed or RuHub.pending[color] then return end
+    if RuHub.migrationPending then retryLegacyMigration() end
     RuHub.pending[color]=true
     Wait.frames(function() RuHub.pending[color]=nil;renderNow(color) end,1)
 end
@@ -766,11 +802,13 @@ local function openTab(v,key)
     if key=="ploys" and (v.tab~="ploys" or v.state~="open") then
         local s=state()
         v.ploySeg=s and (s.phase=="firefight" or s.activation~=nil) and "fire" or "strat"
+        v.ployAuto=true
     end
     v.tab=key;v.state="open"
 end
 function ruHubOpen(params)
     local p=Player[params.color];if not p then return false end
+    if RuHub.migrationPending then retryLegacyMigration() end
     local v=seat(params.color);openTab(v,params.tab or "turn")
     for _,key in ipairs({"refScope","refKey","termKey"}) do if params[key]~=nil then v[key]=params[key] end end
     if params.guid then v.refGuid=params.guid;v.refScope="model" end
@@ -788,7 +826,7 @@ function ruHubLegacyPloys(data)
     for color,old in pairs(type(data)=="table" and data.seats or {}) do
         do
             -- Rendering can create empty marks while efa3fe is still loading; merge into those marks.
-            local m=RuHub.marks[color] or {team=old.team or "",used={},pinned={},round=old.round or hubRound()}
+            local m=RuHub.marks[color] or {team=old.team or "",used={},pinned={},round=hubRound()}
             if m.team=="" then m.team=old.team or "" end
             local references=nil
             for _,field in ipairs({"used","pinned"}) do
@@ -818,6 +856,23 @@ function ruHubLegacyPloys(data)
         end
     end
     ruHubRenderAll();return true
+end
+function retryLegacyMigration()
+    if not RuHub.migrationPending or RuHub.migration then return end
+    local token={};RuHub.migrationToken=token;local attempts=0
+    local function poll()
+        if RuHub.destroyed or RuHub.migrationToken~=token or not RuHub.migrationPending then return end
+        attempts=attempts+1
+        local ready,value=pcall(function()
+            local hud=getObjectFromGUID("efa3fe");return hud and hud.getVar("ruRefLoaded")==true
+        end)
+        if ready and value==true then
+            RuHub.migration=nil;RuHub.migrationPending=false
+            ruHubLegacyPloys(refCall("ruRefLegacyPloys",{}) or {})
+        elseif attempts>=150 then RuHub.migration=nil
+        else RuHub.migration=Wait.time(poll,2,1) end
+    end
+    poll()
 end
 local function validTab(key)
     for _,tab in ipairs(KT.hub.TABS) do if tab.key==key then return true end end;return false
@@ -871,7 +926,7 @@ function ruHubClick(p,value,id)
     elseif cmd=="advrepeat" then v.advanced.exception=not v.advanced.exception
     elseif cmd=="removeeffect" then event={type="remove_effect",effect=arg}
     elseif cmd=="initiative" then
-        local target=seats()[tonumber(arg)];event={type="initiative",winner=target and owner(target),confirmed=true}
+        local target=seatPlayer(tonumber(arg));event={type="initiative",winner=target and owner(target),confirmed=true}
     elseif cmd=="next" then event={type="next_phase",confirmed=true}
     elseif cmd=="squadseg" then if arg=="all" or arg=="ready" or arg=="hurt" then v.squadSeg=arg end
     elseif cmd=="enroll" or cmd=="enrollall" then ok,msg=enroll(p,cmd=="enrollall")
@@ -882,7 +937,7 @@ function ruHubClick(p,value,id)
             local m=marks(p);if m.team~=arg then m.used={} end;m.team=arg
             if s then s.players[owner(p)].team=arg;s.revision=s.revision+1;clearUndo() end
         end
-    elseif cmd=="ployseg" then if arg=="strat" or arg=="fire" or arg=="pinned" then v.ploySeg=arg end
+    elseif cmd=="ployseg" then if arg=="strat" or arg=="fire" or arg=="pinned" then v.ploySeg=arg;v.ployAuto=false end
     elseif cmd=="ploysearch" then v.ployQuery=tostring(value or ""):sub(1,200)
     elseif cmd=="ploy" then
         local rule=RuAssistantCatalog.ploys[arg];if not rule then return false end
@@ -935,7 +990,8 @@ function onSave()
     base.ruAssistant={version=1,serial=RuAssistantSerial,engine=RuAssistantEngine and RuAssistantCore.export(RuAssistantEngine),
         cpRevision=RuAssistantCPRevision,cpReceipts=RuAssistantCPReceipts,cpReceiptOrder=RuAssistantCPReceiptOrder}
     local states={};for color,v in pairs(RuHub.seats) do states[color]=v.state end
-    base.ruHub={version=1,marks=RuHub.marks,cpByRound=RuHub.cpByRound,seats=states};return JSON.encode(base)
+    base.ruHub={version=1,marks=RuHub.marks,cpByRound=RuHub.cpByRound,seats=states,
+        seatSteam=RuHub.seatSteam,migrationPending=RuHub.migrationPending};return JSON.encode(base)
 end
 local oldLoadGM=loadGM
 function loadGM()
@@ -975,29 +1031,21 @@ function onLoad(saved)
         end
     end
     for _,v in pairs(RuHub.seats) do if v.toastTimer then Wait.stop(v.toastTimer) end end
-    RuHub.seats={};RuHub.marks={};RuHub.cpByRound={}
+    RuHub.seats={};RuHub.marks={};RuHub.cpByRound={};RuHub.seatSteam={};RuHub.migrationPending=false
     local hub=base.ruHub
     if type(hub)=="table" and hub.version==1 then
         RuHub.marks=type(hub.marks)=="table" and hub.marks or {}
         RuHub.cpByRound=type(hub.cpByRound)=="table" and hub.cpByRound or {}
+        RuHub.seatSteam=type(hub.seatSteam)=="table" and hub.seatSteam or {}
+        RuHub.migrationPending=hub.migrationPending==true
         for color,mode in pairs(hub.seats or {}) do
             if mode=="open" or mode=="rail" or mode=="hidden" then seat(color).state=mode end
         end
     end
+    rememberSeatSteam()
     if RuHub.migration then Wait.stop(RuHub.migration);RuHub.migration=nil end
-    if next(RuHub.marks)==nil then
-        local token={};RuHub.migrationToken=token
-        RuHub.migration=Wait.condition(function()
-            if RuHub.destroyed or RuHub.migrationToken~=token then return end
-            RuHub.migration=nil
-            ruHubLegacyPloys(refCall("ruRefLegacyPloys",{}) or {})
-        end,function()
-            local ready,value=pcall(function()
-                local hud=getObjectFromGUID("efa3fe");return hud and hud.getVar("ruRefLoaded")==true
-            end)
-            return ready and value==true
-        end,10,function() if RuHub.migrationToken==token then RuHub.migration=nil end end)
-    end
+    if not RuHub.migrationPending and next(RuHub.marks)==nil then RuHub.migrationPending=true end
+    if RuHub.migrationPending then retryLegacyMigration() end
     self.addContextMenuItem("Центр Kill Team",function(color) ruHubOpen({color=color,tab="turn"}) end)
     addHotkey("Центр KT: открыть / свернуть",function(color)
         if not Player[color] then return end

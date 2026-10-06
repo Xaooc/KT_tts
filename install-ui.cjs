@@ -17,8 +17,8 @@ function stagedWrite(file,bytes,expected,newSHA){
   }finally{if(created&&fs.existsSync(staging))fs.unlinkSync(staging);}
 }
 
-function writeReport(report){
-  const bytes=Buffer.from(JSON.stringify(report,null,2)+'\n');stagedWrite(reportFile,bytes,null,hash(bytes));
+function writeReport(report,file=reportFile){
+  const bytes=Buffer.from(JSON.stringify(report,null,2)+'\n');stagedWrite(file,bytes,null,hash(bytes));
 }
 
 function runningWarning(force){
@@ -50,6 +50,7 @@ function selectTargets(build,selected){
   const requested=selected==='both'?targets:selected==='workshop'?[targets[0]]:[targets[1]];
   const eligible=[],skipped=[];
   for(const target of requested){
+    if(!fs.existsSync(target)){skipped.push({target,reason:'Target does not exist; cannot install into a missing target.'});continue;}
     const baseline=targetBaseline(build,target);
     if(!baseline){skipped.push({target,reason:'No pre-build hash recorded for this target.'});continue;}
     const current=sha(target);
@@ -96,7 +97,7 @@ function install(required,{dryRun=false,target='both',force=false}={}){
     else fs.writeFileSync(rollback,sourceEntry.oldBytes,{flag:'wx'});
     const report={status:'installed',installedAt:new Date().toISOString(),buildReport:buildFile,candidate,
       sourceSHA256:build.sourceSHA256,candidateSHA256:build.candidateSHA256,rollback,
-      rollbackSHA256:build.sourceSHA256,files:installed.map(entry=>({destination:entry.target,sha256:sha(entry.target)})),
+      rollbackSHA256:build.sourceSHA256,files:installed.map(entry=>({destination:entry.target,sha256:sha(entry.target),state:'installed'})),
       skipped,verification:checks,counts:build.counts};
     writeReport(report);console.log(JSON.stringify({status:report.status,files:report.files,skipped,rollback},null,2));return report;
   }catch(error){
@@ -105,14 +106,16 @@ function install(required,{dryRun=false,target='both',force=false}={}){
   }
 }
 
-function rollback({force=false,dryRun=false,target='both'}={}){
+function rollback({force=false,dryRun=false,target='both',reportPath=reportFile}={}){
   runningWarning(force);
-  const previous=read(reportFile);assert.equal(previous.status,'installed','Last installation report is not an installed release');
+  const previous=read(reportPath);assert.equal(previous.status,'installed','Last installation report is not an installed release');
   assert.equal(previous.rollbackSHA256,previous.sourceSHA256,'Rollback report source hash differs');
   assert.equal(sha(previous.rollback),previous.rollbackSHA256,'Rollback copy differs from installation report');
   const listed=new Set(previous.files.map(file=>path.resolve(file.destination).toLowerCase()));
   const requested=target==='both'?targets:target==='workshop'?[targets[0]]:[targets[1]];
-  const eligible=requested.filter(file=>listed.has(path.resolve(file).toLowerCase())&&sha(file)===previous.candidateSHA256);
+  const eligible=requested.filter(file=>listed.has(path.resolve(file).toLowerCase())
+    &&previous.files.find(entry=>path.resolve(entry.destination).toLowerCase()===path.resolve(file).toLowerCase())?.state!=='rolled-back'
+    &&fs.existsSync(file)&&sha(file)===previous.candidateSHA256);
   const skipped=requested.filter(file=>!eligible.includes(file)).map(file=>({target:file,reason:'Target is not at the reported installed hash.'}));
   assert(eligible.length||dryRun,'No selected target is safe to roll back.');
   if(dryRun){console.log(JSON.stringify({status:'dry-run',rollback:eligible,skipped},null,2));return;}
@@ -129,9 +132,15 @@ function rollback({force=false,dryRun=false,target='both'}={}){
     }catch{}
     throw error;
   }
-  const report={...previous,status:'rolled-back',rolledBackAt:new Date().toISOString(),
-    files:eligible.map(destination=>({destination,sha256:sha(destination)})),skipped};
-  writeReport(report);console.log(JSON.stringify({status:report.status,files:report.files,skipped},null,2));
+  const restoredSet=new Set(eligible.map(file=>path.resolve(file).toLowerCase()));
+  const files=previous.files.map(entry=>{
+    const restored=restoredSet.has(path.resolve(entry.destination).toLowerCase());
+    return restored?{...entry,sha256:sha(entry.destination),state:'rolled-back'}:entry;
+  });
+  const status=files.every(entry=>entry.state==='rolled-back')?'rolled-back':'installed';
+  const report={...previous,status,rolledBackAt:status==='rolled-back'?new Date().toISOString():previous.rolledBackAt,
+    files,skipped};
+  writeReport(report,reportPath);console.log(JSON.stringify({status:report.status,files:report.files,skipped},null,2));return report;
 }
 
 function cli(argv){
