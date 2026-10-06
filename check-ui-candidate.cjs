@@ -19,7 +19,7 @@ function lua(value) {
   if (typeof value === 'string') return quote(value);
   if (typeof value !== 'object') return String(value);
   if (Array.isArray(value)) return '{' + value.map(lua).join(',') + '}';
-  return '{' + Object.entries(value).map(([key, item]) => '[' + quote(key) + ']=' + lua(item)).join(',') + '}';
+  return '{' + Object.entries(value).map(([key, item]) => '[ ' + quote(key) + ' ]=' + lua(item)).join(',') + '}';
 }
 function walk(objects, visit) {
   for (const object of objects || []) {
@@ -31,13 +31,13 @@ function walk(objects, visit) {
 function descriptor(object) {
   return { guid: object.GUID, name: object.Nickname || '', description: object.Description || '',
     tags: object.Tags || [], state: object.LuaScriptState || '', xml: object.XmlUI || '',
-    source: object.LuaScript || '', transform: object.Transform || {},
+    source: object.LuaScript || '', transform: object.Transform || {}, gmnotes: object.GMNotes || '',
     contents: (object.ContainedObjects || []).map(child => ({ guid: child.GUID, name: child.Nickname || '',
       description: child.Description || '', lua_script_state: child.LuaScriptState || '', tags: child.Tags || [] })) };
 }
 
 const harness = String.raw`
-local Report={passed=true,checks=0,failures={},runs={},calls={}}
+local Report={passed=true,checks=0,failures={},runs={}}
 local currentRun,currentStep="harness","boot"
 local function copy(v,seen)
     if type(v)~="table" or v.__ttsObject or v.__ttsPlayer then return v end
@@ -53,7 +53,7 @@ local function check(ok,label,expected,actual,evidence)
     return false
 end
 local function attempt(label,fn)
-    local ok,result=xpcall(fn,function(err) return debug.traceback(tostring(err),2) end)
+    local ok,result=pcall(fn)
     check(ok,label,"no syntax/runtime error",ok and "ok" or result,ok and "" or result)
     return ok,result
 end
@@ -62,9 +62,10 @@ local JSON={}
 function JSON.encode(value)
     local function escape(s)
         local substitutions={['"']='\\"',['\\']='\\\\',['\n']='\\n',['\r']='\\r',['\t']='\\t'}
-        return '"'..tostring(s):gsub('[%z\1-\31\\"]',function(c)
-            return substitutions[c] or string.format('\\u%04x',c:byte())
-        end)..'"'
+        for i=0,31 do local c=string.char(i);substitutions[c]=substitutions[c] or string.format('\\u%04x',i) end
+        s=tostring(s);local out={'"'}
+        for i=1,#s do local c=s:sub(i,i);out[#out+1]=substitutions[c] or c end
+        out[#out+1]='"';return table.concat(out)
     end
     local function encode(v)
         if v==nil then return "null" end
@@ -141,19 +142,36 @@ local function find(nodes,id)
     end
 end
 local function count(nodes) local n=0;for _,node in ipairs(nodes or {}) do n=n+1+count(node.children) end;return n end
+local function replace(s,needle,value)
+    local out,pos={},1
+    while true do
+        local first,last=s:find(needle,pos,true)
+        if not first then out[#out+1]=s:sub(pos);return table.concat(out) end
+        out[#out+1]=s:sub(pos,first-1);out[#out+1]=value;pos=last+1
+    end
+end
 local function unescape(s)
-    return (s:gsub('&lt;','<'):gsub('&gt;','>'):gsub('&quot;','"'):gsub('&apos;',"'"):gsub('&amp;','&'))
+    for _,p in ipairs({{'&lt;','<'},{'&gt;','>'},{'&quot;','"'},{'&apos;',"'"},{'&amp;','&'}}) do s=replace(s,p[1],p[2]) end
+    return s
 end
 local function escape(s)
-    return (tostring(s):gsub('&','&amp;'):gsub('<','&lt;'):gsub('>','&gt;'):gsub('"','&quot;'))
+    s=tostring(s)
+    for _,p in ipairs({{'&','&amp;'},{'<','&lt;'},{'>','&gt;'},{'"','&quot;'}}) do s=replace(s,p[1],p[2]) end
+    return s
 end
 -- Independent fake XmlUI parser: initialization must not call the production composer parser.
 local function parseXML(s)
     local roots,stack,pos={},{},1
-    s=s:gsub('<!%-%-[%s%S]-%-%->',''):gsub('<%?[%s%S]-%?>','')
+    for _,p in ipairs({{'<!--','-->'},{'<?','?>'}}) do
+        while true do
+            local first=s:find(p[1],1,true);if not first then break end
+            local last=assert(s:find(p[2],first,true));s=s:sub(1,first-1)..s:sub(last+#p[2])
+        end
+    end
     while pos<=#s do
-        local first,last,body=s:find('<([^>]+)>',pos)
+        local first=s:find('<',pos,true)
         if not first then break end
+        local last=assert(s:find('>',first,true));local body=s:sub(first+1,last-1)
         if first>pos and #stack>0 then
             local text=s:sub(pos,first-1);if text:find('%S') then stack[#stack].value=unescape(text) end
         end
@@ -166,7 +184,8 @@ local function parseXML(s)
         end
         pos=last+1
     end
-    assert(#stack==0,"Unclosed fake UI XML");return roots
+    assert(#stack==0,"Unclosed fake UI XML: "..tostring(stack[#stack] and stack[#stack].tag)..' at '..pos..'/'..#s
+        ..' suffix '..s:sub(-80));return roots
 end
 local function xmlText(nodes)
     local out={}
@@ -178,7 +197,9 @@ local function xmlText(nodes)
 end
 local function newHarness(order,saved,physical)
     currentRun=order;currentStep="load"
-    local h={objects={},envs={},frame=0,queue={},nextId=0,context="Global",writes=0,patches=0,rolls={},calls={},loads=0}
+    local globalFirst=order:find('global-first',1,true)==1
+    local h={objects={},envs={},frame=0,queue={},nextId=0,context="Global",writes=0,patches=0,
+        rolls={},calls={},stack={},loads=0}
     local function schedule(fn,delay,repetitions,predicate,timeout,onTimeout)
         h.nextId=h.nextId+1;local id=h.nextId
         h.queue[id]={fn=fn,due=h.frame+math.max(1,delay or 1),interval=math.max(1,delay or 1),
@@ -187,11 +208,17 @@ local function newHarness(order,saved,physical)
     end
     function h.invoke(guid,name,params,...)
         local env=assert(h.envs[guid],"Unknown script "..guid)
-        local fn=rawget(env,name);assert(type(fn)=="function","Missing cross-object function "..guid.."/"..tostring(name))
+        local fn=rawget(env,name)
+        if type(fn)~="function" then
+            local message="Missing cross-object function "..guid.."/"..tostring(name)
+            check(false,message,'existing real function',type(fn),'caller '..h.context);error(message)
+        end
         local old=h.context;h.context=guid
         h.calls[#h.calls+1]={from=old,to=guid,name=name,frame=h.frame}
+        h.stack[#h.stack+1]=old..' -> '..guid..'/'..name
         local result=table.pack(pcall(fn,copy(params),...));h.context=old
-        if not result[1] then error(guid.."/"..name..": "..tostring(result[2]),0) end
+        local trace=table.concat(h.stack,'\n');h.stack[#h.stack]=nil
+        if not result[1] then error(guid.."/"..name..": "..tostring(result[2])..'\nTTS call stack:\n'..trace,0) end
         return copy(result[2]),copy(result[3])
     end
     function h.pump(n)
@@ -259,22 +286,31 @@ local function newHarness(order,saved,physical)
         local t={r=r or 1,g=g or 1,b=b or 1};t.toHex=function() return 'ffffff' end;t.lerp=function() return t end;return t
     end
     api.Color=setmetatable({fromString=function() return tint() end},{__call=function(_,...) return tint(...) end})
-    api.Player={}
+    api.Player={};local connected={}
     for _,color in ipairs({'Red','Blue','Grey','Black','White','Yellow','Teal','Green','Orange','Purple','Pink','Brown'}) do
         local p={__ttsPlayer=true,color=color,steam_id=color=='Red' and 'red-id' or color=='Blue' and 'blue-id' or color..'-id',
             steam_name=color,host=color=='Red',seated=color=='Red' or color=='Blue',team='None',lift_height=0.5}
         for _,key in ipairs({'broadcast','promote','clearSelectedObjects','setPointerPosition','showMemoDialog','showConfirmDialog'}) do
             p[key]=noop
         end
-        p.getHandObjects=function() return {} end;p.getSelectedObjects=function() return {h.objects[color=='Red' and 'red001' or 'blu001']} end
+        p.getHandObjects=function() return {} end
+        p.getSelectedObjects=function() return {h.objects[color=='Red' and 'red001' or 'blu001']} end
+        if color=='Red' or color=='Blue' then connected[#connected+1]=p end
         p.changeColor=function(target)
-            -- TTS moves this player handle; the target's seat identity is kept in Player[target].
-            p.color=target
+            local previous=p.color
+            if api.Player[previous]==p then
+                local empty={color=previous,steam_id='',steam_name='',seated=false,host=false,promote=noop,
+                    getHandObjects=function() return {} end}
+                api.Player[previous]=empty;api.Player[previous:lower()]=empty
+            end
+            p.color=target;p.seated=target~='Grey';api.Player[target]=p;api.Player[target:lower()]=p
         end
         api.Player[color]=p;api.Player[color:lower()]=p
     end
-    function api.Player.getPlayers() return {api.Player.Red,api.Player.Blue} end
-    function api.Player.getColors() return {'Red','Blue','Grey','Black','White','Yellow','Teal','Green','Orange','Purple','Pink','Brown'} end
+    function api.Player.getPlayers() return connected end
+    function api.Player.getColors()
+        return {'Red','Blue','Grey','Black','White','Yellow','Teal','Green','Orange','Purple','Pink','Brown'}
+    end
     function api.Player.getAvailableColors() return {'Grey','Yellow','Teal'} end
     api.Wait={frames=function(fn,n) return schedule(fn,n) end,
         time=function(fn,seconds,reps) return schedule(fn,math.ceil((seconds or 0)*60),reps) end,
@@ -296,13 +332,16 @@ local function newHarness(order,saved,physical)
     local function makeObject(d)
         local guid=d.guid;local tags=copy(d.tags or {});local tables={};local env
         local obj={__ttsObject=true,resting=true,interactable=true,script_state=d.state or '',tag='Generic',
-            UI=makeUI(d.xml,false),buttons={},menus={},position=vector(),rotation=vector(),scale=vector(1,1,1)}
+            buttons={},menus={},position=vector(),rotation=vector(),scale=vector(1,1,1)}
+        local ok,ui=pcall(makeUI,d.xml,false);assert(ok,guid..' initial object XML: '..tostring(ui));obj.UI=ui
         env=setmetatable({self=obj,UI=h.ui}, {__index=api});env._G=env;h.envs[guid]=env;h.objects[guid]=obj
         function obj.getGUID() return guid end
         function obj.getName() return d.name or '' end
         function obj.setName(v) d.name=v end
         function obj.getDescription() return d.description or '' end
         function obj.setDescription(v) d.description=v end
+        function obj.getGMNotes() return d.gmnotes or '' end
+        function obj.setGMNotes(v) d.gmnotes=v end
         function obj.getTags() return copy(tags) end
         function obj.setTags(v) tags=copy(v) end
         function obj.addTag(v) tags[#tags+1]=v end
@@ -325,6 +364,10 @@ local function newHarness(order,saved,physical)
         function obj.positionToWorld(v) return vector(v) end
         obj.positionToLocal=obj.positionToWorld
         function obj.getColorTint() return tint() end
+        local component={set=noop,get=function() return nil end}
+        local child={getComponents=function() return {component,component} end}
+        local parent={getChildren=function() return {child,child} end}
+        function obj.getChildren() return {parent,parent} end
         function obj.getObjects() return copy(d.contents or {}) end
         function obj.getStates() return {} end
         function obj.getStateId() return 1 end
@@ -340,7 +383,8 @@ local function newHarness(order,saved,physical)
         function obj.call(name,p) return h.invoke(guid,name,p) end
         for _,key in ipairs({'highlightOn','highlightOff','setLock','setColorTint','setVectorLines','setInvisibleTo',
             'setCustomObject','addToPlayerSelection','removeFromPlayerSelection','setVelocity','setAngularVelocity',
-            'clearContextMenu','setSnapPoints','setDecals','setGMNotes','destruct','reload','registerCollisions'}) do obj[key]=noop end
+            'clearContextMenu','setSnapPoints','setDecals','destruct','reload','registerCollisions',
+            'setLightRange','setLightAngle','setLightIntensity','setLightEnabled'}) do obj[key]=noop end
         function obj.getLock() return false end
         function obj.takeObject(p)
             local spawned=makeObject({guid='spawn'..tostring(h.nextId),name='Spawn stub',tags={}})
@@ -356,6 +400,14 @@ local function newHarness(order,saved,physical)
         if physical and physical[id] then st=copy(physical[id]) end
         local obj=makeObject({guid=id,name=original.name,description=original.description,tags={'Operative'}})
         obj.setTable('state',st)
+        -- Operative native callback used by the real adapter after setTable; persist the fake physical state.
+        h.envs[id].saveState=function() obj.script_state=JSON.encode(obj.getTable('state')) end
+        h.envs[id].refreshWounds=function()
+            local state=obj.getTable('state');obj.UI.setValue('ktcnid-status-wounds',state.wounds..'/'..state.stats.Wounds)
+        end
+        h.envs[id].refreshUI=function()
+            local state=obj.getTable('state');obj.UI.setValue('ktcnid-status-order',state.order)
+        end
     end end
     api.Global={UI=h.ui,getVar=function(key) return h.envs.Global and rawget(h.envs.Global,key) end,
         setVar=function(key,v) h.envs.Global[key]=v end,call=function(name,p) return h.invoke('Global',name,p) end}
@@ -380,18 +432,30 @@ local function newHarness(order,saved,physical)
         end)
         if ok then h.loads=h.loads+1 end
     end
-    if order=='global-first' then execute(CandidateGlobal) end
+    if globalFirst then execute(CandidateGlobal) end
     for _,d in ipairs(CandidateObjects) do execute(d) end
-    if order~='global-first' then execute(CandidateGlobal) end
+    if not globalFirst then execute(CandidateGlobal) end
     local function onLoad(d)
         if rawget(h.envs[d.guid],'onLoad') then
             attempt(d.guid..'/onLoad',function() h.invoke(d.guid,'onLoad',saved and saved[d.guid] or d.state) end)
         end
+        if d.guid=='Global' then
+            -- Empty seating save sends users to Grey; take real seats before subsequent object load callbacks.
+            for i,color in ipairs({'Red','Blue'}) do
+                if connected[i].color~=color then
+                    attempt('Global seating '..color,function()
+                        h.invoke('Global','assignColor',connected[i],'-1',color..'Btn')
+                        h.invoke('Global','onPlayerChangeColor',color)
+                    end)
+                end
+            end
+        end
     end
-    if order=='global-first' then onLoad(CandidateGlobal) end
+    if globalFirst then onLoad(CandidateGlobal) end
     for _,d in ipairs(CandidateObjects) do onLoad(d) end
-    if order~='global-first' then onLoad(CandidateGlobal) end
-    h.context='scenario';h.pump(120)
+    if not globalFirst then onLoad(CandidateGlobal) end
+    h.context='scenario'
+    h.pump(120)
     function h.node(id) return find(h.ui.getXmlTable(),id) end
     function h.click(color,id,value)
         local node=assert(h.node(id),'Missing real UI click target '..id)
@@ -428,16 +492,24 @@ for _,order in ipairs({'global-last','global-first'}) do
         local board=h.envs['339b7f'];initialCP={board.scoring[1].command,board.scoring[2].command}
         h.hub('Red','expand','rail');h.hub('Red','tab','turn')
         h.hub('Red','setupround','1');h.hub('Red','setupphase','4');h.hub('Red','setupturn','1');h.hub('Red','start')
-        check(h.state() and h.state().phase=='firefight','engine start phase','firefight',h.state() and h.state().phase)
-        h.hub('Red','enrollall');h.hub('Blue','expand','rail');h.hub('Blue','enrollall')
+        if h.state() and h.state().phase=='initiative' then
+            -- No initiative is saved in the candidate. Resolve it through the real hub phase controls.
+            h.hub('Red','initiative','1');h.hub('Red','next')
+            h.hub('Red','passgambit');h.hub('Blue','passgambit')
+        end
+        check(h.state() and h.state().phase=='firefight','engine current phase','firefight',h.state() and h.state().phase)
+        h.hub('Red','tab','squad');h.hub('Red','enrollall');h.hub('Red','tab','turn')
+        h.hub('Blue','tab','squad');h.hub('Blue','enrollall');h.hub('Blue','tab','turn')
         check(h.state() and countUnits(h.state().units)==8,'enrolled real-shape units',8,h.state() and countUnits(h.state().units))
         h.hub('Red','begin','red001');h.hub('Red','action','reposition')
         local a=h.state().activation
-        check(a and a.apLeft==h.state().units.red001.apl-1,'reposition spends one AP',h.state().units.red001.apl-1,a and a.apLeft)
+        check(a and a.ap-a.spent==h.state().units.red001.apl-1,'reposition spends one AP',
+            h.state().units.red001.apl-1,a and a.ap-a.spent)
         h.hub('Red','finish')
         local st=h.state();check(not st.activation,'activation finished','nil',st.activation)
-        check(st.turn=='blue-id','Blue receives turn','blue-id',st.turn)
+        check(st.turnOwner=='blue-id','Blue receives turn','blue-id',st.turnOwner)
         check(board.RuHub.vms.Blue.turn.mode=='idle','Blue UI turn ready','idle',board.RuHub.vms.Blue.turn.mode)
+        check(board.RuHub.vms.Blue.turn.myTurn==true,'Blue UI owns next turn',true,board.RuHub.vms.Blue.turn.myTurn)
         check(board.scoring[1].command==initialCP[1] and board.scoring[2].command==initialCP[2],
             'activation preserves scoreboard CP',JSON.encode(initialCP),JSON.encode({board.scoring[1].command,board.scoring[2].command}))
     end)
@@ -459,9 +531,13 @@ for _,order in ipairs({'global-last','global-first'}) do
         h.invoke('efa3fe','onOperativeRandomize',{h.objects.red001,'Red'});h.pump(20)
         local panel=h.node('datasheetHUD_body_Red')
         check(panel and panel.attributes.visibility=='Red','datasheet seat visibility','Red',panel and panel.attributes.visibility)
-        panels(h,false);h.click('Red','weaponButton_1_Red','-1')
-        local expected=tonumber(h.objects.red001.getTable('state').info.weapons[1].stats.ATK)
-        local roll=h.rolls[#h.rolls];check(roll and roll.number==expected,'weapon reaches askSpawn attack count',expected,roll and roll.number)
+        panels(h,false);h.click('Red','weaponButton_1_Red','-1');h.pump(10)
+        local ctx=h.envs.efa3fe.RuReferenceCache.Red
+        local expected=tonumber(ctx.vm.weapons[1].a)
+        local roll=h.rolls[#h.rolls]
+        check(roll and roll.number==expected,'weapon reaches askSpawn attack count',expected,roll and roll.number)
+        check(roll and roll.player.color=='Red' and roll.auto==0,'weapon spawn seat and click mode','Red/0',
+            roll and roll.player.color..'/'..tostring(roll.auto))
     end)
     step('datasheet trait reference bridge',function()
         local target
@@ -505,6 +581,7 @@ for _,order in ipairs({'global-last','global-first'}) do
         local saved={};for _,guid in ipairs({'339b7f','efa3fe','Global'}) do saved[guid]=h.invoke(guid,'onSave') end
         local state=h.state();assert(state,'Engine unavailable for restoration check')
         local expected={round=state.round,units=copy(state.units),cp=copy(h.envs['339b7f'].scoring),
+            engineCP={state.players['red-id'].cp,state.players['blue-id'].cp},
             redMode=h.envs['339b7f'].RuHub.seats.Red.state,blueMode=h.envs['339b7f'].RuHub.seats.Blue.state}
         local physical={};for _,color in ipairs({'red','blu'}) do for i=1,4 do
             local id=color..string.format('%03d',i);physical[id]=h.objects[id].getTable('state')
@@ -515,6 +592,9 @@ for _,order in ipairs({'global-last','global-first'}) do
             st and JSON.encode(st.units))
         check(JSON.encode(restored.envs['339b7f'].scoring)==JSON.encode(expected.cp),'restored scoreboard/CP',
             JSON.encode(expected.cp),JSON.encode(restored.envs['339b7f'].scoring))
+        local engineCP=st and {st.players['red-id'].cp,st.players['blue-id'].cp}
+        check(JSON.encode(engineCP)==JSON.encode(expected.engineCP),'restored engine CP',
+            JSON.encode(expected.engineCP),JSON.encode(engineCP))
         local hub=restored.envs['339b7f'].RuHub
         check(hub and hub.seats.Red.state==expected.redMode and hub.seats.Blue.state==expected.blueMode,
             'restored dock states',expected.redMode..'/'..expected.blueMode,hub and JSON.encode(hub.seats))
@@ -530,13 +610,16 @@ function main() {
   const candidate = readJSON(candidatePath);
   const operativeSave = readJSON(operativePath);
   const samples = [];
-  walk(operativeSave.ObjectStates, object => {
+  const sampleObject = object => {
     if (samples.length >= 3 || !object.Tags?.includes('Operative') || !object.LuaScriptState) return;
+    if (samples.some(sample => sample.guid === object.GUID)) return;
     const state = JSON.parse(object.LuaScriptState);
     if (state.info?.weapons?.length && state.stats?.APL && state.stats?.Wounds) {
       samples.push({ guid: object.GUID, name: object.Nickname, description: object.Description || '', state });
     }
-  });
+  };
+  operativeSave.ObjectStates.forEach(sampleObject);
+  walk(operativeSave.ObjectStates, sampleObject);
   if (samples.length < 2) throw new Error('Need at least two real operative state shapes from the read-only autosave');
   const global = descriptor({ ...candidate, GUID: 'Global' });
   const objects = candidate.ObjectStates.map(descriptor);
@@ -553,7 +636,10 @@ function main() {
   let report;
   if (execution.status === 0) {
     const runner = readJSON(path.join(root, 'output/moonsharp-ui-candidate-verification.json'));
-    report = JSON.parse(runner.result);
+    // DynValue.ToString adds literal outer quotes to string results without JSON escaping.
+    const result = runner.result.startsWith('"{') ? runner.result.slice(1, -1) : runner.result;
+    report = JSON.parse(result);
+    if (!Array.isArray(report.failures) && Object.keys(report.failures).length === 0) report.failures = [];
     report.runner = { engine: runner.engine, library: runner.library, passed: runner.passed };
   } else {
     report = { passed: false, checks: 0, failures: [{ assertion: 'MoonSharp harness execution',

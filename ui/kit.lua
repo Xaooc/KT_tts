@@ -158,7 +158,10 @@ KT.compact = compact
 local NO_RAYCAST = { Panel = true, Image = true, Text = true, HorizontalLayout = true, VerticalLayout = true, GridLayout = true }
 
 local function node(tag, attrs, children, value)
-    local n = { tag = tag, attributes = attrs or {} }
+    -- Copy only real values: MoonSharp keeps keys written as {x = nil} in constructors, and TTS would receive them.
+    local clean = {}
+    for key, value in pairs(attrs or {}) do if value ~= nil then clean[key] = value end end
+    local n = { tag = tag, attributes = clean }
     -- Decorative elements never swallow clicks meant for a Button underneath (Unity Images are raycast targets).
     if NO_RAYCAST[tag] and n.attributes.raycastTarget == nil then n.attributes.raycastTarget = "false" end
     children = compact(children)

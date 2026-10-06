@@ -155,3 +155,13 @@ test('Text render preserves newlines with rich tags when wrapping', () => {
   assert.match(html, /white-space:pre-wrap;/);
   assert.match(html, /<b>Эффект<\/b>\nПримените…/);
 });
+
+test('tag defaults with a class apply only to that tag and class', () => {
+  const { resolveDefaults, attributes } = require('./layout.cjs');
+  const d = resolveDefaults([{ tag: 'Defaults', children: [{ tag: 'Button', attributes: { class: 'seater', width: '550' } },
+    { tag: 'Button', attributes: { fontSize: '20' } }] }]);
+  assert.equal(attributes({ tag: 'Button', attributes: {} }, d).width, undefined);
+  assert.equal(attributes({ tag: 'Button', attributes: {} }, d).fontSize, '20');
+  assert.equal(attributes({ tag: 'Button', attributes: { class: 'seater' } }, d).width, '550');
+  assert.equal(attributes({ tag: 'Text', attributes: { class: 'seater' } }, d).width, undefined);
+});

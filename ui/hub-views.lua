@@ -6,7 +6,7 @@ local H = KT.hub
 local c, fs = KT.c, KT.fs
 
 H.geo = {
-    x = 12, y = 52, h = 760, rail = 64, panel = 388, wide = 900,
+    x = 12, y = 128, h = 760, rail = 64, panel = 388, wide = 900,  -- y: below the chess stopwatch (UpperLeft 430,0 180x120)
     head = 112, foot = 64, pad = 16, scrollbar = 10,
 }
 local G = H.geo
@@ -45,10 +45,18 @@ local function side(s, w, color, idx)
             verticalOverflow = "Truncate", raycastTarget = "false" }),
         (turn and KT.chip("ХОД", "acc", { size = 9, h = 15 }) or nil),
     }, { h = 16, gap = 4 })
-    local nums = KT.node("Text", { id = base .. "_score",
-        text = tostring(s.cp or 0) .. " <size=10><color=" .. c.muted .. ">CP</color></size>   " .. tostring(s.vp or 0)
-            .. " <size=10><color=" .. c.muted .. ">VP</color></size>",
-        fontSize = "14", fontStyle = "Bold", color = c.fg, alignment = "MiddleLeft", preferredHeight = "18", raycastTarget = "false" })
+    local function numText(id, value)
+        local t = tostring(value or 0)
+        return KT.node("Text", { id = id, text = t, fontSize = "14", fontStyle = "Bold", color = c.fg, alignment = "MiddleLeft",
+            preferredWidth = tostring(math.ceil(KT.textWidth(t, 14, true)) + 4), raycastTarget = "false" })
+    end
+    local function unit(label)
+        return KT.node("Text", { text = label, fontSize = "10", fontStyle = "Bold", color = c.muted, alignment = "MiddleLeft",
+            preferredWidth = "20", raycastTarget = "false" })
+    end
+    local nums = KT.hstack({
+        numText(base .. "_cp", s.cp), unit("CP"), KT.spacer(0, 6), numText(base .. "_vp", s.vp), unit("VP"),
+    }, { h = 18, gap = 2 })
     return KT.hstack({
         KT.stripe(c[s.colorKey] or c.muted, 4),
         KT.vstack({ nameRow, nums }, { gap = 2, w = iw, pad = { 0, 0, 5, 5 } }),
@@ -117,12 +125,12 @@ local function unitRow(u, w, o)
         kids[#kids + 1] = KT.vstack({ btn(o.color, o.actionCmd, u.guid, o.actionLabel, { w = 64, h = 30, size = 12 }) },
             { w = 64, align = "MiddleCenter" })
     end
-    local row = KT.hstack(kids, { gap = 12, pad = { 0, 12, 10, 10 }, bg = c.s2, outline = c.line, stretch = true })
+    local row = KT.hstack(kids, { gap = 12, pad = { 0, 12, 10, 10 }, stretch = true })
     -- Whole-row click target behind the content.
     return KT.node("Panel", { preferredHeight = tostring(KT.prefH(row)), color = c.clear }, {
         KT.node("Button", { id = base, onClick = KT.clickTarget(), colors = c.s2 .. "|" .. c.s3 .. "|" .. c.s3 .. "|" .. c.s2,
             outline = c.line, outlineSize = "1 1", text = "" }),
-        (function() row.attributes.color = c.clear; row.attributes.outline = nil; return row end)(),
+        row,
     })
 end
 H.unitRow = unitRow

@@ -39,6 +39,12 @@ function resolveDefaults(nodes) {
         if (d.tag === 'Class' || a.name) {
           const names = String(a.name || a.class || '').split(/\s+/).filter(Boolean);
           for (const c of names) classes[c] = { ...(classes[c] || {}), ...values };
+        } else if (d.tag && a.class) {
+          // <Button class="x"> applies only to Buttons that carry class x (XmlLayout semantics).
+          for (const c of String(a.class).split(/\s+/).filter(Boolean)) {
+            const key = d.tag + '.' + c;
+            classes[key] = { ...(classes[key] || {}), ...values };
+          }
         } else if (d.tag) tags[d.tag] = { ...(tags[d.tag] || {}), ...values };
       }
     }
@@ -50,7 +56,7 @@ function resolveDefaults(nodes) {
 function attributes(node, defaults) {
   const tag = defaults.tags[node.tag] || {};
   const cls = String((node.attributes || {}).class || '').split(/\s+/).filter(Boolean)
-    .reduce((out, c) => Object.assign(out, defaults.classes[c] || {}), {});
+    .reduce((out, c) => Object.assign(out, defaults.classes[c] || {}, defaults.classes[node.tag + '.' + c] || {}), {});
   return { ...tag, ...cls, ...(node.attributes || {}) };
 }
 function num(v, base, fallback) {

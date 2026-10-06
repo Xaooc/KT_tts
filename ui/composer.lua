@@ -137,11 +137,26 @@ local function ruUiIds(nodes)
     return ids
 end
 
+-- Structural equality that ignores representation: a node parsed from an XML string has string attribute
+-- values and no empty children table, while getXmlTable() may return numbers/booleans and children={}.
+local function ruUiScalar(value)
+    if value==nil or value=="" then return nil end
+    return string.lower(tostring(value))
+end
+local function ruUiKids(node)
+    local out={}
+    for _,child in ipairs(node.children or {}) do out[#out+1]=child end
+    return out
+end
 local function ruUiSame(a,b)
-    if type(a)~=type(b) then return false end
-    if type(a)~="table" then return a==b end
-    for key,value in pairs(a) do if not ruUiSame(value,b[key]) then return false end end
-    for key in pairs(b) do if a[key]==nil then return false end end
+    if type(a)~="table" or type(b)~="table" then return ruUiScalar(a)==ruUiScalar(b) end
+    if a.tag~=b.tag or ruUiScalar(a.value)~=ruUiScalar(b.value) then return false end
+    local aa,ba=a.attributes or {},b.attributes or {}
+    for key,value in pairs(aa) do if ruUiScalar(value)~=ruUiScalar(ba[key]) then return false end end
+    for key,value in pairs(ba) do if ruUiScalar(value)~=ruUiScalar(aa[key]) then return false end end
+    local ak,bk=ruUiKids(a),ruUiKids(b)
+    if #ak~=#bk then return false end
+    for i=1,#ak do if not ruUiSame(ak[i],bk[i]) then return false end end
     return true
 end
 
