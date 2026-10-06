@@ -57,7 +57,7 @@ local function hubRound() return math.max(1,getCurrentRound()) end
 local function seat(color)
     if not RuHub.seats[color] then
         RuHub.seats[color]={state="rail",tab="turn",ploySeg="strat",ployQuery="",ployExpiry="manual",
-            squadSeg="all",enemySeg="ops",logSeg="events",refScope="model",refQuery="",
+            squadSeg="all",teamQuery="",enemySeg="ops",logSeg="events",refScope="model",refQuery="",
             advanced={open=false,cost="rule",exception=false},setup={round=hubRound(),phaseIndex=1,turnIndex=1}}
     end
     return RuHub.seats[color]
@@ -414,11 +414,20 @@ local function roster(p)
 end
 local function statusVM()
     local s=state();local st={sides={}}
-    st.eyebrow="РАУНД "..getCurrentRound().." / 4 · "
-        ..(s and phaseEyebrows[s.phase] or "ПАРТИЯ НЕ ПОДКЛЮЧЕНА")
-    for i,p in pairs(seats()) do
-        st.sides[i]={name=teamLabel(team(p)),colorKey=p.color,cp=scoring[i].command,vp=vp(i),
-            turn=s and (s.phase=="gambit" and s.gambitOwner or s.turnOwner)==owner(p) or false}
+    if s then
+        st.eyebrow="РАУНД "..getCurrentRound().." / 4 · "..(phaseEyebrows[s.phase] or "")
+    else
+        st.eyebrow="ПАРТИЯ НЕ ПОДКЛЮЧЕНА"
+    end
+    for color,i in pairs(playerNumber or {}) do
+        if (i==1 or i==2) and playerFor(color) and scoring[i] then
+            local p=playerFor(color);local name
+            if p.seated~=false and tostring(p.steam_id or "")~="" then name=teamLabel(team(p))
+            else name=p.steam_name end
+            if not name or name=="" then name=players[color] or color end
+            st.sides[i]={name=name,colorKey=color,cp=scoring[i].command,vp=vp(i),
+                turn=s and (s.phase=="gambit" and s.gambitOwner or s.turnOwner)==owner(p) or false}
+        end
     end
     return st
 end
@@ -511,8 +520,9 @@ local function squadVM(p,v,units)
             filtered[#filtered+1]=u
         end
     end
-    local key=team(p);local t={team=teamLabel(key),summary=alive.." из "..#units.." в строю · "..ready.." готовы",
+    local key=team(p);local t={team=teamLabel(key),summary=#units>0 and (alive.." из "..#units.." в строю · "..ready.." готовы") or nil,
         units=filtered,seg=v.squadSeg,canEnroll=authority(p) and not state().activation or false}
+    t.teamQuery=v.teamQuery
     if not RuAssistantTeams[key] then
         t.teamOptions={};for id,data in pairs(RuAssistantTeams) do t.teamOptions[#t.teamOptions+1]={id,data.label} end
         table.sort(t.teamOptions,function(a,b) return a[2]<b[2] end)
@@ -656,7 +666,7 @@ function ruHubBuildVM(color)
         local last=RuAssistantEngine and RuAssistantEngine.history[#RuAssistantEngine.history]
         current.undo=last~=nil and last.owner==owner(p) and last.request==current.undoRequest
     end
-    local v=seat(color);local vm={color=color,state=v.state,tab=v.tab,status=statusVM(),toast=v.toast}
+    local v=seat(color);local vm={color=color,state=v.state,tab=v.tab,status=statusVM(),toast=v.toast,dock=v.dock}
     if spectator(p) then
         vm.tab="ref";vm.tabs={};vm.turn={mode="spectator"}
         for _,tab in ipairs(KT.hub.TABS) do if tab.key=="ref" then vm.tabs[1]=tab end end
@@ -893,6 +903,35 @@ end
 local function validTab(key)
     for _,tab in ipairs(KT.hub.TABS) do if tab.key==key then return true end end;return false
 end
+local function dockShadowAttribute(id,name)
+    for _,root in ipairs(RuUi.roots or {}) do
+        if (root.attributes or {}).id==id then return (root.attributes or {})[name] end
+    end
+end
+local function parsePosition(value)
+    if type(value)~="string" then return nil end
+    local x,y=value:match("^%s*(-?[%d%.]+)[ ,]+(-?[%d%.]+)%s*$")
+    x=tonumber(x);y=tonumber(y)
+    if not x or not y then return nil end
+    return math.max(0,math.min(1800,x)),math.max(0,math.min(1000,math.abs(y)))
+end
+function ruHubDragEnd(p,value,id)
+    p=actor(p);if not p then return false end
+    local color=tostring(id or ""):match("^khDock_([%a]+)$")
+    if color~=p.color then return false end
+    local attrs={"offsetXY","position"};local x,y=nil,nil
+    for _,name in ipairs(attrs) do
+        local live=Global.call("ruUiRealAttribute",{id=id,name=name})
+        if live~=nil and tostring(live)~=tostring(dockShadowAttribute(id,name)) then
+            x,y=parsePosition(tostring(live));if x then break end
+        end
+    end
+    if not x then return false end
+    local v=seat(color)
+    v.dock={x=x,y=y}
+    Global.call("ruUiPatch",{id=id,attrs={offsetXY=tostring(x).." -"..tostring(y)}})
+    return true
+end
 function ruHubClick(p,value,id)
     p=actor(p);if not p or tostring(value)=="-2" then return false end
     local color,cmd,arg=tostring(id):match("^kh:([^:]+):([^:]+):?(.*)$")
@@ -945,14 +984,19 @@ function ruHubClick(p,value,id)
         local target=seatPlayer(tonumber(arg));event={type="initiative",winner=target and owner(target),confirmed=true}
     elseif cmd=="next" then event={type="next_phase",confirmed=true}
     elseif cmd=="squadseg" then if arg=="all" or arg=="ready" or arg=="hurt" then v.squadSeg=arg end
+    elseif cmd=="teamsearch" then
+        local query=tostring(value or ""):gsub("^%s+",""):gsub("%s+$","")
+        v.teamQuery=query:sub(1,60)
     elseif cmd=="enroll" or cmd=="enrollall" then ok,msg=enroll(p,cmd=="enrollall")
     elseif cmd=="team" then
         if not RuAssistantTeams[arg] then return false end
         if s and (not authority(p) or s.activation) then ok,msg=false,"Завершите активацию перед сменой отряда"
         else
             local m=marks(p);if m.team~=arg then m.used={} end;m.team=arg
+            v.teamQuery=""
             if s then s.players[owner(p)].team=arg;s.revision=s.revision+1;clearUndo() end
         end
+    elseif cmd=="dockreset" then v.dock=nil
     elseif cmd=="ployseg" then if arg=="strat" or arg=="fire" or arg=="pinned" then v.ploySeg=arg;v.ployAuto=false end
     elseif cmd=="ploysearch" then v.ployQuery=tostring(value or ""):sub(1,200)
     elseif cmd=="ploy" then
@@ -1005,7 +1049,7 @@ function onSave()
     if not ok or type(base)~="table" then base={} end
     base.ruAssistant={version=1,serial=RuAssistantSerial,engine=RuAssistantEngine and RuAssistantCore.export(RuAssistantEngine),
         cpRevision=RuAssistantCPRevision,cpReceipts=RuAssistantCPReceipts,cpReceiptOrder=RuAssistantCPReceiptOrder}
-    local states={};for color,v in pairs(RuHub.seats) do states[color]=v.state end
+    local states={};for color,v in pairs(RuHub.seats) do states[color]={state=v.state,dock=copy(v.dock)} end
     base.ruHub={version=1,marks=RuHub.marks,cpByRound=RuHub.cpByRound,seats=states,
         seatSteam=RuHub.seatSteam,migrationPending=RuHub.migrationPending};return JSON.encode(base)
 end
@@ -1054,8 +1098,13 @@ function onLoad(saved)
         RuHub.cpByRound=type(hub.cpByRound)=="table" and hub.cpByRound or {}
         RuHub.seatSteam=type(hub.seatSteam)=="table" and hub.seatSteam or {}
         RuHub.migrationPending=hub.migrationPending==true
-        for color,mode in pairs(hub.seats or {}) do
+        for color,storedSeat in pairs(hub.seats or {}) do
+            local mode=type(storedSeat)=="table" and storedSeat.state or storedSeat
             if mode=="open" or mode=="rail" or mode=="hidden" then seat(color).state=mode end
+            local dock=type(storedSeat)=="table" and storedSeat.dock
+            if type(dock)=="table" and type(dock.x)=="number" and type(dock.y)=="number" then
+                seat(color).dock={x=math.max(0,math.min(1800,dock.x)),y=math.max(0,math.min(1000,dock.y))}
+            end
         end
     end
     rememberSeatSteam()

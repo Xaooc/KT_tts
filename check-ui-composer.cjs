@@ -204,6 +204,9 @@ state=runtime(parsed);state.globalUI.hide("seaterMain")
 equal(state.node("seaterMain").attributes.active,"false");equal(#state.points,1)
 state.globalUI.show("seaterMain");equal(state.node("seaterMain").attributes.active,"true")
 equal(state.real.getAttribute("seaterMain","active"),"true");equal(#state.points,2);cases=cases+1
+state.real.setAttribute("seaterMain","active","live-only")
+equal(ruUiRealAttribute({id="seaterMain",name="active"}),"live-only","Real UI attribute bypasses shadow")
+cases=cases+1
 
 -- 9: Namespace mounts, explicit unknown-ID no-ops, patch batching and stable ordering.
 state=runtime(parsed)

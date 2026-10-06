@@ -286,6 +286,7 @@ end
 function ruUiMount(params) ruUiReplaceOwner(params.owner,params.nodes or {});return true end
 function ruUiUnmount(params) ruUiReplaceOwner(params.owner,{});return true end
 function ruUiPatch(params) return ruUiPoint("setAttributes",{params.id,params.attrs or {}},false) end
+function ruUiRealAttribute(params) return RealUI.getAttribute(params.id,params.name) end
 function ruUiPatchMany(params)
     local count=0
     for _,patch in ipairs(params) do

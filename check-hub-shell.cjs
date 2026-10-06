@@ -220,6 +220,7 @@ end
 check(Player.White and Player.White.seated==false,'Empty valid colour must return a player')
 onLoad('');flush()
 check(not RuAssistantEngine,'Unexpected engine on load')
+check(vm().status.eyebrow=='ПАРТИЯ НЕ ПОДКЛЮЧЕНА','No-session eyebrow')
 for _,color in ipairs({'Red','Blue'}) do
     check(mounted(color)~=nil,'Missing owner hub:'..color)
     check(mounted(color).attributes.visibility==color,'Seat visibility')
@@ -242,11 +243,32 @@ do
     check(not ruHubClick({color='NotAPlayer',steam_id='fake'},nil,'kh:NotAPlayer:tab:ref'),'Invalid actor accepted')
     Player.Blue.seated=true;onLoad('');flush()
 end
+do
+    local original=realUI.getAttribute('khDock_Red','offsetXY')
+    realUI.setAttribute('khDock_Red','offsetXY','321 -222')
+    check(ruHubDragEnd(Player.Red,'','khDock_Red'),'Drag-end rejected current seat')
+    check(RuHub.seats.Red.dock.x==321 and RuHub.seats.Red.dock.y==222,'Drag position not stored')
+    check(realUI.getAttribute('khDock_Red','offsetXY')=='321 -222','Drag position not patched to shadow')
+    check(not ruHubDragEnd(Player.Red,'','khDock_Red'),'Unchanged drag attribute was not a no-op')
+    check(not ruHubDragEnd(Player.Blue,'','khDock_Red'),'Foreign seat drag accepted')
+    local dockSaved=onSave();onLoad(dockSaved);flush()
+    check(RuHub.seats.Red.dock.x==321 and RuHub.seats.Red.dock.y==222,'Dock position did not survive save/load')
+    check(mounted('Red').attributes.offsetXY=='321 -222','Remount ignored saved dock position')
+    success(Player.Red,'dockreset')
+    check(RuHub.seats.Red.dock==nil and mounted('Red').attributes.offsetXY=='64 -128','Dock reset failed')
+    check(original=='64 -128','Unexpected default dock fixture')
+end
 success(Player.Red,'tab','turn');check(vm().turn.mode=='setup' and vm().turn.isHost)
 check(vm().turn.phaseLabels[1]=='Стратегия · инициатива' and vm().turn.phaseLabels[5]=='Конец раунда · подсчёт очков','Setup phase labels')
 PreviewHubShellScenes.setup={copy(mounted('Red'))}
 success(Player.Red,'setupround','2');success(Player.Red,'setupphase','4');success(Player.Red,'setupturn','2')
 check(vm().turn.round==2 and vm().turn.phaseIndex==4 and vm().turn.turnIndex==2,'Setup fields')
+success(Player.Red,'tab','squad')
+success(Player.Red,'teamsearch','', '  hierarchy  ')
+check(vm().squad.teamQuery=='hierarchy','Team search query was not trimmed/passed through')
+success(Player.Red,'team','hierotekcircle')
+check(vm().squad.teamQuery=='','Team selection did not clear search')
+success(Player.Red,'tab','turn')
 check(not click(Player.Blue,'start'),'Non-host start')
 success(Player.Red,'setupround','1');success(Player.Red,'setupturn','1')
 scoring[1].initiative[1]=true
@@ -385,6 +407,11 @@ success(Player.Red,'ploysearch','', '');success(Player.Red,'tab','squad')
 liveMatches(RuHub.trees.Red,mounted('Red'))
 check(#vm().squad.units==2 and vm().squad.units[1].state=='active','Squad order')
 check(vm().squad.summary=='2 из 2 в строю · 1 готовы','Squad summary')
+do
+    local units=RuAssistantEngine.state.units;RuAssistantEngine.state.units={}
+    ruHubRender('Red');flush();check(vm().squad.summary==nil,'Empty squad summary was shown')
+    RuAssistantEngine.state.units=units;ruHubRender('Red');flush()
+end
 PreviewHubShellScenes.squad={copy(mounted('Red'))}
 success(Player.Red,'squadseg','hurt');check(#vm().squad.units==0,'Hurt filter')
 success(Player.Red,'squadseg','all');success(Player.Red,'tab','enemy')
