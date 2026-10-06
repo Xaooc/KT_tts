@@ -1,0 +1,78 @@
+{
+  "demo": [
+    {
+      "tag": "Defaults",
+      "children": {
+        "1": { "tag": "Text", "attributes": { "fontSize": "14", "color": "#d7e0e8" } },
+        "2": { "tag": "Class", "attributes": { "name": "heading", "fontSize": "24", "fontStyle": "Bold", "color": "#f0d38a" } },
+        "3": { "tag": "Class", "attributes": { "name": "action", "colors": "#42647a|#52758b|#304b5b|#555555", "textColor": "White" } }
+      }
+    },
+    {
+      "tag": "Panel", "attributes": { "id": "canvas", "width": 1920, "height": 1080, "color": "#202833" },
+      "children": [
+        { "tag": "Text", "attributes": { "id": "title", "class": "heading", "text": "XmlUI layout approximation", "width": 650, "height": 48, "rectAlignment": "UpperLeft", "pivot": "0 0", "offsetXY": "44 -32" } },
+        { "tag": "Text", "attributes": { "text": "1920 × 1080    •    anchors, flow, controls and overflow checks", "width": 650, "height": 28, "rectAlignment": "UpperLeft", "pivot": "0 0", "offsetXY": "44 -82", "fontSize": 16, "color": "#cbd4dc" } },
+        { "tag": "Panel", "attributes": { "id": "left-panel", "width": 600, "height": 380, "rectAlignment": "UpperLeft", "pivot": "0 0", "offsetXY": "40 -135", "color": "#2b3542", "padding": "18 18 18 18", "outline": "#61758b", "outlineSize": "1 1", "shadow": "rgba(0,0,0,0.5)", "shadowDistance": "4 5" },
+          "children": [
+            { "tag": "VerticalLayout", "attributes": { "width": "100%", "height": "100%", "spacing": 10, "padding": "0 0 0 0", "childForceExpandHeight": "false" },
+              "children": [
+                { "tag": "Text", "attributes": { "text": "Panel and layout groups", "fontSize": 20, "fontStyle": "Bold", "color": "White", "preferredHeight": 30 } },
+                { "tag": "HorizontalLayout", "attributes": { "width": "100%", "height": 44, "spacing": 10, "childForceExpandWidth": "true", "childForceExpandHeight": "true" },
+                  "children": [
+                    { "tag": "Button", "attributes": { "class": "action", "text": "Confirm", "preferredWidth": 100 } },
+                    { "tag": "Button", "attributes": { "text": "Disabled", "colors": "#88aacc|#99bbdd|#7799bb|#555d66", "textColor": "White", "interactable": "false" } },
+                    { "tag": "ToggleButton", "attributes": { "text": "Toggle", "color": "#536774", "textColor": "White" } }
+                  ]
+                },
+                { "tag": "InputField", "attributes": { "text": "Example input", "placeholder": "Enter text", "colors": "#ffffff|#eeeeee", "textColor": "#26313b", "fontSize": 16, "preferredHeight": 38 } },
+                { "tag": "Dropdown", "attributes": { "preferredHeight": 38 }, "children": [
+                  { "tag": "Option", "attributes": { "selected": "false" }, "value": "First option" },
+                  { "tag": "Option", "attributes": { "selected": "true" }, "value": "Selected option" }
+                ] },
+                { "tag": "Toggle", "attributes": { "text": "Enable notifications", "isOn": "true", "preferredHeight": 30, "textColor": "White" } },
+                { "tag": "ProgressBar", "attributes": { "percentage": "67", "color": "#111820", "fillImageColor": "Teal", "showPercentageText": "true", "textColor": "White", "preferredHeight": 24 } }
+              ]
+            }
+          ]
+        },
+        { "tag": "HorizontalLayout", "attributes": { "id": "distribution", "width": 590, "height": 130, "rectAlignment": "UpperLeft", "pivot": "0 0", "offsetXY": "690 -155", "spacing": 12, "padding": "12 12 12 12", "childForceExpandWidth": "false", "childForceExpandHeight": "true", "color": "#263543" },
+          "children": [
+            { "tag": "Image", "attributes": { "width": 120, "preferredWidth": 120, "color": "#bb8757", "preserveAspect": "true" } },
+            { "tag": "Image", "attributes": { "width": 120, "preferredWidth": 120, "image": "unknown-asset", "color": "#487a91" } },
+            { "tag": "Text", "attributes": { "text": "Flexible content", "preferredWidth": 180, "flexibleWidth": 1, "horizontalOverflow": "Wrap", "verticalOverflow": "Truncate", "fontSize": 18, "color": "White" } }
+          ]
+        },
+        { "tag": "GridLayout", "attributes": { "id": "grid", "width": 590, "height": 230, "rectAlignment": "UpperLeft", "pivot": "0 0", "offsetXY": "690 -315", "cellSize": "180 55", "spacing": "12 10", "constraint": "FixedColumnCount", "constraintCount": 3, "startAxis": "Horizontal", "color": "#293744" },
+          "children": [
+            { "tag": "Button", "attributes": { "text": "Grid A", "colors": "#476075" } }, { "tag": "Button", "attributes": { "text": "Grid B", "colors": "#476075" } },
+            { "tag": "Button", "attributes": { "text": "Grid C", "colors": "#476075" } }, { "tag": "Button", "attributes": { "text": "Grid D", "colors": "#476075" } }
+          ]
+        },
+        { "tag": "TableLayout", "attributes": { "id": "table", "width": 620, "height": 180, "rectAlignment": "UpperLeft", "pivot": "0 0", "offsetXY": "40 -560", "columnWidths": "200 400", "cellSpacing": 4, "color": "#293744" },
+          "children": [
+            { "tag": "Row", "attributes": { "preferredHeight": 45 }, "children": [
+              { "tag": "Cell", "children": [{ "tag": "Text", "attributes": { "text": "Table cell", "color": "White", "width": "100%", "height": "100%" } }] },
+              { "tag": "Cell", "children": [{ "tag": "Text", "attributes": { "text": "Basic row and cell layout", "color": "#cbd4dc", "width": "100%", "height": "100%" } }] }
+            ] },
+            { "tag": "Row", "attributes": { "preferredHeight": 45, "autoCalculateHeight": "true" }, "children": [
+              { "tag": "Cell", "children": [{ "tag": "Text", "attributes": { "text": "Second row", "color": "White", "width": "100%", "height": "100%" } }] },
+              { "tag": "Cell", "children": [{ "tag": "Text", "attributes": { "text": "Table row preferredHeight / autoCalculateHeight", "color": "#cbd4dc", "width": "100%", "height": "100%" } }] }
+            ] }
+          ]
+        },
+        { "tag": "VerticalScrollView", "attributes": { "id": "scroll", "width": 340, "height": 210, "rectAlignment": "UpperRight", "pivot": "1 0", "offsetXY": "-42 -36", "color": "#263543" },
+          "children": [{ "tag": "VerticalLayout", "attributes": { "width": "100%", "height": 420, "spacing": 8, "padding": "12 18 12 12", "childForceExpandHeight": "false" }, "children": [
+            { "tag": "Text", "attributes": { "text": "Clipped scroll content", "preferredHeight": 30, "fontSize": 18, "color": "White" } },
+            { "tag": "Text", "attributes": { "text": "This text contains <b>bold</b>, <i>italic</i>, <color=#45c3c8>colored</color> and <size=20>larger</size> rich text.", "width": 280, "height": 86, "fontSize": 16, "horizontalOverflow": "Wrap", "verticalOverflow": "Truncate", "color": "#e5eaf0" } },
+            { "tag": "Text", "attributes": { "text": "Long line to demonstrate horizontal overflow checking when the setting requests it", "width": 260, "height": 32, "horizontalOverflow": "Overflow", "fontSize": 14, "color": "#d9b780" } },
+            { "tag": "Image", "attributes": { "width": 290, "height": 90, "color": "#40566a" } },
+            { "tag": "Text", "attributes": { "text": "Additional scroll content", "preferredHeight": 28, "color": "White" } }
+          ] }]
+        },
+        { "tag": "Panel", "attributes": { "width": 160, "height": 70, "rectAlignment": "LowerRight", "pivot": "1 1", "offsetXY": "-40 38", "color": "#574c70", "visibility": "Red|Blue" },
+          "children": [{ "tag": "Text", "attributes": { "text": "Player visibility", "width": "100%", "height": "100%", "alignment": "MiddleCenter", "color": "White" } }] }
+      ]
+    }
+  ]
+}
