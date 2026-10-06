@@ -667,6 +667,17 @@ for _,order in ipairs({'global-last','global-first'}) do
         local defaults,seen=0,{}
         for _,root in ipairs(h.ui.getXmlTable() or {}) do if root.tag=='Defaults' then defaults=defaults+1 end end
         check(defaults==3,'Defaults blocks are not duplicated',3,defaults)
+        -- Mouse wheel: every scroll view and its content must be raycast targets (seen in game: wheel fell through).
+        local function scrolls(n)
+            if type(n)~='table' then return end
+            if n.tag=='VerticalScrollView' then
+                local content=(n.children or {})[1]
+                check(content and tostring((content.attributes or {}).raycastTarget)=='true','Scroll content catches the mouse wheel',
+                    'true',content and (content.attributes or {}).raycastTarget)
+            end
+            for _,child in ipairs(n.children or {}) do scrolls(child) end
+        end
+        for _,root in ipairs(h.ui.getXmlTable() or {}) do scrolls(root) end
     end
     step('onSave/fresh-environment reload',function()
         local saved={};for _,guid in ipairs({'339b7f','efa3fe','Global'}) do saved[guid]=h.invoke(guid,'onSave') end

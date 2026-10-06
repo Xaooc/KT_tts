@@ -321,12 +321,17 @@ function KT.scroll(content, o)
     content.attributes.width = num(o.w - 10)
     content.attributes.rectAlignment = "UpperLeft"
     content.attributes.contentSizeFitter = "vertical"
+    -- The mouse wheel reaches the ScrollRect only through a raycast target under the pointer. Decorative children
+    -- are non-raycast (so clicks reach row buttons), therefore the content itself must catch the pointer; a fully
+    -- transparent colour may be skipped by TTS, so use alpha 1/255.
+    content.attributes.raycastTarget = "true"
+    if content.attributes.color == nil or content.attributes.color == KT.c.clear then content.attributes.color = "#00000001" end
     return node("VerticalScrollView", {
         id = o.id, width = num(o.w), height = num(o.h), preferredHeight = num(o.h), preferredWidth = num(o.w),
         rectAlignment = o.anchor or "UpperLeft", offsetXY = o.x and (num(o.x) .. " " .. num(-(o.y or 0))) or nil,
         horizontal = "false", vertical = "true", movementType = "Clamped", scrollSensitivity = "32",
         verticalScrollbarVisibility = "AutoHideAndExpandViewport", horizontalScrollbarVisibility = "AutoHide",
-        color = KT.c.clear, scrollbarBackgroundColor = KT.c.clear,
+        color = "#00000001", raycastTarget = "true", scrollbarBackgroundColor = "#00000001",
         scrollbarColors = KT.c.s3 .. "|" .. KT.c.dim .. "|" .. KT.c.accent .. "|" .. KT.c.s3,
     }, { content })
 end
